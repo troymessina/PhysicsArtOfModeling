@@ -1,0 +1,33 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  downloads:
+#    - file: IntroPhysics.pdf
+#      title: Modeling with Physics
+  id: 
+  title: Modeling with Physics
+  description: Interactive Introductory Calculus-Based Physics Textbook
+  keywords: [Introductory Physics]
+#  authors: [Troy Messina]
+  #github: https://github.com/troymessina/
+  numbering:
+    headings: true
+  exclude: 
+    - figures/**
+    - trinket/**
+  exports:
+  - output: paper.pdf
+    template: lapreprint-typst
+    id: my-paper
+site:
+  template: book-theme 
+  title: Modeling with Physics
+  options:
+    logo: ./figures/primary_rgb.png
+    logo_dark: ./figures/primary_white.png
+    logo_text: Modeling with Physics
+  nav: []
+  #actions:
+  #  - title: Learn More
+  #    url: https://mystmd.org/guide
+  domains: []
