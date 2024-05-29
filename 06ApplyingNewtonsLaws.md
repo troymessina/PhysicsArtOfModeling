@@ -102,15 +102,19 @@ We can describe the motion of an object whose \textit{velocity vector does not c
 When an object undergoes linear motion, we always model the motion of the object over straight segments separately. Over one such segment, the acceleration vector will be co-linear with the displacement vector of the object (parallel or anti-parallel - note that the acceleration can change direction as it would from a spring force, but will always be co-linear with the displacement).
 
 :::{note} Example
-:label: ex:applyingnewtonslaws:blockA block of mass $m$ is placed at rest on an incline that makes an angle $\theta$ with respect to the horizontal, as shown in [](#fig:applyingnewtonslaws:blockI). The block is nudged slightly so that the force of static friction is overcome and the block starts to accelerate down the incline. At the bottom of the incline, the block slides on a horizontal surface.
+:label: ex:applyingnewtonslaws:block
+A block of mass $m$ is placed at rest on an incline that makes an angle $\theta$ with respect to the horizontal, as shown in [](#fig:applyingnewtonslaws:blockI). The block is nudged slightly so that the force of static friction is overcome and the block starts to accelerate down the incline. At the bottom of the incline, the block slides on a horizontal surface.
 
-The coefficient of kinetic friction between the block and the incline is $\mu_{k1}$, and the coefficient of kinetic friction between the block and horizontal surface is $\mu_{k2}$. If one assumes that the block started at rest a distance $L$ from the bottom of the incline, how far along the horizontal surface will the block slide before stopping?```{figure} figures/ApplyingNewtonsLaws/blockI.png
+The coefficient of kinetic friction between the block and the incline is $\mu_{k1}$, and the coefficient of kinetic friction between the block and horizontal surface is $\mu_{k2}$. If one assumes that the block started at rest a distance $L$ from the bottom of the incline, how far along the horizontal surface will the block slide before stopping?
+```{figure} figures/ApplyingNewtonsLaws/blockI.png
 :label: fig:applyingnewtonslaws:blockI
 :width: 50%
 :align: center
 :alt:  A block slides down an incline before sliding on a flat surface and stopping. 
  A block slides down an incline before sliding on a flat surface and stopping. 
-```}
+```
+:::{note} Solution
+:class: dropdown
 We can identify that this is linear motion that we can break up into two segments: (1) the motion down the incline, and (2), the motion along the horizontal surface. We will thus identify the forces, draw the free-body diagram for the block, and use Newton's Second Law twice, once for each segment.
 
 It is often useful to describe the motion in words to help us identify the steps required in building a model for the block. In this case we could say that:

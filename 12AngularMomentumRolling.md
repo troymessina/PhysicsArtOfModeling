@@ -1,11 +1,12 @@
 ---
+title: Chapter 12 - Rotational energy and momentum
 numbering:
   headings:
   heading_1:
     start: 13
 ---
 (chap:angularmomentumrolling)=
-# Chapter 12: Rotational energy and momentum
+# Overview
 In this chapter, we extend our description of rotational dynamics to include the rotational equivalents of kinetic energy and momentum. We also develop the framework for describing the motion of rolling objects. We will see that many of the relations that hold for linear quantities also hold for angular quantities. 
 
 :::{hint} Learning Objectives

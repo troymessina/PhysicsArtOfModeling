@@ -349,7 +349,7 @@ Put these in order of the magnitude of their scalar product.
 $3<1<2$
 :::
 
-sec:Vectors:vectorproduct)=
+(sec:Vectors:vectorproduct)=
 ## The vector product
 
 The vector (or cross) product takes two vectors to produce a third vector that is **mutually perpendicular** to both vectors. The vector product only has meaning in three dimensions. Two vectors that are not co-linear, meaning they can not be arranged so that they lie along the same line, can always be used to define a plane in three dimensions. The cross product of those two vectors will give a third vector that is perpendicular to the plane (making it perpendicular to both vectors). 
@@ -371,7 +371,7 @@ One important property to note is that $\vec a \times \vec b = -\vec b \times \v
 ```
 where $\theta$ is the angle between the vectors $\vec a$ and $\vec b$ when these are placed tail to tail ([](#fig:Vectors:scalarproduct)). The vector resulting from a cross product will be null (have a zero length) if the vectors $\vec a$ and $\vec b$ are parallel, and will have a maximal length when these are perpendicular. The cross product is useful to determine quantities that are maximal when two vectors are perpendicular. 
 
-Geometrically, one can determine the direction of the cross product of two vectors by using a "right hand rule". To distinguish it from another right hand rule (see Section [](#sec:Vectors:rotationalmotion)), we will call it "the right hand rule for the cross product"). This is done by using your right hand, aligning your thumb with the first vector and your index with the second vector. The cross product will point in the direction of your middle finger (when you hold your middle finger perpendicular to the other two fingers). This is illustrated in [](#fig:Vectors:righthandrule). Thus, you can often avoid using equation [](#eqn:Vectors:crossproduct) and instead use the right hand rule to determine the direction of the cross product and equation [](#eqn:Vectors:crossproductmag) to find its magnitude.
+Geometrically, one can determine the direction of the cross product of two vectors by using a "right hand rule". To distinguish it from another right hand rule (see [Section %s](#sec:Vectors:rotationalmotion)), we will call it "the right hand rule for the cross product"). This is done by using your right hand, aligning your thumb with the first vector and your index with the second vector. The cross product will point in the direction of your middle finger (when you hold your middle finger perpendicular to the other two fingers). This is illustrated in [](#fig:Vectors:righthandrule). Thus, you can often avoid using equation [](#eqn:Vectors:crossproduct) and instead use the right hand rule to determine the direction of the cross product and equation [](#eqn:Vectors:crossproductmag) to find its magnitude.
 
 ```{figure} figures/Vectors/righthandrule.png
 :label: fig:Vectors:righthandrule 

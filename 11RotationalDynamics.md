@@ -1,12 +1,12 @@
 ---
+title: Chapter 11 - Rotational dynamics
 numbering:
   headings:
   heading_1:
     start: 12
 ---
-
 (chap:rotationaldynamics)=
-# Chapter 11: Rotational dynamics
+# Overview
 In this Chapter, we use Newton's Second Law to develop a formalism to describe how objects rotate. In particular, we will introduce the concept of torque which plays a similar role to that of force in non-rotational dynamics. We will also introduce the concept of moment of inertia to describe how objects resist rotational motion. 
 
 :::{hint} Learning Objectives
@@ -29,15 +29,13 @@ A construction worker would like to lift one end of a heavy block from the groun
 
 :::
 
-[](#rotationaldynamics)
-
 ## Rotational kinematic vectors
 
 :::{caution} Review
 Before proceeding, you may wish to review:
-* [Section "{Circular Motion}"](#circular-motion) on kinematics for circular motion.
-* [Section "Vectors"](#sec:Vectors:vectorproduct) on the vector product.
-* [Section "Rotational Motion}"](#sec:Vectors:rotationalmotion) on axial vectors and their use in defining rotational quantities.
+* [Section removed chapter on N dim motion](#sec:describingmotioninnd:circularmotion) on kinematics for circular motion.
+* [Section %s](#sec:Vectors:vectorproduct) on the vector product.
+* [Section %s](#sec:Vectors:rotationalmotion) on axial vectors and their use in defining rotational quantities.
 :::
 
 ### Scalar rotational kinematic quantities
