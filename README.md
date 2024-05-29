@@ -16,13 +16,13 @@ This version of the textbook is also open-access and can be found at https://git
 2. [Comparing model and experiment](#chap:modelandexperiment)
 3. [Vectors](#chap:vectors)
 4. [Linear momentum and the centre of mass](#chap:momentumandcm)
-5. Newton's Laws
-6. Applying Newton's Laws
-7. Work and energy
+5. [Newton's Laws](#chap:NewtonsLaws)
+6.[Applying Newton's Laws](#chap:ApplyingNewtonsLaws)
+7. [Work and energy](#chap:workenergy)
 8. Potential energy and conservation of energy
 9. Gravity
-10. Rotational dynamics
-11. Rotational energy and momentum
+10. [Rotational dynamics](#chap:rotationaldynamics)
+11. [Rotational energy and momentum](#chap:angularmomentumrolling)
 12. Simple harmonic motion
 13. Waves
 14. Fluid mechanics
