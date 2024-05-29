@@ -8,44 +8,35 @@
 
 This is an **open-access** textbook for calculus-based introductory physics courses. Anyone that complies with the license is welcome to modify and use this work for their own use, and we hope that you will choose to contribute. The textbook is specifically intended for a **flipped-classroom** approach, wherein students complete readings at home and the material is then discussed in class. The textbook thus contains questions and activities to engage readers. This text also includes a **curriculum in experimental physics**, detailing the scientific method and process, suggesting experiments to perform at home and in the lab, and has chapters that cover: writing and reviewing proposals, writing and reviewing reports, analyzing data, as well as an introduction to python. Finally, this textbook was **written with many contributions from students**! We hope that you may find it useful, and we are interested to know if you are using it!
 
-Download the textbook here: [Introductory Physics: Building Models to Describe Our World](https://github.com/OSTP/PhysicsArtofModelling/raw/master/tex/BuildingModelsToDescribeOurWorld.pdf)
+This book is a remix of [Introductory Physics: Building Models to Describe Our World](https://github.com/OSTP/PhysicsArtofModelling/raw/master/tex/BuildingModelsToDescribeOurWorld.pdf). All licensing and copyrights are derived from this original text. Anyone is welcome to compile their own version including or excluding chapters. The original open-access files are found at https://github.com/OSTP/PhysicsArtofModelling/tex/. 
 
-In addition to the numerous examples throughout the narrative and two sample problems at the end of each chapter, the textbook comes with an extensive **"question library"**, which is provided with just questions, or with answers (but not solutions). Solutions can be made available to instructors upon request (in Latex format, along with the questions, making it straightforward to generate assignments with and without solutions). 
+This version of the textbook is also open-access and can be found at https://github.com/troymessina/PhysicsArtOfModeling. The following chapters are included in the textbook by default:
 
-Download the question library:
-  * [Question Library (only questions)](https://github.com/OSTP/PhysicsArtofModelling/raw/master/QuestionLibrary_Questions.pdf)
-  * [Question Library (with most answers)](https://github.com/OSTP/PhysicsArtofModelling/raw/master/QuestionLibrary_Answers.pdf)
-  
-All of the **originals for the figures** in the textbook are included in this github repository. These were all created for the textbook and can be used under the same license as the textbook (there is one picture that is credited to NASA, it's obvious). Within the /tex folder, you will find a figures/ folder that has subfolders for each chapter. Most of the figures were drawn in Microsoft PowerPoint or Tracing. In particular, the .pptx file will have almost all of the figures in a format that is easy to move into a presentation.
-
-The textbook is available in PDF, but anyone is welcome to compile their own version including or excluding chapters. This is done by modifying the file /tex/BuildingModelsToDescribeOurWorld.tex. The following chapters are included in the textbook by default:
-
-1. The scientific method and physics
-2. Comparing model and experiment
-3. Describing motion in one dimension
-4. Describing motion in multiple dimensions
+1. [The scientific method and physics](#chap:introduction)
+2. [Comparing model and experiment](#chap:modelandexperiment)
+3. [Vectors](#chap:vectors)
+4. [Linear momentum and the centre of mass](#chap:momentumandcm)
 5. Newton's Laws
 6. Applying Newton's Laws
 7. Work and energy
 8. Potential energy and conservation of energy
 9. Gravity
-10. Linear momentum and the centre of mass
-11. Rotational dynamics
-12. Rotational energy and momentum
-13. Simple harmonic motion
-14. Waves
-15. Fluid mechanics
-16. Electric charges and fields
-17. Gauss' Law
-18. Electric potential
-19. Electric current
-20. Electric circuits
-21. The magnetic force
-22. Sources of magnetic field
-23. Electromagnetic induction
-24. The theory of Special Relativity
-25. Appendix A: Vectors
-26. Appendix B: Calculus
+10. Rotational dynamics
+11. Rotational energy and momentum
+12. Simple harmonic motion
+13. Waves
+14. Fluid mechanics
+15. Electric charges and fields
+16. Gauss' Law
+17. Electric potential
+18. Electric current
+19. Electric circuits
+20. The magnetic force
+21. Sources of magnetic field
+22. Electromagnetic induction
+23. The theory of Special Relativity
+24. [Appendix A: Calculus](#app:calculus)
+25. [Appendix B: An Introduction to Visual Python](#app:visualpython)
 27. Appendix C: Guidelines for lab related activities
 28. Appendix D: The python programming language
 
