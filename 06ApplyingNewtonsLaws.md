@@ -21,7 +21,7 @@ Newton's Laws are meant to describe "point particles", that is, objects that can
 :::
 
 :::{note} Think About It
-If a person swings on a swing where the ropes are damaged, where are the ropes most likely to break? }
+If a person swings on a swing where the ropes are damaged, where are the ropes most likely to break?
 1.  at the bottom of the trajectory, when the speed is the greatest. 
 2.  at the top of the trajectory, when the speed is zero.
 3.  at the point in the trajectory where the speed is one half of its maximal value.
@@ -30,13 +30,13 @@ If a person swings on a swing where the ropes are damaged, where are the ropes m
 1.
 :::
 
-## Statics
+# Statics
 When using Newton's Laws to model an object, one can identify two broad categories of situations: static and dynamic. In static situations, the acceleration of the object is zero. By Newton's Second Law, this means that the vector sum of the forces (and torques, as we will see in a later chapter) exerted on an object must be zero. In dynamic situations, the acceleration of the object is non-zero. 
 
 For static problems, since the acceleration vector is zero, we can choose a coordinate system in a way that results in as many forces as possible being aligned with the axes (so that we minimize the number of forces that we need to break up into components).
 
 :::{note} Example
-You push horizontally with a force $\vec F$ on a box of mass $m$ that is resting against a vertical wall, as shown in [](#fig:applyingnewtonslaws:blockwall). The coefficient of static friction between the wall and the box is $\mu_s$. What is the minimum magnitude of the force that you must exert for the box to remain stationary?}
+You push horizontally with a force $\vec F$ on a box of mass $m$ that is resting against a vertical wall, as shown in [](#fig:applyingnewtonslaws:blockwall). The coefficient of static friction between the wall and the box is $\mu_s$. What is the minimum magnitude of the force that you must exert for the box to remain stationary?
 ```{figure} figures/ApplyingNewtonsLaws/blockwall.png
 :label: fig:applyingnewtonslaws:blockwall
 :width: 20%
@@ -44,7 +44,8 @@ You push horizontally with a force $\vec F$ on a box of mass $m$ that is resting
 :alt:  A horizontal force exerted on box that is resting against a wall.
  A horizontal force exerted on box that is resting against a wall.
 ```
-
+:::{note} Solution
+:class: dropdown
 Since the acceleration of the box is zero, the vector sum of the forces exerted on the box is zero. We start by identifying the forces exerted on the box; these are:
 1.  $\vec F$, the horizontal force that you exert on the box.
 2.  $\vec F_g$, the weight of the box, with magnitude $mg$.
@@ -86,11 +87,10 @@ Although we used the lesser than or equal to sign in the above equations, we cou
 * The dimension of $mg/\mu_s$ is force.
 * If the mass of the box is increased, then one needs to push harder against the box to keep it up.
 * If the coefficient of static friction, $\mu_s$, is increased, one does not need to push as hard. 
-
 :::
 
-## Linear motion
-We can describe the motion of an object whose \textit{velocity vector does not continuously change direction} as "linear" motion. For example, an object that moves along a straight line in a particular direction, then abruptly changes direction and continues to move in a straight line can be modelled as undergoing linear motion over two different segments (which we would model individually). An object moving around a circle, with its velocity vector continuously changing direction, would not be considered to be undergoing linear motion. For example, paths of objects undergoing linear and non-linear motion are illustrated in [](#fig:applyingnewtonslaws:linearmotion).
+# Linear motion
+We can describe the motion of an object whose *velocity vector does not continuously change direction* as "linear" motion. For example, an object that moves along a straight line in a particular direction, then abruptly changes direction and continues to move in a straight line can be modelled as undergoing linear motion over two different segments (which we would model individually). An object moving around a circle, with its velocity vector continuously changing direction, would not be considered to be undergoing linear motion. For example, paths of objects undergoing linear and non-linear motion are illustrated in [](#fig:applyingnewtonslaws:linearmotion).
 ```{figure} figures/ApplyingNewtonsLaws/linearmotion.png
 :label: fig:applyingnewtonslaws:linearmotion
 :width: 30%
@@ -208,12 +208,10 @@ v_0^2&=2a_2x\\
 * If we make $\mu_{k1}$ bigger, then $x$ will be smaller: if we increase friction on the incline, the block will have a smaller acceleration and smaller speed at the bottom.
 * If we increase the friction with the horizontal plane (increase $\mu_{k2}$), then $x$ will be reduced (it won't slide as far if there is more friction on the horizontal plane).
 * If we increase $\theta$, the numerator will be larger, so $x$ will increase (the block will accelerate more down a steeper incline and end up further).
- 
-
-:::
+ :::
 
 :::{tip} Checkpoint
-A present is placed at rest on a plane that is inclined, at a distance $L$ from the bottom of the incline, much like the box in [](#ex:applyingnewtonslaws:block) above. At the bottom of the incline, the box is determined to have a speed $v$. If the box is instead released from a distance of $4L$ from the bottom of the incline, what will its speed at the bottom of the incline be?}
+A present is placed at rest on a plane that is inclined, at a distance $L$ from the bottom of the incline, much like the box in [](#ex:applyingnewtonslaws:block) above. At the bottom of the incline, the box is determined to have a speed $v$. If the box is instead released from a distance of $4L$ from the bottom of the incline, what will its speed at the bottom of the incline be?
 1.  $v$
 2.  $2v$
 3.  $4v$
@@ -224,7 +222,7 @@ A present is placed at rest on a plane that is inclined, at a distance $L$ from 
 :::
 
 
-### Modelling situations where forces change magnitude
+## Modelling situations where forces change magnitude
 So far, the models that we have considered involved forces that remained constant in magnitude. In many cases, the forces exerted on an object can change magnitude and direction. For example, the force exerted by a spring changes as the spring changes length or the force of drag changes as the object changes speed. In these case, even if the object undergoes linear motion, we need to break up the motion into many small segments over which we can assume that the forces are constant. If the forces change continuously, we will need to break up the motion into an infinite number of segments and use calculus.
 
 Consider the block of mass $m$ that is shown in [](#fig:applyingnewtonslaws:blockvaryingforce), which is sliding along a frictionless horizontal surface and has a  horizontal force $\vec F(x)$ exerted on it. The force has a different magnitude in the three segments of length $\Delta x$ that are shown. If the block starts at position $x=x_0$ axis with speed $v_0$, we can find, for example, its speed at position $x_3=3\Delta x$, after the block travelled through the three segments.
@@ -257,9 +255,9 @@ The forces are illustrated in the free-body diagram show in [](#fig:applyingnewt
 :label: fig:applyingnewtonslaws:blockvaryingforce_fbd
 :width: 20%
 :align: center
-:alt:  Free-body diagram for the block shown in Figure \ref{fig:applyingnewtonslaws:blockvaryingforce
- Free-body diagram for the block shown in Figure \ref{fig:applyingnewtonslaws:blockvaryingforce
-```.}
+:alt:  Free-body diagram for the block shown in [](#fig:applyingnewtonslaws:blockvaryingforce).
+ Free-body diagram for the block shown in [](#fig:applyingnewtonslaws:blockvaryingforce).
+```
 
 Newton's Second Law can be used to determine the acceleration of the block for each of the three segments, since the forces are constant within one segment. For all three segments, the $y$ component of Newton's Second Law just tells us that the normal force exerted by the ground is equal in magnitude to the weight of the block. The $x$ component of Newton's Second Law gives the acceleration:
 ```{math}
@@ -336,17 +334,18 @@ V^2 &= v_0^2+ 2\int_{x_0}^{X}adx\\
 \therefore V^2- v_0^2 &= 2a(X-x_0)
 ```
 
-%Example with spring, example with drag and terminal velocity
 :::{note} Example
-:label: ex:applyingnewtonslaws:blockspring```{figure} figures/ApplyingNewtonsLaws/blockspring.png
+:label: ex:applyingnewtonslaws:blockspring
+```{figure} figures/ApplyingNewtonsLaws/blockspring.png
 :label: fig:applyingnewtonslaws:blockspring
 :width: 40%
 :align: center
 :alt:  A block is launched along a frictionless surface by compressing a spring by a distance $D$. The top panel shows the spring when at rest, and the bottom panel shows the spring compressed by a distance $D$ just before releasing the block.
  A block is launched along a frictionless surface by compressing a spring by a distance $D$. The top panel shows the spring when at rest, and the bottom panel shows the spring compressed by a distance $D$ just before releasing the block.
 ```
-A block of mass $m$ can slide freely along a frictionless surface. A horizontal spring, with spring constant, $k$, is attached to a wall on one end, while the other end can move freely, as shown in [](#fig:applyingnewtonslaws:blockspring). A coordinate system is defined such that the $x$ axis is horizontal and the free end of the spring is at $x=0$ when the spring is at rest. The block is pushed against the spring so that the spring is compressed by a distance $D$. The block is then released. What speed will the block have when it leaves the spring?}
-
+A block of mass $m$ can slide freely along a frictionless surface. A horizontal spring, with spring constant, $k$, is attached to a wall on one end, while the other end can move freely, as shown in [](#fig:applyingnewtonslaws:blockspring). A coordinate system is defined such that the $x$ axis is horizontal and the free end of the spring is at $x=0$ when the spring is at rest. The block is pushed against the spring so that the spring is compressed by a distance $D$. The block is then released. What speed will the block have when it leaves the spring?
+:::{note} Solution
+:class: dropdown
 As you recall, the force exerted by a spring depends on the compression or extension of the spring and is given by Hooke's Law:
 ```{math}
 \vec F(x) = -kx\hat x
@@ -392,9 +391,10 @@ which gives the same value for $V$. As we will see in a later chapter, kinetic a
 :::
 
 :::{note} Example
-An object of mass $m$ is released from rest out of a helicopter. The drag (air-resistance) on the object can be modelled as having a magnitude given by $bv$, where $v$ is the speed of the object and $b$ is a constant of proportionality. How does the velocity of the object depend on time?}
-
 :label: ex:applyingnewtonslaws:drag
+An object of mass $m$ is released from rest out of a helicopter. The drag (air-resistance) on the object can be modelled as having a magnitude given by $bv$, where $v$ is the speed of the object and $b$ is a constant of proportionality. How does the velocity of the object depend on time?
+:::{note} Solution
+:class: dropdown
 As the object falls through the air, the forces exerted on the object are:
 1.  $F_g$, its weight, with magnitude $mg$, exerted downwards.
 2.  $F_d$, the force of drag, with magnitude $bv$, exerted upwards. 
@@ -450,13 +450,13 @@ v(t)-\frac{mg}{b} &= -\frac{mg}{b}e^{-\frac{b}{m}t}\\
 :label: fig:applyingnewtonslaws:drag_vt
 :width: 70%
 :align: center
-:alt:  Velocity as a function of time for an object of mass $m={\rm 10{kg}}$ which is free-falling from rest with a drag coefficient $b=\SI{0.5}{Ns/m}$.}
+:alt:  Velocity as a function of time for an object of mass $m={\rm 10{kg}}$ which is free-falling from rest with a drag coefficient $b=0.5 {\rm Ns/m}$.}
  Velocity as a function of time for an object of mass $m={\rm 10{kg}}$ which is free-falling from rest with a drag coefficient $b={\rm{0.5}{Ns/m}}$.
 ``` 
 :::
 
-## Uniform circular motion
-As we saw in Chapter \ref{chapter:describingmotioninnd}, "uniform circular motion" is defined to be motion along a circle with constant speed. This may be a good time to review Section \ref{sec:describingmotioninnd:circularmotion} for the kinematics of motion along a circle. In particular, for the uniform circular motion of an object around a circle of radius $R$, you should recall that:
+# Uniform circular motion
+As we saw in [Chapter %s](#chap:describingmotioninnd), "uniform circular motion" is defined to be motion along a circle with constant speed. This may be a good time to review [Section %s](#sec:describingmotioninnd:circularmotion) for the kinematics of motion along a circle. In particular, for the uniform circular motion of an object around a circle of radius $R$, you should recall that:
 * The velocity vector, $\vec v$, is always tangent to the circle.
 * The acceleration vector, $\vec a$, is always perpendicular to the velocity vector, because the magnitude of the velocity vector does not change.
 * The acceleration vector, $\vec a$, always points towards the centre of the circle.
@@ -488,8 +488,8 @@ The forces are depicted in the free-body diagram shown in [](#fig:applyingnewton
 :label: fig:applyingnewtonslaws:circleH_fbd
 :width: 25%
 :align: center
-:alt:  Free-body diagram (side view) for the object from Figure \ref{fig:applyingnewtonslaws:circleH_fbd
- Free-body diagram (side view) for the object from Figure \ref{fig:applyingnewtonslaws:circleH_fbd
+:alt:  Free-body diagram (side view) for the object from [](#fig:applyingnewtonslaws:circleH_fbd)
+ Free-body diagram (side view) for the object from [](#fig:applyingnewtonslaws:circleH_fbd)
 ``` undergoing uniform circular motion.}
 Writing out the $x$ and $y$ components of Newton's Second Law:
 ```{math}
@@ -509,7 +509,7 @@ Thus, we find that the tension in the string increases with the square of the sp
 :align: center
 :alt:  Possible trajectories (in red) that the block will follow if the string breaks.
 Possible trajectories (in red) that the block will follow if the string breaks.```
-An object is undergoing uniform circular motion in the horizontal plane, when the string connecting the object to the centre of rotation suddenly breaks. What path will the block take after the string broke?}
+An object is undergoing uniform circular motion in the horizontal plane, when the string connecting the object to the centre of rotation suddenly breaks. What path will the block take after the string broke?
 1.  A
 2.  B 
 3.  C
@@ -520,6 +520,7 @@ An object is undergoing uniform circular motion in the horizontal plane, when th
 :::
 
 :::{note} Example
+:label: ex:applyingnewtonslaws:car
 ```{figure} figures/ApplyingNewtonsLaws/car.png
 :label: fig:applyingnewtonslaws:car
 :width: 25%
@@ -527,8 +528,9 @@ An object is undergoing uniform circular motion in the horizontal plane, when th
 :alt:  A car going around a curve that can be approximated as the arc of a circle of radius $R$.
  A car going around a curve that can be approximated as the arc of a circle of radius $R$.
 ```
-:label: ex:applyingnewtonslaws:carA car goes around a curve which can be approximated as the arc of a circle of radius $R$, as shown in [](#fig:applyingnewtonslaws:car). The coefficient of static friction between the tires of the car and the road is $\mu_s$. What is the maximum speed with which the car can go around the curve without skidding? }
-
+A car goes around a curve which can be approximated as the arc of a circle of radius $R$, as shown in [](#fig:applyingnewtonslaws:car). The coefficient of static friction between the tires of the car and the road is $\mu_s$. What is the maximum speed with which the car can go around the curve without skidding?
+:::{note} Solution
+:class: dropdown
 If the car is going at constant speed around a circle, then the sum of the forces on the car must be directed towards the centre of the circle. The only force on the car that could be directed towards the centre of the circle is the force of friction between the tires and the road. If the road were perfectly slick (think driving in icy conditions), it would not be possible to drive around a curve since there could be no force of friction. The forces on the car are:
 1.  $\vec F_g$, its weight with magnitude $mg$.
 2.  $\vec N$, a normal force exerted upwards by the road.
@@ -564,7 +566,6 @@ Thus, if the speed is less than $\sqrt{\mu_s g R}$, the car will not skid and th
 * The dimension of $\sqrt{\mu_s g R}$ is speed.
 * The speed is larger if the radius of the curve is larger (one can go faster around a wider curve without skidding).
 * The speed is larger if the coefficient of friction is large (if the force of friction is larger, a larger radial acceleration can be sustained).
-
 :::
 
 :::{note} Example
@@ -575,8 +576,9 @@ Thus, if the speed is less than $\sqrt{\mu_s g R}$, the car will not skid and th
 :alt:  A ball attached to a string undergoing circular motion in a vertical plane.
  A ball attached to a string undergoing circular motion in a vertical plane.
 ```
-A ball is attached to a mass-less string and executing circular motion along a circle of radius $R$ that is in the vertical plane, as depicted in [](#fig:applyingnewtonslaws:circleV). Can the speed of the ball be constant? What is the minimum speed of the ball at the top of the circle if it is able to make it around the circle?}
-
+A ball is attached to a mass-less string and executing circular motion along a circle of radius $R$ that is in the vertical plane, as depicted in [](#fig:applyingnewtonslaws:circleV). Can the speed of the ball be constant? What is the minimum speed of the ball at the top of the circle if it is able to make it around the circle?
+:::{note} Solution
+:class: dropdown
 The forces that are acting on the ball are:
 1.  $\vec F_g$, its weight with magnitude $mg$.
 2.  $\vec T$, a force of tension exerted by the string.
@@ -611,11 +613,10 @@ which is the minimum speed at the top of the trajectory for the ball to be able 
 * $\sqrt{gR}$ has the dimension of speed.
 * The minimum velocity is larger if the circle has a larger radius (try this with a mass attached at the end of a string). 
 * The minimum velocity is larger if the mass is bigger (again, try this at home!). 
-
 :::
 
 :::{tip} Checkpoint
-Consider a ball attached to a string, being spun in a vertical circle (such as the one depicted in [](#fig:applyingnewtonslaws:circleV)). If you shortened the string, how would the minimum angular velocity (measured at the top of the trajectory) required for the ball to make it around the circle change? }
+Consider a ball attached to a string, being spun in a vertical circle (such as the one depicted in [](#fig:applyingnewtonslaws:circleV)). If you shortened the string, how would the minimum angular velocity (measured at the top of the trajectory) required for the ball to make it around the circle change?
 1.  It would decrease 
 2.  It would stay the same
 3.  It would increase
@@ -624,8 +625,8 @@ Consider a ball attached to a string, being spun in a vertical circle (such as t
 1.
 :::
 
-### Banked curves
-As we saw in [](#ex:applyingnewtonslaws:car), there is a maximum speed with which a car can go around a curve before it starts to skid. You may have noticed that roads, highways especially, are banked where there are curves. Racetracks for cars that go around an oval (the boring kind of car races) also have banked curves. As we will see, this allows the speed of vehicles to be higher when going around the curve; or rather, it makes the curves safer as the speed at which vehicles \textit{would} skid is higher. In [](#ex:applyingnewtonslaws:car), we saw that it was the force of static friction between the tires of the car and the road that provided the only force with a component towards the centre of the circle. The idea of using a banked curve is to change the direction of the normal force between the road and the car tires so that it, too, has a component in the direction towards the centre of the circle. 
+## Banked curves
+As we saw in [](#ex:applyingnewtonslaws:car), there is a maximum speed with which a car can go around a curve before it starts to skid. You may have noticed that roads, highways especially, are banked where there are curves. Racetracks for cars that go around an oval (the boring kind of car races) also have banked curves. As we will see, this allows the speed of vehicles to be higher when going around the curve; or rather, it makes the curves safer as the speed at which vehicles *would* skid is higher. In [](#ex:applyingnewtonslaws:car), we saw that it was the force of static friction between the tires of the car and the road that provided the only force with a component towards the centre of the circle. The idea of using a banked curve is to change the direction of the normal force between the road and the car tires so that it, too, has a component in the direction towards the centre of the circle. 
 
 Consider the car depicted in [](#fig:applyingnewtonslaws:carbank) which is seen from behind making a left turn around a curve that is banked by an angle $\theta$ with respect to the horizontal and can be modelled as an arc from a circle of radius $R$.
 ```{figure} figures/ApplyingNewtonsLaws/carbank.png
@@ -638,9 +639,9 @@ Consider the car depicted in [](#fig:applyingnewtonslaws:carbank) which is seen 
 The forces exerted on the car are the same as in [](#ex:applyingnewtonslaws:car), except that they point in different directions. The forces are:
 1.  $\vec F_g$, its weight with magnitude $mg$.
 2.  $\vec N$, a normal force exerted by the road, perpendicular to the surface of the road.
-3.  $\vec f_s$, a force of static friction between the tires and the road. This is static friction, because the surface of the tire does not move relative to the surface of the road if the car is not skidding. The force of static friction has a magnitude that is at most $f_s\leq\mu_sN$ and is perpendicular to the normal force. The force could be either upwards or downwards, \textit{depending on the other forces on the car}.
+3.  $\vec f_s$, a force of static friction between the tires and the road. This is static friction, because the surface of the tire does not move relative to the surface of the road if the car is not skidding. The force of static friction has a magnitude that is at most $f_s\leq\mu_sN$ and is perpendicular to the normal force. The force could be either upwards or downwards, *depending on the other forces on the car*.
  
-A free-body diagram for the forces on the car is shown in [](#fig:applyingnewtonslaws:carbank_fbd), along with the acceleration (which is in the radial direction, towards the centre of the circle), and our choice of coordinate system (choosing $x$ parallel to the acceleration). The direction of the force of static friction is not known \textit{a priori} and depends on the speed of the car:
+A free-body diagram for the forces on the car is shown in [](#fig:applyingnewtonslaws:carbank_fbd), along with the acceleration (which is in the radial direction, towards the centre of the circle), and our choice of coordinate system (choosing $x$ parallel to the acceleration). The direction of the force of static friction is not known *a priori* and depends on the speed of the car:
 * If the speed of the car is zero, the force of static friction is upwards. With a speed of zero, the radial acceleration is zero, and the sum of the forces must thus be zero. The impeding motion of the car would be to slide down the banked curve (just like a block on an incline).
 * If the speed of the car is very large, the force of static friction is downwards, as the impeding motion of the car would be to slide up the bank. The natural motion of the car is to go in a straight line (Newton's First Law). If the components of the normal force and of the force of static friction directed towards the centre of the circle are too small to allow the car to turn, then the car would slide up the bank (so the impeding motion is up the bank and the force of static friction is downwards).
 
@@ -664,7 +665,7 @@ Let us model the situation where the force of static friction is identically zer
 \sum F_y &= N\cos\theta-F_g = 0\nonumber\\
 \therefore N\cos\theta&=mg
 ```
-We can divide Equation \ref{eq:applyingnewtonslaws:carbank_x} by Equation \ref{eq:applyingnewtonslaws:carbank_y}, noting that $\tan\theta=\sin\theta/\cos\theta$, to obtain:
+We can divide Equation {eq}`eq:applyingnewtonslaws:carbank_x` by Equation {eq}`eq:applyingnewtonslaws:carbank_y`, noting that $\tan\theta=\sin\theta/\cos\theta$, to obtain:
 ```{math}
 \tan\theta &= \frac{v^2}{gR}\\
 \therefore v_{ideal} &=\sqrt{gR\tan\theta}
@@ -672,7 +673,7 @@ We can divide Equation \ref{eq:applyingnewtonslaws:carbank_x} by Equation \ref{e
 At this speed, the force of static friction is zero. In practice, one would use this equation to determine which bank angle to use when designing a road, so that the ideal speed is around the speed limit or the average speed of traffic. We leave it as an exercise to determine the maximal speed that the car can go around the curve before sliding out.
 
 
-### Inertial forces in circular motion
+## Inertial forces in circular motion
 As you sit in a car that is going around a curve, you will feel pushed outwards, away from the centre of the circle that the car is going around. This is because of your inertia (Newton's First Law), and your body would go in a straight line if the car were not exerting a net force on you towards the centre of the circle. You are not so much feeling a force that is pushing you outwards as you are feeling the effects of the car seat pushing you inwards; if you were leaning against the side of the car that is on the outside of the curve, you would feel the side of the car pushing you inwards towards the centre of the curve, even if it "feels" like you are pushing outwards against the side of the car.
 
 If we model your motion looking at you from the ground, we would include a force of friction between the car seat (or the side of the car, or both) and you that is pointing towards the centre of the circle, so that the sum of the forces exerted on you is towards the centre of the circle. We can also model your motion from the non-inertial frame of the car. As you recall, because this is a non-inertial frame of reference, we need to include an additional inertial force, $\vec F_I$, that points opposite of the acceleration of the car, with magnitude $F_I=ma_R$ (if the net acceleration of the car is $a_R$). Inside the non-inertial frame of reference of the car, your acceleration (relative to the reference frame, i.e. the car) is zero. This is illustrated by the diagrams in [](#fig:applyingnewtonslaws:carinertial).
@@ -701,7 +702,7 @@ In the frame of reference of the car, where your acceleration is zero and an ine
 which of course, mathematically, is exactly equivalent. The inertial force is not a real force in the sense that it is not exerted by anything. It only comes into play because we are trying to use Newton's Laws in a non-inertial frame of reference. However, it does provide a good model for describing the sensation that we have of being pushed outwards when the car goes around a curve. Sometimes, people will refer to this force as a "centrifugal" force, which means "a force that points away from the centre". You should however remember that this is not a real force exerted on the object, but is the result of modelling motion in a non-inertial frame of reference.
 
 :::{tip} Checkpoint
-Jamie is driving his tricycle around a circular pond. Jamie feels a centrifugal force with magnitude $F_I$. If Jamie pedals twice as fast, what will be the magnitude of the centrifugal force that he experiences?}
+Jamie is driving his tricycle around a circular pond. Jamie feels a centrifugal force with magnitude $F_I$. If Jamie pedals twice as fast, what will be the magnitude of the centrifugal force that he experiences?
 1.  $\sqrt{2}F_I$
 2.  $\frac{1}{2}F_I$
 3.  $2F_I$
@@ -711,7 +712,7 @@ Jamie is driving his tricycle around a circular pond. Jamie feels a centrifugal 
 4.
 :::
 
-## Non-uniform circular motion
+# Non-uniform circular motion
 In non-uniform circular motion, an object's motion is along a circle, but the object's speed is not constant. In particular, the following will be true
 * The object's velocity vector is always tangent to the circle.
 * The speed and angular speed of the object are not constant.
@@ -736,7 +737,9 @@ a_T = \frac{dv}{dt}
 :alt: An ant on a horizontal turntable that is starting to spin, as seen from above.
 An ant on a horizontal turntable that is starting to spin, as seen from above.
 ```
-A small ant is sleeping on a turntable just as the turntable starts to spin from rest, with an angular acceleration $\alpha=\SI{1}{rad/s^2}$ that is small enough so that, initially, the ant remains on the turntable. The ant is a distance $R=\SI{0.1}{m}$ from the centre of the turntable, as shown in [](#fig:applyingnewtonslaws:ant)  and the coefficient of static friction between the ant's "feet" and the turntable is $\mu_s=0.5$. After how much time will the ant slide off from the turntable?}
+A small ant is sleeping on a turntable just as the turntable starts to spin from rest, with an angular acceleration $\alpha=1 {\rm rad/s^2}$ that is small enough so that, initially, the ant remains on the turntable. The ant is a distance $R=0.1 {\rm m}$ from the centre of the turntable, as shown in [](#fig:applyingnewtonslaws:ant)  and the coefficient of static friction between the ant's "feet" and the turntable is $\mu_s=0.5$. After how much time will the ant slide off from the turntable?
+:::{note} Solution
+:class: dropdown
 As the turntable accelerates, the force of static friction between the turntable and the ant will keep the ant moving with the turntable. Once the turntable is going fast enough, the force of friction will no longer be large enough to provide the total acceleration that is required to keep the ant moving with the turntable (with a constant tangential component of the acceleration and an increasing radial component of the acceleration). 
 
 The forces on the ant are:
@@ -792,17 +795,17 @@ We can use the $y$ component to determine the angle $\theta$:
 f_s\sin\theta &= m\alpha R\\
 \mu_sg\sin\theta &= \alpha R\\
 \therefore \sin\theta &= \frac{\alpha R}{\mu_s g}\\
-\therefore \theta &= \sin^{-1}\left( \frac{\alpha R}{\mu_s g}  \right)=\sin^{-1}\left( \frac{(\SI{1}{rad/s^2})(\SI{0.1}{m})}{(0.5)(\SI{9.8}{N/kg})}  \right)\\
-&=\SI{1.17}{\degree}
+\therefore \theta &= \sin^{-1}\left( \frac{\alpha R}{\mu_s g}  \right)=\sin^{-1}\left( \frac{(1 {\rm rad/s^2})(0.1 {\rm m})}{(0.5)(9.8 {\rm N/kg})}  \right)\\
+&=1.17 {\rm \degree}
 ```
 The angle is very small, and we see that the force of friction is mostly directed towards the centre of the circle. The radial acceleration is thus much larger than the tangential acceleration. We can then use the angle to find the time using the expression we derived above:
 ```{math}
-t &= \sqrt{\frac{\mu_sg\cos\theta}{R\alpha^2}}= \sqrt{\frac{(0.5)(\SI{9.8}{N/kg})\cos(\SI{1.17}{\degree})}{(\SI{0.1}{m})(\SI{1}{rad/s^2})^2}}\\
-&=\SI{7.0}{s}
+t &= \sqrt{\frac{\mu_sg\cos\theta}{R\alpha^2}}= \sqrt{\frac{(0.5)(9.8 {\rm N/kg})\cos(1.17 {\rm \degree})}{(0.1 {\rm m})(1 {\rm rad/s^2})^2}}\\
+&=7.0 {\rm s}
 ```
 :::
 
-## Summary
+# Summary
 
 When the velocity of an object does not change direction continuously ("linear motion"), we can model its motion independently over several segments in such a way that the motion is one dimensional in each segment. This allows us to choose a coordinate system in each segment where the acceleration vector is co-linear with one of the axes.
 
@@ -816,7 +819,7 @@ If an object's speed is changing as it moves around a circle the acceleration ve
 
 In a reference frame that is rotating about a circle, an inertial force, sometimes called the centrifugal force, appears to push all objects co-moving with the reference frame towards the outside of the circle.
 
-## Thinking about the material
+# Thinking about the material
 :::{seealso} Reflect and research
 * Is there a maximum speed with which an object can spin? (Something about the thing eventually flying apart if it rotates too fast, as the atoms can not be held together at some point - maybe there is a cool video to look up?)
 :::
@@ -834,15 +837,16 @@ In a reference frame that is rotating about a circle, an inertial force, sometim
 :::
 
 
-### Problems and Solutions
-%Conical pendulum, roller coaster (speed at the top) 
+# Sample problems and solutions
 
-\begin{problemParts}{soln:applyingnewtonslaws:pendulum}{:label: prob:applyingnewtonslaws:pendulum Consider a conical pendulum with a mass $m$, attached to a string of length $L$. The mass executes uniform circular motion in the horizontal plane, about a circle of radius $R$, as shown in [](#fig:applyingnewtonslaws:conicalpendulum). One can think of the horizontal circle and the point where the string is attached to as forming a cone. The circular motion is such that the (constant) angle between the string and the vertical is $\theta$.}{
-\item Derive an expression for the tension in the string.
-\item Derive an expression for the speed of the mass.
-\item Derive an expression for the period of the motion.
-}
-\end{problemParts}
+## Problems
+
+:::{note} Problem 6.1
+:label: prob:applyingnewtonslaws:pendulum
+Consider a conical pendulum with a mass $m$, attached to a string of length $L$. The mass executes uniform circular motion in the horizontal plane, about a circle of radius $R$, as shown in [](#fig:applyingnewtonslaws:conicalpendulum). One can think of the horizontal circle and the point where the string is attached to as forming a cone. The circular motion is such that the (constant) angle between the string and the vertical is $\theta$.
+* a. Derive an expression for the tension in the string.
+* b.  Derive an expression for the speed of the mass.
+* c. Derive an expression for the period of the motion.
 
 ```{figure} figures/ApplyingNewtonsLaws/conicalpendulum.png
 :label: fig:applyingnewtonslaws:conicalpendulum
@@ -851,8 +855,11 @@ In a reference frame that is rotating about a circle, an inertial force, sometim
 :alt:  The conical pendulum.
  The conical pendulum.
 ```
+:::
 
-\begin{problem}{soln:applyingnewtonslaws:rollercoaster}{:label: prob:applyingnewtonslaws:rollercoaster Barb and Kenny are going to the amusement park. Barb insists on riding the giant roller coaster, but Kenny is scared that they will fall out of the roller coaster at the top of the loop. Barb reassures Kenny by asking the roller coaster technician for more information. The technician says that they will be travelling at $\SI{15}{m/s}$ when upside down, and that the roller coaster loop has a radius of $\SI{22}{m}$. Kenny is still sceptical. Is he correct in being sceptical?}
+:::{note} Problem 6.2
+:label: prob:applyingnewtonslaws:rollercoaster
+Barb and Kenny are going to the amusement park. Barb insists on riding the giant roller coaster, but Kenny is scared that they will fall out of the roller coaster at the top of the loop. Barb reassures Kenny by asking the roller coaster technician for more information. The technician says that they will be travelling at $15 {\rm m/s}$ when upside down, and that the roller coaster loop has a radius of $22 {\rm m}$. Kenny is still sceptical. Is he correct in being sceptical?
 ```{figure} figures/ApplyingNewtonsLaws/rollercoaster.png
 :label: fig:applyingnewtonslaws:rollercoaster
 :width: 60%
@@ -860,13 +867,14 @@ In a reference frame that is rotating about a circle, an inertial force, sometim
 :alt:  The roller coaster
  The roller coaster
 ```
-\end{problem}
+:::
 
+## Solutions
+:::{note} Solution 6.1
+:label: soln:applyingnewtonslaws:pendulum 
+:class: dropdown
 
-### Solutions
-\begin{solution}{prob:applyingnewtonslaws:pendulum}:label: soln:applyingnewtonslaws:pendulum 
-\begin{enumerate}[label=\alph*)]
-\item We start by identifying the forces that are acting on the mass. These are:
+* a. We start by identifying the forces that are acting on the mass. These are:
 * $\vec F_g$, its weight, with a magnitude $mg$.
 * $\vec F_T$, a force of tension exerted by the string.
 
@@ -885,7 +893,7 @@ F_T\cos\theta -F_g&=0 \\
 F_T\cos\theta&=mg \\
 \therefore F_T&=\frac{mg}{\cos\theta} \\
 ```
-\item In order for the mass to move in a circle, the net force must be directed towards the centre of the circle at all times. The $x$ component of Newton's Second Law, combined with our expression for the magnitude of the tension, $F_T$, allows us to determine the speed of the mass:
+* b. In order for the mass to move in a circle, the net force must be directed towards the centre of the circle at all times. The $x$ component of Newton's Second Law, combined with our expression for the magnitude of the tension, $F_T$, allows us to determine the speed of the mass:
 ```{math}
 \sum F_x&=ma_r \\
 F_T\sin\theta&=m\frac{v^2}{R}\\
@@ -893,25 +901,25 @@ F_T\sin\theta&=m\frac{v^2}{R}\\
 g\tan\theta&=\frac{v^2}{R}\\
 \therefore v &= \sqrt{gR\tan\theta}
 ```
-\item Now that we know the speed, we can easily find the period, $T$, of the motion:
+* c. Now that we know the speed, we can easily find the period, $T$, of the motion:
 ```{math}
 T&=\frac{2\pi R}{v} \\
 &=\frac{2\pi R}{\sqrt{gR\tan\theta }}=2\pi\sqrt{\frac{R}{g\tan\theta}}
 ```
+:::
 
-\end{enumerate}
-\end{solution}
-
-\begin{solution}{prob:applyingnewtonslaws:rollercoaster}:label: soln:applyingnewtonslaws:rollercoaster 
+:::{note} Solution 6.2
+:label: soln:applyingnewtonslaws:rollercoaster 
+:class: dropdown
 We need to determine if the speed of Barb and Kenny is large enough for them to go around the circle. The minimum speed that they must have at the top of the loop is such that their weight (the only force acting on them) provides the centripetal (net) force required to go around the loop. 
 
 Writing Newton's Second Law in the vertical direction, for the case where only the weight acts on Barb or Kenny (mass $m$), when they are going at speed $v$
 ```{math}
 mg &= ma_R = m\frac{v^2}{R}\\
-\therefore v &= \sqrt{gR} = \sqrt{(\SI{9.8}{m/s^2})(\SI{22}{m})}=\SI{14.68}{m/s}
+\therefore v &= \sqrt{gR} = \sqrt{(9.8 {\rm m/s^2})(22 {\rm m})}=14.68 {\rm m/s}
 ```
-This corresponds to the minimum speed that they must have at the top of the loop to make it around. If they go faster, the normal force from their seat (downwards, since they are upside-down), would result in a larger net force towards the centre of the circle. This situation corresponds to the normal force from their seat just barely reaching 0 at the top of the loop. Since the roller coaster is quoted as having a speed of $\SI{15}{m/s}$ at the top of the loop, they will just barely make it. However, this is way too close to the minimal speed to not fall out of the roller coaster, so Kenny is correct in being sceptical! The engineers designing the roller coaster should include a much bigger safety margin! 
-\end{solution}
+This corresponds to the minimum speed that they must have at the top of the loop to make it around. If they go faster, the normal force from their seat (downwards, since they are upside-down), would result in a larger net force towards the centre of the circle. This situation corresponds to the normal force from their seat just barely reaching 0 at the top of the loop. Since the roller coaster is quoted as having a speed of $15 {\rm m/s}$ at the top of the loop, they will just barely make it. However, this is way too close to the minimal speed to not fall out of the roller coaster, so Kenny is correct in being sceptical! The engineers designing the roller coaster should include a much bigger safety margin! 
+:::
 
 
 

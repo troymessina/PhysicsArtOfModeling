@@ -74,14 +74,14 @@ The condition for a force to be conservative is thus:
 since this means that the work done over a closed path is zero. The condition for this integral to be zero can be found by Stokes' Theorem:
 
 ```{math}
-\oint \vec F(\vec r) \cdot d\vec l = \int_S \left[\left(\frac{\partial F_z}{\partial y}-\frac{\partial F_y}{\partial z}\right)\hat x+ \left(\frac{\partial F_x}{\partial z}-\frac{\partial F_z}{\partial x}\right)\hat y + \left(\frac{\partial F_y}{\partial x}-\frac{\partial F_x}{\partial y}\right)\hat z \right]\cdot d\vec A
+\oint \vec F(\vec r) \cdot d\vec l = \int_S \left[\left(\die{F_z}{y}-\die{F_y}{z}\right)\hat x+ \left(\die{F_x}{z}-\die{F_z}{x}\right)\hat y + \left(\die{F_y}{x}-\die{F_x}{y}\right)\hat z \right]\cdot d\vec A
 ```
 where the integral on the right is called a "surface integral" over the surface, $S$, enclosed by the closed path over which the work is being calculated. Don't worry, it is way beyond the scope of this text to understand this integral or Stokes' Theorem in detail! It is however useful in that it gives us the following conditions on the components of a force for that force to be conservative (by requiring the terms in parentheses to be zero):
 ```{math}
 :label: eq:potentialecons:conservative
-\frac{\partial F_z}{\partial y}-\frac{\partial F_y}{\partial z} &= 0 \nonumber\\
-\frac{\partial F_x}{\partial z}-\frac{\partial F_z}{\partial x} &= 0\nonumber\\
-\frac{\partial F_y}{\partial x}-\frac{\partial F_x}{\partial y} &= 0
+\die{F_z}{y}-\die{F_y}{z} &= 0 \nonumber\\
+\die{F_x}{z}-\die{F_z}{x} &= 0\nonumber\\
+\die{F_y}{x}-\die{F_x}{y} &= 0
 ```
 In general:
 1.  A force can be conservative if it only depends on position in space, and not speed, time, or any other quantity.
@@ -116,9 +116,9 @@ conservative? Note that we have defined the $z$ axis to be vertical and positive
 :class: dropdown
 The force is expected to be conservative since it is constant in magnitude and direction. We can verify this using the conditions in [](#eq:potentialecons:conservative):
 ```{math}
-\frac{\partial F_z}{\partial y}-\frac{\partial F_y}{\partial z} &= \frac{\partial }{\partial y}(-mg) - 0 &= 0\\
-\frac{\partial F_x}{\partial z}-\frac{\partial F_z}{\partial x} &= 0 - \frac{\partial }{\partial x}(-mg) &= 0\\
-\frac{\partial F_y}{\partial x}-\frac{\partial F_x}{\partial y} &= 0 - 0 &=0
+\die{F_z}{y}-\die{F_y}{z} &= \die{}{y}(-mg) - 0 &= 0\\
+\die{F_x}{z}-\die{F_z}{x} &= 0 - \die{}{x}(-mg) &= 0\\
+\die{F_y}{x}-\die{F_x}{y} &= 0 - 0 &=0
 ```
 and the force is indeed conservative since all three conditions are zero.
 :::
@@ -134,11 +134,11 @@ Is the following force conservative?
 :class: dropdown
 Since the force only depends on position, it *could* be conservative, so we must check using the conditions from [](#eq:potentialecons:conservative):
 ```{math}
-\frac{\partial F_z}{\partial y}-\frac{\partial F_y}{\partial z} &= \frac{\partial }{\partial y}\left(\frac{-kz}{(x^2+y^2+z^2)^\frac{3}{2}}\right)-\frac{\partial }{\partial z}\left( \frac{-ky}{(x^2+y^2+z^2)^\frac{3}{2}}\right)\\
+\die{F_z}{y}-\die{F_y}{z} &= \die{}{y}\left(\frac{-kz}{(x^2+y^2+z^2)^\frac{3}{2}}\right)-\die{}{z}\left( \frac{-ky}{(x^2+y^2+z^2)^\frac{3}{2}}\right)\\
 &=\frac{3kz(2y)}{2(x^2+y^2+z^2)^\frac{5}{2}}-\frac{3ky(2z)}{2(x^2+y^2+z^2)^\frac{5}{2}} = 0\\
-\frac{\partial F_x}{\partial z}-\frac{\partial F_z}{\partial x} &= \frac{\partial }{\partial z}\left(\frac{-kx}{(x^2+y^2+z^2)^\frac{3}{2}}\right)-\frac{\partial }{\partial x}\left( \frac{-kz}{(x^2+y^2+z^2)^\frac{3}{2}}\right)\\
+\die{F_x}{z}-\die{F_z}{x} &= \die{}{z}\left(\frac{-kx}{(x^2+y^2+z^2)^\frac{3}{2}}\right)-\die{}{x}\left( \frac{-kz}{(x^2+y^2+z^2)^\frac{3}{2}}\right)\\
 &=\frac{3kx(2z)}{2(x^2+y^2+z^2)^\frac{5}{2}}-\frac{3kz(2x)}{2(x^2+y^2+z^2)^\frac{5}{2}} = 0\\
-\frac{\partial F_y}{\partial x}-\frac{\partial F_x}{\partial y} &= \frac{\partial }{\partial x}\left(\frac{-ky}{(x^2+y^2+z^2)^\frac{3}{2}}\right)-\frac{\partial }{\partial y}\left( \frac{-kx}{(x^2+y^2+z^2)^\frac{3}{2}}\right)\\
+\die{F_y}{x}-\die{F_x}{y} &= \die{}{x}\left(\frac{-ky}{(x^2+y^2+z^2)^\frac{3}{2}}\right)-\die{}{y}\left( \frac{-kx}{(x^2+y^2+z^2)^\frac{3}{2}}\right)\\
 &=\frac{3ky(2x)}{2(x^2+y^2+z^2)^\frac{5}{2}}-\frac{3kx(2y)}{2(x^2+y^2+z^2)^\frac{5}{2}} = 0
 ```
 where we used the Chain Rule to take the derivatives. Since all of the conditions are zero, the force is conservative. As we will see, the force represented here is similar mathematically to both the force that Newton introduced in his Universal Theory of Gravity, and the force introduced by Coulomb as the electric force, which are both conservative.
@@ -258,9 +258,9 @@ where the $x$ axis is defined to be co-linear with the spring and the origin is 
 :class: dropdown
 Since the force depends on position, it could be conservative, which we can check with the conditions from [](#eq:potentialecons:conservative):
 ```{math}
-\frac{\partial F_z}{\partial y}-\frac{\partial F_y}{\partial z} &= 0 - 0 &= 0\\
-\frac{\partial F_x}{\partial z}-\frac{\partial F_z}{\partial x} &= \frac{\partial }{\partial z}(-kx)) - 0&= 0\\
-\frac{\partial F_y}{\partial x}-\frac{\partial F_x}{\partial y} &= 0 - \frac{\partial }{\partial y}(-kx)) &=0
+\die{F_z}{y}-\die{F_y}{z} &= 0 - 0 &= 0\\
+\die{F_x}{z}-\die{F_z}{x} &= \die{}{z}(-kx)) - 0&= 0\\
+\die{F_y}{x}-\die{F_x}{y} &= 0 - \die{}{y}(-kx)) &=0
 ```
 and the force is indeed conservative. To determine the potential energy function, let us calculate the work done by the spring from position $x_A$ to position $x_B$:
 ```{math}
@@ -308,9 +308,9 @@ Thus, the force can be obtained from the negative of the potential energy functi
 In three dimensions, the situation is similar, although the potential energy function (and the components of the force vector) will generally depend on all three position coordinates, $x$, $y$, and $z$. In three dimensions, the the three components of the force vector are given by taking the gradient of the negative of the potential energy function[^16]:
 ```{math}
 \vec F(\vec r) &= -\vec\nabla U(\vec r)=-\vec\nabla U(x,y,z)\nonumber\\
-\therefore F_x(x,y,z) &= -\frac{\partial }{\partial x}U(x,y,z)\nonumber\\
-\therefore F_y(x,y,z) &= -\frac{\partial }{\partial y}U(x,y,z)\nonumber\\
-\therefore F_z(x,y,z) &= -\frac{\partial }{\partial z}U(x,y,z)
+\therefore F_x(x,y,z) &= -\die{}{x}U(x,y,z)\nonumber\\
+\therefore F_y(x,y,z) &= -\die{}{y}U(x,y,z)\nonumber\\
+\therefore F_z(x,y,z) &= -\die{}{z}U(x,y,z)
 ```
 
 # Mechanical energy and conservation of energy
@@ -338,9 +338,8 @@ That is, the work done by non-conservative forces is equal to the sum of the cha
 ```
 In particular, note that if there are no non-conservative forces doing work on the object:
 ```{math}
-\boxed{\Delta K + \Delta U = 0}\\
--\Delta U = \Delta K \quad\text{if no non-conservative forces}
-
+\boxed{\Delta K + \Delta U &= 0}\quad\text{if no non-conservative forces}\\
+-\Delta U &= \Delta K \nonumber
 ```
 That is, the sum of the changes in potential and kinetic energies of the object is always zero. This means that if the potential energy of the object increases, then the kinetic energy of the object must decrease by the same amount.
 
@@ -370,7 +369,7 @@ This is what we generally call the "conservation of mechanical energy". If there
 The introduction of mechanical energy gives us a completely different way to think about mechanics. We can now think of an object as having "energy" (potential and/or kinetic), and we can think of forces as changing the energy of the object.
 
 :::{tip} Checkpoint
-Is the value of an an object's mechanical energy meaningful, or is it only the difference in mechanical energy that is meaningful?
+Is the value of an an object's mechanical energy meaningful, or is it only the difference in mechanical energy that is meaningful?}
 1.  Yes, the value of the mechanical energy is meaningful. At any given time, an object will have a quantifiable amount of mechanical energy.
 2.  No, the value is not meaningful because the value of potential energy is arbitrary. Only differences in mechanical energy are meaningful. 
 3.  No, the value is not meaningful because both the potential and kinetic energies are arbitrary. Their values will change depending on where you set the energy to be zero.
@@ -388,7 +387,7 @@ which is what we usually refer to as "conservation of energy". That is, the tota
 
 We can always include that external agent in the system so that the total energy of the system is constant. The largest system that we can have is the Universe itself. Thus, the total energy in the Universe is constant and can only transform from one type into another, but no energy can ever be added or removed from the Universe.
 
-:::{attention} Olivia's Thoughts
+\begin{studentOpinion}{Olivia}
 Here's an example that may help you understand the concept of external agents and energy conservation. Say we have a mass that hangs from a spring, so that the mass oscillates up and down like a yo-yo. If we define our system to include the spring, the mass, and gravity, energy will be conserved (the energy is transformed from potential energy to kinetic energy and back again). 
 
 Now, what if someone is holding the end of the spring and they start walking so that the whole system accelerates? Energy is not conserved because the system is gaining kinetic energy, seemingly out of nowhere. The system is being acted on by an *external agent* (the person). If we expand our system so that it includes the spring, the mass, gravity, *and the person*, energy is conserved. Instead of the kinetic energy "coming out of nowhere", we can see that it is actually coming from the person converting chemical energy in their body in order to move their muscles.
@@ -401,7 +400,7 @@ A person accelerates a mass and spring by walking. If the system does not includ
 ```
 
 But what if there's an external agent acting on our new system? We can keep "zooming out" to include more and more external sources in the definition of our system. If you kept zooming out, eventually you would reach the point where the whole Universe was included in your system. At this point, you can't zoom out any more. This means that, if the Universe is your system, energy must always be conserved because there can't be any external agents acting on the system. 
-:::
+\end{studentOpinion}
 
 :::{note} Example
 :label: ex:potentialecons:blockspring
@@ -532,7 +531,7 @@ U(x)=\frac{1}{2}kx^2
 ```
 On the right of [](#fig:potentialecons:springE) is an "Energy Diagram" for the block, which allows us to examine how the total energy, $E$, of the block is divided between kinetic and potential energy depending on the position of the block. The vertical axis corresponds to energy and the horizontal axis corresponds to the position of the block. 
 
-The total mechanical energy, $E=25 {\rm J}$, is shown by the horizontal red line. Also illustrated are the potential energy function ($U(x)$ in blue), and the kinetic energy, ($K=E-U(x)$, in dotted black).
+The total mechanical energy, $E=\SI{25}{J}$, is shown by the horizontal red line. Also illustrated are the potential energy function ($U(x)$ in blue), and the kinetic energy, ($K=E-U(x)$, in dotted black).
 ```{figure} figures/PotentialEcons/springE.png
 :label: fig:potentialecons:springE
 :width: 100%
@@ -576,7 +575,7 @@ Locations $A$ and $C$ on the diagram are stable equilibria, because if a marble 
 Now, say an object's potential energy is described by the function in [](#fig:potentialecons:potential), and the object has total energy $E$. The object's motion along the $x$ axis will be exactly the same as the projection of the marble's motion on the $x$ axis.
 
 :::{tip} Checkpoint
-A force, $F(x)$, acts on an object. The potential energy function, $U(x)$, associated with the force is given by $U(x)=a(x-6)^2(x-1)(x-3)+20 {\rm J}$, where $a$ is a positive constant. $U(x)$ is plotted in [](#fig:potentialecons:potentialcheckpoint). Use the "marble" method to determine the direction of the force at $x=5$. Confirm your answer by finding the value of the force , $F(x)$, at $x=5$.
+A force, $F(x)$, acts on an object. The potential energy function, $U(x)$, associated with the force is given by $U(x)=a(x-6)^2(x-1)(x-3)+\SI{20}{J}$, where $a$ is a positive constant. $U(x)$ is plotted in [](#fig:potentialecons:potentialcheckpoint). Use the "marble" method to determine the direction of the force at $x=5$. Confirm your answer by finding the value of the force , $F(x)$, at $x=5$.
 ```{figure} figures/PotentialEcons/potentialcheckpoint.png
 :label: fig:potentialecons:potentialcheckpoint
 :width: 50%
@@ -616,19 +615,19 @@ S = \int Ldt
 ```
 where $L$ can depend on time explicitly or implicitly (through the fact that position and velocity, on which the Lagrangian depends, are themselves time-dependent). The requirement that the above integral be minimized is called the "Principle of Least Action"[^19], and is thought to be the fundamental principle that describes all of the laws of physics. The condition for the action to be minimized is given by the Euler-Lagrange equation:
 ```{math}
-\boxed{\frac{d}{dt}\left(\frac{\partial L}{\partial v_x}\right)-\frac{\partial L}{\partial x} = 0}
+\boxed{\frac{d}{dt}\left(\die{L}{v_x}\right)-\die{L}{x} = 0}
 ```
 Thus, in the Lagrangian formulation, one first writes down the Lagrangian for the system, and then uses the Euler-Lagrange equation to obtain the "equations of motion" for the system (i.e. equation that give the kinematic quantities, such as acceleration, for the system). 
 
 Given the Lagrangian that we found above for a particle moving in one dimension under the influence of gravity, we can determine each term in the Euler-Lagrange equation:
 ```{math}
-\frac{\partial L}{\partial v_x} &= \frac{\partial }{\partial v_x}\left(\frac{1}{2}mv_x^2 - mgx \right)=mv_x\\
-\therefore\frac{d}{dt}\left(\frac{\partial L}{\partial v_x}\right) &= \frac{d}{dt} (mv_x) = ma_x\\
-\frac{\partial L}{\partial x}&= \frac{\partial }{\partial x}\left(\frac{1}{2}mv_x^2 - mgx\right) = -mg\\
+\die{L}{v_x} &= \die{}{v_x}\left(\frac{1}{2}mv_x^2 - mgx \right)=mv_x\\
+\therefore\frac{d}{dt}\left(\die{L}{v_x}\right) &= \frac{d}{dt} (mv_x) = ma_x\\
+\die{L}{x}&= \die{}{x}\left(\frac{1}{2}mv_x^2 - mgx\right) = -mg\\
 ```
 Putting these into the Euler-Lagrange equation:
 ```{math}
-\frac{d}{dt}\left(\frac{\partial L}{\partial v_x}\right)-\frac{\partial L}{\partial x} &= 0\\
+\frac{d}{dt}\left(\die{L}{v_x}\right)-\die{L}{x} &= 0\\
 (ma_x) - (-mg) &=0\\
 ma_x&=-mg\\
 \therefore a_x &= -g
@@ -640,34 +639,28 @@ Emmy Noether, a mathematician in the early twentieth century, proved a theorem t
 
 The Lagrangian that we had above for a particle moving under the influence of gravity did not depend on time explicitly, and thus energy is conserved (gravitational potential energy is converted into kinetic energy and there are no non-conservative forces). If the Lagrangian did not depend on position, then a quantity that we call "momentum"[^21] would be conserved. In this case, momentum in the $x$ direction was not conserved because the Lagrangian depended on $x$ through the potential energy. 
 
-:::{attention} Olivia's Thoughts
+\begin{studentOpinion}{Olivia}
 We saw in this chapter that describing systems in terms of energy is often easier than describing them in terms of forces. The Lagrangian gives us a way to get the same information we would get from Newton's laws (like the acceleration, etc.), but using energy as a starting point. The Lagrangian method is really useful when we are looking at motion in multiple dimensions, or when we are describing complicated systems. Using the Lagrangian is actually really simple, and just like with forces, you can pretty much approach every problem the same way. Here are the basic steps to follow:
 1.  Find two expressions for your system: one for the potential energy ($U$) and one for the kinetic energy ($K$). This often ends up being the hardest step.
 2.  Write down the Lagrangian, $L=K-U$, using the expressions you just found.
 3.  Pick a coordinate. (In one dimension, this is trivial, but it will be important once you start working in multiple dimensions). The Euler-Lagrange equation was given to you as:
-```{math}
-\frac{d}{dt}\left(\frac{\partial L}{\partial v_x}\right)-\frac{\partial L}{\partial x} = 0
-```
-because we are working in one dimension. You can actually pick whichever coordinate you are interested in. For example, if you were interested in the motion of your object in the $y$ direction, you would pick $y$ as your coordinate and write:
-```{math}
-\frac{d}{dt}\left(\frac{\partial L}{\partial v_y}\right)-\frac{\partial L}{\partial y} = 0
-```
-4.  Now you just have to do what the equation above tells you to do, which is to start with your Lagrangian (your $L=K-U$ equation) and take a bunch of derivatives. If you try to just plug $L$ into the Euler-Lagrange equation and do all the derivatives at once, it can get confusing. I recommend finding the components separately. I like to start by taking the partial derivative with respect to velocity, $\frac{\partial L}{\partial v_y}$, then taking its derivative with respect to time. Next, I find $\frac{\partial L}{\partial y}$ and then put it all together.
-5.  That's it! When you've taken the derivatives (and simplified a bit), you'll have an "equation of motion" that gives you information about the motion of the object. You can then use this equation however you want! 
-:::
+```{math}\frac{d}{dt}\left(\die{L}{v_x}\right)-\die{L}{x} = 0```because we are working in one dimension. You can actually pick whichever coordinate you are interested in. For example, if you were interested in the motion of your object in the $y$ direction, you would pick $y$ as your coordinate and write:```{math}\frac{d}{dt}\left(\die{L}{v_y}\right)-\die{L}{y} = 0```11.  Now you just have to do what the equation above tells you to do, which is to start with your Lagrangian (your $L=K-U$ equation) and take a bunch of derivatives. If you try to just plug $L$ into the Euler-Lagrange equation and do all the derivatives at once, it can get confusing. I recommend finding the components separately. I like to start by taking the partial derivative with respect to velocity, $\die{L}{v_y}$, then taking its derivative with respect to time. Next, I find $\die{L}{y}$ and then put it all together.
+12.  That's it! When you've taken the derivatives (and simplified a bit), you'll have an "equation of motion" that gives you information about the motion of the object. You can then use this equation however you want! 
+
+\end{studentOpinion}
 
 
 # Summary
-
+\begin{chapterSummary}
 A force is conservative if the work done by that force on a closed path is zero:
 ```{math}
 \oint \vec F(\vec r) \cdot d\vec l = 0
 ```
 Equivalently, the force is conservative if the work done by the force on an object moving from position $A$ to position $B$ does not depend on the particular path between the two points. The conditions for a force to be conservative are given by:
 ```{math}
-\frac{\partial F_z}{\partial y}-\frac{\partial F_y}{\partial z} &= 0 \nonumber\\
-\frac{\partial F_x}{\partial z}-\frac{\partial F_z}{\partial x} &= 0\nonumber\\
-\frac{\partial F_y}{\partial x}-\frac{\partial F_x}{\partial y} &= 0
+\die{F_z}{y}-\die{F_y}{z} &= 0 \nonumber\\
+\die{F_x}{z}-\die{F_z}{x} &= 0\nonumber\\
+\die{F_y}{x}-\die{F_x}{y} &= 0
 ```
 In particular, a force that is constant in magnitude and direction will be conservative. A force that depends on quantities other than position (e.g. speed, time) will not be conservative. The force exerted by gravity and the force exerted by a spring are conservative.
 
@@ -713,19 +706,20 @@ L = K - U
 ```
 which is the difference between the kinetic energy, $K$, and the potential energy, $U$, of the object. The equations of motion are given by the Principle of Least Action, which leads to the Euler-Lagrange equation (written here for the case of a particle moving in one dimension):
 ```{math}
-\frac{d}{dt}\left(\frac{\partial L}{\partial v_x}\right)-\frac{\partial L}{\partial x} = 0
+\frac{d}{dt}\left(\die{L}{v_x}\right)-\die{L}{x} = 0
 ```
+\end{chapterSummary}
+
 
 :::{important} Important Equations
-
 **Conditions for a force to be conservative:**
 ```{math}
 \oint \vec F(\vec r) \cdot d\vec l = 0
 ```
 ```{math}
-\frac{\partial F_z}{\partial y}-\frac{\partial F_y}{\partial z} &= 0 \nonumber\\
-\frac{\partial F_x}{\partial z}-\frac{\partial F_z}{\partial x} &= 0\nonumber\\
-\frac{\partial F_y}{\partial x}-\frac{\partial F_x}{\partial y} &= 0
+\die{F_z}{y}-\die{F_y}{z} &= 0 \nonumber\\
+\die{F_x}{z}-\die{F_z}{x} &= 0\nonumber\\
+\die{F_y}{x}-\die{F_x}{y} &= 0
 ```
 **Potential energy for a conservative force:**
 ```{math}
@@ -750,7 +744,7 @@ W^{NC}&=\Delta E
 **Lagrange:**
 ```{math}
 L = K - U\\
-\frac{d}{dt}\left(\frac{\partial L}{\partial v_x}\right)-\frac{\partial L}{\partial x} = 0
+\frac{d}{dt}\left(\die{L}{v_x}\right)-\die{L}{x} = 0
 ```
 :::
 
@@ -903,20 +897,20 @@ L&=\frac{1}{2}mv_x^2-\frac{1}{2}kx^2
 ```
 The Euler-Lagrange equation in one dimension is:
 ```{math}
-\frac{d}{dt}\left(\frac{\partial L}{\partial v_x}\right)-\frac{\partial L}{\partial x} = 0
+\frac{d}{dt}\left(\die{L}{v_x}\right)-\die{L}{x} = 0
 ```
 We can calculate the terms of the Euler-Lagrange equation:
 ```{math}
-\frac{\partial L}{\partial v_x}&=\frac{\partial }{\partial v_x}\left(\frac{1}{2}mv_x^2-\frac{1}{2}kx^2\right)\\
+\die{L}{v_x}&=\die{}{v_x}\left(\frac{1}{2}mv_x^2-\frac{1}{2}kx^2\right)\\
 &=mv_x\\
-\therefore \frac{d}{dt}\left(\frac{\partial L}{\partial v_x}\right)&=\frac{d}{dt}(mv_x)\\
+\therefore \frac{d}{dt}\left(\die{L}{v_x}\right)&=\frac{d}{dt}(mv_x)\\
 &=ma_x\\
-\textrm{and}\qquad \frac{\partial L}{\partial x}&=\left(\frac{1}{2}mv_x^2-\frac{1}{2}kx^2\right)\\
+\textrm{and}\qquad \die{L}{x}&=\left(\frac{1}{2}mv_x^2-\frac{1}{2}kx^2\right)\\
 &=-kx
 ```
 and then put them together to get:
 ```{math}
-\frac{d}{dt}\left(\frac{\partial L}{\partial v_x}\right)-\frac{\partial L}{\partial x} &= 0\\
+\frac{d}{dt}\left(\die{L}{v_x}\right)-\die{L}{x} &= 0\\
 \therefore ma_x&=-kx\\
 ```
 We can see that this equation of motion is equivalent to Newton's Second Law.

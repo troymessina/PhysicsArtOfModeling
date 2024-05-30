@@ -532,7 +532,7 @@ U(x)=\frac{1}{2}kx^2
 ```
 On the right of [](#fig:potentialecons:springE) is an "Energy Diagram" for the block, which allows us to examine how the total energy, $E$, of the block is divided between kinetic and potential energy depending on the position of the block. The vertical axis corresponds to energy and the horizontal axis corresponds to the position of the block. 
 
-The total mechanical energy, $E=25 {\rm J}$, is shown by the horizontal red line. Also illustrated are the potential energy function ($U(x)$ in blue), and the kinetic energy, ($K=E-U(x)$, in dotted black).
+The total mechanical energy, $E=\SI{25}{J}$, is shown by the horizontal red line. Also illustrated are the potential energy function ($U(x)$ in blue), and the kinetic energy, ($K=E-U(x)$, in dotted black).
 ```{figure} figures/PotentialEcons/springE.png
 :label: fig:potentialecons:springE
 :width: 100%
@@ -576,7 +576,7 @@ Locations $A$ and $C$ on the diagram are stable equilibria, because if a marble 
 Now, say an object's potential energy is described by the function in [](#fig:potentialecons:potential), and the object has total energy $E$. The object's motion along the $x$ axis will be exactly the same as the projection of the marble's motion on the $x$ axis.
 
 :::{tip} Checkpoint
-A force, $F(x)$, acts on an object. The potential energy function, $U(x)$, associated with the force is given by $U(x)=a(x-6)^2(x-1)(x-3)+20 {\rm J}$, where $a$ is a positive constant. $U(x)$ is plotted in [](#fig:potentialecons:potentialcheckpoint). Use the "marble" method to determine the direction of the force at $x=5$. Confirm your answer by finding the value of the force , $F(x)$, at $x=5$.
+A force, $F(x)$, acts on an object. The potential energy function, $U(x)$, associated with the force is given by $U(x)=a(x-6)^2(x-1)(x-3)+\SI{20}{J}$, where $a$ is a positive constant. $U(x)$ is plotted in [](#fig:potentialecons:potentialcheckpoint). Use the "marble" method to determine the direction of the force at $x=5$. Confirm your answer by finding the value of the force , $F(x)$, at $x=5$.
 ```{figure} figures/PotentialEcons/potentialcheckpoint.png
 :label: fig:potentialecons:potentialcheckpoint
 :width: 50%

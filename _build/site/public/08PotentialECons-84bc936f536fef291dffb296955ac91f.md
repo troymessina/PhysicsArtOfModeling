@@ -388,7 +388,7 @@ which is what we usually refer to as "conservation of energy". That is, the tota
 
 We can always include that external agent in the system so that the total energy of the system is constant. The largest system that we can have is the Universe itself. Thus, the total energy in the Universe is constant and can only transform from one type into another, but no energy can ever be added or removed from the Universe.
 
-:::{attention} Olivia's Thoughts
+\begin{studentOpinion}{Olivia}
 Here's an example that may help you understand the concept of external agents and energy conservation. Say we have a mass that hangs from a spring, so that the mass oscillates up and down like a yo-yo. If we define our system to include the spring, the mass, and gravity, energy will be conserved (the energy is transformed from potential energy to kinetic energy and back again). 
 
 Now, what if someone is holding the end of the spring and they start walking so that the whole system accelerates? Energy is not conserved because the system is gaining kinetic energy, seemingly out of nowhere. The system is being acted on by an *external agent* (the person). If we expand our system so that it includes the spring, the mass, gravity, *and the person*, energy is conserved. Instead of the kinetic energy "coming out of nowhere", we can see that it is actually coming from the person converting chemical energy in their body in order to move their muscles.
@@ -401,7 +401,7 @@ A person accelerates a mass and spring by walking. If the system does not includ
 ```
 
 But what if there's an external agent acting on our new system? We can keep "zooming out" to include more and more external sources in the definition of our system. If you kept zooming out, eventually you would reach the point where the whole Universe was included in your system. At this point, you can't zoom out any more. This means that, if the Universe is your system, energy must always be conserved because there can't be any external agents acting on the system. 
-:::
+\end{studentOpinion}
 
 :::{note} Example
 :label: ex:potentialecons:blockspring
@@ -532,7 +532,7 @@ U(x)=\frac{1}{2}kx^2
 ```
 On the right of [](#fig:potentialecons:springE) is an "Energy Diagram" for the block, which allows us to examine how the total energy, $E$, of the block is divided between kinetic and potential energy depending on the position of the block. The vertical axis corresponds to energy and the horizontal axis corresponds to the position of the block. 
 
-The total mechanical energy, $E=25 {\rm J}$, is shown by the horizontal red line. Also illustrated are the potential energy function ($U(x)$ in blue), and the kinetic energy, ($K=E-U(x)$, in dotted black).
+The total mechanical energy, $E=\SI{25}{J}$, is shown by the horizontal red line. Also illustrated are the potential energy function ($U(x)$ in blue), and the kinetic energy, ($K=E-U(x)$, in dotted black).
 ```{figure} figures/PotentialEcons/springE.png
 :label: fig:potentialecons:springE
 :width: 100%
@@ -576,7 +576,7 @@ Locations $A$ and $C$ on the diagram are stable equilibria, because if a marble 
 Now, say an object's potential energy is described by the function in [](#fig:potentialecons:potential), and the object has total energy $E$. The object's motion along the $x$ axis will be exactly the same as the projection of the marble's motion on the $x$ axis.
 
 :::{tip} Checkpoint
-A force, $F(x)$, acts on an object. The potential energy function, $U(x)$, associated with the force is given by $U(x)=a(x-6)^2(x-1)(x-3)+20 {\rm J}$, where $a$ is a positive constant. $U(x)$ is plotted in [](#fig:potentialecons:potentialcheckpoint). Use the "marble" method to determine the direction of the force at $x=5$. Confirm your answer by finding the value of the force , $F(x)$, at $x=5$.
+A force, $F(x)$, acts on an object. The potential energy function, $U(x)$, associated with the force is given by $U(x)=a(x-6)^2(x-1)(x-3)+\SI{20}{J}$, where $a$ is a positive constant. $U(x)$ is plotted in [](#fig:potentialecons:potentialcheckpoint). Use the "marble" method to determine the direction of the force at $x=5$. Confirm your answer by finding the value of the force , $F(x)$, at $x=5$.
 ```{figure} figures/PotentialEcons/potentialcheckpoint.png
 :label: fig:potentialecons:potentialcheckpoint
 :width: 50%
@@ -640,25 +640,19 @@ Emmy Noether, a mathematician in the early twentieth century, proved a theorem t
 
 The Lagrangian that we had above for a particle moving under the influence of gravity did not depend on time explicitly, and thus energy is conserved (gravitational potential energy is converted into kinetic energy and there are no non-conservative forces). If the Lagrangian did not depend on position, then a quantity that we call "momentum"[^21] would be conserved. In this case, momentum in the $x$ direction was not conserved because the Lagrangian depended on $x$ through the potential energy. 
 
-:::{attention} Olivia's Thoughts
+\begin{studentOpinion}{Olivia}
 We saw in this chapter that describing systems in terms of energy is often easier than describing them in terms of forces. The Lagrangian gives us a way to get the same information we would get from Newton's laws (like the acceleration, etc.), but using energy as a starting point. The Lagrangian method is really useful when we are looking at motion in multiple dimensions, or when we are describing complicated systems. Using the Lagrangian is actually really simple, and just like with forces, you can pretty much approach every problem the same way. Here are the basic steps to follow:
 1.  Find two expressions for your system: one for the potential energy ($U$) and one for the kinetic energy ($K$). This often ends up being the hardest step.
 2.  Write down the Lagrangian, $L=K-U$, using the expressions you just found.
 3.  Pick a coordinate. (In one dimension, this is trivial, but it will be important once you start working in multiple dimensions). The Euler-Lagrange equation was given to you as:
-```{math}
-\frac{d}{dt}\left(\frac{\partial L}{\partial v_x}\right)-\frac{\partial L}{\partial x} = 0
-```
-because we are working in one dimension. You can actually pick whichever coordinate you are interested in. For example, if you were interested in the motion of your object in the $y$ direction, you would pick $y$ as your coordinate and write:
-```{math}
-\frac{d}{dt}\left(\frac{\partial L}{\partial v_y}\right)-\frac{\partial L}{\partial y} = 0
-```
-4.  Now you just have to do what the equation above tells you to do, which is to start with your Lagrangian (your $L=K-U$ equation) and take a bunch of derivatives. If you try to just plug $L$ into the Euler-Lagrange equation and do all the derivatives at once, it can get confusing. I recommend finding the components separately. I like to start by taking the partial derivative with respect to velocity, $\frac{\partial L}{\partial v_y}$, then taking its derivative with respect to time. Next, I find $\frac{\partial L}{\partial y}$ and then put it all together.
-5.  That's it! When you've taken the derivatives (and simplified a bit), you'll have an "equation of motion" that gives you information about the motion of the object. You can then use this equation however you want! 
-:::
+```{math}\frac{d}{dt}\left(\frac{\partial L}{\partial v_x}\right)-\frac{\partial L}{\partial x} = 0```because we are working in one dimension. You can actually pick whichever coordinate you are interested in. For example, if you were interested in the motion of your object in the $y$ direction, you would pick $y$ as your coordinate and write:```{math}\frac{d}{dt}\left(\frac{\partial L}{\partial v_y}\right)-\frac{\partial L}{\partial y} = 0```11.  Now you just have to do what the equation above tells you to do, which is to start with your Lagrangian (your $L=K-U$ equation) and take a bunch of derivatives. If you try to just plug $L$ into the Euler-Lagrange equation and do all the derivatives at once, it can get confusing. I recommend finding the components separately. I like to start by taking the partial derivative with respect to velocity, $\frac{\partial L}{\partial v_y}$, then taking its derivative with respect to time. Next, I find $\frac{\partial L}{\partial y}$ and then put it all together.
+12.  That's it! When you've taken the derivatives (and simplified a bit), you'll have an "equation of motion" that gives you information about the motion of the object. You can then use this equation however you want! 
+
+\end{studentOpinion}
 
 
 # Summary
-
+\begin{chapterSummary}
 A force is conservative if the work done by that force on a closed path is zero:
 ```{math}
 \oint \vec F(\vec r) \cdot d\vec l = 0
@@ -715,6 +709,8 @@ which is the difference between the kinetic energy, $K$, and the potential energ
 ```{math}
 \frac{d}{dt}\left(\frac{\partial L}{\partial v_x}\right)-\frac{\partial L}{\partial x} = 0
 ```
+\end{chapterSummary}
+
 
 :::{important} Important Equations
 
