@@ -863,7 +863,7 @@ The mechanical energy of the mass is conserved, and at any point is given by the
 ```{math}
 E=mgy+\frac{1}{2}mv^2
 ```
-We want to find the velocity as a function of $\theta$, so we need to write $y$ in terms of $\theta$. As you may recall from [Problem 7.2](#fig:workenergy:swingprob), we saw that from the geometry of the problem, we can express the height of the mass as $y=L-L\cos\theta$, or $L(1-\cos\theta)$, where $y$ is the height as measured from the bottom point of the motion. You can refer to [](#fig:workenergy:swingprobgeometry) to refresh your memory. The energy at any point is then:
+We want to find the velocity as a function of $\theta$, so we need to write $y$ in terms of $\theta$. As you may recall from [Problem %s](#prob:workenergy:swingwork), we saw that from the geometry of the problem, we can express the height of the mass as $y=L-L\cos\theta$, or $L(1-\cos\theta)$, where $y$ is the height as measured from the bottom point of the motion. You can refer to [](#fig:workenergy:swingprobgeometry) to refresh your memory. The energy at any point is then:
 ```{math}
 E=mgL(1-\cos\theta)+\frac{1}{2}mv^2
 ```

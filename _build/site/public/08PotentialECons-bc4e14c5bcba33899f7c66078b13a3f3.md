@@ -44,7 +44,7 @@ W = \int_A^B \vec F(\vec r) \cdot d\vec l
 ```
 where $\vec F(\vec r)$ is a force vector that, in general, is different at different positions in space ($\vec r$). We can also say that $\vec F$ depends on position by writing $\vec F(\vec r)=\vec F(x,y,z)$, since the position vector, $\vec r$, is simply the vector $\vec r = x\hat x + y \hat y+ z\hat z$. That is, $\vec F(\vec r)$ is just a short hand notation for $\vec F(x,y,z)$, and $d\vec l$ is a (very) small segment along the particular path over which one calculates the work.
 
-The above integral is, in general, difficult to evaluate, as it depends on the specific path over which the object moved. In [](#ex:workenergy:workfriction) of [Chapter %s](#chap:workenergy), we calculated the work done by friction on a crate that was slid across the floor along two different paths and indeed found that the work depended on the path that was taken. In [](#ex:workenergy:workgravity) of the same chapter, we saw that the work done by the force of gravity when moving a box along two different paths did not depend on the path chosen[^15].
+The above integral is, in general, difficult to evaluate, as it depends on the specific path over which the object moved. In [](#ex:workenergy:workfriction) of Chapter \ref{chap:workenergy}, we calculated the work done by friction on a crate that was slid across the floor along two different paths and indeed found that the work depended on the path that was taken. In [](#ex:workenergy:workgravity) of the same chapter, we saw that the work done by the force of gravity when moving a box along two different paths did not depend on the path chosen[^15].
 
 We call "conservative forces" those forces for which the work done only depends on the initial and final positions and not on the path taken between those two positions. "Non-conservative" forces are those for which the work done does depend on the path taken. The force of gravity is an example of a conservative force, whereas friction is an example of a non-conservative force.
 
@@ -237,7 +237,7 @@ The change in potential energy, $\Delta U = U(z_B) - U(z_A)$ is equal to the neg
 -W_g &=  U(z_B) - U(z_A) = mgH - 0\\
 \therefore W_g &= -mgH
 ```
-which is the same as what we found in [](#ex:workenergy:workgravity) of [Chapter %s](#chap:workenergy). The work done by gravity is negative, as we found previously. This makes sense because gravity has a component opposite to the direction of motion.  
+which is the same as what we found in [](#ex:workenergy:workgravity) of Chapter \ref{chap:workenergy}. The work done by gravity is negative, as we found previously. This makes sense because gravity has a component opposite to the direction of motion.  
 
 The work done by a person, $W_p$, to move the box can easily be found by considering the net work done on the box. While the box is moving, only the person and gravity are exerting forces on the box, so those are the only two forces performing work. Since the box starts and ends at rest, the net work done on the box must be zero (no change in kinetic energy, recall the Work-Energy Theorem):
 ```{math}
@@ -863,7 +863,7 @@ The mechanical energy of the mass is conserved, and at any point is given by the
 ```{math}
 E=mgy+\frac{1}{2}mv^2
 ```
-We want to find the velocity as a function of $\theta$, so we need to write $y$ in terms of $\theta$. As you may recall from [Problem 7.2](#fig:workenergy:swingprob), we saw that from the geometry of the problem, we can express the height of the mass as $y=L-L\cos\theta$, or $L(1-\cos\theta)$, where $y$ is the height as measured from the bottom point of the motion. You can refer to [](#fig:workenergy:swingprobgeometry) to refresh your memory. The energy at any point is then:
+We want to find the velocity as a function of $\theta$, so we need to write $y$ in terms of $\theta$. As you may recall from Problem \ref{prob:workenergy:swingwork}, we saw that from the geometry of the problem, we can express the height of the mass as $y=L-L\cos\theta$, or $L(1-\cos\theta)$, where $y$ is the height as measured from the bottom point of the motion. You can refer to [](#fig:workenergy:swingprobgeometry) to refresh your memory. The energy at any point is then:
 ```{math}
 E=mgL(1-\cos\theta)+\frac{1}{2}mv^2
 ```

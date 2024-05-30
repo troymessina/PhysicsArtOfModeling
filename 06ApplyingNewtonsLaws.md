@@ -221,7 +221,7 @@ A present is placed at rest on a plane that is inclined, at a distance $L$ from 
 2.
 :::
 
-
+(sec:applyingnewtonslaws:modellingwhereforcechanges)=
 ## Modelling situations where forces change magnitude
 So far, the models that we have considered involved forces that remained constant in magnitude. In many cases, the forces exerted on an object can change magnitude and direction. For example, the force exerted by a spring changes as the spring changes length or the force of drag changes as the object changes speed. In these case, even if the object undergoes linear motion, we need to break up the motion into many small segments over which we can assume that the forces are constant. If the forces change continuously, we will need to break up the motion into an infinite number of segments and use calculus.
 
