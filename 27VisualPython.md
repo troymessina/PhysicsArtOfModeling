@@ -107,7 +107,7 @@ Make a collection of spheres each a different color arranged on the corners of a
 :class: dropdown
 Notice in the code, we define the half-length of the cube edges ```a``` and the sphere radii ```r```. Then, we displace each sphere the half-length along the various axes. This makes the program easily edited to change the size of the cube and size of the spheres.
 :::{iframe} https://trinket.io/embed/glowscript/77a3ced8b9
-:label: app:visualpython:simplecube
+:label: ex:visualpython:simplecube
 :width: 100%
 :align: center
 Spheres on the corners of a 1x1x1 cube.
@@ -115,10 +115,44 @@ Spheres on the corners of a 1x1x1 cube.
 
 
 ### Cylinders
-To create a cylinder with one end at the origin and along the $x$-axis, enter the following code. 
+To create a magenta cylinder 5 meters long, radius 0.1 meter, named ```cyl```, with one end at the origin and along the $x$-axis, enter the following code. 
 ```python
 cyl = cylinder(pos=vec(0,0,0), axis=vec(1,0,0), radius=0.1, length=5, size=2, color=color.magenta)
 ```
+The axis can easily be changed to orient a cylinder along the cartesian axes. If it desired for the cylinder to be oriented at an angle, one would use the Pythagorean Theorem or trigonometry to determine the unit vector pointed in the desired direction. Then, this would become the axis vector. For example, a cylinder oriented at $45\degree$ in the $xy$-plane would be found by
+```{math}
+x &= r\cos 45\degree\\
+y &= r\sin 45\degree\\
+z &= 0
+```
+Since we want a unit vector ($r=1$), and $x=y=\sqrt{1/2}$. In Python power are expressed using ```**``` rather than ```^```. The command to orient a cylinder at $45\degree$ is
+```python
+cyl = cylinder(pos=vec(0,0,0), axis=vec(0.5**0.5,0.5**0.5,0), radius=0.1, length=5, size=2, color=color.magenta)
+```
+However, we may also use trigonometric functions.
+```python
+cyl = cylinder(pos=vec(0,0,0), axis=vec(cos(pi/4),sin(pi/4),0), radius=0.1, length=5, size=2, color=color.magenta)
+```
+:::{note} Example
+Make a collection of twelve cylinders arranged to evenly divide a circle into sections like the hours on the face of a clock. Adjust the length and radius to suit your desired look.
+:::{note} Solution
+:class: dropdown
+Notice in the code, we define the radius and length, ```R``` and ```L```. This makes the program easily edited to change the size of the model.
+:::{iframe} https://trinket.io/embed/glowscript/5f9607143b
+:label: ex:visualpython:cylinderclock
+:width: 100%
+:align: center
+Spheres on the corners of a 1x1x1 cube.
+:::
+
+### ```for``` loops
+It is possible to simplify the code using a ```for``` loop. This loop will increment through the desired angles to create the clock face with a single cylinder object command. The advantage is streamlined code. The disadvantage is that the cylinder objects cannot be manipulated unless we complicate the program by tracking the object names. This kind of programming is beyond the scope of this textbook. [](#fig:visualpython:forloopcylinder) shows the code using a ```for``` loop. In this program, we define the number of cylinders we want ```numcyl```. This number is used to divide $2\pi$ into that many angle segments. The ```for``` loop uses the Python ```range()``` function, which is an "inclusive-exclusive" list. That is, ```for i in range(N):``` would increment ```i``` from 0 to N-1. Notice the tabbing indicates which commands are inside the loop.
+:::{iframe} https://trinket.io/embed/glowscript/54a654fa7f
+:label: fig:visualpython:forloopcylinder
+:width: 100%
+:align: center
+For loop to place cylinders every $30\degree$.
+:::
 
 
 ### User-defined attributes
