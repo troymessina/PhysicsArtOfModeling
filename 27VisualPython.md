@@ -261,11 +261,17 @@ Change the code for the ball example above so that the ball is thrown upward alo
 ```
 :::{note} Solution
 :class: dropdown
-The velocity will now initially be ```ball.vel = vec(0,10,0)```. There is an acceleration ```ball.acc = vec(0,-9.8,0)```. The position and velocity update will be
+The velocity will now initially be ```ball.vel = vec(0,10,0)```. There is an acceleration ```ball.acc = vec(0,-9.8,0)```. The position and velocity update will follow the kinematic equations
+```{math}
+\vec r(t + \Delta t) &= \vec r(t) + \vec v\Delta t + \frac{1}{2}\vec a\Delta t^2\\
+\vec v(t + \Delta t) &= \vec v(t) + \vec a\Delta t
+```
+and in Visual Python, the code is
 ```python
 ball.pos = ball.pos + ball.vel * dt + 0.5 * ball.acc * dt**2 #move ball after dt
 ball.vel = ball.vel + ball.acc * dt #update the ball's velocity after dt
 ```
+
 The entire program will be
 ```python
 #Initialization of objects and variables
