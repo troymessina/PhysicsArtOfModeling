@@ -59,7 +59,9 @@ Trinkets in this book are interactive. Readers can enter code and run the code w
 print("Hello World! This is my first trinket.")
 ```
 
-If you wish, you can Remix the trinket to your own account. It will appear in your account as "BlankTrinket". You may rename trinkets from the trinket.io website.
+If you wish, you can Remix the trinket to your own account. It will appear in your account as "BlankTrinket". You may rename your trinkets from the trinket.io website.
+
+# Programming in Visual Python
 
 ## Create objects in a trinket
 The choice of Visual Python is so that readers can visualize the physics being discussed in the book. Therefore, almost every program will be focused on manipulating Visual Python objects. It is important for readers to become comfortable with creating these objects. In the following examples, we will demonstrate spheres and cylinders. All Visual Python objects have "attributes" such as position, color, and size. [](#tab:visualpython:objattrs) lists common objects and their attributes. Notice the attributes vary in definition such as vector, scalar, or some text-based variable. It is also possible to create new, user-defined attributes, which will be discussed below.
@@ -146,7 +148,7 @@ Spheres on the corners of a 1x1x1 cube.
 :::
 
 ### ```for``` loops
-It is possible to simplify the code using a ```for``` loop. This loop will increment through the desired angles to create the clock face with a single cylinder object command. The advantage is streamlined code. The disadvantage is that the cylinder objects cannot be manipulated unless we complicate the program by tracking the object names. This kind of programming is beyond the scope of this textbook. [](#fig:visualpython:forloopcylinder) shows the code using a ```for``` loop. In this program, we define the number of cylinders we want ```numcyl```. This number is used to divide $2\pi$ into that many angle segments. The ```for``` loop uses the Python ```range()``` function, which is an "inclusive-exclusive" list. That is, ```for i in range(N):``` would increment ```i``` from 0 to N-1. Notice the tabbing indicates which commands are inside the loop.
+It is possible to simplify the code using a ```for``` loop. This loop will increment through the desired angles to create the clock face with a single cylinder object command. The advantage is streamlined code. The disadvantage is that the cylinder objects cannot be manipulated unless we complicate the program by tracking the object names. This kind of programming is beyond the scope of this textbook. [](#fig:visualpython:forloopcylinder) shows the code using a ```for``` loop. In this program, we define the number of cylinders we want ```numcyl```. This number is used to divide $2\pi$ into that many angle segments. The ```for``` loop uses the Python ```range()``` function, which is an "inclusive-exclusive" list. That is, ```for i in range(N):``` would increment ```i``` from 0 to N-1. Notice the tabbing after the line beginning the loop indicates which commands are inside the loop.
 :::{iframe} https://trinket.io/embed/glowscript/54a654fa7f
 :label: fig:visualpython:forloopcylinder
 :width: 100%
@@ -154,29 +156,129 @@ It is possible to simplify the code using a ```for``` loop. This loop will incre
 For loop to place cylinders every $30\degree$.
 :::
 
-
 ### User-defined attributes
-
+Object attributes are accessed using the "dot" notation. For example, the position of a sphere named ```ball``` can be accessed with ```ball.pos```. It is possible to add user-defined attributes to an object. Assigning attributes is a simple way to keep track of variables and constants associated with objects. These attributes do not affect the visualization of the object. Some examples of assigning attributes to a sphere named ```ball``` are shown in [](#tab:visualpython:userattributes). Users are free to choose the names of the attributes they assign. Rembember that computer code is unit agnostic. The units are whatever the programmer decides, and it is up to the programmer to keep track of units. In this book, we will primarily use SI (or mks) units.
+```{table} Some examples of user-defined object attributes.
+:label: tab:visualpython:userattributes
+:align: center
+| **Attribute** |       **Visual Python**            |
+|:------------- | :---------------------------       |
+|  mass         | ```ball.m = 5```                   |
+| velocity      | ```ball.vel = vec(1,1,1)```        |
+| acceleration  | ```ball.acc = vec(0,0,-9.8)```     |
+| momentum      | ```ball.p = ball.m * ball.vel```   |
+```
 
 # Move objects using code and physics
-Once we have objects, we can apply physical principles to make them move. One way to make the ball move is to repeatedly update the position using the equation above. For example, we could write lines of code that take the initial position $x_0$ and move it forward with some amount $v\Delta t$. Since we are in a 3D world, we will do this with vectors where (for this example) only the $x$-direction is changing from the description of position and velocity. Suppose we want to take snapshots every second, i.e., ```t = 0, 1, 2, 3,...``` To update the position of our object we could write code to position the ball each second that passes.
-```python
-r_0 = ball.pos
-ball.pos = r_0 + ball.vel * 0
-ball.pos = r_0 + ball.vel * 1
-ball.pos = r_0 + ball.vel * 2
-ball.pos = r_0 + ball.vel * 3
-ball.pos = r_0 + ball.vel * 4
+
+Once we have objects, we can apply physical principles to make them move. One way to make the ball move is to repeatedly update the position using kinematic descriptions of motion. If we define an object's position as $\vec r$, the object will change position over time as
+```{math}
+\vec r(t + \Delta t) = \vec r(t) + \vec v\Delta t + \frac{1}{2}\vec a\Delta t^2
 ```
-Copy the code above that creates the ball, and add these lines in the trinket below.
-
-
-
-You will see that your program runs all of the lines instantly, and you do not see the motion. Slow the computation down by adding the command rate(1) between each line updating the ball's position. This will delay each line by 1 second. For example,
+ Suppose we want to model a situation where there is not acceleration. We could write lines of code that take the current position $\vec r(t)$ and update it with some amount $\vec v\Delta t$. Since we are in a 3D world, we must do this with vectors. For simplicity, let's assume the velocity is only the $x$-direction that is a speed of $v = 0.5 {\rm m/s}$, i.e., ```ball.vel=vec(0.5,0,0)```. Suppose we want to update every second, i.e., ```t = 0, 1, 2, 3,...``` or $\Delta t = 1$. To update the position of our object we could write code to position the ball each second that passes.
 ```python
-ball.pos = r_0 + ball.vel * 0
+ball = sphere(pos=vec(0,0,0), radius=0.1, color=color.red)
+ball.vel=vec(0.5, 0, 0)
+dt = 1
+ball.pos = ball.pos + ball.vel * dt #move ball after 1s
+ball.pos = ball.pos + ball.vel * dt #move ball after 2s
+ball.pos = ball.pos + ball.vel * dt #move ball after 3s
+ball.pos = ball.pos + ball.vel * dt # move ball after 4s
+ball.pos = ball.pos + ball.vel * dt # move ball after 5s
+```
+The statements at the end of the lines after ```#``` are comments that are ignored by the computer. Copy the code above run these lines in the trinket below.
+:::{iframe} https://trinket.io/embed/glowscript/8f1815879d
+:label: app:visualpython:blanktrinket
+:width: 100%
+:align: center
+A blank trinket ready to begin programming.
+:::
+You will see that your program runs all of the lines instantly, and you do not see the motion. Slow the computation down by adding the command ```rate(1)``` between each line updating the ball's position. This will delay each line by 1 second. For example,
+```python
+ball.pos = ball.pos + ball.vel * dt
 rate(1)
-ball.pos = r_0 + ball.vel * 1
+ball.pos = ball.pos + ball.vel * dt
 rate(1)
 ```
-Hopefully it is clear to you this is an inefficient way to write a program, especially if we want to run many iterations of changing the ball's position. To make the process more streamlined, we use loops. In this case, we will use a while loop. The while loop runs "while" a condition is met. For example, we can run the ball simulation while the time is less than 10 seconds and update every 1 second. First, initialize the variable for time t to zero and the time increment dt to 1 second. Express the while loop as while t<10:, and in the while loop, update the position and time.
+It might also be helpful to keep track of the time and position. To do this, create a variable for time, ```t```, and add print statements between each move. Notice below that we can access the $x$ position with ```ball.pos.x```.
+```python
+ball = sphere(pos=vec(0,0,0), radius=0.1, color=color.red)
+ball.vel=vec(0.5, 0, 0)
+t = 0
+dt = 1
+print(t, ball.pos.x)
+rate(1)
+ball.pos = ball.pos + ball.vel * dt #move ball after 1s
+t = t + dt #increase the total time
+print(t, ball.pos.x)
+rate(1)
+ball.pos = ball.pos + ball.vel * dt #move ball after 2s
+t = t + dt #increase the total time
+print(t, ball.pos.x)
+rate(1)
+ball.pos = ball.pos + ball.vel * dt #move ball after 3s
+t = t + dt #increase the total time
+print(t, ball.pos.x)
+rate(1)
+ball.pos = ball.pos + ball.vel * dt # move ball after 4s
+t = t + dt #increase the total time
+print(t, ball.pos.x)
+rate(1)
+ball.pos = ball.pos + ball.vel * dt # move ball after 5s
+t = t + dt #increase the total time
+print(t, ball.pos.x)
+```
+Finally, let's make the ball's motion obvious by adding a trail to it. In the definition of the ball add ```make_trail = True```.
+```python
+ball = sphere(pos=vec(0,0,0), radius=0.1, color=color.red, make_trail=True)
+```
+## ```while``` loops
+Hopefully it is clear to you this is an inefficient way to write a program, especially if we want to run many iterations of changing the ball's position. To make the process more streamlined, we use loops. In this case, we will use a ```while``` loop. The while loop runs "while" a condition is met. For example, we can run the ball simulation while the time is less than 5 seconds. Because the loop streamlines the computation, we can get higher time resolution and update the position every 0.1 second. A ```while``` loop looks similar to a ```for``` loop. 
+```Python
+while t < 5:
+```
+Since we are using the total time as the condition for the ```while``` loop, it is important to keep track of the total time as we did in the previous section. To implement a ```while``` loop, we first initialize variables and objects. Then, every command inside the ```while``` loop will repeat until the condition is met.
+```python
+#Initialization of objects and variables
+ball = sphere(pos=vec(0,0,0), radius=0.1, color=color.red, make_trail=True)
+ball.vel=vec(0.5, 0, 0)
+t = 0
+dt = 0.1
+
+while t < 5:
+	rate(1)
+	ball.pos = ball.pos + ball.vel * dt #move ball after dt
+	t = t + dt #increase the total time
+	print(t, ball.pos.x) #print time and position
+```
+Copy and paste this code to replace the code from the previous section. It will appear to run very slowly. Increase the rate until the motion looks continuous.
+
+:::{note} Example
+:label: ex:visualpython:accmotion
+Change the code for the ball example above so that the ball is thrown upward along the $y$-axis with an initial speed of $10 {\rm m/s}$, i.e., ```ball.vel=vec(0, 10, 0)```. Add the acceleration due to gravity using the kinematic equation HINT: Acceleration will change both the position and the velocity over time.
+```{math}
+\vec r(t + \Delta t) = \vec r(t) + \vec v\Delta t + \frac{1}{2}\vec a\Delta t^2
+```
+:::{note} Solution
+:class: dropdown
+The velocity will now initially be ```ball.vel = vec(0,10,0)```. There is an acceleration ```ball.acc = vec(0,-9.8,0)```. The position and velocity update will be
+```python
+ball.pos = ball.pos + ball.vel * dt + 0.5 * ball.acc * dt**2 #move ball after dt
+ball.vel = ball.vel + ball.acc * dt #update the ball's velocity after dt
+```
+The entire program will be
+```python
+#Initialization of objects and variables
+ball = sphere(pos=vec(0,0,0), radius=0.1, color=color.red, make_trail=True)
+ball.vel=vec(0, 10, 0)
+ball.acc=vec(0,-9.8,0)
+t = 0
+dt = 0.1
+
+while t < 5:
+	rate(10)
+	ball.pos = ball.pos + ball.vel * dt + 0.5 * ball.acc * dt**2 #move ball after dt
+	ball.vel = ball.vel + ball.acc * dt #update the ball's velocity after dt
+	t = t + dt #increase the total time
+	print(t, ball.pos.y) #print time and position
+```
