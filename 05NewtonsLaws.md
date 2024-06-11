@@ -260,6 +260,67 @@ As you recall, the weight of an object is given by the mass of the object multip
 
 Unless stated otherwise, we will not make any distinction between gravitational and inertial mass and assume that they are equal. We will simply use the term "mass" and only clarify the type of mass when relevant (e.g. when we cover gravity).
 
+# Exploring Forces with PhET 
+In the PhET simulation below, choose the “Motion” tab to start the simulation. Make sure the boxes that say “Force”, “Values” and “Speed” are checked!
+
+## Newton's First Law
+Apply a force of 50 N right to the box. Describe the motion while the force is exerted of the box using physics terms (i.e. velocity, acceleration, displacement). Refer to the speedometer in your answer.
+Reset the scenario (don’t forget to check forces, speed again). Apply a force of 50 N to the right for about 5 seconds then reduce the applied force to zero (the "dummy" should stop pushing). Don’t reset the scenario. Describe the motion of the box. Refer to the speedometer in your answer.
+Apply a force of 50N to the left. Describe the motion of the box.
+With the box moving at constant velocity. Explain the exact steps needed to make the box come to a stop. Do this for two different stopping forces and explain the differences.
+### Summary 
+Newton’s First Law of Motion States “An object at rest stays at rest and an object in motion stays in motion with the same speed and in the same direction unless acted upon by an unbalanced force.” Explain how your observations above support this Law.
+
+:::{iframe} https://phet.colorado.edu/sims/html/forces-and-motion-basics/latest/forces-and-motion-basics_en.html
+:label: phet:newtonslaws:ForcesAndMotion
+:width: 100%
+:align: center
+PhET simulation to model forces and motion.
+:::
+
+## Newton's Second Law
+Reset the sim, don’t forget to check force, values and speed again. Remove the box and place a garbage can on top of the skateboard. Using a timer (on your phone, for example), measure the amount of time it takes to reach maximum speed using a force of 50 N. Try this again with forces of 100N, and 200N. Enter your results in a table like the one below.
+```{table}
+:label: table:newtonslaws:phetsim
+|Applied Force (N) | Time to Max Speed (s) | Acceleration (m/s2) |
+|---------------:  |     ---------------:  |   ---------------:  |
+| 50               |                       |                     |
+| 100              |                       |                     |
+| 200              |                       |                     |
+```
+
+The maximum velocity is 40 m/s. Can you determine the acceleration of each applied force using the definition of acceleration  $a=\Delta v/\Delta t$? Can you determine the mass of the trash can and skateboard using Newton's 2nd Law,  $F=ma$?
+
+### Trends
+In Excel, plot force on the y-axis and acceleration on the x-axis. Add a linear trendline, and show the equation. How does the value of the slope compare to the mass you calculated? Can you explain this?
+
+### Summary
+Newton’s Second Law states “The acceleration of an object as produced by a net force is directly proportional to the magnitude of the net force, in the same direction as the net force, and inversely proportional to the mass of the object.” Explain how your observations above support this Law.
+
+## Frictional Effects
+The behavior of the skateboard in Part I and part II were not very realistic because friction was not present. At the bottom of the screen is a simulation that includes friction. Select this simulation.
+
+1. Set friction to “none”. Notice how the screen changed. Why do you think the app designers did that?
+2. Make sure that only speed box is checked.
+	* Apply a force to get the box to about half of it’s maximum speed, then remove the force.
+	* While the box is moving, move the friction slider to 1/2 way.
+
+What happened to the box?
+
+### Summary
+Is friction a force? What evidence do you have?
+
+## Friction and Newton’s Second Law
+Reset the Friction app. Make sure Forces and Speed are checked.
+
+1. Apply a force of 50 N. Describe the movement of the box.
+2. Apply a force of 100 N. Describe the movement of the box.
+3. Apply a force of 150 N. Describe the movement of the box.
+4. Check the box that says “Sum of Forces”. Repeat procedures 1, 2, and 3. What was different about 3?
+
+### Summary
+Newton’s Second Law states “The **acceleration of an object as produced by a net force** is directly proportional to the magnitude of the net force, **in the same direction as the net force**, and inversely proportional to the mass of the object.” Explain how your observations relate to the underlined portion of this Law (hint, you might want to look up the definition of the word “net”).
+
 # Applying Newton's Laws
 Now that we have introduced all of the concepts from Newton's Theory of Classical Physics, we present some general strategies for building models that use the theory. Recall that if we can describe the motion of all objects of interest to us, we have described everything that we can. Newton's Second Law allows us to determine the acceleration of an object based on the net force acting on the object. Once we have determined the accelerations of all objects of interest we have built a complete model. 
 
