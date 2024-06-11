@@ -280,7 +280,7 @@ PhET simulation to model forces and motion.
 
 ## Newton's Second Law
 Reset the sim, don’t forget to check force, values and speed again. Remove the box and place a garbage can on top of the skateboard. Using a timer (on your phone, for example), measure the amount of time it takes to reach maximum speed using a force of 50 N. Try this again with forces of 100N, and 200N. Enter your results in a table like the one below.
-```{table}
+```{table} A table to record observations from PhET simulation.
 :label: table:newtonslaws:phetsim
 |Applied Force (N) | Time to Max Speed (s) | Acceleration (m/s2) |
 |---------------:  |     ---------------:  |   ---------------:  |
