@@ -23,7 +23,7 @@ This version of the textbook is also open-access and can be found at https://git
 9. [Gravity](:chap:gravity)
 10. [Rotational dynamics](#chap:rotationaldynamics)
 11. [Rotational energy and momentum](#chap:angularmomentumrolling)
-12. Simple harmonic motion
+12. [Simple harmonic motion](#chapter:simpleharmonicmotion)
 13. Waves
 14. Fluid mechanics
 15. Electric charges and fields
