@@ -5,6 +5,7 @@ numbering:
   heading_1:
     start: 6
 ---
+
 (chap:NewtonsLaws)=
 # Overview
 
@@ -18,7 +19,6 @@ In this chapter, we introduce Newton's Laws, which is a succinct theory of physi
 :::
 
 :::{note} Think About It
-%Student question from Daniel Barake
 You are at the supermarket, pushing a cart full of groceries. To keep the cart moving, you notice that you have to keep applying a force to the cart. You conclude that a continuous force is needed for continuous motion. This statement is,
 1.  True, since the natural state of all objects is to be at rest. Eventually, all objects will be at rest, so to keep an object moving, a force needs to be applied.
 2.  False. The force you apply to keep an object moving is only to counteract a frictional force.
