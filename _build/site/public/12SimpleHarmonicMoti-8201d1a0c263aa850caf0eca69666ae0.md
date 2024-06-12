@@ -37,7 +37,7 @@ We assume that the force exerted by the spring on the mass is given by Hooke's L
 ```
 where $x$ is the position of the mass. The only other forces exerted on the mass are its weight and the normal force from the horizontal surface, which are equal in magnitude and opposite in direction. Therefore, the net force on the mass is the force from the spring. 
 
-As we saw in Section [Section %s](#sec:potentialecons:ediagrams), if the spring is compressed  (or extended) by a distance $A$ relative to the rest position, and the mass is then released, the mass will oscillate back and forth between $x=\pm A$[^32], which is illustrated in [](#fig:simpleharmonicmotion:spring). We call $A$ the "amplitude of the motion". When the mass is at $x=\pm A$, its speed is zero, as these points correspond to the location where the mass "turns around".
+As we saw in Section [Section %s](#sec:potentialecons:ediagrams), if the spring is compressed  (or extended) by a distance $A$ relative to the rest position, and the mass is then released, the mass will oscillate back and forth between $x=\pm A$\footnote{As long as there is no friction to reduce the mechanical energy of the mass.}, which is illustrated in [](#fig:simpleharmonicmotion:spring). We call $A$ the "amplitude of the motion". When the mass is at $x=\pm A$, its speed is zero, as these points correspond to the location where the mass "turns around".
 
 ## Description using energy
 We can describe the motion of the mass using energy, since the mechanical energy of the mass is conserved. At any position, $x$, the mechanical energy, $E$, of the mass will have a term from the potential energy, $U$, associated with the spring force, and kinetic energy, $K$:
@@ -116,7 +116,7 @@ A \cos(\omega (0) + \phi) &= A\\
 \cos(\phi) &= 1\\
 \therefore \phi = 0
 ```
-If we define $t=0$ to be when the mass is at $x=A$, then the phase, $\phi$, is zero. In general, the value of $\phi$ can take any value between $-\pi$ and $+\pi$[^33] and, physically, corresponds to our choice of when $t=0$ (i.e. the position of the mass when we choose $t=0$).
+If we define $t=0$ to be when the mass is at $x=A$, then the phase, $\phi$, is zero. In general, the value of $\phi$ can take any value between $-\pi$ and $+\pi$[^32] and, physically, corresponds to our choice of when $t=0$ (i.e. the position of the mass when we choose $t=0$).
 
 Since we have determined the position as a function of time for the mass, its velocity and acceleration as a function of time are easily found by taking the corresponding time derivatives:
 ```{math}
@@ -697,5 +697,5 @@ G=\frac{2\pi^2L\beta d^2}{MT^2}
 :::
 
 
-[^32]:As long as there is no friction to reduce the mechanical energy of the mass.}
-[^33]:The argument to the cosine function is in radians, since the angular frequency is usually defined in radians per second. The value of $\phi$ is constrained to be within that range, since the cosine function is periodic with a period $2\pi$.
+
+[^32]:The argument to the cosine function is in radians, since the angular frequency is usually defined in radians per second. The value of $\phi$ is constrained to be within that range, since the cosine function is periodic with a period $2\pi$.
