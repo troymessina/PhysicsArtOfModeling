@@ -24,7 +24,7 @@ This version of the textbook is also open-access and can be found at https://git
 10. [Rotational dynamics](#chap:rotationaldynamics)
 11. [Rotational energy and momentum](#chap:angularmomentumrolling)
 12. [Simple harmonic motion](#chapter:simpleharmonicmotion)
-13. Waves
+13. [Waves](#chapter:waves)
 14. Fluid mechanics
 15. Electric charges and fields
 16. Gauss' Law
