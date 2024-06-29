@@ -20,13 +20,13 @@ This version of the textbook is also open-access and can be found at https://git
 6. [Applying Newton's Laws](#chap:ApplyingNewtonsLaws)
 7. [Work and energy](#chap:workenergy)
 8. [Potential energy and conservation of energy](#chap:potentialecons)
-9. [Gravity](:chap:gravity)
+9. [Gravity](#chapter:gravity)
 10. [Rotational dynamics](#chap:rotationaldynamics)
-11. [Rotational energy and momentum](#chap:angularmomentumrolling)
+11. [Rotational energy and momentum](#chapter:angularmomentumrolling)
 12. [Simple harmonic motion](#chapter:simpleharmonicmotion)
 13. [Waves](#chapter:waves)
-14. Fluid mechanics
-15. Electric charges and fields
+14. [Fluid mechanics](#chapter:fluidmechanics)
+15. [Electric charges and fields](#chapter:chargesfields)
 16. Gauss' Law
 17. Electric potential
 18. Electric current
