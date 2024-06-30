@@ -29,7 +29,7 @@ This version of the textbook is also open-access and can be found at https://git
 15. [Electric charges and fields](#chapter:chargesfields)
 16. [Gauss' Law](#chapter:gauss)
 17. [Electric potential](#chapter:potential)
-18. Electric current
+18. [Electric current](#chapter:current)
 19. Electric circuits
 20. The magnetic force
 21. Sources of magnetic field
