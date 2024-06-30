@@ -79,7 +79,7 @@ Fill in the blanks: Physics is a branch of science that ___________ the behaviou
 2.  describes 
 3.  how 
 4.  why
-:::{note} Answer
+:::{tip} Answer
 :class: dropdown
 1.  describes
 2.  how
@@ -109,7 +109,7 @@ With this analogy, we can quickly see that the "model" and "theory" are not inte
 Models cannot be scientifically tested, only theories can be tested.}
 1.  True
 2.  False 
-:::{note} Answer
+:::{tip} Answer
 :class: dropdown
 2.
 :::
@@ -140,7 +140,7 @@ What did the inability to find the planet Vulcan show:}
 2.  It showed that Newton's theory did not correctly describe the orbits of all planets.
 3.  It showed that the technology at the time was inadequate. 
 4.  It showed that Einstein's theory of General Relativity was correct. 
-:::{note} Answer
+:::{tip} Answer
 :class: dropdown
 2.
 :::
@@ -169,7 +169,7 @@ Special relativity can be applied to which of these science fiction plots?
 1.  An eccentric duo travel back in time to alter the past. 
 2.  An astronaut travelling near light speed for many years comes home to find that he has aged less than his family on Earth. 
 3.  A superhero harnesses lightning to use as a weapon.
-:::{note} Answer
+:::{tip} Answer
 :class: dropdown
 2.
 :::

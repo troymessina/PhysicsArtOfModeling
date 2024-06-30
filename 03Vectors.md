@@ -60,7 +60,7 @@ A non-orthogonal coordinate system (the $x$ and $y$ axes are not perpendicular).
 1. $y_1$
 2. $y_2$
 3. $y_3$
-:::{note} Answer
+:::{tip} Answer
 :label: Checkpoint-3.1
 :class: dropdown
 1.
@@ -186,7 +186,7 @@ What is the magnitude (the length) of the vector $5\hat x-2\hat y$?
 2. 5.4
 3. 7.0
 4. 10.0
-:::{note} Answer
+:::{tip} Answer
 :label: Checkpoint-3.2
 :class: dropdown
 2.
@@ -220,7 +220,7 @@ What happens to the length of a vector if the vector is multiplied by 2 (a scala
 2. The length is halved
 3. The length is quadrupled
 4. It depends on the direction of the vector
-:::{note} Answer
+:::{tip} Answer
 :label: Checkpoint-3.3
 :class: dropdown
 1.
@@ -265,6 +265,7 @@ F_y &= ma_y\\
 F_z &= ma_z
 \end{align*}
 
+(ex:vectors:vecalg)=
 :::{note} Example 3.1
 :label: Example-3.1
 Given two vectors, $\vec a=2\hat x+3\hat y$, and $\vec b=5\hat x-2\hat y$, calculate the vector $\vec c= 2\vec a- 3\vec b$.
@@ -343,7 +344,7 @@ The vectors $\vec a $ and $\vec b$ in the three diagrams below have the same mag
 :alt: Put these in order of the magnitude of their scalar product.
 Put these in order of the magnitude of their scalar product.
 ```
-:::{note} Answer
+:::{tip} Answer
 :label: Checkpoint-3.4
 :class: dropdown
 $3<1<2$
@@ -564,7 +565,7 @@ Referring to [](#fig:Vectors:torque_vectorprod), in which direction does the tor
 2. to the left
 3. out of the page 
 4. into the page
-:::{note} Answer
+:::{tip} Answer
 :label: Checkpoint-3.5
 :class: dropdown
 4.

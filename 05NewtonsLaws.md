@@ -47,7 +47,7 @@ Newton's First Law thus allows us to define an inertial frame of reference; Newt
 You are in an elevator accelerating upwards.
 1.  The elevator is an inertial frame of reference.
 2.  The elevator is not an inertial frame of reference.
-:::{note} Answer
+:::{tip} Answer
 :class: dropdown
 2.
 :::
@@ -72,7 +72,7 @@ Object 1 has twice the inertial mass of object 2. If both objects have the same 
 1.  The net force on both objects is the same.
 2.  The net force on object 1 is twice that on object 2. 
 3.  The net force on object 1 is half of that on object 2.
-:::{note} Answer
+:::{tip} Answer
 :class: dropdown
 2.
 :::
@@ -90,7 +90,7 @@ You push a heavy block in the North direction. The block is twice as heavy as yo
 2.  The block exerts the same force on you, but in the South direction. 
 3.  The block exerts double of the force on you, in the South direction.
 4.  The block is inanimate and thus does not exert a force on you. 
-:::{note} Answer
+:::{tip} Answer
 :class: dropdown
 2.
 :::
@@ -137,7 +137,7 @@ A person standing on a scale finds that they weigh $80 {\rm kg}$.
 3.  They exert an downwards force on the Earth with a magnitude of $80 {\rm N}$.
 4.  They exert an downwards force on the Earth with a magnitude of $784 {\rm N}$.
 5.  They exert no force on the Earth.
-:::{note} Answer
+:::{tip} Answer
 :class: dropdown
 2.
 :::
@@ -237,13 +237,13 @@ where $\vec F$ is the force exerted by the spring, $k$ is called the "spring con
 In [](#fig:newtonslaws:spring), we chose the positive $x$ axis to correspond to positions where the spring is extended and verified that Hooke's Law ($\vec F=-kx\hat x$) holds. If we had chosen the positive direction to correspond to compression (positive $x$ to the left), would Hooke's Law still correctly describe the direction of the force exerted by the spring on the block?
 1.  Yes. 
 2.  No.
-:::{note} Answer
+:::{tip} Answer
 :class: dropdown
 1.
 :::
 
 ### Inertial forces
-Inertial forces are exerted on an object when the forces on the object are modelled in a non-inertial frame of reference. For example, in the frame of reference of an accelerating elevator, or that of a car going around a curve, one can use Newton's Three Laws to model motion, if an additional inertial force is included. In a frame of reference that has an acceleration given by $\vec a$, an inertial force $-m\vec a$ is exerted on an object. This is the nature of the outwards force that is felt when your car goes around a curve, or the perception of being weightless in an elevator that has a large downwards acceleration. We will discuss inertial forces in more detail in section \ref{sec:newtonslaws:inertialforces}.
+Inertial forces are exerted on an object when the forces on the object are modelled in a non-inertial frame of reference. For example, in the frame of reference of an accelerating elevator, or that of a car going around a curve, one can use Newton's Three Laws to model motion, if an additional inertial force is included. In a frame of reference that has an acceleration given by $\vec a$, an inertial force $-m\vec a$ is exerted on an object. This is the nature of the outwards force that is felt when your car goes around a curve, or the perception of being weightless in an elevator that has a large downwards acceleration. We will discuss inertial forces in more detail in [Section %s](#sec:newtonslaws:inertialforces).
 
 
 ### "Applied" forces
@@ -334,7 +334,7 @@ The strategy for building a model for the motion of an object using Newton's The
 
 
 ## Identifying the forces
-The first step in applying Newton's theory is to identify all of the forces that are acting on an object. This can be done by asking yourself: "what could possibly be pushing or pulling on the object?", as well as running through the list of forces that we enumerated in section \ref{sec:newtonslaws:typesofforces} to identify if any of them are relevant here. For easy reference, we reproduce the types of forces here and include some questions that you might ask yourself to decide whether or not to include the corresponding force:
+The first step in applying Newton's theory is to identify all of the forces that are acting on an object. This can be done by asking yourself: "what could possibly be pushing or pulling on the object?", as well as running through the list of forces that we enumerated in [Section %s](#sec:newtonslaws:typesofforces) to identify if any of them are relevant here. For easy reference, we reproduce the types of forces here and include some questions that you might ask yourself to decide whether or not to include the corresponding force:
 * Weight (is the object near the surface of a planet?).
 * Normal forces (is the object in contact with any surface? There could be more than one!).
 * Frictional forces (are there static or kinetic friction forces associated with the normal forces?).
@@ -368,6 +368,7 @@ The forces on the block are illustrated in [](#fig:newtonslaws:blockH_forces) an
 ```
 :::
 
+(ex:newtonslaws:blockI)=
 :::{note} Example 5.2
 :label: ex:newtonslaws:blockI
 ```{figure} figures/NewtonsLaws/blockI.png
@@ -394,6 +395,7 @@ The forces on the block are illustrated in [](#fig:newtonslaws:blockI_forces) an
 ```
 :::
 
+(ex:newtonslaws:2blockswedge)=
 :::{note} Example 5.3
 :label: ex:newtonslaws:2blockswedge 
 ```{figure} figures/NewtonsLaws/2blockswedge.png
@@ -407,7 +409,7 @@ A block of mass $m$ is at rest on a wedge-shaped block of mass $M$ itself at res
 :::{note} Solution
 :class: dropdown
 Since it will be too messy to draw all of the forces on the same diagram, we have drawn each block separately in [](#fig:newtonslaws:2blockswedge_forces). 
-Usually, when multiple blocks are stacked on each other, it is easiest to start with the forces on the top block. In this case, the top block is in the same condition as the block from [](#ex:newtonslaws:blockI). The forces exerted on the top block are:
+Usually, when multiple blocks are stacked on each other, it is easiest to start with the forces on the top block. In this case, the top block is in the same condition as the block from [Example 5.2](#ex:newtonslaws:blockI). The forces exerted on the top block are:
 1.  $\vec F_g^m$, its weight.
 2.  $\vec N^m$, a normal force from the wedge-shaped block.
 3.  $\vec f_s^m$, a force of static friction exerted by the wedge-shaped block.
@@ -439,6 +441,7 @@ In order to analyse the forces on an object more clearly, it is a very good idea
 ```
 In [Example 5.3](#fig:newtonslaws:2blockswedge) above, we would draw one free-body diagram for each object (each mass), as shown in [](#fig:newtonslaws:2blockswedge_fbd).
 
+(ex:newtonslaws:2blocksI)=
 :::{note} Example 5.4
 :label: ex:newtonslaws:2blocksI
 ```{figure} figures/NewtonsLaws/2blocksI.png
@@ -489,7 +492,7 @@ Newton's Second Law is a vector equation that relates the vector sum of all forc
 \sum F_y &= ma_y \\
 \sum F_z &= ma_z
 ```
-In order to use Newton's Second Law, we thus need to introduce a coordinate system so that we can work with the components of the vectors (forces and acceleration) in that coordinate system. Usually, a good choice of coordinate system is one where the $x$ (or $y$) axis is parallel to the acceleration vector. [](#fig:newtonslaws:2blocksI_fbd_m1) shows the free-body diagram from the $m_1$ block from the previous example ([](#ex:newtonslaws:2blocksI)) along with a good choice of coordinate system. 
+In order to use Newton's Second Law, we thus need to introduce a coordinate system so that we can work with the components of the vectors (forces and acceleration) in that coordinate system. Usually, a good choice of coordinate system is one where the $x$ (or $y$) axis is parallel to the acceleration vector. [](#fig:newtonslaws:2blocksI_fbd_m1) shows the free-body diagram from the $m_1$ block from the previous example ([Example 5.4](#ex:newtonslaws:2blocksI)) along with a good choice of coordinate system. 
 ```{figure} figures/NewtonsLaws/2blocksI_fbd_m1.png
 :label: fig:newtonslaws:2blocksI_fbd_m1
 :width: 25%
@@ -524,6 +527,7 @@ A few notes on applying Newton's Second Law:
 
 The following example shows how to write Newton's Second Law for a system of two blocks.
 
+(ex:newtonslaws:2blocksHI)=
 :::{note} Example 5.5
 :label: ex:newtonslaws:2blocksHI
 ```{figure} figures/NewtonsLaws/2blocksHI.png
@@ -533,7 +537,7 @@ The following example shows how to write Newton's Second Law for a system of two
 :alt:  Two blocks connected by a massless string and massless pulley. Both blocks are accelerating.
  Two blocks connected by a massless string and massless pulley. Both blocks are accelerating.
 ```
-A block of mass $m_1$ is placed on an incline that makes an angle of $\theta$ with the horizontal. The block of mass $m_1$ is connected by a massless string through a massless pulley to a second block of mass $m_2$, which rests on a horizontal surface. The blocks are accelerating in such a way that the block of mass $m_1$ is accelerating down the incline, as shown in [](#ex:newtonslaws:2blocksHI). The coefficient of kinetic friction between either block and the surface it is resting on is $\mu_k$. Write Newton's Second Law for both blocks.
+A block of mass $m_1$ is placed on an incline that makes an angle of $\theta$ with the horizontal. The block of mass $m_1$ is connected by a massless string through a massless pulley to a second block of mass $m_2$, which rests on a horizontal surface. The blocks are accelerating in such a way that the block of mass $m_1$ is accelerating down the incline, as shown in [Example 5.5](#ex:newtonslaws:2blocksHI). The coefficient of kinetic friction between either block and the surface it is resting on is $\mu_k$. Write Newton's Second Law for both blocks.
 :::{note} Solution
 :class: dropdown
 
@@ -629,8 +633,8 @@ a = g
 ```
 and indeed, the acceleration of objects near the surface of the Earth has a magnitude of $g$. It is also clear that the dimensions of $g$ can also be written as an acceleration, and in most cases, one writes that, near the surface of the Earth, $g=9.8 {\rm m/s^2}$. You should however remember that this is only true when inertial and gravitational masses are the same, and that $g$ really should be thought of as the strength of the gravitational field, not as an acceleration.
 
+(sec:newtonslaws:inertialforces)=
 # Non-inertial frames of reference and inertial forces
-:label: sec:newtonslaws:inertialforces
 In the previous sections, we described how to use Newton's First Law to identify an inertial frame of reference (one where Newton's First Law holds true) in order to identify the forces exerted on an object so that Newton's Second Law could be applied. It is possible to apply Newton's Laws in a non-inertial frame of reference, **provided that one includes an additional "inertial force".**
 
 Let us assume that we hang a mass, $m$, from the ceiling of our car using a string. If the car accelerates forwards with a constant acceleration, $\vec a$, the mass will swing towards the back of the car and the string will not be vertical as long as the car maintains its constant acceleration, as shown in [](#fig:newtonslaws:car). As the car maintains its acceleration, the hanging mass will not move relative to the car.

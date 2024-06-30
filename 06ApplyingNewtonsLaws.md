@@ -35,7 +35,7 @@ When using Newton's Laws to model an object, one can identify two broad categori
 
 For static problems, since the acceleration vector is zero, we can choose a coordinate system in a way that results in as many forces as possible being aligned with the axes (so that we minimize the number of forces that we need to break up into components).
 
-:::{note} Example
+:::{note} Example 6.1
 You push horizontally with a force $\vec F$ on a box of mass $m$ that is resting against a vertical wall, as shown in [](#fig:applyingnewtonslaws:blockwall). The coefficient of static friction between the wall and the box is $\mu_s$. What is the minimum magnitude of the force that you must exert for the box to remain stationary?
 ```{figure} figures/ApplyingNewtonsLaws/blockwall.png
 :label: fig:applyingnewtonslaws:blockwall
@@ -101,7 +101,8 @@ We can describe the motion of an object whose *velocity vector does not continuo
 
 When an object undergoes linear motion, we always model the motion of the object over straight segments separately. Over one such segment, the acceleration vector will be co-linear with the displacement vector of the object (parallel or anti-parallel - note that the acceleration can change direction as it would from a spring force, but will always be co-linear with the displacement).
 
-:::{note} Example
+(ex:applyingnewtonslaws:block)=
+:::{note} Example 6.2
 :label: ex:applyingnewtonslaws:block
 A block of mass $m$ is placed at rest on an incline that makes an angle $\theta$ with respect to the horizontal, as shown in [](#fig:applyingnewtonslaws:blockI). The block is nudged slightly so that the force of static friction is overcome and the block starts to accelerate down the incline. At the bottom of the incline, the block slides on a horizontal surface.
 
@@ -211,12 +212,12 @@ v_0^2&=2a_2x\\
  :::
 
 :::{tip} Checkpoint
-A present is placed at rest on a plane that is inclined, at a distance $L$ from the bottom of the incline, much like the box in [](#ex:applyingnewtonslaws:block) above. At the bottom of the incline, the box is determined to have a speed $v$. If the box is instead released from a distance of $4L$ from the bottom of the incline, what will its speed at the bottom of the incline be?
+A present is placed at rest on a plane that is inclined, at a distance $L$ from the bottom of the incline, much like the box in [Example 6.2](#ex:applyingnewtonslaws:block) above. At the bottom of the incline, the box is determined to have a speed $v$. If the box is instead released from a distance of $4L$ from the bottom of the incline, what will its speed at the bottom of the incline be?
 1.  $v$
 2.  $2v$
 3.  $4v$
 4.  it depends on the coefficient of friction between the present and the plane.
-:::{note} Answer
+:::{tip} Answer
 :class: dropdown
 2.
 :::
@@ -334,7 +335,8 @@ V^2 &= v_0^2+ 2\int_{x_0}^{X}adx\\
 \therefore V^2- v_0^2 &= 2a(X-x_0)
 ```
 
-:::{note} Example
+(ex:applyingnewtonslaws:blockspring)=
+:::{note} Example 6.3
 :label: ex:applyingnewtonslaws:blockspring
 ```{figure} figures/ApplyingNewtonsLaws/blockspring.png
 :label: fig:applyingnewtonslaws:blockspring
@@ -390,7 +392,8 @@ If you have studied physics before, you may have realized that the speed is easi
 which gives the same value for $V$. As we will see in a later chapter, kinetic and potential energy are defined as they are, precisely because it makes using conservation of energy equivalent to using forces as we just did.
 :::
 
-:::{note} Example
+(ex:applyingnewtonslaws:drag)=
+:::{note} Example 6.4
 :label: ex:applyingnewtonslaws:drag
 An object of mass $m$ is released from rest out of a helicopter. The drag (air-resistance) on the object can be modelled as having a magnitude given by $bv$, where $v$ is the speed of the object and $b$ is a constant of proportionality. How does the velocity of the object depend on time?
 :::{note} Solution
@@ -456,7 +459,7 @@ v(t)-\frac{mg}{b} &= -\frac{mg}{b}e^{-\frac{b}{m}t}\\
 :::
 
 # Uniform circular motion
-As we saw in [Chapter %s](#chap:describingmotioninnd), "uniform circular motion" is defined to be motion along a circle with constant speed. This may be a good time to review [Section %s](#sec:describingmotioninnd:circularmotion) for the kinematics of motion along a circle. In particular, for the uniform circular motion of an object around a circle of radius $R$, you should recall that:
+As we saw in [Chapter %s](#chap:momentumandcm), "uniform circular motion" is defined to be motion along a circle with constant speed. This may be a good time to review [Section %s](#sec:momentumandcm:circularmotion) for the kinematics of motion along a circle. In particular, for the uniform circular motion of an object around a circle of radius $R$, you should recall that:
 * The velocity vector, $\vec v$, is always tangent to the circle.
 * The acceleration vector, $\vec a$, is always perpendicular to the velocity vector, because the magnitude of the velocity vector does not change.
 * The acceleration vector, $\vec a$, always points towards the centre of the circle.
@@ -464,7 +467,7 @@ As we saw in [Chapter %s](#chap:describingmotioninnd), "uniform circular motion"
 * The angular velocity, $\omega$, is related to the magnitude of the velocity vector by $v=\omega R$ and is constant.
 * The angular acceleration, $\alpha$, is zero for uniform circular motion, since the angular velocity does not change.
 
-In particular, you should recall that even if the speed is constant, the acceleration vector is always non-zero in uniform circular motion because the **velocity changes direction**. According to Newton's Second Law, this implies that there **must be a net force on the object that is directed towards the centre of the circle**\footnote{The sum of the forces is often called the "net force" on an object, and in the specific case of uniform circular motion, that net force is sometimes called the "centripetal force" - however, it is not a force in and of itself and it is always the sum of the forces that points towards the centre of the circle.} (parallel to the acceleration):
+In particular, you should recall that even if the speed is constant, the acceleration vector is always non-zero in uniform circular motion because the **velocity changes direction**. According to Newton's Second Law, this implies that there **must be a net force on the object that is directed towards the centre of the circle**[^1] (parallel to the acceleration):
 ```{math}
 \sum \vec F = m\vec a
 ``` 
@@ -514,12 +517,13 @@ An object is undergoing uniform circular motion in the horizontal plane, when th
 2.  B 
 3.  C
 4.  D
-:::{note} Answer
+:::{tip} Answer
 :class: dropdown
 2.
 :::
 
-:::{note} Example
+(ex:applyingnewtonslaws:car)=
+:::{note} Example 6.5
 :label: ex:applyingnewtonslaws:car
 ```{figure} figures/ApplyingNewtonsLaws/car.png
 :label: fig:applyingnewtonslaws:car
@@ -568,7 +572,7 @@ Thus, if the speed is less than $\sqrt{\mu_s g R}$, the car will not skid and th
 * The speed is larger if the coefficient of friction is large (if the force of friction is larger, a larger radial acceleration can be sustained).
 :::
 
-:::{note} Example
+:::{note} Example 6.6
 ```{figure} figures/ApplyingNewtonsLaws/circleV.png
 :label: fig:applyingnewtonslaws:circleV
 :width: 27%
@@ -620,13 +624,13 @@ Consider a ball attached to a string, being spun in a vertical circle (such as t
 1.  It would decrease 
 2.  It would stay the same
 3.  It would increase
-:::{note} Answer
+:::{tip} Answer
 :class: dropdown
 1.
 :::
 
 ## Banked curves
-As we saw in [](#ex:applyingnewtonslaws:car), there is a maximum speed with which a car can go around a curve before it starts to skid. You may have noticed that roads, highways especially, are banked where there are curves. Racetracks for cars that go around an oval (the boring kind of car races) also have banked curves. As we will see, this allows the speed of vehicles to be higher when going around the curve; or rather, it makes the curves safer as the speed at which vehicles *would* skid is higher. In [](#ex:applyingnewtonslaws:car), we saw that it was the force of static friction between the tires of the car and the road that provided the only force with a component towards the centre of the circle. The idea of using a banked curve is to change the direction of the normal force between the road and the car tires so that it, too, has a component in the direction towards the centre of the circle. 
+As we saw in [Example 6.5](#ex:applyingnewtonslaws:car), there is a maximum speed with which a car can go around a curve before it starts to skid. You may have noticed that roads, highways especially, are banked where there are curves. Racetracks for cars that go around an oval (the boring kind of car races) also have banked curves. As we will see, this allows the speed of vehicles to be higher when going around the curve; or rather, it makes the curves safer as the speed at which vehicles *would* skid is higher. In [Example 6.5](#ex:applyingnewtonslaws:car), we saw that it was the force of static friction between the tires of the car and the road that provided the only force with a component towards the centre of the circle. The idea of using a banked curve is to change the direction of the normal force between the road and the car tires so that it, too, has a component in the direction towards the centre of the circle. 
 
 Consider the car depicted in [](#fig:applyingnewtonslaws:carbank) which is seen from behind making a left turn around a curve that is banked by an angle $\theta$ with respect to the horizontal and can be modelled as an arc from a circle of radius $R$.
 ```{figure} figures/ApplyingNewtonsLaws/carbank.png
@@ -636,7 +640,7 @@ Consider the car depicted in [](#fig:applyingnewtonslaws:carbank) which is seen 
 :alt:  A car moving into the page and going around a banked curved so that it is turning towards the left (the centre of the circle is to the left). 
  A car moving into the page and going around a banked curved so that it is turning towards the left (the centre of the circle is to the left). 
 ```
-The forces exerted on the car are the same as in [](#ex:applyingnewtonslaws:car), except that they point in different directions. The forces are:
+The forces exerted on the car are the same as in [Example 6.5](#ex:applyingnewtonslaws:car), except that they point in different directions. The forces are:
 1.  $\vec F_g$, its weight with magnitude $mg$.
 2.  $\vec N$, a normal force exerted by the road, perpendicular to the surface of the road.
 3.  $\vec f_s$, a force of static friction between the tires and the road. This is static friction, because the surface of the tire does not move relative to the surface of the road if the car is not skidding. The force of static friction has a magnitude that is at most $f_s\leq\mu_sN$ and is perpendicular to the normal force. The force could be either upwards or downwards, *depending on the other forces on the car*.
@@ -707,7 +711,7 @@ Jamie is driving his tricycle around a circular pond. Jamie feels a centrifugal 
 2.  $\frac{1}{2}F_I$
 3.  $2F_I$
 4.  $4F_I$
-:::{note} Answer
+:::{tip} Answer
 :class: dropdown
 4.
 :::
@@ -728,8 +732,7 @@ where the speed is no longer constant in time. The tangential component of the a
 a_T = \frac{dv}{dt}
 ```
 
-:::{note} Example
-
+:::{note} Example 6.7
 ```{figure} figures/ApplyingNewtonsLaws/ant.png
 :label: fig:applyingnewtonslaws:ant
 :width: 25%
@@ -921,5 +924,4 @@ mg &= ma_R = m\frac{v^2}{R}\\
 This corresponds to the minimum speed that they must have at the top of the loop to make it around. If they go faster, the normal force from their seat (downwards, since they are upside-down), would result in a larger net force towards the centre of the circle. This situation corresponds to the normal force from their seat just barely reaching 0 at the top of the loop. Since the roller coaster is quoted as having a speed of $15 {\rm m/s}$ at the top of the loop, they will just barely make it. However, this is way too close to the minimal speed to not fall out of the roller coaster, so Kenny is correct in being sceptical! The engineers designing the roller coaster should include a much bigger safety margin! 
 :::
 
-
-
+[^1]:The sum of the forces is often called the "net force" on an object, and in the specific case of uniform circular motion, that net force is sometimes called the "centripetal force" - however, it is not a force in and of itself and it is always the sum of the forces that points towards the centre of the circle.

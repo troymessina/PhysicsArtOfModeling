@@ -90,7 +90,7 @@ Using the data from [](#tab:MomentumAndCM:1dmotion), at what position along the 
 2. $5.25 {\rm m}$
 3. $5.75 {\rm m}$
 4. $6.0 {\rm m}$
-:::{note} Answer
+:::{tip} Answer
 :class: dropdown
 2.
 :::
@@ -152,8 +152,6 @@ Try, putting these three lines of code in the trinket below and see what happens
 :align: center
 A blank trinket to simulate a rock sliding on a frozen pond.
 :::
-
-
 
 ## Non-constant Momentum
 If the particle has a constant mass, then the time derivative of its momentum is given by:
@@ -228,7 +226,7 @@ What is the SI unit for impulse?
 2.  ${\rm kg \cdot s^2}$
 3.  ${\rm kg \cdot m/s}$
 4.  ${\rm kg \cdot m/s^3}$
-:::{note} Answer
+:::{tip} Answer
 :class: dropdown
 3.
 :::
@@ -313,7 +311,7 @@ When considering a system of multiple particles, we distinguish between **intern
 Two pool balls crash against each other. Is this force of gravity exerted by one ball on the other an internal or external force?
 1.  Internal. 
 2.  External.
-:::{note} Answer
+:::{tip} Answer
 :class: dropdown
 1.
 :::
@@ -491,7 +489,6 @@ The type of collision that we described here is also sometimes called an "explos
 :::
 
 :::{note} Example 4.6
-
 A proton of mass $m_p$ and initial velocity $\vec v_p$ collides inelastically with a nucleus of mass $m_N$ at rest, as shown in [](#fig:momentumandcm:protonnucleus). A coordinate system is set up as shown, such that the initial velocity of the proton is in the $x$ direction. After the collision, the proton's speed is measured to be $v'_p$ and its velocity vector is found to make an angle $\theta$ with the $x$ axis as shown. What is the velocity vector of the nucleus after the collision? Assume that the collision takes place in vacuum.
 ```{figure} figures/MomentumAndCM/protonnucleus.png
 :label: fig:momentumandcm:protonnucleus
@@ -546,7 +543,7 @@ If we were given numbers for the initial and final speed of the proton, as well 
 ## Elastic collisions
 In this section, we give a few examples of modelling elastic collisions. Even though it is mechanical energy that is conserved in an elastic collision, one can almost always simplify this to only kinetic energy being conserved. If a collision takes place in a well localized position in space (i.e. before and after the collision are the same point in space), then the potential energies of the objects involved will not change, thus any change in their mechanical energy is due to a change in kinetic energy.
 
-
+(ex:momentumandcm:1delastic)=
 :::{note} Example 4.7
 :label: ex:momentumandcm:1delastic
 ```{figure} figures/MomentumAndCM/1delastic.png
@@ -639,13 +636,12 @@ Two trains of equal masses collide elastically on a track. If train A had a spee
 2.  Train A will be at rest and train B will move away with a speed $v$.
 3.  Both trains A and B will stick together and move at a speed of $v$.
 4.  Train B will be at rest and train A will move away at a speed of $v$.
-:::{note} Answer
+:::{tip} Answer
 :class: dropdown
 2.
 :::
 
 :::{note} Example 4.8
-
 ```{figure} figures/MomentumAndCM/protonproton.png
 :label: fig:momentumandcm:protonproton
 :width: 70%
@@ -1039,10 +1035,13 @@ Regardless of the actual shape of the parabola (the parameter $a$), the centre o
 True or False: The centre of mass of a continuous object is always located within the object.
 1.  True
 2.  False 
-:::{note} Answer
+:::{tip} Answer
 :class: dropdown
 2.
 :::
+
+(sec:momentumandcm:circularmotion)=
+# Circular Motion
 
 # Summary
 

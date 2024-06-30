@@ -27,7 +27,7 @@ Newton's Universal Theory of Gravity predicts that objects near the surface of t
 # Orders of magnitude
 Although you should try to fight intuition when building a model to describe a particular phenomenon, you should not abandon critical thinking and should always ask if a prediction from your model makes sense. One of the most straightforward ways to estimate if a model makes sense is to ask whether it predicts the correct order of magnitude for a quantity. Usually, the order of magnitude for a quantity can be determined by making a very simple model, ideally one that you can work through in your head. When we say that a prediction gives the right "order of magnitude", we usually mean that the prediction is within a factor of "a few" (up to a factor of 10) of the correct answer. For example, if a measurement gives a value of 2000, then we would consider that a model prediction of 8000 gave the right order of magnitude (it differs from the correct answer by a factor of 4), whereas a prediction of 24000 would not (it differs by a factor of 12). 
 
-:::{note} Example
+:::{note} Example 2.1
 How many ping pong balls can you fit into a school bus? Is it of order 10,000, or 100,000, or more?}
 Our strategy is to estimate the volumes of a school bus and of a ping pong ball, and then calculate how many times the volume of the ping pong ball fits into the volume of the school bus.
 :::{note} Solution
@@ -64,7 +64,7 @@ Fill in the following table, giving the order of magnitude (in meters) of the si
 |Radius of the Sun ||
 |Radius of the Milky Way ||
 ```
-:::{note} Answer
+:::{tip} Answer
 :class: dropdown
 ```{table}
 | **Object**|**Order of magnitude**|
@@ -96,7 +96,7 @@ The speed limit on a highway...
 2.  has the dimension of length and can be expressed in units of kilometers per hour.
 3.  has the dimension of time over length and can be expressed in units of meters per second.
 4.  has the dimension of time and can be expressed in units of meters.
-:::{note} Answer
+:::{tip} Answer
 :class: dropdown
 1.
 :::
@@ -146,7 +146,8 @@ We call "dimensional analysis" the process of working out the dimensions of a qu
 
 The next two examples show how to apply dimensional analysis to obtain the unit or dimension of a derived quantity. 
 
-:::{note} Example
+(ex:modelandexperiment:forceSI)=
+:::{note} Example 2.2
 :label: ex:modelandexperiment:forceSI
 Acceleration has SI units of ${\rm ms^{-2}}$ and force has the dimension of mass multiplied by acceleration. What are the dimensions and SI units of force, expressed in terms of the base dimensions and units?
 :::{note} Solution
@@ -166,7 +167,7 @@ and the SI units of force are thus:
 Force is such a common dimension that it, like many other derived dimensions, has its own derived SI unit, the Newton [N].
 :::
 
-:::{note} Example
+:::{note} Example 2.3
 Use [](#tab:modelandexperiment:derivedSIunits) to show that voltage has the same dimension as force multiplied by speed and divided by electric current.
 :::{note} Solution
 :class: dropdown
@@ -190,7 +191,7 @@ where, in the last line, we combined the powers of the same dimensions. By inspe
 
 When you build a model to predict the value of a physical quantity, you should always use dimensional analysis to ensure that the dimension of the quantity your model predicts is correct.
 
-:::{note} Example
+:::{note} Example 2.4
 Your model predicts that the speed, $v$, of an object of mass $m$, after having fallen a distance $h$ on the surface of a planet with mass $M$ and radius $R$ is given by:
 ```{math}
 v = \frac{mMh}{R}
@@ -223,14 +224,14 @@ In Chloe's theory of falling objects from [](#chap:introduction), the time, $t$,
 2. ${\rm T.L^{-\frac{1}{2}}}$
 3. ${\rm s.m^{\frac{1}{2}}}$
 4. ${\rm s.m^{-\frac{1}{2}}}$ 
-:::{note} Answer
+:::{tip} Answer
 :class: dropdown
 4.
 :::
 
 Dimensional analysis can also be used to determine formulas (usually to within an order of magnitude). One famous example of this is when a British physicist named G.I. Taylor was able to determine a formula that showed how the blast radius of an atomic bomb scaled with time. Using pictures of the first atomic bomb explosion, he was able to determine the amount of energy released in the explosion, which was classified information at the time. 
 
-:::{note} Example
+:::{note} Example 2.5
 Find a formula that shows how the blast radius, $r$, scales with the time since the explosion, $t$, where the radius also depends on the energy released in the explosion, $E$, and the density of the medium into which the bomb explodes, $\rho$.
 :::{note} Solution
 :class: dropdown
@@ -277,10 +278,8 @@ which states that the time, $t$, for any object to fall a distance, $x$, near th
 
 One possible way to test Chloe's theory of falling objects is to measure $k$ for different drop heights to see if we always obtain the same value. Results of such an experiment are presented in Table \ref{tab:modelandexperiment:kmes}, where the time, $t$, was measured for a bowling ball to fall distances of $x$ between $1 {\rm m}$ and $5 {\rm m}$. The table also shows the values computed for $\sqrt x$ and the corresponding value of $k=t/\sqrt x$:
 
-\begin{table}
-:label: tab:modelandexperiment:kmes
-\centering
 ```{table} Measurements of the drop times, $t$, for a bowling ball to fall different distances, $x$. We have also computed $\sqrt x$ and the corresponding value of $k$.
+:label: tab:modelandexperiment:kmes
 | **x** [m]|**t** [s]|**$\sqrt x$**  ${\rm \left[{m^{\frac{1}{2}}}\right]}$|**k**  ${\rm \left[{s.m^{-\frac{1}{2}}}\right]}$|
 | :--: | :--: | :--: | :--: |
 |1.00 | 0.33 | 1.00 | 0.33 |
@@ -341,7 +340,8 @@ If we have $N$ measurements of some quantity $t$, $\{t_1, t_2, t_3, \dots t_N\}$
 ```
 The mean is just the arithmetic average of the values, and the standard deviation, $\sigma_t$, requires one to first calculate the mean, then the variance ($\sigma^2_t$, the square of the standard deviation). You should also note that for the variance, we divide by $N-1$ instead of $N$. The standard deviation and variance are quantities that come from statistics and are a good measure of how spread out the values of $t$ are about their mean, and are thus a good measure of the uncertainty.
 
-:::{note} Example
+(ex:modelandexperiment:stdcalc)=
+:::{note} Example 2.6
 :label: ex:modelandexperiment:stdcalc
 Calculate the mean and standard deviation of the values for $k$ from [](#tab:modelandexperiment:kmes_3m).
 :::{note} Solution
@@ -444,7 +444,8 @@ That is, the central value of the function $F$ is found by evaluating the functi
 
 In [Appendix D](#app:python), we will show you how to calculate this easily with a computer, so do not worry about getting comfortable with partial derivatives (yet!). Note that the partial derivative, $\frac{dF}{dx}$, is simply the derivative of $F(x,y)$ relative to $x$ evaluated as if $y$ were a constant. Also, when we say "add in quadrature", we mean square the quantities, add them, and then take the square root (same as you would do to calculate the hypotenuse of a right-angle triangle).
 
-:::{note} Example
+(ex:modelandexperiment:derivprop)=
+:::{note} Example 2.7
 :label: ex:modelandexperiment:derivprop 
 Use the derivative method to evaluate $k=\frac{t}{\sqrt{x}}$ for $x=3.00 \pm 0.01 {\rm m}$ and $t=0.76\pm0.15 {\rm s}$.
 :::{note} Solution
@@ -497,7 +498,7 @@ $z=f(x)$ (a function of 1 variable) &$\sigma_z=\left|\frac{df}{dx}\sigma_x \righ
 
 :::{tip} Checkpoint
 We have measured that a llama can cover a distance of $20.0 \pm 0.5 {\rm m}$ in $4.0\pm 0.5 {\rm s}$. What is the speed (with uncertainty) of the llama?
-:::{note} Answer
+:::{tip} Answer
 :class: dropdown
 $5.0 \pm 0.6 {\rm m/s}$
 :::
@@ -549,7 +550,7 @@ Someone has measured the average height of tables in the laboratory to be $1.053
 2.  $1.054\pm 0.053 {\rm m}$
 3.  $105.4\pm 5.3e-2 {\rm m}$ 
 4.  $105.35\pm 5.25 {\rm cm}$
-:::{note} Answer
+:::{tip} Answer
 :class: dropdown
 3.
 :::

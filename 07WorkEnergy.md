@@ -47,8 +47,7 @@ When determining the scalar product $\vec F\cdot \vec d = Fd\cos\theta$, $\theta
 
 The work "done" by the force is the scalar product of the force vector and the displacement vector of the object. We say that the force "does work" if it is exerted while the object moves (has a displacement vector) and in such a way that the scalar product of the force and displacement vectors is non-zero. A force that is perpendicular to the displacement vector of an object does no work (since the scalar product of two perpendicular vectors is zero).  A force exerted in the same direction as the displacement will do positive work ($\cos\theta$ positive), and a force in the opposite direction of the displacement will do negative work ($\cos\theta$ negative). As we will see, positive work corresponds to increasing the speed of the object, whereas negative work corresponds to decreasing its speed. No work corresponds to no change in speed (but could corresponds to a change in velocity).
 :::{tip} Checkpoint
-\begin{MCquestion}
-{A pendulum of length $R$ consists of a mass connected to a string ([](#fig:workenergy:pendulumtension)). The string exerts a force of tension $\vec F_T$ on the mass. What is the work done by tension when the pendulum swings through an angle $\theta$?
+A pendulum of length $R$ consists of a mass connected to a string ([](#fig:workenergy:pendulumtension)). The string exerts a force of tension $\vec F_T$ on the mass. What is the work done by tension when the pendulum swings through an angle $\theta$?
 ```{figure} figures/WorkEnergy/pendulumworktension.png
 :label: fig:workenergy:pendulumtension
 :width: 20%
@@ -59,7 +58,7 @@ A pendulum swings through an angle $\theta$.
 1. $W=F_TR\theta$
 2. $W=F_TR(1-\cos\theta)$
 3. Tension does no work on the mass.
-:::{note} Answer
+:::{tip} Answer
 :class: dropdown
 3.
 :::
@@ -90,7 +89,7 @@ A constant force in the positive $x$ direction, $\vec F$, acts on a box, as in [
 1. $\vec F$ does no work on the box when it moves from $x_0$ to $x_1$. 
 2. The work has the same magnitude as before, but the work is now negative.
 3. The work done by $\vec F$ is the same in both cases.
-:::{note} Answer
+:::{tip} Answer
 :class: dropdown
 2.
 :::
@@ -130,7 +129,8 @@ where we introduced a vector $\Delta \vec x$ to be the vector of length $\Delta 
 ```
 where the work was calculated in going from $x=x_0$ to $x=x_f$, and $d\vec x=dx\hat x$ is an infinitely small displacement vector (of length $dx$) in the positive $x$ direction.
 
-:::{note} Example
+(ex:workenergy:spring)=
+:::{note} Example 7.1
 :label: ex:workenergy:spring 
 A block is pressed against the free end of a horizontal spring with spring constant, $k$, so as to compress the spring by a distance $D$ relative to its rest length, as shown in [](#fig:workenergy:spring). The other end of the spring is fixed to a wall. What is the work done by the spring force on the block in going from $x=-D$ to $x=0$? What is the work done by the block on the spring over the same displacement?
 ```{figure} figures/WorkEnergy/spring.png
@@ -190,7 +190,7 @@ Brent and Dean pull two crates by using ropes that make the same angle above the
 1.  Dean because there is friction between his crate and the ground.
 2.  Brent. 
 3.  They did the same amount of work.
-:::{note} Answer
+:::{tip} Answer
 :class: dropdown
 2.
 :::
@@ -204,7 +204,8 @@ In general, if an object is moving along an arbitrary path, we cannot choose the
 An arbitrary two dimensional path of an object from $A$ to $B$ broken into three straight segments.
 ```
 
-:::{note} Example
+(ex:workenergy:workfriction)=
+:::{note} Example 7.2
 :label: ex:workenergy:workfriction
 Compare the work done by the force of kinetic friction in sliding a crate along a horizontal surface from position $A$ (coordinates $x_A, y_A$) to position $B$ (coordinates $x_B, y_B$) using the two different paths depicted in [](#fig:workenergy:workfriction). Assume that the mass of the crate is $m$ and that the coefficient of kinetic friction between the crate and the ground is $\mu_k$.
 ```{figure} figures/WorkEnergy/workfriction.png
@@ -255,7 +256,8 @@ W^{tot} = W_1 + W_2 = -\mu_k mg \left((x_B-x_A) + (y_B-y_A)\right)
 which is more work than was done along path 1. This makes sense because for both paths, the force of friction has the same magnitude and is always in the opposite direction of motion; thus, the longer the path, the more work will be done by the force.
 :::
 
-:::{note} Example
+(ex:workenergy:workgravity)=
+:::{note} Example 7.3
 :label: ex:workenergy:workgravity
 A box of mass $m$ is moved from the floor onto a table using two different paths, as shown in [](#fig:workenergy:workgravity). The table is a horizontal distance $L$ away from where the box starts and a height $H$ above the floor. Compare the work done by the weight of the box along the two possible paths.
 ```{figure} figures/WorkEnergy/workgravity.png
@@ -300,7 +302,7 @@ which is zero, because the force of gravity is always vertical and thus perpendi
 ```{math}
 W^{tot} = W_1 + W_2 = -mgH
 ```
-which is the same as the work done along path 1. As we will see, when a force is constant in magnitude and direction, the work that it does on an object in going from one position to another is independent of the path taken. This was not the case in [](#ex:workenergy:workfriction), because the direction of the force of kinetic friction depends on the direction of the displacement. 
+which is the same as the work done along path 1. As we will see, when a force is constant in magnitude and direction, the work that it does on an object in going from one position to another is independent of the path taken. This was not the case in [Example 7.2](#ex:workenergy:workfriction), because the direction of the force of kinetic friction depends on the direction of the displacement. 
 ::: 
 
 :::{tip} Checkpoint
@@ -316,7 +318,7 @@ For each of the following forces, decide whether the force: does more work on Cl
 1.  The force of gravity... 
 2.  The force of friction... 
 3.  The normal force from the slide... 
-:::{note} Answer
+:::{tip} Answer
 :class: dropdown
 Gravity does the same amount of work on both, friction does more work on Amelia, and the normal force does the same amount of work on both (the normal force does zero work, since it is always perpendicular to the displacement). 
 :::
@@ -343,7 +345,8 @@ We divide the path into infinitesimally small segments with displacement vectors
 ```
 You should note that this is not an integral like any other that we have seen so far: the integral is not over a single integration variable (usually we use $x$), but it is the integral (the sum!) over the specific path that we have chosen in going from $A$ to $B$. This is called a "path integral", and is generally difficult to evaluate. 
 
-:::{note} Example
+(ex:workenergy:workparabola)=
+:::{note} Example 7.4
 :label: ex:workenergy:workparabola
 ```{figure} figures/WorkEnergy/workparabola.png
 :label: fig:workenergy:workparabola
@@ -421,7 +424,8 @@ where $\vec F^{net} = \vec F_1 + \vec F_2 + \vec F_3$ is the net force. The resu
 W^{net} = \int_A^B F^{net}(\vec r) \cdot d\vec l
 ``` 
 
-:::{note} Example
+(ex:workenergy:networkramp)=
+:::{note} Example 7.5
 :label: ex:workenergy:networkramp
 You push with an unknown horizontal force, $\vec F$, against a crate of mass $m$ that is located on an inclined plane that makes an angle $\theta$ with respect to the horizontal, as shown in [](#fig:workenergy:workincline). The coefficient of kinetic friction between the crate and the incline is $\mu_k$. You push in such a way that that crates moves at a constant speed up the incline. What is the net work done on the crate if it moves up the incline by a distance $d$?
 ```{figure} figures/WorkEnergy/workincline.png
@@ -495,8 +499,8 @@ where we used the fact that $\cos^2\theta+\sin^2\theta=1$. Thus we find that the
 
 :::{attention} Olivia's Thoughts
 Pay close attention to the words "on" and "by." There are a few things about this that can be tricky:
-1.  In [](#ex:workenergy:networkramp), we were asked to find the **net work** done **on** the crate. Sometimes, the question won't specify that it wants you to find the net work, and will just say "What is the work done **on** the crate?" When you are just asked for the work done "on" an object, the question is implicitly asking for the *net* work done on the object.
-2.  Just because the net work done **on** an object is zero doesn't mean that the work done **by** each of the forces is zero. This may seem obvious, but it's easy to get tripped up on a test or exam. If you are reading a question about work and it says that the object is moving at a constant speed, it's tempting to just jump ahead and say that the work must be equal to zero. However, you can only say this if it's asking you for the net work done on the object. For instance, in example \ref{ex:workenergy:networkramp}, we concluded that since the crate was moving at a constant speed, the net work was equal to zero. But if the question asked you to find the work done on the crate **by gravity**, that would mean something different. The work done **by gravity** in this case is not equal to zero (it's actually negative).
+1.  In [Example 7.5](#ex:workenergy:networkramp), we were asked to find the **net work** done **on** the crate. Sometimes, the question won't specify that it wants you to find the net work, and will just say "What is the work done **on** the crate?" When you are just asked for the work done "on" an object, the question is implicitly asking for the *net* work done on the object.
+2.  Just because the net work done **on** an object is zero doesn't mean that the work done **by** each of the forces is zero. This may seem obvious, but it's easy to get tripped up on a test or exam. If you are reading a question about work and it says that the object is moving at a constant speed, it's tempting to just jump ahead and say that the work must be equal to zero. However, you can only say this if it's asking you for the net work done on the object. For instance, in [Example 7.5](#ex:workenergy:networkramp), we concluded that since the crate was moving at a constant speed, the net work was equal to zero. But if the question asked you to find the work done on the crate **by gravity**, that would mean something different. The work done **by gravity** in this case is not equal to zero (it's actually negative).
 3.  The work done "on" an object is not the same as the net work done "by" that object. For example, say you are in a tug-of-war and you pull the other team towards you, but you yourself do not move. The net work done **on** you is zero, but the work done **by** you is not zero. So, when you are talking about work, you should always state explicitly whether the work is being done "on" the object or "by" the object. 
 
 **Note**: The wording won't always be like this - sometimes it will say "How much work do you do on the box?" instead of "How much work is done **by** you on the box," so always be careful. Still, looking for key words like "by" and "on" is a good place to start. 
@@ -507,7 +511,7 @@ A $2 {\rm kg}$ box sits on a horizontal surface. A constant horizontal force of 
 1.  The work done by the applied force. 
 2.  The work done by friction.
 3.  The net work done on the box.
-:::{note} Answer
+:::{tip} Answer
 :class: dropdown
 1.
 :::
@@ -588,7 +592,7 @@ The relation between the net work done and the change in kinetic energy is calle
 
 Most importantly, the Work-Energy theorem introduces the concept of "energy". As we will see in later chapters, there are other forms of energy in addition to work and kinetic energy. The Work-Energy Theorem is the starting point for the idea that you can convert one form of energy into another. The Work-Energy Theorem tells us how a force, by doing work, can provide kinetic energy to an object or remove kinetic energy from an object.  
 
-:::{note} Example
+:::{note} Example 7.6
 A net work of $W$ was done on an object of mass $m$ that started at rest. What is the speed of the object after the work has been done on the object?
 :::{note} Solution
 :class: dropdown
@@ -602,7 +606,7 @@ v_f = \sqrt{\frac{2W}{m}}
 ```
 :::
 
-:::{note} Example
+:::{note} Example 7.7
 A block is pressed against the free end of a horizontal spring with spring constant, $k$, so as to compress the spring by a distance $D$ relative to its rest length, as shown in [](#fig:workenergy:spring2). The other end of the spring is fixed to a wall. 
 ```{figure} figures/WorkEnergy/spring.png
 :label: fig:workenergy:spring2
@@ -614,14 +618,14 @@ A block is pressed against a horizontal spring so as to compress the spring by a
 If the block is released from rest and there is no friction between the block and the horizontal surface, what is the speed of the block when it leaves the spring?
 :::{note} Solution
 :class: dropdown
-This is the same problem that we presented in [Section %s](#sec:applyingnewtonslaws:modellingwhereforcechanges) in [](#ex:applyingnewtonslaws:blockspring), where we solved a differential equation to find the speed. 
+This is the same problem that we presented in [Section %s](#sec:applyingnewtonslaws:modellingwhereforcechanges) in [Example 6.3](#ex:applyingnewtonslaws:blockspring), where we solved a differential equation to find the speed. 
 
-Our first step is to calculate the net work done on the object in going from $x=-D$ to $x=0$ (which corresponds to when the object leaves the spring, as discussed in [](#ex:applyingnewtonslaws:blockspring)). The forces on the object are:
+Our first step is to calculate the net work done on the object in going from $x=-D$ to $x=0$ (which corresponds to when the object leaves the spring, as discussed in [Example 6.3](#ex:applyingnewtonslaws:blockspring)). The forces on the object are:
 1.  $\vec F_g$, its weight, with magnitude $mg$.
 2.  $\vec N$, the normal force exerted by the ground.
 3.  $\vec F(x)$, the force from the spring, with magnitude $kx$. 
 
-Both the normal force and weight are perpendicular to the displacement, so they will do no work. The net work done is thus the work done by the spring, which we calculated in [](#ex:workenergy:spring) to be:
+Both the normal force and weight are perpendicular to the displacement, so they will do no work. The net work done is thus the work done by the spring, which we calculated in [Example 7.1](#ex:workenergy:spring) to be:
 ```{math}
 W^{net} = W_F = \frac{1}{2}kD^2
 ```
@@ -633,7 +637,7 @@ W^{net} &=  \frac{1}{2}mv_f^2 - \frac{1}{2}mv_i^2 =  \frac{1}{2}mv_f^2 - 0\\
 ```
 :::
 
-:::{note} Example
+:::{note} Example 7.8
 A block is pressed against the free end of a horizontal spring with spring constant, $k$, so as to compress the spring by a distance $D$ relative to its rest length, as shown in [](#fig:workenergy:spring3). The other end of the spring is fixed to a wall. 
 ```{figure} figures/WorkEnergy/spring.png
 :label: fig:workenergy:spring3
@@ -690,12 +694,12 @@ Two cranes lift two identical boxes off of the ground. One crane is twice as pow
 2. The boxes are lifted to the same height in the same amount of time.
 3. The boxes are lifted to the same height, but it takes one of the boxes twice as long to get there.
 4. One box is lifted twice as high as the other, but it takes the same amount of time to get there. 
-:::{note} Answer
+:::{tip} Answer
 :class: dropdown
 3.
 :::
 
-:::{note} Example
+:::{note} Example 7.9
 If a car engine can do work on the car with a power of $P$, what will be the speed of the car at some time $t$ if the car was at rest at time $t=0$?
 :::{note} Solution
 :class: dropdown
@@ -715,7 +719,8 @@ Pt &= \frac{1}{2}mv_f^2 \\
 * The speed is smaller if the mass of the car is greater (the acceleration of the car will be less if the mass of the car is larger).
 :::
 
-:::{note} Example
+(ex:workenergy:powerconstantv)=
+:::{note} Example 7.10
 :label: ex:workenergy:powerconstantv
 You are pushing a crate along a horizontal surface at constant speed, $v$. You find that you need to exert a force of $\vec F$ on the crate in order to overcome the friction between the crate and the ground. How much power are you expending by pushing on the crate?
 :::{note} Solution
@@ -732,11 +737,11 @@ This is quite a general result for the rate at which a force does work when it i
 :::
 
 :::{attention} Olivia's Thoughts
-[Example %s](#ex:workenergy:powerconstantv) ties into what I brought up earlier. If you think to yourself: "The velocity is constant, so the work must be zero", the formula,
+[Example 7.10](#ex:workenergy:powerconstantv) ties into what I brought up earlier. If you think to yourself: "The velocity is constant, so the work must be zero", the formula,
 ```{math}
 P = \frac{\Delta W}{\Delta t} = Fv
 ```
-wouldn't make any sense. Since $v$ is a constant velocity, the power would always be equal to zero, which of course isn't right. Again, remember that when the velocity is constant, it is only the **net work** that is equal to zero. In [](#ex:workenergy:powerconstantv), it's asking for the power that **you** are expending by pushing on the crate (which is the same as asking for the rate of the work done **by** you **on** the crate). So, the formula does indeed make sense. 
+wouldn't make any sense. Since $v$ is a constant velocity, the power would always be equal to zero, which of course isn't right. Again, remember that when the velocity is constant, it is only the **net work** that is equal to zero. In [Example 7.10](#ex:workenergy:powerconstantv), it's asking for the power that **you** are expending by pushing on the crate (which is the same as asking for the rate of the work done **by** you **on** the crate). So, the formula does indeed make sense. 
 :::
 
 # Summary
@@ -891,7 +896,7 @@ The work done by gravity can thus be converted into an integral over $y$ (for wh
 ```{math}
 W = \int \vec F_g \cdot d\vec l = \int_h^0 -mgdy = [-mgy]_h^0 = mgh
 ```
-The work done by gravity is positive, which makes sense, since the force of gravity is generally in the same direction as the net displacement (downwards). We did not need to take into account the specific shape of the trajectory, because the force was constant in magnitude and direction (see [](#ex:workenergy:workparabola)).
+The work done by gravity is positive, which makes sense, since the force of gravity is generally in the same direction as the net displacement (downwards). We did not need to take into account the specific shape of the trajectory, because the force was constant in magnitude and direction (see [Example 7.4](#ex:workenergy:workparabola)).
 
 We can now find the speed of the skier when they leave the jump using the Work-Energy theorem:
 ```{math}
