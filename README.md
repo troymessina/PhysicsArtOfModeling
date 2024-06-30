@@ -28,7 +28,7 @@ This version of the textbook is also open-access and can be found at https://git
 14. [Fluid mechanics](#chapter:fluidmechanics)
 15. [Electric charges and fields](#chapter:chargesfields)
 16. [Gauss' Law](#chapter:gauss)
-17. Electric potential
+17. [Electric potential](#chapter:potential)
 18. Electric current
 19. Electric circuits
 20. The magnetic force
