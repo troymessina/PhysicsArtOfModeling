@@ -212,7 +212,7 @@ v &= -v_{rot} + v_{CM} = 0\\
 ```
 and we find that, for rolling without slipping, the speed due to rotation about the centre of mass has to be equal to the speed of the centre of mass. The speed due to rotation about the centre of mass can be expressed using the angular velocity of the wheel about the centre of mass ([](#eq:angularmomentumrolling:vrot)). For rolling without slipping, we thus have the following relationship between angular velocity and the speed of the centre of mass:
 ```{math}
-\boxed{\omega R = v_{CM}}\quad \text{(rolling without slipping)}
+\boxed{\omega R &= v_{CM}}\quad \text{(rolling without slipping)}
 ```
 It makes sense for the angular velocity to be related to the speed of the centre of mass. The faster the wheel rotates, the faster the centre of mass will move. If the wheel is slipping with respect to the ground, then the point of contact is no longer stationary relative to the ground, and there is no relation between the angular velocity and the speed of the centre of mass. For rolling with slipping, imagine the motion of your bicycle wheel as you try to ride your bike on a slick sheet of ice.
 
@@ -223,8 +223,8 @@ a_{CM} &= \frac{dv_{CM}}{dt} = \frac{d}{dt}\omega R = R \frac{d\omega}{dt}\\
 ```
 
 :::{tip} Checkpoint
-For rolling without slipping ([](#fig:angularmomentumrolling:wheelground)), the speed of the point on the wheel that is in contact with the ground is 0. What is the speed of the point at the top of the wheel?
-1.  $0$
+For rolling without slipping ([](#fig:angularmomentumrolling:wheelground)), the speed of the point on the wheel that is in contact with the ground is 0. What is the speed of the point at the top of the wheel?}
+1.  0.
 2.  $v_{CM}$.
 3.  $2v_{CM}$.
 4.  None of the above.

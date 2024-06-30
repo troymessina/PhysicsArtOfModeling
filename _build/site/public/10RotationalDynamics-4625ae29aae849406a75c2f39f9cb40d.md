@@ -972,7 +972,7 @@ dm = \sigma 2\pi r dr
 \end{align*}
 where $2\pi r dr$ is the area of the mass element. You can imagine unfolding the mass element into a rectangle of height $dr$ and of length $2\pi r$ to obtain its area. Now that we have expressed the mass element in terms of $r$, we can proceed to calculate the moment of inertia of the disk.
 
-We know from the [Example 10.4](#ex:rotationaldynamics:ring), that the infinitesimal moment of inertia, $dI$, of a ring of radius $r$ and infinitesimal mass, $dm$, about its axis of symmetry is given by:
+We know from the [Example 10.](#ex:rotationaldynamics:ring), that the infinitesimal moment of inertia, $dI$, of a ring of radius $r$ and infinitesimal mass, $dm$, about its axis of symmetry is given by:
 \begin{align*}
 dI = dm r^2
 \end{align*}

@@ -244,8 +244,8 @@ This equation provides us an alternate formulation to Newton's Second Law that i
 3. Torque about a centre of rotation can be thought of as the equivalent of a force that causes things rotate about an axis that goes through the point of rotation and that is parallel to the torque/angular acceleration vectors.
 4. Instead of mass, it is mass times $r^2$ that plays the role of inertia and determines how large of an angular acceleration a particle will experience for a given net torque.  
 
-(ex:rotationaldynamics:rocket)=
-:::{note} Example 10.1
+
+:::{note} Example 10.2
 :label: ex:rotationaldynamics:rocket
 ```{figure} figures/RotationalDynamics/rocket.png
 :label: fig:rotationaldynamics:rocket
@@ -412,8 +412,7 @@ Instead, if the particle were constrained to rotate about the $z$ axis (e.g. if 
 Left panel: a particle rotating about a circle centred at the origin with an axis determined from the net torque vector. Right panel: a particle that is constrained to rotate about the $z$ axis.
 ```
 
-(ex:rotationaldynamics:torque)=
-:::{note} Example 10.2
+:::{note}Example
 :label: ex:rotationaldynamics:torque
 A force given by $\vec F=F_x\hat x + F_y \hat y + F_z \hat z$ is exerted at a position $\vec r=r_x \hat x + r_y \hat y + r_z\hat z$. Calculate the torque about the $z$ axis as well as the torque about the origin.
 :::{note} Solution
@@ -490,8 +489,7 @@ The moment of inertia is a property of the object **relative to a specific axis 
 \boxed{\vec\tau_{ext} = I\vec\alpha}
 ```
 The net torque exerted on an object in the direction of the axis of rotation is thus equal to its moment of inertia about that axis multiplied by its angular acceleration about that axis. In other words, the moment of inertia describes how the object will resist rotational motion given a net torque. An object with a smaller moment of inertia will have a larger angular acceleration for a given torque. Again, this is analogous to the linear case, where the acceleration of an object given a net force is determined by its inertial mass.
-ex:rotationaldynamics:dumbbell_2m)=
-:::{note} Example 10.3
+:::{note}Example
 :label: ex:rotationaldynamics:dumbbell_2m
 ```{figure} figures/RotationalDynamics/dumbbell_2m.png
 :label: fig:rotationaldynamics:dumbbell_2m
@@ -613,7 +611,7 @@ I = \int r^2 dm
 where $dm$ is a small mass element that makes up the object, $r$ is the distance from that mass element to the axis of rotation, and the integral is over the dimension of the object. As we did above, we would usually set up this integral so that $dm$ is expressed in terms of $r$ so that we can take an integral over $r$. 
 
 (ex:rotationaldynamics:ring)=
-:::{note} Example 10.4
+:::{note} Example 10.1
 :label: ex:rotationaldynamics:ring
 Calculate the moment of inertia of a uniform thin ring of mass $M$ and radius $R$, rotated about an axis that goes through its centre and is perpendicular to the disk.
 :::{note} Solution
@@ -685,8 +683,7 @@ We can thus write the parallel axis theorem:
 ```
 where $I_{CM}$ is the moment of inertia of an object of mass $M$ about an axis that goes through the centre of mass and, $I_h$, is the moment of inertia about a second axis that is parallel to the first and a distance $h$ away.
 
-(ex:rotationldynamics:rod)=
-:::{note} Example 10.5
+:::{note}Example
 :label: ex:rotationldynamics:rod
 In the previous section, we calculated the moment of inertia of a rod of length $L$ and mass $M$ through an axis that is perpendicular to the rod and through one of its ends, and found that it was given by:
 \begin{align*}
@@ -714,7 +711,7 @@ In this section, we consider the conditions under which an object is in static o
 ## Static equilibrium
 An object is in static equilibrium, if **both the sum of the external forces exerted on the object and the sum of the external torques (about any axis) are zero**. If the object is in static equilibrium the centre of mass will have no acceleration and the object will have no angular acceleration. In the centre of mass frame of reference, the object is immobile. 
 (ex:rotationaldynamics:scale)=
-:::{note} Example 10.6
+:::{note} Example 10.2
 :label: ex:rotationaldynamics:scale
 ```{figure} figures/RotationalDynamics/scale.png
 :label: fig:rotationaldynamics:scale
@@ -932,13 +929,13 @@ An object is in dynamic equilibrium if the centre of mass is accelerating, but t
 
 ## Problems
 
-:::{note} Problem 10.1
+:::{note}Problem
 :label: prob:rotationaldynamics:mominertia
 Calculate the moment of inertia of a uniform disk of mass $M$ and radius $R$, rotated about an axis that goes through its centre and is perpendicular to the disk.
 :::
 
 
-:::{note} Problem 10.2
+:::{note}Problem
 :label: prob:rotationaldynamics:sign
 ```{figure} figures/RotationalDynamics/sign.png
 :label: fig:rotationaldynamics:sign
@@ -951,7 +948,7 @@ A sign holder is built by attaching a bar of mass $M$ and length $L$ to a wall u
 :::
 
 ## Solutions
-:::{note} Solution 10.1
+:::{note}Solution
 :class: dropdown
 :label: prob:rotationaldynamics:mominertiasoln
 We need to split up the disk into mass elements, $dm$, that we can sum together to obtain the moment of inertia of the disk. We can choose a ring of radius $r$ and radial thickness $dr$ for the shape of our mass element, as depicted in [](#fig:rotationaldynamics:diskI).
@@ -972,7 +969,7 @@ dm = \sigma 2\pi r dr
 \end{align*}
 where $2\pi r dr$ is the area of the mass element. You can imagine unfolding the mass element into a rectangle of height $dr$ and of length $2\pi r$ to obtain its area. Now that we have expressed the mass element in terms of $r$, we can proceed to calculate the moment of inertia of the disk.
 
-We know from the [Example 10.4](#ex:rotationaldynamics:ring), that the infinitesimal moment of inertia, $dI$, of a ring of radius $r$ and infinitesimal mass, $dm$, about its axis of symmetry is given by:
+We know from the [Example 10.1](#ex:rotationaldynamics:ring), that the infinitesimal moment of inertia, $dI$, of a ring of radius $r$ and infinitesimal mass, $dm$, about its axis of symmetry is given by:
 \begin{align*}
 dI = dm r^2
 \end{align*}
@@ -988,7 +985,7 @@ where we removed the surface mass density by expressing it in term of the total 
 **Discussion:** The moment of inertia of a disk of mass $M$ and radius $R$ is half of that of a ring of radius $R$ and mass $M$. It is thus easier to rotate the disk than the ring. 
 :::
 
-:::{note} Solution 10.2
+:::{note}Solution
 :class: dropdown
 :label: prob:rotationaldynamics:signsoln
 The whole system does not move and so it is in static equilibrium. In order to determine the forces exerted on the bar by the rope and the hinge, we model the bar as being in static equilibrium. The forces exerted on the bar are:

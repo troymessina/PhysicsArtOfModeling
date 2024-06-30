@@ -223,8 +223,8 @@ a_{CM} &= \frac{dv_{CM}}{dt} = \frac{d}{dt}\omega R = R \frac{d\omega}{dt}\\
 ```
 
 :::{tip} Checkpoint
-For rolling without slipping ([](#fig:angularmomentumrolling:wheelground)), the speed of the point on the wheel that is in contact with the ground is 0. What is the speed of the point at the top of the wheel?
-1.  $0$
+For rolling without slipping ([](#fig:angularmomentumrolling:wheelground)), the speed of the point on the wheel that is in contact with the ground is 0. What is the speed of the point at the top of the wheel?}
+1.  0.
 2.  $v_{CM}$.
 3.  $2v_{CM}$.
 4.  None of the above.
