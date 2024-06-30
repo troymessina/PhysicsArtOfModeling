@@ -54,7 +54,7 @@ v(x) = \sqrt{\frac{k(A^2-x^2)}{m}}
 ```
 
 :::{tip} Checkpoint
-If you double the amplitude of the motion of a mass attached to a spring, its maximum speed will be:
+If you double the amplitude of the motion of a mass attached to a spring, its maximum speed will be:}
 1.  double.
 2.  $\sqrt 2$ times greater. 
 3.  the same.
@@ -93,9 +93,8 @@ The last equation has exactly the same form as [](#eq:simpleharmonicmotion:shmsp
 ```
 We call $\omega$ the "angular frequency" of the spring-mass system. We have found that our guess for $x(t)$ satisfies the differential equation. 
 
-:::{tip} Checkpoint
-:label: cp:simpleharmonicmotion:omega
-What is the SI unit for angular frequency?
+:::{tip} Checkpoint:label: cp:simpleharmonicmotion:omega
+What is the SI unit for angular frequency?}
 1.  ${\rm Hz}$
 2.  ${\rm rad/s}$
 3.  ${\rm N}^{1/2}{\rm m}^{-1/2}{\rm kg}^{-1/2}$
@@ -127,7 +126,7 @@ a(t)&= \frac{d}{dt}v(t) = -A\omega^2\cos(\omega t + \phi)
 ```
 
 :::{tip} Checkpoint
-What is the value of $\phi$ if we choose $t=0$ to be when the mass is at $x=0$ and moving in the positive $x$ direction?
+What is the value of $\phi$ if we choose $t=0$ to be when the mass is at $x=0$ and moving in the positive $x$ direction?}
 1.  $\pi$
 2.  $-\pi$
 3.  $\pi/2$
@@ -165,7 +164,7 @@ It should now be clear why $\omega$ is called the angular frequency, since it is
 
 :::{tip} Checkpoint
 :label: cp:simpleharmonicmotion:period
-In order to double the oscillation period of a spring-mass system, you can
+In order to double the oscillation period of a spring-mass system, you can}
 1.  double the ratio of the mass over the spring constant.
 2.  quadruple the mass. 
 3.  halve the spring constant.
@@ -377,7 +376,7 @@ where $\theta_{max}$ is the maximal amplitude of the oscillations and $\phi$ is 
 
 :::{tip} Checkpoint
 :label: cp:simpleharmonicmotion:pendulum
-Kaiden built a grandfather clock using a simple pendulum, but he found that the period was twice as large as as he wanted it to be. In order to halve the period of the pendulum, he can
+Kaiden built a grandfather clock using a simple pendulum, but he found that the period was twice as large as as he wanted it to be. In order to halve the period of the pendulum, he can}
 1.  change the mass.
 2.  halve the length of the string.
 3.  quarter the length of the string.

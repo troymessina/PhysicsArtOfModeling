@@ -324,7 +324,7 @@ if the sealed side of the manometer has a pressure, $P_0=0$, above the fluid. If
 ```{math}
 h=\frac{P_1}{\rho g}=\frac{(1.013\times 10^5 {\rm Pa})}{(1000 {\rm kg/m^3})(9.8 {\rm m/s^2})}=10.3 {\rm m}
 ```
-**Discussion:** The difference in height is about $10 {\rm m}$ when the atmospheric pressure is nominal. This means that the manometer needs to be at least this tall to measure absolute atmospheric pressure, which is not practical to construct! If, instead, one uses a liquid with a higher density than that of water, then this height can be reduced substantially. Traditionally, barometers have been built using mercury, which has a density of ($\rho_{Hg}= 13.6\times 10^3 {\rm kg/m^3}$), so that the height difference at nominal atmospheric pressure is $760 {\rm mm}$. This is a much easier instrument to build (apart from the safety concerns of using mercury). For this reason, an often-used unit of pressure is "mm of mercury", which corresponds to the height difference in a manometer that is built using mercury. 
+**Discussion: **The difference in height is about $10 {\rm m}$ when the atmospheric pressure is nominal. This means that the manometer needs to be at least this tall to measure absolute atmospheric pressure, which is not practical to construct! If, instead, one uses a liquid with a higher density than that of water, then this height can be reduced substantially. Traditionally, barometers have been built using mercury, which has a density of ($\rho_{Hg}= 13.6\times 10^3 {\rm kg/m^3}$), so that the height difference at nominal atmospheric pressure is $760 {\rm mm}$. This is a much easier instrument to build (apart from the safety concerns of using mercury). For this reason, an often-used unit of pressure is "mm of mercury", which corresponds to the height difference in a manometer that is built using mercury. 
 :::
 
 :::{tip} Checkpoint
@@ -612,7 +612,7 @@ Bernoulli's principle also describes why the roof can be lifted off of a house i
 ```
 
 :::{tip} Checkpoint
-When a high speed train is travelling at constant speed, is there a net force on the windows from air pressure?
+When a high speed train is travelling at constant speed, is there a net force on the windows from air pressure?}
 1.  No, since the windows are stationary relative to the train, there is no net force on them from air pressure.
 2.  Yes, there is a net outwards force on the windows from air pressure. 
 3.  Yes, there is a net inwards force on the windows from air pressure.
@@ -747,7 +747,7 @@ The laminar flow rate, $Q$, of a viscous fluid through a pipe of length $L$ and 
 This is usually referred to as "Poiseuille's Equation".
 
 :::{tip} Checkpoint
-Does the flow rate of water out of a garden hose depend on the length of the hose?
+Does the flow rate of water out of a garden hose depend on the length of the hose?}
 1.  No, since the volume of water entering the hose must also exit the hose, it does not matter how long the hose is. 
 2.  Yes, the resistance of the hose depends on its length, so the pressure drop across the hose will change, and so will the flow rate. 
 :::{tip} Answer
@@ -785,7 +785,7 @@ We can write this as the flow through an effective resistance, $R$, with a press
 Q &= \frac{\Delta P}{R}\\
 \therefore R&= \frac{1}{\frac{1}{R_1}+\frac{1}{R2}}
 ```
-**Discussion:** By requiring that the sum of the flows of water through the houses be the same as the flow rate through the main pipe, we were able to model the two houses as a single effective house with resistance $R$. You may notice that this is the same relation as the equivalent resistance for two electrical resistors combined in parallel. This is because the flow of electrical current in a resistor can be modelled using similar tools to those required for modelling the flow of a viscous fluid in a pipe. 
+**Discussion: **By requiring that the sum of the flows of water through the houses be the same as the flow rate through the main pipe, we were able to model the two houses as a single effective house with resistance $R$. You may notice that this is the same relation as the equivalent resistance for two electrical resistors combined in parallel. This is because the flow of electrical current in a resistor can be modelled using similar tools to those required for modelling the flow of a viscous fluid in a pipe. 
 :::
 
 # Summary
