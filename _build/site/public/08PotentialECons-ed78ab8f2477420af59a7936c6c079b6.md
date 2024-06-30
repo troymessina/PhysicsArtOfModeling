@@ -5,7 +5,7 @@ numbering:
   heading_1:
     start: 9
 ---
-(chapter:potentialecons)=
+(chap:potentialecons)=
 # Overview
 
 In this chapter, we continue to develop the concept of energy in order to introduce a different formulation for Classical Physics that does not use forces. Although we can describe many phenomena using energy instead of forces, this method is completely equivalent to using Newton's Three Laws. As such, this method can be derived from Newton's formulation, as we will see. Because energy is a scalar quantity, for many problems, it leads to models that are much easier to develop mathematically than if one had used forces. The chapter will conclude with a presentation of the more modern approach, using "Lagrangian Mechanics", that is currently preferred in physics and forms the basis for extending our description of physics to the microscopic world (e.g. quantum mechanics). 
@@ -44,7 +44,7 @@ W = \int_A^B \vec F(\vec r) \cdot d\vec l
 ```
 where $\vec F(\vec r)$ is a force vector that, in general, is different at different positions in space ($\vec r$). We can also say that $\vec F$ depends on position by writing $\vec F(\vec r)=\vec F(x,y,z)$, since the position vector, $\vec r$, is simply the vector $\vec r = x\hat x + y \hat y+ z\hat z$. That is, $\vec F(\vec r)$ is just a short hand notation for $\vec F(x,y,z)$, and $d\vec l$ is a (very) small segment along the particular path over which one calculates the work.
 
-The above integral is, in general, difficult to evaluate, as it depends on the specific path over which the object moved. In [Example 7.2](#ex:workenergy:workfriction) of [Chapter %s](#chap:workenergy), we calculated the work done by friction on a crate that was slid across the floor along two different paths and indeed found that the work depended on the path that was taken. In [Example 7.3](#ex:workenergy:workgravity) of the same chapter, we saw that the work done by the force of gravity when moving a box along two different paths did not depend on the path chosen[^15].
+The above integral is, in general, difficult to evaluate, as it depends on the specific path over which the object moved. In [Example 7.](#ex:workenergy:workfriction) of [Chapter %s](#chap:workenergy), we calculated the work done by friction on a crate that was slid across the floor along two different paths and indeed found that the work depended on the path that was taken. In [](#ex:workenergy:workgravity) of the same chapter, we saw that the work done by the force of gravity when moving a box along two different paths did not depend on the path chosen[^15].
 
 We call "conservative forces" those forces for which the work done only depends on the initial and final positions and not on the path taken between those two positions. "Non-conservative" forces are those for which the work done does depend on the path taken. The force of gravity is an example of a conservative force, whereas friction is an example of a non-conservative force.
 

@@ -752,12 +752,12 @@ E = K + U = \frac{1}{2}mv^2 - G\frac{Mm}{r}
 ## Problems
 :::{note} Problem 9.1
 :label: prob:gravity:geosyncorbit
-Geosynchronous satellites are satellites that are placed in a circular orbit around the Earth in such a way that their orbital period is synchronized with the $24 {\rm h}$ rotation period of the Earth. The advantage of geosynchronous satellites is that they are always above the same point on Earth, which makes them useful for establishing communication networks. At what altitude must geosynchronous satellites be placed?
+Geosynchronous satellites are satellites that are placed in a circular orbit around the Earth in such a way that their orbital period is synchronized with the $24 {\rm h}$ rotation period of the Earth. The advantage of geosynchronous satellites is that they are always above the same point on Earth, which makes them useful for establishing communication networks. At what altitude must geosynchronous satellites be placed?}
 :::
 
 :::{note} Problem 9.2
 :label: prob:gravity:geosyncenergy
-How much energy must be expended in order to place a satellite of mass $m=1000 {\rm kg}$ in a geosynchronous circular orbit around the Earth, if the satellite is launched from the North Pole of the Earth? How much energy is this per kilogram of satellite placed in orbit?
+How much energy must be expended in order to place a satellite of mass $m=1000 {\rm kg}$ in a geosynchronous circular orbit around the Earth, if the satellite is launched from the North Pole of the Earth? How much energy is this per kilogram of satellite placed in orbit?}
 :::
 
 :::{note} Problem 9.3
@@ -770,7 +770,7 @@ Find an expression for the gravitational field due to a thin uniform rod of mass
 :align: center
 :alt: A thin rod of mass $M$ and length $L$ produces a gravitational field at a point $P$ located above the midsection of the rod.
 A thin rod of mass $M$ and length $L$ produces a gravitational field at a point $P$ located above the midsection of the rod.
-```
+```}
 :::
 
 ## Solutions
@@ -911,10 +911,8 @@ Now that we have the integral over $\theta$, we need to set the limits to corres
 ```
 The magnitude of the field is thus given by:
 ```{math}
-g &=\frac{GM}{Lh}\int_{-\theta_0}^{\theta_0}\cos\theta d\theta\\
-&= \frac{GM}{Lh} {\rm \left[n\theta\right]}_{-\theta_0}^{\theta_0}\\
-&=\frac{2GM}{Lh} \sin\theta_0\\
-&= \frac{2GM}{Lh} \frac{L}{2\sqrt{h^2 + \frac{L^2}{4}}}
+g &=\frac{GM}{Lh}\int_{-\theta_0}^{\theta_0}\cos\theta d\theta = \frac{GM}{Lh} ${\rm \left[n\theta\right]}$_{-\theta_0}^{\theta_0}\\
+&=\frac{2GM}{Lh} \sin\theta_0  = \frac{2GM}{Lh} \frac{L}{2\sqrt{h^2 + \frac{L^2}{4}}}
 ```
 The gravitational field at point $P$ is thus given by:
 ```{math}
