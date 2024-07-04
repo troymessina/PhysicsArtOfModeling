@@ -797,10 +797,6 @@ As advertised, we see a region between the Helmholtz coils where the magnetic fi
 :::
 :::
 ```{code-cell} ipython3
----
-mystnb:
-  number_source_lines: true
----
 #Import the modules that we need:
 import numpy as np
 import matplotlib.pyplot as plt

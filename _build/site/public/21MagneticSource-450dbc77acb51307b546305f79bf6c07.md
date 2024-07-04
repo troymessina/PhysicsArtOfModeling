@@ -625,16 +625,9 @@ Ampère's Law is the magnetism analogue to Gauss' Law. Just like Gauss' Law, it 
 ```
 In order to apply Ampère's Law, we must first choose an Amperian loop over which to compute the closed path integral (instead of choosing a Gaussian surface to calculate the flux of the electric field on a closed surface). The circulation integral will be straightforward to evaluate if:
 1.  **The angle between $\vec B$ and $d\vec l$ is constant along the path**, so that:
-```{math}
-\oint  \vec B \cdot d\vec l &= \oint B dl \cos\theta\\
-&= \cos\theta \oint B dl
-```
-where $\theta$ is the angle between $\vec B$ and $d\vec l$.
-
+```{math}\oint  \vec B \cdot d\vec l = \oint B dl \cos\theta = \cos\theta \oint B dl```where $\theta$ is the angle between $\vec B$ and $d\vec l$.
 2.  **The magnitude of $\vec B$ is constant along the path**, so that:
-```{math}
-\cos\theta \oint B dl = B\cos\theta \oint dl
-```
+```{math}\cos\theta \oint B dl = B\cos\theta \oint dl```
 The current enclosed, $I^{enc}$, corresponds to the net current that crosses the surface that is defined by the Amperian loop (a closed path always defines a surface). 
 
 Ampère's Law is straightforward to use in situations with a high degree of symmetry, such as infinitely long wires carrying current. 
@@ -646,38 +639,46 @@ B=\mu_0nI
 where, $I$, is the current in the solenoid, and $n$, is the number of loops per unit length in the solenoid.  The magnetic field just outside of a solenoid is zero, and generally, the magnetic field is negligible outside of a solenoid. 
 
 A toroid is formed by bending a solenoid into a circle to form a torus. The magnetic field lines inside of a toroid form concentric circles. The magnetic field decreases with radius inside of a toroid and is identically zero everywhere outside a toroid.
+\end{chapterSummary}
 
-:::{important} Important Equations
+
+\begin{importantEquations}
+\begin{multicols}{2}
 **Biot-Savart law:**
 ```{math}
 d\vec B = \frac{\mu_0 I}{4\pi}\frac{d\vec l\times \hat r}{r^2}=\frac{\mu_0 I}{4\pi}\frac{d\vec l\times \vec r}{r^3}
 ```
-
-**Magnetic field from a finite wire:**
+\\
+**Magnetic field from a\\ finite wire:**
 ```{math}
 B = \frac{\mu_0 I}{2\pi h}
 ```
-
-**Magnetic field from an infinitely long wire:**
+\\
+**Magnetic field from an\\ infinitely long wire:**
 ```{math}
 B = \frac{\mu_0 I}{2\pi h}
 ```
-
-**Magnetic field from a circular loop of current:**
+\\
+**Magnetic field from a \\ circular loop of current:**
 ```{math}
 B=\frac{\mu_0 I}{2} \frac{R^2}{(R^2+h^2)^\frac{3}{2}}
 ```
-
+\\
+\columnbreak
+\\
 **Force between two wires:**
 ```{math}
 F = \frac{\mu_0I_1I_2}{2\pi h}
 ```
-
+\\
 **Ampère's law:**
 ```{math}
 \oint \vec B \cdot d\vec l =\mu_0 I^{enc}
 ```
-:::
+\\
+\end{multicols}
+\end{importantEquations}
+
 
 # Thinking about the material
 
@@ -701,8 +702,8 @@ F = \frac{\mu_0I_1I_2}{2\pi h}
 
 # Sample problems and solutions
 ## Problems
-:::{note} Problem 21.1
-:label: prob:magneticsource:squareloop 
+\begin{problem}{soln:magneticsource:squareloop}
+{:label: prob:magneticsource:squareloop 
 A square loop of wire with side length, $L$, carries current, $I$, as shown in [](#fig:magneticsource:squareloop). What is the magnetic field at the centre of the loop?
 ```{figure} figures/MagneticSource/squareloop
 :label: fig:magneticsource:squareloop
@@ -711,9 +712,10 @@ A square loop of wire with side length, $L$, carries current, $I$, as shown in [
 :alt:  A square loop of current.
  A square loop of current.
 ```
-:::
-:::{note} Problem 21.2
-:label: prob:magneticsource:helmholtz 
+}
+\end{problem}
+
+\begin{problem}{soln:magneticsource:helmholtz}{:label: prob:magneticsource:helmholtz 
 Helmholtz coils are an arrangement of two parallel loops of current that produce a nearly uniform magnetic field. Helmholtz coils are formed by two identical circular loops of radius $R$, carrying the same current, $I$, where the centres of the coils are separated by a distance, $R$, as illustrated in [](#fig:magneticsource:helmholtzdiagram). Determine the magnetic field as a function of $z$, along the axis of symmetry of the coils, where the origin is located half way between the two coils. Make a plot of the magnetic field as a function of $z$ from each coil, as well as the total magnetic field to show that it is close to uniform between the coils.
 ```{figure} figures/MagneticSource/helmholtzdiagram
 :label: fig:magneticsource:helmholtzdiagram
@@ -722,23 +724,23 @@ Helmholtz coils are an arrangement of two parallel loops of current that produce
 :alt:  A Helmholtz coil arrangement.
  A Helmholtz coil arrangement.
 ```
-:::
+}
+\end{problem}
+
 
 ## Solutions
-:::{note} Solution 21.1
-:label: soln:magneticsource:squareloop
-:class: dropdown
+\begin{solution}{prob:magneticsource:squareloop}
+{:label: soln:magneticsource:squareloop
 The square loop is simply made of four straight sections of wire of length, $L$. The magnetic field from each section of wire is into the page, which you can easily verify with your right-hand (with your thumb in the direction of current, your fingers curl in the direction of the resulting magnetic field). 
 
 The magnetic field at the centre is just four times the magnetic field produced by a single segment, which we determined in this chapter. The magnetic field at the centre of the loop is thus four times the magnetic field at a distance, $h=\frac{L}{2}$, from a wire of length, $L$:
 ```{math}
 B &= 4\times\frac{\mu_0 I}{2\pi \frac{L}{2}}\frac{L/2}{\sqrt{\frac{L^2}{4}+\frac{L^2}{4}}}=2\sqrt 2\frac{\mu_0 I}{\pi L}
 ```
-:::
+}
+\end{solution}
 
-:::{note} Solution 21.2
-:label: soln:magneticsource:helmholtz
-:class: dropdown
+\begin{solution}{prob:magneticsource:helmholtz}:label: soln:magneticsource:helmholtz
 We know that the magnetic field at a distance, $h$, from the centre of a loop of current, along its axis of symmetry is given by:
 ```{math}
  B(h) = \frac{\mu_0 I}{2}\frac{R^2}{(R^2+h^2)^{\frac{3}{2}}}
@@ -753,10 +755,10 @@ We can plot this function, as well as the two individual terms using python. For
 * $I=0.1 {\rm A}$
 
 	
-```python Numerical integration of a function] 
+\begin{python}[caption=Numerical integration of a function] 
 #Import the modules that we need:
 import numpy as np
-import matplotlib.pyplot as plt
+import pylab as pl
 
 #Define some constants:
 mu0 = 4*np.pi*1e-7 #4 pi 
@@ -775,59 +777,24 @@ B2 = (mu0*I)/2 * R**2/((R**2+(z-R/2)**2)**(3/2))
 B = B1 + B2
 
 #Make the plot
-plt.figure(figsize=(10,6))
-plt.plot(z,B1,label='Coil at z=-R/2')
-plt.plot(z,B2,label='Coil at z=+R/2')
-plt.plot(z,B,label='Total')
-plt.legend()
-plt.xlabel('z position [m]')
-plt.ylabel('Magnetic field [T]')
-plt.show()
-```
-
-:::{epigraph} Output
-```{figure} figures/MagneticSource/helmholtzcoil.png
+pl.figure(figsize=(10,6))
+pl.plot(z,B1,label='Coil at z=-R/2')
+pl.plot(z,B2,label='Coil at z=+R/2')
+pl.plot(z,B,label='Total')
+pl.legend()
+pl.xlabel('z position [m]')
+pl.ylabel('Magnetic field [T]')
+pl.show()
+	
+\end{python}
+\begin{poutput}
+	(* ```{figure} figures/MagneticSource/helmholtzcoil.png
 :label: fig:magneticsource:helmholtzcoil
 :width: 80%
 :align: center
 :alt: Magnetic field from each coil, as well as their sum, for two coils in the Helmholtz configuration
 Magnetic field from each coil, as well as their sum, for two coils in the Helmholtz configuration
-```
-As advertised, we see a region between the Helmholtz coils where the magnetic field is nearly uniform.
-:::
-:::
-```{code-cell} ipython3
----
-mystnb:
-  number_source_lines: true
----
-#Import the modules that we need:
-import numpy as np
-import matplotlib.pyplot as plt
-
-#Define some constants:
-mu0 = 4*np.pi*1e-7 #4 pi 
-I = 0.5
-R = 0.3
-
-#Define the values on the z axis, from -2R to +2R, in 100 increments
-z = np.linspace(-2*R,2*R,100)
-
-#Determine the magnetic field from the coils at those values of z
-#The coil at z = - R/2:
-B1 = (mu0*I)/2 * R**2/((R**2+(z+R/2)**2)**(3/2))
-#The coil at z = + R/2:
-B2 = (mu0*I)/2 * R**2/((R**2+(z-R/2)**2)**(3/2))
-#The sum:
-B = B1 + B2
-
-#Make the plot
-plt.figure(figsize=(10,6))
-plt.plot(z,B1,label='Coil at z=-R/2')
-plt.plot(z,B2,label='Coil at z=+R/2')
-plt.plot(z,B,label='Total')
-plt.legend()
-plt.xlabel('z position [m]')
-plt.ylabel('Magnetic field [T]')
-plt.show()
-```
+``` *)
+\end{poutput}
+As advertised, we see a region between the Helmholtz coils where the magnetic field is nearly uniform. 
+\end{solution}

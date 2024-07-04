@@ -784,23 +784,7 @@ plt.xlabel('z position [m]')
 plt.ylabel('Magnetic field [T]')
 plt.show()
 ```
-
-:::{epigraph} Output
-```{figure} figures/MagneticSource/helmholtzcoil.png
-:label: fig:magneticsource:helmholtzcoil
-:width: 80%
-:align: center
-:alt: Magnetic field from each coil, as well as their sum, for two coils in the Helmholtz configuration
-Magnetic field from each coil, as well as their sum, for two coils in the Helmholtz configuration
-```
-As advertised, we see a region between the Helmholtz coils where the magnetic field is nearly uniform.
-:::
-:::
-```{code-cell} ipython3
----
-mystnb:
-  number_source_lines: true
----
+:::{code-cell}
 #Import the modules that we need:
 import numpy as np
 import matplotlib.pyplot as plt
@@ -830,4 +814,15 @@ plt.legend()
 plt.xlabel('z position [m]')
 plt.ylabel('Magnetic field [T]')
 plt.show()
-```
+:::
+\begin{poutput}
+	(* ```{figure} figures/MagneticSource/helmholtzcoil.png
+:label: fig:magneticsource:helmholtzcoil
+:width: 80%
+:align: center
+:alt: Magnetic field from each coil, as well as their sum, for two coils in the Helmholtz configuration
+Magnetic field from each coil, as well as their sum, for two coils in the Helmholtz configuration
+``` *)
+\end{poutput}
+As advertised, we see a region between the Helmholtz coils where the magnetic field is nearly uniform. 
+:::

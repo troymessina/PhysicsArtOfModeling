@@ -7,11 +7,11 @@ numbering:
 ---
 (chapter:magneticsource)=
 # Overview
-In this chapter, we develop the tools to model the magnetic field that is produced by an electric current. We will introduce the Biot-Savart Law, which is analoguous to Coulomb's Law in that it can be used to calculate the magnetic field produced by any current. We will also introduce Ampère's Law, which can be thought of as the analogue to Gauss' Law, allowing us to easily determine the magnetic field when there is a high degree of symmetry. 
+In this chapter, we develop the tools to model the magnetic field that is produced by an electric current. We will introduce the Biot-Savart Law, which is analoguous to Coulomb's Law in that it can be used to calculate the magnetic field produced by any current. We will also introduce \ampere's Law, which can be thought of as the analogue to Gauss' Law, allowing us to easily determine the magnetic field when there is a high degree of symmetry. 
 
 :::{hint} Learning Objectives
 * Understand how to apply the Biot-Savart Law to determine the magnetic field from an electric current.
-* Understand how to apply Ampère's Law.
+* Understand how to apply \ampere's Law.
 * Understand how to model the forces that are exerted on each other by two wires carrying current. 
 * Understand how to model a solenoid and a toroid.
 :::
@@ -30,7 +30,7 @@ The Biot-Savart law allows us to determine the magnetic field at some position i
 ```{math}
 \boxed{d\vec B = \frac{\mu_0 I}{4\pi}\frac{d\vec l\times \hat r}{r^2}}
 ```
-where $\vec r$ is the vector from the element of wire, $d\vec l$, to the point where we would like to determine the magnetic field, as illustrated in [](#fig:magneticsource:biotsavart). $\mu_0$ is a constant of proportionality called the "permeability of free space", and has the value $\mu_0=4\pi \times 10^{-7} {\rm T\cdot m/A}$.
+where $\vec r$ is the vector from the element of wire, $d\vec l$, to the point where we would like to determine the magnetic field, as illustrated in [](#fig:magneticsource:biotsavart). $\mu_0$ is a constant of proportionality called the "permeability of free space", and has the value $\mu_0=4\pi e-7 {\rm T\cdot m/A}$.
 ```{figure} figures/MagneticSource/biotsavart.png
 :label: fig:magneticsource:biotsavart
 :width: 50%
@@ -106,16 +106,11 @@ r=\frac{h}{\cos\theta}\quad \to \quad
 ```
 Putting this altogether into $d\vec B$:
 ```{math}
-d\vec B &=-\frac{\mu_0 I}{4\pi}\frac{dl\cos\theta}{r^2}\hat z\\
-&= -\frac{\mu_0 I}{4\pi}\left(\frac{h}{\cos^2\theta}d\theta\right) \left( \frac{\cos^2\theta}{h^2} \right)\cos\theta\hat z\\
-&=-\frac{\mu_0 I}{4\pi h}\cos\theta d\theta \hat z=dB_z\hat z
+d\vec B &=-\frac{\mu_0 I}{4\pi}\frac{dl\cos\theta}{r^2}\hat z = -\frac{\mu_0 I}{4\pi}\left(\frac{h}{\cos^2\theta}d\theta\right) \left( \frac{\cos^2\theta}{h^2} \right)\cos\theta\hat z=-\frac{\mu_0 I}{4\pi h}\cos\theta d\theta \hat z=dB_z\hat z
 ```
 We define the angle, $\theta_0$, to be the maximum amplitude of the angle $\theta$ when integrating over the wire (see [](#fig:magneticsource:bswire)), so that we integrate $\theta$ from $-\theta_0$ to $+\theta_0$:
 ```{math}
-B_z&=\int_{-\theta_0}^{+\theta_0}dB_z\\
-&= -\frac{\mu_0 I}{4\pi h} \int_{-\theta_0}^{+\theta_0}\cos\theta d\theta\\
-&=-\frac{\mu_0 I}{4\pi h}(2\sin\theta_0)\\
-&=-\frac{\mu_0 I}{2\pi h}\sin\theta_0
+B_z&=\int_{-\theta_0}^{+\theta_0}dB_z= -\frac{\mu_0 I}{4\pi h} \int_{-\theta_0}^{+\theta_0}\cos\theta d\theta=-\frac{\mu_0 I}{4\pi h}(2\sin\theta_0) =-\frac{\mu_0 I}{2\pi h}\sin\theta_0
 ```
 Using the given dimensions:
 ```{math}
@@ -123,7 +118,7 @@ Using the given dimensions:
 ```
 Thus, the magnetic field, $\vec B$, a distance, $h$, from the centre of a wire of length, $L$, carrying current, $I$, in the positive $y$ direction is given by:
 ```{math}
-\boxed{\vec B = -\frac{\mu_0 I}{2\pi h}\frac{L/2}{\sqrt{h^2+\frac{L^2}{4}}}\hat z}\quad\text{(finite wire)}
+\boxed{\vec B &= -\frac{\mu_0 I}{2\pi h}\frac{L/2}{\sqrt{h^2+\frac{L^2}{4}}}\hat z}\quad\text{(finite wire)}
 ```
 The magnetic field must be rotationally symmetric; that is, if the wire is vertical, the magnetic field at a distance $h$ must look the same regardless of the angle from which we view the vertical wire (we should always see the magnetic field going into the page at the point that we use in [](#fig:magneticsource:bswire)). Thus, the magnetic field lines must form circles around the wire, as illustrated in [](#fig:magneticsource:wirefield). Note that the direction of the magnetic field is given by the right-hand rule for axial vectors; when you align your thumb with the current, your fingers curl in the direction of the magnetic field.
 
@@ -137,7 +132,7 @@ The magnetic field from a current-carrying wire forms concentric circles centred
 
 It is of particular interest to investigate the limiting case of an infinitely long wire, in the limit of $L\to\infty$, or equivalently, $\theta_0\to\frac{\pi}{2}$. The latter is easiest to evaluate, since $\sin\theta_0\to 1$. The magnitude of the magnetic field, $\vec B$, a distance, $h$, from an infinite wire carrying current, $I$, is given by:
 ```{math}
-\boxed{ B = \frac{\mu_0 I}{2\pi h}}\quad\text{(infinite wire)}
+\boxed{ B &= \frac{\mu_0 I}{2\pi h}}\quad\text{(infinite wire)}
 ```
 One can often make the approximation that the wire is infinite in length, when the distance, $h$, is small compared to the length, $L$, of the wire. 
 ## Magnetic field from a circular current-carrying wire
@@ -174,10 +169,8 @@ d\vec l \times \vec r &= (dl \hat x) \times ( - r\sin\theta \hat y+r\cos\theta \
 ```
 so that the element of magnetic field, $d\vec B$, corresponding to that choice of $d\vec l$, will lie in the $y-z$ plane, as illustrated in [](#fig:magneticsource:bsring). Note that the vector $d\vec B$ is perpendicular to the vector $\vec r$ (since it is the cross-product of $\vec r$ with another vector). The magnetic field element, $d\vec B$, is given by:
 ```{math}
-d\vec B &= \frac{\mu_0 I}{4\pi}\frac{d\vec l\times \vec r}{r^3}\\
-&= \frac{\mu_0 I}{4\pi r^3}(-rdl\sin\theta\hat z - rdl\cos\theta \hat y )\\
-&=\frac{\mu_0 I}{4\pi r^2}(-dl\sin\theta \hat z - dl\cos\theta \hat y)\\
-&=dB_z\hat z + dB_y \hat y
+d\vec B &= \frac{\mu_0 I}{4\pi}\frac{d\vec l\times \vec r}{r^3}= \frac{\mu_0 I}{4\pi r^3}(-rdl\sin\theta\hat z - rdl\cos\theta \hat y )\\
+&=\frac{\mu_0 I}{4\pi r^2}(-dl\sin\theta \hat z - dl\cos\theta \hat y)=dB_z\hat z + dB_y \hat y
 ```
 As the wire element, $d\vec l$, moves around the circle, the tip of the resulting magnetic field vector element traces a circle centred on the $z$ axis, as illustrated in [](#fig:magneticsource:bsring_all). Note that, in general, $d\vec B$ will also have an $x$ component (the $x$ component was only 0 before because we chose $d\vec l$ to be at the top of the ring). When we sum together the magnetic field elements, the $x$ and $y$ components will cancel, so that we are left with the $z$ component.
 ```{figure} figures/MagneticSource/bsring_all2
@@ -191,23 +184,17 @@ As the wire element, $d\vec l$, moves along the ring, the tip of corresponding m
 The total magnetic field will be in the negative $z$ direction, as anticipated from [](#fig:magneticsource:ringfield). Summing together the $z$ components of the infinitesimal magnetic fields:
 ```{math}
 dB_z &= -\frac{\mu_0 I}{4\pi r^2}dl\sin\theta\\
-B_z &= \int dB_z\\
-&=-\int \frac{\mu_0 I}{4\pi r^2}dl\sin\theta
+B_z &= \int dB_z =-\int \frac{\mu_0 I}{4\pi r^2}dl\sin\theta
 ```
 Note that in this case, both $r$ and $\theta$ are constant for all of the $d\vec l$, allowing us to take them out of the integral. The integral is then just a sum of the $dl$ elements, which must add up to the circumference of the ring:
 ```{math}
-B_z &= \int dB_z\\
-&= -\frac{\mu_0 I}{4\pi r^2}\sin\theta \int_0^{2\pi R} dl\\
-&=-\frac{\mu_0 I}{4\pi r^2}\sin\theta (2\pi R)\\
-&=-\frac{\mu_0 I}{2r^2}R\sin\theta
+B_z &= \int dB_z = -\frac{\mu_0 I}{4\pi r^2}\sin\theta \int_0^{2\pi R} dl=-\frac{\mu_0 I}{4\pi r^2}\sin\theta (2\pi R)=-\frac{\mu_0 I}{2r^2}R\sin\theta
 ```
 In terms of the variables that we are given:
 ```{math}
 r &= \sqrt{R^2+h^2}\\
 \sin\theta &=\frac{R}{r}=\frac{R}{\sqrt{R^2+h^2}}\\
-```
-```{math}
-\therefore\;\; \boxed{\vec B = -\frac{\mu_0 I}{2} \frac{R^2}{(R^2+h^2)^\frac{3}{2}} \hat z}\quad\text{(field from a loop of current)}
+\therefore\;\; \boxed{\vec B &= -\frac{\mu_0 I}{2} \frac{R^2}{(R^2+h^2)^\frac{3}{2}} \hat z}\quad\text{(field from a loop of current)}
 ```
 In this case, the math was relatively straightforward (no substitutions to evaluate the integral), however it is challenging to visualize the problem in three dimensions.
 :::{tip} Checkpoint
@@ -265,25 +252,28 @@ Two parallel wires carry current in opposite directions, as shown in [](#fig:mag
 :class: dropdown
 3.
 :::
-The attractive force between two wires used to be the basis for defining the Ampère, the S.I. (base) unit for electric current. Before 2019, the Ampère was defined to be "that constant current which, if maintained in two straight parallel conductors of infinite length, of negligible circular cross-section, and placed one metre apart in vacuum, would produce between these conductors a force equal to $2\times 10^{-17} {\rm N}$ per metre of length". Recently, the definition was updated to be based on defining the Coulomb in such a way that the elementary charge has a numerical value of $e=1.602176634\times 10^{-19} {\rm C}$, and the Ampère corresponds to one Coulomb per second.
+The attractive force between two wires used to be the basis for defining the \ampere, the S.I. (base) unit for electric current. Before 2019, the \amperesp was defined to be "that constant current which, if maintained in two straight parallel conductors of infinite length, of negligible circular cross-section, and placed one metre apart in vacuum, would produce between these conductors a force equal to $2e-17 {\rm N}$ per metre of length". Recently, the definition was updated to be based on defining the Coulomb in such a way that the elementary charge has a numerical value of $e=1.602176634e-19 {\rm C}$, and the \amperesp corresponds to one Coulomb per second.
 
 The force between two wires is a good system to understand how any physical quantity cannot depend on our choice of the right-hand to define cross-products. As mentioned in the previous chapter, any physical quantity, such as the direction of the force exerted on a wire, will always depend on two successive uses of the right hand. In this system, we first used the right-hand rule for axial vectors to determine the direction of the magnetic field from one of the wires. We then used the right-hand rule to determine the direction of the cross-product to determine the direction of the force on the other wire. You can verify that you get the same answer if you, instead, use your left-hand to define the direction of the magnetic field (which will be in the opposite direction), and then again for the cross-product. This also highlights that the magnetic field (and the electric field) is just a mathematical tool that we use to, ultimately, describe the motion of charges or compass needles.
 
 :::{attention} Olivia's Thoughts 
 For this problem, we can determine whether the force is attractive or repulsive by finding the directions of  the forces on wire 1 ($\vec{F_1}$) and wire 2 ($\vec{F_2}$). [](#fig:magneticsource:2wires_steps) shows how to find the directions of $\vec{F_1}$ and $\vec{F_2}$ step by step using the right hand rules. The process is as follows: 
-1. Use the axial right hand rule to find the magnetic field at wire 2 due to the current in wire 1 ($\vec{B_1}$).
-2. Use the right hand rule to find the direction of the force on wire 2 due to its current and the magnetic field $\vec{B_1}$. 
-3. Use the axial right hand rule to find the magnetic field at wire 1 due to the current in wire 2 ($\vec{B_2}$).
-4. Use the right hand rule to find the direction of the force on wire 1 due to its current and the magnetic field $\vec{B_2}$. 
+\begin{enumerate}[label=(\alph*)]
+\item Use the axial right hand rule to find the magnetic field at wire 2 due to the current in wire 1 ($\vec{B_1}$).
+\item Use the right hand rule to find the direction of the force on wire 2 due to its current and the magnetic field $\vec{B_1}$. 
+\item Use the axial right hand rule to find the magnetic field at wire 1 due to the current in wire 2 ($\vec{B_2}$).
+\item Use the right hand rule to find the direction of the force on wire 1 due to its current and the magnetic field $\vec{B_2}$. 
+\end{enumerate}
 ```{figure} figures/MagneticSource/2wire_rhr.png
 :label: fig:magneticsource:2wires_steps
 :width: 80%
 :align: center
-:alt:  (a) Axial right hand rule to find $\vec{B_1}$. (b) Right hand rule to find $\vec{F_2}$. (c) Axial right hand rule to find $\vec{B_2}$. (d) Right hand rule to find $\vec{F_1}$.
- (a) Axial right hand rule to find $\vec{B_1}$. (b) Right hand rule to find $\vec{F_2}$. (c) Axial right hand rule to find $\vec{B_2}$. (d) Right hand rule to find $\vec{F_1}$.
-```
+:alt:  (a) Axial right hand rule to find $\vec{B_1
+ (a) Axial right hand rule to find $\vec{B_1
+```$. (b) Right hand rule to find $\vec{F_2}$. (c) Axial right hand rule to find $\vec{B_2}$. (d) Right hand rule to find $\vec{F_1}$.}
 Both $\vec{F_1}$ and $\vec{F_2}$ point towards the centre, so the force is attractive. See what happens when you use your left hand!
-:::
+
+ :::
 
 :::{tip} Checkpoint
 When current is flowing in a straight cable, how to you expect the charges to be distributed radially through the cross-section of the cable?
@@ -294,32 +284,25 @@ When current is flowing in a straight cable, how to you expect the charges to be
 :class: dropdown
 2.
 :::
-# Ampère's Law
-Ampère's Law is similar to Gauss' Law, as it allows us to (analytically) determine the magnetic field that is produced by an electric current in configurations that have a high degree of symmetry. Ampère's Law states:
+# \ampere's Law
+\ampere's Law is similar to Gauss' Law, as it allows us to (analytically) determine the magnetic field that is produced by an electric current in configurations that have a high degree of symmetry. \ampere's Law states:
 ```{math}
 \boxed{\oint \vec B \cdot d\vec l =\mu_0 I^{enc}}
 ```
-where the integral on the left is a "path integral", similar to how we calculate the work done by a force over a particular path. The circle sign on the integral means that this is an integral over a "closed" path; a path where the starting and ending points are the same. $I^{enc}$ is the net current that crosses the surface that is defined by the closed path, often called the "current enclosed" by the path. This is different from Gauss' Law, where the integral is over a closed surface (not a closed path, as it is here). In the context of Gauss' Law, we refer to "calculating the **flux** of the electric field **through** a closed surface"; in the context of Ampère's Law, we refer to "calculating the **circulation** of the magnetic field **along** a closed path".
+where the integral on the left is a "path integral", similar to how we calculate the work done by a force over a particular path. The circle sign on the integral means that this is an integral over a "closed" path; a path where the starting and ending points are the same. $I^{enc}$ is the net current that crosses the surface that is defined by the closed path, often called the "current enclosed" by the path. This is different from Gauss' Law, where the integral is over a closed surface (not a closed path, as it is here). In the context of Gauss' Law, we refer to "calculating the **flux** of the electric field **through** a closed surface"; in the context of \ampere's Law, we refer to "calculating the **circulation** of the magnetic field **along** a closed path".
 
-We apply Ampère's Law in much the same way as we apply Gauss' Law:
+We apply \ampere's Law in much the same way as we apply Gauss' Law:
 1.  Make a good diagram, identify symmetries.
 2.  Choose a closed path over which to calculate the circulation of the magnetic field (see below for how to choose the path). The path is often called an "Amperian loop" (think "Gaussian surface").
 3.  Evaluate the circulation integral. 
 4.  Determine how much current is "enclosed" by the Amperian loop. 
-5.  Apply Ampère's Law.
+5.  Apply \ampere's Law.
 
 
 Similarly to Gauss' Law, we need to **choose the path** (instead of the surface) over which we will evaluate the integral. The integral will be easy to evaluate if:
 1.  **The angle between $\vec B$ and $d\vec l$ is constant along the path**, so that:
-```{math}
-\oint  \vec B \cdot d\vec l = \oint B dl \cos\theta = \cos\theta \oint B dl
-```
-where $\theta$ is the angle between $\vec B$ and $d\vec l$.
-
-2.  **The magnitude of $\vec B$ is constant along the path**, so that:
-```{math}
-\cos\theta \oint B dl = B\cos\theta \oint dl
-```
+```{math}\oint  \vec B \cdot d\vec l = \oint B dl \cos\theta = \cos\theta \oint B dl```where $\theta$ is the angle between $\vec B$ and $d\vec l$.6.  **The magnitude of $\vec B$ is constant along the path**, so that:
+```{math}\cos\theta \oint B dl = B\cos\theta \oint dl```
 Choosing a path that meets these two conditions is only possible if there is a high degree of symmetry.
 
 Consider an infinitely long straight wire, carrying current, $I$, out of the page, as illustrated in [](#fig:magneticsource:amperewire). The magnetic field from the wire must look the same regardless of the angle from which we view the wire ("azimuthal symmetry"). Thus, the magnetic field must either form concentric circles around the wire (which we know is the case from the Biot-Savart Law) or it must be in the radial direction (pointing towards or away from the wire). These two possibilities are illustrated in [](#fig:magneticsource:amperewire), and we will pretend, for now, that we do not know which is correct.
@@ -327,10 +310,10 @@ Consider an infinitely long straight wire, carrying current, $I$, out of the pag
 :label: fig:magneticsource:amperewire
 :width: 60%
 :align: center
-:alt: By symmetry, the magnetic field from a current-carrying infinite wire (illustrated with current coming out of the page), must either form concentric circles (left panel), or be in the radial direction (right panel). We know that the former (circles, left panel) is the correct choice. The dotted lines show "Ampèrian loops" that one can use to calculate the integral in Ampère's Law.
-By symmetry, the magnetic field from a current-carrying infinite wire (illustrated with current coming out of the page), must either form concentric circles (left panel), or be in the radial direction (right panel). We know that the former (circles, left panel) is the correct choice. The dotted lines show "Ampèrian loops" that one can use to calculate the integral in Ampère's Law.
+:alt: By symmetry, the magnetic field from a current-carrying infinite wire (illustrated with current coming out of the page), must either form concentric circles (left panel), or be in the radial direction (right panel). We know that the former (circles, left panel) is the correct choice. The dotted lines show "Amperian loops" that one can use to calculate the integral in \ampere's Law.
+By symmetry, the magnetic field from a current-carrying infinite wire (illustrated with current coming out of the page), must either form concentric circles (left panel), or be in the radial direction (right panel). We know that the former (circles, left panel) is the correct choice. The dotted lines show "Amperian loops" that one can use to calculate the integral in \ampere's Law.
 ```
-In order to apply Ampère's Law, we choose an Amperian loop (instead of a "Gaussian surface"). In the case of an infinite current-carrying wire, a circle that is concentric with the wire will meet the properties above, regardless of the two possible configurations of the magnetic field: with a circular Amperian loop, the angle between the magnetic field and the element $d\vec l$ is constant along the entire loop, and the magnitude of the magnetic field is constant along the loop. Our choice of loop is illustrated in [](#fig:magneticsource:amperewireloop), where we have illustrated the magnetic field for the case where it forms concentric circles. 
+In order to apply \ampere's Law, we choose an Amperian loop (instead of a "Gaussian surface"). In the case of an infinite current-carrying wire, a circle that is concentric with the wire will meet the properties above, regardless of the two possible configurations of the magnetic field: with a circular Amperian loop, the angle between the magnetic field and the element $d\vec l$ is constant along the entire loop, and the magnitude of the magnetic field is constant along the loop. Our choice of loop is illustrated in [](#fig:magneticsource:amperewireloop), where we have illustrated the magnetic field for the case where it forms concentric circles. 
 ```{figure} figures/MagneticSource/amperewireloop.png
 :label: fig:magneticsource:amperewireloop
 :width: 50%
@@ -342,7 +325,7 @@ The circulation of the magnetic field along a circular path of radius, $h$, is g
 ```{math}
 \oint  \vec B \cdot d\vec l = \oint B dl \cos\theta = \cos\theta \oint B dl=B\cos\theta \oint dl=B\cos\theta (2\pi h)
 ```
-where $\cos\theta$ is 1 if the field forms circles (correct) or 0 if the field is radial (incorrect). We can now evaluate the current that is enclosed by the Amperian loop. The current that is enclosed is given by the net current that traverses the surface defined by the Amperian loop (in this case, a circle of radius $h$). Since the loop encloses the entire wire, the enclosed current is simply $I$. Applying Ampère's Law:
+where $\cos\theta$ is 1 if the field forms circles (correct) or 0 if the field is radial (incorrect). We can now evaluate the current that is enclosed by the Amperian loop. The current that is enclosed is given by the net current that traverses the surface defined by the Amperian loop (in this case, a circle of radius $h$). Since the loop encloses the entire wire, the enclosed current is simply $I$. Applying \ampere's Law:
 ```{math}
 \oint \vec B \cdot d\vec l &=\mu_0 I^{enc}\\
 B\cos\theta (2\pi h) &= \mu_0 I
@@ -351,10 +334,10 @@ At this point, it is clear that $\cos\theta$ cannot be zero, since the right-han
 ```{math}
 B = \frac{\mu_0 I}{2\pi h}
 ```
-as we found previously with the Biot-Savart Law. Again, in analogy with Gauss' Law, one needs to apply some knowledge of symmetry and argue in which direction the magnetic field should point, in order to use Ampère's Law effectively. 
+as we found previously with the Biot-Savart Law. Again, in analogy with Gauss' Law, one needs to apply some knowledge of symmetry and argue in which direction the magnetic field should point, in order to use \ampere's Law effectively. 
 
 :::{tip} Checkpoint
-Ampère's law proves that the magnetic field at the centre of a current-carrying loop is zero because there is no enclosed current:
+\ampere's law proves that the magnetic field at the centre of a current-carrying loop is zero because there is no enclosed current:
 1.  True.
 2.  False. 
 :::{tip} Answer
@@ -376,7 +359,7 @@ where $A$ is the surface area that is perpendicular to the field lines and $E$ i
 ```{math}
 E=\frac{Q^{enc}/\epsilon_0}{A}.
 ```
-In other words, the electric field is the flux per unit area. Ampère's law is very similar, except that instead of flux, we have the new concept of "circulation" and instead of a surface integral, we have a line integral. When we have a high degree of symmetry in Ampère's law, we are often able to write:
+In other words, the electric field is the flux per unit area. \ampere's law is very similar, except that instead of flux, we have the new concept of "circulation" and instead of a surface integral, we have a line integral. When we have a high degree of symmetry in \ampere's law, we are often able to write:
 ```{math}
 \oint \vec{B}\cdot d\vec{l}=\mu_0 I^{enc}\rightarrow Bl=\mu_0 I^{enc}
 ```
@@ -386,7 +369,7 @@ B=\frac{\mu_0 I^{enc}}{l},
 ```
 so the magnetic field is like the circulation per unit length.
 
-In the left panel of [](#fig:magneticsource:amperecirculation), I have shown two Amperian loops with different radii, for the example of the straight wire with a current coming out of the page. Ampère's law tells us that the circulation will be the same along each path. However, because the inner loop is smaller, the circulation per unit length (the magnetic field) will be larger at each point. This is represented in the right panel, where the length of the vectors is proportional to the magnetic field strength.  
+In the left panel of [](#fig:magneticsource:amperecirculation), I have shown two Amperian loops with different radii, for the example of the straight wire with a current coming out of the page. \ampere's law tells us that the circulation will be the same along each path. However, because the inner loop is smaller, the circulation per unit length (the magnetic field) will be larger at each point. This is represented in the right panel, where the length of the vectors is proportional to the magnetic field strength.  
 
 ```{figure} figures/MagneticSource/Ampere_circulation.png
 :label: fig:magneticsource:amperecirculation
@@ -395,14 +378,14 @@ In the left panel of [](#fig:magneticsource:amperecirculation), I have shown two
 :alt: Left: 2 Amperian loops around a current carrying wire. Right: Magnetic field vectors around each loop.
 Left: 2 Amperian loops around a current carrying wire. Right: Magnetic field vectors around each loop.
 ```
-:::
 
 
-:::{note} Example 21.1
-A long solid uniform cable of radius, $R$, carries current, $I$, with a current density that is uniform through the cross-section of the cable. Determine the strength of the magnetic field as a function of $r$, the distance from the centre of the cable, inside *and* outside of the cable.
-:::{note} Solution
-:class: dropdown
-In this case, we need to determine the magnetic field both inside and outside of the cable. [](#fig:magneticsource:amperecable) shows two circular Amperian loops that we can use to apply Ampère's Law to determine the magnetic field inside and outside of the cable.
+ :::
+
+
+:::{note} Example
+A long solid uniform cable of radius, $R$, carries current, $I$, with a current density that is uniform through the cross-section of the cable. Determine the strength of the magnetic field as a function of $r$, the distance from the centre of the cable, inside *and* outside of the cable.}
+In this case, we need to determine the magnetic field both inside and outside of the cable. [](#fig:magneticsource:amperecable) shows two circular Amperian loops that we can use to apply \ampere's Law to determine the magnetic field inside and outside of the cable.
 ```{figure} figures/MagneticSource/amperecable.png
 :label: fig:magneticsource:amperecable
 :width: 40%
@@ -414,7 +397,7 @@ By symmetry, and following the discussion in this chapter, we know that the magn
 ```{math}
 \oint \vec B \cdot d\vec l= B 2\pi r
 ```
-The entire cable is enclosed by the loop, so that the enclosed current is, $I$. Thus, Ampère's Law gives:
+The entire cable is enclosed by the loop, so that the enclosed current is, $I$. Thus, \ampere's Law gives:
 ```{math}
 \oint \vec B \cdot d\vec l &=\mu_0 I^{enc}\\
 B (2\pi r) &= \mu_0 I\\
@@ -429,7 +412,7 @@ However, in this case, the smaller Amperian loop does not enclose all of the cur
 j &= \frac{I}{A}=\frac{I}{\pi R^2}\\
 \therefore I^{enc} &= j(\pi r^2) = \frac{I}{\pi R^2}(\pi r^2)=I\frac{r^2}{R^2}
 ```
-Finally, we can apply Ampère's Law to determine the magnitude of the magnetic field inside the cable:
+Finally, we can apply \ampere's Law to determine the magnitude of the magnetic field inside the cable:
 ```{math}
 \oint \vec B \cdot d\vec l &=\mu_0 I^{enc}\\
 B (2\pi r) &= \mu_0 I\frac{r^2}{R^2}\\
@@ -437,12 +420,12 @@ B (2\pi r) &= \mu_0 I\frac{r^2}{R^2}\\
 ```
 and we find that the magnetic field is zero at the centre of the cable ($r=0$), and increases linearly up to the edge of the cable ($r=R$).
 
-**Discussion:** In this example, we used Ampère's Law to model the strength of the magnetic field inside and outside of a current-carrying cable. In order to apply Ampère's Law inside the cable, we took into account that only a fraction of the current is enclosed by the Amperian loop. This problem is analogous to applying Gauss' Law to determine the electric field inside and outside of a uniformly charged sphere. 
+**Discussion:** In this example, we used \ampere's Law to model the strength of the magnetic field inside and outside of a current-carrying cable. In order to apply \ampere's Law inside the cable, we took into account that only a fraction of the current is enclosed by the Amperian loop. This problem is analogous to applying Gauss' Law to determine the electric field inside and outside of a uniformly charged sphere. 
 :::
 
-(sec:magneticsource:interpretation)=
-## Interpretation of Ampère's Law and vector calculus 
-In this section, we discuss Ampère's Law in the context of vector calculus and provide a different perspective, mostly for informational purposes. The integral that appears in Ampère's Law is called the "circulation" of the vector field, $\vec B$:
+## Interpretation of \ampere's Law and vector calculus 
+:label: sec:magneticsource:interpretation
+In this section, we discuss \ampere's Law in the context of vector calculus and provide a different perspective, mostly for informational purposes. The integral that appears in \ampere's Law is called the "circulation" of the vector field, $\vec B$:
 ```{math}
 \oint \vec B \cdot d\vec l
 ```
@@ -454,15 +437,15 @@ The circulation, as its name implies, is a measure of "how much rotation there i
 :alt: Examples of field with (left panel) and without (right panel) circulation, as evaluated along the closed loop shown with the dashed line.
 Examples of field with (left panel) and without (right panel) circulation, as evaluated along the closed loop shown with the dashed line.
 ```
-Ampère's Law is thus a statement that an electric current will result in a field with a magnitude proportional to the current, that has some degree of rotation to it. The direction of rotation of that field corresponds to the right-hand rule for axial vectors as applied to the current (your thumb points in the direction of the current so that your fingers curl in the direction of the rotation of the associated field). 
+\ampere's Law is thus a statement that an electric current will result in a field with a magnitude proportional to the current, that has some degree of rotation to it. The direction of rotation of that field corresponds to the right-hand rule for axial vectors as applied to the current (your thumb points in the direction of the current so that your fingers curl in the direction of the rotation of the associated field). 
 
-Circulation, as defined by the integral over a closed loop, is not a local property of the field, since it depends on what the field is doing as a whole over the path of the loop. Just as one can obtain a "local" version of  Gauss' Law, one can also obtain a local version of Ampère's Law using techniques from advanced vector calculus (that are beyond the scope of this textbook).
+Circulation, as defined by the integral over a closed loop, is not a local property of the field, since it depends on what the field is doing as a whole over the path of the loop. Just as one can obtain a "local" version of  Gauss' Law, one can also obtain a local version of \ampere's Law using techniques from advanced vector calculus (that are beyond the scope of this textbook).
 
 Stokes' theorem allows one to convert the circulation integral (a path integral on a closed loop) into a integral over the (open) surface that is defined by the loop:
 ```{math}
 \oint_C \vec B \cdot d\vec l = \int_S (\nabla \times \vec B) \cdot d\vec A
 ```
-where the subscript $C$ indicates that the integral is over a one-dimensional path, whereas the subscript $S$ indicates that the integral is over a two-dimensional surface. The term, $\nabla \times \vec B$, is called the "curl" of the magnetic field and is a local measure of the amount of rotation in the field. Applying Stokes' theorem to Ampère's Law yield:
+where the subscript $C$ indicates that the integral is over a one-dimensional path, whereas the subscript $S$ indicates that the integral is over a two-dimensional surface. The term, $\nabla \times \vec B$, is called the "curl" of the magnetic field and is a local measure of the amount of rotation in the field. Applying Stokes' theorem to \ampere's Law yield:
 ```{math}
 \oint \vec B \cdot d\vec l &= \mu_0 I^{enc}\\
 \int_S (\nabla \times \vec B) \cdot d\vec A &= \mu_0 I^{enc}\\
@@ -471,26 +454,27 @@ Note that we can also write the current, $I^{enc}$, that is enclosed by the loop
 ```{math}
 I^{enc}=\int _S \vec j \cdot d\vec A
 ```
-Thus, we can write Ampère's Law with integrals over the same surface on either side of the equation, implying that the integrands must be the same:
+Thus, we can write \ampere's Law with integrals over the same surface on either side of the equation, implying that the integrands must be the same:
 ```{math}
-\int_S (\nabla \times \vec B) \cdot d\vec A = \mu_0 \int _S \vec j \cdot d\vec A\\
+\int_S (\nabla \times \vec B) \cdot d\vec A &= \mu_0 \int _S \vec j \cdot d\vec A\\
+\therefore\;\;\boxed{ \nabla \times \vec B &= \mu_0 \vec j}
 ```
-```{math}
-\therefore\;\;\boxed{ \nabla \times \vec B = \mu_0 \vec j}
-```
-This last equation now relates a local property (current density) to the magnetic field at that point, and is the usual form in which Ampère's Law is presented (the so-called "differential form", rather than the "integral form"). 
+This last equation now relates a local property (current density) to the magnetic field at that point, and is the usual form in which \ampere's Law is presented (the so-called "differential form", rather than the "integral form"). 
 
 The curl of the magnetic field, $\nabla \times \vec B$, is a vector that is given by the following:
 ```{math}
-\nabla \times \vec B = \left(\frac{\partial B_z}{\partial y}-\frac{\partial B_y}{\partial z}\right)\hat x + \left(\frac{\partial B_x}{\partial z}-\frac{\partial B_z}{\partial x}\right)\hat y+\left(\frac{\partial B_y}{\partial x}-\frac{\partial B_x}{\partial y}\right)\hat z
+\nabla \times \vec B = \left(\die{B_z}{y}-\die{B_y}{z}\right)\hat x + \left(\die{B_x}{z}-\die{B_z}{x}\right)\hat y+\left(\die{B_y}{x}-\die{B_x}{y}\right)\hat z
 ```
-and the name "curl" is chosen because this is a measure of the amount of rotation (curl) in the field. In differential form, Ampère's Law can read as: "a current density will create a (magnetic) field that has non-zero curl".
+and the name "curl" is chosen because this is a measure of the amount of rotation (curl) in the field. In differential form, \ampere's Law can read as: "a current density will create a (magnetic) field that has non-zero curl".
 
-Since Ampère's Law in differential form is a vector equation (both sides are vectors), it really corresponds to three equations in Cartesian coordinates, one per component. For example, the $x$ component of the equation is a "partial differential equation" for the $y$ and $z$ components of the magnetic field:
+Since \ampere's Law in differential form is a vector equation (both sides are vectors), it really corresponds to three equations in Cartesian coordinates, one per component. For example, the $x$ component of the equation is a "partial differential equation" for the $y$ and $z$ components of the magnetic field:
 ```{math}
-\left(\frac{\partial B_z}{\partial y}-\frac{\partial B_y}{\partial z}\right) &=\mu_0j_x
+\left(\die{B_z}{y}-\die{B_y}{z}\right) &=\mu_0j_x
 ```
 that is in general difficult to solve without a computer (and all three equations are required, as these are "coupled", since a given component of the magnetic field appears in two of three equations).
+
+
+
 
 
 # Solenoids and toroids
@@ -510,13 +494,13 @@ When several loops of current are brought close together, as in [](#fig:magnetic
 :alt: As multiple loops of current are brought together to form a solenoid, the magnetic field inside the solenoid becomes uniform and the field outside the solenoid approaches zero.
 As multiple loops of current are brought together to form a solenoid, the magnetic field inside the solenoid becomes uniform and the field outside the solenoid approaches zero.
 ```
-We can use Ampère's Law to determine the strength of the magnetic field inside of a solenoid, under the assumption that the magnetic field is uniform in the volume of the solenoid and zero just outside. Consider a solenoid with current, $I$, going through it, that contains $n$ loops *per unit length*. In order to determine the magnetic field, $B$, inside of the solenoid, consider the rectangular Amperian loop, $abcd$, of length, $l$, illustrated in [](#fig:magneticsource:amperesolenoid).
+We can use \ampere's Law to determine the strength of the magnetic field inside of a solenoid, under the assumption that the magnetic field is uniform in the volume of the solenoid and zero just outside. Consider a solenoid with current, $I$, going through it, that contains $n$ loops *per unit length*. In order to determine the magnetic field, $B$, inside of the solenoid, consider the rectangular Amperian loop, $abcd$, of length, $l$, illustrated in [](#fig:magneticsource:amperesolenoid).
 ```{figure} figures/MagneticSource/amperesolenoid.png
 :label: fig:magneticsource:amperesolenoid
 :width: 40%
 :align: center
-:alt: We use Ampère's Law with a rectangular loop to evaluate the strength of the magnetic field inside a solenoid.
-We use Ampère's Law with a rectangular loop to evaluate the strength of the magnetic field inside a solenoid.
+:alt: We use \ampere's Law with a rectangular loop to evaluate the strength of the magnetic field inside a solenoid.
+We use \ampere's Law with a rectangular loop to evaluate the strength of the magnetic field inside a solenoid.
 ```
 In order to evaluate the circulation of the magnetic field around the loop, $abcd$, we divide the loop up into segments, and evaluate the path integral ($\int \vec B \cdot d\vec l$) over each segment, then add those together to obtain the integral over the closed path:
 ```{math}
@@ -524,19 +508,15 @@ In order to evaluate the circulation of the magnetic field around the loop, $abc
 ```
 Over each segment, the vector $d\vec l$ will be parallel to that segment. Only the last term is non-zero. The integrals over the segments $ab$ and $cd$ are zero because the magnetic field is perpendicular to $d\vec l$ over those segments (so the scalar product is zero). The integral over the segment $bc$ is zero because the magnetic field is zero just outside the solenoid. The integral over the last segment, where $d\vec l$ and $\vec B$ are parallel, is simply given by:
 ```{math}
-\oint_{abcd} \vec B \cdot d\vec l &= \int_d^a \vec B \cdot d\vec l\\
-&= B \int_d^a dl\\
-&= Bl
+\oint_{abcd} \vec B \cdot d\vec l = \int_d^a \vec B \cdot d\vec l = B \int_d^a dl = Bl
 ```
 since the length of the segment is $l$, and the magnetic field is constant in magnitude.
 
-In order to apply Ampère's Law, we must determine the current that is enclosed by our Amperian loop. Since the rectangular loop has a length, $l$, it will enclose $N=nl$ loops of current, $I$, since there are $n$ loops per unit length. Thus the enclosed current is $I^{enc}=nlI$. Applying Ampère's Law, we find the magnetic field inside a solenoid:
+In order to apply \ampere's Law, we must determine the current that is enclosed by our Amperian loop. Since the rectangular loop has a length, $l$, it will enclose $N=nl$ loops of current, $I$, since there are $n$ loops per unit length. Thus the enclosed current is $I^{enc}=nlI$. Applying \ampere's Law, we find the magnetic field inside a solenoid:
 ```{math}
 \oint \vec B \cdot d\vec l &=\mu_0 I^{enc}\\
 Bl &= \mu_0 nIl\\
-```
-```{math}
-\therefore\;\; \boxed{B = \mu_0 nI}\quad \text{(Field inside a solenoid)}
+\therefore\;\; \boxed{B &= \mu_0 nI}\quad \text{(Field inside a solenoid)}
 ```
 which does not depend on our (arbitrary) choice of making an Amperian loop with an arbitrary length of $l$. In practice, when solenoids are used as electromagnets, they are typically filled with a ferromagnetic material, which will magnetise when there is a current, resulting in a stronger magnetic field. This is usually done by winding a wire around an iron rod. 
 
@@ -557,17 +537,17 @@ A toroid can be thought of as a solenoid that has been bent into the shape of a 
 :alt: An Amperian loop of radius $r$ to determine the magnetic field inside of a toroid. Note that the magnetic field everywhere outside the toroid must be zero (think of the current enclosed by Amperian loops).
 An Amperian loop of radius $r$ to determine the magnetic field inside of a toroid. Note that the magnetic field everywhere outside the toroid must be zero (think of the current enclosed by Amperian loops).
 ```
-Again, we can use Ampère's Law to determine the strength of the magnetic field inside the toroid. Consider the circular Amperian loop of radius $r$ that is illustrated in [](#fig:magneticsource:amperetoroid). Since the magnetic field is parallel to the Amperian loop everywhere along the loop, and the magnetic field does not change magnitude (by symmetry), the circulation is given by:
+Again, we can use \ampere's Law to determine the strength of the magnetic field inside the toroid. Consider the circular Amperian loop of radius $r$ that is illustrated in [](#fig:magneticsource:amperetoroid). Since the magnetic field is parallel to the Amperian loop everywhere along the loop, and the magnetic field does not change magnitude (by symmetry), the circulation is given by:
 ```{math}
 \oint \vec B \cdot d\vec l &= B (2\pi r)
 ```
-If the toroid contains $N$ loops of current, then the enclosed current is given by $I^{enc}=NI$, since the Amperian loop include $N$ times the current $I$ coming out of the page. Ampère's Law thus gives the magnitude of the magnetic field as:
+If the toroid contains $N$ loops of current, then the enclosed current is given by $I^{enc}=NI$, since the Amperian loop include $N$ times the current $I$ coming out of the page. \ampere's Law thus gives the magnitude of the magnetic field as:
 ```{math}
 \oint \vec B \cdot d\vec l &=\mu_0 I^{enc}\\
 B (2\pi r) &= \mu_0 NI\\
 \therefore B&=\frac{\mu_0 NI}{2\pi r}
 ```
-which decreases in magnitude with increasing radius, as long as we are inside the toroid. It is easy to show, by using Amperian loops that are either smaller or bigger than the toroid, that the magnetic field everywhere outside of the toroid is exactly zero (as those Amperian loops will enclose no net current). In a toroid, the magnetic field lines form closed circles. For a solenoid, there must exist a magnetic field somewhere outside the solenoid, in order for the field lines inside the solenoid to close. We can usually ignore these if the solenoid is long, as the field outside will be very weak, and very close to zero very close the solenoid (as we showed with Ampère's Law above). 
+which decreases in magnitude with increasing radius, as long as we are inside the toroid. It is easy to show, by using Amperian loops that are either smaller or bigger than the toroid, that the magnetic field everywhere outside of the toroid is exactly zero (as those Amperian loops will enclose no net current). In a toroid, the magnetic field lines form closed circles. For a solenoid, there must exist a magnetic field somewhere outside the solenoid, in order for the field lines inside the solenoid to close. We can usually ignore these if the solenoid is long, as the field outside will be very weak, and very close to zero very close the solenoid (as we showed with \ampere's Law above). 
 
 :::{tip} Checkpoint
 In [](#fig:magneticsource:amperetoroid), the magnetic field makes concentric circles. What direction do the field lines point?:
@@ -592,7 +572,9 @@ In [](#fig:magneticsource:amperetoroid), the magnetic field makes concentric cir
 %%%:::
 
 
-# Summary
+%%%# Summa%%%%%%%%%%%%%%%%%%r%%%%%%y
+
+\begin{chapterSummary}
 Magnetic fields are created by moving charges. The Biot-Savart Law allows us to determine the infinitesimal magnetic field, $d\vec B$, that is produced by the current, $I$, flowing in an infinitesimal section of wire, $d\vec l$:
 ```{math}
 d\vec B = \frac{\mu_0 I}{4\pi}\frac{d\vec l\times \hat r}{r^2}
@@ -619,25 +601,17 @@ F = \frac{\mu_0I_1I_2}{2\pi h}
 ```
 The force is attractive if the two currents flow in the same direction and repulsive otherwise.
 
-Ampère's Law is the magnetism analogue to Gauss' Law. Just like Gauss' Law, it requires a high degree of symmetry to be applied analytically, although it is always valid. Ampère's Law relates the circulation of the magnetic field around a closed path to the current enclosed by that path:
+\ampere's Law is the magnetism analogue to Gauss' Law. Just like Gauss' Law, it requires a high degree of symmetry to be applied analytically, although it is always valid. \ampere's Law relates the circulation of the magnetic field around a closed path to the current enclosed by that path:
 ```{math}
 \oint \vec B \cdot d\vec l =\mu_0 I^{enc}
 ```
-In order to apply Ampère's Law, we must first choose an Amperian loop over which to compute the closed path integral (instead of choosing a Gaussian surface to calculate the flux of the electric field on a closed surface). The circulation integral will be straightforward to evaluate if:
+In order to apply \ampere's Law, we must first choose an Amperian loop over which to compute the closed path integral (instead of choosing a Gaussian surface to calculate the flux of the electric field on a closed surface). The circulation integral will be straightforward to evaluate if:
 1.  **The angle between $\vec B$ and $d\vec l$ is constant along the path**, so that:
-```{math}
-\oint  \vec B \cdot d\vec l &= \oint B dl \cos\theta\\
-&= \cos\theta \oint B dl
-```
-where $\theta$ is the angle between $\vec B$ and $d\vec l$.
-
-2.  **The magnitude of $\vec B$ is constant along the path**, so that:
-```{math}
-\cos\theta \oint B dl = B\cos\theta \oint dl
-```
+```{math}\oint  \vec B \cdot d\vec l = \oint B dl \cos\theta = \cos\theta \oint B dl```where $\theta$ is the angle between $\vec B$ and $d\vec l$.6.  **The magnitude of $\vec B$ is constant along the path**, so that:
+```{math}\cos\theta \oint B dl = B\cos\theta \oint dl```
 The current enclosed, $I^{enc}$, corresponds to the net current that crosses the surface that is defined by the Amperian loop (a closed path always defines a surface). 
 
-Ampère's Law is straightforward to use in situations with a high degree of symmetry, such as infinitely long wires carrying current. 
+\ampere's Law is straightforward to use in situations with a high degree of symmetry, such as infinitely long wires carrying current. 
 
 Solenoids are formed by combining many loops of current together, in order to form a strong and uniform magnetic field. The magnetic field inside of a solenoid has a magnitude of:
 ```{math}
@@ -646,43 +620,51 @@ B=\mu_0nI
 where, $I$, is the current in the solenoid, and $n$, is the number of loops per unit length in the solenoid.  The magnetic field just outside of a solenoid is zero, and generally, the magnetic field is negligible outside of a solenoid. 
 
 A toroid is formed by bending a solenoid into a circle to form a torus. The magnetic field lines inside of a toroid form concentric circles. The magnetic field decreases with radius inside of a toroid and is identically zero everywhere outside a toroid.
+\end{chapterSummary}
 
-:::{important} Important Equations
+
+\begin{importantEquations}
+\begin{multicols}{2}
 **Biot-Savart law:**
 ```{math}
 d\vec B = \frac{\mu_0 I}{4\pi}\frac{d\vec l\times \hat r}{r^2}=\frac{\mu_0 I}{4\pi}\frac{d\vec l\times \vec r}{r^3}
 ```
-
-**Magnetic field from a finite wire:**
+\\
+**Magnetic field from a\\ finite wire:**
 ```{math}
 B = \frac{\mu_0 I}{2\pi h}
 ```
-
-**Magnetic field from an infinitely long wire:**
+\\
+**Magnetic field from an\\ infinitely long wire:**
 ```{math}
 B = \frac{\mu_0 I}{2\pi h}
 ```
-
-**Magnetic field from a circular loop of current:**
+\\
+**Magnetic field from a \\ circular loop of current:**
 ```{math}
 B=\frac{\mu_0 I}{2} \frac{R^2}{(R^2+h^2)^\frac{3}{2}}
 ```
-
+\\
+\columnbreak
+\\
 **Force between two wires:**
 ```{math}
 F = \frac{\mu_0I_1I_2}{2\pi h}
 ```
-
-**Ampère's law:**
+\\
+**\ampere's law:**
 ```{math}
 \oint \vec B \cdot d\vec l =\mu_0 I^{enc}
 ```
-:::
+\\
+\end{multicols}
+\end{importantEquations}
+
 
 # Thinking about the material
 
 :::{seealso} Reflect and research
-* Who discovered Ampère's Law? What did Ampère discover?
+* Who discovered \ampere's Law? What did \amperesp discover?
 * What are three common uses of electromagnets.
 * How does a coil gun work?
 :::
@@ -701,8 +683,8 @@ F = \frac{\mu_0I_1I_2}{2\pi h}
 
 # Sample problems and solutions
 ## Problems
-:::{note} Problem 21.1
-:label: prob:magneticsource:squareloop 
+\begin{problem}{soln:magneticsource:squareloop}
+{:label: prob:magneticsource:squareloop 
 A square loop of wire with side length, $L$, carries current, $I$, as shown in [](#fig:magneticsource:squareloop). What is the magnetic field at the centre of the loop?
 ```{figure} figures/MagneticSource/squareloop
 :label: fig:magneticsource:squareloop
@@ -711,9 +693,10 @@ A square loop of wire with side length, $L$, carries current, $I$, as shown in [
 :alt:  A square loop of current.
  A square loop of current.
 ```
-:::
-:::{note} Problem 21.2
-:label: prob:magneticsource:helmholtz 
+}
+\end{problem}
+
+\begin{problem}{soln:magneticsource:helmholtz}{:label: prob:magneticsource:helmholtz 
 Helmholtz coils are an arrangement of two parallel loops of current that produce a nearly uniform magnetic field. Helmholtz coils are formed by two identical circular loops of radius $R$, carrying the same current, $I$, where the centres of the coils are separated by a distance, $R$, as illustrated in [](#fig:magneticsource:helmholtzdiagram). Determine the magnetic field as a function of $z$, along the axis of symmetry of the coils, where the origin is located half way between the two coils. Make a plot of the magnetic field as a function of $z$ from each coil, as well as the total magnetic field to show that it is close to uniform between the coils.
 ```{figure} figures/MagneticSource/helmholtzdiagram
 :label: fig:magneticsource:helmholtzdiagram
@@ -722,23 +705,23 @@ Helmholtz coils are an arrangement of two parallel loops of current that produce
 :alt:  A Helmholtz coil arrangement.
  A Helmholtz coil arrangement.
 ```
-:::
+}
+\end{problem}
+
 
 ## Solutions
-:::{note} Solution 21.1
-:label: soln:magneticsource:squareloop
-:class: dropdown
+\begin{solution}{prob:magneticsource:squareloop}
+{:label: soln:magneticsource:squareloop
 The square loop is simply made of four straight sections of wire of length, $L$. The magnetic field from each section of wire is into the page, which you can easily verify with your right-hand (with your thumb in the direction of current, your fingers curl in the direction of the resulting magnetic field). 
 
 The magnetic field at the centre is just four times the magnetic field produced by a single segment, which we determined in this chapter. The magnetic field at the centre of the loop is thus four times the magnetic field at a distance, $h=\frac{L}{2}$, from a wire of length, $L$:
 ```{math}
 B &= 4\times\frac{\mu_0 I}{2\pi \frac{L}{2}}\frac{L/2}{\sqrt{\frac{L^2}{4}+\frac{L^2}{4}}}=2\sqrt 2\frac{\mu_0 I}{\pi L}
 ```
-:::
+}
+\end{solution}
 
-:::{note} Solution 21.2
-:label: soln:magneticsource:helmholtz
-:class: dropdown
+\begin{solution}{prob:magneticsource:helmholtz}:label: soln:magneticsource:helmholtz
 We know that the magnetic field at a distance, $h$, from the centre of a loop of current, along its axis of symmetry is given by:
 ```{math}
  B(h) = \frac{\mu_0 I}{2}\frac{R^2}{(R^2+h^2)^{\frac{3}{2}}}
@@ -753,10 +736,10 @@ We can plot this function, as well as the two individual terms using python. For
 * $I=0.1 {\rm A}$
 
 	
-```python Numerical integration of a function] 
+\begin{python}[caption=Numerical integration of a function] 
 #Import the modules that we need:
 import numpy as np
-import matplotlib.pyplot as plt
+import pylab as pl
 
 #Define some constants:
 mu0 = 4*np.pi*1e-7 #4 pi 
@@ -775,59 +758,24 @@ B2 = (mu0*I)/2 * R**2/((R**2+(z-R/2)**2)**(3/2))
 B = B1 + B2
 
 #Make the plot
-plt.figure(figsize=(10,6))
-plt.plot(z,B1,label='Coil at z=-R/2')
-plt.plot(z,B2,label='Coil at z=+R/2')
-plt.plot(z,B,label='Total')
-plt.legend()
-plt.xlabel('z position [m]')
-plt.ylabel('Magnetic field [T]')
-plt.show()
-```
-
-:::{epigraph} Output
-```{figure} figures/MagneticSource/helmholtzcoil.png
+pl.figure(figsize=(10,6))
+pl.plot(z,B1,label='Coil at z=-R/2')
+pl.plot(z,B2,label='Coil at z=+R/2')
+pl.plot(z,B,label='Total')
+pl.legend()
+pl.xlabel('z position [m]')
+pl.ylabel('Magnetic field [T]')
+pl.show()
+	
+\end{python}
+\begin{poutput}
+	(* ```{figure} figures/MagneticSource/helmholtzcoil.png
 :label: fig:magneticsource:helmholtzcoil
 :width: 80%
 :align: center
 :alt: Magnetic field from each coil, as well as their sum, for two coils in the Helmholtz configuration
 Magnetic field from each coil, as well as their sum, for two coils in the Helmholtz configuration
-```
-As advertised, we see a region between the Helmholtz coils where the magnetic field is nearly uniform.
-:::
-:::
-```{code-cell} ipython3
----
-mystnb:
-  number_source_lines: true
----
-#Import the modules that we need:
-import numpy as np
-import matplotlib.pyplot as plt
-
-#Define some constants:
-mu0 = 4*np.pi*1e-7 #4 pi 
-I = 0.5
-R = 0.3
-
-#Define the values on the z axis, from -2R to +2R, in 100 increments
-z = np.linspace(-2*R,2*R,100)
-
-#Determine the magnetic field from the coils at those values of z
-#The coil at z = - R/2:
-B1 = (mu0*I)/2 * R**2/((R**2+(z+R/2)**2)**(3/2))
-#The coil at z = + R/2:
-B2 = (mu0*I)/2 * R**2/((R**2+(z-R/2)**2)**(3/2))
-#The sum:
-B = B1 + B2
-
-#Make the plot
-plt.figure(figsize=(10,6))
-plt.plot(z,B1,label='Coil at z=-R/2')
-plt.plot(z,B2,label='Coil at z=+R/2')
-plt.plot(z,B,label='Total')
-plt.legend()
-plt.xlabel('z position [m]')
-plt.ylabel('Magnetic field [T]')
-plt.show()
-```
+``` *)
+\end{poutput}
+As advertised, we see a region between the Helmholtz coils where the magnetic field is nearly uniform. 
+\end{solution}
