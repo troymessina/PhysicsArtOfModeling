@@ -678,7 +678,7 @@ A cathode ray tube in a television accelerates an electron from rest using a pot
 
 :::{note} Problem20.2
 :label: prob:magneticforce:galvanometer 
-A galvanometer has a square coil with a side length of $a=2.5 {\rm cm}$ and $N=70 {\rm }$ loops between two magnets which generate a radial magnetic field of $B=8 {\rm mT}$. When a current runs through the coil, it generates a torque which is opposed by a spring with a torsional spring constant of $\kappa = 1.5\times 10^{-8} {\rm Nm~rad^{-1}}$. If the deflection of the galvanometer's needle is $0.7 {\rm rad}$, what is the current running through the coil?
+A galvanometer has a square coil with a side length of $a=2.5 {\rm cm}$ and $N=70 {\rm }$ loops between two magnets which generate a radial magnetic field of $B=8 {\rm mT}$. When a current runs through the coil, it generates a torque which is opposed by a spring with a torsional spring constant of $\kappa = 1.5e-8 {\rm Nm~rad^{-1}}$. If the deflection of the galvanometer's needle is $0.7 {\rm rad}$, what is the current running through the coil?
 :::
 
 :::{note} Problem 20.3
@@ -778,10 +778,8 @@ d\vec \tau = \vec r \times d\vec F
 ```
 where $\vec r$ is the vector from the axis of rotation (through the centre of the loop, parallel to the $z$ axis) to the point where the force is exerted. The length of the vector, $\vec r$, is simply $r=R\cos\theta$, and the force is perpendicular to the vector $\vec r$. Thus, the torque on the infinitesimal element is given by:
 ```{math}
-d\vec \tau &= \vec r \times d\vec F\\
-&= (R\cos\theta \hat x)\times (-IBdl\cos\theta\hat y)\\
-&=-IBR\cos^2\theta dl (\hat x \times \hat y)\\
-&=-IBR\cos^2\theta dl \hat z
+d\vec \tau &= \vec r \times d\vec F= (R\cos\theta \hat x)\times (-IBdl\cos\theta\hat y)\\
+&=-IBR\cos^2\theta dl (\hat x \times \hat y)=-IBR\cos^2\theta dl \hat z
 ```
 and the torque on that infinitesimal element is in the negative $z$ direction, as anticipated from the direction of the force. Note that had we considered the loop to be oriented such that the magnetic field is not in the plane of the loop, the vector $\vec r$ in the torque would have a component in the $y$ direction. 
 
@@ -792,10 +790,7 @@ dl = Rd\theta
 
 The net torque is then given by:
 ```{math}
-\vec \tau &= \int d\vec \tau\\
-&=\int -IBR\cos^2\theta dl \hat z\\
-&= (-IBR^2\hat z)\int_0^{2\pi} \cos^2\theta d\theta\\
-&=(-IBR^2\hat z)\pi
+\vec \tau &= \int d\vec \tau=\int -IBR\cos^2\theta dl \hat z= (-IBR^2\hat z)\int_0^{2\pi} \cos^2\theta d\theta =(-IBR^2\hat z)\pi
 ```
 The magnetic moment of the loop is:
 ```{math}

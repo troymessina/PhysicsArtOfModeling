@@ -413,7 +413,7 @@ Three loops of current with different orientations relative to a uniform magneti
 Three loops are shown (as lines), seen from above, and the direction of the current in each loop is shown as going in or out of the page. Equivalently, one can simply draw the magnetic dipole moment vector for each loop (perpendicular to the plane of the loop). For the top loop, the magnetic dipole moment is parallel to the magnetic field, so the magnetic field exerts no torque. For the middle loop, the magnetic dipole moment makes an angle $\theta$ with the magnetic field vector, so that the torque on that loop has a magnitude given by $\tau=\mu B \sin\theta$, and points into the page (clockwise rotation). The bottom loop makes an angle of $-\pi/2$ with the magnetic field, which results in a torque in the counter-clockwise direction. In all cases, the torque is such that it always tries to align the magnetic dipole moment vector with the magnetic field, just as if the magnetic dipole moment were the needle of a compass. 
 
 :::{note} Example 20.3
-Determine the magnetic dipole moment of the electron orbiting a hydrogen atom, if you assume that the electron is in a circular orbit with a radius of $R=0.5 \overset{\circ}{\rm A}$.
+Determine the magnetic dipole moment of the electron orbiting a hydrogen atom, if you assume that the electron is in a circular orbit with a radius of $R=0.5 \overset{\circ}{\rm \angstrom}$.
 :::{note} Solution
 :class: dropdown
 As the electron orbits around the circle, it results in a circular loop of current, $I$. The current is the rate at which charge passes through a point per unit time. If the electron orbit has a period, $T$, then the corresponding current, $I$, is given by:
@@ -429,13 +429,8 @@ k\frac{e^2}{R^2}&= m\frac{v^2}{R}\\
 ```
 The magnetic dipole moment is then given by:
 ```{math}
-\mu &= IA\\
-&= \frac{e}{T} \pi R^2\\
-& = \frac{ev}{2\pi R} \pi R^2\\
-&=\frac{1}{2} evR\\
-&=\frac{1}{2} \sqrt{\frac{ke^4R}{m}}\\
-&=\frac{1}{2} \sqrt{\frac{(9e9 {\rm N/C^{2}\cdot m^2})(1.6e-19 {\rm C})^4(0.5 \overset{\circ}{\rm A})}{(9.1e-31 {\rm kg})}}\\
-&=9\times 10^{24} {\rm A\cdot m^2}
+\mu &= IA = \frac{e}{T} \pi R^2 = \frac{ev}{2\pi R} \pi R^2=\frac{1}{2} evR=\frac{1}{2} \sqrt{\frac{ke^4R}{m}}\\
+&=\frac{1}{2} \sqrt{\frac{(9e9 {\rm N/C^{2}\cdot m^2})(1.6e-19 {\rm C})^4(0.5 {\rm \angstrom})}{(9.1e-31 {\rm kg})}}=9e24 {\rm A\cdot m^2}
 ```
 **Discussion:** In this example we calculated the orbital magnetic dipole moment of the electron in a hydrogen atom. This was a very simple model, since in reality, electrons do not orbit atoms in circular orbits, and one must use quantum mechanics to describe the motion precisely. 
 :::
@@ -447,22 +442,22 @@ A magnetic dipole moment in a magnetic field behaves in the same way as an elect
 \boxed{U =-\vec \mu \cdot \vec B =- \mu B \cos\theta}
 ```
 where $\theta$ is the angle between the magnetic moment and the magnetic field. If a magnetic dipole is not aligned with a magnetic field and it is released, it will start to rotate (gain rotational kinetic energy) until it reaches a minimum in potential energy ($\theta = 0$). The magnetic moment would oscillate back and forth about $\theta =0$ if there are no losses. Note that the point where $\theta = \pi$, is an unstable equilibrium.
-:::{tip} Checkpoint
-When a magnetic dipole moment is parallel with a magnetic field and points in the same direction as the magnetic field, it will have...
+:::{tip} Checkpoint{}
+	When a magnetic dipole moment is parallel with a magnetic field and points in the same direction as the magnetic field, it will have...}
 1.  ... its maximum torque and maximum potential energy.
 2.  ... its maximum torque and minimum potential energy.
 3.  ... its minimum torque and maximum potential energy.
 4.  ... its minimum torque and minimum potential energy. 
-:::{tip} Answer
+	:::{tip} Answer
 :class: dropdown
 4.
 :::
 
-:::{tip} Checkpoint
-When a magnetic dipole moment is placed such that the torque from the magnetic field is maximized, it will have...
+:::{tip} Checkpoint{}
+	When a magnetic dipole moment is placed such that the torque from the magnetic field is maximized, it will have...}
 1.  ... zero potential energy. 
 2.  ... its minimum potential energy.
-:::{tip} Answer
+	:::{tip} Answer
 :class: dropdown
 1.
 :::
@@ -473,9 +468,9 @@ When a magnetic dipole moment is placed such that the torque from the magnetic f
 :label: fig:magneticforce:hallV
 :width: 40%
 :align: center
-:alt: Illustration of the Hall effect, as electrons flow through a slab that is immersed in a magnetic field, the magnetic force pushes them to one side, creating an electric potential difference, $\Delta V_{Hall}$, transverse to the motion of the current through the slab.
-Illustration of the Hall effect, as electrons flow through a slab that is immersed in a magnetic field, the magnetic force pushes them to one side, creating an electric potential difference, $\Delta V_{Hall}$, transverse to the motion of the current through the slab.
-```
+:alt: Illustration of the Hall effect, as electrons flow through a slab that is immersed in a magnetic field, the magnetic force pushes them to one side, creating an electric potential difference, $\Delta V_{Hall
+Illustration of the Hall effect, as electrons flow through a slab that is immersed in a magnetic field, the magnetic force pushes them to one side, creating an electric potential difference, $\Delta V_{Hall
+```$, transverse to the motion of the current through the slab.}
 As the electrons enter the right-hand side of the slab ([](#fig:magneticforce:hallV)) and drift towards the left, they will experience an upwards force from the magnetic field. As they move to the left through the slab, they also move upwards and "pile up" on that side of the slab. There will thus be an excess of negative charge on the top side of the slab, leading to an electric potential difference between the top and the bottom of the slab. This potential difference is called the "Hall potential", $\Delta V_{Hall}$. An equilibrium between the magnetic force and the electric force associated with the Hall potential is quickly reached, so that the Hall potential remains constant.
 
 If we model the slab as two parallel plates, with a potential difference, $\Delta V_{Hall}$, between them, the electric field in the slab is constant and given by:
@@ -496,7 +491,7 @@ The Hall effect allows us to determine that it is negative charges that flow, an
 # Applications
 In this section, we briefly outline a few applications of the magnetic force.
 ## Velocity selector and mass spectrometer
-In [Example 20.1](#ex:magneticforce:massspec), we described how charged particles with different charge-to-mass ratios will undergo uniform circular motion with different radii, if they all have the same speed. This principle is used in mass spectrometers, which are devices that are able to detect trace amounts of matter in a sample. For example, when your bag gets swiped with a sticky tape at a security check at the airport, that piece of sticky tape is then analysed by a mass spectrometer.
+In [](#ex:magneticforce:massspec), we described how charged particles with different charge-to-mass ratios will undergo uniform circular motion with different radii, if they all have the same speed. This principle is used in mass spectrometers, which are devices that are able to detect trace amounts of matter in a sample. For example, when your bag gets swiped with a sticky tape at a security check at the airport, that piece of sticky tape is then analysed by a mass spectrometer.
 
 The tape is vaporized in a way to ionize the atoms on the tape. The ions are then accelerated through an electric potential difference and then pass through a region with a magnetic field. The ions typically execute half of a circular orbit before being detected, as illustrated in [](#fig:magneticforce:massspec). The charge-to-mass ratio of the ions is determined from the radius of their orbit. Usually, their charge is either one or two times the electron charge, allowing their mass to be determined. 
 ```{figure} figures/MagneticForce/massspec.png
@@ -565,6 +560,7 @@ Illustration of a loud speaker. As current moves through the coil, the coil is p
 
 
 # Summary
+\begin{chapterSummary}
 In order to describe the magnetic force, we introduced the magnetic field, $\vec B$. While there are some similarities with the electric field, the key difference in magnetism is that there are no "magnetic charges" (so-called monopoles), and magnets thus always have a North *and* a South pole. As a result, magnetic field lines never end and must always form closed loops. The magnetic field points in the direction of the force that would be exerted on the North pole of a magnet placed at that position.
 
 Electric charges can feel a force from a magnetic field only if they are moving relative to the frame of reference in which the magnetic field is described. If a charge, $q$, has velocity, $\vec v$, in a magnetic field, $\vec B$, it will feel a magnetic force given by:
@@ -614,33 +610,40 @@ where $w$ is the width of the slab in the perpendicular direction, $B$ is the st
 
 There are many applications of the magnetic force in our daily lives, including electric motors, loudspeakers, cathode ray tubes, mass spectrometers, and galvanometers.
 
+\end{chapterSummary}
 
-:::{important} Important Equations
+
+\begin{importantEquations}
+\begin{multicols}{2}
 **Magnetic force on a moving charge:**
 ```{math}
 \vec F_B &= q\vec v\times \vec B
 ```
-
+\\
 **Magnetic force on a current-carrying wire:**
 ```{math}
 \vec F_B = I \vec l \times \vec B
 ```
-
+\\
 **Cyclotron radius:**
 ```{math}
 R &= \frac{mv}{qB}
 ```
-
+\\
+\columnbreak
+\\
 **Magnetic dipole moment:**
 ```{math}
 \mu = IA
 ```
-
+\\
 **Torque on a magnetic dipole:**
 ```{math}
 \vec \tau &= \vec \mu \times \vec B
 ```
-:::
+\\
+\end{multicols}
+\end{importantEquations}
 
 :::{important} Important Definitions
 * **Magnetic field:** A field used to model the magnetic force. SI units: ${\rm \left[{T}\right]}$. Common variable(s): $\vec B$.
@@ -671,25 +674,27 @@ R &= \frac{mv}{qB}
 # Sample problems and solutions
 
 ## Problems
-:::{note} Problem 20.1
-:label: prob:magneticforce:crt 
+\begin{problem}{soln:magneticforce:crt}
+{:label: prob:magneticforce:crt 
 A cathode ray tube in a television accelerates an electron from rest using a potential difference of $\Delta V=500 {\rm V}$. Once it exits the tube, the electron must be deflected upwards by a distance $h=3 {\rm cm}$ using a uniform magnetic field, $\vec B$, before striking the phosphorescent screen, which is a distance $d= 5 {\rm cm}$ away. What direction and magnitude must the magnetic field have in order to steer the electron towards its destination?
-:::
+}
+\end{problem}
 
-:::{note} Problem20.2
-:label: prob:magneticforce:galvanometer 
-A galvanometer has a square coil with a side length of $a=2.5 {\rm cm}$ and $N=70 {\rm }$ loops between two magnets which generate a radial magnetic field of $B=8 {\rm mT}$. When a current runs through the coil, it generates a torque which is opposed by a spring with a torsional spring constant of $\kappa = 1.5\times 10^{-8} {\rm Nm~rad^{-1}}$. If the deflection of the galvanometer's needle is $0.7 {\rm rad}$, what is the current running through the coil?
-:::
+\begin{problem}{soln:magneticforce:galvanometer}
+{:label: prob:magneticforce:galvanometer 
+A galvanometer has a square coil with a side length of $a=2.5 {\rm cm}$ and $N=70 {\rm }$ loops between two magnets which generate a radial magnetic field of $B=8 {\rm mT}$. When a current runs through the coil, it generates a torque which is opposed by a spring with a torsional spring constant of $\kappa = 1.5e-8 {\rm Nm\radian^{-1}}$. If the deflection of the galvanometer's needle is 0.7 {\rm \radian}, what is the current running through the coil?
+}
+\end{problem}
 
-:::{note} Problem 20.3
-:label: prob:magneticforce:torque 
+\begin{problem}{soln:magneticforce:torque}
+{:label: prob:magneticforce:torque 
 Integrate the torque over a circular path, using the equation $d\vec F = Id\vec l \times \vec B$, to show that the torque exerted on a circular loop of radius, $R$, carrying current, $I$, immersed in a uniform magnetic field, $\vec B$, has a magnitude given by $\tau=\mu B$, where $\vec \mu$ is the magnetic dipole moment of the loop. You may simplify the problem by modelling the loop when its magnetic moment is perpendicular to the magnetic field.
-:::
+}
+\end{problem}
+
 
 ## Solutions
-:::{note} Solution 20.1
-:label: soln:magneticforce:crt
-:class: dropdown
+\begin{solution}{prob:magneticforce:crt}:label: soln:magneticforce:crt
 First, we determine the velocity of the electron that were accelerated over a potential difference of $\Delta V=500 {\rm V}$. Their kinetic energy is given by their charge times the potential difference::
 ```{math}
 K &= e\Delta V \\
@@ -722,12 +727,10 @@ The strength of the magnetic field is then given by:
 ```{math}
 B&=\frac{mv}{qR}=\frac{(9.11e-31 {\rm kg})(1.326e7 {\rm ms^{-1}})}{(1.6e-19 {\rm C})(0.0567 {\rm m})}=0.00133 {\rm T}
 ```
-:::
+\end{solution}
 
 
-:::{note} Solution 20.2
-:label: soln:magneticforce:galvanometer
-:class: dropdown
+\begin{solution}{prob:magneticforce:galvanometer}:label: soln:magneticforce:galvanometer
 First, we will determine the magnetic dipole moment of the square coil:
 ```{math}
 \mu &= NIA\\
@@ -748,11 +751,9 @@ NIa^2B &= \kappa \theta\\
 I &= \frac{\kappa \theta}{Na^2B} = \frac{(1.5e-8 {\rm Nm(rad)^{-1}}) (0.7 {\rm rad})}{70(0.025 {\rm m})^2(8e-3 {\rm T})}\\
 &= 30 {\rm \mu A}
 ```
-:::
+\end{solution}
 
-:::{note} Solution 20.3
-:label: soln:magneticforce:torque
-:class: dropdown
+\begin{solution}{prob:magneticforce:torque}:label: soln:magneticforce:torque
 [](#fig:magneticforce:proof1) illustrates a loop of radius, $R$, carrying current, $I$. The loop is in the $x-z$ plane, and there is a magnetic field, $\vec B$, in the negative $x$ direction. By setting the loop up this way, it is easier to visualize some of the three-dimensional aspects.
 ```{figure} figures/MagneticForce/proof1.png
 :label: fig:magneticforce:proof1
@@ -778,10 +779,8 @@ d\vec \tau = \vec r \times d\vec F
 ```
 where $\vec r$ is the vector from the axis of rotation (through the centre of the loop, parallel to the $z$ axis) to the point where the force is exerted. The length of the vector, $\vec r$, is simply $r=R\cos\theta$, and the force is perpendicular to the vector $\vec r$. Thus, the torque on the infinitesimal element is given by:
 ```{math}
-d\vec \tau &= \vec r \times d\vec F\\
-&= (R\cos\theta \hat x)\times (-IBdl\cos\theta\hat y)\\
-&=-IBR\cos^2\theta dl (\hat x \times \hat y)\\
-&=-IBR\cos^2\theta dl \hat z
+d\vec \tau &= \vec r \times d\vec F= (R\cos\theta \hat x)\times (-IBdl\cos\theta\hat y)\\
+&=-IBR\cos^2\theta dl (\hat x \times \hat y)=-IBR\cos^2\theta dl \hat z
 ```
 and the torque on that infinitesimal element is in the negative $z$ direction, as anticipated from the direction of the force. Note that had we considered the loop to be oriented such that the magnetic field is not in the plane of the loop, the vector $\vec r$ in the torque would have a component in the $y$ direction. 
 
@@ -792,17 +791,14 @@ dl = Rd\theta
 
 The net torque is then given by:
 ```{math}
-\vec \tau &= \int d\vec \tau\\
-&=\int -IBR\cos^2\theta dl \hat z\\
-&= (-IBR^2\hat z)\int_0^{2\pi} \cos^2\theta d\theta\\
-&=(-IBR^2\hat z)\pi
+\vec \tau &= \int d\vec \tau=\int -IBR\cos^2\theta dl \hat z= (-IBR^2\hat z)\int_0^{2\pi} \cos^2\theta d\theta =(-IBR^2\hat z)\pi
 ```
 The magnetic moment of the loop is:
 ```{math}
 \mu = IA = I\pi R^2
 ```
 so that the torque is indeed given by $\tau = \mu B$. If we had rotated the loop so that the vector, $\vec r$, had a $y$ component, then we would have found the general formula with a cross-product.
-:::
+\end{solution}
 
 
 
