@@ -30,11 +30,11 @@ This version of the textbook is also open-access and can be found at https://git
 16. [Gauss' Law](#chapter:gauss)
 17. [Electric potential](#chapter:potential)
 18. [Electric current](#chapter:current)
-19. Electric circuits
-20. The magnetic force
-21. Sources of magnetic field
-22. Electromagnetic induction
-23. The theory of Special Relativity
+19. [Electric circuits](#chapter:circuits)
+20. [The magnetic force](#chapter:magneticforce)
+21. [Sources of magnetic field](#chapter:magneticsource)
+22. [Electromagnetic induction](#chapter:induction)
+23. [The theory of Special Relativity](#chap:specialrelativity)
 24. [Appendix A: Calculus](#app:calculus)
 25. [Appendix B: An Introduction to Visual Python](#app:visualpython)
 27. Appendix C: Guidelines for lab related activities
