@@ -1077,9 +1077,7 @@ In order to determine the amount of energy released in each reaction, we need to
 ```
 On the left-hand side, the total mass is:
 ```{math}
-M_{LHS}&=4m_p+2m_e\\
-&=4(938.3 {\rm MeV/c^2})+2(0.511 {\rm MeV/c^2})\\
-&=3754.22 {\rm MeV/c^2}
+M_{LHS}=4m_p+2m_e=4(938.3 {\rm MeV/c^2})+2(0.511 {\rm MeV/c^2})=3754.22 {\rm MeV/c^2}
 ```
 whereas on the right-hand side, the total mass is:
 ```{math}
@@ -1087,9 +1085,7 @@ M_{RHS}=m_\alpha=3727.4 {\rm MeV/c^2}
 ```
 Thus, the total energy released in each reaction is given by:
 ```{math}
-E &= c^2\Delta M\\
-&= c^2(M_{LHS}-M_{RHS})\\
-&=c^2((3754.22 {\rm MeV/c^2})-(3727.4 {\rm MeV/c^2}))\\
+E &= c^2\Delta M = c^2(M_{LHS}-M_{RHS})=c^2((3754.22 {\rm MeV/c^2})-(3727.4 {\rm MeV/c^2}))\\
 &=26.8 {\rm MeV}=4.29\times 10^{-12} {\rm J}
 ```
 where we showed the answer in both ${\rm MeV}$ and ${\rm J}$. Although it may not seem like that much energy per reaction, keep in mind that there are of order $1\times 10^{38}$ reactions per second in the Sun, corresponding to a power output of order $4\times 10^{26} {\rm W}$, enough to keep us warm in the summer.
@@ -1105,25 +1101,20 @@ E &= \gamma m_0 c^2\\
 \sqrt{1-\frac{v^2}{c^2}} &= \frac{m_0c^2}{E}\\
 \frac{v^2}{c^2} &= 1 - \frac{m_0^2c^4}{E^2}\\	
 \therefore v &= \left(\sqrt{1-\frac{m_0^2c^4}{E^2}}\right) c\\
-&= \left(\sqrt{1-\frac{(938.3 {\rm MeV/c^2})^2c^4}{(2.5\times 10^{3} {\rm MeV})^2}}\right)c\\
-&= \left(\sqrt{1-\frac{(938.3 {\rm MeV})^2}{(2.5\times 10^{3} {\rm MeV})^2}}\right)c\\
+&= \left(\sqrt{1-\frac{(938.3 {\rm MeV/c^2})^2c^4}{(2.5e3 {\rm MeV})^2}}\right)c\\
+&= \left(\sqrt{1-\frac{(938.3 {\rm MeV})^2}{(2.5e3 {\rm MeV})^2}}\right)c\\
 &= 0.93c\\ 
-&= 2.78\times 10^{8} {\rm m/s}\\
+&= 2.78e8 {\rm m/s}\\
 ```
 * b. In the frame of the lab, when one second goes by, the proton will travel a distance:
 ```{math}
-d &= vt\\
-&= (2.78\times 10^{8} {\rm m/s})(1 {\rm s})\\
-&=2.78\times 10^{8} {\rm m}
+d = vt = (2.78e8 {\rm m/s})(1 {\rm s})=2.78e8 {\rm m}
 ```
 * c. In order to find out how far the proton travels in the lab when one second of proper time goes by in the proton's frame of reference, we need to determine how much time went by in the lab's frame of reference. 
 
 The gamma factor for the proton can be obtained from the speed that we determined in part a), or from the total energy directly:
 ```{math}
-\gamma &= \frac{E}{m_0c^2}\\
-&=\frac{(2.5\times 10^{3} {\rm MeV})}{(938.3 {\rm MeV/c^2})c^2}\\
-&=\frac{(2.5\times 10^{3} {\rm MeV})}{(938.3 {\rm MeV})}\\
-&=2.66
+\gamma = \frac{E}{m_0c^2}=\frac{(2.5e3 {\rm MeV})}{(938.3 {\rm MeV/c^2})c^2}=\frac{(2.5e3 {\rm MeV})}{(938.3 {\rm MeV})}=2.66
 ```
 Thus, when $\Delta t=1 {\rm s}$ elapses in the proton's frame of reference, a time dilated time, $\Delta t'$, elapses in the lab frame of reference:
 ```{math}
@@ -1131,9 +1122,7 @@ Thus, when $\Delta t=1 {\rm s}$ elapses in the proton's frame of reference, a ti
 ```
 In the lab frame, the proton will travel a distance:
 ```{math}
-d &= vt\\
-&= (2.78\times 10^{8} {\rm m/s})(2.66 {\rm s})\\
-&=7.39\times 10^{8} {\rm m}
+d = vt = (2.78e8 {\rm m/s})(2.66 {\rm s})=7.39e8 {\rm m}
 ```
 :::
 

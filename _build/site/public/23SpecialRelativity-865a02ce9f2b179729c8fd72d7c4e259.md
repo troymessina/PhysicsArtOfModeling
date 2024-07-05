@@ -210,12 +210,11 @@ where the distance in the numerator was simply found by Pythagoras' theorem, as 
 ```{math}
 c^2&=\frac{4L^2}{\Delta t'^2}+v^2\\
 \Delta t'^2 (c^2-v^2)&=4L^2\\
-\therefore \Delta t' &= 2L\frac{1}{\sqrt{c^2-v^2}}\\
-&=\frac{2L}{c}\frac{1}{\sqrt{1-\frac{v^2}{c^2}}}
+\therefore \Delta t' &= 2L\frac{1}{\sqrt{c^2-v^2}}=\frac{2L}{c}\frac{1}{\sqrt{1-\frac{v^2}{c^2}}}
 ```
 Note that the term $2L/c$ is simply the period of the clock as measured in a frame of reference where the clock is stationary. Thus, we can relate the two clock periods:
 ```{math}
-\boxed{\Delta t' = \Delta t \frac{1}{\sqrt{1-\frac{v^2}{c^2}}}}
+\boxed{\Delta t' &= \Delta t \frac{1}{\sqrt{1-\frac{v^2}{c^2}}}}
 ```
 To re-iterate: the period of the clock, $\Delta t'$, as measured in a frame of reference that is moving relative to the clock is longer than the period of the clock, $\Delta t$, as measured in the "rest frame" of the clock (the reference frame where the clock is stationary). We call this effect **"time dilation"**, and it is not just some mathematical curiosity. The clock that we imagined with a pulse of light is a real clock that one could actually construct; we could use it to measure time. That clock will appear to tick slower if it is moving. **Time goes by slower in a moving reference frame**. If a person climbs on a ship that is moving, that person will age at a slower rate than a person that remained on Earth. By travelling at high speeds, you effectively travel into the future, as observed on Earth. The equation above allows us to relate the amount of time that went by in one reference frame to the amount of time that went by in a different frame of reference.
 
@@ -250,7 +249,7 @@ What speed, $v$, corresponds to a gamma factor of $2.5$?
 
 Time-dilation is a real effect that has been observed, for example, by placing high precision atomic clocks on an airplane to observe their period slow down. Another example of time-dilation is the fact that we observe many particles called muons at the surface of the Earth. Muons are very similar to electrons, except that they have a larger mass, and that they are unstable (they radioactively decay into an electron and neutrinos, after $2.2 {\rm \mu s}$ on average). Muons are produced in large amounts when cosmic rays (high energy particles from outside our Solar System) strike the molecules in our upper atmosphere, at altitudes of tens of kilometres. As the muons travel down towards the Earth, they decay.
 
-Suppose that muons are produced travelling at the speed of light; in that case, they would travel a distance $d=(3\times 10^{8} {\rm m/s})(2.2\times 10^{-6} {\rm s})=660 {\rm m}$, on average, before decaying. However, muons are produced tens of kilometres above the surface of the Earth, travel slower than the speed of light, and yet, we are able to detect many muons at the surface of the Earth. We would expect that all muons would have decayed before reaching the surface of the Earth.
+Suppose that muons are produced travelling at the speed of light; in that case, they would travel a distance $d=(3e8 {\rm m/s})(2.2e-6 {\rm s})=660 {\rm m}$, on average, before decaying. However, muons are produced tens of kilometres above the surface of the Earth, travel slower than the speed of light, and yet, we are able to detect many muons at the surface of the Earth. We would expect that all muons would have decayed before reaching the surface of the Earth.
 
 We can understand this in terms of time dilation; in the reference frame of the muon, the muon decays after $\Delta t=2.2 {\rm \mu s}$. In a reference frame from which the muon appears to move with speed $v$, the "clock" that measures how long the muon has existed ticks slower. Thus, from the Earth, we observe that the muon takes longer than $2.2 {\rm \mu s}$ to decay, giving it time to reach the surface of the Earth.
 
@@ -270,7 +269,7 @@ In the frame of reference of the Earth, the muon has travelled a distance:
 ```{math}
 d' = v\Delta t'=(0.8c)(5.0 {\rm \mu s})=1350 {\rm m}
 ```
-**Discussion:** In this example, we see that an object, such as a muon, that travels with at 90 percent of the speed of light will have a gamma factor around 2. Thus, from the Earth's frame of reference, it appears that the muon "ages" at about half of the rate at which one would observe the muon to age if moving along with the muon. This is the mechanism that allows muons to exist much longer than $2.2 {\rm \mu s}$ when they are travelling relative to the Earth.
+**Discussion: **In this example, we see that an object, such as a muon, that travels with at 90 percent of the speed of light will have a gamma factor around 2. Thus, from the Earth's frame of reference, it appears that the muon "ages" at about half of the rate at which one would observe the muon to age if moving along with the muon. This is the mechanism that allows muons to exist much longer than $2.2 {\rm \mu s}$ when they are travelling relative to the Earth.
 
 Also, in Earth's reference frame, the muon travels a distance of $1350 {\rm m}$ in the period of time between being produced and decaying. In the reference frame of the muon, only $2.2 {\rm \mu s}$ elapse as the Earth moves closer to the muon, at the same speed. In the reference frame of the muon, the Earth has travelled a distance:
 ```{math}
@@ -286,7 +285,7 @@ A spaceship carrying your friend Alice speeds away at a speed of $0.99c$ towards
 Alice's trip is illustrated in [](#fig:specialrelativity:alphatrip), showing the trip as viewed from Earth's and from Alice's frame of reference.
 ```{figure} figures/SpecialRelativity/alphatrip.png
 :label: fig:specialrelativity:alphatrip
-:width: 80%
+:width: 60%
 :align: center
 :alt: Alice travels in a spaceship from the Earth to the star Proxima Centauri. In the Earth frame of reference, the star is $4.2 {\rm ly}$ away.
 Alice travels in a spaceship from the Earth to the star Proxima Centauri. In the Earth frame of reference, the star is $4.2 {\rm ly}$ away.
@@ -357,7 +356,8 @@ At the top of my solution, I would write:
 \textrm{Frame}\, A: L', \Delta t
 ```
 To check that we got this right, the speed of the spaceship should not change depending on the reference frame. In the Earth's frame of reference, the velocity is given by $v=L/\Delta t'$. In Alice's frame, it is given by $v=L'/\Delta t$, or, using the gamma factor:  $v=(L/\gamma)/(\Delta t'/\gamma)=L/\Delta t'$, as expected.
-:::
+
+ :::
 
 Length contraction also allows us to discuss a famous paradox (the "barn", or "ladder" or "barn-pole" paradox). Consider a train that has a rest length of $500 {\rm m}$, travelling at a speed such that $\gamma = 2.5$. As the train goes by, from Earth, it appears to have a (contracted) length:
 ```{math}
@@ -420,10 +420,10 @@ In the frame of reference of the charge $+Q$, the charge has a velocity of zero 
 
 In the frame of reference of the charge $+Q$, the wire no longer appears neutral, but appears to have a net positive charge. This results in an electric field away from the wire that will exert a downwards force on $+Q$. In both frames of reference, we conclude that the charge will experience a downwards force. Whether that force is magnetic or electric depends on the frame of reference! Here, we came to the conclusion by using the notion of length contraction, but remember that length contraction itself is a consequence of Maxwell's equations holding in different frames of reference, as we illustrated at the beginning of this chapter. 
 
-In most real-world applications, we do not see the effects of Special Relativity, as the speeds involved must be very high for the gamma factor to be appreciably greater than one. However, we see these effects in electromagnetism even though the drift speed of electrons in a wire is usually (much) less than ${\rm mm/s}$. This is because, when dealing with the electric and magnetic forces (fields), even a minuscule length contraction of the electrons/ions at those speeds leads to relativistic effects. This can be thought of in terms of how strong the electric force really is; even a minute change in charge density (due to length contraction) has a sizeable relativistic effect.
+In most real-world applications, we do not see the effects of Special Relativity, as the speeds involved must be very high for the gamma factor to be appreciably greater than one. However, we see these effects in electromagnetism even though the drift speed of electrons in a wire is usually (much) less than $\si{mm/s}$. This is because, when dealing with the electric and magnetic forces (fields), even a minuscule length contraction of the electrons/ions at those speeds leads to relativistic effects. This can be thought of in terms of how strong the electric force really is; even a minute change in charge density (due to length contraction) has a sizeable relativistic effect.
 
 # Lorentz transformations and space-time
-%%%Lorentz transformations, space time diagrams
+%Lorentz transformations, space time diagrams
 ## Four-dimensional space-time
 So far, we have seen that our notions of time intervals (the time between two events) and space intervals (the distance between two locations) depend on our frame of reference. We also saw how space and time are connected, for example by the fact that time-dilation must go hand-in-hand with length contraction. Additionally, we concluded that there is no absolute concept of time, and that time is relative. 
 
@@ -435,7 +435,7 @@ It is practically impossible to visualize situations in three dimensions, so fou
 [](#fig:specialrelativity:spacetime) shows a space-time diagram for an object that was located at position $x=x_1$ at time $t=t_1$ (location $A$), and at position $x=x_2$ at time $t=t_2$ (location $B$). The path of an object through space-time, indicated by the line that connects $A$ and $B$, is called the "world line" of the object.
 ```{figure} figures/SpecialRelativity/spacetime.png
 :label: fig:specialrelativity:spacetime
-:width: 50%
+:width: 30%
 :align: center
 :alt: World line of an object that moved from locations $A$ in space-time to location $B$ in space-time.
 World line of an object that moved from locations $A$ in space-time to location $B$ in space-time.
@@ -456,7 +456,7 @@ A position in space-time is usually called an "**event**". We can draw a set of 
 [](#fig:specialrelativity:cones) shows the light cones associated with an event, $A$, in space-time. The past light cone is the only region of space-time in which a different event could have had an impact on the event $A$. For example, the event $A$ might be that "the object is at position $x=x_1$ at time $t=t_1$", so that the past light cone corresponds to the only locations in space-time that the object could have been in the past. Similarly, the future light-cone defines the locations in space-time upon which the event $A$ could have an effect. For example, this could define the possible locations of the object in the future. The regions outside the light cones can never have an effect on the event $A$; they are not causally connected. A signal or object would need to travel faster than the speed of light in order to have an effect on something outside of its light cone. There are locations in space-time, in the future of our Universe, that we cannot influence, no matter what we do.
 ```{figure} figures/SpecialRelativity/cones.png
 :label: fig:specialrelativity:cones
-:width: 50%
+:width: 30%
 :align: center
 :alt: The past and future light cones associated with the space-time event, $A$. 
 The past and future light cones associated with the space-time event, $A$. 
@@ -556,7 +556,7 @@ v'_p&=\frac{(x'_B-x'_A)}{(t'_B-t'_A)}=\frac{\gamma \left(d-v\frac{d}{c}\right)}{
 ```
 which is the speed of light, as expected. 
 
-**Discussion:** In this example, we showed how to use the Lorentz transformations by clearly defining "events" and their coordinates in space-time. We saw that the Lorentz transformations are consistent with Einstein's second postulate and that the speed of light is the same all frames of reference. This of course makes sense, as we derived the Lorentz transformations from time dilation and length contraction, which are consequences of the postulate.
+**Discussion: **In this example, we showed how to use the Lorentz transformations by clearly defining "events" and their coordinates in space-time. We saw that the Lorentz transformations are consistent with Einstein's second postulate and that the speed of light is the same all frames of reference. This of course makes sense, as we derived the Lorentz transformations from time dilation and length contraction, which are consequences of the postulate.
 :::
 
 
@@ -605,7 +605,7 @@ In the frame of reference $S$, the events $A$ and $B$ occur at the same time. In
 ```
 From the space-time diagram, it is clear that, in frame $S'$, event $B$ happened first. If frame $S'$ was moving in the opposite (negative $x$) direction, event $A$ would occur first, and the axes of $S'$ would be tilted in the other direction (so that the opening angle between the axes is greater than $90 {\rm \degree}$).
 
-**Discussion:** This example illustrates how space-time diagrams can be used to qualitatively model events in space-time between two different reference frames. In particular, we showed how two events that are simultaneous in one frame ($S$) are not simultaneous in a different frame. For events connected by space-like intervals, there exist frames of reference where the events are simultaneous, or where either one happened first. If two events are separated by a time-like interval, there is no frame of reference in which one will disagree in the ordering of the events (although observers in different frames of reference will still measure different lengths of time between events due to time-dilation). For time-like events, the moving frame of reference would have to go faster than the speed of light for the time ordering to be different. This would violate causality, and is a good argument as to why nothing can go faster than the speed of light!
+**Discussion: **This example illustrates how space-time diagrams can be used to qualitatively model events in space-time between two different reference frames. In particular, we showed how two events that are simultaneous in one frame ($S$) are not simultaneous in a different frame. For events connected by space-like intervals, there exist frames of reference where the events are simultaneous, or where either one happened first. If two events are separated by a time-like interval, there is no frame of reference in which one will disagree in the ordering of the events (although observers in different frames of reference will still measure different lengths of time between events due to time-dilation). For time-like events, the moving frame of reference would have to go faster than the speed of light for the time ordering to be different. This would violate causality, and is a good argument as to why nothing can go faster than the speed of light!
 :::
 
 :::{attention} Olivia's Thoughts 
@@ -620,7 +620,8 @@ Left: Three events, $A$, $B$, and $C$, that are separated in space and time. We 
 ```
 
 In the right panel of [](#fig:specialrelativity:spacetimelike), I have introduced a new reference frame. You can see that in the new reference frame, events $A$ and $B$ occur at the same time (they are connected by a line that is parallel to the $x'$ axis), and events $A$ and $C$ occur at the same position. In this example, I have shown that if the interval between two events is space-like (e.g. for $A$ and $B$), there is a reference frame in which they occur at the same time. Similarly, if the interval is time-like (e.g. for $A$ and $C$), there is a reference frame in which they occur at the same place. 
-:::
+
+ :::
 
 
 ## Lorentz addition of velocities
@@ -639,16 +640,13 @@ In Galilean relativity, we could simply replace the derivative over $t'$ by a de
 ```
 where we recognized that $\frac{dx'}{dt'}=u'_x$. The $x$ component of the velocity, as measured in the $S'$ frame of reference, is then given by:
 ```{math}
-u'_x &= \frac{d}{dt'} x'\\
-&= \gamma \left(1+\frac{vu'_x}{c^2}\right)\frac{d}{dt}x'\\
+u'_x &= \frac{d}{dt'} x' = \gamma \left(1+\frac{vu'_x}{c^2}\right)\frac{d}{dt}x'\\
 &=\gamma \left(1+\frac{vu'_x}{c^2}\right)\frac{d}{dt}\gamma (x-vt)\\
 &=\gamma^2 \left(1+\frac{vu'_x}{c^2}\right)(u_x -v)\\
 \frac{u'_x}{\gamma^2}&=u_x -v +\frac{vu'_xu_x}{c^2}-\frac{v^2u'_x}{c^2}\\
 u'_x\left (1-\frac{v^2}{c^2}\right)&=u_x -v +\frac{vu'_xu_x}{c^2}-\frac{v^2u'_x}{c^2}\\
-u'_x \left( 1- \frac{vu_x}{c^2}\right) &=u_x -v
-```
-```{math}
-\therefore \; \boxed{u'_x=\frac{u_x -v}{1- \frac{vu_x}{c^2}}}
+u'_x \left( 1- \frac{vu_x}{c^2}\right) &=u_x -v\\
+\therefore \; \boxed{u'_x&=\frac{u_x -v}{1- \frac{vu_x}{c^2}}}
 ```
 where we made use of the Lorentz transformation: $x'=\gamma (x-vt)$. We can proceed in a similar way to determine the $y$ and $z$ components. Note that, unlike the Galilean case, all of the velocity components must transform, since the time derivative is involved for each component. Intuitively, we expect all components of velocity to be affected, since one needs to guarantee that the total speed is always below $c$. The velocity transformations for all components are given by the following:
 ```{math}
@@ -680,10 +678,12 @@ u_x &=\frac{u'_x +v}{1+ \frac{vu_x}{c^2}}\\
 :::
 
 :::{attention} Josh's Thoughts 
-This chapter is where the bubble of intuitive reality is popped, and students (like you and me) are given the opportunity to challenge our understanding of how the universe operates. As amazing and exciting as this is, it can also be incredibly frustrating. Many students rely on intuition to guide them as they problem solve, but hit a wall in special relativity. To avoid this issue, I suggest drawing spacetime diagrams and using Lorentz transformations. Practicing with these tools will help make the process of understanding the strange consequences of Einstein's postulates less awkward. 
+{}
+	This chapter is where the bubble of intuitive reality is popped, and students (like you and me) are given the opportunity to challenge our understanding of how the universe operates. As amazing and exciting as this is, it can also be incredibly frustrating. Many students rely on intuition to guide them as they problem solve, but hit a wall in special relativity. To avoid this issue, I suggest drawing spacetime diagrams and using Lorentz transformations. Practicing with these tools will help make the process of understanding the strange consequences of Einstein's postulates less awkward. 
 	
-In addition to the practical advice I have given, I recommend embracing the strangeness of reality. Throughout history, scientists have ventured into the unknown in attempts to discover and decode the universe. In many cases, the answer to a question has posed more questions than answers, and humanity is given the opportunity to further understand the world we live in. As a student, you are participating in a process of understanding which allows us to continue the adventure that is scientific inquiry. Confusion can be frustrating, but don't let it discourage you, being confused means that you're only a few steps away from understanding! 
-:::
+	In addition to the practical advice I have given, I recommend embracing the strangeness of reality. Throughout history, scientists have ventured into the unknown in attempts to discover and decode the universe. In many cases, the answer to a question has posed more questions than answers, and humanity is given the opportunity to further understand the world we live in. As a student, you are participating in a process of understanding which allows us to continue the adventure that is scientific inquiry. Confusion can be frustrating, but don't let it discourage you, being confused means that you're only a few steps away from understanding! 
+
+ :::
 
 # Relativistic momentum and energy
 In this section, we show how to define momentum and energy in a way that is consistent with the postulates of Special Relativity. We expect that, since time and space depend on the frame of reference of the observer, so too will the momentum and the energy of an object. Consider an object of mass $m_0$, moving in frame of reference $S$, with velocity $\vec u$ (we reserve $\vec v$ to represent the speed between two inertial frames of reference) in the $x$ direction. At some time, $t$, the object will be at position $x$ along the $x$ axis. We define the relativistic momentum as:
@@ -720,7 +720,7 @@ With the relativistic definition of momentum, Newton's Second Law can be written
 ```
 
 :::{note} Example 23.7
-A constant force of $1\times 10^{-22} {\rm N}$ is applied to an electron (with mass $m_e=9.11\times 10^{-31} {\rm kg}$) in order to accelerate it from rest to a speed of $u=0.99c$. Compare the length of time over which the force must be applied using classical and relativistic dynamics.
+A constant force of $1e-22 {\rm N}$ is applied to an electron (with mass $m_e=9.11e-31 {\rm kg}$) in order to accelerate it from rest to a speed of $u=0.99c$. Compare the length of time over which the force must be applied using classical and relativistic dynamics.
 :::{note} Solution
 :class: dropdown
 In both cases, we can start with Newton's Second Law:
@@ -735,7 +735,7 @@ where $\vec p$ is the final momentum of the electron (which is different dependi
 ```
 where $\Delta t$ is the length of time over which the force is applied. With the classical definition of momentum, the time is given by:
 ```{math}
- \Delta t &=\frac{p}{F} = \frac{mu}{F}=\frac{(9.11\times 10^{-31} {\rm kg})(0.99)(3\times 10^{8} {\rm m/s})}{(1\times 10^{-22} {\rm N})}=2.71 {\rm s}
+ \Delta t &=\frac{p}{F} = \frac{mu}{F}=\frac{(9.11e-31 {\rm kg})(0.99)(3e8 {\rm m/s})}{(1e-22 {\rm N})}=2.71 {\rm s}
 ```
 With the relativistic definition of momentum, we first need the gamma factor:
 ```{math}
@@ -745,7 +745,7 @@ We can then calculate the time over which the force needs to be applied:
 ```{math}
 \Delta t &=\frac{p}{F} = \frac{\gamma m_0u}{F}=\gamma  \frac{m_0u}{F}=(7.1)(2.71 {\rm s})=19.2 {\rm s}
 ```
-**Discussion:** When using the relativistic definition of momentum, we find that the time over which the force must be applied to reach a given speed is longer. This makes sense, since it will take infinitely long to reach the speed of light. Also, note that the time that is required using relativistic dynamics is just the time-dilated time that is required in classical dynamics.
+**Discussion: **When using the relativistic definition of momentum, we find that the time over which the force must be applied to reach a given speed is longer. This makes sense, since it will take infinitely long to reach the speed of light. Also, note that the time that is required using relativistic dynamics is just the time-dilated time that is required in classical dynamics.
 :::
 
 Recall that we defined kinetic energy in [Section %s](#sec:workenergy:kinetic) by defining the change in kinetic energy of an object as the net work done on that object. We use the same formalism here to redefine kinetic energy using relativistic dynamics.
@@ -804,26 +804,23 @@ This equation implies that mass can be thought of as a form of energy. Nuclear r
 Einstein's relation is often used to express the mass of subatomic particles in terms of energy. For example, an electron has a mass of $511e3 {\rm eV/c^2}$ in these units. 
 
 :::{note} Example 23.8
-What is the mass of a proton, $m_p=1.67\times 10^{-27} {\rm kg}$, in units of ${\rm MeV/c^2}$ (where the $M$ stands for "Mega", and corresponds to $1 {\rm MeV}=1\times 10^{6} {\rm eV}$)?
+What is the mass of a proton, $m_p=1.67e-27 {\rm kg}$, in units of $\si{MeV/c^2}$ (where the $M$ stands for "Mega", and corresponds to $1 {\rm MeV}=1e6 {\rm eV}$)?
 :::{note} Solution
 :class: dropdown
 We can first calculate the rest mass energy of the proton in Joules:
 ```{math}
-E=m_pc^2=(1.67\times 10^{-27} {\rm kg})(3\times 10^{8} {\rm m/s})^2=1.503\times 10^{-10} {\rm J}
+E=m_pc^2=(1.67e-27 {\rm kg})(3e8 {\rm m/s})^2=1.503e-10 {\rm J}
 ```
 We can then convert from Joules to electron-volts:
 ```{math}
-\frac{(1.503\times 10^{-10} {\rm J})}{(1.6\times 10^{-19} {\rm J/eV})}=939.4\times 10^{6} {\rm eV}=939.4 {\rm MeV}
+\frac{(1.503e-10 {\rm J})}{(1.6e-19 {\rm J/eV})}=939.4e6 {\rm eV}=939.4 {\rm MeV}
 ```
 The mass of the proton can then be expressed as $m_p=939.4 {\rm MeV/c^2}$.
 :::
 
 Finally, it is interesting to examine the relationship between the momentum and the energy of a relativistic object. Consider the quantity $c^2p^2$:
 ```{math}
-c^2p^2 &= c^2(\gamma m_0 u)^2\\
-&=c^2\gamma^2m_0^2u^2\\
-&=c^4\gamma^2m_0^2\frac{u^2}{c^2}\\
-&=c^4\gamma^2m_0^2\left(1- \frac{1}{\gamma^2}\right)\\
+c^2p^2 &= c^2(\gamma m_0 u)^2=c^2\gamma^2m_0^2u^2=c^4\gamma^2m_0^2\frac{u^2}{c^2}=c^4\gamma^2m_0^2\left(1- \frac{1}{\gamma^2}\right)\\
 &=c^4\gamma^2m_0^2 - c^4m_0^2\\
 &=E^2-c^4m_0^2
 ```
@@ -848,6 +845,7 @@ If you decide to pursue further studies in physics, you will get to learn more a
 
 
 # Summary
+\begin{chapterSummary}
 The Theory of Special Relativity is based on Einstein's two postulates:
 1.  The laws of physics are the same in all inertial reference frames. There is no experiment that can be performed to determine whether one is at rest or moving with constant velocity.
 2.  The speed of light propagating in vacuum is the same in all inertial reference frames. Any observer in an inertial frame of reference, regardless of their velocity, will measure that light has a speed of $c$, when it propagates in vacuum. 
@@ -946,7 +944,7 @@ where the gamma factor is obtained using the speed, $u$. This relativistic defin
 E=\gamma m_0 c^2
 ```
 
-Since energy and mass are simply related by a constant, one can use units of energy to describe the mass of a particle. It is common in particle physics to express the mass of particles in units of ${\rm MeV/c^2}$.
+Since energy and mass are simply related by a constant, one can use units of energy to describe the mass of a particle. It is common in particle physics to express the mass of particles in units of $\si{MeV/c^2}$.
 
 Finally, we saw that the relativistic momentum and energy of an object are related:
 ```{math}
@@ -956,23 +954,25 @@ In particular, particles of light, which have no mass but have kinetic energy, h
 ```{math}
 p=\frac{E}{c}
 ```
+\end{chapterSummary}
 
-:::{important} Important Equations
+\begin{importantEquations}
+\begin{multicols}{2}
 **Lorentz factor:**
 ```{math}
 \gamma &= \frac{1}{\sqrt{1-\frac{v^2}{c^2}}}
 ```
-
+\\
 **Time dilation**
 ```{math}
 \Delta t'=\gamma \Delta t
 ```
-
+\\
 **Length contraction**
 ```{math}
 L'=\frac{L}{\gamma}
 ```
-
+\\
 **Lorentz transformations:**
 ```{math}
 x' &=\gamma (x-vt)\\
@@ -980,44 +980,47 @@ y' &= y\\
 z' &= z\\
 t' &=\gamma\left(t-\frac{vx}{c^2} \right)
 ```
-
+\\
 **Velocity addition:**
 ```{math}
 u'_x&=\frac{u_x -v}{1- \frac{vu_x}{c^2}}\\
 u'_y &=\frac{u_y}{\gamma\left(1- \frac{vu_x}{c^2}\right)}\\
 u'_z &=\frac{u_z}{\gamma\left(1- \frac{vu_x}{c^2}\right)}
 ```
-
+\\
 **The spacetime interval:**
 ```{math}
 s^2 = \Delta x^2+\Delta y^2+\Delta z^2-c^2\Delta t^t
 ```
-
+\\
+\columnbreak
+\\
 **Relativistic momentum:**
 ```{math}
 \vec p = \gamma m_0 \vec u
 ```
-
+\\
 **Relativistic energy:**
 ```{math}
 E = \gamma m_0 c^2 = K + m_0c^2
 ```
-
+\\
 **Relativistic kinetic energy:**
 ```{math}
 K=(\gamma -1) m_0c^2
 ```
-
+\\
 **Newton's Second Law**
 ```{math}
 \vec F = \frac{d\vec p }{dt}
 ```
-
+\\
 **Energy-momentum relation:**
 ```{math}
 E^2 = p^2c^2 +m_0^2c^4
 ```
-:::
+\end{multicols}
+\end{importantEquations}
 
 :::{important} Important Definitions
 * **Proper time:** The time measured in a frame of reference considered at rest. SI units: ${\rm \left[{s}\right]}$. Common variable(s): $\Delta t$.
@@ -1026,60 +1029,63 @@ E^2 = p^2c^2 +m_0^2c^4
 
 # Thinking about the material
 
-:::{seealso} Reflect and research
-* How did Michelson and Morley demonstrate that the ether does not exist? 
-* Why is 1905 the "year of physics"?
-* Give an example of a device that you use that is affected by relativistic effects.
-* How do you resolve the twin paradox? Can you show it on a space-time diagram?
-* What did Lorentz do and when?
-* Apart from the space-time interval, $s$, what else is Lorentz invariant?
-* What is Cherenkov radiation?
-:::
+\begin{chapteractivity}{Reflect and research}
+	{
+	\item How did Michelson and Morley demonstrate that the ether does not exist? 
+	\item Why is 1905 the "year of physics"?
+	\item Give an example of a device that you use that is affected by relativistic effects.
+	\item How do you resolve the twin paradox? Can you show it on a space-time diagram?
+	\item What did Lorentz do and when?
+	\item Apart from the space-time interval, $s$, what else is Lorentz invariant?
+	\item What is Cherenkov radiation?
+	}
+\end{chapteractivity}
 
-:::{seealso} To try at home
-* Build a particle accelerator.
-* Look up a video illustrating the barn paradox, and other relativistic effects.
-:::
+\begin{chapteractivity}{To try at home}
+	{
+	\item Build a particle accelerator.
+	\item Look up a video illustrating the barn paradox, and other relativistic effects.
+	}
+\end{chapteractivity}
 
-:::{seealso} To try in the lab
-* Propose an experiment to measure the speed of light.
-* Propose an experiment to test relativistic effects with electro magnetism.
-:::
+\begin{chapteractivity}{To try in the lab}
+	{
+	 \item Propose an experiment to measure the speed of light.
+	 \item Propose an experiment to test relativistic effects with electro magnetism.
+	}
+\end{chapteractivity}
 
 
 # Sample problems and solutions
 ## Problems
-
-:::{note} Problem 23.1
-:label: prob:specialrelativity:fusion 
+\begin{problem}{soln:specialrelativity:fusion}{:label: prob:specialrelativity:fusion 
 The Sun is powered by nuclear fusion reactions in which, predominantly, hydrogen atoms are fused together into helium atoms. Inside the Sun, the material, mostly hydrogen, is in a form of a plasma, where the electrons are not attached to the nuclei of their atoms. Effectively, one can model the solar fusion reactions[^48] as:
 ```{math}
 4p + 2e^- \to \alpha + 2\nu
 ```
-where the four protons correspond to the nuclei of four hydrogen atoms, $\alpha$ is the nucleus of a helium atom, with two neutrons and two protons, and the two $\nu$ are neutrinos, particles with virtually zero mass. The reaction above is exothermic, and releases energy, because the total mass of particles on the right is less than the total mass on the left. Given that the mass of a proton is $m_p=938.3 {\rm MeV/c^2}$, the mass of an electron is $m_e=0.511 {\rm MeV/c^2}$, and the mass of the alpha particle is $m_\alpha=3727.4 {\rm MeV/c^2}$, how much energy (in ${\rm MeV}$ and in ${\rm J}$) is released in each fusion reaction?
-:::
+where the four protons correspond to the nuclei of four hydrogen atoms, $\alpha$ is the nucleus of a helium atom, with two neutrons and two protons, and the two $\nu$ are neutrinos, particles with virtually zero mass. The reaction above is exothermic, and releases energy, because the total mass of particles on the right is less than the total mass on the left. Given that the mass of a proton is $m_p=938.3 {\rm MeV/c^2}$, the mass of an electron is $m_e=0.511 {\rm MeV/c^2}$, and the mass of the alpha particle is $m_\alpha=3727.4 {\rm MeV/c^2}$, how much energy (in \si{MeV} and in \si{J}) is released in each fusion reaction?
+}
+\end{problem}
 
-:::{note} Problem 23.2
-:label: prob:specialrelativity:proton 
-A proton is measured by a scientist to have a total energy of $2.5\times 10^{3} {\rm MeV}$.
-* a. What is the speed of the proton?
-* b. How far does the proton travel (in the lab) when $1 {\rm s}$ goes by in the scientist's frame of reference?
-* c. How far does the proton travel (in the lab) when $1 {\rm s}$ goes by in the proton's frame of reference?
-:::
+\begin{problemParts}{soln:specialrelativity:proton}{:label: prob:specialrelativity:proton 
+A proton is measured by a scientist to have a total energy of 2.5e3 {\rm MeV}. }
+{
+\item What is the speed of the proton?
+\item How far does the proton travel (in the lab) when $1 {\rm s}$ goes by in the scientist's frame of reference?
+\item How far does the proton travel (in the lab) when $1 {\rm s}$ goes by in the proton's frame of reference?
+}
+\end{problemParts}
+
 
 ## Solutions
-:::{note} Solution 23.1
-:label: soln:specialrelativity:fusion
-:class: dropdown
+\begin{solution}{prob:specialrelativity:fusion}:label: soln:specialrelativity:fusion
 In order to determine the amount of energy released in each reaction, we need to determine the difference in mass between the two sides of the equation:
 ```{math}
 4p + 2e^- \to \alpha + 2\nu
 ```
 On the left-hand side, the total mass is:
 ```{math}
-M_{LHS}&=4m_p+2m_e\\
-&=4(938.3 {\rm MeV/c^2})+2(0.511 {\rm MeV/c^2})\\
-&=3754.22 {\rm MeV/c^2}
+M_{LHS}=4m_p+2m_e=4(938.3 {\rm MeV/c^2})+2(0.511 {\rm MeV/c^2})=3754.22 {\rm MeV/c^2}
 ```
 whereas on the right-hand side, the total mass is:
 ```{math}
@@ -1087,43 +1093,36 @@ M_{RHS}=m_\alpha=3727.4 {\rm MeV/c^2}
 ```
 Thus, the total energy released in each reaction is given by:
 ```{math}
-E &= c^2\Delta M\\
-&= c^2(M_{LHS}-M_{RHS})\\
-&=c^2((3754.22 {\rm MeV/c^2})-(3727.4 {\rm MeV/c^2}))\\
-&=26.8 {\rm MeV}=4.29\times 10^{-12} {\rm J}
+E &= c^2\Delta M = c^2(M_{LHS}-M_{RHS})=c^2((3754.22 {\rm MeV/c^2})-(3727.4 {\rm MeV/c^2}))\\
+&=26.8 {\rm MeV}=4.29e-12 {\rm J}
 ```
-where we showed the answer in both ${\rm MeV}$ and ${\rm J}$. Although it may not seem like that much energy per reaction, keep in mind that there are of order $1\times 10^{38}$ reactions per second in the Sun, corresponding to a power output of order $4\times 10^{26} {\rm W}$, enough to keep us warm in the summer.
-:::
+where we showed the answer in both \si{MeV} and \si{J}. Although it may not seem like that much energy per reaction, keep in mind that there are of order \num{1e38} reactions per second in the Sun, corresponding to a power output of order 4e26 {\rm W}, enough to keep us warm in the summer.
+\end{solution}
 
-:::{note} Solution 23.2
-:label: soln:specialrelativity:proton
-:class: dropdown
-* a. From the total energy, we can calculate the gamma factor, which will give us the velocity of the proton (in the reference frame of the scientist):
+
+\begin{solutionParts}{prob:specialrelativity:proton}
+{:label: soln:specialrelativity:proton
+\item From the total energy, we can calculate the gamma factor, which will give us the velocity of the proton (in the reference frame of the scientist):
 ```{math}
 E &= \gamma m_0 c^2\\
 \frac{1}{\gamma} &= \frac{m_0c^2}{E}\\
 \sqrt{1-\frac{v^2}{c^2}} &= \frac{m_0c^2}{E}\\
 \frac{v^2}{c^2} &= 1 - \frac{m_0^2c^4}{E^2}\\	
 \therefore v &= \left(\sqrt{1-\frac{m_0^2c^4}{E^2}}\right) c\\
-&= \left(\sqrt{1-\frac{(938.3 {\rm MeV/c^2})^2c^4}{(2.5\times 10^{3} {\rm MeV})^2}}\right)c\\
-&= \left(\sqrt{1-\frac{(938.3 {\rm MeV})^2}{(2.5\times 10^{3} {\rm MeV})^2}}\right)c\\
+&= \left(\sqrt{1-\frac{(938.3 {\rm MeV/c^2})^2c^4}{(2.5e3 {\rm MeV})^2}}\right)c\\
+&= \left(\sqrt{1-\frac{(938.3 {\rm MeV})^2}{(2.5e3 {\rm MeV})^2}}\right)c\\
 &= 0.93c\\ 
-&= 2.78\times 10^{8} {\rm m/s}\\
+&= 2.78e8 {\rm m/s}\\
 ```
-* b. In the frame of the lab, when one second goes by, the proton will travel a distance:
+\item In the frame of the lab, when one second goes by, the proton will travel a distance:
 ```{math}
-d &= vt\\
-&= (2.78\times 10^{8} {\rm m/s})(1 {\rm s})\\
-&=2.78\times 10^{8} {\rm m}
+d = vt = (2.78e8 {\rm m/s})(1 {\rm s})=2.78e8 {\rm m}
 ```
-* c. In order to find out how far the proton travels in the lab when one second of proper time goes by in the proton's frame of reference, we need to determine how much time went by in the lab's frame of reference. 
+\item In order to find out how far the proton travels in the lab when one second of proper time goes by in the proton's frame of reference, we need to determine how much time went by in the lab's frame of reference. 
 
 The gamma factor for the proton can be obtained from the speed that we determined in part a), or from the total energy directly:
 ```{math}
-\gamma &= \frac{E}{m_0c^2}\\
-&=\frac{(2.5\times 10^{3} {\rm MeV})}{(938.3 {\rm MeV/c^2})c^2}\\
-&=\frac{(2.5\times 10^{3} {\rm MeV})}{(938.3 {\rm MeV})}\\
-&=2.66
+\gamma = \frac{E}{m_0c^2}=\frac{(2.5e3 {\rm MeV})}{(938.3 {\rm MeV/c^2})c^2}=\frac{(2.5e3 {\rm MeV})}{(938.3 {\rm MeV})}=2.66
 ```
 Thus, when $\Delta t=1 {\rm s}$ elapses in the proton's frame of reference, a time dilated time, $\Delta t'$, elapses in the lab frame of reference:
 ```{math}
@@ -1131,11 +1130,8 @@ Thus, when $\Delta t=1 {\rm s}$ elapses in the proton's frame of reference, a ti
 ```
 In the lab frame, the proton will travel a distance:
 ```{math}
-d &= vt\\
-&= (2.78\times 10^{8} {\rm m/s})(2.66 {\rm s})\\
-&=7.39\times 10^{8} {\rm m}
+d = vt = (2.78e8 {\rm m/s})(2.66 {\rm s})=7.39e8 {\rm m}
 ```
-:::
 
 [^46]:Outwards if the speed of $S'$ is in the negative $x$ direction relative to $S$.
 [^47]:This statement is generally true for Special Relativity, because the force is exerted in the direction perpendicular to that of motion.

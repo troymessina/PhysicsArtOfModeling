@@ -1105,25 +1105,20 @@ E &= \gamma m_0 c^2\\
 \sqrt{1-\frac{v^2}{c^2}} &= \frac{m_0c^2}{E}\\
 \frac{v^2}{c^2} &= 1 - \frac{m_0^2c^4}{E^2}\\	
 \therefore v &= \left(\sqrt{1-\frac{m_0^2c^4}{E^2}}\right) c\\
-&= \left(\sqrt{1-\frac{(938.3 {\rm MeV/c^2})^2c^4}{(2.5\times 10^{3} {\rm MeV})^2}}\right)c\\
-&= \left(\sqrt{1-\frac{(938.3 {\rm MeV})^2}{(2.5\times 10^{3} {\rm MeV})^2}}\right)c\\
+&= \left(\sqrt{1-\frac{(938.3 {\rm MeV/c^2})^2c^4}{(2.5e3 {\rm MeV})^2}}\right)c\\
+&= \left(\sqrt{1-\frac{(938.3 {\rm MeV})^2}{(2.5e3 {\rm MeV})^2}}\right)c\\
 &= 0.93c\\ 
-&= 2.78\times 10^{8} {\rm m/s}\\
+&= 2.78e8 {\rm m/s}\\
 ```
 * b. In the frame of the lab, when one second goes by, the proton will travel a distance:
 ```{math}
-d &= vt\\
-&= (2.78\times 10^{8} {\rm m/s})(1 {\rm s})\\
-&=2.78\times 10^{8} {\rm m}
+d = vt = (2.78e8 {\rm m/s})(1 {\rm s})=2.78e8 {\rm m}
 ```
 * c. In order to find out how far the proton travels in the lab when one second of proper time goes by in the proton's frame of reference, we need to determine how much time went by in the lab's frame of reference. 
 
 The gamma factor for the proton can be obtained from the speed that we determined in part a), or from the total energy directly:
 ```{math}
-\gamma &= \frac{E}{m_0c^2}\\
-&=\frac{(2.5\times 10^{3} {\rm MeV})}{(938.3 {\rm MeV/c^2})c^2}\\
-&=\frac{(2.5\times 10^{3} {\rm MeV})}{(938.3 {\rm MeV})}\\
-&=2.66
+\gamma = \frac{E}{m_0c^2}=\frac{(2.5e3 {\rm MeV})}{(938.3 {\rm MeV/c^2})c^2}=\frac{(2.5e3 {\rm MeV})}{(938.3 {\rm MeV})}=2.66
 ```
 Thus, when $\Delta t=1 {\rm s}$ elapses in the proton's frame of reference, a time dilated time, $\Delta t'$, elapses in the lab frame of reference:
 ```{math}
@@ -1131,9 +1126,7 @@ Thus, when $\Delta t=1 {\rm s}$ elapses in the proton's frame of reference, a ti
 ```
 In the lab frame, the proton will travel a distance:
 ```{math}
-d &= vt\\
-&= (2.78\times 10^{8} {\rm m/s})(2.66 {\rm s})\\
-&=7.39\times 10^{8} {\rm m}
+d = vt = (2.78e8 {\rm m/s})(2.66 {\rm s})=7.39e8 {\rm m}
 ```
 :::
 

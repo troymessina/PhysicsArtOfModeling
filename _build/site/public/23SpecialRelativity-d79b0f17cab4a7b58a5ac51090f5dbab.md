@@ -1112,9 +1112,7 @@ E &= \gamma m_0 c^2\\
 ```
 * b. In the frame of the lab, when one second goes by, the proton will travel a distance:
 ```{math}
-d &= vt\\
-&= (2.78\times 10^{8} {\rm m/s})(1 {\rm s})\\
-&=2.78\times 10^{8} {\rm m}
+d = vt = (2.78\times 10^{8} {\rm m/s})(1 {\rm s})=2.78\times 10^{8} {\rm m}
 ```
 * c. In order to find out how far the proton travels in the lab when one second of proper time goes by in the proton's frame of reference, we need to determine how much time went by in the lab's frame of reference. 
 
