@@ -771,15 +771,10 @@ B^{tot}(z) &= B\left(z+\frac{R}{2}\right)+B\left(z-\frac{R}{2}\right)\\
 ```
 We can plot this function, as well as the two individual terms using python. For information, we show the code below. In order to make the plot, we need to choose some reasonable values for the radius of the coils and the current through the coils, for example:
 * $R=0.3 {\rm m}$
-* $I=0.5 {\rm A}$
+* $I=0.1 {\rm A}$
 
 	
-```{code-cell} ipython3
----
-mystnb:
-  number_source_lines: true
-cellmetadatakey: val1
----
+```python Numerical integration of a function] 
 #Import the modules that we need:
 import numpy as np
 import matplotlib.pyplot as plt
@@ -822,3 +817,37 @@ Magnetic field from each coil, as well as their sum, for two coils in the Helmho
 As advertised, we see a region between the Helmholtz coils where the magnetic field is nearly uniform.
 :::
 
+```{code-cell}
+---
+cellmetadatakey: val1
+---
+#Import the modules that we need:
+import numpy as np
+import matplotlib.pyplot as plt
+
+#Define some constants:
+mu0 = 4*np.pi*1e-7 #4 pi 
+I = 0.5
+R = 0.3
+
+#Define the values on the z axis, from -2R to +2R, in 100 increments
+z = np.linspace(-2*R,2*R,100)
+
+#Determine the magnetic field from the coils at those values of z
+#The coil at z = - R/2:
+B1 = (mu0*I)/2 * R**2/((R**2+(z+R/2)**2)**(3/2))
+#The coil at z = + R/2:
+B2 = (mu0*I)/2 * R**2/((R**2+(z-R/2)**2)**(3/2))
+#The sum:
+B = B1 + B2
+
+#Make the plot
+plt.figure(figsize=(10,6))
+plt.plot(z,B1,label='Coil at z=-R/2')
+plt.plot(z,B2,label='Coil at z=+R/2')
+plt.plot(z,B,label='Total')
+plt.legend()
+plt.xlabel('z position [m]')
+plt.ylabel('Magnetic field [T]')
+plt.show()
+```

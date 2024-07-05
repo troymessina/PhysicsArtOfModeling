@@ -771,10 +771,10 @@ B^{tot}(z) &= B\left(z+\frac{R}{2}\right)+B\left(z-\frac{R}{2}\right)\\
 ```
 We can plot this function, as well as the two individual terms using python. For information, we show the code below. In order to make the plot, we need to choose some reasonable values for the radius of the coils and the current through the coils, for example:
 * $R=0.3 {\rm m}$
-* $I=0.5 {\rm A}$
+* $I=0.1 {\rm A}$
 
 	
-```{code-cell} ipython3
+```{code-cell}
 ---
 mystnb:
   number_source_lines: true

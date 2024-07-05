@@ -556,19 +556,19 @@ Writing out the four equations again:
 ```
 These four equations are known as Maxwell's equations, and form our most complete theory of classical electromagnetism. It is quite interesting to note the similarities and relations between the electric and magnetic field. Maxwell's equations contain equations for the circulation and the total flux out of a closed surface for both fields. Ampère's Law implies that a changing electric field will produce a magnetic field. Faraday's law implies that a changing magnetic field produces an electric field. If a point charge oscillates up and down, it will produce a changing electric field, which will produce a changing magnetic field, which will induce a changing magnetic field, etc. This is precisely what an electromagnetic wave is! The light that we see, the Wi-Fi signals for our phones, and the highly penetrating radiation from nuclear reactors are all examples of electromagnetic waves (of different wavelengths). 
 
-In fact, as Maxwell did, we can obtain the wave equation ([Section %s](#sec:waves:waveequation)) from Maxwell's equations. We sketch out the derivation here, but it is definitely beyond the scope of this textbook. However, you're so close to seeing one of the most exciting revelations of physics that it would be a shame to skip it! 
+In fact, as Maxwell did, we can obtain the wave equation ([Section%s](#sec:waves:waveequation)) from Maxwell's equations. We sketch out the derivation here, but it is definitely beyond the scope of this textbook. However, you're so close to seeing one of the most exciting revelations of physics that it would be a shame to skip it! 
 
-We first write out Maxwell's equations in differential form, as we have already shown for Gauss' Law (([Section %s](#sec:gauss:interpretation)) and Ampère's Law (([Section %s](#sec:magneticsource:interpretation))
+We first write out Maxwell's equations in differential form, as we have already shown for Gauss' Law (([Section%s](#sec:gauss:interpretation)) and Ampère's Law (([Section%s](#sec:magneticsource:interpretation))
 ```{math}
  \nabla \cdot \vec E &= \frac{\rho}{\epsilon_0} &\text{(Gauss' Law)}\\
  \nabla \cdot \vec B&= 0 &\text{(No magnetic monopoles)}\\
- \nabla \times \vec B &= \mu_0 \left(\vec j + \epsilon_0\frac{\partial\vec E}{\partial t}\right) &\text{(Ampère's Law)}\\
- \nabla \times \vec E &= -\frac{\partial\vec B}{\partial t} &\text{(Faraday's law)}\\
+ \nabla \times \vec B &= \mu_0 \left(\vec j + \epsilon_0\die{\vec E}{t}\right) &\text{(Ampère's Law)}\\
+ \nabla \times \vec E &= -\die{\vec B}{t} &\text{(Faraday's law)}\\
 ```
 If we consider a vacuum region in space, with no charges and no currents, these equations reduce to:
 ```{math}
-\nabla \cdot \vec E &= 0 ~~~~&\nabla \cdot \vec B&= 0\\
-\nabla \times \vec B &= \mu_0 \epsilon_0\frac{\partial\vec E}{\partial t} ~~~~& \nabla \times \vec E &= -\frac{\partial\vec B}{\partial t}
+\nabla \cdot \vec E &= 0 &\nabla \cdot \vec B&= 0\\
+\nabla \times \vec B &= \mu_0 \epsilon_0\die{\vec E}{t} & \nabla \times \vec E &= -\die{\vec B}{t}
 ```
 We will make use of the following identity from vector calculus:
 ```{math}
@@ -584,13 +584,13 @@ is called the "vector Laplacian".
 
 Consider taking the curl ($\nabla \times$) of the equation that has the curl of the electric field (Faraday's law):
 ```{math}
-\nabla \times \bigg(\nabla \times \vec E &= -\frac{\partial\vec B}{\partial t}\bigg)\\
-\nabla(\nabla\cdot \vec E)-\nabla^2\vec E &= -\nabla \times \frac{\partial\vec B}{\partial t}\\
--\nabla^2\vec E &= - \frac{\partial}{\partial t} \nabla \times \vec B\\
--\nabla^2\vec E &= - \frac{\partial}{\partial t} \mu_0 \epsilon_0\frac{\partial E}{\partial t}\\
+\nabla \times \bigg(\nabla \times \vec E &= -\die{\vec B}{t}\bigg)\\
+\nabla(\nabla\cdot \vec E)-\nabla^2\vec E &= -\nabla \times \die{\vec B}{t}\\
+-\nabla^2\vec E &= - \die{}{t} \nabla \times \vec B\\
+-\nabla^2\vec E &= - \die{}{t} \mu_0 \epsilon_0\die{E}{t}\\
 -\nabla^2\vec E &= - \mu_0 \epsilon_0\frac{\partial^2\vec E}{\partial t^2} 
 ```
-where, in the third line, we made use of Gauss' Law ($\nabla \cdot \vec E=0$), and, in the fourth line, Ampère's Law ($\nabla \times \vec B = \mu_0 \epsilon_0\frac{\partial E}{\partial t}$). The last equation that we obtained is a vector equation (the vector Laplacian has three components, as does the time-derivative of $\vec E$ on the right-hand side). Consider the $x$ component of this equation:
+where, in the third line, we made use of Gauss' Law ($\nabla \cdot \vec E=0$), and, in the fourth line, Ampère's Law ($\nabla \times \vec B = \mu_0 \epsilon_0\die{E}{t}$). The last equation that we obtained is a vector equation (the vector Laplacian has three components, as does the time-derivative of $\vec E$ on the right-hand side). Consider the $x$ component of this equation:
 ```{math}
 \frac{\partial^2 E_x}{\partial x^2}+\frac{\partial^2  E_x}{\partial y^2} + \frac{\partial^2 E_x}{\partial z^2}  &= \mu_0 \epsilon_0\frac{\partial^2 E_x}{\partial t^2} 
 ```
@@ -608,6 +608,8 @@ We have just shown that electric and magnetic fields can behave as waves, which 
 
 
 # Summary
+
+\begin{chapterSummary}
 Faraday's law connects a **changing** magnetic flux to an induced voltage:
 ```{math}
 \Delta V = -\frac{d\Phi_B}{dt}
@@ -661,37 +663,44 @@ Maxwell's four equations form our best classical theory of electromagnetism. Tho
 c = \frac{1}{\sqrt{\epsilon_0\mu_0}}
 ```
 
-:::{important} Important Equations
+\end{chapterSummary}
+
+\begin{importantEquations}
+\begin{multicols}{2}
 **Magnetic flux:**
 ```{math}
 \Phi_B = \int_S \vec B\cdot d\vec A
 ```
-
+\\
 **Faraday's law:**
 ```{math}
 \Delta V = -N\frac{d\Phi_B}{dt}
 ```
-
+\\
 **Faraday's law:**
 ```{math}
 \oint \vec E\cdot d\vec l &= -\frac{d\Phi_B}{dt}
 ```
-
+\\
+\columnbreak
+\\
 **Voltage produced by a generator:**
 ```{math}
 \Delta V = NAB\omega\sin(\omega t)
 ```
-
+\\
 **Counter torque on a generator:**
 ```{math}
 \tau = \frac{NA^2B^2\omega\sin^2(\omega t)}{R}
 ```
-
+\\
 **Secondary voltage in a transformer:**
 ```{math}
 \Delta V_s &= \frac{N_p}{N_s}\Delta V_p
 ```
-:::
+\end{multicols}
+\end{importantEquations}
+
 
 # Thinking about the material
 
@@ -717,8 +726,7 @@ c = \frac{1}{\sqrt{\epsilon_0\mu_0}}
 
 # Sample problems and solutions
 ## Problems
-:::{note} Problem 22.1
-:label: prob:induction:avro 
+\begin{problem}{soln:induction:avro}{:label: prob:induction:avro 
 In the 1950s, the Royal Canadian Air Force developed a jet airplane called the Avro Arrow. This jet reached a speed of Mach 1.9 ($652 {\rm ms^{-1}}$), and was considered one of the most advanced airplanes that existed at the time. Suppose that the Avro Arrow is travelling at a velocity of $v = 652 {\rm ms^{-1}}$ above the South Pole through Earth's vertical magnetic field, $B = 5.2e-5 {\rm T}$, as shown in [](#fig:induction:avro). If the Avro Arrow had a wingspan of $l = 15 {\rm m}$, determine the induced voltage across its wings.
 ```{figure} figures/Induction/avro.png
 :label: fig:induction:avro
@@ -727,17 +735,19 @@ In the 1950s, the Royal Canadian Air Force developed a jet airplane called the A
 :alt:  The Avro Arrow moving through a magnetic field.
  The Avro Arrow moving through a magnetic field.
 ```
-:::
+}
+\end{problem}
 
-:::{note} Problem 22.2
-:label: prob:induction:generator 
+
+\begin{problem}{soln:induction:generator}
+{:label: prob:induction:generator 
 A generator is made of $N$ circular loops of radius $R=0.3 {\rm m}$, rotating at a frequency of $f=60 {\rm Hz}$ in a uniform magnetic field, $B=0.1 {\rm T}$. How many coils must the generator have in order for it to produce an alternating voltage with a maximum amplitude of $\Delta V =110 {\rm V}$.
-:::
+}
+\end{problem}
+
 
 ## Solutions
-:::{note} Solution 22.1
-:label: soln:induction:avro
-:class: dropdown
+\begin{solution}{prob:induction:avro}:label: soln:induction:avro
 This is identical to the motional emf that is generated by a bar moving in a magnetic field. As the airplane moves as illustrated (towards the left, in an upwards magnetic field), the electrons in the wing of the airplane will be pushed into the page. Eventually, the electric field from the electrons will prevent further electrons from accumulating at that side of the wing, and there will be a constant (Hall) voltage, $\Delta V$, across the wing tips. This will happen when the magnetic and electric force are equal and opposite:
 ```{math}
 qvB &= qE = q\frac{\Delta V}{L}
@@ -746,11 +756,9 @@ where $L$ is the wingspan of the airplane. The induced potential is thus given b
 ```{math}
 \Delta V = BLv = (5.2e-5 {\rm T})(15 {\rm m})(652 {\rm ms^{-1}})=0.51 {\rm V}
 ```
-:::
+\end{solution}
 
-:::{note} Solution 22.2
-:label: soln:induction:generator
-:class: dropdown
+\begin{solution}{prob:induction:generator}:label: soln:induction:generator
 The voltage produced by a generator is given by:
 ```{math}
 \Delta V&=NAB\omega\sin(\omega t)
@@ -761,6 +769,6 @@ N=\frac{\Delta V}{AB\omega}=\frac{\Delta V}{\pi R^2B2\pi f}=\frac{(110 {\rm V})}
 ```
 Thus, one requires 10 loops in the coil to generate the desired voltage. 
 
-:::
+\end{solution}
 
 [^45]:Recall that this ambiguity is resolved when using Gauss' Law by always choosing $d\vec A$ to point "outwards", which only makes sense when the surface is closed. With an open surface, there is no inside or outside, and we are left with the ambiguity.

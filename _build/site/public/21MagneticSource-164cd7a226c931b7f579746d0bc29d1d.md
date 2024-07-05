@@ -774,7 +774,7 @@ We can plot this function, as well as the two individual terms using python. For
 * $I=0.5 {\rm A}$
 
 	
-```{code-cell} ipython3
+```{code-cell}
 ---
 mystnb:
   number_source_lines: true
