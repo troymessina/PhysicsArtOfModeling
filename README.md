@@ -37,7 +37,6 @@ This version of the textbook is also open-access and can be found at https://git
 23. [The theory of Special Relativity](#chap:specialrelativity)
 24. [Appendix A: Calculus](#app:calculus)
 25. [Appendix B: An Introduction to Visual Python](#app:visualpython)
-27. Appendix C: Guidelines for lab related activities
-28. Appendix D: The python programming language
+27. [Appendix C: Guidelines for lab related activities](#app:labs)
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Introductory Physics: Building Models to Describe Our World</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Ryan D. Martin, Emma Neary, Joshua Rinaldo, and Olivia Woodman</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/OSTP/PhysicsArtofModelling" rel="dct:source">https://github.com/OSTP/PhysicsArtofModelling</a>.
