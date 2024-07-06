@@ -147,7 +147,7 @@ arrow(pos=rock.pos, axis=rock.vel, color=color.white)
 ```
 Try, putting these three lines of code in the trinket below and see what happens when you run the program.
 :::{iframe} https://trinket.io/embed/glowscript/8f1815879d
-:label: app:visualpython:blanktrinket
+:label: chap:momentumandcm:blanktrinket
 :width: 100%
 :align: center
 A blank trinket to simulate a rock sliding on a frozen pond.
