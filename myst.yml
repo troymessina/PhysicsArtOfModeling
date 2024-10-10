@@ -16,7 +16,8 @@ project:
     - figures/**
     - trinket/**
   exports:
-  - output: paper.pdf
+  - format: pdf
+  - output: exports/paper.pdf
     template: lapreprint-typst
     id: my-paper
 site:
