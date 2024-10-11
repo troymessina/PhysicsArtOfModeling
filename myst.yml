@@ -1,6 +1,40 @@
 # See docs at: https://mystmd.org/guide/frontmatter
 version: 1
 project:
+  toc:
+    - file: README.md
+    - title: Part 1 - Mechanics
+      children:
+        - file: 01Introduction.md
+        - file: 02ModelAndExperiment.md
+        - file: 03Vectors.md
+        - file: 04NewMomentumAndCM.md
+        - file: 05NewtonsLaws.md
+        - file: 06ApplyingNewtonsLaws.md
+        - file: 07WorkEnergy.md
+        - file: 08PotentialEcons.md
+        - file: 09Gravity.md
+        - file: 10RotationalDynamics.md
+        - file: 11AngularMomentumRolling.md
+    - title: Part 2 - Oscillations, Waves, Fluids, Electricity, & Magnetism
+      children:
+        - file: 12SimpleHarmonicMotion.md
+        - file: 13Waves.md
+        - file: 14FluidMechanics.md
+        - file: 15ChargesFields.md
+        - file: 16Gauss.md
+        - file: 17ElectricPotential.md
+        - file: 18Current.md
+        - file: 19Circuits.md
+        - file: 20MagneticForce.md
+        - file: 21MagneticSource.md
+        - file: 22Induction.md
+        - file: 23SpecialRelativity.md
+    - title: Appendices      
+      children:
+        - file: 24Calculus.md
+        - file: 25VisualPython.md
+        - file: 26Labs.md
   downloads:
 #    - file: IntroPhysics.pdf
 #      title: Modeling with Physics
@@ -17,9 +51,9 @@ project:
     - trinket/**
   exports:
   - format: pdf
-  - output: exports/paper.pdf
+  - output: exports/ModelingWithPhysics.pdf
     template: lapreprint-typst
-    id: my-paper
+    id: ModelingWithPhysics
 site:
   template: book-theme 
   title: Modeling with Physics
