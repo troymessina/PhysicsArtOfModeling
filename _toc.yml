@@ -1,0 +1,36 @@
+# In _toc.yml
+format: jb-book
+root: README
+parts:
+  - caption: Physics I - Mechanics
+    chapters:
+      - file: 01Introduction
+      - file: 02ModelAndExperiment
+      - file: 03Vectors
+      - file: 04NewMomentumAndCM
+      - file: 05NewtonsLaws
+      - file: 06ApplyingNewtonsLaws
+      - file: 07WorkEnergy
+      - file: 08PotentialEcons
+      - file: 09Gravity
+      - file: 10RotationalDynamics
+      - file: 11AngularMomentumRolling
+  - caption: Physics II - Oscillations, Waves, Fluids, Electricity, & Magnetism
+    chapters:
+      - file: 12SimpleHarmonicMotion
+      - file: 13Waves
+      - file: 14FluidMechanics
+      - file: 15ChargesFields
+      - file: 16Gauss
+      - file: 17ElectricPotential
+      - file: 18Current
+      - file: 19Circuits
+      - file: 20MagneticForce
+      - file: 21MagneticSource
+      - file: 22Induction
+      - file: 23SpecialRelativity
+  - caption: Appendices
+    chapters:
+      - file: 24Calculus
+      - file: 25VisualPython
+      - file: 26Labs       

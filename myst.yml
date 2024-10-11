@@ -33,5 +33,7 @@ site:
   #    url: https://mystmd.org/guide
   domains: []
 html:
+  favicon : "figures/favicon"
   comments:
     hypothesis: true
+    utterances: true

@@ -77,7 +77,7 @@ As time progresses, the rock will be at greater and greater distances from the s
 The easiest way to visualize the values in the table is to plot them on a graph, as in [](#fig:MomentumAndCM:1dxvst). Plotting position as a function of time is one of the most common graphs to make in physics, since it is often a complete description of the motion of an object. 
 ```{figure} ./figures/MomentumAndCM/1dxvst.png
 :width: 70%
-:label: fig:DescribingMotionIn1D:1dxvst
+:label: fig:MomentumAndCM:1dxvst
 :align: center
 :alt: Plot of position as a function of time using the values from [](#tab:MomentumAndCM:1dmotion).
 Plot of position as a function of time using the values from [](#tab:MomentumAndCM:1dmotion).
