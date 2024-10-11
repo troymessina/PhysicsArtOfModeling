@@ -67,7 +67,7 @@ site:
   #    url: https://mystmd.org/guide
   domains: []
 html:
-  favicon : "figures/favicon"
+  favicon : "figures/favicon.ico"
   comments:
     hypothesis: true
     utterances: true
