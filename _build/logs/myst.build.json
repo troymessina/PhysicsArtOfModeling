@@ -1,0 +1,56 @@
+{
+  "input": {
+    "files": [
+      "01Introduction.md"
+    ],
+    "opts": {
+      "execute": false,
+      "pdf": true,
+      "tex": false,
+      "typst": false,
+      "docx": false,
+      "md": false,
+      "xml": false,
+      "meca": false,
+      "cff": false,
+      "site": false,
+      "html": false,
+      "all": false,
+      "doiBib": false,
+      "watch": false,
+      "force": false,
+      "checkLinks": false,
+      "strict": false,
+      "ci": false,
+      "maxSizeWebp": 1572864
+    }
+  },
+  "exports": [
+    {
+      "format": "pdf",
+      "output": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\_build\\exports\\introduction.pdf",
+      "articles": [
+        {
+          "file": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\01Introduction.md",
+          "level": 0
+        }
+      ],
+      "$file": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\01Introduction.md",
+      "$project": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling"
+    },
+    {
+      "output": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\exports\\Introduction.pdf",
+      "template": "lapreprint",
+      "id": "intro",
+      "format": "pdf",
+      "articles": [
+        {
+          "file": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\01Introduction.md",
+          "level": 0
+        }
+      ],
+      "$file": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\01Introduction.md",
+      "$project": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling"
+    }
+  ]
+}

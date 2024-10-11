@@ -4,11 +4,6 @@ numbering:
   headings:
   heading_1:
     start: 2
-exports:
-  - format: pdf
-  - output: exports/Introduction.pdf
-    template: lapreprint-typst
-    id: intro
 ---
 (chap:introduction)=
 # Overview

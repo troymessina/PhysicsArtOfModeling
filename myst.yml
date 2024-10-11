@@ -32,3 +32,6 @@ site:
   #  - title: Learn More
   #    url: https://mystmd.org/guide
   domains: []
+html:
+  comments:
+    hypothesis: true
