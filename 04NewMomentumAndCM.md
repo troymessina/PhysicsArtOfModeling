@@ -9,7 +9,6 @@ exports:
     template: lapreprint-typst
     output: _build/exports/newmomentumandcm_typst/04NewMomentumAndCM.pdf	
 downloads:
-	- file: 04NewMomentumAndCM.md
     - file: _build/exports/newmomentumandcm_typst/newmomentumandcm.pdf
 ---
 (chap:momentumandcm)=
