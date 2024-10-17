@@ -49,12 +49,11 @@ project:
   exclude: 
     - figures/**
     - trinket/**
-  exports:
-  - format: pdf
-    template: lapreprint
-    output: exports/ModelingWithPhysics.pdf
-    venue_footer: arxiv
-    theme_color: red
+#  exports:
+#  - format: pdf
+#    template: lapreprint
+#    output: exports/ModelingWithPhysics.pdf
+#    theme_color: red
 site:
   template: book-theme 
   title: Modeling with Physics

@@ -1,11 +1,13 @@
 {
   "input": {
-    "files": [],
+    "files": [
+      "01Introduction.md"
+    ],
     "opts": {
       "execute": false,
-      "pdf": true,
+      "pdf": false,
       "tex": false,
-      "typst": false,
+      "typst": true,
       "docx": false,
       "md": false,
       "xml": false,
@@ -25,171 +27,15 @@
   },
   "exports": [
     {
-      "format": "pdf",
-      "template": "lapreprint",
-      "output": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\exports\\ModelingWithPhysics.pdf",
-      "venue_footer": "arxiv",
-      "theme_color": "red",
+      "format": "typst",
+      "output": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\_build\\exports\\introduction_typst\\introduction.pdf",
       "articles": [
-        {
-          "level": 1,
-          "title": "Part 1 - Mechanics"
-        },
         {
           "file": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\01Introduction.md",
-          "level": 2,
-          "slug": "introduction"
-        },
-        {
-          "file": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\02ModelAndExperiment.md",
-          "level": 2,
-          "slug": "modelandexperiment"
-        },
-        {
-          "file": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\03Vectors.md",
-          "level": 2,
-          "slug": "vectors"
-        },
-        {
-          "file": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\04NewMomentumAndCM.md",
-          "level": 2,
-          "slug": "newmomentumandcm"
-        },
-        {
-          "file": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\05NewtonsLaws.md",
-          "level": 2,
-          "slug": "newtonslaws"
-        },
-        {
-          "file": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\06ApplyingNewtonsLaws.md",
-          "level": 2,
-          "slug": "applyingnewtonslaws"
-        },
-        {
-          "file": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\07WorkEnergy.md",
-          "level": 2,
-          "slug": "workenergy"
-        },
-        {
-          "file": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\08PotentialEcons.md",
-          "level": 2,
-          "slug": "potentialecons"
-        },
-        {
-          "file": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\09Gravity.md",
-          "level": 2,
-          "slug": "gravity"
-        },
-        {
-          "file": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\10RotationalDynamics.md",
-          "level": 2,
-          "slug": "rotationaldynamics"
-        },
-        {
-          "file": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\11AngularMomentumRolling.md",
-          "level": 2,
-          "slug": "angularmomentumrolling"
-        },
-        {
-          "level": 1,
-          "title": "Part 2 - Oscillations, Waves, Fluids, Electricity, & Magnetism"
-        },
-        {
-          "file": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\12SimpleHarmonicMotion.md",
-          "level": 2,
-          "slug": "simpleharmonicmotion"
-        },
-        {
-          "file": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\13Waves.md",
-          "level": 2,
-          "slug": "waves"
-        },
-        {
-          "file": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\14FluidMechanics.md",
-          "level": 2,
-          "slug": "fluidmechanics"
-        },
-        {
-          "file": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\15ChargesFields.md",
-          "level": 2,
-          "slug": "chargesfields"
-        },
-        {
-          "file": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\16Gauss.md",
-          "level": 2,
-          "slug": "gauss"
-        },
-        {
-          "file": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\17ElectricPotential.md",
-          "level": 2,
-          "slug": "electricpotential"
-        },
-        {
-          "file": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\18Current.md",
-          "level": 2,
-          "slug": "current"
-        },
-        {
-          "file": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\19Circuits.md",
-          "level": 2,
-          "slug": "circuits"
-        },
-        {
-          "file": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\20MagneticForce.md",
-          "level": 2,
-          "slug": "magneticforce"
-        },
-        {
-          "file": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\21MagneticSource.md",
-          "level": 2,
-          "slug": "magneticsource"
-        },
-        {
-          "file": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\22Induction.md",
-          "level": 2,
-          "slug": "induction"
-        },
-        {
-          "file": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\23SpecialRelativity.md",
-          "level": 2,
-          "slug": "specialrelativity"
-        },
-        {
-          "level": 1,
-          "title": "Appendices"
-        },
-        {
-          "file": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\24Calculus.md",
-          "level": 2,
-          "slug": "calculus"
-        },
-        {
-          "file": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\25VisualPython.md",
-          "level": 2,
-          "slug": "visualpython"
-        },
-        {
-          "file": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\26Labs.md",
-          "level": 2,
-          "slug": "labs"
-        }
-      ],
-      "$file": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\myst.yml",
-      "$project": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling"
-    },
-    {
-      "format": "pdf",
-      "template": "lapreprint",
-      "output": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\exports\\MomentumAndCM.pdf",
-      "venue_footer": "arxiv",
-      "theme_color": "red",
-      "articles": [
-        {
-          "file": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\04NewMomentumAndCM.md",
           "level": 0
         }
       ],
-      "$file": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\04NewMomentumAndCM.md",
+      "$file": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\01Introduction.md",
       "$project": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling"
     }
   ]
