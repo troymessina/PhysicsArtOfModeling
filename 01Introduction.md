@@ -4,10 +4,11 @@ numbering:
   headings:
   heading_1:
     start: 2
+abstract:
 exports:
   - format: typst
-    template: lapreprint-typst
-    output: _build/exports/introduction_typst/01introduction.pdf	
+  - template: lapreprint-typst
+  - output: _build/exports/introduction_typst/01introduction.pdf	
 downloads:
     - file: _build/exports/introduction_typst/introduction.pdf
 ---

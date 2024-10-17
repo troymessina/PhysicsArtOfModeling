@@ -1,7 +1,7 @@
 {
   "input": {
     "files": [
-      "01Introduction.md"
+      "15ChargesFields.md"
     ],
     "opts": {
       "execute": false,
@@ -28,14 +28,15 @@
   "exports": [
     {
       "format": "typst",
-      "output": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\_build\\exports\\introduction_typst\\introduction.pdf",
+      "template": "lapreprint-typst",
+      "output": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\_build\\exports\\chargesfields_typst\\15chargesfields.pdf",
       "articles": [
         {
-          "file": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\01Introduction.md",
+          "file": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\15ChargesFields.md",
           "level": 0
         }
       ],
-      "$file": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\01Introduction.md",
+      "$file": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\15ChargesFields.md",
       "$project": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling"
     }
   ]
