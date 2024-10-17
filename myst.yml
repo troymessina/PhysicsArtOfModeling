@@ -36,7 +36,7 @@ project:
         - file: 25VisualPython.md
         - file: 26Labs.md
   downloads:
-#    - file: IntroPhysics.pdf
+    - file: _build/exports/readme_typst/readme.pdf
 #      title: Modeling with Physics
   id: 
   title: Modeling with Physics
