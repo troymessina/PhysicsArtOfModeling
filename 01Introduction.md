@@ -4,6 +4,8 @@ numbering:
   headings:
   heading_1:
     start: 2
+  downloads:
+    - file: _build/exports/introduction_typst/introduction.pdf
 ---
 (chap:introduction)=
 # Overview

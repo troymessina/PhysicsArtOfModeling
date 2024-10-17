@@ -36,8 +36,8 @@ project:
         - file: 25VisualPython.md
         - file: 26Labs.md
   downloads:
-    - file: _build/exports/readme_typst/readme.pdf
-    - file: _build/exports/introduction_typst/introduction.pdf
+#    - file: _build/exports/readme_typst/readme.pdf
+#    - file: _build/exports/introduction_typst/introduction.pdf
 #      title: Modeling with Physics
   id: 
   title: Modeling with Physics

@@ -1,3 +1,7 @@
+---
+downloads:
+    - file: _build/exports/readme_typst/readme.pdf
+---
 # Introductory Physics: Modeling with Physics
 
 :::{iframe} https://trinket.io/embed/glowscript/df91d03f90?outputOnly=true&start=result
