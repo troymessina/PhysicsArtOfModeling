@@ -4,6 +4,10 @@ numbering:
   headings:
   heading_1:
     start: 5
+exports:
+  - format: typst
+    template: lapreprint-typst
+    output: exports/04NewMomentumAndCM.pdf
 ---
 (chap:momentumandcm)=
 # Overview

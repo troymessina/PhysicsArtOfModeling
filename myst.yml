@@ -51,9 +51,10 @@ project:
     - trinket/**
   exports:
   - format: pdf
-  - output: exports/ModelingWithPhysics.pdf
-    template: lapreprint-typst
-    id: ModelingWithPhysics
+    template: lapreprint
+    output: exports/ModelingWithPhysics.pdf
+    venue_footer: arxiv
+    theme_color: red
 site:
   template: book-theme 
   title: Modeling with Physics
