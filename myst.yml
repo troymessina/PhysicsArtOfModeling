@@ -57,7 +57,7 @@ project:
         - 03Vectors.md
         - 04NewMomentumAndCM.md
         - 15ChargesFields.md
-      output: ./_build/export/report.pdf
+      output: ./_build/exports/report.pdf
   downloads:
     - id: typstpdf
       title: PDF of Report
