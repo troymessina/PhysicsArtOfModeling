@@ -35,10 +35,6 @@ project:
         - file: 24Calculus.md
         - file: 25VisualPython.md
         - file: 26Labs.md
-  downloads:
-#    - file: _build/exports/readme_typst/readme.pdf
-#    - file: _build/exports/introduction_typst/introduction.pdf
-#      title: Modeling with Physics
   id: 
   title: Modeling with Physics
   description: Interactive Introductory Calculus-Based Physics Textbook
@@ -62,6 +58,9 @@ project:
         - 04NewMomentumAndCM.md
         - 15ChargesFields.md
       output: ./_build/export/report.pdf
+  downloads:
+    - id: typstpdf
+      title: PDF of Report
 site:
   template: book-theme 
   title: Modeling with Physics

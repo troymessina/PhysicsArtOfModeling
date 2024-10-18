@@ -4,9 +4,6 @@ numbering:
   headings:
   heading_1:
     start: 5
-downloads:
-    - file: _build/pdf/04NewMomentumAndCM.pdf
-	- file: ./04NewMomentumAndCM.md
 ---
 (chap:momentumandcm)=
 # Overview

@@ -4,9 +4,6 @@ numbering:
   headings:
   heading_1:
     start: 16
-downloads:
-    - file: _build/pdf/15ChargesFields.pdf
-	- file: ./15ChargesFields.md
 ---
 (chapter:chargesfields)=
 # Overview

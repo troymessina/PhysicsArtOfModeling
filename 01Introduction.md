@@ -4,9 +4,6 @@ numbering:
   headings:
   heading_1:
     start: 2
-downloads:
-    - file: _build/pdf/01Introduction.pdf
-	- file: ./01Introduction.md
 ---
 (chap:introduction)=
 # Overview
