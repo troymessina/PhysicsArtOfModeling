@@ -1,7 +1,7 @@
 {
   "input": {
     "files": [
-      "15ChargesFields.md"
+      "04NewMomentumAndCM.md"
     ],
     "opts": {
       "execute": false,
@@ -29,14 +29,14 @@
     {
       "format": "typst",
       "template": "lapreprint-typst",
-      "output": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\_build\\exports\\chargesfields_typst\\15chargesfields.pdf",
+      "output": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\_build\\exports\\newmomentumandcm_typst\\04NewMomentumAndCM.pdf",
       "articles": [
         {
-          "file": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\15ChargesFields.md",
+          "file": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\04NewMomentumAndCM.md",
           "level": 0
         }
       ],
-      "$file": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\15ChargesFields.md",
+      "$file": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\04NewMomentumAndCM.md",
       "$project": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling"
     }
   ]

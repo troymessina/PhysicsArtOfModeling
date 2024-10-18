@@ -4,12 +4,9 @@ numbering:
   headings:
   heading_1:
     start: 5
-exports:
-  - format: typst
-    template: lapreprint-typst
-    output: _build/exports/newmomentumandcm_typst/04NewMomentumAndCM.pdf	
 downloads:
-    - file: _build/exports/newmomentumandcm_typst/newmomentumandcm.pdf
+    - file: _build/pdf/04NewMomentumAndCM.pdf
+	- file: ./04NewMomentumAndCM.md
 ---
 (chap:momentumandcm)=
 # Overview

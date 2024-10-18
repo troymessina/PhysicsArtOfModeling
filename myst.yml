@@ -50,11 +50,18 @@ project:
   exclude: 
     - figures/**
     - trinket/**
-#  exports:
-#  - format: pdf
-#    template: lapreprint
-#    output: exports/ModelingWithPhysics.pdf
-#    theme_color: red
+  exports:
+    - format: typst
+      id: typstpdf
+      template: https://github.com/rowanc1/typst-book.git
+      articles:
+        - README.md
+        - 01Introduction.md
+        - 02ModelAndExperiment.md
+        - 03Vectors.md
+        - 04NewMomentumAndCM.md
+        - 15ChargesFields.md
+      output: ./_build/pdf/report.pdf
 site:
   template: book-theme 
   title: Modeling with Physics
