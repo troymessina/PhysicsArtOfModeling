@@ -218,7 +218,7 @@ There are some basic steps you can follow when you are trying to find the SI uni
 :::
 
 :::{tip} Checkpoint
-In Chloe's theory of falling objects from [](#chap:introduction), the time, $t$, for an object to fall a distance, $x$, was given by $t=k\sqrt{x}$. What must the SI units of Chloe's constant, $k$, be?}
+In Chloe's theory of falling objects from [](#chap:introduction), the time, $t$, for an object to fall a distance, $x$, was given by $t=k\sqrt{x}$. What must the SI units of Chloe's constant, $k$, be?
 1. ${\rm T.L^{\frac{1}{2}}}$
 2. ${\rm T.L^{-\frac{1}{2}}}$
 3. ${\rm s.m^{\frac{1}{2}}}$
