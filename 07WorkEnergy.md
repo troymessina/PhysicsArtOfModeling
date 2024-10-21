@@ -678,6 +678,213 @@ W^{net} =W_F + W_f&= \frac{1}{2}mv_f^2 - \frac{1}{2}mv_i^2 \\
 The energy that is lost to friction can be thought of as "thermal energy" (heat) that goes up into heating the block and the surface. Indeed, if you rub your hand against the table, you will notice that it gets warmer; you are losing some of the energy introduced to your hand by the work done by your arm into heating up the table and your hand! This shows that we can think about modelling friction using thermal energy rather than a force.
 :::
 
+# Using PhET to Study the Work-Energy Theorem
+In the PhET simulation below, click on the "Measure" tab. Leave all of the default settings as they are. Place the skater at the top of the ramp and release them. They should continue to skate up and down the ramp endlessly since there is no friction. Place the measurement sensor at the top of the ramp. Attempt to adjust the sensor until the kinetic energy reads zero as the skater passes the sensor.
+ 
+:::{tip} Checkpoint
+As the skater goes down the ramp, describe the work being done on them is coming from what force?
+1. Friction
+2. Gravity
+3. Unable to determine
+:::{tip} Answer
+:class: dropdown
+2.
+:::
+:::{tip} Checkpoint
+As the skater goes from the top of the ramp to the bottom, how much work due to gravity is done on them?
+:::{tip} Answer
+:class: dropdown
+```{math}
+mgh = 60\times 9.8 \times 6 = 3528 {\rm J}
+```
+:::
+Does the sensor's measurement of potential energy agree with the amount of work you calculated above? If the kinetic energy is not zero, does the sum of potential and kinetic energy sum to the calculated energy above?
+
+:::{iframe} https://phet.colorado.edu/sims/html/energy-skate-park/latest/energy-skate-park_en.html
+:label: chap:workenergy:skateparkphet
+:width: 100%
+:align: center
+A PhET simulation to explore work-energy.
+:::
+
+Move the measurement sensor to the bottom of the ramp. Try to place it so that the potential energy is zero. How does the kinetic energy compare to the calculation of gravitational work from above?
+:::{attention}Olivia's Thoughts
+
+The skater begins at the top of the ramp with zero kinetic energy and $3528 {\rm J}$ of potential energy. As the skater goes to the bottom of the ramp, gravity is continuously doing work on the skater. As the potential energy drops, it is converted as work by the force of gravity to kinetic energy. At the bottom of the ramp, all of the potential energy has been used to do work on the skater. The skater's kinetic energy is now equal to the original potential energy. Since gravity is a conservative force, the conversion of energy from potential to kinetic is complete, without losses. As a check of the relationship
+```{math}
+W=\Delta K
+```
+you can calculate that the skater's speed at the bottom should be
+```{math}
+mgh &= \frac{1}{2}mv^2_f−\frac{1}{2}mv^2_i\\
+mgh &= \frac{1}{2}mv^2_f − 0
+```
+Therefore,
+```{math}
+gh = \frac{1}{2}v^2_f
+```
+and
+```{math}
+v_f &= \sqrt{2gh}\\
+v_f &= \sqrt{2\times 9.8\times 6}\\
+v_f &= 10.8 {\rm m/s}
+```
+:::
+Next, increase and decrease the skater's mass. Notice their motion does not change. This is seemingly a contradiction. Can you explain why this scenario has mass independent motion?
+
+Now, set the friction to a small value. What do you observe happening? Place the measuring sensor somewhere on the ramp. You should notice the thermal energy has a value when it did not when there was no friction. Where is the skater's energy going? 
+
+# Calculating Work Numerically
+It's possible, many students in Physics 1 have not had Calculus 2, and integrals are not familiar. Let's take a graphical look at the work. In [](#fig:workenergy:constantF), a constant $10~ {\rm N}$ net force is moving an object at constant velocity over a distance of $0.1~ {\rm m}$. The action is split into ten segments. Considering the relationship
+```{math}
+W = \vec{F}\cdot\vec{d}
+```
+we can see that when the force and displacement are aligned, the work is $W=\lvert\vec{F}\rvert\lvert\vec{d}\rvert = Fd$. This is the height times width, or area, of the graph. We could break the graph into segments and add the segments. As described in the previous section, the area of the segments can be written $\vec F_i \cdot \Delta \vec x$ and summed to obtain the full area of the graph of $F$ vs. $x$.
+```{math}
+W^{tot} = \sum_{i=0}^N\vec F_i \cdot \Delta \vec x_i
+```
+:::{note} Example 
+A block is pushed with $10 {\rm N}$ of net force to move the block with constant velocity a distance of $0.1 {\rm m}$. Split the work into intervals of $\Delta x = 0.01$ meters and calculate the total work done as the sum of the work over all of the intervals.
+```{figure} figures/WorkEnergy/constantF.png
+:label: fig:workenergy:constantF
+:width: 100%
+:align: center
+:alt: A constant net force of 10 Newtons applied to an object moving a of 0.1 meter.
+A constant net force of 10 Newtons applied to an object moving a of 0.1 meter.
+```
+:::{note} Solution
+:class: dropdown
+```{table} A table of all of the intervals.
+:label: tab:workenergy:constantF
+|  $F_i ({\rm N})$ | $\Delta~x_i ({\rm m})$ |	$W_i ({\rm J})$ |
+|:----------:|:--------------------:|:---------------------:|
+|  $10$ 	 | $0.01 - 0.00 = 0.01$ | $10 \times 0.01 = 0.1$|
+|  $10$ 	 | $0.02 - 0.01 = 0.01$ | $10 \times 0.01 = 0.1$|
+|  $10$ 	 | $0.03 - 0.02 = 0.01$ | $10 \times 0.01 = 0.1$|
+|  $10$ 	 | $0.04 - 0.03 = 0.01$ | $10 \times 0.01 = 0.1$|
+|  $10$ 	 | $0.05 - 0.04 = 0.01$ | $10 \times 0.01 = 0.1$|
+|  $10$ 	 | $0.06 - 0.05 = 0.01$ | $10 \times 0.01 = 0.1$|
+|  $10$ 	 | $0.07 - 0.06 = 0.01$ | $10 \times 0.01 = 0.1$|
+|  $10$ 	 | $0.08 - 0.07 = 0.01$ | $10 \times 0.01 = 0.1$|
+|  $10$ 	 | $0.09 - 0.08 = 0.01$ | $10 \times 0.01 = 0.1$|
+|  $10$ 	 | $0.10 - 0.09 = 0.01$ | $10 \times 0.01 = 0.1$|
+```
+Now, we can simply add the last column on the right.
+
+```{math}
+W^{tot} &= \sum_{i=0}^N\vec F_i \cdot \Delta \vec x_i \\
+&= 0.1 + 0.1 + 0.1 + 0.1 + 0.1 +0.1 + 0.1 + 0.1 + 0.1 + 0.1\\
+&= 1~{\rm J}
+```
+Notice that this is the same as
+```{math}
+W^{tot} = Fd = 10\cdot 0.1 = 1~{\rm J}
+```
+:::
+Next, let's look at the spring example from [Section %s](#sec:workenergy:kinetic). Instead of compressing the spring we will consider stretching the spring in the $+\hat{x}$-direction. The force applied to stretching the spring is $\vec{F}=kx \hat{x}$. If we plot $F$ vs. $x$ for stretching a spring with spring constant $k=10~\text{N/m}$ from $x=0$ to $x=0.1$ meters, we get the graph shown in [](#). We can see that the force increases linearly with displacement. When we divide the displacement into intervals, we no longer can fit rectangular areas to fully describe the area of the force vs. displacement. That is okay, we can approximate the area with these rectangular areas.
+```{figure} figures/WorkEnergy/springF.png
+:label: fig:workenergy:springF
+:width: 100%
+:align: center
+:alt: Force vs. displacement for stretching a spring with $k=10 {\rm N/m}$ a distance of $0.1 {\rm m}$. The graph is split into 10 segments.
+Force vs. displacement for stretching a spring with $k=10 {\rm N/m}$ a distance of $0.1 {\rm m}$. The graph is split into 10 segments.
+```
+:::{note}Example
+A spring with spring constant  $k=10 {\rm N/m}$ is stretched from its equilibrium length  $0.0 {\rm m}$ by an amount  $0.1 {\rm m}$. Use the numerical summation described above to find the work done stretching the spring. Use the value of the force at the left edge of the rectangular segments as shown in [](#fig:workenergy:springF)
+:::{note} Solution
+:class: dropdown
+```{table} A table of all of the intervals for a spring with $k=10 {\rm N/m}$ displaced $0.1 {\rm m}$.
+:label: tab:workenergy:constantF
+|  $F_i=kx_i ({\rm N})$ | $\Delta~x_i ({\rm m})$ |	$W_i ({\rm J})$ |
+|:----------:|:--------------------:|:---------------------:|
+|  $10 \times 0.00 = 0.00$ | $0.01 - 0.00 = 0.01$ | $0.00 \times 0.01 = 0.000$|
+|  $10 \times 0.01 = 0.10$ | $0.02 - 0.01 = 0.01$ | $0.10 \times 0.01 = 0.001$|
+|  $10 \times 0.02 = 0.20$ | $0.03 - 0.02 = 0.01$ | $0.20 \times 0.01 = 0.002$|
+|  $10 \times 0.03 = 0.30$ | $0.04 - 0.03 = 0.01$ | $0.30 \times 0.01 = 0.003$|
+|  $10 \times 0.04 = 0.40$ | $0.05 - 0.04 = 0.01$ | $0.40 \times 0.01 = 0.004$|
+|  $10 \times 0.05 = 0.50$ | $0.06 - 0.05 = 0.01$ | $0.50 \times 0.01 = 0.005$|
+|  $10 \times 0.06 = 0.60$ | $0.07 - 0.06 = 0.01$ | $0.60 \times 0.01 = 0.006$|
+|  $10 \times 0.07 = 0.70$ | $0.08 - 0.07 = 0.01$ | $0.70 \times 0.01 = 0.007$|
+|  $10 \times 0.08 = 0.80$ | $0.09 - 0.08 = 0.01$ | $0.80 \times 0.01 = 0.008$|
+|  $10 \times 0.09 = 0.90$ | $0.10 - 0.09 = 0.01$ | $0.90 \times 0.01 = 0.009$|
+```
+Now, we can simply add the last column on the right.
+
+```{math}
+W^{tot} &= \sum_{i=0}^N\vec F_i \cdot \Delta \vec x_i \\
+&= 0.000 + 0.001 + 0.002 + 0.003 + 0.004 + 0.005 + 0.006 + 0.007 + 0.008 + 0.009\\
+&= 0.045~{\rm J}
+```
+:::
+Let's compare to the work computed from integration in the previous section.
+
+```{math}
+W^{tot} = \frac{1}{2}kx^2 = \frac{1}{2}10\cdot\left(0.1\right)^2 = 0.05~\text{J}
+```
+
+So, our approximation is close. You might notice that the area of this graph is a triangle, and we could calculate
+
+```{math}
+W &= A_{triangle}\\
+&= \frac{1}{2}\text{base} \cdot~\text{height} \\
+&= \frac{1}{2}Fx \\
+&= \frac{1}{2}kx \cdot x \\
+&= \frac{1}{2}kx^2
+```
+
+We could improve our approximation by dividing the $F$ vs. $x$ graph into smaller intervals as shown in [](#). The calculation using a table would be tedious. Let's see how a computer can help us solve this problem.
+```{figure} figures/WorkEnergy/springF2.png
+:label: fig:workenergy:springF2
+:width: 100%
+:align: center
+:alt: Force vs. displacement for stretching a spring with $k=10 {\rm N/m}$ a distance of $0.1 {\rm m}$. The graph is split into 50 segments.
+Force vs. displacement for stretching a spring with $k=10 {\rm N/m}$ a distance of $0.1 {\rm m}$. The graph is split into 50 segments.
+```
+
+In the trinket below we will compute the spring force as a function of stretch distance. First, we should define some variables such as the spring constant $k$, the total stretch distance $x$, the intervals of stretch $\Delta x$, and the work $W$. The total distance and the work are going to be summed in a loop. So, we initialize them to zero. We'll begin by repeating the calculation above to make sure we get the expected results.
+```python
+k = 10 #spring constant in N/m
+x = 0 #total stretch distance
+dx = 0.01 #stretch interval
+W = 0
+```
+Next, we will create a loop that continues while the stretch is less than $0.1$ meters. This should make the last left edge be $x=0.09$ and the last $\Delta x = 0.1-0.09$. Inside that loop we want to calculate the force at the left side of the rectangle (this is $x$. Then, add the work this force does over the increment of displacement $F\Delta x$ to the work that has been done in previous increments of displacement. We'll print the results that are in the table above, and we can't forget to increment $x$ for the next loop.
+```python
+while x < 0.1:
+    rate(2)
+    F = k*x #force at left side of interval
+    W = W + F*dx
+    print(x, F, W)
+    x = x + dx
+```
+Run this code to see that it works to produce the values in the table above. If you want to create more intervals, you only need to decrease the value of $\Delta x$ or dx in your code. Try changing this value to dx=0.005 (20 intervals). Then, try `dx = 0.001`. Does this make the summation closer to the exact value of $W=\frac{1}{2}kx^2=0.05~\text{J}$? How small does `dx` need to be to be within 1% of the exact value?
+
+:::{iframe} https://trinket.io/embed/glowscript/8f1815879d
+:label: chap:workenergy:blanktrinket
+:width: 100%
+:align: center
+An empty trinket.
+:::
+
+For fun, we can graph and simulate the scenario of stretching a spring. To create a graph add the following two lines after the Web VPython 3.2 line. This will create a graph and `f1` is the data that is displayed on the graph.
+```python
+spring_graph = graph(xtitle='x (m)', ytitle='W (J)')
+f1 = gdots(color=color.red) 
+```
+On the line after the calculation of work in the loop, add the following line to put position on the x-axis and work on the y-axis. This will add a single point to the graph each time the loop iterates.
+
+```python
+f1.plot(x, W) #add this data point to a graph 
+```
+Check that this works properly in your trinket. Once that works, you can add an object simulation. After the line with `f1`, create a spring with the following code.
+```python
+spring = helix(pos=vec(-0.125, 0, 0), axis=vec(0.25, 0, 0), radius=0.1, coils = 3)
+```
+After the line where the work is calculated, add the following line to extend the spring from its equilibrium length to the equilibrium length plus $x$.
+```python
+spring.axis=vec(0.25+x, 0, 0)
+```
+
 # Power
 We finish the chapter by introducing the concept of "power", which is the rate at which work is done on an object, or more generally, the rate at which energy is being converted from one form to another. If an amount of work, $\Delta W$, was done in a period of time $\Delta t$, then the work was done at a rate of:
 ```{math}
