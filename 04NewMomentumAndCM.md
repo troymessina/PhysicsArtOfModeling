@@ -41,7 +41,7 @@ In perhaps simpler terms, this says that an object's oomph or **momentum** will 
 ## Momentum of a point particle
 We can define the momentum, $\vec p$, of a particle of mass $m$ and velocity $\vec v$ as the vector quantity:
 ```{math}
-\boxed{\vec p = m\vec v}
+\mathcolorbox[yellow}{\vec p = m\vec v}
 ```
 Since this is a vector equation, it corresponds to three equations, one for each component of the momentum vector. It should be noted that the numerical value for the momentum of a particle is arbitrary, as it depends in which frame of reference the velocity of the particle is defined. For example, your velocity with respect to the surface of the Earth is zero, so your momentum relative to the surface of the Earth is zero. However, relative to the surface of the Sun, your velocity, and momentum, are not zero. As we will see, forces are related to a *changes* in momentum, just as they are related to a change in velocity (acceleration).
 
@@ -97,7 +97,7 @@ Using the data from [](#tab:MomentumAndCM:1dmotion), at what position along the 
 Since the position as a function of time for the ball plotted in [](#fig:MomentumAndCM:1dxvst) is linear, we can summarize our description of the motion using a function, $x(t)$, instead of having to tabulate the values as we did in Table [](#tab:MomentumAndCM:1dmotion). The function will have the functional form:
 ```{math}
 :label: eqn:MomentumAndCM:1dxvst_noa
-\boxed{x(t) = x_0 + v_x t}
+\mathcolorbox{yellow}{x(t) = x_0 + v_x t}
 ```
 The constant $x_0$ is the ``offset'' of the function; the value that the function has at $t= 0 {\rm s}$. We call $x_0$ the "initial position" of the object (its position at $t=0$). The constant $v_x$ is the "slope" of the function and gives the rate of change of the position as a function of time. We call $v_x$ the "velocity" of the object.
 
@@ -160,7 +160,7 @@ If the particle has a constant mass, then the time derivative of its momentum is
 ```
 and we can write this as Newton's Second Law, since $m\vec a$ must be equal to the vector sum of the forces on the particle of mass $m$:
 ```{math}
-\boxed{\frac{d}{dt}\vec p = \sum \vec F = \vec F^{net}}
+\mathcolorbox{yellow}{\frac{d}{dt}\vec p = \sum \vec F = \vec F^{net}}
 ```
 The equation above is the original form in which Newton first developed his theory. It says that the net force on an object is equal to the rate of change of its momentum. **If the net force on the object is zero, then its momentum is constant** (as is its velocity). In terms of components, Newton's Second Law written for the rate of change of momentum is given by:
 ```{math}
@@ -263,7 +263,7 @@ Compare this to Newton's Second Law written out using momentum:
 ```
 and we find that the net impulse received by a particle is precisely equal to its change in momentum:
 ```{math}
-\boxed{\Delta \vec p = \vec J^{net}}
+\mathcolorbox{yellow}{\Delta \vec p = \vec J^{net}}
 ```
 This is similar to the statement that the net work done on an object corresponds to its change in kinetic energy, although one should keep in mind that momentum is a vector quantity, unlike kinetic energy.
 
@@ -379,7 +379,7 @@ where the sum over internal forces will vanish for the same reason as above. Int
 ```
 We can write an equation for the time-derivative of the total momentum of the system:
 ```{math}
-\boxed{\frac{d\vec P}{dt} = \sum \vec F^{ext}}
+\mathcolorbox{yellow}{\frac{d\vec P}{dt} = \sum \vec F^{ext}}
 ```
 where the sum of the forces is the sum over all forces external to the system. Thus, **if there are no external forces on a system, then the total momentum of that system is conserved** (if the time-derivative of a quantity is zero then that quantity is constant).
 
@@ -595,7 +595,7 @@ We can then divide Equation {eq}`eq:momentumandcm:exptemp2` by Equation {eq}`eq:
 ```
 which gives us an equation that is much easier to work with, since it is linear in the speeds. If we re-arrange this last equation back so that quantities before and after the collision are on different sides of the equality:
 ```{math}
-\boxed{v_M-v_m = - (v'_M-v'_m)}
+\mathcolorbox{yellow}{v_M-v_m = - (v'_M-v'_m)}
 ```
 we can see that the relative speed between $M$ and $m$ is the same before and after the collision. That is, if block $M$ "saw" block $m$ approaching with a speed of $3 {\rm m/s}$ before the collision, it would "see" block $m$ moving *away* with speed $3 {\rm m/s}$ after the collision, regardless of the actual directions and velocities of the block, if the collision was elastic.
 
@@ -709,7 +709,7 @@ m_1\vec v_1 + m_2\vec v_2 - (m_1+m_2) \vec v_{CM} &=0\\
 ```
 This "special" frame of reference, in which the total momentum of the system is zero, is called the "centre of mass frame of reference". The velocity of centre of mass frame of reference can easily be obtained if there are $N$ particles involved instead of two:
 ```{math}
-\boxed{\therefore \vec v_{CM} = \frac{m_1\vec v_1 + m_2\vec v_2 + m_3 \vec v_3 + \dots }{m_1+m_2+m_3+\dots}=\frac{\sum m_i\vec v_i}{\sum m_i}}
+\mathcolorbox{yellow}{\therefore \vec v_{CM} = \frac{m_1\vec v_1 + m_2\vec v_2 + m_3 \vec v_3 + \dots }{m_1+m_2+m_3+\dots}=\frac{\sum m_i\vec v_i}{\sum m_i}}
 ```
 Again, you should note that because the above equation is a vector equation, it represents one equation per component of the vectors. For example, the $x$ component of the velocity of the centre of mass frame of reference is given by:
 ```{math}
@@ -807,7 +807,7 @@ Re-arranging, and noting that the masses are constant in time, and so they can b
 ```
 where in the last line we set the quantities that have the same time derivative equal to each other[^10]. $\vec r_{CM}$ is the vector that describes the position of the "centre of mass" (CM). The position of the centre of mass is described by Newton's Second Law applied to the system as a whole:
 ```{math}
-\boxed{\sum \vec F^{ext}=M\vec a_{CM}}
+\mathcolorbox{yellow}{\sum \vec F^{ext}=M\vec a_{CM}}
 ```
 where $M$ is the total mass of the system, and the sum of the forces is the sum over only external forces on the system.
 
