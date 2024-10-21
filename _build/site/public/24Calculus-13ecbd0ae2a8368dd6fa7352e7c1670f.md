@@ -268,7 +268,7 @@ The gradient of a function of one variable, $f(x)$, is
 2.  zero
 3.  equal to its derivative  
 4.  infinite
-:::{tip} Answer
+:::{note} Answer
 :class: dropdown
 3.
 :::
@@ -459,7 +459,7 @@ The quantity $\int_{a}^{b}f(t)dt$ is equal to
 1. the area between the function $f(t)$ and the $f$ axis between $t=a$ and $t=b$
 2.  the sum of $f(t)\Delta t$ in the limit $\Delta t\to 0$ between $t=a$ and $t=b$
 3. the difference $f(b) - f(a)$.
-:::{tip} Answer
+:::{note} Answer
 :class: dropdown
 2.
 :::
