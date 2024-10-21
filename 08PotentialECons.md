@@ -597,6 +597,16 @@ A potential energy function $U(x)$. The $x$-axis represents the $x$ position and
 2.
 :::
 
+# Using PhET to explore the Work-Energy Theorem and Energy Diagrams
+Consider a skater who can skate on a frictionless parabolic surface as shown in the PhET simulation below. Choose the "Graphs" tab. If you place the skater at the top of the ramp, they will accelerate down the ramp due to their gravitational potential energy. When they pass the lowest point, we consider the gravitational potential energy to be zero. The skater will continue in the same direction and decelerate until they stop at some height on the ramp and turn around. They will then accelerate again towards the rest position of the ramp ($y = 0 {\rm m}$), and then decelerate once the skater starts up the ramp again. This motion will repeat endlessly in the absence of non-conservative external forces.
+
+We can describe the motion of the skater in terms of their total mechanical energy, $E$.
+```{math}
+E = \frac{1}{2}mv^2 + mgh
+```
+
+In the simulation is an Energy Diagram for the skater, which allows us to examine how their total energy, $E$. Without friction, the energy is divided between kinetic and potential energy depending on the position of the skater on the ramp. The vertical axis corresponds to energy and the horizontal axis corresponds to the position of the skater.
+
 # Advanced Topic: The Lagrangian formulation of classical physics
 So far, we have seen that, based on Newton's Laws, one can formulate a description of motion that is based solely on the concept of energy. A lot of research was done in the eighteenth century to reformulate a theory of mechanics that would be equivalent to Newton's Theory but whose starting point is the concept of energy instead of the concept of force. This "modern" approach to classical mechanics is primarily based on the research by Lagrange and Hamilton. 
 

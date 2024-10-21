@@ -347,8 +347,7 @@ An example of using field lines to represent a vector field in space is shown in
 :alt: An example of determining a field vector from the continuous field lines.
 An example of determining a field vector from the continuous field lines.
 ```
-:::{tip} Checkpoint
-:label: cp:chargesfields:efield
+:::{tip} Checkpoint:label: cp:chargesfields:efield
 It is possible for field lines to cross?
 1.  Yes.
 2.  No. 
