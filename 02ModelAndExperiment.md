@@ -28,7 +28,7 @@ Newton's Universal Theory of Gravity predicts that objects near the surface of t
 Although you should try to fight intuition when building a model to describe a particular phenomenon, you should not abandon critical thinking and should always ask if a prediction from your model makes sense. One of the most straightforward ways to estimate if a model makes sense is to ask whether it predicts the correct order of magnitude for a quantity. Usually, the order of magnitude for a quantity can be determined by making a very simple model, ideally one that you can work through in your head. When we say that a prediction gives the right "order of magnitude", we usually mean that the prediction is within a factor of "a few" (up to a factor of 10) of the correct answer. For example, if a measurement gives a value of 2000, then we would consider that a model prediction of 8000 gave the right order of magnitude (it differs from the correct answer by a factor of 4), whereas a prediction of 24000 would not (it differs by a factor of 12). 
 
 :::{note} Example 2.1
-How many ping pong balls can you fit into a school bus? Is it of order 10,000, or 100,000, or more?}
+How many ping pong balls can you fit into a school bus? Is it of order 10,000, or 100,000, or more?
 Our strategy is to estimate the volumes of a school bus and of a ping pong ball, and then calculate how many times the volume of the ping pong ball fits into the volume of the school bus.
 :::{note} Solution
 :class: dropdown
@@ -82,7 +82,6 @@ Fill in the following table, giving the order of magnitude (in meters) of the si
 |Radius of the Milky Way | $10^{21} {\rm m}$ |
 ```
 :::
-
 
 # Units and dimensions
 In 1999, the NASA Mars Climate Orbiter disintegrated in the Martian atmosphere because of a mixup in the units used to calculate the thrust needed to slow the probe and place it in orbit about Mars. A computer program provided by a private manufacturer used units of pounds seconds to calculate the change in momentum of the probe instead of the Newton seconds expected by NASA. As a result, the probe was slowed down too much and disintegrated in the Martian atmosphere. This example illustrates the need for us to **use and specify units** when we describe the properties of a physical quantity, and it also demonstrates the difference between a dimension and a unit.

@@ -59,7 +59,7 @@ project:
 #        - 15ChargesFields.md
       output: ./_build/exports/ModelingWithPhysics.pdf
   downloads:
-    - file: ./_build/exports/ModelingWithPhysics.pdf
+#    - file: ./_build/exports/ModelingWithPhysics.pdf
     - id: typstpdf
       title: Modeling With Physics
 site:
