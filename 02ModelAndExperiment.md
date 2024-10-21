@@ -101,9 +101,9 @@ The speed limit on a highway...
 :::
 
 ## Base dimensions and their SI units
-In order to facilitate communication of scientific information, the International System of units (SI for the french, Syst\`eme International d'unit\'es) was developed. This allows us to use a well-defined convention for which units to use when describing quantities. For example, the SI unit for the dimension of length is the meter and the SI unit for the dimension of time is the second.
+In order to facilitate communication of scientific information, the International System of units (SI for the french, Système International d'unités) was developed. This allows us to use a well-defined convention for which units to use when describing quantities. For example, the SI unit for the dimension of length is the meter and the SI unit for the dimension of time is the second.
 
-In order to simplify the SI unit system, a fundamental (base) set of dimensions was chosen and the SI units were defined for those dimensions. Any other dimension can always be re-expressed in terms of the base dimensions shown in Table \ref{tab:modelandexperiment:SIunits} and its units in terms of the corresponding combination of the base SI units.
+In order to simplify the SI unit system, a fundamental (base) set of dimensions was chosen and the SI units were defined for those dimensions. Any other dimension can always be re-expressed in terms of the base dimensions shown in Table [](#tab:modelandexperiment:SIunits) and its units in terms of the corresponding combination of the base SI units.
 
 ```{table} Base dimensions and their SI units with abbreviations.
 :label: tab:modelandexperiment:SIunits
@@ -242,7 +242,7 @@ where $x$, $y$, and $z$ are our unknown exponents, since we don't know yet how w
 ```{math}
 [r]=[E]^x[\rho]^y[t]^z
 ```
-We know the dimensions for radius and time, and the dimension for $E$ can be found in Table \ref{tab:modelandexperiment:derivedSIunits}. Density is mass divided by volume, so its dimension is $M/L^3$. Our equation then becomes:
+We know the dimensions for radius and time, and the dimension for $E$ can be found in Table [](#tab:modelandexperiment:derivedSIunits). Density is mass divided by volume, so its dimension is $M/L^3$. Our equation then becomes:
 ```{math}
 L&=(ML^2T^{-2})^x(ML^{-3})^y(T)^z\\
 L&=(M^xL^{2x}T^{-2x})(M^yL^{-3y})(T^z)\\
@@ -275,7 +275,7 @@ t=k\sqrt{x}
 ```
 which states that the time, $t$, for any object to fall a distance, $x$, near the surface of the Earth is given by the above relation. The theory assumes that Chloe's constant, $k$, is the same for any object falling any distance on the surface of the Earth.
 
-One possible way to test Chloe's theory of falling objects is to measure $k$ for different drop heights to see if we always obtain the same value. Results of such an experiment are presented in Table \ref{tab:modelandexperiment:kmes}, where the time, $t$, was measured for a bowling ball to fall distances of $x$ between $1 {\rm m}$ and $5 {\rm m}$. The table also shows the values computed for $\sqrt x$ and the corresponding value of $k=t/\sqrt x$:
+One possible way to test Chloe's theory of falling objects is to measure $k$ for different drop heights to see if we always obtain the same value. Results of such an experiment are presented in Table [](#tab:modelandexperiment:kmes), where the time, $t$, was measured for a bowling ball to fall distances of $x$ between $1 {\rm m}$ and $5 {\rm m}$. The table also shows the values computed for $\sqrt x$ and the corresponding value of $k=t/\sqrt x$:
 
 ```{table} Measurements of the drop times, $t$, for a bowling ball to fall different distances, $x$. We have also computed $\sqrt x$ and the corresponding value of $k$.
 :label: tab:modelandexperiment:kmes

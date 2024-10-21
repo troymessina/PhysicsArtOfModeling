@@ -53,7 +53,7 @@ project:
       articles:
         - README.md
         - 01Introduction.md
-#        - 02ModelAndExperiment.md
+        - 02ModelAndExperiment.md
 #        - 03Vectors.md
 #        - 04NewMomentumAndCM.md
 #        - 15ChargesFields.md
