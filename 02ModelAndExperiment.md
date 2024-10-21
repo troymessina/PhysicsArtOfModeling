@@ -481,20 +481,16 @@ The derivative method leads to a few simple short cuts when propagating the unce
 3.  For multiplication and division, add the relative uncertainties in quadrature
 
 
-\begin{table}[H]
-\centering
-\begin{tabular}{p{2.5in}p{2in}} 
-**Operation to get $z$** &**Uncertainty in $z$** \\
-\hline
-\hline
-$z=x+y$ (addition) &  $\sigma_z=\sqrt{\sigma_x^2+\sigma_y^2}$ \\ \hline
-$z=x-y$ (subtraction) & $\sigma_z=\sqrt{\sigma_x^2+\sigma_y^2}$ \\ \hline
-$z=xy$ (multiplication) & $\sigma_z=xy\sqrt{\left(\frac{\sigma_x}{x}\right)^2+\left(\frac{\sigma_y}{y}\right)^2}$ \\ \hline
-$z=\frac{x}{y}$ (division) & $\sigma_z=\frac{x}{y}\sqrt{\left(\frac{\sigma_x}{x}\right)^2+\left(\frac{\sigma_y}{y}\right)^2}$ \\ \hline
-$z=f(x)$ (a function of 1 variable) &$\sigma_z=\left|\frac{df}{dx}\sigma_x \right|$ \\ \hline
-\end{tabular}
-\caption{:label: tab:modelandexperiment:prop_uncertainties How to propagate uncertainties from measured values $x\pm\sigma_x$ and $y\pm\sigma_y$ to a quantity $z(x,y)$ for common operations.}
-\end{table}
+```{table} How to propagate uncertainties from measured values $x\pm\sigma_x$ and $y\pm\sigma_y$ to a quantity $z(x,y)$ for common operations.
+:label: tab:modelandexperiment:prop_uncertainties
+|**Operation to get $z$** |**Uncertainty in $z$** |
+|:-----------  |:------------------ |
+|$z=x+y$ (addition)                  | $\sigma_z=\sqrt{\sigma_x^2+\sigma_y^2}$ |
+|$z=x-y$ (subtraction)               | $\sigma_z=\sqrt{\sigma_x^2+\sigma_y^2}$ |
+|$z=xy$ (multiplication)             | $\sigma_z=xy\sqrt{\left(\frac{\sigma_x}{x}\right)^2+\left(\frac{\sigma_y}{y}\right)^2}$ |
+|$z=\frac{x}{y}$ (division)          | $\sigma_z=\frac{x}{y}\sqrt{\left(\frac{\sigma_x}{x}\right)^2+\left(\frac{\sigma_y}{y}\right)^2}$ |
+|$z=f(x)$ (a function of 1 variable) | $\sigma_z=\lvert\frac{df}{dx}\rvert\sigma_x $ |
+```
 
 :::{tip} Checkpoint
 We have measured that a llama can cover a distance of $20.0 \pm 0.5 {\rm m}$ in $4.0\pm 0.5 {\rm s}$. What is the speed (with uncertainty) of the llama?

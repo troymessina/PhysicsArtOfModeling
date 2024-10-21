@@ -55,7 +55,7 @@ project:
         - 01Introduction.md
         - 02ModelAndExperiment.md
 #        - 03Vectors.md
-        - 04NewMomentumAndCM.md
+#        - 04NewMomentumAndCM.md
 #        - 15ChargesFields.md
       output: ./_build/exports/ModelingWithPhysics.pdf
   downloads:
