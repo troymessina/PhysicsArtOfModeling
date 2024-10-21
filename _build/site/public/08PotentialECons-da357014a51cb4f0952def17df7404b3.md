@@ -604,34 +604,15 @@ We can describe the motion of the skater in terms of their total mechanical ener
 ```{math}
 E = \frac{1}{2}mv^2 + mgh
 ```
-
+:::{tip} Checkpoint
 In the simulation is an Energy Diagram for the skater, which allows us to examine how their total energy, $E$. Without friction, the energy is divided between kinetic and potential energy depending on the position of the skater on the ramp. The vertical axis corresponds to energy and the horizontal axis corresponds to the position of the skater.
 
-:::{iframe} https://phet.colorado.edu/sims/html/energy-skate-park/latest/energy-skate-park_en.html
-:label: chap:momentumandcm:blanktrinket
-:width: 100%
-:align: center
-A PhET simulation for work-energy.
-:::
-
-:::{tip} Checkpoint
 Check the box for the Grid to show. How much potential energy would the skater have at the top of the ramp (Their mass is listed on the right.)? Where would you predict the skater's turning point will be on the opposite side of the ramp? Place the skater at the top of the ramp. Is your prediction correct?
 :::{tip} Answer
 :class: dropdown
 Since there is no friction, the skater will return to a height they began with on the other side of the ramp. The starting height at the top of the ramp corresponds to turning points at 0 and 10 meters.
 :::
-:::{tip} Checkpoint
-Suppose you add friction. What will happen to the total energy? What will happen to the turning points?
-:::{tip} Answer
-:class: dropdown
-Friction is a non-conservative force. There will be thermal energy that reduces the total energy of the skater. The turning points will get closer and closer together as total energy decreases. Eventually, the skater will be at rest at the lowest point on the ramp, where their mechanical energy is zero.
-:::
-:::{tip} Checkpoint
-Turn off the friction, and adjust the reference height to about halfway up the ramp. Release the skater from the top of the ramp. The graph now shows the total energy is a smaller number than the kinetic energy for some regions of the graph. Is this a violation of conservation of energy?
-:::{tip} Answer
-:class: dropdown
-No. The new reference height makes some of the potential energy negative. Since energy (coordinate systems) can reference any point, these negative energies are possible. However, kinetic energy can never be negative. The total energy is still the sum of kinetic and potential energy. It is simply shifted due to adding negatives to positives. The skater still has the same speeds (kinetic energies) along the ramp. This can be seen by using the speed measuring tool.
-:::
+
 # Advanced Topic: The Lagrangian formulation of classical physics
 So far, we have seen that, based on Newton's Laws, one can formulate a description of motion that is based solely on the concept of energy. A lot of research was done in the eighteenth century to reformulate a theory of mechanics that would be equivalent to Newton's Theory but whose starting point is the concept of energy instead of the concept of force. This "modern" approach to classical mechanics is primarily based on the research by Lagrange and Hamilton. 
 
