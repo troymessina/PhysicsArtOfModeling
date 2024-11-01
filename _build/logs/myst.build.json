@@ -1,7 +1,7 @@
 {
   "input": {
     "files": [
-      "04NewMomentumAndCM.md"
+      "README.md"
     ],
     "opts": {
       "execute": false,
@@ -28,15 +28,14 @@
   "exports": [
     {
       "format": "typst",
-      "template": "lapreprint-typst",
-      "output": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\_build\\exports\\newmomentumandcm_typst\\04NewMomentumAndCM.pdf",
+      "output": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\_build\\exports\\readme_typst\\readme.pdf",
       "articles": [
         {
-          "file": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\04NewMomentumAndCM.md",
+          "file": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\README.md",
           "level": 0
         }
       ],
-      "$file": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\04NewMomentumAndCM.md",
+      "$file": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling\\README.md",
       "$project": "C:\\Users\\messinat\\GoogleDrive\\My Drive\\Teaching\\texts\\PhysicsArtOfModeling"
     }
   ]

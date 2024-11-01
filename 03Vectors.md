@@ -80,12 +80,12 @@ Example of a polar coordinate system and a point $P$ with coordinates $(r,\theta
 
 
 One can easily convert between the two Cartesian coordinates, $x$ and $y$, and the two corresponding polar coordinates, $r$ and $\theta$:
-\begin{align*}
+```math
 x&=r\cos(\theta)\\
 y&=r\sin(\theta)\\
 r&=\sqrt{x^2+y^2}\\
 \tan(\theta) &= \frac{y}{x}
-\end{align*}
+```
 Polar coordinates are often used to describe the motion of an object moving around a circle, as this means that only one of the coordinates ($\theta$) changes with time (if the origin of the coordinate system is chosen to coincide with the centre of the circle).
 
 ## 3D Coordinate systems
@@ -111,11 +111,11 @@ Describing the position of $P$, located on the surface of a cylinder, in cylindr
 ```
 
 The cylindrical coordinates are related to the Cartesian coordinates by:
-\begin{align*}
+```math
 \rho &= \sqrt{x^2+y^2}\\
 \tan(\phi) &= \frac{y}{x}\\
 z&=z
-\end{align*}
+```
 In spherical coordinates, a point $P$ is described by the radius, $r$, the *polar angle* $\theta$, and the *azimuthal angle*, $\phi$. The radius is the distance between the point and the origin. The polar angle is the angle with the $z$ axis that is made by the line from the origin to the point. The azimuthal angle is defined in the same way as in polar coordinates. Note that the value of $\phi$ must be between $0$ and $2\pi$, whereas the value of $\theta$ must be between $0$ and $\pi$. 
 
 Spherical coordinates are useful for describing situations that have spherical symmetry, such as a person walking on the surface of the Earth, since the radial coordinate will not change. For example, this is shown with Point $P$ in [](#fig:Vectors:sphericalcoordinates), located on the surface of a sphere of radius $r$. 
@@ -129,11 +129,11 @@ Describing the position of $P$, located on the surface of a sphere, in spherical
 ```
 
  The spherical coordinates are related to the Cartesian coordinates by:
-\begin{align*}
+```math
 r &= \sqrt{x^2+y^2+z^2}\\
 \cos(\theta) &= \frac{z}{r}=\frac{z}{\sqrt{x^2+y^2+z^2}}\\
 \tan(\phi) &= \frac{y}{x}\\
-\end{align*}
+```
 
 # Vectors
 So far, we have seen how to use a coordinate system to describe the position of a single point in space relative to an origin. In this section, we introduce the notion of a "vector", which allows us to describe quantities that have a **magnitude** and a **direction**. For example, you can use a vector to describe the fact that you walked \SI{5}{km} in the North direction. A vector can be visualized by an arrow. The length of the arrow is the magnitude that we wish to describe, and the direction of the arrow corresponds to the direction that we would like to describe. 
@@ -149,25 +149,25 @@ A vector $\vec d$ shown twice, once with its Cartesian components ($d_x$, $d_y$)
 ```
 
 In analogy with coordinate systems, we have multiple ways to choose the numbers that we use to describe the vector. The most convenient choice is usually to use the "Cartesian components" of the vector which correspond to the length of the vector when projected onto a Cartesian coordinate system. For example, in [](#fig:Vectors:dvec), the Cartesian components of the vector $\vec d$ are labelled as ($d_x$, $d_y$) indicating that the vector has a length of $d_x$ in the $x$ direction and $d_y$ in the $y$ direction. Furthermore, the number $d_x$ is negative, since the vector points in the negative $x$ direction. Another common choice is to use the length of the vector, which we label $d$ (the name of the vector without the arrow on top), and the angle, $\phi$ that the vector makes with the $x$-axis, as illustrated in [](#fig:Vectors:dvec). In terms of the two dimensional Cartesian components, the magnitude of the vector is given by:
-\begin{align*}
+```math
 d&= ||\vec d||= \sqrt{d_x^2+d_y^2}
-\end{align*}
+```
 where we also introduced the notation that placing two vertical bars around a vector ($||\vec d||$) is used to indicated its magnitude. Note that in three dimensions, it is usually not convenient to specify the direction unless the vector lies in one of the planes defined by the coordinate system (e.g the $xy$ plane). In three dimensions, it is usually most convenient to specify the three Cartesian components.
 
 
 ## Unit vectors 
 A special category of vectors is "unit vectors", which are simply vectors that have a length (magnitude) of 1 (in whichever units the coordinate system is defined). Unit vectors are particularly useful for indicating direction. For example, in [](#fig:Vectors:dvec), we may be interested in indicating the direction of the vector $\vec d$. Unit vectors are denoted by using a "hat" instead of an arrow. Thus, the vector $\hat d$, is the vector of length 1 that points in the same direction as $\vec d$. The (Cartesian) components of $\hat d$ are easily found by dividing the corresponding components of $\vec d$ by $d$ (the magnitude):
-\begin{align*}
+```math
 (\hat d)_x &= \frac{d_x}{d}=\frac{d_x}{\sqrt{d_x^2+d_y^2}}\\
 (\hat d)_y &= \frac{d_y}{d}=\frac{d_y}{\sqrt{d_x^2+d_y^2}}\\
 \therefore d &= ||\hat d||=\sqrt{(\hat d)_x^2+(\hat d)_y^2}=\sqrt{\frac{d_x^2}{d_x^2+d_y^2}+\frac{d_y^2}{d_x^2+d_y^2}}=1
-\end{align*}
+```
 
 A specific type of unit vector is the units vectors that are parallel to the axes of the coordinate system. Those vectors are denoted $\hat x$, $\hat y$, $\hat z$ (and sometimes $\hat i$, $\hat j$, $\hat k$ or $\hat e_x$, $\hat e_y$, $\hat e_z$) for the $x$, $y$, and $z$ axes, respectively. Thus, the vector $d\hat{x}$, is the vector of length $d$ that points in the positive $x$ direction. 
 
 ## Notations and representation of vectors
 There are multiple notations for describing a vector using its components. The following are all equivalent ways to write down the vector $\vec d$ in terms of its components $d_x$ and $d_y$:
-\begin{align*}
+```math
 \vec d &= (d_x,d_y)\quad&\text{row vector}\\
        &=\begin{pmatrix}
            d_x \\
@@ -175,7 +175,7 @@ There are multiple notations for describing a vector using its components. The f
          \end{pmatrix}\quad&\text{column vector}\\
          &= d_x\hat x +d_y \hat y\quad&\text{using }\hat x,\;\hat y\\
          &=d_x\hat i +d_y \hat j \quad&\text{using }\hat i,\;\hat j
-\end{align*}
+```
 The vectors $\hat x$ ($\hat i$) and $\hat y$ ($\hat j$) are unit vectors in $x$ and $y$ directions respectively.
 For example, the unit vector $\hat y$ can be written down as (0,1) in two dimensions or (0,1,0) in three dimensions, using the row notation.
 
@@ -201,18 +201,17 @@ Illustrating a vector graphically in two dimensions is straightforward, but diff
 Geometric representation of three vectors. The vector $\vec a$ lies in the plane of the page, the vector $\vec b$ is pointing out of the page, and the vector $\vec c$ is pointing into the page.
 ```
 
-
 # Vector algebra
 In this section, we describe the various algebraic operations that can be performed using vectors. 
 ## Multiplication/division of a vector by a scalar
 One can multiply (or divide) a vector by a scalar (a number). Suppose that we are given a vector $\vec v=(v_x, v_y, v_z)$ and a scalar $a$. The multiplication $a\vec v$ is defined to be a new vector, say $\vec w$, whose components are the components of $\vec v$ multiplied by $a$:
-\begin{align*}
+```math
 \vec w = a\vec v = (av_x, a v_y, av_z)
-\end{align*}
+```
 Similarly, the division of a vector by a scalar is defined analogously by dividing each Cartesian component by the scalar::
-\begin{align*}
+```math
 \vec w = \frac{\vec v}{a} = \left(\frac{v_x}{a}, \frac{v_y}{a}, \frac{v_z}{a}\right)
-\end{align*}
+```
 :::{tip} Checkpoint 3.3
 :label: Checkpoint-3.3
 What happens to the length of a vector if the vector is multiplied by 2 (a scalar)?
@@ -226,14 +225,14 @@ What happens to the length of a vector if the vector is multiplied by 2 (a scala
 1.
 :::
 In particular, this makes it easy to determine the unit vector, $\hat v$, that points in the same direction as $\vec v$:
-\begin{align*}
+```math
 \hat v = \frac{\vec v}{v}
-\end{align*}
+```
 where $v$ is the (scalar) magnitude of $\vec v$. 
 
 ## Addition/subtraction of two vectors
 The sum of two vectors, $\vec a$ and $\vec b$, is found by adding the components of the two vectors. Similarly, the difference between two vectors is found by subtracting the components. For example, if $\vec c=\vec a+\vec b$, the components of $\vec c$ are given by:
-\begin{align*}
+```math
 \vec c &= \vec a + \vec b = \begin{pmatrix}
            a_x \\
            a_y \\
@@ -248,22 +247,22 @@ The sum of two vectors, $\vec a$ and $\vec b$, is found by adding the components
            a_x+b_x \\
            a_y+b_y \\
          \end{pmatrix}
-\end{align*}
+```
 where we chose to use the "column vector" notation. The column vector notation highlights the fact that the algebra (addition, subtraction) is performed independently on the $x$ and $y$ components. We can thus write this sum equivalently as two scalar equations, one for each coordinate:
-\begin{align*}
+```math
 c_x &= a_x+b_x\\
 c_y &= a_y+b_y
-\end{align*}
+```
 Vectors can thus be used as a short-hand notation for representing multiple equations (one equation per component). When we use vectors to write an equation such as:
-\begin{align*}
+```math
 \vec F = m\vec a
-\end{align*}
+```
 we really mean that there is one scalar equation per component of the vectors:
-\begin{align*}
+```math
 F_x &= ma_x\\
 F_y &= ma_y\\
 F_z &= ma_z
-\end{align*}
+```
 
 (ex:vectors:vecalg)=
 :::{note} Example 3.1
@@ -273,18 +272,18 @@ Given two vectors, $\vec a=2\hat x+3\hat y$, and $\vec b=5\hat x-2\hat y$, calcu
 :label: Example-3.1
 :class: dropdown
 This can easily be solved algebraically by collecting terms for each component, $\hat x$ and $\hat y$:
-\begin{align*}
+```math
 \vec c &= 2\vec a- 3\vec b\\
 &=2 (2\hat x+3\hat y) - 3 (5\hat x-2\hat y) \\
 &=(4\hat x+6\hat y)-(15\hat x-6\hat y) \\
 &=(4-15)\hat x + (6+6) \hat y\\
 &= -11 \hat x + 12 \hat y
-\end{align*}
+```
 We can think of these operations as being performed independently on the components:
-\begin{align*}
+```math
 c_x&=2a_x-3b_x=-11\\
 c_y&=2a_y-3b_y=12
-\end{align*} 
+```
 :::
 
 Geometrically, one can easily visualize the addition and subtraction of vectors. This is illustrated in [](#fig:Vectors:aplusbvec) for the case of adding vectors $\vec a$ and $\vec b$ to get the vector $\vec c$. Geometrically, the sum of the vectors $\vec a$ and $\vec b$ (sometimes also called the "resultant") can be found by:
@@ -316,13 +315,13 @@ Illustration that the notation $\vec a = a_x \hat x+ a_y\hat y$ is in fact the v
 There are two ways to "multiply" vectors: the "scalar product" and the "vector product". The scalar product (or "dot product") takes two vectors and results in a scalar (a number). The vector product (or "cross product") takes two vectors and results in a third vector. 
 
 The scalar product, $\vec a \cdot \vec b$, of two vectors $\vec a$ and $\vec b$, is defined as the following:
-\begin{align*}
+```math
 \vec a \cdot \vec b=a_xb_x +a_yb_y
-\end{align*}
+```
 That is, one multiplies the individual components of the two vectors and then adds those products for each component. This is easily extended to the three dimensional case by adding a term $a_zb_z$ to the sum. The scalar product is also related to the angle between the two vectors when the vectors are placed "tail to tail", as in [](#fig:Vectors:scalarproduct)
-\begin{align*}
+```math
 \vec a \cdot \vec b= ab\cos\theta
-\end{align*}
+```
 
 ```{figure} figures/Vectors/scalarproduct.png
 :label: fig:Vectors:scalarproduct
@@ -383,11 +382,11 @@ Using the right hand rule for cross products to find the direction of the cross 
 ```
 
 The unit vectors that define a coordinate system have the following properties relative to the cross product:
-\begin{align*}
+```math
 \hat x \times \hat y &= \hat z\\
 \hat y \times \hat z &= \hat x\\
 \hat z \times \hat x &= \hat y\\
-\end{align*}
+```
 For these properties to be correct, it should be noted that the direction of the $z$ axis in three dimensions is specified by the choice of $x$ and $y$ axes. That is, one can freely choose the direction of the $x$ and $y$ axes, which then define a plane to which the $z$ axis will be perpendicular. The direction of the $z$ axis must be chosen so that $\hat x \times \hat y = \hat z$ (this guarantees that the coordinate system is "right handed"), as in [](#fig:Vectors:xyzaxis).
 ```{figure} figures/Vectors/xyzaxis.png
 :label: fig:Vectors:xyzaxis
@@ -396,6 +395,88 @@ For these properties to be correct, it should be noted that the direction of the
 :alt: Two possible orientations for a three dimensional coordinate system. You can confirm using the right hand rule that the $z$ axis is the cross product $\hat x \times \hat y$.
 Two possible orientations for a three dimensional coordinate system. You can confirm using the right hand rule that the $z$ axis is the cross product $\hat x \times \hat y$.
 ```
+# Exploring Vectors with Simulations
+
+## Using PhET to Explore Vector Properties
+The properties of vectors described in this section can be explored using the Phet Simulation in [](#chap:vectors:PhET). To begin, click on the "Explore 2D". Drag a vector $\vec{a}$ onto the graph, and place it anywhere. Take note of the vector properties.
+* magnitude, $\lvert\vec{a}\rvert=\lvert\lvert\vec{a}\rvert\rvert$
+* angle, $\theta$
+* $x$-component, $a_x$
+* $y$-component, $a_y$
+
+Move the vector so that its tail is at the origin. Then, move the vector somewhere else. These properties do not change with location, indicating vectors **have no location**. Calculate the vector components using trigonometry.
+```math
+a_x = \lvert\vec{a}\rvert \cos\theta\\
+a_y = \lvert\vec{a}\rvert \sin\theta
+```
+:::{iframe}https://phet.colorado.edu/sims/html/vector-addition/latest/vector-addition_all.html
+:label: chap:vectors:PhET
+:width: 100%
+:align: center
+A PhET simulation to explore vector properties.
+:::
+
+Click on the "Equations" tab. The simulation has two vectors $\vec{a}$ and $\vec{b}$ drawn along with their sum $\vec{c}$. Drag these vectors so that the head of $\vec{a}$ meets the tail of $\vec{b}$. Vector $\vec{c}$ can be moved to go from the tail of $\vec{a}$ to the head $\vec{b}$. This is how we draw the sum of two vectors. Therefore, $\vec{c}= \vec{a}+\vec{b}$. Verify that adding the components of $\vec{a}$ and $\vec{b}$ gives the vector $\vec{c}$. Using the "Base Vectors" dropdown, you can modify the vectors to see how changing their components changes their length and angles. The vector $\vec{c}$ will always result in their sum. 
+
+What happens when we subtract vectors. Subtracting is the same as adding the negative of a vector, that is, making each component the negative of its value. Explore how subtracting a vector changes the resulting $\vec{c}.
+
+## Drawing Vectors in VPython
+We can create our own vector simulations using the VPython trinket in [](#chap:vectors:vectortrinket). Clicking the button to run the simulation shows the cartesian unit vectors located at the origin for reference. In VPython we can define a cartesian vector in two ways.
+```python
+r1 = vec(1, 2, 3)
+r1 = vector(1, 2, 3)
+```
+This could be an indication of the position of the object relative to an origin `O = vec(0,0,0)`. We draw a vector using the `arrow` object and give it the name `arw1` pointing to this position. The `arrow` object will place the tail of the arrow at `pos=vec(x, y, z)`. The head of the arrow will be located by the `axis=vec(x2, y2, z2)`, where the head is at the position corresponding to `pos + axis`. This code will place a vector tail at the origin and the head at $\vec{r}_1=1\hat{i}+2\hat{j}+3\hat{k}$.
+```python
+r1 = vec(1, 2, 3)
+arw1 = arrow(pos=vec(0,0,0), axis=r1, color=color.white)
+```
+Copy this code at the bottom of the trinket below to see how it draws the arrow.
+:::{iframe} https://trinket.io/embed/glowscript/ad8349ada0?toggleCode=true
+:label: chap:vectors:vectortrinket
+:width: 100%
+:align: center
+A trinket with unit vectors to simulate various vectors.
+:::
+Change the tail position to `(1,1,1)` to see how the vector moves in 3D space. The magnitude of a vector $\vec{a}$ can be calculated in VPython as
+```python
+mag(a)
+```
+Use this to calculate the magnitude of `r1` and print the value using `print(mag(r1))`. The angle a vector makes with respect to the $x$-axis can be calculated in VPython as
+```python
+diff_angle(a, vec(1,0,0))
+```
+Use this to calculate the angle of `r1` and print the angle value. The angle will be in radians.
+
+In VPython, the objects attributes can be manipulated mathematically. For example, two vectors drawn as arrows `arw1` and `arw2` can be added together.
+```python
+r1 = vec(1,1,0)
+r2 = vec(1,-1,0)
+arw1 = arrow(pos=vec(0,0,0), axis=r1, color=color.cyan)
+arw2 = arrow(pos=r1, axis=r2, color=color.yellow)
+arw3 = arrow(pos=arw1.pos, axis=arw1.axis+arw2.axis, color=color.magenta)
+print(arw3.axis)
+```
+
+:::{note} Example 3.2
+:label: Example-3.2
+Create arrows `arwa` and `arwb` corresponding to the vectors $\vec{a}=(0,5,0)$ and $\vec{b}=(5,5,0)$, where $\vec{a}$ begins at the origin and $\vec{b}$ begins at the head of $\vec{a}$. These are the default vectors in the PhET "Equations" simulation. Create a third arrow `arwc` corresponding to the sum $\vec{a}+\vec{b}$. Place the tail of this arrow at the tail of $\vec{a}$. 
+* Confirm the vectors have the same appearance as the PhET simulation. 
+* Confirm the magnitudes and angles of the vectors are the same as shown in the PhET simulation. 
+* Confirm the vector sum $\vec{c}$ is the same as the PhET simulation.
+:::{note} Solution
+:class: dropdown
+```python
+arwa = arrow(pos=vec(0,0,0), axis=vec(0,5,0), color=color.cyan, shaftwidth=0.5)
+arwb = arrow(pos=arwa.axis, axis=vec(5,5,0), color=color.cyan, shaftwidth=0.5)
+arwc = arrow(pos=arwa.pos, axis=arwa.axis+arwb.axis, color=color.white, shaftwidth=0.5)
+print("mag of a =", mag(arwa.axis))
+print("angle of a =", diff_angle(arwa.axis, vec(1,0,0))*180/pi)
+print("mag of b =", mag(arwb.axis))
+print("angle of b =", diff_angle(arwb.axis, vec(1,0,0))*180/pi)
+print("vector c =", arwc.axis)
+```
+:::
 
 # Example uses of vectors in physics
 This section gives a quick overview of some applications of vectors in physics.
@@ -405,15 +486,15 @@ Kinematics is the description of the position and motion of an object (Chapters 
 We often use a **position vector**, $\vec r(t)$, to describe the position of an object as a function of time. Because the object can move, the position vector is a function of time. A position vector is a special vector in the sense that it should be considered to be fixed in space; the position vector for an object points from the origin of a coordinate system to the location of the object. 
 
 The three components of the position vector in Cartesian coordinates, are the $x$, $y$, and $z$ coordinates of the object:
-\begin{align*}
+```math
 \vec r(t) = \begin{pmatrix}
            x(t) \\
            y(t) \\
            z(t) \\
          \end{pmatrix}
-\end{align*}  
+```
 where the three coordinates of the object are functions of time if the object can move. Suppose that the object was initially at position $\vec r_1=(x_1, y_1, z_1)$ at some time $t=t_1$, and that later, at time $t=t_2$, the object was at as second position, $\vec r_2=(x_2, y_2, z_2)$. We can define the **displacement vector**, $\vec  d$, as the vector from position $\vec r_1$ to position $\vec r_2$:
-\begin{align*}
+```math
  \vec d = \vec r_2 - \vec r_1 =\begin{pmatrix}
            x_2-x_1 \\
            y_2-y_1 \\
@@ -423,12 +504,12 @@ where the three coordinates of the object are functions of time if the object ca
            \Delta y \\
            \Delta z \\
          \end{pmatrix}
-\end{align*}
+```
 The displacement vector is such that one can add the vector $\vec d$ to the vector $\vec r_1$ to describe the new position of the object at time $t_2$:
-\begin{align*}
+```math
 \vec d &= \vec r_2 - \vec r_1\\
 \therefore \vec r_2 &= \vec r_1 + \vec d
-\end{align*}
+```
 The components of the displacement vector, $\Delta x$, $\Delta y$, and $\Delta z$ correspond to the displacements (the distance travelled) along the $x$, $y$, and $z$ axes, respectively. This is illustrated for the two dimensional case in [](#fig:Vectors:xydvec).
 
 ```{figure} figures/Vectors/xydvec.png
@@ -440,15 +521,15 @@ Illustration of a displacement vector, $\vec d = \vec r_2 -\vec r_1$, for an obj
 ```
 
 The velocity vector of the object, $\vec v=(v_x, v_y, v_z)$, is defined to be the displacement vector, $\vec d$, divided by the amount of time (a scalar) that elapsed, $\Delta t=t_2-t_1$, while the object moved by the corresponding displacement:
-\begin{align*}
+```math
 \vec v = \frac{\vec d}{\Delta t}=\begin{pmatrix}
            \frac{\Delta x}{\Delta t} \\
            \frac{\Delta y}{\Delta t} \\
            \frac{\Delta z}{\Delta t} \\
          \end{pmatrix}
-\end{align*}
+```
 We used the property that dividing a vector by a scalar ($\Delta t$) is defined as dividing each component by the scalar. If we write the components of the velocity vector out explicitly, we have:
-\begin{align*}
+```math
 \begin{pmatrix}
            v_x \\
            v_y \\
@@ -458,33 +539,33 @@ We used the property that dividing a vector by a scalar ($\Delta t$) is defined 
            \frac{\Delta y}{\Delta t} \\
            \frac{\Delta z}{\Delta t}
          \end{pmatrix}
-\end{align*}
+```
 That is, we can think of each row in this "vector equation" as an independent equation. That is, when we write the vector equation:
-\begin{align*}
+```math
 \vec v = \frac{\vec d}{\Delta t}
-\end{align*}
+```
 we are really just using a shorthand notation for writing the three **independent** equations that are true for each individual component of the vectors:
-\begin{align*}
+```math
 v_x &= \frac{\Delta x}{\Delta t} \\
 v_y &= \frac{\Delta y}{\Delta t} \\
 v_z &= \frac{\Delta z}{\Delta t} \\
-\end{align*}
+```
 Whenever we write an equation using vectors, we are really writing out multiple equations all at once, one for each component. Newton's Second Law:
-\begin{align*}
+```math
 \vec F = m \vec a
-\end{align*}
+```
 thus corresponds to the three (scalar) equations:
-\begin{align*}
+```math
 F_x &= ma_x\\
 F_y &= ma_y\\
 F_z &= ma_z\\
-\end{align*}
+```
 
 ## Work and scalar products
 As we will see, "work" is a scalar quantity that allows us to determine the change in the speed (squared) of an object that results from a force exerted over a particular displacement (Chapter [](#chap:workenergy)). Both force and the displacement are vector quantities (a force has a magnitude and is exerted in a particular direction). The work, $W$, done by a force, $\vec F$, over a displacements, $\vec d$, is defined as:
-\begin{align*}
+```math
 W = \vec F \cdot \vec d
-\end{align*}
+```
 The work energy theorem tells us that this work is related to the change in speed squared of the object as it moves along the displacement vector $d$. If the work is zero, the object has the same speed at the beginning and end of the displacement. If the work is positive, the object is moving faster at the end of the displacement (and slower if the work is negative). A one dimensional example is shown in [](#fig:Vectors:work_scalarprod), which shows a force $\vec F$ being applied to a block as it slides along the ground over a distance $d$ (represented by the displacement vector $\vec d$).  
 
 ```{figure} figures/Vectors/work_scalarprod.png
@@ -496,9 +577,9 @@ Example of a force $\vec F$ being applied on an object as it moves along the dis
 ```
 
 Intuitively, it makes sense that only the horizontal component of the force would contribute to changing the speed of the object as it moves along the horizontal trajectory defined by the vector $\vec d$. The vertical component of the force does not contribute to changing the speed of the object. Thus, the work (the change in speed), should only depend on the component of the force that is parallel to the displacement vector. The scalar product allows us to formalize this in an equation. The scalar product is given by:
-\begin{align*}
+```math
 \vec F \cdot \vec d = Fd\cos\theta = F_{\parallel}d
-\end{align*}
+```
 where we introduced $F_{\parallel} = F\cos\theta$ as the component of $\vec F$ that is parallel to $\vec d$ (see [](#fig:Vectors:work_scalarprod)). The scalar product thus "picks out" the component of $\vec F$ that is parallel to $\vec d$, which is exactly what we need to in order for work to make sense.
 
 (sec:Vectors:rotationalmotion)=
@@ -541,13 +622,13 @@ Left: The angular velocity vector for the rotation of the wheels, $\vec \omega$,
 
 ## Torque and vector products
 We will introduce the concept of a torque in order to describe how a force can cause an object to rotate. Consider the disk illustrated in [](#fig:Vectors:torque_vectorprod) that is free to rotate about an axis that goes through its centre and that is perpendicular to the plane of the page. A force $\vec F$ is applied at the edge of the disk (imagine pulling on a string attached to the edge of the disk), at a position that is displaced from the axis of rotation by the vector $\vec r$. The torque, $\vec \tau$, of the force about the centre of the disk is defined to be:
-\begin{align*}
+```math
 \vec\tau=\vec r\times \vec F
-\end{align*}
+```
 and represents how much the force $\vec F$ will contribute to making the disk rotate about its axis. If the force vector were parallel to the vector $\vec r$, the disk would not rotate; if you pull outwards on a disk, it will not rotate about its centre. However, if the force is perpendicular to the vector $\vec r$ (i.e. tangent to the circumference of the disk), then it will maximally cause the disk to rotate. The magnitude of the torque (cross-product) is given by:
-\begin{align*}
+```math
 \tau =rF\sin\theta=F_{\perp}r=Fr_\perp
-\end{align*}
+```
 where $\theta$ is the angle between the vectors when placed tail to tail, as in the right side of [](#fig:Vectors:torque_vectorprod). In the last two equalities, we have defined $F_\perp=F\sin\theta$ or $r_\perp=r\sin\theta$ to refer to the part of the vector $\vec F$ that is perpendicular to the vector $\vec r$ or the part of the vector $\vec r$ that is perpendicular to the vector $\vec F$. That is, the vector product "picks out" the part of a vector that is perpendicular to the other, which is exactly the property that we need for the physical quantity of torque.
 
 ```{figure} figures/Vectors/torque_vectorprod.png
@@ -576,7 +657,7 @@ Referring to [](#fig:Vectors:torque_vectorprod), in which direction does the tor
 Cartesian coordinate systems can be defined using an origin, and mutually perpendicular axes that specify a direction in which each corresponding coordinate increases. The position of a point is described by the coordinates of the point (one coordinate per axis). Polar, cylindrical and spherical coordinate systems can be defined relative to a Cartesian coordinate system and sometimes facilitate the description of situations with cylindrical (azimuthal) or spherical symmetry. 
 
 Vectors can be represented by arrows and are quantities that have both a magnitude and a direction, as opposed to "scalars", which are simply numbers. Vectors are not fixed in space, so two vectors are equal if they have the same magnitude and direction, regardless of where they are drawn. We place a little arrow above a variable, $\vec d$, to indicate that it is a vector. There are several, equivalent, notations to indicate the components of a vector:
-\begin{align*}
+```math
 \vec d &= (d_x,d_y, d_z)\quad&\text{row vector}\\
        &=\begin{pmatrix}
            d_x \\
@@ -585,54 +666,54 @@ Vectors can be represented by arrows and are quantities that have both a magnitu
          \end{pmatrix}\quad&\text{column vector}\\
          &= d_x\hat x +d_y \hat y +d_z \hat z\quad&\text{using }\hat x,\;\hat y,\;\hat z\\
          &=d_x\hat i +d_y \hat j+d_z \hat k \quad&\text{using }\hat i,\;\hat j,\;\hat k
-\end{align*}
+```
 If we multiply (divide) a vector by a scalar, we multiply (divide) each component of the vector individually by that quantity. As a result, the magnitude of the vector will also be multiplied (divided) by that quantity:
-\begin{align*}
+```math
 a\vec d = \begin{pmatrix}
            ad_x \\
            ad_y \\
            ad_z \\
          \end{pmatrix}
-\end{align*}
+```
 In particular, we can define a unit vector, $\hat d$, to be a vector of length 1 in the same direction as $\vec d$, by simply dividing $\vec d$ by its magnitude, $d$:
-\begin{align*}
+```math
 \hat d = \frac{\vec d}{d}
-\end{align*}
+```
 where the magnitude of the vector, $||\vec d|| = d$, expressed in Cartesian coordinates, is given by:
-\begin{align*}
+```math
 ||\vec d|| = d =\sqrt{d_x^2+d_y^2+d_z^2}
-\end{align*}
+```
 We can add two vectors by independently adding the individual components of the vectors:
-\begin{align*}
+```math
 \vec c &= \vec a + \vec b\\
 \therefore c_x &= a_x + b_x\\
 \therefore c_y &= a_y + b_y\\
 \therefore c_z &= a_z + b_z
-\end{align*}
+```
 Graphically, this corresponds to adding vectors "head to tail". This also highlights that an equation written using vectors (as the first line above) really represents three independent equations, one for each coordinate of the vectors (or two in two dimensions). Subtraction of vectors is treated in the same way as addition (but using minus signs where appropriate).
 
 One can define the scalar (or dot) product between two vectors, as a scalar quantity that is obtained from the two vectors:
-\begin{align*}
+```math
 \vec a \cdot \vec b = a_xb_x + a_yb_y + a_zb_z
-\end{align*}
+```
 The scalar product is also related to the angle, $\theta$, between the two vectors when these are placed "tail to tail":
-\begin{align*}
+```math
 \vec a \cdot \vec b = ab\cos\theta
-\end{align*}
+```
 In particular, the scalar product between two vectors is zero if the two vectors are perpendicular to each other ($\cos\theta=0$), and maximal when these are parallel to each other.
 
 The vector (or cross) product between two vectors is a vector that is mutually perpendicular to both vectors and is defined as the following:
-\begin{align*}
+```math
 \vec a \times \vec b =\begin{pmatrix}
            a_yb_z - a_z b_y\\
            a_zb_x - a_x b_z\\
            a_xb_y - a_y b_x\\
          \end{pmatrix}
-\end{align*}
+```
 The vector product can only be defined in three dimensions, since it must be mutually perpendicular to the vectors. The magnitude of the vector product is given by:
-\begin{align*}
+```math
 || \vec a \times \vec b || = ab\sin\theta
-\end{align*}
+```
 where $\theta$ is the angle between the two vectors when these are placed tail to tail. In particular, the vector product between two vectors is zero if the two vectors are parallel to each other (and maximal when these are perpendicular). The direction of the vector product is given by the right-hand rule for the cross product.
 
 An axial vector can be used to describe a quantity that is related to rotation. The direction of the axial vector is co-linear with the axis of rotation, its magnitude is given by the magnitude of the rotational quantity (e.g. angular speed), and its direction is defined using the right-hand rule for axial vectors.
@@ -659,7 +740,7 @@ An axial vector can be used to describe a quantity that is related to rotation. 
 :class: dropdown
 :label: soln:vectors:multi
 * The displacement vector is given by:
-\begin{align*}
+```math
 \vec d = \begin{pmatrix}
            4\\
            5\\
@@ -673,16 +754,16 @@ An axial vector can be used to describe a quantity that is related to rotation. 
            3\\
            3\\
          \end{pmatrix}
-\end{align*}
+```
 * We can find the angle that this vector makes with the $x$ axis by taking the scalar product of the displacement vector and the unit vector in the $x$ direction (1,0,0):
-\begin{align*}
+```math
 \hat x \cdot \vec d = (1)(3)+(0)(3)+(0)(3) = 3
-\end{align*}
+```
 This is equal to the product of the magnitude of $\hat x $ and $\vec d$ multiplied by the cosine of the angle between them:
-\begin{align*}
+```math
 \hat x \cdot \vec d  &= ||\hat x||||\vec d||\cos\theta = (1)(\sqrt{3^2+3^2+3^2})\cos\theta= \sqrt{27}\cos\theta\\
  3 &= \sqrt{27}\cos\theta\\
  \therefore \cos\theta &= \frac{3}{\sqrt{27}} = \frac{1}{\sqrt{3}}\\
  \theta&= 54.7\text{\degree}
-\end{align*}
+```
 :::
