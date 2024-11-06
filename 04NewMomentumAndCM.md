@@ -1,5 +1,5 @@
 ---
-title: Chapter 4 NEW - Linear momentum and the centre of mass
+title: Chapter 4 Linear momentum and the centre of mass
 numbering:
   headings:
   heading_1:
@@ -11,6 +11,7 @@ numbering:
 In this chapter, we introduce the concepts of linear momentum and of centre of mass. Momentum is a quantity that, like energy, can be defined from Newton's Second Law, to facilitate building models. Since momentum is often a conserved quantity within a system, it can make calculations much easier than using forces. The concepts of momentum and of centre of mass will also allow us to apply Newton's Second Law to systems comprised of multiple particles including solid objects. 
 
 :::{hint} LearningObjectives
+* Understand the relationship between constant momentum and Newton's First Law
 * Understand how to calculate linear momentum.
 * Understand how to calculate impulse and that it corresponds to a change in momentum.
 * Understand when and how to apply conservation of linear momentum to model situations.
@@ -30,7 +31,7 @@ You hit a pool ball square on with the cue ball. If both balls have the same mas
 :::
 
 # Momentum and Newton's First Law
-Momentum is a quantity that describes an object's motion. Imagine an object that has a mass of 1 kg and a velocity of 1 m/s. Now, imagine doubling the mass. How would you say the object's motion has changed. It may help to think of the quantity of motion as "oomph". Does a more massive object have more or less oomph than a less massive object when they both move at the same speed? What if the 1 kg object doubles its speed? Does it have more oomph?
+Momentum is a quantity that describes an object's motion. Imagine an object that has a mass of 1 kg and a velocity of 1 m/s. Now, imagine doubling the mass and keeping the velocity constant. How would you say the object's motion has changed. It may help to think of the quantity of motion as "oomph". Does a more massive object have more or less oomph than a less massive object when they both move at the same speed? What if the 1 kg object doubles its speed? Does it have more oomph?
 
 In 1687, Sir Isaac Newton published his Philosophiae Naturalis Principia Mathematica, where, among other things, he detailed his three laws of motion. The first law is summarized as
 
@@ -44,9 +45,9 @@ We can define the momentum, $\vec p$, of a particle of mass $m$ and velocity $\v
 ```{math}
 \vec p = m\vec v
 ```
-Since this is a vector equation, it corresponds to three equations, one for each component of the momentum vector. It should be noted that the numerical value for the momentum of a particle is arbitrary, as it depends in which frame of reference the velocity of the particle is defined. For example, your velocity with respect to the surface of the Earth is zero, so your momentum relative to the surface of the Earth is zero. However, relative to the surface of the Sun, your velocity, and momentum, are not zero. As we will see, forces are related to a *changes* in momentum, just as they are related to a change in velocity (acceleration).
+Since this is a vector equation, it corresponds to three equations, one for each component of the momentum vector, which are defined by the velocity in each of the three dimensions. It should be noted that the numerical value for the momentum of a particle is arbitrary, as it depends in which frame of reference the velocity of the particle is defined. For example, your velocity with respect to the surface of the Earth may be zero, and so your momentum relative to the surface of the Earth is zero. However, relative to the surface of the Sun, your velocity, and momentum, are not zero. As we will see, forces are related to a *changes* in momentum, just as they are related to a change in velocity (acceleration).
 
-Consider a point particle moving at constant velocity such as a rock sliding across a frozen pond. If we capture an image of the rock at the same time we start a stopwatch ($t_o = 0 {\rm s}$), it might be located at a position 0.5 meters from the shore as shown in [](#fig:momentumandcm:constvelmotiona). We will designate the direction the rock slides as being along the $x$-axis.
+Consider a point particle[^5] moving at constant velocity such as a rock sliding across a frozen pond. If we capture an image of the rock at the same time we start a stopwatch ($t_o = 0 {\rm s}$), it might be located at a position 0.5 meters from the shore as shown in [](#fig:momentumandcm:constvelmotiona). We will designate the direction the rock slides as being along the $x$-axis.
 :::{figure}
 :label: fig:momentumandcm:constvelmotion
 :align: center
@@ -101,7 +102,7 @@ Since the position as a function of time for the ball plotted in [](#fig:Momentu
 :label: eqn:MomentumAndCM:1dxvst_noa
 x(t) = x_0 + v_x t
 ```
-The constant $x_0$ is the ``offset'' of the function; the value that the function has at $t= 0 {\rm s}$. We call $x_0$ the "initial position" of the object (its position at $t=0$). The constant $v_x$ is the "slope" of the function and gives the rate of change of the position as a function of time. We call $v_x$ the "velocity" of the object.
+The constant $x_0$ is the "offset" of the function; the value that the function has at $t= 0 {\rm s}$. We call $x_0$ the "initial position" of the object (its position at $t=0$). The constant $v_x$ is the "slope" of the function and gives the rate of change of the position as a function of time. We call $v_x$ the "velocity" of the object.
 
 The initial position is simply the value of the position at $t=0$, and is given from the table as:
 ```{math}
@@ -1357,7 +1358,7 @@ y_{CM}  &= \frac{1}{M}\int y dm =  \frac{1}{M}\int_0^\pi R\sin\theta \lambda Rd\
 ```
 where in the last equality, we used the expression for the mass per unit length, $\lambda$, obtained above.
 :::
-
+[^5]: A point particle is a convenient way to think about an object existing at a single point in space and ignoring complicating details about structure that do not affect the resulting physics.
 [^6]:Note that we are using primes ($'$) to denote quantities in a different reference frame, not after a collision.
 [^7]:In reality, even atoms in a solid can move relative to each other, but they do not move by large amounts compared to the object.
 [^8]:Again, we are summing together forces that are acting on **different** particles.
