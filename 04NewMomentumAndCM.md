@@ -126,7 +126,30 @@ Therefore, we can think of the position equation {eq}`eqn:MomentumAndCM:1dxvst_n
 x(t) = x_0 + \Delta x = x_0 + vt
 ```
 As long as the velocity is constant, we can use equation {eq}`eqn:MomentumAndCM:1dxvst_noa` to determine the position of an object between any two points in time.
-
+:::{note} Example 4.1
+In [](#fig:MomentumAndCM:motion1D), an object moves for ten seconds with varying velocities. Describe the motion vs. time. Make sure to include direction of the motion and state your answers as vectors.
+```{figure} ./figures/MomentumAndCM/motionDiagram.png
+:width: 100%
+:label: fig:MomentumAndCM:motion1D
+:align: center
+:alt: Plot of position as a function of time for an object moving at varying velocities.
+Plot of position as a function of time for an object moving at varying velocities.
+```
+:::{note} Solution
+:class: dropdown
+There are four different velocities, labeled a, b, c, d in [](#fig:MomentumAndCM:motion1DSoln). 
+```{figure} ./figures/MomentumAndCM/motionDiagramSoln.png
+:width: 100%
+:label: fig:MomentumAndCM:motion1DSoln
+:align: center
+:alt: Plot of position as a function of time for an object moving at varying velocities, labeled a, b, c, d.
+Plot of position as a function of time for an object moving at varying velocities, labeled a, b, c, d.
+```
+* During interval **a** from $t = 0$ to $t = 2$ seconds, the object moves from $x = 0$ to $x = 6$ meters, for a positive velocity in the $x$-direction of $\vec{v} = (6-0)/(2-0)\hat{x} = (3.00, 0, 0) {\rm m/s}$. 
+* During interval **b** from $t = 2$ to $t = 5$ seconds, the object moves from $x = 6$ to $x = 6$ meters, for a zero velocity (motionless) in the $x$-direction of $\vec{v} = (6-6)/(5-2) \hat{x} = (0, 0, 0) {\rm m/s}$.
+* During interval **c** from $t = 5$ to $t = 6$ seconds, the object moves from $x = 6$ to $x = 2$ meters, for a negative velocity in the $x$-direction of $\vec{v} = (2-6)/(5-2) \hat{x} = (-1.33, 0, 0){\rm m/s}$.
+* During interval **d** from $t = 6$ to $t = 10$ seconds, the object returns to its starting position, moving from $x = 2$ to $x = 0$ meters, for a negative velocity in the $x$-direction of $\vec{v} = (2-0)/(10-6) = (-0.50, 0, 0) {\rm m/s}$.
+:::
 ### Simulating the rock
 :::{caution} Review
 Before proceeding, you may wish to review:
@@ -146,7 +169,7 @@ rock.vel = vec(0.5, 0, 0)
 ```
 We can visualize the velocity with a vector arrow that remains attached to the rock's position and has a length that is the magnitude of the velocity. To do this we write the following code.
 ``` python
-arrow(pos=rock.pos, axis=rock.vel, color=color.white)
+arr = arrow(pos=rock.pos, axis=rock.vel, color=color.white)
 ```
 Try, putting these three lines of code in the trinket below and see what happens when you run the program.
 :::{iframe} https://trinket.io/embed/glowscript/8f1815879d
@@ -156,6 +179,22 @@ Try, putting these three lines of code in the trinket below and see what happens
 A blank trinket to simulate a rock sliding on a frozen pond.
 :::
 
+This code draws the rock and the velocity vector, but it does not simulate the motion. To simulate the motion, we need to update the position of the rock as time progresses. We can use a loop to repeat calculations of the position. For example, we can repeat the calculations `while` the time is less than 2 seconds. Each time the position is calculated, we will add a small increment of time for the next calculation. Here is an example where we start at time $t=0$ and increment the position every $\Delta t = 0.1 {\rm s}$.
+```python
+t = 0
+delta_t = 0.1
+while t<2:
+	rate(10)
+	rock.pos = rock.pos + rock.vel * delta_t #update the rock position
+	arr.pos = rock.pos #update the velocity arrow position
+	t = t + delta_t #increment the time
+```
+Try this code and see that the rock moves. A trail can be added to see where the rock was in the past.
+
+```python
+rock.make_trail=True
+```
+	
 ## Non-constant Momentum
 If the particle has a constant mass, then the time derivative of its momentum is given by:
 ```{math}
