@@ -651,14 +651,7 @@ E=\lim_{R\to\infty}2\pi k  \sigma\left(1-\frac{a}{R^2+a^2} \right)=2\pi k\sigma=
 ```
 where we used $\epsilon_0$ in the last equality as the result is a little cleaner without the factors of $\pi$. Note that for an infinite plane of charge, the electric field does not depend on the distance (our variable $a$) from the plane!
 
-**Discussion:** In this example, we showed how we can model a two-dimensional charge distribution as the sum of one-dimensional charge distributions. In particular, we showed that an infinite plane of charge can be modelled as the sum of many lines charges or of many rings of charge (we chose the latter in the above). See [](#trinket:chargesfields:E_disk) for an animation of this sum. We also found that the electric field above an infinite plane of charge does not depend on the distance from the plane; that is, the electric field is constant above an infinite plane of charge. 
-:::
-
-:::{iframe} https://trinket.io/embed/glowscript/ad952d591dc0?outputOnly=true&start=result
-:label: trinket:chargesfields:E_disk
-:width: 100%
-:align: center
-A trinket animation of summing rings for the electric field of a disk.
+**Discussion:** In this example, we showed how we can model a two-dimensional charge distribution as the sum of one-dimensional charge distributions. In particular, we showed that an infinite plane of charge can be modelled as the sum of many lines charges or of many rings of charge (we chose the latter in the above). We also found that the electric field above an infinite plane of charge does not depend on the distance from the plane; that is, the electric field is constant above an infinite plane of charge. 
 :::
 
 :::{attention} Josh's Thoughts

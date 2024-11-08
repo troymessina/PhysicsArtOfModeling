@@ -212,7 +212,7 @@ The equation above is the original form in which Newton first developed his theo
 \frac{dp_z}{dt} =& \sum F_z
 ```
 
-:::{note} Example 4.1
+:::{note} Example 4.2
 A particle of mass $m$ is released from rest and allowed to fall freely under the influence of gravity near the Earth's surface (assume that drag is negligible). Is the mechanical energy of the particle conserved? Is the momentum of the particle conserved? If momentum is not conserved, how does momentum change with time? Do your answers change if the force of drag cannot be ignored?}
 :::{note} Solution
 :class: dropdown
@@ -274,7 +274,7 @@ What is the SI unit for impulse?
 3.
 :::
 
-:::{note} Example 4.2
+:::{note} Example 4.3
 Estimate the impulse that is given to someone's hand when they swat a fly on the surface of a table.
 :::{note} Solution
 :class: dropdown
@@ -311,7 +311,7 @@ and we find that the net impulse received by a particle is precisely equal to it
 ```
 This is similar to the statement that the net work done on an object corresponds to its change in kinetic energy, although one should keep in mind that momentum is a vector quantity, unlike kinetic energy.
 
-:::{note} Example 4.3
+:::{note} Example 4.4
 A car moving with a speed of $100 {\rm km/h}$ collides with a building and comes to a complete stop. The driver and passenger each have a mass of $80 {\rm kg}$. The driver wore a seat belt that extended during the collision, so that the force exerted by the seatbelt on the driver acted for about $2.5 {\rm s}$. The passenger did not wear a seat belt and instead was slowed down by the force exerted by the dashboard, over a much smaller amount of time, $0.2 {\rm s}$. Compare the average decelerating force experienced by the driver and the passenger.
 :::{note} Solution
 :class: dropdown
@@ -442,7 +442,7 @@ In summary, we saw that:
  
 When we refer to a force being "exerted on a system", we mean exerted on one or more of the particles in the system. In particular, the sum of the work done by internal forces is not necessarily zero, so **energy and momentum are thus conserved under different conditions**.
 
-:::{note} Example 4.4
+:::{note} Example 4.5
 ```{figure} figures/MomentumAndCM/train.png
 :label: fig:momentumandcm:train
 :width: 80%
@@ -499,7 +499,7 @@ We distinguish between two types of collisions: **elastic** and **inelastic** co
 
 ## Inelastic collisions
 In this section, we give a few examples of modelling inelastic collisions. Inelastic collisions are usually easier to handle mathematically, because one only needs to consider conservation of momentum and does not use conservation of energy (which usually involves equations that are quadratic in the speeds because of the kinetic energy term). 
-:::{note} Example 4.5
+:::{note} Example 4.6
 ```{figure} figures/MomentumAndCM/skaters.png
 :label: fig:momentumandcm:skaters
 :width: 40%
@@ -533,7 +533,7 @@ We also saw that mechanical energy was not conserved. In terms of energy, we can
 The type of collision that we described here is also sometimes called an "explosion". You can imagine all of the parts that make up a bomb as small particles. When the bomb explodes, chemical potential energy is converted into the kinetic energy of the bomb fragments. If you consider all of the particles/fragments of the bomb as a system, then the total momentum of all of the bomb fragments is conserved (and equal to zero if the bomb was initially at rest). Again, mechanical energy would not be conserved (and would increase) as the chemical potential energy is converted into mechanical energy.
 :::
 
-:::{note} Example 4.6
+:::{note} Example 4.7
 A proton of mass $m_p$ and initial velocity $\vec v_p$ collides inelastically with a nucleus of mass $m_N$ at rest, as shown in [](#fig:momentumandcm:protonnucleus). A coordinate system is set up as shown, such that the initial velocity of the proton is in the $x$ direction. After the collision, the proton's speed is measured to be $v'_p$ and its velocity vector is found to make an angle $\theta$ with the $x$ axis as shown. What is the velocity vector of the nucleus after the collision? Assume that the collision takes place in vacuum.
 ```{figure} figures/MomentumAndCM/protonnucleus.png
 :label: fig:momentumandcm:protonnucleus
@@ -589,7 +589,7 @@ If we were given numbers for the initial and final speed of the proton, as well 
 In this section, we give a few examples of modelling elastic collisions. Even though it is mechanical energy that is conserved in an elastic collision, one can almost always simplify this to only kinetic energy being conserved. If a collision takes place in a well localized position in space (i.e. before and after the collision are the same point in space), then the potential energies of the objects involved will not change, thus any change in their mechanical energy is due to a change in kinetic energy.
 
 (ex:momentumandcm:1delastic)=
-:::{note} Example 4.7
+:::{note} Example 4.8
 :label: ex:momentumandcm:1delastic
 ```{figure} figures/MomentumAndCM/1delastic.png
 :label: fig:momentumandcm:1delastic
@@ -687,7 +687,7 @@ Two trains of equal masses collide elastically on a track. If train A had a spee
 2.
 :::
 
-:::{note} Example 4.8
+:::{note} Example 4.9
 ```{figure} figures/MomentumAndCM/protonproton.png
 :label: fig:momentumandcm:protonproton
 :width: 70%
@@ -763,7 +763,7 @@ Again, you should note that because the above equation is a vector equation, it 
 \therefore  v_{CMx} = \frac{m_1 v_{1x} + m_2v_{2x} + m_3 v_{3x} + \dots }{m_1+m_2+m_3+\dots}=\frac{\sum m_iv_{ix}}{\sum m_i}
 ```
 
-:::{note} Example 4.9
+:::{note} Example 4.10
 ```{figure} figures/MomentumAndCM/labframe.png
 :label: fig:momentumandcm:labframe
 :width: 40%
@@ -911,7 +911,7 @@ Finally, we can also define the acceleration of the centre of mass by taking the
 \therefore a_{CMz} &= \frac{1}{M}\sum_i m_i a_{iz}
 ```
 
-:::{note} Example 4.10
+:::{note} Example 4.11
 ```{figure} figures/MomentumAndCM/sunearthmars.png
 :label: fig:momentumandcm:sunearthmars
 :width: 70%
@@ -936,7 +936,7 @@ The centre of mass of the Sun-Earth-Mars system during a syzygy is located appro
 **Discussion:** The radius of the Sun is approximately $700000 {\rm km}$, so the centre of mass of the system is well inside of the Sun. The Sun is so much more massive than either of the Earth or Mars, that the two planets hardly contribute to shifting the centre of mass away from the centre of the Sun. We would generally consider the masses of the two planets to be negligible if one wanted to model how the solar system itself moves around the Milky Way galaxy.
 :::
 
-:::{note} Example 4.11
+:::{note} Example 4.12
 ```{figure} figures/MomentumAndCM/cmraft.png
 :label: fig:momentumandcm:cmraft
 :width: 70%
@@ -1029,7 +1029,7 @@ In general, for a continuous object, the position of the centre of mass is given
 \therefore z_{CM} &=  \frac{1}{M}\int z dm\\
 ```
 where in general, one will need to write $dm$ in terms of something that depends on position (or a constant) so that the integrals can be evaluated over the spatial coordinates ($x$,$y$,$z$) over the range that describe the object. In the above, we wrote $dm = \lambda dx$ to express the mass element in terms of spatial coordinates.
-:::{note} Example 4.12
+:::{note} Example 4.13
 ```{figure} figures/MomentumAndCM/cmbowl.png
 :label: fig:momentumandcm:cmbowl
 :width: 50%
