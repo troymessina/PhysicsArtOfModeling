@@ -255,7 +255,7 @@ You drive to Lexington from Berea each weekend to attend a horse-riding training
 	* There could be tailwinds and headwinds that speed up and slow down the car.
 * c)
 	* Repeat tests on days with no wind to eliminate tailwind and headwind effects.
-	* Be careful about starting and stopping your watch at the same locations to eliminate timing effects.
+	* Construct a method for starting and stopping your watch at the same locations to eliminate timing effects.
 :::
 
 [^1]:Neutrinos are the lightest subatomic particles that we know of.
