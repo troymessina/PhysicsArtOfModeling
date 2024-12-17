@@ -106,7 +106,7 @@ With this analogy, we can quickly see that the "model" and "theory" are not inte
 :::
 
 :::{tip} Checkpoint
-Models cannot be scientifically tested, only theories can be tested.}
+Models cannot be scientifically tested, only theories can be tested.
 1.  True
 2.  False 
 :::{tip} Answer
@@ -117,7 +117,7 @@ Models cannot be scientifically tested, only theories can be tested.}
 # Fighting intuition
 It is important to remember to fight one's intuition when applying the scientific method. Certain theories, such as Quantum Mechanics, are very counter-intuitive. For example, in Quantum Mechanics, an object can be described as being in two locations at the same time. In the Theory of Special Relativity, it is possible for two people to disagree on whether two events occurred at the same time. These particular predictions from these theories have not been invalidated by any experiment.
 
-There is no requirement in science that a theory be "pretty" or intuitive. The only requirement is that a theory describe experimental data. One should then take care in not forcing one's preconceived notions into interpreting a theory. For example, Quantum Mechanics does not actually predict that objects can be in two locations at once, only that objects behave *as if* they were in two locations at once. A famous example is Schr\"odinger's cat, which can be modelled as being both alive and dead at the same time. However, just because we model it that way does not mean that it really is alive and dead at the same time. 
+There is no requirement in science that a theory be "pretty" or intuitive. The only requirement is that a theory describe experimental data. One should then take care in not forcing one's preconceived notions into interpreting a theory. For example, Quantum Mechanics does not actually predict that objects can be in two locations at once, only that objects behave *as if* they were in two locations at once. A famous example is Schrödinger's cat, which can be modelled as being both alive and dead at the same time. However, just because we model it that way does not mean that it really is alive and dead at the same time. 
 
 # The scope of Physics
 Physics describes a wide range of phenomena within the physical sciences, ranging from the behaviour of microscopic particles that make up matter to the evolution of the entire Universe. We often distinguish between "classical" and "modern" physics depending on when the theories were developed, and we can further subdivide these areas of physics depending on the scale or the type of the phenomena that they describe.
@@ -135,7 +135,7 @@ Following the 1781 discovery of the planet Uranus by William Herschel, astronome
 In 1859, Urbain Le Verrier also noted that Mercury's orbit around the Sun is different than that predicted by Newton's theory. Again, a new planet was proposed, "Vulcan", but that planet was never discovered and the deviation of Mercury's orbit from Newton's prediction remained unexplained until 1915, when Albert Einstein introduced a new, more complete, theory of gravity, called "General Relativity". This is a good example of the scientific method; although the discovery of Neptune was consistent with Newton's theory, it did not prove that the theory is correct, only that it correctly described the motion of Uranus. The discrepancy that arose when looking at Mercury ultimately showed that Newtons' theory of gravity fails to provide a proper description of planetary orbits in the proximity of very massive objects (Mercury is the closest planet to the Sun). 
 
 :::{tip} Checkpoint
-What did the inability to find the planet Vulcan show:}
+What did the inability to find the planet Vulcan show:
 1.  It showed that Newton's model of Mercury was correct. 
 2.  It showed that Newton's theory did not correctly describe the orbits of all planets.
 3.  It showed that the technology at the time was inadequate. 
@@ -214,23 +214,24 @@ Physics covers a wide scale of phenomena ranging from the Universe down to subat
 * Before discovering the CMBR (Cosmic Microwave Background Radiation), scientists Arno Penzias and Robert Wilson were trying to detect radio waves with very sensitive antennae. The very first time they heard a consistent, low noise on their detectors they discovered that it was (mostly) not the CMBR. What was causing most of this noise?
 * Physicist Lene Hau first slowed a beam of light to $17 {\rm m/s}$ using a very cold, dilute gas of bosons. In 2001, she improved on this result further; at which speed was she able to slow a beam of light?
 * Think of two theories that you use in your every day life. (For example, when we wash our hands, we do so because of the germ theory of disease!)
+* What are the "grand challenges" facing physics and engineering in the 21st century?
 :::
 
 
 # Sample problems and solutions
 
 ## Problems
+(prob:introduction:chemtrails)=
 :::{note}Problem 1.1
-:label: prob:introduction:chemtrails 
 Your friend Martin loves to explore "conspiracy theories". His favourite theory involves "Chem Trails". He tells you that the government is secretly using airliners to spread chemicals in the atmosphere for some unknown reason.
 * Think of 2 ways in which you could objectively test Martin's theory.
 * After proposing your experiment to Martin, he claims that his theory cannot be invalidated by any experiment, no matter how scientifically rigorous the experiment is. Is Martin correct?
 :::
 
 ## Solutions
+(soln:introduction:chemtrails)=
 :::{note}Solution .1
 :class: dropdown
-:label: soln:introduction:chemtrails
 
 * a) You could do an investigation to see if the government is spreading chemicals, and try to find out why. You could make measurements of the contents in the atmosphere before and after an airline passes to see if any unexpected chemicals show up.
 
