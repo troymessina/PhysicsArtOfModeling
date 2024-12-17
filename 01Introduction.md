@@ -228,14 +228,34 @@ Your friend Martin loves to explore "conspiracy theories". His favourite theory 
 * After proposing your experiment to Martin, he claims that his theory cannot be invalidated by any experiment, no matter how scientifically rigorous the experiment is. Is Martin correct?
 :::
 
+(prob:introduction:uncertainty)=
+:::{note}Problem 1.2
+You drive to Lexington from Berea each weekend to attend a horse-riding training. Each time you drive, you set your car's cruise control to 75 miles per hour. The drive on interstate 75 is 35 miles. For six weeks, you make this drive without any traffic. You record the  times the drive takes as 28.00, 27.50, 27.80, 28.40, 28.25, and 28.12 minutes.
+* a) Think of as many explanations as possible for the time not being consistent for all six trips to Lexington.
+* b) Rank your answers from most to least likely.
+* c) Explain how you could eliminate one or more of your explanations through experiment.
+:::
+
 ## Solutions
 (soln:introduction:chemtrails)=
-:::{note}Solution .1
+:::{note}Solution 1.1
 :class: dropdown
 
 * a) You could do an investigation to see if the government is spreading chemicals, and try to find out why. You could make measurements of the contents in the atmosphere before and after an airline passes to see if any unexpected chemicals show up.
 
 * b) No he is not, as you just proposed two experiments that could invalidate his theory.
+:::
+
+(soln:introduction:uncertainty)=
+:::{note}Solution 1.2
+:class: dropdown
+* a) and b)
+	* The cruise control may have some uncertainty associated with the set speed.
+	* You start and stop your watch at slightly different locations.
+	* There could be tailwinds and headwinds that speed up and slow down the car.
+* c)
+	* Repeat tests on days with no wind to eliminate tailwind and headwind effects.
+	* Be careful about starting and stopping your watch at the same locations to eliminate timing effects.
 :::
 
 [^1]:Neutrinos are the lightest subatomic particles that we know of.
