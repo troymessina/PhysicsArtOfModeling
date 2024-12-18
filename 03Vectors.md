@@ -38,7 +38,7 @@ A 1d coordinate system describing the position of a train. The Kingston train st
 ## 2D Coordinate systems
 ```{figure} figures/Vectors/xyp.png
 :label: fig:Vectors:xyp
-:width: 100%
+:width: 50%
 :align: center
 :alt: Example of Cartesian coordinate system and a point $P$ with coordinates $(x_p,y_p)$.
 Example of Cartesian coordinate system and a point $P$ with coordinates $(x_p,y_p)$.
@@ -52,7 +52,7 @@ To fully describe the position of an object, we must specify both its position a
 [](#fig:Vectors:xyslant) shows a coordinate system that is not orthogonal (where the $x$ and $y$ axes are not perpendicular). Which value on the figure correctly indicates the $y$ coordinate of point $P$?
 ```{figure} figures/Vectors/xyslant.png
 :label: fig:Vectors:xyslant
-:width: 100%
+:width: 50%
 :align: center
 :alt: A non-orthogonal coordinate system (the $x$ and $y$ axes are not perpendicular).
 A non-orthogonal coordinate system (the $x$ and $y$ axes are not perpendicular).
@@ -72,7 +72,7 @@ Another common choice is a "polar" coordinate system, where the position of an o
 
 ```{figure} figures/Vectors/polarp.png
 :label: fig:Vectors:polarp 
-:width: 100%
+:width: 50%
 :align: center
 :alt: Example of a polar coordinate system and a point $P$ with coordinates $(r,\theta)$.
 Example of a polar coordinate system and a point $P$ with coordinates $(r,\theta)$.
@@ -104,7 +104,7 @@ Cylindrical coordinates can be thought of as an extension of the polar coordinat
 
 ```{figure} figures/Vectors/cylindricalcoordinates.png
 :label: fig:Vectors:cylindricalcoordinates
-:width: 100%
+:width: 50%
 :align: center
 :alt: Describing the position of $P$, located on the surface of a cylinder, in cylindrical coordinates.
 Describing the position of $P$, located on the surface of a cylinder, in cylindrical coordinates.
