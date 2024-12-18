@@ -122,7 +122,7 @@ Spherical coordinates are useful for describing situations that have spherical s
 
 ```{figure} figures/Vectors/sphericalcoordinates.png
 :label: fig:Vectors:sphericalcoordinates
-:width: 100%
+:width: 50%
 :align: center
 :alt: Describing the position of $P$, located on the surface of a sphere, in spherical coordinates.
 Describing the position of $P$, located on the surface of a sphere, in spherical coordinates.
@@ -142,7 +142,7 @@ Unlike a point in space, vectors **have no location**. That is, vectors are simp
 
 ```{figure} figures/Vectors/dvec.png
 :label: fig:Vectors:dvec
-:width: 100%
+:width: 50%
 :align: center
 :alt: A vector $\vec d$ shown twice, once with its Cartesian components ($d_x$, $d_y$) and once with its magnitude and direction ($d$, $\phi$).
 A vector $\vec d$ shown twice, once with its Cartesian components ($d_x$, $d_y$) and once with its magnitude and direction ($d$, $\phi$).
@@ -195,7 +195,7 @@ Illustrating a vector graphically in two dimensions is straightforward, but diff
 
 ```{figure} figures/Vectors/vector3d.png
 :label: fig:Vectors:vector3d
-:width: 100%
+:width: 50%
 :align: center
 :alt: Geometric representation of three vectors. The vector $\vec a$ lies in the plane of the page, the vector $\vec b$ is pointing out of the page, and the vector $\vec c$ is pointing into the page.
 Geometric representation of three vectors. The vector $\vec a$ lies in the plane of the page, the vector $\vec b$ is pointing out of the page, and the vector $\vec c$ is pointing into the page.
@@ -292,7 +292,7 @@ Geometrically, one can easily visualize the addition and subtraction of vectors.
 
 ```{figure} figures/Vectors/aplusbvec.png
 :label: fig:Vectors:aplusbvec
-:width: 100%
+:width: 50%
 :align: center
 :alt: Geometric addition of the vectors $\vec a$ and $\vec b$ by placing them "head to tail".
 Geometric addition of the vectors $\vec a$ and $\vec b$ by placing them "head to tail".
@@ -304,7 +304,7 @@ Now that we know how to add vectors, we can better understand the notation $\vec
 
 ```{figure} figures/Vectors/acomponents.png
 :label: fig:Vectors:acomponents
-:width: 300px
+:width: 50%
 :align: center
 :alt: Illustration that the notation $\vec a = a_x \hat x+ a_y\hat y$ is in fact the vector addition of $a_x \hat x$ and $a_y \hat y$.
 Illustration that the notation $\vec a = a_x \hat x+ a_y\hat y$ is in fact the vector addition of $a_x \hat x$ and $a_y \hat y$.
@@ -325,7 +325,7 @@ That is, one multiplies the individual components of the two vectors and then ad
 
 ```{figure} figures/Vectors/scalarproduct.png
 :label: fig:Vectors:scalarproduct
-:width: 100%
+:width: 50%
 :align: center
 :alt: Illustration of the angle between vectors $\vec a$ and $\vec b$ when these are placed tail to tail.
 Illustration of the angle between vectors $\vec a$ and $\vec b$ when these are placed tail to tail.
@@ -375,7 +375,7 @@ Geometrically, one can determine the direction of the cross product of two vecto
 
 ```{figure} figures/Vectors/righthandrule.png
 :label: fig:Vectors:righthandrule 
-:width: 100%
+:width: 70%
 :align: center
 :alt: Using the right hand rule for cross products to find the direction of the cross product of vectors $\vec a$ (upwards) and $\vec b$ (into the page).
 Using the right hand rule for cross products to find the direction of the cross product of vectors $\vec a$ (upwards) and $\vec b$ (into the page).
@@ -390,7 +390,7 @@ The unit vectors that define a coordinate system have the following properties r
 For these properties to be correct, it should be noted that the direction of the $z$ axis in three dimensions is specified by the choice of $x$ and $y$ axes. That is, one can freely choose the direction of the $x$ and $y$ axes, which then define a plane to which the $z$ axis will be perpendicular. The direction of the $z$ axis must be chosen so that $\hat x \times \hat y = \hat z$ (this guarantees that the coordinate system is "right handed"), as in [](#fig:Vectors:xyzaxis).
 ```{figure} figures/Vectors/xyzaxis.png
 :label: fig:Vectors:xyzaxis
-:width: 100%
+:width: 70%
 :align: center
 :alt: Two possible orientations for a three dimensional coordinate system. You can confirm using the right hand rule that the $z$ axis is the cross product $\hat x \times \hat y$.
 Two possible orientations for a three dimensional coordinate system. You can confirm using the right hand rule that the $z$ axis is the cross product $\hat x \times \hat y$.
@@ -514,7 +514,7 @@ The components of the displacement vector, $\Delta x$, $\Delta y$, and $\Delta z
 
 ```{figure} figures/Vectors/xydvec.png
 :label: fig:Vectors:xydvec
-:width: 100%
+:width: 50%
 :align: center
 :alt: Illustration of a displacement vector, $\vec d = \vec r_2 -\vec r_1$, for an object that was located at position $\vec r_1$ at time $t_1$ and at position $\vec r_2$ at time $t_2$.
 Illustration of a displacement vector, $\vec d = \vec r_2 -\vec r_1$, for an object that was located at position $\vec r_1$ at time $t_1$ and at position $\vec r_2$ at time $t_2$.
@@ -570,7 +570,7 @@ The work energy theorem tells us that this work is related to the change in spee
 
 ```{figure} figures/Vectors/work_scalarprod.png
 :label: fig:Vectors:work_scalarprod
-:width: 100%
+:width: 70%
 :align: center
 :alt: Example of a force $\vec F$ being applied on an object as it moves along the displacement vector $\vec d$.
 Example of a force $\vec F$ being applied on an object as it moves along the displacement vector $\vec d$.
@@ -593,7 +593,7 @@ We introduce a new type of vector, an "axial vector", to describe this kind of r
 
 ```{figure} figures/Vectors/carwheelrotation.png
 :label: fig:vectors:carwheelrotation
-:width: 100%
+:width: 70%
 :align: center
 :alt: The wheels on a car that is driving away from you.
 The wheels on a car that is driving away from you.
@@ -603,7 +603,7 @@ We choose the direction of the vector by using another right hand rule. We will 
 
 ```{figure} figures/Vectors/righthandruleaxial.png
 :label: fig:vectors:righthandruleaxial
-:width: 100%
+:width: 60%
 :align: center
 :alt: Using the right hand rule for axial quantities. In this case, the direction of rotation is counter clockwise when looking at the page (the direction that the fingers curl), so the rotation vector points out of the page (the direction of the thumb).
 Using the right hand rule for axial quantities. In this case, the direction of rotation is counter clockwise when looking at the page (the direction that the fingers curl), so the rotation vector points out of the page (the direction of the thumb).
@@ -633,7 +633,7 @@ where $\theta$ is the angle between the vectors when placed tail to tail, as in 
 
 ```{figure} figures/Vectors/torque_vectorprod.png
 :label: fig:Vectors:torque_vectorprod
-:width: 100% 
+:width: 70% 
 :align: center
 :alt: A force, $\vec F$, is exerted in the plane of a disk at a position given by the vector $\vec r$ relative to the centre of the disk.
 A force, $\vec F$, is exerted in the plane of a disk at a position given by the vector $\vec r$ relative to the centre of the disk.

@@ -46,18 +46,18 @@ project:
   exclude: 
     - figures/**
     - trinket/**
-  exports:
-    - format: typst
-      id: typstpdf
-      template: https://github.com/rowanc1/typst-book.git
-      articles:
-        - README.md
-        - 01Introduction.md
+#  exports:
+#    - format: typst
+#      id: typstpdf
+#      template: https://github.com/rowanc1/typst-book.git
+#      articles:
+#        - README.md
+#        - 01Introduction.md
 #        - 02ModelAndExperiment.md
-        - 03Vectors.md
-        - 04NewMomentumAndCM.md
+#        - 03Vectors.md
+#        - 04NewMomentumAndCM.md
 #        - 15ChargesFields.md
-      output: ./_build/exports/ModelingWithPhysics.pdf
+#      output: ./_build/exports/ModelingWithPhysics.pdf
   downloads:
 #    - file: ./_build/exports/ModelingWithPhysics.pdf
     - id: typstpdf
