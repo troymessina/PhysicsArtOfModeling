@@ -738,7 +738,7 @@ An axial vector can be used to describe a quantity that is related to rotation. 
 :align: center
 :alt: A graph of 9 vectors for analyzing.
 ``` 
-[](#fig:Vectors/prob3.2) is a graph with nine vectors represented in the two dimensional space of the $xy$-plane.
+[](#fig:Vectors:prob3.2) is a graph with nine vectors represented in the two dimensional space of the $xy$-plane.
 * a) Which vectors have magnitudes equal to the magnitude of $\vec{a}$?
 * b) Which vector(s) are equal to $\vec{a}$?
 * c) Are any other vectors equal to one another?
