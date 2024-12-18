@@ -38,7 +38,7 @@ A 1d coordinate system describing the position of a train. The Kingston train st
 ## 2D Coordinate systems
 ```{figure} figures/Vectors/xyp.png
 :label: fig:Vectors:xyp
-:width: 300px
+:width: 100%
 :align: center
 :alt: Example of Cartesian coordinate system and a point $P$ with coordinates $(x_p,y_p)$.
 Example of Cartesian coordinate system and a point $P$ with coordinates $(x_p,y_p)$.
@@ -52,7 +52,7 @@ To fully describe the position of an object, we must specify both its position a
 [](#fig:Vectors:xyslant) shows a coordinate system that is not orthogonal (where the $x$ and $y$ axes are not perpendicular). Which value on the figure correctly indicates the $y$ coordinate of point $P$?
 ```{figure} figures/Vectors/xyslant.png
 :label: fig:Vectors:xyslant
-:width: 300px
+:width: 100%
 :align: center
 :alt: A non-orthogonal coordinate system (the $x$ and $y$ axes are not perpendicular).
 A non-orthogonal coordinate system (the $x$ and $y$ axes are not perpendicular).
@@ -72,7 +72,7 @@ Another common choice is a "polar" coordinate system, where the position of an o
 
 ```{figure} figures/Vectors/polarp.png
 :label: fig:Vectors:polarp 
-:width: 300px
+:width: 100%
 :align: center
 :alt: Example of a polar coordinate system and a point $P$ with coordinates $(r,\theta)$.
 Example of a polar coordinate system and a point $P$ with coordinates $(r,\theta)$.
@@ -104,7 +104,7 @@ Cylindrical coordinates can be thought of as an extension of the polar coordinat
 
 ```{figure} figures/Vectors/cylindricalcoordinates.png
 :label: fig:Vectors:cylindricalcoordinates
-:width: 300px
+:width: 100%
 :align: center
 :alt: Describing the position of $P$, located on the surface of a cylinder, in cylindrical coordinates.
 Describing the position of $P$, located on the surface of a cylinder, in cylindrical coordinates.
@@ -122,7 +122,7 @@ Spherical coordinates are useful for describing situations that have spherical s
 
 ```{figure} figures/Vectors/sphericalcoordinates.png
 :label: fig:Vectors:sphericalcoordinates
-:width: 300px
+:width: 100%
 :align: center
 :alt: Describing the position of $P$, located on the surface of a sphere, in spherical coordinates.
 Describing the position of $P$, located on the surface of a sphere, in spherical coordinates.
@@ -142,7 +142,7 @@ Unlike a point in space, vectors **have no location**. That is, vectors are simp
 
 ```{figure} figures/Vectors/dvec.png
 :label: fig:Vectors:dvec
-:width: 300px
+:width: 100%
 :align: center
 :alt: A vector $\vec d$ shown twice, once with its Cartesian components ($d_x$, $d_y$) and once with its magnitude and direction ($d$, $\phi$).
 A vector $\vec d$ shown twice, once with its Cartesian components ($d_x$, $d_y$) and once with its magnitude and direction ($d$, $\phi$).
@@ -195,7 +195,7 @@ Illustrating a vector graphically in two dimensions is straightforward, but diff
 
 ```{figure} figures/Vectors/vector3d.png
 :label: fig:Vectors:vector3d
-:width: 300px
+:width: 100%
 :align: center
 :alt: Geometric representation of three vectors. The vector $\vec a$ lies in the plane of the page, the vector $\vec b$ is pointing out of the page, and the vector $\vec c$ is pointing into the page.
 Geometric representation of three vectors. The vector $\vec a$ lies in the plane of the page, the vector $\vec b$ is pointing out of the page, and the vector $\vec c$ is pointing into the page.
@@ -292,7 +292,7 @@ Geometrically, one can easily visualize the addition and subtraction of vectors.
 
 ```{figure} figures/Vectors/aplusbvec.png
 :label: fig:Vectors:aplusbvec
-:width: 500px
+:width: 100%
 :align: center
 :alt: Geometric addition of the vectors $\vec a$ and $\vec b$ by placing them "head to tail".
 Geometric addition of the vectors $\vec a$ and $\vec b$ by placing them "head to tail".
@@ -325,7 +325,7 @@ That is, one multiplies the individual components of the two vectors and then ad
 
 ```{figure} figures/Vectors/scalarproduct.png
 :label: fig:Vectors:scalarproduct
-:width: 300px
+:width: 100%
 :align: center
 :alt: Illustration of the angle between vectors $\vec a$ and $\vec b$ when these are placed tail to tail.
 Illustration of the angle between vectors $\vec a$ and $\vec b$ when these are placed tail to tail.
@@ -390,7 +390,7 @@ The unit vectors that define a coordinate system have the following properties r
 For these properties to be correct, it should be noted that the direction of the $z$ axis in three dimensions is specified by the choice of $x$ and $y$ axes. That is, one can freely choose the direction of the $x$ and $y$ axes, which then define a plane to which the $z$ axis will be perpendicular. The direction of the $z$ axis must be chosen so that $\hat x \times \hat y = \hat z$ (this guarantees that the coordinate system is "right handed"), as in [](#fig:Vectors:xyzaxis).
 ```{figure} figures/Vectors/xyzaxis.png
 :label: fig:Vectors:xyzaxis
-:width: 500px
+:width: 100%
 :align: center
 :alt: Two possible orientations for a three dimensional coordinate system. You can confirm using the right hand rule that the $z$ axis is the cross product $\hat x \times \hat y$.
 Two possible orientations for a three dimensional coordinate system. You can confirm using the right hand rule that the $z$ axis is the cross product $\hat x \times \hat y$.
@@ -448,7 +448,7 @@ diff_angle(a, vec(1,0,0))
 ```
 Use this to calculate the angle of `r1` and print the angle value. The angle will be in radians.
 
-In VPython, the objects attributes can be manipulated mathematically. For example, two vectors drawn as arrows `arw1` and `arw2` can be added together.
+In VPython, objects' attributes can be manipulated mathematically. For example, two vectors drawn as arrows `arw1` and `arw2` can be added together.
 ```python
 r1 = vec(1,1,0)
 r2 = vec(1,-1,0)
@@ -461,7 +461,7 @@ print(arw3.axis)
 :::{note} Example 3.2
 :label: Example-3.2
 Create arrows `arwa` and `arwb` corresponding to the vectors $\vec{a}=(0,5,0)$ and $\vec{b}=(5,5,0)$, where $\vec{a}$ begins at the origin and $\vec{b}$ begins at the head of $\vec{a}$. These are the default vectors in the PhET "Equations" simulation. Create a third arrow `arwc` corresponding to the sum $\vec{a}+\vec{b}$. Place the tail of this arrow at the tail of $\vec{a}$. 
-* Confirm the vectors have the same appearance as the PhET simulation. 
+* Confirm the vectors have the same appearance as the PhET simulation when drawing $\vec{c}= \vec{a}+\vec{b}$. 
 * Confirm the magnitudes and angles of the vectors are the same as shown in the PhET simulation. 
 * Confirm the vector sum $\vec{c}$ is the same as the PhET simulation.
 :::{note} Solution
@@ -514,7 +514,7 @@ The components of the displacement vector, $\Delta x$, $\Delta y$, and $\Delta z
 
 ```{figure} figures/Vectors/xydvec.png
 :label: fig:Vectors:xydvec
-:width: 300px
+:width: 100%
 :align: center
 :alt: Illustration of a displacement vector, $\vec d = \vec r_2 -\vec r_1$, for an object that was located at position $\vec r_1$ at time $t_1$ and at position $\vec r_2$ at time $t_2$.
 Illustration of a displacement vector, $\vec d = \vec r_2 -\vec r_1$, for an object that was located at position $\vec r_1$ at time $t_1$ and at position $\vec r_2$ at time $t_2$.
@@ -570,7 +570,7 @@ The work energy theorem tells us that this work is related to the change in spee
 
 ```{figure} figures/Vectors/work_scalarprod.png
 :label: fig:Vectors:work_scalarprod
-:width: 500px
+:width: 100%
 :align: center
 :alt: Example of a force $\vec F$ being applied on an object as it moves along the displacement vector $\vec d$.
 Example of a force $\vec F$ being applied on an object as it moves along the displacement vector $\vec d$.
@@ -593,7 +593,7 @@ We introduce a new type of vector, an "axial vector", to describe this kind of r
 
 ```{figure} figures/Vectors/carwheelrotation.png
 :label: fig:vectors:carwheelrotation
-:width: 500px
+:width: 100%
 :align: center
 :alt: The wheels on a car that is driving away from you.
 The wheels on a car that is driving away from you.
@@ -603,7 +603,7 @@ We choose the direction of the vector by using another right hand rule. We will 
 
 ```{figure} figures/Vectors/righthandruleaxial.png
 :label: fig:vectors:righthandruleaxial
-:width: 300px
+:width: 100%
 :align: center
 :alt: Using the right hand rule for axial quantities. In this case, the direction of rotation is counter clockwise when looking at the page (the direction that the fingers curl), so the rotation vector points out of the page (the direction of the thumb).
 Using the right hand rule for axial quantities. In this case, the direction of rotation is counter clockwise when looking at the page (the direction that the fingers curl), so the rotation vector points out of the page (the direction of the thumb).
@@ -633,7 +633,7 @@ where $\theta$ is the angle between the vectors when placed tail to tail, as in 
 
 ```{figure} figures/Vectors/torque_vectorprod.png
 :label: fig:Vectors:torque_vectorprod
-:width: 300px 
+:width: 100% 
 :align: center
 :alt: A force, $\vec F$, is exerted in the plane of a disk at a position given by the vector $\vec r$ relative to the centre of the disk.
 A force, $\vec F$, is exerted in the plane of a disk at a position given by the vector $\vec r$ relative to the centre of the disk.
@@ -728,9 +728,21 @@ An axial vector can be used to describe a quantity that is related to rotation. 
 
 ## Problems 
 :::{note}Problem 3.1
-:label: prob:vectors:multi
-* What is the displacement vector from position $(1,2,3)$ to position $(4,5,6)$?
-* What angle does that displacement vector make with the $x$ axis?
+* a) What is the displacement vector from position $(1,2,3)$ to position $(4,5,6)$?
+* b) What angle does that displacement vector make with the $x$ axis?
+:::
+:::{note}Problem 3.2
+```{figure} figures/Vectors/Prob3.2.png
+:label: fig:Vectors:prob3.2
+:width: 100% 
+:align: center
+:alt: A graph of 9 vectors for analyzing.
+``` 
+[](#fig:Vectors/prob3.2) is a graph with nine vectors represented in the two dimensional space of the $xy$-plane.
+* a) Which vectors have magnitudes equal to the magnitude of $\vec{a}$?
+* b) Which vector(s) are equal to $\vec{a}$?
+* c) Are any other vectors equal to one another?
+* d) Which vectors are equal to the negative of one another?
 :::
 
 
@@ -738,8 +750,7 @@ An axial vector can be used to describe a quantity that is related to rotation. 
 
 :::{note}Solution 3.1
 :class: dropdown
-:label: soln:vectors:multi
-* The displacement vector is given by:
+* a) The displacement vector is given by:
 ```math
 \vec d = \begin{pmatrix}
            4\\
@@ -755,7 +766,7 @@ An axial vector can be used to describe a quantity that is related to rotation. 
            3\\
          \end{pmatrix}
 ```
-* We can find the angle that this vector makes with the $x$ axis by taking the scalar product of the displacement vector and the unit vector in the $x$ direction (1,0,0):
+* b) We can find the angle that this vector makes with the $x$ axis by taking the scalar product of the displacement vector and the unit vector in the $x$ direction (1,0,0):
 ```math
 \hat x \cdot \vec d = (1)(3)+(0)(3)+(0)(3) = 3
 ```
