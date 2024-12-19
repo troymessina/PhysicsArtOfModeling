@@ -234,11 +234,11 @@ Two trains leaving a common station at the same time traveling two different pat
 ```
 Train A travels a total of 300 km at a speed of 100 km/hr. The time it takes Train A to reach the destination is
 ```{math}
-t = \frac{\Delta r_A}{v} = \frac{300}{100} = 3{\rm hr}
+t = \frac{\Delta r_A}{v} = \frac{300}{100} = 3~{\rm hr}
 ```
 Therefore, Train B must travel at a speed
 ```{math}
-v_B = \frac{\Delta r_B}{t} = \frac{223.6}{3} = 74.5{\rm km/hr}
+v_B = \frac{\Delta r_B}{t} = \frac{223.6}{3} = 74.5~{\rm km/hr}
 ```
 This speed is in two dimensions where the angle is 
 ```{math}
@@ -248,8 +248,8 @@ Using the speed and angle, we can write the vector velocity of Train B
 ```{math}
 \vec{v_B} &= v_B\cos(\theta)\hat{x} + v_B\sin(\theta)\hat{y}\\
 \vec{v_B} &= 74.5\cos(26.6^o)\hat{x} + 74.5\sin(26.6^o)\hat{y}\\
-\vec{v_B} &= 66.6\hat{x} + 33.3\hat{y}{\rm km/hr}\\
-\vec{v_B} = (66.6, 33.3, 0){\rm km/hr}
+\vec{v_B} &= 66.6\hat{x} + 33.3\hat{y}~{\rm km/hr}\\
+\vec{v_B} &= (66.6, 33.3, 0)~{\rm km/hr}
 ```
 * c) Train A has momentum $p_A = m_Av_A = 500000(100) = 5.00\times 10^7{\rm kg\cdot km/hr}$. Train B has momentum $p_B = m_Bv_B = 750000(74.5) = 5.59\times 10^7{\rm kg\cdot km/hr}$. Therefore, Train B has more momentum.
 :::
