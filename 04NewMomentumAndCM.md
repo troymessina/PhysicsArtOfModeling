@@ -202,9 +202,10 @@ As mentioned previously, a momentum vector is a three-dimensional equation.
 m\vec{v} &= mv_x \hat{x} + mv_y \hat{y} + mv_z \hat{z}\\ 
 m\vec{v} &= m\left(v_x \hat{x} + v_y \hat{y} + v_z \hat{z}\right)
 ```
-Thus, the velocity can be written in differential form
-```{math}
-\vec{v} = \left(\frac{dx}{dt},\frac{dy}{dt},\frac{dz}{dt}\right)
+The velocity vector can be written in differential form
+```{math
+\vec{v} &= \frac{dx}{dt}\hat{x} + \frac{dy}{dt}\hat{y} + \frac{dz}{dt}\hat{z}\\
+\vec{v} &= \left(\frac{dx}{dt},\frac{dy}{dt},\frac{dz}{dt}\right)
 ```
 Additionally, the position of an object with constant velocity can be written as three kinematic equations.
 ```{math}
