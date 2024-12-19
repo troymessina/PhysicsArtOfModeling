@@ -222,8 +222,8 @@ In [](#fig:MomentumAndCM:trainEx), two trains leave the same station at the same
 :width: 100%
 :label: fig:MomentumAndCM:trainEx
 :align: center
-:alt: Plot of position as a function of time for an object moving at varying velocities.
-Plot of position as a function of time for an object moving at varying velocities.
+:alt: Two trains leaving a common station at the same time traveling two different paths.
+Two trains leaving a common station at the same time traveling two different paths.
 ```
 :::{note} Solution
 :class: dropdown
