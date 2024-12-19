@@ -744,7 +744,26 @@ An axial vector can be used to describe a quantity that is related to rotation. 
 * c) Are any other vectors equal to one another?
 * d) Which vectors are equal to the negative of one another?
 :::
-
+:::{note}Problem 3.3
+While visiting Manhattan, New York, you make the journey between the sights listed in [](#tab:Vectors:prob3.3). Calculate the displacement and velocity vectors for each step of the journey. 
+* a) Draw this journey to scale on a piece of graph paper.
+* b) Write the vectors in matrix notation.
+	* $\vec{r} = (x, y, z)$
+	* $\vec{v} = (v_x, v_y, v_z)$
+* c) Write the vectors using trigonometric notation
+	* $\vec{r} = r \cos(\theta) \hat{i} + r \sin(\theta) \hat{j}$
+	* $\vec{v} = (v_x, v_y, v_z)$
+```{table} Manhattan journey including locations visited, distance between locations, direction traveled, and time taken traveling between sights.
+:label: tab:Vectors:prob3.3
+| Locations | Distance (mi) | Direction | Time (min) |
+| :-------: | :----------: | :-------: | :------: |
+| Penn Station to Empire State Building | 0.4 | $30^o$ South of East | 7.2 |
+| Empire State Building to Times Square | 0.8 | $80^o$ North of East | 18.0 |
+| Times Square to the MoMA | 0.5 | $60^o$ North of East | 10.1 |
+| The MoMA to Central Park Zoo | 0.6 | $50^o$ North of East | 11.4 |
+```
+ from Penn Station to the Empire State Building.Times Square
+:::
 
 ## Solutions
 
