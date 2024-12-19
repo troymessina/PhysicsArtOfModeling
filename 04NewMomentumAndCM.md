@@ -127,7 +127,7 @@ x(t) &= x_0 + \Delta x \\
 x(t) &= x_0 + v\Delta t\\
 x(t) &= x_0 + vt
 ```
-We often use $t$ for $\Delta t$ to indicate some total amount of time has passed since our initial position was recorded. As long as the velocity is constant, we can use equation {eq}`eqn:MomentumAndCM:1dxvst_noa` to determine the position of an object between any two points in time.
+We often use $t$ for $\Delta t$ to indicate some total amount of time has passed since our initial position was recorded. As long as the velocity is constant, we can use equation {eq}`eqn:MomentumAndCM:1dxvst_noa` to determine the position of an object between any two points in time. In one dimension, the vector quantity of velocity indicates the speed of an object along a single coordinate direction. The vector can be positive (along the $+x$-direction) or negative (along the $-x$-direction).
 :::{note} Example 4.1
 In [](#fig:MomentumAndCM:motion1D), an object moves for ten seconds with varying velocities. Describe the motion vs. time. Make sure to include direction of the motion and state your answers as vectors.
 ```{figure} ./figures/MomentumAndCM/motionDiagram.png
@@ -191,12 +191,29 @@ while t<2:
 	arr.pos = rock.pos #update the velocity arrow position
 	t = t + delta_t #increment the time
 ```
-Try this code and see that the rock moves. A trail can be added to see where the rock was in the past.
+Try this code and see that the rock moves. A trail can be added to see where the rock was in the past. Add this line after the line of code where the rock is first defined.
 
 ```python
 rock.make_trail=True
 ```
-	
+### Constant momentum in 2D and 3D
+As mentioned previously, a momentum vector is a three-dimensional equation.
+```{math}
+m\vec{v} &= mv_x \hat{x} + mv_y \hat{y} + mv_z \hat{z}\\ 
+m\vec{v} &= m\left(v_x \hat{x} + v_y \hat{y} + v_z \hat{z}\right)
+```
+Thus, the velocity can be written in differential form
+```{math}
+\vec{v} = \left(\frac{dx}{dt},\left(\frac{dy}{dt},\left(\frac{dz}{dt}\right)
+```
+Additionally, the position of an object with constant velocity can be written as three kinematic equations.
+```{math}
+x(t) = x_o + v_xt\\
+y(t) = y_o + v_yt\\
+z(t) = z_o + v_zt\\
+```
+
+
 ## Non-constant Momentum
 If the particle has a constant mass, then the time derivative of its momentum is given by:
 ```{math}
