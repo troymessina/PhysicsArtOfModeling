@@ -48,15 +48,15 @@ We can define the momentum, $\vec p$, of a particle of mass $m$ and velocity $\v
 Since this is a vector equation, it corresponds to three equations, one for each component of the momentum vector, which are defined by the velocity in each of the three dimensions. It should be noted that the numerical value for the momentum of a particle is arbitrary, as it depends in which frame of reference the velocity of the particle is defined. For example, your velocity with respect to the surface of the Earth may be zero, and so your momentum relative to the surface of the Earth is zero. However, relative to the surface of the Sun, your velocity, and momentum, are not zero. As we will see, forces are related to a *changes* in momentum, just as they are related to a change in velocity (acceleration).
 
 Consider a point particle[^5] moving at constant velocity such as a rock sliding across a frozen pond. If we capture an image of the rock at the same time we start a stopwatch ($t_o = 0 {\rm s}$), it might be located at a position 0.5 meters from the shore as shown in [](#fig:momentumandcm:constvelmotiona). We will designate the direction the rock slides as being along the $x$-axis.
-:::{figure}
+:::{figure} 
 :label: fig:momentumandcm:constvelmotion
 :align: center
 
 (fig:momentumandcm:constvelmotiona)=
-![The initial position $x_o=0.5 {\rm m}$ of a rock sliding across a frozen pond.](./figures/MomentumAndCM/ConstVelDotsa.png)
+![The initial position is 0.5 m of a rock sliding across a frozen pond.](./figures/MomentumAndCM/ConstVelDotsa.png)
 
 (fig:momentumandcm:constvelmotionb)=
-![The position of a rock sliding across a frozen pond as time progresses.](./figures/MomentumAndCM/ConstVelDotsa.png)
+![The position of a rock sliding across a frozen pond as time progresses.](./figures/MomentumAndCM/ConstVelDotsb.png)
 
 The motion diagram of a rock sliding across a frozen pond. 
 :::
@@ -109,7 +109,7 @@ The initial position is simply the value of the position at $t=0$, and is given 
 x_0 = 0.5 {\rm m}
 ```
 
-The velocity, $v_x$, is simply the difference in position, $\Delta x$, between any two points divided by the amount of time, $\Delta t$, that it took the object to move between those two points ("rise over run" for the graph of $x(t)$):
+The velocity, $v_x$, is simply the difference in position, $\Delta x=x_f-x_o$, between any final, $x_f$, and initial, $x_o$, positions divided by the amount of time, $\Delta t=t_f-t_o$, that it took the object to move between those two points ("rise over run" for the graph of $x(t)$):
 
 ```{math}
 :label: eq:momentumandcm:constveleq
