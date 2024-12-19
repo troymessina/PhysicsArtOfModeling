@@ -745,8 +745,8 @@ An axial vector can be used to describe a quantity that is related to rotation. 
 * d) Which vectors are equal to the negative of one another?
 :::
 :::{note}Problem 3.3
-While visiting Manhattan, New York, you make the journey between the sights listed in [](#tab:Vectors:prob3.3). Calculate the displacement and velocity vectors for each step of the journey. 
-* a) Draw this journey to scale on a piece of graph paper.
+While visiting Manhattan, New York, you make the journey between the sights listed in [](#tab:Vectors:prob3.3). Calculate the displacement and velocity vectors for each step of journey. 
+* a) Draw this journey's displacement vectors to scale on a piece of graph paper.
 * b) Write the vectors in matrix notation.
 	* $\vec{r} = (x, y, z)$
 	* $\vec{v} = (v_x, v_y, v_z)$
@@ -762,7 +762,15 @@ While visiting Manhattan, New York, you make the journey between the sights list
 | Times Square to the MoMA | 0.5 | $60^o$ North of East | 10.1 |
 | The MoMA to Central Park Zoo | 0.6 | $50^o$ North of East | 11.4 |
 ```
- from Penn Station to the Empire State Building.Times Square
+:::
+:::{note}Problem 3.4
+Objects A, B, and C are moving and result in motion diagrams shown in [](fig:Vectors:prob3.4). The dots correspond to equal time intervals between positions. Which motion diagrams exhibit motion where the object is interacting with something external to the object? Explain the evidence for interactions with something external to the object.
+```{figure} figures/Vectors/Prob3.4.png
+:label: fig:Vectors:prob3.4
+:width: 100% 
+:align: center
+:alt: Motion diagrams of objects A, B, and C.
+``` 
 :::
 
 ## Solutions
