@@ -212,7 +212,45 @@ x(t) = x_o + v_xt\\
 y(t) = y_o + v_yt\\
 z(t) = z_o + v_zt\\
 ```
-
+:::{note} Example 4.2
+In [](#fig:MomentumAndCM:trainEx), two trains leave the same station at the same time. Train A with a mass of 500 000 kg travels 200 km east ($\hat{x}$) and then 100 km north ($\hat{y}$) at a constant speed of $v=100{\rm km/hr}$. Train B with a mass of 750 000 kg travels in a straight path at constant speed to the destination.
+* a) Write the velocities for the two segments of Train A's trip.
+* b) With what velocity must Train B travel to arrive at the destination at the same time as Train A?
+* c) Which train has the larger momentum?
+```{figure} ./figures/MomentumAndCM/trainEx4.2.png
+:width: 100%
+:label: fig:MomentumAndCM:trainEx
+:align: center
+:alt: Plot of position as a function of time for an object moving at varying velocities.
+Plot of position as a function of time for an object moving at varying velocities.
+```
+:::{note} Solution
+:class: dropdown
+* a) The first segment of Train A's trip is along $\hat{x}$ at 100 km/hr. This can be written as a vector $\vec{v}=(100, 0, 0){\rm km/hr}$. The second segment is along $\hat{y}$ and can be written as a vector $\vec{v}=(0, 100, 0){\rm km/hr}$
+* b) By Pythagorean Theorem, Train B travels
+```{math}
+\Delta r_B = \sqrt{200^2 + 100^2} = 223.6 {\rm km}
+```
+Train A travels a total of 300 km at a speed of 100 km/hr. The time it takes Train A to reach the destination is
+```{math}
+t = \frac{\Delta r_A}{v} = \frac{300}{100} = 3{\rm hr}
+```
+Therefore, Train B must travel at a speed
+```{math}
+v_B = \frac{\Delta r_B}{t} = \frac{223.6}{3} = 74.5{\rm km/hr}
+```
+This speed is in two dimensions where the angle is 
+```{math}
+\theta = \tan^{-1}\left(\frac{100}{200} = 26.6^o
+```
+Using the speed and angle, we can write the vector velocity of Train B
+```{math}
+\vec{v_B} &= v_B\cos(\theta)\hat{x} + v_B\sin(\theta)\hat{y}\\
+\vec{v_B} &= 74.5\cos(26.6^o)\hat{x} + 74.5\sin(26.6^o)\hat{y}\\
+\vec{v_B} &= 66.6\hat{x} + 33.3\hat{y}{\rm km/hr}\\
+\vec{v_B} = (66.6, 33.3, 0){\rm km/hr}
+```
+:::
 
 ## Non-constant Momentum
 If the particle has a constant mass, then the time derivative of its momentum is given by:
