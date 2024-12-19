@@ -251,7 +251,15 @@ Using the speed and angle, we can write the vector velocity of Train B
 \vec{v_B} &= 66.6\hat{x} + 33.3\hat{y}~{\rm km/hr}\\
 \vec{v_B} &= (66.6, 33.3, 0)~{\rm km/hr}
 ```
-* c) Train A has momentum $p_A = m_Av_A = 500000(100) = 5.00\times 10^7{\rm kg\cdot km/hr}$. Train B has momentum $p_B = m_Bv_B = 750000(74.5) = 5.59\times 10^7{\rm kg\cdot km/hr}$. Therefore, Train B has more momentum.
+* c) Train A has momentum 
+```{math}
+p_A = m_Av_A = 500000(100) = 5.00\times 10^7{\rm kg\cdot km/hr}
+```
+Train B has momentum 
+```{math}
+p_B = m_Bv_B = 750000(74.5) = 5.59\times 10^7{\rm kg\cdot km/hr}
+```
+Therefore, Train B has more momentum.
 :::
 
 ## Non-constant Momentum
