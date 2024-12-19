@@ -765,7 +765,7 @@ While visiting Manhattan, New York, you make the journey between the sights list
 :::
 :::{note}Problem 3.4
 Objects A, B, and C are moving and result in motion diagrams shown in [](fig:Vectors:prob3.4). The dots correspond to equal time intervals between positions. Which motion diagrams exhibit motion where the object is interacting with something external to the object? Explain the evidence for interactions with something external to the object.
-```{figure} figures/Vectors/Prob3.4.jpg
+```{figure} figures/Vectors/prob3.4.jpg
 :label: fig:Vectors:prob3.4
 :width: 100% 
 :align: center
