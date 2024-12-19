@@ -123,7 +123,9 @@ Therefore, the rock has a velocity of 0.5 m/s along the $x$-direction. In the fi
 ```
 Therefore, we can think of the position equation {eq}`eqn:MomentumAndCM:1dxvst_noa` as
 ```{math}
-x(t) = x_0 + \Delta x = x_0 + v\Delta t
+x(t) &= x_0 + \Delta x \\
+x(t) &= x_0 + v\Delta t\\
+x(t) &= x_0 + vt
 ```
 We often use $t$ for $\Delta t$ to indicate some total amount of time has passed since our initial position was recorded. As long as the velocity is constant, we can use equation {eq}`eqn:MomentumAndCM:1dxvst_noa` to determine the position of an object between any two points in time.
 :::{note} Example 4.1
