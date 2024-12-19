@@ -112,20 +112,20 @@ x_0 = 0.5 {\rm m}
 The velocity, $v_x$, is simply the difference in position, $\Delta x=x_f-x_o$, between any final, $x_f$, and initial, $x_o$, positions divided by the amount of time, $\Delta t=t_f-t_o$, that it took the object to move between those two points ("rise over run" for the graph of $x(t)$):
 
 ```{math}
-:label: eq:momentumandcm:constveleq
+:label: eqn:momentumandcm:constveleq
 \vec v &= \frac{\Delta x}{\Delta t} \hat x\rightarrow \frac{dx}{dt} \hat x\\
 \vec v &= \frac{0.5 {\rm m}}{1 {\rm s}} \hat x \\
 \vec v &= \left(0.5, 0, 0\right) {\rm m/s}
 ```
-Therefore, the rock has a velocity of 0.5 m/s along the $x$-direction. In the first line of equation {eq}`eq:momentumandcm:constveleq`, the derivative after the arrow corresponds to when $\Delta x$ and $\Delta t$ become infinitesimal changes. Rearranging the first line of equation {eq}`eq:momentumandcm:constveleq` we see that the rock moves a small increment $\Delta x$ each increment of time $\Delta t$
+Therefore, the rock has a velocity of 0.5 m/s along the $x$-direction. In the first line of equation {eq}`eqn:momentumandcm:constveleq`, the derivative after the arrow corresponds to when $\Delta x$ and $\Delta t$ become infinitesimal changes. Rearranging the first line of equation {eq}`eqn:momentumandcm:constveleq` we see that the rock moves a small increment $\Delta x$ each increment of time $\Delta t$
 ```{math}
 \Delta x = v\Delta t
 ```
 Therefore, we can think of the position equation {eq}`eqn:MomentumAndCM:1dxvst_noa` as
 ```{math}
-x(t) = x_0 + \Delta x = x_0 + vt
+x(t) = x_0 + \Delta x = x_0 + v\Delta t
 ```
-As long as the velocity is constant, we can use equation {eq}`eqn:MomentumAndCM:1dxvst_noa` to determine the position of an object between any two points in time.
+We often use $t$ for $\Delta t$ to indicate some total amount of time has passed since our initial position was recorded. As long as the velocity is constant, we can use equation {eq}`eqn:MomentumAndCM:1dxvst_noa` to determine the position of an object between any two points in time.
 :::{note} Example 4.1
 In [](#fig:MomentumAndCM:motion1D), an object moves for ten seconds with varying velocities. Describe the motion vs. time. Make sure to include direction of the motion and state your answers as vectors.
 ```{figure} ./figures/MomentumAndCM/motionDiagram.png
@@ -618,13 +618,13 @@ where we cancelled the factor of one half in the last line. This gives two equat
 
 The following method allows many models for elastic collisions between two particles to be solved easily by converting the quadratic equation from energy conservation into an equation that is linear in the speeds. First, write both equations so that the quantities related to each particle are on opposite sides of the equation. For momentum, this gives:
 ```{math}
-:label: eq:momentumandcm:exptemp
+:label: eqn:momentumandcm:exptemp
 Mv_M+mv_m&=Mv'_M+mv'_m\nonumber\\
 \therefore M(v_M-v'_M) &= m(v'm-v_m)
 ```
 For conservation of energy, this gives:
 ```{math}
-:label: eq:momentumandcm:exptemp2
+:label: eqn:momentumandcm:exptemp2
 Mv_M^2+mv_m^2&=Mv'^2_M+mv'^2_m\nonumber\\
 \therefore  M(v_M^2-v'^2_M)&= M(v'^2_m-v^2_m)
 ```
@@ -633,7 +633,7 @@ which we can re-write as:
 M(v_M^2-v'^2_M)&= M(v'^2_m-v^2_m)\\
 M(v_M-v'_M)(v_M+v'_M)&= M(v'_m-v_m)(v'_m+v_m)
 ```
-We can then divide Equation {eq}`eq:momentumandcm:exptemp2` by Equation {eq}`eq:momentumandcm:exptemp`:
+We can then divide Equation {eq}`eqn:momentumandcm:exptemp2` by Equation {eq}`eqn:momentumandcm:exptemp`:
 ```{math}
 \frac{M(v_M-v'_M)(v_M+v'_M)}{M(v_M-v'_M)}&= \frac{M(v'_m-v_m)(v'_m+v_m)}{m(v'm-v_m)}\\
 \therefore v_M+v'_M&=v'_m+v_m
