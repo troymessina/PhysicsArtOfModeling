@@ -204,7 +204,7 @@ m\vec{v} &= m\left(v_x \hat{x} + v_y \hat{y} + v_z \hat{z}\right)
 ```
 Thus, the velocity can be written in differential form
 ```{math}
-\vec{v} = \left(\frac{dx}{dt},\left(\frac{dy}{dt},\left(\frac{dz}{dt}\right)
+\vec{v} = \left(\frac{dx}{dt},\frac{dy}{dt},\frac{dz}{dt}\right)
 ```
 Additionally, the position of an object with constant velocity can be written as three kinematic equations.
 ```{math}
