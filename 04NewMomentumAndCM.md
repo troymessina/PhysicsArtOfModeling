@@ -242,7 +242,7 @@ v_B = \frac{\Delta r_B}{t} = \frac{223.6}{3} = 74.5{\rm km/hr}
 ```
 This speed is in two dimensions where the angle is 
 ```{math}
-\theta = \tan^{-1}\left(\frac{100}{200} = 26.6^o
+\theta = \tan^{-1}\left(\frac{100}{200}\right) = 26.6^o
 ```
 Using the speed and angle, we can write the vector velocity of Train B
 ```{math}
