@@ -411,13 +411,13 @@ p(t) = p_z(t) = -mgt
 ```
 and indeed changes with time.
 
-If the force of drag were not negligible, there would be a non-conservative force acting on the particle, so its mechanical energy would no longer be conserved (We will see more about this in [Chapter %s](#chap:workenergy) and [Chapter %s](#chapter:potentialecons). The particle will accelerate until it reaches terminal velocity. During that phase of acceleration, the net force on the particle is not zero (it is accelerating), so its momentum is not conserved. Once the particle reaches terminal velocity, the net force on the particle is zero, and its momentum is conserved from then on.
+If the force of drag were not negligible, there would be a non-conservative force acting on the particle, so its mechanical energy would no longer be conserved (We will see more about this in [Chapter 7](#chap:workenergy) and [Chapter 8](#chapter:potentialecons). The particle will accelerate until it reaches terminal velocity. During that phase of acceleration, the net force on the particle is not zero (it is accelerating), so its momentum is not conserved. Once the particle reaches terminal velocity, the net force on the particle is zero, and its momentum is conserved from then on.
 
 **Discussion:** This simple example highlights the fact that mechanical energy and momentum are conserved under different conditions. Just because one is conserved does not mean that the other is conserved. It also shows that Newton's Second Law is a statement about change in momentum, not momentum itself (just like it is a statement about acceleration, change in velocity, not velocity).
 :::
 
 ## Impulse
-Forces are a concept central to physics and are related the concept of energy. We'll see in [Chapter %s](#chap:workenergy) that we calculate the "work", $W$, done by a force exerted on an object over a specific path between two points:
+Forces are a concept central to physics and are related the concept of energy. We'll see in [Chapter 7](#chap:workenergy) that we calculate the "work", $W$, done by a force exerted on an object over a specific path between two points:
 ```{math}
 W = \int_A^B \vec F \cdot d\vec l
 ```
