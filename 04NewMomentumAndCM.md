@@ -117,7 +117,7 @@ The velocity, $v_x$, is simply the difference in position, $\Delta x=x_f-x_o$, b
 \vec v &= \frac{0.5 {\rm m}}{1 {\rm s}} \hat x \\
 \vec v &= \left(0.5, 0, 0\right) {\rm m/s}
 ```
-Therefore, the rock has a velocity of 0.5 m/s along the $x$-direction. In the first line of equation {eq}`eqn:momentumandcm:constveleq`, the derivative after the arrow corresponds to when $\Delta x$ and $\Delta t$ become infinitesimal changes. Rearranging the first line of equation {eq}`eqn:momentumandcm:constveleq` we see that the rock moves a small increment $\Delta x$ each increment of time $\Delta t$
+where the arrow indicates the limit as the changes become very small. Therefore, the rock has a velocity of 0.5 m/s along the $x$-direction. In the first line of equation {eq}`eqn:momentumandcm:constveleq`, the derivative after the arrow corresponds to when $\Delta x$ and $\Delta t$ become infinitesimal changes. Rearranging the first line of equation {eq}`eqn:momentumandcm:constveleq` we see that the rock moves a small increment $\Delta x$ each increment of time $\Delta t$
 ```{math}
 \Delta x = v\Delta t
 ```
@@ -262,11 +262,28 @@ p_B = m_Bv_B = 750000(74.5) = 5.59\times 10^7{\rm kg\cdot km/hr}
 Therefore, Train B has more momentum.
 :::
 
-## Non-constant Momentum
-If the particle has a constant mass, then the time derivative of its momentum is given by:
+## Non-constant Momentum and Newton's 2nd Law
+If the particle has a constant mass, and its momentum changes with time, then the time dependence of its momentum is given by:
+```{math}
+\frac{\Delta \vec p}{\Delta t} = m\frac{\Delta \vec v}{\Delta t}
+```
+We define a velocity changing with time as **acceleration**.
+```{math}
+\vec a = \frac{\Delta \vec v}{\Delta t}\rightarrow \frac{d\vec v}{dt}\\
+\vec a = \frac{\Delta \vec v}{\Delta t}\xrightarrow[\Delta t \to 0]{}\frac{d\vec v}{dt}
+```
+where the arrow indicates the limit as the changes become very small. Just as we did with constant velocity and position, we can write kinematic equations of motion for velocity by applying the definition of acceleration.
+```{math}
+v(t) &= v_0 + \Delta v \\
+v(t) &= v_0 + a\Delta t\\
+v(t) &= v_0 + at
+```
+With 
 ```{math}
 \frac{d}{dt}\vec p = \frac{d}{dt}m\vec v = m\frac{d}{dt}\vec v=m\vec a
 ```
+
+> An object's acceleration is proportional to the net force exerted **on the object**, inversely proportional to the mass of the object, and in the same direction as the net force exerted on the object.
 and we can write this as Newton's Second Law, since $m\vec a$ must be equal to the vector sum of the forces on the particle of mass $m$:
 % boxed equation
 ```{math}
