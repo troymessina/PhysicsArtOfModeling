@@ -100,13 +100,13 @@ Since the position as a function of time for the ball plotted in [](#fig:Momentu
 % boxed equation
 ```{math}
 :label: eqn:MomentumAndCM:1dxvst_noa
-x(t) = x_0 + v_x t
+x(t) = x_o + v_x t
 ```
-The constant $x_0$ is the "offset" of the function; the value that the function has at $t= 0 {\rm s}$. We call $x_0$ the "initial position" of the object (its position at $t=0$). The constant $v_x$ is the "slope" of the function and gives the rate of change of the position as a function of time. We call $v_x$ the "velocity" of the object.
+The constant $x_o$ is the "offset" of the function; the value that the function has at $t= 0 {\rm s}$. We call $x_o$ the "initial position" of the object (its position at $t=0$). The constant $v_x$ is the "slope" of the function and gives the rate of change of the position as a function of time. We call $v_x$ the "velocity" of the object.
 
 The initial position is simply the value of the position at $t=0$, and is given from the table as:
 ```{math}
-x_0 = 0.5 {\rm m}
+x_o = 0.5 {\rm m}
 ```
 
 The velocity, $v_x$, is simply the difference in position, $\Delta x=x_f-x_o$, between any final, $x_f$, and initial, $x_o$, positions divided by the amount of time, $\Delta t=t_f-t_o$, that it took the object to move between those two points ("rise over run" for the graph of $x(t)$):
@@ -123,9 +123,9 @@ where the arrow indicates the limit as the changes become very small. Therefore,
 ```
 Therefore, we can think of the position equation {eq}`eqn:MomentumAndCM:1dxvst_noa` as
 ```{math}
-x(t) &= x_0 + \Delta x \\
-x(t) &= x_0 + v\Delta t\\
-x(t) &= x_0 + vt
+x(t) &= x_o+ \Delta x \\
+x(t) &= x_o + v\Delta t\\
+x(t) &= x_o + vt
 ```
 We often use $t$ for $\Delta t$ to indicate some total amount of time has passed since our initial position was recorded. As long as the velocity is constant, we can use equation {eq}`eqn:MomentumAndCM:1dxvst_noa` to determine the position of an object between any two points in time. In one dimension, the vector quantity of velocity indicates the speed of an object along a single coordinate direction. The vector can be positive (along the $+x$-direction) or negative (along the $-x$-direction).
 :::{note} Example 4.1
@@ -207,7 +207,7 @@ The velocity vector can be written in differential form
 \vec v &= \frac{dx}{dt}\hat x + \frac{dy}{dt}\hat y + \frac{dz}{dt}\hat z\\
 \vec v &= \left(\frac{dx}{dt},\frac{dy}{dt},\frac{dz}{dt}\right)
 ```
-Additionally, the position of an object with constant velocity can be written as three kinematic equations.
+Additionally, the position of an object with constant velocity can be written as three kinematic equations corresponding to {eq}`eqn:MomentumAndCM:1dxvst_noa`.
 ```{math}
 x(t) = x_o + v_xt\\
 y(t) = y_o + v_yt\\
