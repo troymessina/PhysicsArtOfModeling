@@ -199,13 +199,13 @@ rock.make_trail=True
 ### Constant momentum in 2D and 3D
 As mentioned previously, a momentum vector is a three-dimensional equation.
 ```{math}
-m\vec{v} &= mv_x \hat{x} + mv_y \hat{y} + mv_z \hat{z}\\ 
-m\vec{v} &= m\left(v_x \hat{x} + v_y \hat{y} + v_z \hat{z}\right)
+m\vec v &= mv_x \hat x + mv_y \hat y + mv_z \hat z\\ 
+m\vec v &= m\left( v_x \hat x + v_y \hat y + v_z \hat z\right)
 ```
 The velocity vector can be written in differential form
 ```{math
-\vec{v} &= \frac{dx}{dt}\hat{x} + \frac{dy}{dt}\hat{y} + \frac{dz}{dt}\hat{z}\\
-\vec{v} &= \left(\frac{dx}{dt},\frac{dy}{dt},\frac{dz}{dt}\right)
+\vec v &= \frac{dx}{dt}\hat{x} + \frac{dy}{dt}\hat{y} + \frac{dz}{dt}\hat{z}\\
+\vec v &= \left(\frac{dx}{dt},\frac{dy}{dt},\frac{dz}{dt}\right)
 ```
 Additionally, the position of an object with constant velocity can be written as three kinematic equations.
 ```{math}
@@ -274,11 +274,16 @@ We define a velocity changing with time as **acceleration**.
 ```
 where the arrow indicates the limit as the changes become very small. Just as we did with constant velocity and position, we can write kinematic equations of motion for velocity by applying the definition of acceleration.
 ```{math}
-v(t) &= v_0 + \Delta v \\
-v(t) &= v_0 + a\Delta t\\
-v(t) &= v_0 + at
+v(t) &= v_o + \Delta v \\
+v(t) &= v_o + a\Delta t\\
+v(t) &= v_o + at
 ```
-With 
+If we assume the acceleration is constant with time, we can use integral calculus to determine equations describing position vs. time.
+```{math}
+x(t) &= \int v(t) dt\\
+x(t) &= \int \left(v_0 + at\right) dt
+x(t) &= x_o + v_o t + \frac{1}{2}at^2
+```
 ```{math}
 \frac{d}{dt}\vec p = \frac{d}{dt}m\vec v = m\frac{d}{dt}\vec v=m\vec a
 ```
