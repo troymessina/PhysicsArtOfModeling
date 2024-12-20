@@ -115,12 +115,16 @@ The velocity, $v_x$, is simply the difference in position, $\Delta x=x_f-x_o$, b
 :label: eqn:momentumandcm:constveleq
 \vec v = \frac{\Delta \vec x}{\Delta t}\xrightarrow[\Delta t \to 0]{}\frac{d\vec x}{dt}
 ```
-where the arrow indicates the limit as the changes become very small. For the rock in one dimension,
+where the arrow indicates the limit as the changes become very small. For the rock in one dimension as it moves from 0.5 m to 1.0 m over the duration of 1 second,
 ```{math}
+\vec v &= \frac{x_f-x_o {\rm m}}{t_f-t_o {\rm s}} \hat x \\
+\vec v &= \frac{1.0-0.5 {\rm m}}{1-0 {\rm s}} \hat x \\
 \vec v &= \frac{0.5 {\rm m}}{1 {\rm s}} \hat x \\
 \vec v &= \left(0.5, 0, 0\right) {\rm m/s}
 ```
-Therefore, the rock has a velocity of 0.5 m/s along the $x$-direction. In the first line of equation {eq}`eqn:momentumandcm:constveleq`, the derivative after the arrow corresponds to when $\Delta x$ and $\Delta t$ become infinitesimal changes. Rearranging the first line of equation {eq}`eqn:momentumandcm:constveleq` we see that the rock moves a small increment $\Delta x$ each increment of time $\Delta t$
+Therefore, the rock has a velocity of 0.5 m/s along the $x$-direction. We arbitrarily chose the change in position over the first second. However, with constant velocity, one could choose any time interval and the corresponding change in position to obtain the same constant velocity.
+
+Rearranging the first line of equation {eq}`eqn:momentumandcm:constveleq` we see that the rock moves a small increment $\Delta x$ each increment of time $\Delta t$
 ```{math}
 \Delta x = v\Delta t
 ```
@@ -276,6 +280,7 @@ We define a velocity changing with time as **acceleration**.
 ```
 where the arrow indicates the limit as the changes become very small. Just as we did with constant velocity and position, we can write kinematic equations of motion for velocity by applying the definition of acceleration.
 ```{math}
+:label: eqn:MomentumAndCM:nonConstv
 v(t) &= v_o + \Delta v \\
 v(t) &= v_o + a\Delta t\\
 v(t) &= v_o + at
@@ -283,9 +288,66 @@ v(t) &= v_o + at
 If we assume the acceleration is constant with time, we can use integral calculus to determine equations describing position vs. time.
 ```{math}
 x(t) &= \int v(t) dt\\
-x(t) &= \int \left(v_0 + at\right) dt
+x(t) &= \int \left(v_0 + at\right) dt\\
 x(t) &= x_o + v_o t + \frac{1}{2}at^2
 ```
+:::{note} Example 4.3
+A more realistic rock sliding on a frozen pond more is when the rock decelerates due to friction. If the rock has an initial velocity of $v_o=0.5~{\rm m/s}$ and slides for $t = 10~{\rm s}$ before coming to rest ($v(10{\rm s}) = 0~{\rm ms/s}$).
+* a) What is the acceleration of the rock?
+* b) What distance does the rock slide?
+* c) Create graphs of position vs. time and velocity vs. time similar to [](#fig:MomentumAndCM:1dxvst).
+::: {Solution} Solution 4.3
+:class: dropdown
+* a) We can use the kinematic equation for velocity as a function of time {eq}`eqn:MomentumAndCM:nonConstv`. This is one dimensional, and we only need to solve for the $x$-direction. We'll, therefore, ignore the vectors. 
+```{math}
+v(t) &= v_o + at\\
+0 &= 0.5 + a\cdot 10\\
+a &= \frac{-0.5}{10}\\
+a &= -0.05~{\rm m/s^2}
+```
+Notice the acceleration is negative, indicating it is in the opposite direction of the initial velocity. This means the acceleration slows the rock.
+* b) Now, we can use the acceleration to solve for the final position of the rock at $t=5~{\rm s}$.
+```{math}
+x(t) &= x_o + v_o t+ \frac{1}{2}at^2\\
+x(10{\rm s}) &= 0.5 + 0.5\cdot 10 + \frac{1}{2}(-0.05)\cdot 10^2\\
+x(10{\rm s}) &= 0.5 + 5 - 2.5\\
+x(10{\rm s}) &= 3~{\rm m}
+```
+Without friction, the rock slid 5 meters over 10 seconds and would have continued to slide at the same rate. Now, with friction, we see that the rock travels 3 meters over 10 seconds and stops sliding. 
+* c) Using the same time intervals as [](#tab:MomentumAndCM:1dmotion), we can use the equations from part a) and b) to calculate velocity and position at each time.
+```{table} Time, $x$-position, and velocity $v_x(t)$ of a decelerating rock sliding across a frozen pond recorded every second.
+:label: tab:MomentumAndCM:nonconstEx4.3
+| Time $t$ (s) | $x$-position (m) | $v_x$ (m/s) |
+| :----------: | :--------------: | :---------: |
+|     0.0      |       0.500      |    0.50     |
+|     1.0      |       0.975      |    0.45     |
+|     2.0      |       1.400      |    0.40     |
+|     3.0      |       1.775      |    0.35     |
+|     4.0      |       2.100      |    0.30     |
+|     5.0      |       2.375      |    0.25     |
+|     6.0      |       2.600      |    0.20     |
+|     7.0      |       2.600      |    0.15     |
+|     8.0      |       2.775      |    0.10     |
+|     9.0      |       2.975      |    0.05     |
+|    10.0      |       3.000      |    0.00     |
+```
+```{figure} ./figures/MomentumAndCM/velVstEx4.3.png
+:width: 70%
+:label: fig:MomentumAndCM:velVstEx4.3
+:align: center
+:alt: Velocity vs. time for a rock sliding with friction decelerating the rock.
+Velocity vs. time for a rock sliding with friction decelerating the rock.
+```
+```{figure} ./figures/MomentumAndCM/posVstEx4.3.png
+:width: 70%
+:label: fig:MomentumAndCM:posVstEx4.3
+:align: center
+:alt: Position vs. time for a rock sliding with friction decelerating the rock.
+Position vs. time for a rock sliding with friction decelerating the rock.
+:::
+
+:::{} Valéria's Thoughts
+:::
 ```{math}
 \frac{d}{dt}\vec p = \frac{d}{dt}m\vec v = m\frac{d}{dt}\vec v=m\vec a
 ```
