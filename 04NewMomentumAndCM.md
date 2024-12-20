@@ -305,7 +305,7 @@ A more realistic rock sliding on a frozen pond more is when the rock decelerates
 * a) What is the acceleration of the rock?
 * b) What distance does the rock slide?
 * c) Create graphs of position vs. time and velocity vs. time similar to [](#fig:MomentumAndCM:1dxvst).
-::: {Solution} Solution 4.3
+::: {note} Solution 4.3
 :class: dropdown
 * a) We can use the kinematic equation for velocity as a function of time {eq}`eqn:MomentumAndCM:nonConstv`. This is one dimensional, and we only need to solve for the $x$-direction. We'll, therefore, ignore the vectors. 
 ```{math}
