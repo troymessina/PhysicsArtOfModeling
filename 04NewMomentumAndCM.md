@@ -113,11 +113,14 @@ The velocity, $v_x$, is simply the difference in position, $\Delta x=x_f-x_o$, b
 
 ```{math}
 :label: eqn:momentumandcm:constveleq
-\vec v &= \frac{\Delta x}{\Delta t} \hat x\rightarrow \frac{dx}{dt} \hat x\\
+\vec v = \frac{\Delta \vec x}{\Delta t}\xrightarrow[\Delta t \to 0]{}\frac{d\vec x}{dt}
+```
+where the arrow indicates the limit as the changes become very small. For the rock in one dimension,
+```{math}
 \vec v &= \frac{0.5 {\rm m}}{1 {\rm s}} \hat x \\
 \vec v &= \left(0.5, 0, 0\right) {\rm m/s}
 ```
-where the arrow indicates the limit as the changes become very small. Therefore, the rock has a velocity of 0.5 m/s along the $x$-direction. In the first line of equation {eq}`eqn:momentumandcm:constveleq`, the derivative after the arrow corresponds to when $\Delta x$ and $\Delta t$ become infinitesimal changes. Rearranging the first line of equation {eq}`eqn:momentumandcm:constveleq` we see that the rock moves a small increment $\Delta x$ each increment of time $\Delta t$
+Therefore, the rock has a velocity of 0.5 m/s along the $x$-direction. In the first line of equation {eq}`eqn:momentumandcm:constveleq`, the derivative after the arrow corresponds to when $\Delta x$ and $\Delta t$ become infinitesimal changes. Rearranging the first line of equation {eq}`eqn:momentumandcm:constveleq` we see that the rock moves a small increment $\Delta x$ each increment of time $\Delta t$
 ```{math}
 \Delta x = v\Delta t
 ```
@@ -269,7 +272,6 @@ If the particle has a constant mass, and its momentum changes with time, then th
 ```
 We define a velocity changing with time as **acceleration**.
 ```{math}
-\vec a = \frac{\Delta \vec v}{\Delta t}\rightarrow \frac{d\vec v}{dt}\\
 \vec a = \frac{\Delta \vec v}{\Delta t}\xrightarrow[\Delta t \to 0]{}\frac{d\vec v}{dt}
 ```
 where the arrow indicates the limit as the changes become very small. Just as we did with constant velocity and position, we can write kinematic equations of motion for velocity by applying the definition of acceleration.
