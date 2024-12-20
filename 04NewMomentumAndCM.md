@@ -84,14 +84,23 @@ The easiest way to visualize the values in the table is to plot them on a graph,
 :alt: Plot of position as a function of time using the values from [](#tab:MomentumAndCM:1dmotion).
 Plot of position as a function of time using the values from [](#tab:MomentumAndCM:1dmotion).
 ```
-The data plotted in [](#fig:MomentumAndCM:1dxvst) show that the $x$ position of the ball increases linearly with time (i.e. it is a straight line and the position increases at a constant rate). This means that in equal time increments, the rock will cover equal distances. Note that we also had the liberty to choose when we define $t=0$; in this case, we chose that time is zero when the rock is at $x=0.5 {\rm m}$. 
+The data plotted in [](#fig:MomentumAndCM:1dxvst) show that the $x$ position of the rock increases linearly with time (i.e. it is a straight line and the position increases at a constant rate). This means that in equal time increments, the rock will cover equal distances. Note that we also had the liberty to choose when we define $t=0$; in this case, we chose that time is zero when the rock is at $x=0.5 {\rm m}$. 
 
 :::{tip} Checkpoint
-Using the data from [](#tab:MomentumAndCM:1dmotion), at what position along the $x$-axis will the ball be when time is $t=9.5 {\rm s}$, if it continues its motion undisturbed?
+Using the data from [](#tab:MomentumAndCM:1dmotion), at what position along the $x$-axis will the rock be when time is $t=9.5 {\rm s}$, if it continues its motion undisturbed?
 1. $5.0 {\rm m}$
 2. $5.25 {\rm m}$
 3. $5.75 {\rm m}$
 4. $6.0 {\rm m}$
+:::{tip} Answer
+:class: dropdown
+2.
+:::
+:::{tip} Checkpoint
+If we were to graph the velocity vs. time, the graph is
+1. a straight line with positive slope.
+2. a horizontal line with zero slope.
+3. a straight line with negative slope.
 :::{tip} Answer
 :class: dropdown
 2.
@@ -346,7 +355,8 @@ Velocity vs. time for a rock sliding with friction decelerating the rock.
 Position vs. time for a rock sliding with friction decelerating the rock.
 :::
 
-:::{} Valéria's Thoughts
+:::{attention} Valéria's Thoughts
+When there is constant acceleration, the graph of position vs. time changes from a linear dependence with time to a quadratic dependence with time. In the case of negative acceleration, the change in position is decreasing with each second that passes. The corresponding velocity is linear with time and has a negative slope because the velocity is decreasing with time. Eventually, the object slows to a stop. Its velocity is zero, and its position remains constant. If the acceleration exists only while the object is moving, as is the case with friction, the object will remain at rest. It may be possible that there are accelerations that do not cease to influence an object's motion when it comes to rest. If this were true, the object would accelerate with increasing velocity in the opposite direction of its initial velocity after coming to rest.
 :::
 ```{math}
 \frac{d}{dt}\vec p = \frac{d}{dt}m\vec v = m\frac{d}{dt}\vec v=m\vec a
