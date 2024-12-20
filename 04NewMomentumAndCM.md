@@ -417,11 +417,11 @@ If the force of drag were not negligible, there would be a non-conservative forc
 :::
 
 ## Impulse
-When we introduced the concept of energy, we started by calculating the "work", $W$, done by a force exerted on an object over a specific path between two points:
+Forces are a concept central to physics and are related the concept of energy. We'll see in [Chapter %s](#chap:workenergy) that we calculate the "work", $W$, done by a force exerted on an object over a specific path between two points:
 ```{math}
 W = \int_A^B \vec F \cdot d\vec l
 ```
-We then introduced kinetic energy, $K$, to be that quantity whose change is equal to the net work done on the particle
+This, then, introduces the concept of kinetic energy, $K$, to be that quantity whose change is equal to the net work done on the particle
 ```{math}
 W^{net} = \int_A^B \vec F^{net}\cdot d\vec l = \Delta K
 ```
