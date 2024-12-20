@@ -358,12 +358,16 @@ Position vs. time for a rock sliding with friction decelerating the rock.
 :::{attention} Valéria's Thoughts
 When there is constant acceleration, the graph of position vs. time changes from a linear dependence with time to a quadratic dependence with time. In the case of negative acceleration, the change in position is decreasing with each second that passes. The corresponding velocity is linear with time and has a negative slope because the velocity is decreasing with time. Eventually, the object slows to a stop. Its velocity is zero, and its position remains constant. If the acceleration exists only while the object is moving, as is the case with friction, the object will remain at rest. It may be possible that there are accelerations that do not cease to influence an object's motion when it comes to rest. If this were true, the object would accelerate with increasing velocity in the opposite direction of its initial velocity after coming to rest.
 :::
+
+We can summarize interactions that result in momentum changes
 ```{math}
 \frac{d}{dt}\vec p = \frac{d}{dt}m\vec v = m\frac{d}{dt}\vec v=m\vec a
 ```
+keeping in mind that these changes over time correspond to changes in the kinematic description of an object's motion. This description of momentum changes leads us to the second of Newton's Laws of Motion.
 
 > An object's acceleration is proportional to the net force exerted **on the object**, inversely proportional to the mass of the object, and in the same direction as the net force exerted on the object.
-and we can write this as Newton's Second Law, since $m\vec a$ must be equal to the vector sum of the forces on the particle of mass $m$:
+
+We can write the change in momentum as Newton's Second Law, since $m\vec a$ must be equal to the vector sum of the forces on the particle of mass $m$:
 % boxed equation
 ```{math}
 \frac{d}{dt}\vec p = \sum \vec F = \vec F^{net}
@@ -376,7 +380,7 @@ The equation above is the original form in which Newton first developed his theo
 ```
 
 :::{note} Example 4.3
-A particle of mass $m$ is released from rest and allowed to fall freely under the influence of gravity near the Earth's surface (assume that drag is negligible). Is the mechanical energy of the particle conserved? Is the momentum of the particle conserved? If momentum is not conserved, how does momentum change with time? Do your answers change if the force of drag cannot be ignored?}
+A particle of mass $m$ is released from rest and allowed to fall freely under the influence of gravity near the Earth's surface (assume that drag from air resistance is negligible). Acceleration due to gravity near the Earth's surface is $\vec a = \vec g = -9.8~{\rm m/s^2} \hat z$, where the negative sign indicates "downward" relative to the $z$-direction defined as "upward". Is the momentum of the particle conserved? If momentum is not conserved, how does momentum of the particle change with time? Do your answers change if the force of drag cannot be ignored?}
 :::{note} Solution
 :class: dropdown
 First, we model the falling particle assuming that there is no force of drag. The only force exerted on the particle is thus its weight. 
@@ -390,17 +394,24 @@ The total momentum of the particle is not conserved, because the sum of the forc
 Note that the $x$ and $y$ components of momentum are conserved, since there are no forces with components in that direction. We can find how the $z$ component of the momentum changes with time by taking the anti-derivative of the force with respect to time (from $t=0$ to $t=T$):
 ```{math}
 \frac{dp_z}{dt} &= -mg\\
-\int dp_z &= \int_0^T (-mg) dt\\
-p_z(T) - p_z(0) &= -mgT\\
-\therefore p_z(T) &= p_z(0) - mgT
+dp_z &= -mg dt\\
 ```
-where the $z$ component of momentum, $p_z(T)$ at some time $T$, is given by its value at time $t=0$ plus $-mgT$. If the object started at rest ($\vec v=0$), then the magnitude of the momentum, as a function of time, is given by:
+As long as the force does not depend on time (true for gravity near the Earth's surface), we can simply add up the total time that passes, which corresponds to a total change in momentum.
+```{math}
+dp_z &= -mg dt\\
+\Delta p_z &= -mg \Delta t
+```
+Furthermore, if the initial time is zero ($t_o=0~{\rm s}$, and the initial momentum is zero ($p(t=0)=0$), we can write this result as
+```{math}
+p_z(T) &= -mgT\\
+```
+If the initial momentum is not zero, the $z$ component of momentum, $p_z(T)$ at some time $T$, is given by its value at time $t=0$ ($p_o$) plus $-mgT$. If the object started at rest ($\vec v=0$), then the magnitude of the momentum, as a function of time, is given by:
 ```{math}
 p(t) = p_z(t) = -mgt
 ```
 and indeed changes with time.
 
-If the force of drag were not negligible, there would be a non-conservative force acting on the particle, so its mechanical energy would no longer be conserved. The particle will accelerate until it reaches terminal velocity. During that phase of acceleration, the net force on the particle is not zero (it is accelerating), so its momentum is not conserved. Once the particle reaches terminal velocity, the net force on the particle is zero, and its momentum is conserved from then on.
+If the force of drag were not negligible, there would be a non-conservative force acting on the particle, so its mechanical energy would no longer be conserved (We will see more about this in [Chapter %s](#chap:workenergy) and [Chapter %s](#chapter:potentialecons). The particle will accelerate until it reaches terminal velocity. During that phase of acceleration, the net force on the particle is not zero (it is accelerating), so its momentum is not conserved. Once the particle reaches terminal velocity, the net force on the particle is zero, and its momentum is conserved from then on.
 
 **Discussion:** This simple example highlights the fact that mechanical energy and momentum are conserved under different conditions. Just because one is conserved does not mean that the other is conserved. It also shows that Newton's Second Law is a statement about change in momentum, not momentum itself (just like it is a statement about acceleration, change in velocity, not velocity).
 :::
