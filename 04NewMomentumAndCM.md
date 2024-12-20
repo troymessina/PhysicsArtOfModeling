@@ -342,12 +342,12 @@ Without friction, the rock slid 5 meters over 10 seconds and would have continue
 ```
 ```{figure} ./figures/MomentumAndCM/velVstEx4.3.png
 :width: 70%
-:label: fig:MomentumAndCM:velVstEx4.3
+:label: fig:MomentumAndCM:velVst_Ex4.3
 :align: center
 :alt: Velocity vs. time for a rock sliding with friction decelerating the rock.
 Velocity vs. time for a rock sliding with friction decelerating the rock.
 ```
-```{figure} ./figures/MomentumAndCM/posVstEx4.3.png
+```{figure} ./figures/MomentumAndCM/posVst_Ex4.3.png
 :width: 70%
 :label: fig:MomentumAndCM:posVstEx4.3
 :align: center
