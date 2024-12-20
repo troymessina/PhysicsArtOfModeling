@@ -526,7 +526,7 @@ In physics, we loosely define a system as the ensemble of objects/particles that
 When considering a system of multiple particles, we distinguish between **internal** and **external** forces. Internal forces are those forces that the particles in the system exert on each other. For example, if the two billiard balls in the system collide with each other, they will each exert a force on the other during the collision; those forces are internal. External forces are all other forces exerted on the particles of the system. For example, the force of gravity and the normal force from the pool table are both external forces exerted on the balls in the system (exerted by the Earth, or by the pool table, neither of which we considered to be part of the system). The force exerted by a person hitting one of the balls with a pool queue is similarly an external force. What we consider to be a system is arbitrary; we could consider the pool table and the Earth to be part of the system along with the two balls; in that case, the normal force and the weight of the balls would become internal forces. The classification of whether a force is internal or external to a system of course depends on what is considered part of the system.
 
 :::{tip} Checkpoint
-Two pool balls crash against each other. Is this force of gravity exerted by one ball on the other an internal or external force?
+Two billiard balls crash against each other. We consider the system to be the two billiard balls only. Is this collisional force exerted by one ball on the other an internal or external force?
 1.  Internal. 
 2.  External.
 :::{tip} Answer
@@ -534,7 +534,7 @@ Two pool balls crash against each other. Is this force of gravity exerted by one
 1.
 :::
 
-The key property of internal forces is that **the vector sum of the internal forces in a system is zero**. Indeed, Newton's Third Law states that for every force exerted by object A on object B, there is a force that is equal in magnitude and opposite in direction exerted by object B on object A. If we consider both objects to be in the same system, then the sum of the internal forces between objects A and B must sum to zero. It is important to note that this is quite different than what we have discussed so far about summing forces. The forces that sum to zero are exerted on *different* objects. Thus far, we had only ever considered summing forces that are exerted on the same object in order to apply Newton's Second Law. We have never encountered a situation where "action" and "reaction" forces are summed together, because they act on different objects.
+The key property of internal forces is that **the vector sum of the internal forces in a system is zero**. This brings us to Newton's Third Law of Motion. Newton's Third Law states that for every force exerted by object A on object B, there is a force that is equal in magnitude and opposite in direction exerted by object B on object A. If we consider both objects to be in the same system, then the sum of the internal forces between objects A and B must sum to zero. It is important to note that this is quite different than what we have discussed so far about summing forces. The forces that sum to zero are exerted on *different* objects. Thus far, we had only ever considered summing forces that are exerted on the same object in order to apply Newton's Second Law. We have never encountered a situation where "action" and "reaction" forces are summed together, because they act on different objects.
 
 :::{attention} Emma's Thoughts
 
