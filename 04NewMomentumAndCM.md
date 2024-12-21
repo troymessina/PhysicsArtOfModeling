@@ -536,7 +536,7 @@ Two billiard balls crash against each other. We consider the system to be the tw
 
 The key property of internal forces is that **the vector sum of the internal forces in a system is zero**. This brings us to Newton's Third Law of Motion. Newton's Third Law states that for every force exerted by object A on object B, there is a force that is equal in magnitude and opposite in direction exerted by object B on object A. If we consider both objects to be in the same system, then the sum of the internal forces between objects A and B must sum to zero. It is important to note that this is quite different than what we have discussed so far about summing forces. The forces that sum to zero are exerted on *different* objects. Thus far, we had only ever considered summing forces that are exerted on the same object in order to apply Newton's Second Law. We have never encountered a situation where "action" and "reaction" forces are summed together, because they act on different objects.
 
-:::{attention} Emma's Thoughts
+:::{attention} Farooq's Thoughts
 
 **Internal vs. External forces - what is the "system" and what forces should we consider?**
 
@@ -624,7 +624,7 @@ When we refer to a force being "exerted on a system", we mean exerted on one or 
 :alt: A train with $N$ cars of mass $m$ about to collide with a car of mass $m$ that is at rest on the track.
 A train with $N$ cars of mass $m$ about to collide with a car of mass $m$ that is at rest on the track.
 ``` 
-Consider a train made of $N$ cars of equal mass $m$ that is travelling at constant speed $v$ along a straight piece of track where friction and drag are negligible, as depicted in [](#fig:momentumandcm:train). An empty car of mass $m$ was left at rest on the track in front of the train. The train collides with the empty car which stays attached to the front of the train. What is the speed of the train after the collision? Is the total mechanical energy of the system conserved?
+Consider a train made of $N$ cars of equal mass $m$ that is travelling at constant speed $v$ along a straight piece of track where friction and drag are negligible, as depicted in [](#fig:momentumandcm:train). An empty car of mass $m$ was left at rest on the track in front of the train. The train collides with the empty car which stays attached to the front of the train. What is the speed of the train after the collision? Is the total mechanical energy, $E=1/2 mv^2$, of the system conserved?
 :::{note} Solution
 :class: dropdown
 When the train collides with the car, it will exert a "collision" force on the car, and the car will exert an opposite force on the train. If we consider both of the train and the car as being part of the same system, then those collision forces will be internal, and the momentum of the system (train + car) will be conserved. The train and car both experience external forces from Earth's gravity and the normal force from the train tracks. However, those two sets of forces cancel each other out, since neither the train nor the car have any acceleration in the vertical direction (the sum of the forces on each object has no net vertical component). Thus, there are no net external forces on the car+train system, and the total momentum of the system is conserved through the collision.
