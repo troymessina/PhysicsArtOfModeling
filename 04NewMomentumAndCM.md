@@ -976,9 +976,17 @@ Clearly, the total momentum is zero in the centre of mass frame of reference:
 **Discussion:** As we have seen, in the centre of mass frame of reference the total momentum is zero. If there are only two particles, and they have the same mass, then, in the centre of mass frame of reference, they both have the same speed and move either towards or away from each other. 
 :::
 
+## Exploring collisions with PhET
 
+:::{iframe} https://phet.colorado.edu/sims/html/collision-lab/latest/collision-lab_all.html
+:label: phet:momentumandcm:collisions
+:width: 100%
+:align: center
+PhET simulation to model collisions.
+:::
 
 # The centre of mass
+
 In this section, we show how to generalize Newton's Second Law so that it may describe the motion of an object that is not a point particle. Any object can be described as being made up of point particles; for example, those particles could be the atoms that make up regular matter. We can thus use the same terminology as in the previous sections to describe a complicated object as a "system" comprised of many point particles, themselves described by Newton's Second Law. A system could be a rigid object where the point particles cannot move relative to each other, such as atoms in a solid[^7]. Or, the system could be a gas, made of many atoms moving around, or it could be a combination of many solid objects moving around. 
 
 In the previous section, we saw how the total momentum and the total mechanical energy of the system could be used to describe the system as a whole. In this section, we will define the centre of mass which will allow us to describe the position of the system as a whole.
@@ -1434,7 +1442,7 @@ A satellite moves in a circular orbit around the Earth with a constant speed. Wh
 :::
 
 :::{tip} Checkpoint
-A vicuña is going clockwise around a circle that is centred at the origin of an $xy$ coordinate system that is in the plane of the circle. The vicuña runs faster and faster around the circle. In which direction does its acceleration vector point just as the vicu\~na is at the point where the circle intersects the positive $y$ axis?
+A vicuña is going clockwise around a circle that is centred at the origin of an $xy$ coordinate system that is in the plane of the circle. The vicuña runs faster and faster around the circle. In which direction does its acceleration vector point just as the vicuña is at the point where the circle intersects the positive $y$ axis?
 1. In the negative $y$ direction.
 2. In the positive $y$ direction.
 3. A combination of the positive $y$ and positive $x$ directions.
@@ -1447,7 +1455,7 @@ A vicuña is going clockwise around a circle that is centred at the origin of an
 
 ## Period and frequency
 
-When an object is moving around in a circle, it will typically complete more than one revolution. If the object is going around the circle with a constant speed, we call the motion ``uniform circular motion'', and we can define the **period and frequency** of the motion. 
+When an object is moving around in a circle, it will typically complete more than one revolution. If the object is going around the circle with a constant speed, we call the motion "uniform circular motion", and we can define the **period and frequency** of the motion. 
 
 The period, $T$, is defined to be the time that it takes to complete one revolution around the circle. If the object has constant angular speed $\omega$, we can find the time, $T$, that it takes to complete one full revolution, from $\theta=0$ to $\theta=2\pi$:
 ```{math}
@@ -1466,7 +1474,7 @@ The frequency, $f$, is defined to be the inverse of the period:
 ```{math}
 f&=\frac{1}{T}=\frac{\omega}{2\pi}
 ```
-and has SI units of ${\rm Hz}={\rm s^{-1}}$. Think of frequency as the number of revolutions completed per second. Thus, if the frequency is $f=\SI{1}{Hz}$, the object goes around the circle once per second. Given the frequency, we can of course obtain the angular velocity:
+and has SI units of ${\rm Hz}={\rm s^{-1}}$. Think of frequency as the number of revolutions completed per second. Thus, if the frequency is $f= 1 {\rm Hz}$, the object goes around the circle once per second. Given the frequency, we can of course obtain the angular velocity:
 ```{math}
 \omega = 2\pi f
 ```
