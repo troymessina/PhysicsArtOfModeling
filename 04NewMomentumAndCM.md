@@ -1416,8 +1416,8 @@ That is, the component of the acceleration vector that is parallel to the veloci
 As we saw earlier, the perpendicular component of the acceleration, $\vec a_{\bot}(t)$, is responsible for changing the direction of the velocity vector (as the object continuously changes direction when going in a circle). When the motion is around a circle, this component of the acceleration vector is called ``centripetal'' acceleration (i.e. acceleration pointing towards the centre of the circle, as we will see). We can calculate the centripetal acceleration in terms of our angular variables, noting that the unit vector in the direction of the velocity is $\hat v=-\sin(\theta)\hat x+\cos(\theta)\hat y$:
 ```{math}
 \vec a_{\bot}(t)&=v\frac{d\hat v}{dt}\nonumber\\
-&=(\omega R)\ddt \left[-\sin(\theta)\hat x+\cos(\theta)\hat y\right]\nonumber\\
-&=\omega R \left[-\ddt\sin(\theta)\hat x+\ddt\cos(\theta)\hat y\right]\nonumber\\
+&=(\omega R)\frac{d}{dt} \left[-\sin(\theta)\hat x+\cos(\theta)\hat y\right]\nonumber\\
+&=\omega R \left[-\frac{d}{dt}\sin(\theta)\hat x+\frac{d}{dt}\cos(\theta)\hat y\right]\nonumber\\
 &=\omega R \left[-\cos(\theta)\frac{d\theta}{dt}\hat x-\sin(\theta)\frac{d\theta}{dt}\hat y\right]\nonumber\\
 &=\omega R [-\cos(\theta)\omega\hat x-\sin(\theta)\omega\hat y]\nonumber\\
 ```
