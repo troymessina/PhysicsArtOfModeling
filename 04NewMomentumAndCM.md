@@ -1331,7 +1331,7 @@ and the velocity vector is thus given by:
 ```
 where we used the Chain Rule to calculate the time derivatives of the trigonometric functions (since $\theta(t)$ is function of time). We can write this in component form:
 ```{math}
-:label: eqn:MomentumAndCM:vcircle}
+:label: eqn:MomentumAndCM:vcircle
 v_x &= -R\sin(\theta(t))\frac{d\theta}{dt}\nonumber\\
 v_y &= R\cos(\theta(t))\frac{d\theta}{dt}
 ```
@@ -1350,17 +1350,17 @@ The position and velocity vectors are illustrated in [](#fig:MomentumAndCM:vcirc
 :alt: The position vector, $\vec r(t)$ is always perpendicular to the velocity vector, $\vec v(t)$, for motion on a circle.
 The position vector, $\vec r(t)$ is always perpendicular to the velocity vector, $\vec v(t)$, for motion on a circle.
 ```
-In this case, you can note that the $x$ component of the velocity is negative (from the diagram and from Equation {eq}`eqn:MomentumAndCM:vcircle`). From Equation {eq}`eqn:MomentumAndCM:vcircle`, you can also see that $\frac{|v_x|}{|v_y|}=\tan(\theta)$, which is illustrated in Figure \ref{fig:describingmotioninnd:vcircle}, showing that \textbf{the velocity vector is tangent to the circle} and perpendicular to the position vector. This is always the case for motion along a circle.
+In this case, you can note that the $x$ component of the velocity is negative (from the diagram and from equation {eq}`eqn:MomentumAndCM:vcircle`). From equation {eq}`eqn:MomentumAndCM:vcircle`, you can also see that $\frac{|v_x|}{|v_y|}=\tan(\theta)$, which is illustrated in [](#fig:describingmotioninnd:vcircle, showing that **the velocity vector is tangent to the circle** and perpendicular to the position vector. This is always the case for motion along a circle.
 
 We can simplify our description of motion along the circle by using either $s(t)$ or $\theta(t)$ instead of the vectors for position and velocity. If we use $s(t)$ to represent position along the circumference ($s=0$ where the circle intersects the $x$ axis), then the velocity along the $s$ axis is:
-\begin{align*}
+```{math}
 v_s(t)&=\frac{d}{dt}s(t)\\
 &=\frac{d}{dt}R\theta(t)\\
 &=R\frac{d\theta}{dt}
-\end{align*}
-where we used the fact that $\theta=s/R$ to convert from $s$ to $\theta$. The velocity along the $s$ axis is thus precisely equal to the magnitude of the two-dimensional velocity vector (derived above), which makes sense since the velocity vector is tangent to the circle (and thus in the $s$ ``direction'').
+```
+where we used the fact that $\theta=s/R$ to convert from $s$ to $\theta$. The velocity along the $s$ axis is thus precisely equal to the magnitude of the two-dimensional velocity vector (derived above), which makes sense since the velocity vector is tangent to the circle (and thus in the $s$ "direction").
 
-If the object has a \textbf{constant speed}, $v_s$, along the circle and started at a position along the circumference $s=s_0$, then its position along the $s$ axis can be described using 1D kinematics:
+If the object has a **constant speed**, $v_s$, along the circle and started at a position along the circumference $s=s_0$, then its position along the $s$ axis can be described using 1D kinematics:
 \begin{align*}
 s(t)=s_0+v_st
 \end{align*}
