@@ -190,7 +190,7 @@ We can visualize the velocity with a vector arrow that remains attached to the r
 arr = arrow(pos=rock.pos, axis=rock.vel, color=color.white)
 ```
 Try, putting these three lines of code in the trinket below and see what happens when you run the program.
-:::{iframe} https://trinket.io/embed/glowscript/8f1815879d
+:::{iframe} https://trinket.io/embed/glowscript/8f1815879d?outputOnly=true
 :label: chap:momentumandcm:blanktrinket
 :width: 100%
 :align: center
@@ -1373,7 +1373,7 @@ or, in terms of $\theta$:
 ```{math}
 \boxed{\omega = \frac{d\theta}{dt}}
 ```
-where we introduced $\theta_0$ as the angle corresponding to the position $s_0$, and we introduced $\omega=\frac{d\theta}{dt}$, which is analogous to velocity, but for an angle. $\omega$ is called the \textbf{angular velocity} and is a measure of the rate of change of the angle $\theta$ (as it is the time derivative of the angle). The relation between the "linear" velocity $v_s$ (the magnitude of the velocity vector, which corresponds to the velocity in the direction tangent to the circle) and $\omega$ is:
+where we introduced $\theta_0$ as the angle corresponding to the position $s_0$, and we introduced $\omega=\frac{d\theta}{dt}$, which is analogous to velocity, but for an angle. $\omega$ is called the **angular velocity** and is a measure of the rate of change of the angle $\theta$ (as it is the time derivative of the angle). The relation between the "linear" velocity $v_s$ (the magnitude of the velocity vector, which corresponds to the velocity in the direction tangent to the circle) and $\omega$ is:
 ```{math}
 \boxed{v_s=R\frac{d\theta}{dt}=R\omega }
 ```
@@ -1409,7 +1409,7 @@ We can compute the acceleration **vector** and identify components that are para
 ```
 The first term, $\vec a_{\parallel}(t)=\frac{dv}{dt}\hat v(t)$, is parallel to the velocity vector $\hat v$, and has a magnitude given by:
 ```{math}
-||\vec a_{\parallel}(t)||&=\frac{dv}{dt}=\ddt v(t)=\ddt R\omega=R\alpha
+||\vec a_{\parallel}(t)||&=\frac{dv}{dt}=\frac{d(R\omega)}{dt}=R\alpha
 ```
 That is, the component of the acceleration vector that is parallel to the velocity is precisely the acceleration in the $s$ direction (the linear acceleration). This component of the acceleration is responsible for increasing (or decreasing) the speed of the object and is zero if the object goes around the circle with a constant speed (linear or angular). 
 
@@ -1425,9 +1425,9 @@ As we saw earlier, the perpendicular component of the acceleration, $\vec a_{\bo
 \boxed{\vec a_{\bot}(t)=\omega^2 R[-\cos(\theta)\hat x-\sin(\theta)\hat y]}
 ```
 where you can easily verify that the vector $[-\cos(\theta)\hat x-\sin(\theta)\hat y]$ has unit length and points towards the centre of the circle (when the tail is placed on a point on the circle at angle $\theta$). The centripetal acceleration thus points towards the centre of the circle and has magnitude:
-\begin{align}
+```{math}
 a_c(t) = ||\vec a_{\bot}(t)||=\omega^2(t) R = \frac{v^2(t)}{R}
-\end{align}
+```
 where in the last equal sign, we wrote the centripetal acceleration in terms of the speed around the circle ($v=||\vec v||=v_s$).
 
 If an object goes around a circle, it will always have a centripetal acceleration (since its velocity vector must change direction). In addition, if the object's speed is changing, it will also have a linear acceleration, which points in the same direction as the velocity vector (it changes the velocity vector's length but not its direction).
