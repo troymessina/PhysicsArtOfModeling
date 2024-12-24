@@ -1371,7 +1371,7 @@ or, in terms of $\theta$:
 &=\theta_0 + \omega t
 ```
 ```{math}
-\boxed{\therefore \omega &= \frac{d\theta}{dt}}
+\boxed{\omega &= \frac{d\theta}{dt}}
 ```
 where we introduced $\theta_0$ as the angle corresponding to the position $s_0$, and we introduced $\omega=\frac{d\theta}{dt}$, which is analogous to velocity, but for an angle. $\omega$ is called the \textbf{angular velocity} and is a measure of the rate of change of the angle $\theta$ (as it is the time derivative of the angle). The relation between the "linear" velocity $v_s$ (the magnitude of the velocity vector, which corresponds to the velocity in the direction tangent to the circle) and $\omega$ is:
 ```{math}
