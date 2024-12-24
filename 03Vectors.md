@@ -753,6 +753,7 @@ While visiting Manhattan, New York, you make the journey between the sights list
 * c) Write the vectors using trigonometric notation
 	* $\vec{r} = r \cos(\theta) \hat{i} + r \sin(\theta) \hat{j}$
 	* $\vec{v} = v \cos(\theta) \hat{i} + v \sin(\theta) \hat{j}$
+* d) Calculate the resultant displacement vector and the average velocity vector.
 ```{table} Manhattan journey including locations visited, distance between locations, direction traveled, and time taken traveling between sights.
 :label: tab:Vectors:prob3.3
 | Locations | Distance (mi) | Direction | Time (min) |

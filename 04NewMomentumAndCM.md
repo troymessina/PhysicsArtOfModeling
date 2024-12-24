@@ -278,7 +278,7 @@ p_B = m_Bv_B = 750000(74.5) = 5.59\times 10^7{\rm kg\cdot km/hr}
 Therefore, Train B has more momentum.
 :::
 
-## Non-constant Momentum and Newton's 2nd Law
+# Non-constant Momentum and Newton's 2nd Law
 If the particle has a constant mass, and its momentum changes with time, then the time dependence of its momentum is given by:
 ```{math}
 \frac{\Delta \vec p}{\Delta t} = m\frac{\Delta \vec v}{\Delta t}
