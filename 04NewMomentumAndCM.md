@@ -1489,7 +1489,7 @@ A motor is rotating at $3000 {\rm rpm}$, what is the corresponding frequency in 
 :::
 
 :::{attention} Olivia's Thoughts
-There's a trick I like to use to remember how linear and angular velocities work. Figure \ref{fig:describingmotioninnd:handcircularmotion} shows your hand in two positions, which we call (1) and (2).
+There's a trick I like to use to remember how linear and angular velocities work. [](#fig:MomentumAndCM:handcircularmotion) shows your hand in two positions, which we call (1) and (2).
 ```{figure} figures/DescribingMotionInND/HandPolarCoordinates.png
 :label: fig:MomentumAndCM:handcircularmotion
 :width: 70%
