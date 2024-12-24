@@ -1361,16 +1361,18 @@ v_s(t)&=\frac{d}{dt}s(t)\\
 where we used the fact that $\theta=s/R$ to convert from $s$ to $\theta$. The velocity along the $s$ axis is thus precisely equal to the magnitude of the two-dimensional velocity vector (derived above), which makes sense since the velocity vector is tangent to the circle (and thus in the $s$ "direction").
 
 If the object has a **constant speed**, $v_s$, along the circle and started at a position along the circumference $s=s_0$, then its position along the $s$ axis can be described using 1D kinematics:
-\begin{align*}
+```{math}
 s(t)=s_0+v_st
-\end{align*}
+```
 or, in terms of $\theta$:
-\begin{align*}
+```{math}
 \theta(t)&=\frac{s(t)}{R}=\frac{s_0}{R}+\frac{v_s}{R}t\\
 &=\theta_0 + \frac{d\theta}{dt}t\\
 &=\theta_0 + \omega t\\
-\Aboxed{\therefore \omega &= \frac{d\theta}{dt}}
-\end{align*}
+```
+```{math}
+\boxed{\therefore \omega &= \frac{d\theta}{dt}}
+```
 where we introduced $\theta_0$ as the angle corresponding to the position $s_0$, and we introduced $\omega=\frac{d\theta}{dt}$, which is analogous to velocity, but for an angle. $\omega$ is called the \textbf{angular velocity} and is a measure of the rate of change of the angle $\theta$ (as it is the time derivative of the angle). The relation between the ``linear'' velocity $v_s$ (the magnitude of the velocity vector, which corresponds to the velocity in the direction tangent to the circle) and $\omega$ is:
 \begin{align*}
 \Aboxed{v_s=R\frac{d\theta}{dt}=R\omega }
