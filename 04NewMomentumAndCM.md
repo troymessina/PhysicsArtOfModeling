@@ -1368,33 +1368,35 @@ or, in terms of $\theta$:
 ```{math}
 \theta(t)&=\frac{s(t)}{R}=\frac{s_0}{R}+\frac{v_s}{R}t\\
 &=\theta_0 + \frac{d\theta}{dt}t\\
-&=\theta_0 + \omega t\\
+&=\theta_0 + \omega t
 ```
 ```{math}
 \boxed{\therefore \omega &= \frac{d\theta}{dt}}
 ```
-where we introduced $\theta_0$ as the angle corresponding to the position $s_0$, and we introduced $\omega=\frac{d\theta}{dt}$, which is analogous to velocity, but for an angle. $\omega$ is called the \textbf{angular velocity} and is a measure of the rate of change of the angle $\theta$ (as it is the time derivative of the angle). The relation between the ``linear'' velocity $v_s$ (the magnitude of the velocity vector, which corresponds to the velocity in the direction tangent to the circle) and $\omega$ is:
-\begin{align*}
-\Aboxed{v_s=R\frac{d\theta}{dt}=R\omega }
-\end{align*}
+where we introduced $\theta_0$ as the angle corresponding to the position $s_0$, and we introduced $\omega=\frac{d\theta}{dt}$, which is analogous to velocity, but for an angle. $\omega$ is called the \textbf{angular velocity} and is a measure of the rate of change of the angle $\theta$ (as it is the time derivative of the angle). The relation between the "linear" velocity $v_s$ (the magnitude of the velocity vector, which corresponds to the velocity in the direction tangent to the circle) and $\omega$ is:
+```{math}
+\boxed{v_s=R\frac{d\theta}{dt}=R\omega }
+```
 
-Similarly, if the object is accelerating, we can define an \textbf{angular acceleration}, $\alpha(t)$, as the rate of change of the angular velocity:
-\begin{align*}
+Similarly, if the object is accelerating, we can define an **angular acceleration**, $\alpha(t)$, as the rate of change of the angular velocity:
+```{math}
 \alpha(t)=\frac{d\omega}{dt}
-\end{align*}
+```
 which can directly be related to the acceleration in the $s$ direction, $a_s(t)$:
-\begin{align*}
+```{math}
 a_s(t) &= \frac{d}{dt}v_s\\
-&=\frac{d}{dt}\omega R=R\frac{d\omega}{dt}\\
-\Aboxed{a_s(t)&=R\alpha }
-\end{align*}
+&=\frac{d}{dt}\omega R=R\frac{d\omega}{dt}
+```
+```{math}
+\boxed{a_s(t)&=R\alpha }
+```
 Thus, the linear quantities (those along the $s$ axis) can be related to the angular quantities by multiplying the angular quantities by $R$:
-\begin{align}
+```{math}
 s&=R\theta\\
 v_s&=R\omega\\
 a_s&=R\alpha
-\end{align}
-If the object started at $t=0$ with a position $s=s_0$ ($\theta=\theta_0$), and an initial linear velocity $v_{0s}$ (angular velocity $\omega_0$), and has a \textbf{constant linear acceleration} around the circle, $a_s$ (angular acceleration, $\alpha$), then the position of the object can be described using either the linear or the angular quantities:
+```
+If the object started at $t=0$ with a position $s=s_0$ ($\theta=\theta_0$), and an initial linear velocity $v_{0s}$ (angular velocity $\omega_0$), and has a **constant linear acceleration** around the circle, $a_s$ (angular acceleration, $\alpha$), then the position of the object can be described using either the linear or the angular quantities:
 \begin{align*}
 s(t) &= s_0+v_{s0}t+\frac{1}{2}a_s t^2\\
 \theta(t) &= \theta_0+\omega_0t+\frac{1}{2}\alpha t^2
