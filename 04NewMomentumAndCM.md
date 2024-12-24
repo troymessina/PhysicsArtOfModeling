@@ -1371,7 +1371,7 @@ or, in terms of $\theta$:
 &=\theta_0 + \omega t
 ```
 ```{math}
-\boxed{\omega &= \frac{d\theta}{dt}}
+\boxed{\omega = \frac{d\theta}{dt}}
 ```
 where we introduced $\theta_0$ as the angle corresponding to the position $s_0$, and we introduced $\omega=\frac{d\theta}{dt}$, which is analogous to velocity, but for an angle. $\omega$ is called the \textbf{angular velocity} and is a measure of the rate of change of the angle $\theta$ (as it is the time derivative of the angle). The relation between the "linear" velocity $v_s$ (the magnitude of the velocity vector, which corresponds to the velocity in the direction tangent to the circle) and $\omega$ is:
 ```{math}
@@ -1388,7 +1388,7 @@ a_s(t) &= \frac{d}{dt}v_s\\
 &=\frac{d}{dt}\omega R=R\frac{d\omega}{dt}
 ```
 ```{math}
-\boxed{a_s(t)&=R\alpha }
+\boxed{a_s(t)=R\alpha }
 ```
 Thus, the linear quantities (those along the $s$ axis) can be related to the angular quantities by multiplying the angular quantities by $R$:
 ```{math}
@@ -1397,31 +1397,33 @@ v_s&=R\omega\\
 a_s&=R\alpha
 ```
 If the object started at $t=0$ with a position $s=s_0$ ($\theta=\theta_0$), and an initial linear velocity $v_{0s}$ (angular velocity $\omega_0$), and has a **constant linear acceleration** around the circle, $a_s$ (angular acceleration, $\alpha$), then the position of the object can be described using either the linear or the angular quantities:
-\begin{align*}
+```{math}
 s(t) &= s_0+v_{s0}t+\frac{1}{2}a_s t^2\\
 \theta(t) &= \theta_0+\omega_0t+\frac{1}{2}\alpha t^2
-\end{align*}
+```
 
-As you recall from section \ref{sec:describingmotioninnd:accvconst}, we can compute the acceleration \textbf{vector} and identify components that are parallel and perpendicular to the velocity vector:
-\begin{align*}
+We can compute the acceleration **vector** and identify components that are parallel and perpendicular to the velocity vector:
+```{math}
 \vec a&=\vec a_{\parallel}(t) + \vec a_{\bot}(t)\\
 &=\frac{dv}{dt}\hat v(t)+v\frac{d\hat v}{dt}\\
-\end{align*}
+```
 The first term, $\vec a_{\parallel}(t)=\frac{dv}{dt}\hat v(t)$, is parallel to the velocity vector $\hat v$, and has a magnitude given by:
-\begin{align*}
+```{math}
 ||\vec a_{\parallel}(t)||&=\frac{dv}{dt}=\ddt v(t)=\ddt R\omega=R\alpha
-\end{align*}
+```
 That is, the component of the acceleration vector that is parallel to the velocity is precisely the acceleration in the $s$ direction (the linear acceleration). This component of the acceleration is responsible for increasing (or decreasing) the speed of the object and is zero if the object goes around the circle with a constant speed (linear or angular). 
 
 As we saw earlier, the perpendicular component of the acceleration, $\vec a_{\bot}(t)$, is responsible for changing the direction of the velocity vector (as the object continuously changes direction when going in a circle). When the motion is around a circle, this component of the acceleration vector is called ``centripetal'' acceleration (i.e. acceleration pointing towards the centre of the circle, as we will see). We can calculate the centripetal acceleration in terms of our angular variables, noting that the unit vector in the direction of the velocity is $\hat v=-\sin(\theta)\hat x+\cos(\theta)\hat y$:
-\begin{align}
+```{math}
 \vec a_{\bot}(t)&=v\frac{d\hat v}{dt}\nonumber\\
 &=(\omega R)\ddt \left[-\sin(\theta)\hat x+\cos(\theta)\hat y\right]\nonumber\\
 &=\omega R \left[-\ddt\sin(\theta)\hat x+\ddt\cos(\theta)\hat y\right]\nonumber\\
 &=\omega R \left[-\cos(\theta)\frac{d\theta}{dt}\hat x-\sin(\theta)\frac{d\theta}{dt}\hat y\right]\nonumber\\
 &=\omega R [-\cos(\theta)\omega\hat x-\sin(\theta)\omega\hat y]\nonumber\\
-\Aboxed{\vec a_{\bot}(t)&=\omega^2 R[-\cos(\theta)\hat x-\sin(\theta)\hat y]}
-\end{align}
+```
+```{math}
+\boxed{\vec a_{\bot}(t)=\omega^2 R[-\cos(\theta)\hat x-\sin(\theta)\hat y]}
+```
 where you can easily verify that the vector $[-\cos(\theta)\hat x-\sin(\theta)\hat y]$ has unit length and points towards the centre of the circle (when the tail is placed on a point on the circle at angle $\theta$). The centripetal acceleration thus points towards the centre of the circle and has magnitude:
 \begin{align}
 a_c(t) = ||\vec a_{\bot}(t)||=\omega^2(t) R = \frac{v^2(t)}{R}
