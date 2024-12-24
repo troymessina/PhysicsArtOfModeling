@@ -978,7 +978,30 @@ Clearly, the total momentum is zero in the centre of mass frame of reference:
 
 ## Exploring collisions with PhET
 
-:::{iframe} https://phet.colorado.edu/sims/html/collision-lab/latest/collision-lab_all.html
+### Equal mass collisions
+
+As an introduction to collisions, use the "Intro" tab of the PhET simulation in [](#phet:momentumandcm:collisions). 
+1. Make the collision elastic by dragging the slider of Elasticity to the right 100%.
+2. Click the "More Data" box to show position, velocity, and momentum of each object. 
+	* The "More Data" values in the table can be edited by clicking on them. 
+3. Set the following values: 
+	* Masses: $m_1 = m_2 = 2 {\rm kg}$
+	* Initial positions: $x_1 = -1.00 {\rm m}$ and $x_2 = 0.00 {\rm m}$
+	* Initial velocities: $v_{x1i} = 1.00 {\rm m/s}$ $v_{x2i} = 0 {\rm m/s}$ (Object 2 is at rest).
+4. Click on Play, then after collision Pause. 
+5. Record the values of $v_{x1f}$ and $v_{x2f}$
+6. Calculate the valuesd of $p_i = p_{x1i} + p_{x2i} , p_f = p_{x1f} + p_{x2f}, p_f/p_i , K_i , K_f$ and $K_f/K_i$ and record them in a table like [](#tab:MomentumAndCM:phetcollisions).
+7. Repeat the experiment for two different values of $v_{x1i}$, (3 m/s) and (6.00 m/s) and always keep $v_{x2i}$ zero.
+8. Repeat one of the experiments with the masses initially moving toward one another with equal but opposite initial velocities. 
+```{table} Time, $x$-position, and velocity $v_x(t)$ of a decelerating rock sliding across a frozen pond recorded every second.
+:label: tab:MomentumAndCM:phetcollisions
+|$v_{x1i} {\rm (m/s)}$|$v_{x2i} {\rm (m/s)}$|$v_{x1f} {\rm (m/s)}$|$v_{x2f} {\rm (m/s)}$|$p_i {\rm (kg\cdot m/s)}$|$p_f {\rm (kg\cdot m/s)}$|$K_i {\rm (J)}$| $K_f {\rm (J)}$|
+| :----------: | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: |
+|   1.00       |   0.00      |             |             |             |             |             |             |
+|   3.00       |   0.00      |             |             |             |             |             |             |
+|   6.00       |   0.00      |             |             |             |             |             |             |
+```
+rme} https://phet.colorado.edu/sims/html/collision-lab/latest/collision-lab_all.html
 :label: phet:momentumandcm:collisions
 :width: 100%
 :align: center
