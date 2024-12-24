@@ -190,7 +190,7 @@ We can visualize the velocity with a vector arrow that remains attached to the r
 arr = arrow(pos=rock.pos, axis=rock.vel, color=color.white)
 ```
 Try, putting these three lines of code in the trinket below and see what happens when you run the program.
-:::{iframe} https://trinket.io/embed/glowscript/8f1815879d?outputOnly=true
+:::{iframe} https://trinket.io/embed/glowscript/8f1815879d?toggleCode=true
 :label: chap:momentumandcm:blanktrinket
 :width: 100%
 :align: center
@@ -1432,16 +1432,20 @@ where in the last equal sign, we wrote the centripetal acceleration in terms of 
 
 If an object goes around a circle, it will always have a centripetal acceleration (since its velocity vector must change direction). In addition, if the object's speed is changing, it will also have a linear acceleration, which points in the same direction as the velocity vector (it changes the velocity vector's length but not its direction).
 
-\begin{checkpoint}{\begin{MCquestion}{A vicu\~na is going clockwise around a circle that is centred at the origin of an $xy$ coordinate system that is in the plane of the circle. The vicu\~na runs faster and faster around the circle. In which direction does its acceleration vector point just as the vicu\~na is at the point where the circle intersects the positive $y$ axis?}
-\item In the negative $y$ direction.
-\item In the positive $y$ direction.
-\item A combination of the positive $y$ and positive $x$ directions.
-\item A combination of the negative $y$ and positive $x$ directions. \correct
-\item A combination of the negative $y$ and negative $x$ directions.
-\end{MCquestion}}
-\end{checkpoint}
+:::{tip} Checkpoint
+A vicuña is going clockwise around a circle that is centred at the origin of an $xy$ coordinate system that is in the plane of the circle. The vicuña runs faster and faster around the circle. In which direction does its acceleration vector point just as the vicu\~na is at the point where the circle intersects the positive $y$ axis?
+1. In the negative $y$ direction.
+2. In the positive $y$ direction.
+3. A combination of the positive $y$ and positive $x$ directions.
+4. A combination of the negative $y$ and positive $x$ directions.
+5. A combination of the negative $y$ and negative $x$ directions.
+::: Answer
+:class: dropdown
+4.
+:::
 
-\subsection{Period and frequency}
+## Period and frequency
+
 When an object is moving around in a circle, it will typically complete more than one revolution. If the object is going around the circle with a constant speed, we call the motion ``uniform circular motion'', and we can define the \textbf{period and frequency} of the motion. 
 
 The period, $T$, is defined to be the time that it takes to complete one revolution around the circle. If the object has constant angular speed $\omega$, we can find the time, $T$, that it takes to complete one full revolution, from $\theta=0$ to $\theta=2\pi$:
