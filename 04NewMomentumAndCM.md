@@ -987,26 +987,33 @@ As an introduction to collisions, use the "Intro" tab of the PhET simulation in 
 3. Set the following values: 
 	* Masses: $m_1 = m_2 = 2 {\rm kg}$
 	* Initial positions: $x_1 = -1.00 {\rm m}$ and $x_2 = 0.00 {\rm m}$
-	* Initial velocities: $v_{x1i} = 1.00 {\rm m/s}$ $v_{x2i} = 0 {\rm m/s}$ (Object 2 is at rest).
+	* Initial velocities: $v_{x1} = 1.00 {\rm m/s}$ $v_{x2} = 0 {\rm m/s}$ (Object 2 is at rest).
 4. Click on Play, then after collision Pause. 
-5. Record the values of $v_{x1f}$ and $v_{x2f}$
-6. Calculate the valuesd of $p_i = p_{x1i} + p_{x2i} , p_f = p_{x1f} + p_{x2f}, p_f/p_i , K_i , K_f$ and $K_f/K_i$ and record them in a table like [](#tab:MomentumAndCM:phetcollisions).
+5. Record the values of $v'_{x1}$ and $v'_{x2}$
+6. Calculate the valuesd of $p = p_{x1} + p_{x2} , p' = p'_{x1} + p'_{x2}, p'/p , K , K'$ and $K'/K$ and record them in a table like [](#tab:MomentumAndCM:phetcollisions).
 7. Repeat the experiment for two different values of $v_{x1i}$, (3 m/s) and (6.00 m/s) and always keep $v_{x2i}$ zero.
 8. Repeat one of the experiments with the masses initially moving toward one another with equal but opposite initial velocities. 
 ```{table} Time, $x$-position, and velocity $v_x(t)$ of a decelerating rock sliding across a frozen pond recorded every second.
 :label: tab:MomentumAndCM:phetcollisions
-|$v_{x1i} {\rm (m/s)}$|$v_{x2i} {\rm (m/s)}$|$v_{x1f} {\rm (m/s)}$|$v_{x2f} {\rm (m/s)}$|$p_i {\rm (kg\cdot m/s)}$|$p_f {\rm (kg\cdot m/s)}$|$K_i {\rm (J)}$| $K_f {\rm (J)}$|
+|$v_{x1} {\rm (m/s)}$|$v_{x2} {\rm (m/s)}$|$v'_{x1} {\rm (m/s)}$|$v'_{x2} {\rm (m/s)}$|$p {\rm (kg\cdot m/s)}$|$p' {\rm (kg\cdot m/s)}$|$K {\rm (J)}$| $K' {\rm (J)}$|
 | :----------: | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: |
 |   1.00       |   0.00      |             |             |             |             |             |             |
 |   3.00       |   0.00      |             |             |             |             |             |             |
 |   6.00       |   0.00      |             |             |             |             |             |             |
 ```
-rme} https://phet.colorado.edu/sims/html/collision-lab/latest/collision-lab_all.html
+:::{iframe} https://phet.colorado.edu/sims/html/collision-lab/latest/collision-lab_all.html
 :label: phet:momentumandcm:collisions
 :width: 100%
 :align: center
 PhET simulation to model collisions.
 :::
+
+To observe the differences in an inelastic collision, repeat the above experiments with the Elasticity set to 0%.
+
+### Unequal mass collisions
+
+* Repeat the steps 1-8 above with $m_1=2 {\rm kg}$ and $m_2=1 {\rm kg}$.
+* Repeat the steps 1-8 above with $m_1=1 {\rm kg}$ and $m_2=2 {\rm kg}$.
 
 # The centre of mass
 
