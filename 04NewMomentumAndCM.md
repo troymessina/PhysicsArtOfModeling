@@ -1415,11 +1415,11 @@ That is, the component of the acceleration vector that is parallel to the veloci
 
 As we saw earlier, the perpendicular component of the acceleration, $\vec a_{\bot}(t)$, is responsible for changing the direction of the velocity vector (as the object continuously changes direction when going in a circle). When the motion is around a circle, this component of the acceleration vector is called ``centripetal'' acceleration (i.e. acceleration pointing towards the centre of the circle, as we will see). We can calculate the centripetal acceleration in terms of our angular variables, noting that the unit vector in the direction of the velocity is $\hat v=-\sin(\theta)\hat x+\cos(\theta)\hat y$:
 ```{math}
-\vec a_{\bot}(t)&=v\frac{d\hat v}{dt}\nonumber\\
-&=(\omega R)\frac{d}{dt} \left[-\sin(\theta)\hat x+\cos(\theta)\hat y\right]\nonumber\\
-&=\omega R \left[-\frac{d}{dt}\sin(\theta)\hat x+\frac{d}{dt}\cos(\theta)\hat y\right]\nonumber\\
-&=\omega R \left[-\cos(\theta)\frac{d\theta}{dt}\hat x-\sin(\theta)\frac{d\theta}{dt}\hat y\right]\nonumber\\
-&=\omega R [-\cos(\theta)\omega\hat x-\sin(\theta)\omega\hat y]\nonumber\\
+\vec a_{\bot}(t)&=v\frac{d\hat v}{dt}\\
+&=(\omega R)\frac{d}{dt} \left[-\sin(\theta)\hat x+\cos(\theta)\hat y\right]\\
+&=\omega R \left[-\frac{d}{dt}\sin(\theta)\hat x+\frac{d}{dt}\cos(\theta)\hat y\right]\\
+&=\omega R \left[-\cos(\theta)\frac{d\theta}{dt}\hat x-\sin(\theta)\frac{d\theta}{dt}\hat y\right]\\
+&=\omega R [-\cos(\theta)\omega\hat x-\sin(\theta)\omega\hat y]
 ```
 ```{math}
 \boxed{\vec a_{\bot}(t)=\omega^2 R[-\cos(\theta)\hat x-\sin(\theta)\hat y]}
@@ -1456,38 +1456,54 @@ The period, $T$, is defined to be the time that it takes to complete one revolut
 \boxed{\therefore T&=\frac{2\pi}{\omega}}
 ```
 We would obtain the same result using the linear quantities; in one revolution, the object covers a distance of $2\pi R$ at a speed of $v$:
-\begin{align*}
+```{math}
 v&=\frac{2\pi R}{T}\\
 T&=\frac{2\pi R}{v}=\frac{2\pi R}{\omega R}=\frac{2\pi}{\omega}
-\end{align*}
+```
 
 The frequency, $f$, is defined to be the inverse of the period:
-\begin{align*}
+```{math}
 f&=\frac{1}{T}=\frac{\omega}{2\pi}
-\end{align*}
-and has SI units of $\si{Hz}=\si{s^{-1}}$. Think of frequency as the number of revolutions completed per second. Thus, if the frequency is $f=\SI{1}{Hz}$, the object goes around the circle once per second. Given the frequency, we can of course obtain the angular velocity:
-\begin{align*}
+```
+and has SI units of ${\rm Hz}={\rm s^{-1}}$. Think of frequency as the number of revolutions completed per second. Thus, if the frequency is $f=\SI{1}{Hz}$, the object goes around the circle once per second. Given the frequency, we can of course obtain the angular velocity:
+```{math}
 \omega = 2\pi f
-\end{align*}
-which is sometimes called the ``angular frequency'' instead of the angular velocity. The angular velocity can really be thought of as a frequency, as it represents the ``amount of angle'' per second that an object covers when going around a circle. The angular velocity does not tell us anything about the actual speed of the object, which depends on the radius $v=\omega R$. This is illustrated in Figure \ref{fig:describingmotioninnd:twocircles}, where two objects can be travelling around two circles of radius $R_1$ and $R_2$ with the same angular velocity $\omega$. If they have the same angular velocity, then it will take them the same amount of time to complete a revolution. However, the outer object has to cover a much larger distance (the circumference is larger), and thus has to move with a larger linear speed.
-\capfig{0.35\textwidth}{figures/DescribingMotionInND/twocircles.png}{\label{fig:describingmotioninnd:twocircles} For a given angular velocity, the linear velocity will be larger on a larger circle ($v=\omega R$).} 
-\begin{checkpoint}{\begin{MCquestion}{A motor is rotating at \SI{3000}{rpm}, what is the corresponding frequency in \si{Hz}?}
-\item \SI{5}{Hz}
-\item \SI{50}{Hz}\correct
-\item \SI{500}{Hz}
-\end{MCquestion}}
-\end{checkpoint}
-\vspace{-0.5cm}
-\begin{studentOpinion}{Olivia}There's a trick I like to use to remember how linear and angular velocities work. Figure \ref{fig:describingmotioninnd:handcircularmotion} shows your hand in two positions, which we call (1) and (2).
-\capfig{0.7\textwidth}{figures/DescribingMotionInND/HandPolarCoordinates.png}{\label{fig:describingmotioninnd:handcircularmotion} How to use your hand to better understand circular motion} 
+```
+which is sometimes called the "angular frequency" instead of the angular velocity. The angular velocity can really be thought of as a frequency, as it represents the ``amount of angle'' per second that an object covers when going around a circle. The angular velocity does not tell us anything about the actual speed of the object, which depends on the radius $v=\omega R$. This is illustrated in [](#fig:MomentumAndCM:twocircles), where two objects can be travelling around two circles of radius $R_1$ and $R_2$ with the same angular velocity $\omega$. If they have the same angular velocity, then it will take them the same amount of time to complete a revolution. However, the outer object has to cover a much larger distance (the circumference is larger), and thus has to move with a larger linear speed.
+```{figure} figures/DescribingMotionInND/twocircles.png
+:label: fig:MomentumAndCM:twocircles
+:width: 40%
+:align: center
+:alt: For a given angular velocity, the linear velocity will be larger on a larger circle ($v=\omega R$).
+For a given angular velocity, the linear velocity will be larger on a larger circle ($v=\omega R$).
+``` 
+:::{tip} Checkpoint
+A motor is rotating at $3000 {\rm rpm}$, what is the corresponding frequency in ${\rm Hz}$?
+1. $5 {\rm Hz}$
+2. $50 {\rm Hz}$
+3. $500 {\rm Hz}$
+:::{tip} Answer
+:class: dropdown
+2.
+:::
+
+:::{attention} Olivia's Thoughts
+There's a trick I like to use to remember how linear and angular velocities work. Figure \ref{fig:describingmotioninnd:handcircularmotion} shows your hand in two positions, which we call (1) and (2).
+```{figure} figures/DescribingMotionInND/HandPolarCoordinates.png
+:label: fig:MomentumAndCM:handcircularmotion
+:width: 70%
+:align: center
+:alt: How to use your hand to better understand circular motion.
+How to use your hand to better understand circular motion.
+``` 
 Let's say you want to describe the location of your fingers in (2). Start by putting your hand in position (1). This is the position where $\theta=0$ and $s=0$. Imagine that your wrist (or your thumb, whichever you prefer) is fixed at the origin. If you keep your fingers perpendicular to your hand, they will always point in the positive $s$ direction. 
 
-Imagine that you have a blue glob of paint on the back of your pinky. Rotate your hand until it is in position (2). The length of the curve that the paint makes is the value of $s$. The angle between the back of your hand and the positive $x$-axis is $\theta$. Now, imagine that there is a red glob of paint at your palm. It takes the same amount of time for your palm to get from position (1) to position (2) as it does for your fingers. Since they both go through the same angle $\theta$ in the same amount of time, the \textbf{angular velocity}, $\omega$ must be the same for both. However, the blue line left by your fingers will be much longer than the red line left by your palm. Your fingers travelled a greater distance than your palm in the same amount of time, so they must have a greater \textbf{linear velocity}, $v_s$. The further you are from your thumb, the greater the linear velocity will be, which we know from the formula $v_s=R\omega$.
+Imagine that you have a blue glob of paint on the back of your pinky. Rotate your hand until it is in position (2). The length of the curve that the paint makes is the value of $s$. The angle between the back of your hand and the positive $x$-axis is $\theta$. Now, imagine that there is a red glob of paint at your palm. It takes the same amount of time for your palm to get from position (1) to position (2) as it does for your fingers. Since they both go through the same angle $\theta$ in the same amount of time, the **angular velocity**, $\omega$ must be the same for both. However, the blue line left by your fingers will be much longer than the red line left by your palm. Your fingers travelled a greater distance than your palm in the same amount of time, so they must have a greater **linear velocity**, $v_s$. The further you are from your thumb, the greater the linear velocity will be, which we know from the formula $v_s=R\omega$.
 
 If you kept rotating your hand around the circle, you would see that your fingers always point in the same  direction as your linear velocity. This means that if you are using cartesian coordinates, the direction of your linear velocity is always changing.
 
 There are a couple of limitations to this trick. Remember that this only works for circular motion (the radius $R$ must be constant) and that if you are moving in the negative $s$ direction, your fingers will point antiparallel to the linear velocity.
-\end{studentOpinion}
+:::
 
 # Summary
 
