@@ -1264,16 +1264,6 @@ True or False: The centre of mass of a continuous object is always located withi
 
 (sec:momentumandcm:circularmotion)=
 # Circular Motion
-:::{tip} Checkpoint
-A satellite moves in a circular orbit around the Earth with a constant speed. What can you say about its acceleration vector?
-1. It has a magnitude of zero.
-2. It is perpendicular to the velocity vector.
-3. It is parallel to the velocity vector.
-4. It is in a direction other than parallel or perpendicular to the velocity vector.
-:::{tip} Answer
-:class: dropdown
-2.
-:::
 
 We often consider the motion of an object around a circle of fixed radius, $R$. In principle, this is motion in two dimensions, as a circle is necessarily in a two dimensional plane. However, since the object is constrained to move along the circumference of the circle, it can be thought of (and treated as) motion along a one dimensional axis that is curved. 
 ```{figure} figures/DescribingMotionInND/circle.png
@@ -1433,6 +1423,17 @@ where in the last equal sign, we wrote the centripetal acceleration in terms of 
 If an object goes around a circle, it will always have a centripetal acceleration (since its velocity vector must change direction). In addition, if the object's speed is changing, it will also have a linear acceleration, which points in the same direction as the velocity vector (it changes the velocity vector's length but not its direction).
 
 :::{tip} Checkpoint
+A satellite moves in a circular orbit around the Earth with a constant speed. What can you say about its acceleration vector?
+1. It has a magnitude of zero.
+2. It is parallel to the velocity vector.
+3. It is perpendicular to the velocity vector.
+4. It is in a direction other than parallel or perpendicular to the velocity vector.
+:::{tip} Answer
+:class: dropdown
+3.
+:::
+
+:::{tip} Checkpoint
 A vicuña is going clockwise around a circle that is centred at the origin of an $xy$ coordinate system that is in the plane of the circle. The vicuña runs faster and faster around the circle. In which direction does its acceleration vector point just as the vicu\~na is at the point where the circle intersects the positive $y$ axis?
 1. In the negative $y$ direction.
 2. In the positive $y$ direction.
@@ -1453,7 +1454,7 @@ The period, $T$, is defined to be the time that it takes to complete one revolut
 \omega&=\frac{\Delta \theta}{T}=\frac{2\pi}{T}\nonumber\\
 ```
 ```{math}
-\boxed{\therefore T&=\frac{2\pi}{\omega}}
+\boxed{T&=\frac{2\pi}{\omega}}
 ```
 We would obtain the same result using the linear quantities; in one revolution, the object covers a distance of $2\pi R$ at a speed of $v$:
 ```{math}
