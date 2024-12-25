@@ -894,9 +894,6 @@ where the left hand side corresponds to the initial kinetic energy and the right
 :::
 
 ## Frames of reference
-:::{caution} Review
-Before proceeding, you may wish to review Sections [](#sec:describingmotionin1D:relativemotion) and  [](#sec:desribingmotioninnd:relativemotion) on expressing velocities in different frames of reference.
-:::
 
 Because the momentum of a particle is defined using the velocity of the particle, its value depends on the reference frame in which we chose to measure that velocity. In some cases, it is useful to apply momentum conservation in a frame of reference where the total momentum of the system is zero. For example, consider two particles of mass $m_1$ and $m_2$, moving towards each other with velocities $\vec v_1$ and $\vec v_2$, respectively, as measured in a frame of reference $S$, as illustrated in [](#fig:momentumandcm:2particles).
 ```{figure} figures/MomentumAndCM/2particles.png
@@ -1020,6 +1017,20 @@ To observe the differences in an inelastic collision, repeat the above experimen
 
 * Repeat the steps 1-8 above with $m_1=2 {\rm kg}$ and $m_2=1 {\rm kg}$.
 * Repeat the steps 1-8 above with $m_1=1 {\rm kg}$ and $m_2=2 {\rm kg}$.
+
+#### Draw some conclusions
+
+* What is the difference between elastic and inelastic collisions?
+* How do final velocities tend to distribute for unequal masses?
+* Other conclusions?
+
+### Verify Example 4.11
+
+Use the PhET simulation to verify Example 4.11 illustrated in [](#fig:momentumandcm:protonproton). Does the perpendicular relationship always result? What vector algebra can you employ to calculate this relationship? Determine a set of rules for these two dimensional collisions. For example, are the final momenta perpendicular
+* if the velocity of the first proton changes?
+* if the second proton has a velocity (be careful, the protons must collide.)?
+* if the first proton collides with the second proton more directly?
+* if the collision is two different masses rather than two protons?
 
 # The centre of mass
 
