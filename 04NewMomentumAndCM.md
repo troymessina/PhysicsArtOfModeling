@@ -990,7 +990,13 @@ As an introduction to collisions, use the "Intro" tab of the PhET simulation in 
 	* Initial velocities: $v_{x1} = 1.00 {\rm m/s}$ $v_{x2} = 0 {\rm m/s}$ (Object 2 is at rest).
 4. Click on Play, then after collision Pause. 
 5. Record the values of $v'_{x1}$ and $v'_{x2}$
-6. Calculate the valuesd of $p = p_{x1} + p_{x2} , p' = p'_{x1} + p'_{x2}, p'/p , K , K'$ and $K'/K$ and record them in a table like [](#tab:MomentumAndCM:phetcollisions).
+6. Calculate the following values, and record them in a table like [](#tab:MomentumAndCM:phetcollisions).
+	* $p = p_{x1} + p_{x2}$,
+	* $p' = p'_{x1} + p'_{x2}$,
+	* $p'/p$,
+	* $K$,
+	* $K'$, and
+	* $K'/K$
 7. Repeat the experiment for two different values of $v_{x1i}$, (3 m/s) and (6.00 m/s) and always keep $v_{x2i}$ zero.
 8. Repeat one of the experiments with the masses initially moving toward one another with equal but opposite initial velocities. 
 ```{table} Time, $x$-position, and velocity $v_x(t)$ of a decelerating rock sliding across a frozen pond recorded every second.
