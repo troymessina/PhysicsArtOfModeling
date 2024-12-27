@@ -1018,7 +1018,7 @@ To observe the differences in an inelastic collision, repeat the above experimen
 * Repeat the steps 1-8 above with $m_1=2 {\rm kg}$ and $m_2=1 {\rm kg}$.
 * Repeat the steps 1-8 above with $m_1=1 {\rm kg}$ and $m_2=2 {\rm kg}$.
 
-#### Draw some conclusions
+### Draw some conclusions
 
 * What is the difference between elastic and inelastic collisions?
 * How do final velocities tend to distribute for unequal masses?
@@ -1026,7 +1026,7 @@ To observe the differences in an inelastic collision, repeat the above experimen
 
 ### Verify Example 4.11
 
-Use the PhET simulation to verify Example 4.11 illustrated in [](#fig:momentumandcm:protonproton). Does the perpendicular relationship always result? What vector algebra can you employ to calculate this relationship? Determine a set of rules for these two dimensional collisions. For example, are the final momenta perpendicular
+Use the PhET simulation to verify Example 4.11 illustrated in [](#fig:momentumandcm:protonproton). Does the perpendicular relationship for final momenta always result? What vector algebra can you employ to calculate this relationship? Determine a set of rules for these two dimensional collisions. For example, are the final momenta perpendicular
 * if the velocity of the first proton changes?
 * if the second proton has a velocity (be careful, the protons must collide.)?
 * if the first proton collides with the second proton more directly?
@@ -1318,7 +1318,7 @@ True or False: The centre of mass of a continuous object is always located withi
 :::
 
 (sec:momentumandcm:circularmotion)=
-# Circular Motion
+# Circular motion
 
 We often consider the motion of an object around a circle of fixed radius, $R$. In principle, this is motion in two dimensions, as a circle is necessarily in a two dimensional plane. However, since the object is constrained to move along the circumference of the circle, it can be thought of (and treated as) motion along a one dimensional axis that is curved. 
 ```{figure} figures/DescribingMotionInND/circle.png
