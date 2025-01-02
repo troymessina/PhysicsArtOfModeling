@@ -30,6 +30,13 @@ You hit a pool ball square on with the cue ball. If both balls have the same mas
 1.
 :::
 
+:::{caution} Review
+Throughout this chapter there are discussions of kinetic energy. [Chapter 7](#chap:workenergy) is when we will discuss kinetic energy in detail. Feel free to read ahead. However, it is enough to know that kinetic energy is the energy of motion and is a conserved quantity in some scenarios. We describe kinetic energy with the equation 
+```{math)
+K=\frac{1}{2} mv^2$
+```
+where $m$ is the mass of an object moving with speed $v$.
+:::
 # Momentum and Newton's First Law
 Momentum is a quantity that describes an object's motion. Imagine an object that has a mass of 1 kg and a velocity of 1 m/s. Now, imagine doubling the mass and keeping the velocity constant. How would you say the object's motion has changed. It may help to think of the quantity of motion as "oomph". Does a more massive object have more or less oomph than a less massive object when they both move at the same speed? What if the 1 kg object doubles its speed? Does it have more oomph?
 
