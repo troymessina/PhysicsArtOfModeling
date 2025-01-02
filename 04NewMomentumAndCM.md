@@ -33,7 +33,7 @@ You hit a pool ball square on with the cue ball. If both balls have the same mas
 :::{caution} Review
 Throughout this chapter there are discussions of kinetic energy. [Chapter 7](#chap:workenergy) is when we will discuss kinetic energy in detail. Feel free to read ahead. However, it is enough to know that kinetic energy is the energy of motion and is a conserved quantity in some scenarios. We describe kinetic energy with the equation 
 ```{math)
-K=\frac{1}{2} mv^2$
+K=\frac{1}{2} mv^2
 ```
 where $m$ is the mass of an object moving with speed $v$.
 :::
