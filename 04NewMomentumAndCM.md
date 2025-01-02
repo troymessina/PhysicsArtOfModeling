@@ -1509,7 +1509,7 @@ The period, $T$, is defined to be the time that it takes to complete one revolut
 \omega&=\frac{\Delta \theta}{T}=\frac{2\pi}{T}\nonumber\\
 ```
 ```{math}
-\boxed{T&=\frac{2\pi}{\omega}}
+\boxed{T=\frac{2\pi}{\omega}}
 ```
 We would obtain the same result using the linear quantities; in one revolution, the object covers a distance of $2\pi R$ at a speed of $v$:
 ```{math}
