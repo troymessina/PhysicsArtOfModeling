@@ -58,10 +58,10 @@ project:
 #        - 04NewMomentumAndCM.md
 #        - 15ChargesFields.md
 #      output: ./_build/exports/ModelingWithPhysics.pdf
-  downloads:
+#  downloads:
 #    - file: ./_build/exports/ModelingWithPhysics.pdf
-    - id: typstpdf
-      title: Modeling With Physics
+#    - id: typstpdf
+#      title: Modeling With Physics
 site:
   template: book-theme 
   title: Modeling with Physics
