@@ -394,7 +394,7 @@ We can always include that external agent in the system so that the total energy
 Here's an example that may help you understand the concept of external agents and energy conservation. Say we have a mass that hangs from a spring, so that the mass oscillates up and down like a yo-yo. If we define our system to include the spring, the mass, and gravity, energy will be conserved (the energy is transformed from potential energy to kinetic energy and back again). 
 
 Now, what if someone is holding the end of the spring and they start walking so that the whole system accelerates? Energy is not conserved because the system is gaining kinetic energy, seemingly out of nowhere. The system is being acted on by an *external agent* (the person). If we expand our system so that it includes the spring, the mass, gravity, *and the person*, energy is conserved. Instead of the kinetic energy "coming out of nowhere", we can see that it is actually coming from the person converting chemical energy in their body in order to move their muscles.
-```{figure} figures/PotentialEcons/externalagentex.png
+```{figure} figures/PotentialECons/externalagentex.png
 :label: fig:potentialecons:externalagentx
 :width: 40%
 :align: center
@@ -408,7 +408,7 @@ But what if there's an external agent acting on our new system? We can keep "zoo
 (ex:potentialecons:blockspring)=
 :::{note} Example 8.5
 :label: ex:potentialecons:blockspring
-```{figure} figures/PotentialEcons/blockspring.png
+```{figure} figures/PotentialECons/blockspring.png
 :label: fig:potentialecons:blockspring
 :width: 40%
 :align: center
@@ -451,7 +451,7 @@ as we found previously.
 (ex:potentialecons:blockI)=
 :::{note} Example 8.6
 :label: ex:potentialecons:blockI
-```{figure} figures/PotentialEcons/blockI.png
+```{figure} figures/PotentialECons/blockI.png
 :label: fig:potentialecons:blockI
 :width: 50%
 :align: center
@@ -537,7 +537,7 @@ U(x)=\frac{1}{2}kx^2
 On the right of [](#fig:potentialecons:springE) is an "Energy Diagram" for the block, which allows us to examine how the total energy, $E$, of the block is divided between kinetic and potential energy depending on the position of the block. The vertical axis corresponds to energy and the horizontal axis corresponds to the position of the block. 
 
 The total mechanical energy, $E=25 {\rm J}$, is shown by the horizontal red line. Also illustrated are the potential energy function ($U(x)$ in blue), and the kinetic energy, ($K=E-U(x)$, in dotted black).
-```{figure} figures/PotentialEcons/springE.png
+```{figure} figures/PotentialECons/springE.png
 :label: fig:potentialecons:springE
 :width: 100%
 :align: center
@@ -565,7 +565,7 @@ F = -\frac{d}{dx}U(x)
 The local minimum occurs where the derivative of the potential function is equal to zero. Thus, the **equilibrium point is given by the condition that the force associated with the potential is zero** ($x=0$ in the case of the potential energy from a spring). The equilibrium is a stable equilibrium because the force associated with the potential energy function ($F(x)=-kx$ for the spring) points towards the equilibrium point.
 
 The potential energy function for an object with total mechanical energy, $E$, can be thought of as a little "roller coaster", on which you place a marble and watch it "roll down" the potential energy function. You can think of placing a marble where $U(x)=E$ and releasing it. The marble would then roll down the potential energy function, just as an actual marble would roll down a real slope, mimicking the motion of the object along the $x$ axis. This is illustrated in [](#fig:potentialecons:potential) which shows an arbitrary potential energy function and a marble being placed at a location where the potential energy is equal to $E$.
-```{figure} figures/PotentialEcons/potential.png
+```{figure} figures/PotentialECons/potential.png
 :label: fig:potentialecons:potential
 :width: 60%
 :align: center
@@ -581,7 +581,7 @@ Now, say an object's potential energy is described by the function in [](#fig:po
 
 :::{tip} Checkpoint
 A force, $F(x)$, acts on an object. The potential energy function, $U(x)$, associated with the force is given by $U(x)=a(x-6)^2(x-1)(x-3)+20 {\rm J}$, where $a$ is a positive constant. $U(x)$ is plotted in [](#fig:potentialecons:potentialcheckpoint). Use the "marble" method to determine the direction of the force at $x=5$. Confirm your answer by finding the value of the force , $F(x)$, at $x=5$.
-```{figure} figures/PotentialEcons/potentialcheckpoint.png
+```{figure} figures/PotentialECons/potentialcheckpoint.png
 :label: fig:potentialecons:potentialcheckpoint
 :width: 50%
 :align: center
