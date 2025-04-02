@@ -74,7 +74,7 @@ site:
   #  - title: Learn More
   #    url: https://mystmd.org/guide
   domains: []
-html:
+#html:
   favicon : "figures/favicon.ico"
   comments:
     hypothesis: true
