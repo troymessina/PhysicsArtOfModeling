@@ -69,13 +69,15 @@ site:
     logo: ./figures/primary_rgb.png
     logo_dark: ./figures/primary_white.png
     logo_text: Modeling with Physics
+    favicon : "figures/favicon.ico"
+    comments:
+        hypothesis: true
+        utterances: true
   nav: []
   #actions:
   #  - title: Learn More
   #    url: https://mystmd.org/guide
   domains: []
 #html:
-  favicon : "figures/favicon.ico"
-  comments:
-    hypothesis: true
-    utterances: true
+  
+  
