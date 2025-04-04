@@ -53,7 +53,7 @@ This textbook is built using [mystmd](https://mystmd.org/), a modern publishing 
 ```console
 # Clone the repository
 git clone https://github.com/troymessina/PhysicsArtOfModeling.git
-cd hands-on
+cd PhysicsArtOfModeling
 
 # Install dependencies using npm
 npm install
@@ -67,7 +67,7 @@ myst start
 
 ## 👥 Contributing
 
-We welcome contributions from the physics education community! Please see our [Contributing Guide](CONTRIBUTING.md) for details on how to help improve this textbook.
+We welcome contributions from the physics education community! Please see our [Contributing Guide](./CONTRIBUTING.md) for details on how to help improve this textbook.
 
 Types of contributions we're looking for:
 - 🐛 Error corrections
