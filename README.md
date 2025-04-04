@@ -67,7 +67,7 @@ myst start
 
 ## 👥 Contributing
 
-We welcome contributions from the physics education community! Please see our [Contributing Guide](./CONTRIBUTING.md) for details on how to help improve this textbook.
+We welcome contributions from the physics education community! Please see our [Contributing Guide](CONTRIBUTIONS.md) for details on how to help improve this textbook.
 
 Types of contributions we're looking for:
 - 🐛 Error corrections
