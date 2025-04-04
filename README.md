@@ -2,11 +2,11 @@
 
 This is an **open-access** textbook for calculus-based introductory physics courses. Anyone that complies with the license is welcome to modify and use this work for their own use, and we hope that you will choose to contribute. The textbook is specifically intended for a **flipped-classroom** approach, wherein students complete readings at home and the material is then discussed in class. The textbook thus contains questions and activities to engage readers. This text also includes a **curriculum in experimental physics**, detailing the scientific method and process, suggesting experiments to perform at home and in the lab, and has chapters that cover: writing and reviewing proposals, writing and reviewing reports, analyzing data, as well as an introduction to python. Finally, this textbook was **written with many contributions from students**! We hope that you may find it useful, and we are interested to know if you are using it!
 
-![Build](https://img.shields.io/github/actions/workflow/status/veillette/hands-on/build.yml?branch=main)
+![Build](https://img.shields.io/github/actions/workflow/status/troymessina/PhysicsArtOfModeling/deploy.yml?branch=main)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![PRs](https://img.shields.io/badge/PRs-Welcome-brightgreen)
 ![mystmd](https://img.shields.io/badge/Built%20with-mystmd-8A2BE2)
-![License](https://img.shields.io/badge/License-CC--BY--4.0-green)
+![License](https://badgen.net/badge/license/CC-BY-SA-4.0/green)
 
 
 This book is a remix of [Introductory Physics: Building Models to Describe Our World](https://github.com/OSTP/PhysicsArtofModelling/raw/master/tex/BuildingModelsToDescribeOurWorld.pdf). All licensing and copyrights are derived from this original text. Anyone is welcome to compile their own version including or excluding chapters. The original open-access files are found at https://github.com/OSTP/PhysicsArtofModelling/tex/. 
@@ -52,7 +52,7 @@ This textbook is built using [mystmd](https://mystmd.org/), a modern publishing 
 
 ```console
 # Clone the repository
-git clone https://github.com/veillette/hands-on.git
+git clone https://github.com/troymessina/PhysicsArtOfModeling.git
 cd hands-on
 
 # Install dependencies using npm
