@@ -2,7 +2,7 @@
 version: 1
 project:
   toc:
-    - file: README.md
+    - file: 00preface.md
     - title: Part 1 - Mechanics
       children:
         - file: 01Introduction.md
