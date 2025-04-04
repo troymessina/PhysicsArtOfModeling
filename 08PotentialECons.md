@@ -112,7 +112,7 @@ Is the force of gravity on an object of mass $m$, near the surface of the Earth,
 ```{math}
 \vec F(x,y,z) =0\hat x + 0\hat y -mg \hat z
 ```
-conservative? Note that we have defined the $z$ axis to be vertical and positive upwards.}
+conservative? Note that we have defined the $z$ axis to be vertical and positive upwards.
 :::{note} Solutions
 :class: dropdown
 The force is expected to be conservative since it is constant in magnitude and direction. We can verify this using the conditions in [](#eq:potentialecons:conservative):

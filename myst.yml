@@ -69,7 +69,7 @@ site:
     logo: ./figures/primary_rgb.png
     logo_dark: ./figures/primary_white.png
     logo_text: Modeling with Physics
-#    favicon : "figures/favicon.ico"
+    favicon : "figures/favicon.ico"
     comments:
         hypothesis: true
         utterances: true
