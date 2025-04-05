@@ -5,36 +5,36 @@ project:
     - file: 00preface.md
     - title: Part 1 - Mechanics
       children:
-        - file: 01Introduction.md
-        - file: 02ModelAndExperiment.md
-        - file: 03Vectors.md
-        - file: 04NewMomentumAndCM.md
-        - file: 05NewtonsLaws.md
-        - file: 06ApplyingNewtonsLaws.md
-        - file: 07WorkEnergy.md
-        - file: 08PotentialECons.md
-        - file: 09Gravity.md
-        - file: 10RotationalDynamics.md
-        - file: 11AngularMomentumRolling.md
+        - file: ./chapters/01Introduction.md
+        - file: ./chapters/02ModelAndExperiment.md
+        - file: ./chapters/03Vectors.md
+        - file: ./chapters/04NewMomentumAndCM.md
+        - file: ./chapters/05NewtonsLaws.md
+        - file: ./chapters/06ApplyingNewtonsLaws.md
+        - file: ./chapters/07WorkEnergy.md
+        - file: ./chapters/08PotentialECons.md
+        - file: ./chapters/09Gravity.md
+        - file: ./chapters/10RotationalDynamics.md
+        - file: ./chapters/11AngularMomentumRolling.md
     - title: Part 2 - Oscillations, Waves, Fluids, Electricity, & Magnetism
       children:
-        - file: 12SimpleHarmonicMotion.md
-        - file: 13Waves.md
-        - file: 14FluidMechanics.md
-        - file: 15ChargesFields.md
-        - file: 16Gauss.md
-        - file: 17ElectricPotential.md
-        - file: 18Current.md
-        - file: 19Circuits.md
-        - file: 20MagneticForce.md
-        - file: 21MagneticSource.md
-        - file: 22Induction.md
-        - file: 23SpecialRelativity.md
+        - file: ./chapters/12SimpleHarmonicMotion.md
+        - file: ./chapters/13Waves.md
+        - file: ./chapters/14FluidMechanics.md
+        - file: ./chapters/15ChargesFields.md
+        - file: ./chapters/16Gauss.md
+        - file: ./chapters/17ElectricPotential.md
+        - file: ./chapters/18Current.md
+        - file: ./chapters/19Circuits.md
+        - file: ./chapters/20MagneticForce.md
+        - file: ./chapters/21MagneticSource.md
+        - file: ./chapters/22Induction.md
+        - file: ./chapters/23SpecialRelativity.md
     - title: Appendices      
       children:
-        - file: 24Calculus.md
-        - file: 25VisualPython.md
-        - file: 26Labs.md
+        - file: ./chapters/24Calculus.md
+        - file: ./chapters/25VisualPython.md
+        - file: ./chapters/26Labs.md
   id: 
   title: Modeling with Physics
   description: Interactive Introductory Calculus-Based Physics Textbook
