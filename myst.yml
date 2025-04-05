@@ -2,7 +2,7 @@
 version: 1
 project:
   toc:
-    - file: 00preface.md
+    - file: ./chapters/00preface.md
     - title: Part 1 - Mechanics
       children:
         - file: ./chapters/01Introduction.md
