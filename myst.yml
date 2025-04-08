@@ -51,12 +51,12 @@ project:
       id: typstpdf
       template: https://github.com/rowanc1/typst-book.git
       articles:
-        - 00preface.md
-        - 01Introduction.md
-        - 02ModelAndExperiment.md
-        - 03Vectors.md
-        - 04NewMomentumAndCM.md
-#        - 15ChargesFields.md
+        - ./chapters/00preface.md
+        - ./chapters/01Introduction.md
+        - ./chapters/02ModelAndExperiment.md
+        - ./chapters/03Vectors.md
+        - ./chapters/04NewMomentumAndCM.md
+#        - ./chapters/15ChargesFields.md
       output: ./exports/ModelingWithPhysics.pdf
 #  downloads:
 #    - file: ./exports/ModelingWithPhysics.pdf
@@ -66,10 +66,10 @@ site:
   template: book-theme 
   title: Modeling with Physics
   options:
-    logo: ./figures/primary_rgb.png
-    logo_dark: ./figures/primary_white.png
+    logo: ./chapters/figures/primary_rgb.png
+    logo_dark: ./chapters/figures/primary_white.png
     logo_text: Modeling with Physics
-    favicon : "figures/favicon.ico"
+    favicon : "./chapters/figures/favicon.ico"
     comments:
         hypothesis: true
         utterances: true
