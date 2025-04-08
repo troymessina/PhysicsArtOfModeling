@@ -51,13 +51,13 @@ project:
       id: typstpdf
       template: https://github.com/rowanc1/typst-book.git
       articles:
-        - README.md
+        - 00preface.md
         - 01Introduction.md
         - 02ModelAndExperiment.md
         - 03Vectors.md
         - 04NewMomentumAndCM.md
 #        - 15ChargesFields.md
-      output: ./exports/ModelingWithPhysics.pdf
+      output: exports/ModelingWithPhysics.pdf
 #  downloads:
 #    - file: ./exports/ModelingWithPhysics.pdf
 #    - id: typstpdf
