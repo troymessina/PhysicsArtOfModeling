@@ -57,7 +57,7 @@ project:
         - 03Vectors.md
         - 04NewMomentumAndCM.md
 #        - 15ChargesFields.md
-      output: exports/ModelingWithPhysics.pdf
+      output: ./exports/ModelingWithPhysics.pdf
 #  downloads:
 #    - file: ./exports/ModelingWithPhysics.pdf
 #    - id: typstpdf
