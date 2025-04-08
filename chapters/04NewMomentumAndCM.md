@@ -146,7 +146,7 @@ Rearranging the first line of equation {eq}`eqn:momentumandcm:constveleq` we see
 ```
 Therefore, we can think of the position equation {eq}`eqn:MomentumAndCM:1dxvst_noa` as
 ```{math}
-label: eqn:MomentumAndCM:1dxvst_noa2
+:label: eqn:MomentumAndCM:1dxvst_noa2
 x(t) &= x_o+ \Delta x \\
 x(t) &= x_o + v\Delta t\\
 x(t) &= x_o + vt
