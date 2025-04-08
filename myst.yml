@@ -44,7 +44,7 @@ project:
   numbering:
     headings: true
   exclude: 
-    - figures/**
+#    - figures/**
     - trinket/**
   exports:
     - format: typst
@@ -52,10 +52,10 @@ project:
       template: https://github.com/rowanc1/typst-book.git
       articles:
         - ./chapters/00preface.md
-        - ./chapters/01Introduction.md
-        - ./chapters/02ModelAndExperiment.md
-        - ./chapters/03Vectors.md
-        - ./chapters/04NewMomentumAndCM.md
+ #       - ./chapters/01Introduction.md
+ #       - ./chapters/02ModelAndExperiment.md
+#        - ./chapters/03Vectors.md
+ #       - ./chapters/04NewMomentumAndCM.md
 #        - ./chapters/15ChargesFields.md
       output: ./exports/ModelingWithPhysics.pdf
 #  downloads:
@@ -69,7 +69,7 @@ site:
     logo: ./chapters/figures/primary_rgb.png
     logo_dark: ./chapters/figures/primary_white.png
     logo_text: Modeling with Physics
-    favicon : "./chapters/figures/favicon.ico"
+    favicon : ./chapters/figures/favicon.ico
     comments:
         hypothesis: true
         utterances: true

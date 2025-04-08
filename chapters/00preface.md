@@ -4,7 +4,7 @@
 :label: Cover
 :width: 100%
 :align: center
-:placeholder: './figures/PrefaceTrinket.jpg'
+:placeholder: ./chapters/figures/PrefaceTrinket.jpg
 ::: 
 
 This is an **open-access** textbook for calculus-based introductory physics courses. Anyone that complies with the license is welcome to modify and use this work for their own use, and we hope that you will choose to contribute. The textbook is specifically intended for a **flipped-classroom** approach, wherein students complete readings at home and the material is then discussed in class. The textbook thus contains questions and activities to engage readers. This text also includes a **curriculum in experimental physics**, detailing the scientific method and process, suggesting experiments to perform at home and in the lab, and has chapters that cover: writing and reviewing proposals, writing and reviewing reports, analyzing data, as well as an introduction to python. Finally, this textbook was **written with many contributions from students**! We hope that you may find it useful, and we are interested to know if you are using it!
