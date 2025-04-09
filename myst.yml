@@ -39,7 +39,7 @@ project:
   title: Modeling with Physics
   description: Interactive Introductory Calculus-Based Physics Textbook
   keywords: [Introductory Physics]
-#  authors: [Troy Messina]
+  authors: [Troy Messina]
   #github: https://github.com/troymessina/
   numbering:
     headings: true
