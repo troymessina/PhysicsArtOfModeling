@@ -202,7 +202,7 @@ Try, putting these three lines of code in the trinket below and see what happens
 :label: chap:momentumandcm:blanktrinket
 :width: 90%
 :align: center
-:placeholder: './chapters/figures/MomentumAndCM/BlankTrinket.jpg'
+:placeholder: ../chapters/figures/MomentumAndCM/BlankTrinket.jpg
 A blank trinket to simulate a rock sliding on a frozen pond.
 :::
 
@@ -1034,7 +1034,7 @@ As an introduction to collisions, use the "Intro" tab of the PhET simulation in 
 :label: phet:momentumandcm:collisions
 :width: 100%
 :align: center
-:placeholder: './chapters/figures/MomentumAndCM/PhETCollisionLab.jpg'
+:placeholder: ../chapters/figures/MomentumAndCM/PhETCollisionLab.jpg
 PhET simulation to model collisions.
 :::
 
