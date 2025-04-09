@@ -129,7 +129,7 @@ The velocity, $v_x$, is simply the difference in position, $\Delta x=x_f-x_o$, b
 
 ```{math}
 :label: eqn:momentumandcm:constveleq
-\vec v = \frac{\Delta \vec x}{\Delta t}\xrightarrow[\Delta t \to 0]{}\frac{d\vec x}{dt}
+\vec v = \frac{\Delta \vec x}{\Delta t}\overset[\Delta t \to 0]{}\frac{d\vec x}{dt}
 ```
 where the arrow indicates the limit as the changes become very small. For the rock in one dimension as it moves from 0.5 m to 1.0 m over the duration of 1 second,
 ```{math}
