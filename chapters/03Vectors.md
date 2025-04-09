@@ -399,15 +399,15 @@ Two possible orientations for a three dimensional coordinate system. You can con
 
 ## Using PhET to Explore Vector Properties
 The properties of vectors described in this section can be explored using the Phet Simulation in [](#chap:vectors:PhET). To begin, click on the "Explore 2D". Drag a vector $\vec{a}$ onto the graph, and place it anywhere. Take note of the vector properties.
-* magnitude, $\lvert\vec{a}\rvert=\lvert\lvert\vec{a}\rvert\rvert$
+* magnitude, $\vert\vec{a}\vert=\vert\vert\vec{a}\vert\vert$
 * angle, $\theta$
 * $x$-component, $a_x$
 * $y$-component, $a_y$
 
 Move the vector so that its tail is at the origin. Then, move the vector somewhere else. These properties do not change with location, indicating vectors **have no location**. Calculate the vector components using trigonometry.
 ```math
-a_x = \lvert\vec{a}\rvert \cos\theta\\
-a_y = \lvert\vec{a}\rvert \sin\theta
+a_x = \vert\vec{a}\vert \cos\theta\\
+a_y = \vert\vec{a}\vert \sin\theta
 ```
 :::{iframe}https://phet.colorado.edu/sims/html/vector-addition/latest/vector-addition_all.html
 :label: chap:vectors:PhET
