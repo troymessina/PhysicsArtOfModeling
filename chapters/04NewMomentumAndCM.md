@@ -1494,7 +1494,7 @@ As we saw earlier, the perpendicular component of the acceleration, $\vec a_{\bo
 &=\omega R [-\cos(\theta)\omega\hat x-\sin(\theta)\omega\hat y]
 ```
 ```{math}
-\boxed{\vec a_{\bot}(t)=\omega^2 R[-\cos(\theta)\hat x-\sin(\theta)\hat y]}
+\boxed{\vec{a}_{\bot}(t)=\omega^2 R[-\cos(\theta)\hat{x}-\sin(\theta)\hat{y}]}
 ```
 where you can easily verify that the vector $[-\cos(\theta)\hat x-\sin(\theta)\hat y]$ has unit length and points towards the centre of the circle (when the tail is placed on a point on the circle at angle $\theta$). The centripetal acceleration thus points towards the centre of the circle and has magnitude:
 ```{math}
