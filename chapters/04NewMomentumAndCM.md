@@ -301,11 +301,12 @@ where the arrow indicates the limit as the changes become very small. Just as we
 :label: eqn:MomentumAndCM:nonConstv
 v(t) &= v_o + \Delta v \\
 v(t) &= v_o + a\Delta t\\
-v(t) &= v_o + at
+v(t) &= v_o + a t
 ```
-With constant acceleration, we can use graphical analysis to determine equations describing velocity and position as a function of time. In [](#fig:MomentumAndCM:graphkinematics)(a), a graph of constant acceleration is shown. Since acceleration is a change in velocity over time, we know that multiplying an acceleration by time gives a change in velocity. See {eq}`eqn:MomentumAndCM:nonConstv`. Notice that this change in velocity is the same as the area of the acceleration vs. time graph. The change in velocity is, of course, added to any pre-existing velocity an object has. This is depicted in [](#fig:MomentumAndCM:graphkinematics)(b) as a blue shaded triangle. Since a change in position comes from velocity and changes in velocity, we can apply the same analysis to the velocity vs. time graph to obtain an expression for position vs. time. For constant motion (no acceleration), the position changes as the red shaded area of [](#fig:MomentumAndCM:graphkinematics)(b), which has an area $\Delta x = v_ot$. This results in {eq}`eqn:MomentumAndCM:1dxvst_noa2` and is shown in [](#fig:MomentumAndCM:graphkinematics)(c) as a red straight line. We would expect a linear form after seeing this for velocity with constant acceleration. To analyze motion with constant acceleration, we must add both the red rectangular and the blue triangular areas in [](#fig:MomentumAndCM:graphkinematics)(b). The rectangular area again has area $v_ot$. The triangular area is $1/2 (v_f-v_o) t=1/2\Delta v t= 1/2at^2$. Adding these together, one obtains the following set of kinematic equations.
+With constant acceleration, we can use graphical analysis to determine equations describing velocity and position as a function of time. In [](#fig:MomentumAndCM:graphkinematics)(a), a graph of constant acceleration is shown. Since acceleration is a change in velocity over time, we know that multiplying an acceleration by time gives a change in velocity. See {eq}`eqn:MomentumAndCM:nonConstv`. Notice that this change in velocity is the same as the area of the acceleration vs. time graph. The change in velocity is, of course, added to any pre-existing velocity an object has. This is depicted in [](#fig:MomentumAndCM:graphkinematics)(b) as a blue shaded triangle. Since a change in position comes from velocity and changes in velocity, we can apply the same analysis to the velocity vs. time graph to obtain an expression for position vs. time. For constant motion (no acceleration), the position changes as the red shaded area of [](#fig:MomentumAndCM:graphkinematics)(b), which has an area $\Delta x = v_ot$. This results in {eq}`eqn:MomentumAndCM:1dxvst_noa2` and is shown in [](#fig:MomentumAndCM:graphkinematics)(c) as a red straight line. We would expect a linear form after seeing this for velocity with constant acceleration. To analyze motion with constant acceleration, we must add both the red rectangular and the blue triangular areas in [](#fig:MomentumAndCM:graphkinematics)(b). The rectangular area again has area $v_ot$. The triangular area is $1/2 (v_f-v_o) t=1/2\Delta v t= 1/2at^2$. Putting these together, one obtains the following set of kinematic equations.
+
 ```{math}
-x(t) &= x_o + v_o t + \frac{1}{2}a t^2\\
+x(t) &= x_o + v_o t + \frac{1}{2} a t^2\\
 v(t) &= v_o + a t\\
 a(t) &= a
 ```
@@ -317,7 +318,6 @@ We see that accelerated motion results in quadratic position vs. time.
 :alt: Graphs depicting (a) constant acceleration, (b) constant and accelerated velocity, and (c) position that is constant, changing due to constant velocity, and changing due to constant acceleration.
 Graphs depicting (a) constant acceleration, (b) constant and accelerated velocity, and (c) position that is constant, changing due to constant velocity, and changing due to constant acceleration.
 ```
-
 
 If we assume the acceleration is constant with time, we can use integral calculus to determine equations describing position vs. time.
 ```{math}
