@@ -488,7 +488,7 @@ The derivative method leads to a few simple short cuts when propagating the unce
 |$z=x-y$ (subtraction)               | $\sigma_z=\sqrt{\sigma_x^2+\sigma_y^2}$ |
 |$z=xy$ (multiplication)             | $\sigma_z=xy\sqrt{\left(\frac{\sigma_x}{x}\right)^2+\left(\frac{\sigma_y}{y}\right)^2}$ |
 |$z=\frac{x}{y}$ (division)          | $\sigma_z=\frac{x}{y}\sqrt{\left(\frac{\sigma_x}{x}\right)^2+\left(\frac{\sigma_y}{y}\right)^2}$ |
-|$z=f(x)$ (a function of 1 variable) | $\sigma_z=\lvert\frac{df}{dx}\rvert\sigma_x $ |
+|$z=f(x)$ (a function of 1 variable) | $\sigma_z=\vert\frac{df}{dx}\vert\sigma_x $ |
 ```
 
 :::{tip} Checkpoint
