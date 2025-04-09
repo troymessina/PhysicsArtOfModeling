@@ -294,7 +294,7 @@ If the particle has a constant mass, and its momentum changes with time, then th
 ```
 We define a velocity changing with time as **acceleration**.
 ```{math}
-\vec a = \frac{\Delta \vec v}{\Delta t}\xrightarrow[\Delta t \to 0]{}\frac{d\vec v}{dt}
+\vec a = \frac{\Delta \vec v}{\Delta t}\overset[\Delta t \to 0]{}\frac{d\vec v}{dt}
 ```
 where the arrow indicates the limit as the changes become very small. Just as we did with constant velocity and position, we can write kinematic equations of motion for velocity by applying the definition of acceleration.
 ```{math}
