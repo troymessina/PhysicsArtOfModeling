@@ -4,7 +4,7 @@
 :label: Cover
 :width: 100%
 :align: center
-:placeholder: ./chapters/figures/PrefaceTrinket.jpg
+:placeholder: chapters/figures/PrefaceTrinket.jpg
 ::: 
 
 This is an **open-access** textbook for calculus-based introductory physics courses. Anyone that complies with the license is welcome to modify and use this work for their own use, and we hope that you will choose to contribute. The textbook is specifically intended for a **flipped-classroom** approach, wherein students complete readings at home and the material is then discussed in class. The textbook thus contains questions and activities to engage readers. This text also includes a **curriculum in experimental physics**, detailing the scientific method and process, suggesting experiments to perform at home and in the lab, and has chapters that cover: writing and reviewing proposals, writing and reviewing reports, analyzing data, as well as an introduction to python. Finally, this textbook was **written with many contributions from students**! We hope that you may find it useful, and we are interested to know if you are using it!
@@ -40,4 +40,6 @@ This version of the textbook is also open-access and can be found at https://git
 25. [Appendix B: An Introduction to Visual Python](#app:visualpython)
 27. [Appendix C: Guidelines for lab related activities](#app:labs)
 
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Introductory Physics: Building Models to Describe Our World</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Ryan D. Martin, Emma Neary, Joshua Rinaldo, and Olivia Woodman</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/OSTP/PhysicsArtofModelling" rel="dct:source">https://github.com/OSTP/PhysicsArtofModelling</a>.
+![http://creativecommons.org/licenses/by-sa/4.0/](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)
+
+Introductory Physics: Building Models to Describe Our World by Ryan D. Martin, Emma Neary, Joshua Rinaldo, and Olivia Woodman is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). Based on a work at https://github.com/OSTP/PhysicsArtofModelling.

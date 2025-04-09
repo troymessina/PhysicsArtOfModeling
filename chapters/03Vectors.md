@@ -413,7 +413,7 @@ a_y = \lvert\vec{a}\rvert \sin\theta
 :label: chap:vectors:PhET
 :width: 100%
 :align: center
-:placeholder: ./chapters/figures/Vectors/PhetVectors.jpg
+:placeholder: chapters/figures/Vectors/PhetVectors.jpg
 A PhET simulation to explore vector properties.
 :::
 
@@ -437,7 +437,7 @@ Copy this code at the bottom of the trinket below to see how it draws the arrow.
 :label: chap:vectors:vectortrinket
 :width: 100%
 :align: center
-:placeholder: ./chapters/figures/MomentumAndCM/BlankTrinket.jpg
+:placeholder: chapters/figures/MomentumAndCM/BlankTrinket.jpg
 A trinket with unit vectors to simulate various vectors.
 :::
 Change the tail position to `(1,1,1)` to see how the vector moves in 3D space. The magnitude of a vector $\vec{a}$ can be calculated in VPython as
