@@ -101,7 +101,7 @@ Four charges of varying magnitude are fixed in position. If the electric potenti
 4.  Six. 
 :::{tip} Answer
 :class: dropdown
-4.
+6.
 :::
 
 # Electric potential
