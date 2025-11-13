@@ -1,10 +1,3 @@
----
-title: Introductory Physics: Modeling with Physics
-exports:
-  - format: pdf
-    template: arxiv_two_column
-    output: exports/Preface.pdf
----
 # Introductory Physics: Modeling with Physics
 
 :::{iframe} https://trinket.io/embed/glowscript/df91d03f90?outputOnly=true&start=result

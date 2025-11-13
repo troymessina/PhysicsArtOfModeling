@@ -31,15 +31,14 @@ A scientific theory...
 Science is a process for describing the world around us. It seeks explanations for observed phenomena that rely on **natural causes**. Science assumes that the universe is orderly, reasonable, and testable. The **scientific method** relies on the creation and testing of models that explain natural phenomena as simply as possible and can be revised when new evidence is discovered. If we come up with a model that can describe many observations, or the outcome of many different experiments, then we usually call that model a **scientific theory**. 
 
 We can get some insight into the Scientific Method through a simple example. 
-
-
-```{figure} figures/Introduction/tennis_ball.jpg
-:label: fig:introduction:tennisball
-:width: 25%
-:align: right
-:alt: A hand drops a tennis ball (credit:Mike Run).
-A hand drops a tennis ball (credit:Mike Run).
-```
+%```{figure} figures/Introduction/tennis_ball.jpg
+%:label: fig:introduction:tennisball
+%:width: 25%
+%:align: right
+%alt: A hand drops a tennis ball (credit:Mike Run).
+%A hand drops a tennis ball (credit:Mike Run).
+%```
+![A hand drops a tennis ball (credit:Mike Run).](figures/Introduction/tennis_ball.jpg)
 Imagine that we wish to describe how long it takes for a tennis ball to reach the ground after being released from a certain height. One way to proceed is to describe how long it takes for a tennis ball to drop $1 {\rm m}$, and then to describe how long it takes for a tennis ball to drop $2 {\rm m}$, etc. We could generate an extensive table showing how long it takes a tennis ball to drop from any given height. Someone would then be able to perform an experiment to measure how long a tennis ball takes to drop from $3 {\rm m}$ or $5 {\rm m}$ and see if their measurement disagrees with the tabulated values. If we collected the descriptions for all possible heights, then we would effectively have a valid and testable **model** that describes how long it takes tennis balls to drop from any height.
 
 Suppose that a budding scientist, let's call her Chloe, noticed that there is a pattern in the data that can be described much more succinctly and generally than by using a long table. In particular, suppose that she notices that, mathematically, the time, $t$, that it takes for a tennis ball to drop a height, $h$, is proportional to the square root of the height:
