@@ -62,6 +62,7 @@ project:
 #    - file: ./exports/ModelingWithPhysics.pdf
 #    - id: typstpdf
 #      title: Modeling With Physics
+
 site:
   template: book-theme 
   title: Modeling with Physics
