@@ -106,7 +106,7 @@ This is a good example of the scientific method; although the discovery of Neptu
 
 ```{figure} figures/Introduction/science.gif
 :label: fig:introduction:science
-:width: 60%
+:width: 100%
 :align: center
 :alt: The process of science from Understanding Science www.understandingscience.org.
 credit: University of California Museum of Paleontology, Understanding Science, www.understandingscience.org
