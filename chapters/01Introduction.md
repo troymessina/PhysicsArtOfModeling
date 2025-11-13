@@ -162,10 +162,10 @@ Physics describes a wide range of phenomena within the physical sciences, rangin
 
 ```{figure} figures/Introduction/scope_of_physics.jpg
 :label: fig:introduction:scope
-:width: 60%
+:width: 100%
 :align: center
 :alt:  Classical mechanics works for larger and slower objects; modern theories are needed otherwise. Credit: Yassine Mrabet .
-credit:  Classical mechanics works for larger and slower objects; modern theories are needed otherwise. Credit: Yassine Mrabet.
+Classical mechanics works for larger and slower objects; modern theories are needed otherwise. Credit: Yassine Mrabet.
 ```
 
 The word physics comes from Ancient Greek and translates to “nature” or “knowledge of nature”. The goal of physics is to develop theories from which mathematical models can be derived to describe our observations. One of the most ambitious goals of physicists is to develop a single theory that describes all of nature, instead of having multiple theories to describe different categories of phenomena. That is, physicists hope that there exists one single mathematical theory (like Chloe’s theory of falling objects) that describes the entire physical universe. In Biology, for example, this would not be a reasonable goal, as one needs to describe every single living being, and there is no overarching “theory of what all living things look like.” Currently, physicists have been able to narrow down the number of theories required to describe all of the physical world to only three, which is impressive (the theory of gravity, the theory of the strong nuclear force, and physicists have now further unified the weak nuclear force with electromagnetism to make the “electroweak force”).
