@@ -54,7 +54,7 @@ project:
         - ./chapters/00preface.md
         - ./chapters/01Introduction.md
         - ./chapters/02ModelAndExperiment.md
-        - ./chapters/03Vectors.md
+#        - ./chapters/03Vectors.md
 #        - ./chapters/04NewMomentumAndCM.md
 #        - ./chapters/15ChargesFields.md
       output: ./exports/ModelingWithPhysics.pdf
