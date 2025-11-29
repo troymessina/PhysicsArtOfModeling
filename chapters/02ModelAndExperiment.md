@@ -613,7 +613,7 @@ If you expect two measured quantities to be linearly related (one is proportiona
 \sigma_F &= \sqrt{\left(\frac{dF}{dx}\sigma_x \right)^2 + \left(\frac{dF}{dy}\sigma_y \right)^2 }
 ```
 ```{table} How to propagate uncertainties from measured values $x\pm\sigma_x$ and $y\pm\sigma_y$ to a quantity $z(x,y)$ for common operations.
-:label: tab:modelandexperiment:prop_uncertainties
+:label: tab:modelandexperiment:prop_uncertaintiessummary
 :align: center
 |**Operation to get $z$** | **Uncertainty in $z$** |
 |:----------------------- | :--------------------  |
