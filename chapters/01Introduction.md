@@ -112,7 +112,7 @@ What did the inability to find the planet Vulcan show?
 
 This is a good example of the scientific method; although the discovery of Neptune was consistent with Newton’s theory, it did not prove that the theory is correct, only that it correctly described the motion of Uranus. The discrepancy that arose when looking at Mercury ultimately showed that Newtons’ theory of gravity fails to provide a proper description of planetary orbits in the proximity of very massive objects (Mercury is the closest planet to the Sun).
 
-```{figure} figures/Introduction/science.gif
+```{figure} figures/Introduction/science.png
 :label: fig:introduction:science
 :width: 100%
 :align: center
