@@ -347,7 +347,6 @@ If we have $N$ measurements of some quantity $t$, $\{t_1, t_2, t_3, \dots t_N\}$
 ```
 The mean is just the arithmetic average of the values, and the standard deviation, $\sigma_t$, requires one to first calculate the mean, then the variance ($\sigma^2_t$, the square of the standard deviation). You should also note that for the variance, we divide by $N-1$ instead of $N$. The standard deviation and variance are quantities that come from statistics and are a good measure of how spread out the values of $t$ are about their mean, and are thus a good measure of the uncertainty.
 
-(ex:modelandexperiment:stdcalc)=
 :::{note} Example 2.6
 :label: ex:modelandexperiment:stdcalc
 Calculate the mean and standard deviation of the values for $k$ from [](#tab:modelandexperiment:kmes_3m).
@@ -451,7 +450,6 @@ That is, the central value of the function $F$ is found by evaluating the functi
 
 In [Appendix D](#app:python), we will show you how to calculate this easily with a computer, so do not worry about getting comfortable with partial derivatives (yet!). Note that the partial derivative, $\frac{dF}{dx}$, is simply the derivative of $F(x,y)$ relative to $x$ evaluated as if $y$ were a constant. Also, when we say "add in quadrature", we mean square the quantities, add them, and then take the square root (same as you would do to calculate the hypotenuse of a right-angle triangle).
 
-(ex:modelandexperiment:derivprop)=
 :::{note} Example 2.7
 :label: ex:modelandexperiment:derivprop 
 Use the derivative method to evaluate $k=\frac{t}{\sqrt{x}}$ for $x=3.00 \pm 0.01 {\rm m}$ and $t=0.76\pm0.15 {\rm s}$.
