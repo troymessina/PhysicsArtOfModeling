@@ -272,7 +272,6 @@ F_y &= ma_y\\
 F_z &= ma_z
 ```
 
-(ex:vectors:vecalg)=
 :::{note} Example 3.1
 :label: Example-3.1
 Given two vectors, $\vec a=2\hat x+3\hat y$, and $\vec b=5\hat x-2\hat y$, calculate the vector $\vec c= 2\vec a- 3\vec b$.
