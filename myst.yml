@@ -58,10 +58,10 @@ project:
 #        - ./chapters/04NewMomentumAndCM.md
 #        - ./chapters/15ChargesFields.md
       output: ./exports/ModelingWithPhysics.pdf
-  #downloads:
-  #  - file: ./exports/ModelingWithPhysics.pdf
-  #  - id: ModelingWithPhysics-export
-  #    title: Modeling With Physics
+#  downloads:
+#    - file: ./exports/ModelingWithPhysics.pdf
+#    - id: ModelingWithPhysics-export
+#      title: Modeling With Physics
 
 site:
   template: book-theme 
