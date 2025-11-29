@@ -4,6 +4,14 @@ numbering:
   headings:
   heading_1:
     start: 4
+exports:
+  - format: pdf
+    template: lapreprint-typst
+    output: exports/Ch03Vectors.pdf
+    id: ch3-export
+downloads:
+  - id: ch3-export
+    title: Download Ch03Vectors.pdf
 ---
 (chap:vectors)=
 # Overview

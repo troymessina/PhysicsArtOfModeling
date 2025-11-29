@@ -13,7 +13,6 @@ downloads:
   - id: ch2-export
     title: Download Ch02ModelExperiment.pdf
 ---
----
 (chap:modelandexperiment)=
 # Overview
 In this chapter, we will learn about the process of doing science and lay the foundations for developing skills that will be of use throughout your scientific careers. In particular, we will start to learn how to test a model with an experiment, as well as learn to estimate whether a given result or model makes sense.
