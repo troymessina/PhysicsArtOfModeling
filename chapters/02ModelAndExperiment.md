@@ -153,7 +153,7 @@ We call "dimensional analysis" the process of working out the dimensions of a qu
 
 The next two examples show how to apply dimensional analysis to obtain the unit or dimension of a derived quantity. 
 
-(ex:modelandexperiment:forceSI)=
+
 :::{note} Example 2.2
 :label: ex:modelandexperiment:forceSI
 Acceleration has SI units of ${\rm ms^{-2}}$ and force has the dimension of mass multiplied by acceleration. What are the dimensions and SI units of force, expressed in terms of the base dimensions and units?

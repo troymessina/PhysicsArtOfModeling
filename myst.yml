@@ -49,7 +49,7 @@ project:
   exports:
     - format: pdf
       id: ModelingWithPhysics-export
-      template: lapreprint-typst #https://github.com/rowanc1/typst-book.git
+      template: https://github.com/rowanc1/typst-book.git
       articles:
         - ./chapters/00preface.md
         - ./chapters/01Introduction.md
