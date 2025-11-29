@@ -47,9 +47,9 @@ project:
 #    - figures/**
     - trinket/**
   exports:
-    - format: typst
-      id: typstpdf
-      template: https://github.com/rowanc1/typst-book.git
+    - format: pdf
+      id: ModelingWithPhysics-export
+      template: lapreprint-typst #https://github.com/rowanc1/typst-book.git
       articles:
         - ./chapters/00preface.md
         - ./chapters/01Introduction.md
@@ -60,7 +60,7 @@ project:
       output: ./exports/ModelingWithPhysics.pdf
   downloads:
     - file: ./exports/ModelingWithPhysics.pdf
-    - id: typstpdf
+    - id: ModelingWithPhysics-export
       title: Modeling With Physics
 
 site:

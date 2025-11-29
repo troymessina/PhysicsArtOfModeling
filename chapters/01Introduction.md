@@ -11,7 +11,7 @@ exports:
     id: introduction-export
 downloads:
   - id: introduction-export
-    title: A PDF of this chapter
+    title: Download Ch01Introduction.pdf
 ---
 (chap:introduction)=
 # Overview
