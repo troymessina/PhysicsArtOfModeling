@@ -4,6 +4,14 @@ numbering:
   headings:
   heading_1:
     start: 2
+exports:
+  - format: pdf
+    template: lapreprint-typst
+    output: exports/Ch01Introduction.pdf
+    id: introduction-export
+downloads:
+  - id: introduction-export
+    title: A PDF of this chapter
 ---
 (chap:introduction)=
 # Overview
