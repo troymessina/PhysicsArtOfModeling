@@ -10,6 +10,8 @@ exports:
     output: exports/Ch01Introduction.pdf
     id: introduction-export
 downloads:
+  - file: 01Introduction.md
+    title: Source File
   - id: introduction-export
     title: Download Ch01Introduction.pdf
 ---

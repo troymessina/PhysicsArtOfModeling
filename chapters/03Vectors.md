@@ -10,6 +10,8 @@ exports:
     output: exports/Ch03Vectors.pdf
     id: ch3-export
 downloads:
+  - file: 03Vectors.md
+    title: Source File
   - id: ch3-export
     title: Download Ch03Vectors.pdf
 ---

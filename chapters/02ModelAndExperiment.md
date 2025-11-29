@@ -1,5 +1,6 @@
 ---
 title: Chapter 2 - Comparing Model and Experiment
+abstract: |
 numbering:
   headings:
   heading_1:
@@ -10,6 +11,8 @@ exports:
     output: exports/Ch02ModelExperiment.pdf
     id: ch2-export
 downloads:
+  - file: 02ModelAndExperiment.md
+    title: Source File
   - id: ch2-export
     title: Download Ch02ModelExperiment.pdf
 ---
