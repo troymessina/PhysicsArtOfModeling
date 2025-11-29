@@ -1,6 +1,5 @@
 ---
 title: Chapter 2 - Comparing Model and Experiment
-abstract: |
 numbering:
   headings:
   heading_1:
@@ -451,7 +450,7 @@ The derivative method lets us propagate the uncertainty in a general way, so lon
 ```
 That is, the central value of the function $F$ is found by evaluating the function at the central values of $x$ and $y$. The uncertainty in $F$, $\sigma_F$, is found by taking the quadrature sum of the partial derivatives of $F$ evaluated at the central values of $x$ and $y$ multiplied by the uncertainties in the corresponding variables that $F$ depends on. The uncertainty will contain one term in the sum per variable that $F$ depends on.
 
-In [Appendix D](#app:python), we will show you how to calculate this easily with a computer, so do not worry about getting comfortable with partial derivatives (yet!). Note that the partial derivative, $\frac{dF}{dx}$, is simply the derivative of $F(x,y)$ relative to $x$ evaluated as if $y$ were a constant. Also, when we say "add in quadrature", we mean square the quantities, add them, and then take the square root (same as you would do to calculate the hypotenuse of a right-angle triangle).
+In [Appendix D](#app:visualpython), we will show you how to calculate this easily with a computer, so do not worry about getting comfortable with partial derivatives (yet!). Note that the partial derivative, $\frac{dF}{dx}$, is simply the derivative of $F(x,y)$ relative to $x$ evaluated as if $y$ were a constant. Also, when we say "add in quadrature", we mean square the quantities, add them, and then take the square root (same as you would do to calculate the hypotenuse of a right-angle triangle).
 
 :::{note} Example 2.7
 :label: ex:modelandexperiment:derivprop 
@@ -525,7 +524,7 @@ where $k$ was an undetermined constant of proportionality.
 |5.00 | 1.10 | 2.24 | 0.49 |
 ```
 
-The easiest way to visualize and analyse these data is to plot them on a graph. In particular, if we plot (graph) $t$ versus $\sqrt{x}$, we  expect that the points will fall on a straight line that goes through zero, with a slope of $k$ (if the data are described by Chloe's Theory). In [Appendix D](#app:python), we show you how you can plot these data using the Python programming language as well as find the slope and offset of the line that best fits the data, as show in [](#fig:modelandexperiment:tvssqx). 
+The easiest way to visualize and analyse these data is to plot them on a graph. In particular, if we plot (graph) $t$ versus $\sqrt{x}$, we  expect that the points will fall on a straight line that goes through zero, with a slope of $k$ (if the data are described by Chloe's Theory). In [Appendix D](#app:visualpython), we show you how you can plot these data using the Python programming language as well as find the slope and offset of the line that best fits the data, as show in [](#fig:modelandexperiment:tvssqx). 
 
 ```{figure} figures/Python/tvssqx.png
 :label: fig:modelandexperiment:tvssqx
