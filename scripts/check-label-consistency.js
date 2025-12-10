@@ -304,5 +304,18 @@ class LabelChecker {
 
 // Run the checker
 const checker = new LabelChecker();
-const exitCode = checker.run('./chapters');
+
+// Determine the chapters directory path based on current working directory
+let chaptersDir = './chapters';
+if (!fs.existsSync(chaptersDir)) {
+  // We might be running from the scripts directory
+  chaptersDir = '../chapters';
+  if (!fs.existsSync(chaptersDir)) {
+    console.error('Error: Cannot find chapters directory.');
+    console.error('Please run this script from the project root or scripts directory.');
+    process.exit(1);
+  }
+}
+
+const exitCode = checker.run(chaptersDir);
 process.exit(exitCode);
