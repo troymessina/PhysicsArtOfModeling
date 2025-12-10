@@ -10,7 +10,7 @@ numbering:
 
 In this chapter, we introduce the concepts of linear momentum and of centre of mass. Momentum is a quantity that, like energy, can be defined from Newton's Second Law, to facilitate building models. Since momentum is often a conserved quantity within a system, it can make calculations much easier than using forces. The concepts of momentum and of centre of mass will also allow us to apply Newton's Second Law to systems comprised of multiple particles including solid objects. 
 
-:::{hint} LearningObjectives
+:::{hint} Learning Objectives
 * Understand the relationship between constant momentum and Newton's First Law
 * Understand how to calculate linear momentum.
 * Understand how to calculate impulse and that it corresponds to a change in momentum.
