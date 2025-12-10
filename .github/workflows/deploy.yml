@@ -1,10 +1,14 @@
 # This file was created automatically with `myst init --gh-pages` 🪄 💚
 
 name: MyST GitHub Pages Deploy
+
+# Trigger: This workflow runs when code is pushed to the main branch
 on:
   push:
     # Runs on pushes targeting the default branch
     branches: [main]
+
+# Environment variables available to all jobs and steps
 env:
   # `BASE_URL` determines the website is served from, including CSS & JS assets
   # You may need to change this to `BASE_URL: ''`
@@ -12,44 +16,93 @@ env:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
-  contents: read
-  pages: write
-  id-token: write
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+  contents: read    # Read repository contents
+  pages: write      # Deploy to GitHub Pages
+  id-token: write   # Verify deployment originates from appropriate source
+
+# Concurrency control: Prevents multiple deployments from running simultaneously
+# This ensures that only one deployment happens at a time to avoid conflicts
+# 'cancel-in-progress: false' means queued deployments wait rather than being cancelled
+# This is important for production deployments - we want every deployment to complete
 concurrency:
   group: 'pages'
   cancel-in-progress: false
 jobs:
   deploy:
+    # GitHub Pages environment configuration
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      # Step 1: Check out the repository code
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Step 2: Configure GitHub Pages settings
       - name: Setup Pages
         uses: actions/configure-pages@v3
-      - uses: actions/setup-node@v4
+
+      # Step 3: Set up Node.js environment
+      # This is needed to run npm and install MyST Markdown
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: 18.x
-     # Install MyST and PDF dependencies
+
+      # Step 4: Cache npm global packages to speed up future builds
+      # This caches the mystmd installation so it doesn't need to be downloaded every time
+      - name: Cache npm global packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-npm-global-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-npm-global-
+
+      # Step 5: Install MyST Markdown CLI tool globally
+      # MyST is used to build the documentation from markdown files
       - name: Install MyST Markdown
         run: npm install -g mystmd
+
+      # Step 6: Install Typst for PDF generation
+      # Typst is a modern typesetting system used to create PDF documents
       - name: Setup Typst
         uses: typst-community/setup-typst@v4
-      # Build PDF and then HTML
+
+      # Step 7: Cache MyST build outputs to speed up incremental builds
+      # This stores the build directory so unchanged files don't need to be rebuilt
+      - name: Cache MyST build
+        uses: actions/cache@v4
+        with:
+          path: |
+            ./_build
+            ./.myst
+          key: ${{ runner.os }}-myst-build-${{ hashFiles('**/*.md', 'myst.yml') }}
+          restore-keys: |
+            ${{ runner.os }}-myst-build-
+
+      # Step 8: Build PDF version of the documentation
+      # This creates PDF files from your markdown content
       - name: Build PDF Assets
         run: myst build --pdf
-        #run: myst build --typst
+        # Alternative: run: myst build --typst
+
+      # Step 9: Build HTML version of the documentation
+      # This creates the website files that will be deployed
       - name: Build HTML Assets
         run: myst build --html
-      # Upload to GitHub Pages
+
+      # Step 10: Upload the built HTML files as an artifact
+      # This packages the website files for deployment
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: './_build/html'
+
+      # Step 11: Deploy the website to GitHub Pages
+      # This makes your documentation publicly available
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4        
+        uses: actions/deploy-pages@v4
 # End of file .github/workflows/deploy.yml
