@@ -47,13 +47,19 @@ K_{rot} = \sum_i \frac{1}{2}m_iv_i^2
 ```
 Although each particle will have a different velocity, $\vec v_i$, they will all have the same angular velocity, $\vec\omega$. For any particle, located a distance $r_i$ from the axis of rotation, their velocity is related to the angular velocity of the object by:
 ```{math}
+
+\begin{align*}
 \vec v_i &= \vec \omega \times \vec r_i\\
 v_i &= \omega r_i
+\end{align*}
 ```
 where $\vec \omega$ and $\vec r_i$ are always perpendicular to each other, since $\vec\omega$ is out of the plane of the page. Furthermore, the velocity vector, $\vec v_i$, will always be perpendicular to $\vec r_i$, since all particles are moving in circles centred about the axis of rotation.  We can thus write the total rotational kinetic energy of the object using the angular speed:
 ```{math}
+
+\begin{align*}
 K_{rot} &= \sum_i \frac{1}{2}m_iv_i^2 = \sum_i \frac{1}{2}m_ir_i^2\omega^2= \frac{1}{2} \omega^2 \sum_i m_ir_i^2\\
 &=\frac{1}{2}I\omega^2
+\end{align*}
 ```
 where we factored $\omega$ and the one half out of the sum, as these are the same for each particle $i$. We then recognized that the remaining sum is simply the definition of the object's moment of inertia about the axis:
 ```{math}
@@ -108,13 +114,19 @@ W^{net} = \int_{\theta_1}^{\theta_2}\vec\tau^{net}\cdot d\vec \theta
 ```
 We can re-arrange this using Newton's Second Law for rotational dynamics:
 ```{math}
+
+\begin{align*}
 \vec\tau^{net} &= I \vec\alpha\\
 &= I \frac{d\vec\omega}{dt} =  I \frac{d\omega}{d\theta}\frac{d\vec\theta}{dt}=I \frac{d\omega}{d\theta} \vec\omega
+\end{align*}
 ```
 which allows us to write the integral over a change in angular velocity instead of angular displacement:
 ```{math}
+
+\begin{align*}
 W^{net} &= \int_{\theta_1}^{\theta_2}\vec\tau^{net}\cdot d\vec \theta =  \int_{\theta_1}^{\theta_2}I \frac{d\omega}{d\theta} \vec\omega \cdot d\vec \theta\\
 &=\int_{\omega_1}^{\omega_2}I \omega d\omega = \frac{1}{2}I\omega_2^2 - \frac{1}{2}I\omega_1^2
+\end{align*}
 ```
 where we used the fact that $\vec\omega$ are $d\vec\theta$ are parallel. We thus find that the Work-Energy Theorem can also be applied to find the change in rotational kinetic energy resulting from the net work done by a torque:
 ```{math}
@@ -144,16 +156,22 @@ K_i = \frac{1}{2}m_iv_i^2 = \frac{1}{2}m_i(\vec v_i\cdot \vec v_i)
 ```
 where we expressed the speed of the particle squared using a scalar product of the velocity of the particle with itself. The total kinetic energy of the object is found by summing the kinetic energies of all of the particles:
 ```{math}
+
+\begin{align*}
 K_{tot} &= \sum \frac{1}{2}m_i(\vec v_i\cdot \vec v_i) \\
 &=\frac{1}{2} \sum_i m_i (\vec\omega \times \vec r_i + \vec v_{CM}) \cdot (\vec\omega \times \vec r_i + \vec v_{CM})\\
 &=\frac{1}{2} \sum_i m_i (\vec\omega \times \vec r_i)\cdot(\vec\omega \times \vec r_i ) + \frac{1}{2} \sum_i m_i (\vec v_{CM}) \cdot (\vec v_{CM}) + \sum_i m_i (\vec\omega \times \vec r_i) \cdot (\vec v_{CM})\\
 &=\frac{1}{2}  \sum_i m_i \omega^2r_i^2 + \frac{1}{2} \sum_i m_i v_{CM}^2 + \sum_i m_i (\vec\omega \times \vec r_i) \cdot (\vec v_{CM})\\
 &=\frac{1}{2} I_{CM}\omega ^2 + \frac{1}{2}M v_{CM}^2+\sum_i m_i (\vec\omega \times \vec r_i) \cdot (\vec v_{CM})
+\end{align*}
 ``` 
 where the first term is the rotational kinetic energy that we found earlier. The second term, called the "translational kinetic energy", can be thought of as the kinetic energy of the whole system with mass $M=\sum m_i$, due to the translational motion of the centre of mass. The last term is identically zero; we can re-order the scalar product and factor $\vec v_{CM}$ out of the sum:
 ```{math}
+
+\begin{align*}
 \sum_i m_i (\vec\omega \times \vec r_i) \cdot (\vec v_{CM}) &= (\vec v_{CM}) \cdot \sum_i m_i (\vec\omega \times \vec r_i)\\
 &=(\vec v_{CM}) \cdot \sum_i m_i \vec v'_{i}
+\end{align*}
 ```
 where $v'_{i} = \vec\omega \times \vec r_i$ is the velocity of particle $i$ in the center of mass frame of reference. But the sum:
 ```{math}
@@ -207,8 +225,11 @@ Consider, specifically, the instant in time when the red point is at the bottom 
 
 For the point in contact with the ground, the vectors $\vec v_{rot}$ and $\vec v_{CM}$ are anti-parallel, horizontal, and must sum to zero. Writing out the horizontal component of the velocity of that point (choosing the positive direction to be in the direction of the velocity of the centre of mass):
 ```{math}
+
+\begin{align*}
 v &= -v_{rot} + v_{CM} = 0\\
 \therefore v_{rot} &= v_{CM}
+\end{align*}
 ```
 and we find that, for rolling without slipping, the speed due to rotation about the centre of mass has to be equal to the speed of the centre of mass. The speed due to rotation about the centre of mass can be expressed using the angular velocity of the wheel about the centre of mass ([](#eq:angularmomentumrolling:vrot)). For rolling without slipping, we thus have the following relationship between angular velocity and the speed of the centre of mass:
 ```{math}
@@ -218,8 +239,11 @@ It makes sense for the angular velocity to be related to the speed of the centre
 
 For rolling without slipping, the magnitude of the linear acceleration of the centre of mass, $a_{CM}$, is similarly related to the magnitude of the angular acceleration of the wheel, $\alpha$, about the centre of mass:
 ```{math}
+
+\begin{align*}
 a_{CM} &= \frac{dv_{CM}}{dt} = \frac{d}{dt}\omega R = R \frac{d\omega}{dt}\\
 \therefore a_{CM} &= R\alpha
+\end{align*}
 ```
 
 :::{tip} Checkpoint
@@ -262,15 +286,21 @@ I_{CM}=\frac{1}{2}MR^2
 ```
 We can thus write the mechanical energy at the bottom of the incline as:
 ```{math}
+
+\begin{align*}
 E' &= \frac{1}{2}I_{CM}\omega^2 + \frac{1}{2}Mv_{cm}^2\\
 &=\frac{1}{2}\left(  \frac{1}{2}MR^2 \right) \left(  \frac{v_{CM}}{R}\right)^2+ \frac{1}{2}Mv_{cm}^2\\
 &=\frac{3}{4}Mv_{cm}^2
+\end{align*}
 ```
 Applying conservation of energy allows us to determine the speed of the centre of mass at the bottom of the incline:
 ```{math}
+
+\begin{align*}
 E &= E'\\
 Mgh &= \frac{3}{4}Mv_{cm}^2\\
 \therefore v_{CM} &= \sqrt{\frac{4}{3}gh}
+\end{align*}
 ```
 
 **Discussion:** This example showed how we can use the conservation of energy to model the motion of an object that is rolling without slipping. The constraint of rolling without slipping allowed for the angular speed of the object to be related to the speed of its centre of mass.
@@ -301,8 +331,11 @@ A wheel that is rolling without slipping, as viewed if rotating about the instan
 ```
 In particular, the angular velocity, $\vec \omega$, about the instantaneous axis of rotation is the same as when we model the motion as translation plus rotation about the centre of mass ,as in the previous section. Indeed, relative to the instantaneous axis of rotation, the centre of mass must still have a velocity $\vec v_{CM}$, which is given by:
 ```{math}
+
+\begin{align*}
 \vec v_{CM} &= \vec\omega \times \vec r_{CM}\\
 \therefore v_{CM} &= \omega R
+\end{align*}
 ```
 where $\vec r_{CM}$ is the vector from the axis of rotation to the centre of mass. This is the same condition for rolling without slipping that we found before. Similarly, the velocity of any point on the wheel, relative to the ground, is given by:
 ```{math}
@@ -351,8 +384,11 @@ The angular acceleration will thus be in the negative $z$ direction, and the mag
 ``` 
 However, we do not know the magnitude of the force of static friction. We can use the $x$ and $y$ components of Newton's Second Law to determine it (with acceleration of the centre of mass in the $x$ direction):
 ```{math}
+
+\begin{align*}
 \sum F_x &= F_g\sin\theta - f_s = Ma_{CM}\\
 \sum F_y &= N - F_g\cos\theta = 0
+\end{align*}
 ```
 Because the disk is rolling without slipping, the acceleration of the centre of mass is related to the angular acceleration of the disk:
 ```{math}
@@ -360,14 +396,20 @@ a_{cm} = \alpha R
 ```
 The $x$ component of Newton's Second Law can thus be used to determine the magnitude of the force of static friction in terms of the angular acceleration:
 ```{math}
+
+\begin{align*}
 Mg\sin\theta - f_s &= M \alpha R\\
 \therefore f_s &= Mg\sin\theta - M\alpha R
+\end{align*}
 ```
 We can then substitute out the force of friction from our previous formula for the angular acceleration:
 ```{math}
+
+\begin{align*}
 \alpha &= \frac{2f_s}{MR}\\
 &=\frac{2Mg\sin\theta - 2M\alpha R}{MR} = \frac{2g\sin\theta}{R} - 2\alpha \\
 \therefore \alpha &= \frac{2g\sin\theta}{3R}
+\end{align*}
 ```
 
 Instead of modelling the motion of the disk  as rotation about the centre of mass and translation of the center of mass, we can also model it about the instantaneous axis of rotation.
@@ -378,8 +420,11 @@ The angular acceleration about the instantaneous axis of rotation will be the sa
 ```
 The torque from the force of gravity is equal to the moment of inertia of the disk about the instantaneous axis of rotation, $I$, multiplied by its angular acceleration:
 ```{math}
+
+\begin{align*}
 \tau ^{ext} = \tau_g &= I\alpha\\
 \therefore \alpha &= \frac{\tau_g}{I} = \frac{MgR\sin\theta}{I}
+\end{align*}
 ```
 The moment of inertia about the instantaneous axis of rotation is easily found using the parallel axis theorem:
 ```{math}
@@ -387,8 +432,11 @@ I = I_{CM}+MR^2 = \frac{1}{2}MR^2 + MR^2 =\frac{3}{2}MR^2
 ```
 This allows us to find the angular acceleration of the disk:
 ```{math}
+
+\begin{align*}
 \alpha &= \frac{MgR\sin\theta}{I} = \frac{MgR\sin\theta}{\frac{3}{2}MR^2}\\
 &=\frac{2g\sin\theta}{3R}
+\end{align*}
 ```
 as we found previously, but in this case, we did not need to use Newton's Second Law to determine the force of friction. 
 
@@ -408,9 +456,12 @@ where $\vec r$ is the vector from the point of rotation to the particle, and the
 
 Consider the time-derivative of angular momentum (where we have to use the product rule for derivatives):
 ```{math}
+
+\begin{align*}
 \frac{d\vec L}{dt}  &= \frac{d}{dt} (\vec r\times \vec p)\\
 &=\frac{d\vec r}{dt}\times \vec p + \vec r\times\frac{d\vec p}{dt}\\
 &=\vec v\times \vec p + \vec r\times\frac{d\vec p}{dt}\\
+\end{align*}
 ```
 The first term is zero, since $\vec v$ is parallel to $\vec p$ by definition. Recall Newton's Second Law written using linear momentum:
 ```{math}
@@ -418,8 +469,11 @@ The first term is zero, since $\vec v$ is parallel to $\vec p$ by definition. Re
 ```
 where $\vec F^{net}$ is the net force on the particle relative to the point of rotation. The rate of change of angular momentum is thus given by:
 ```{math}
+
+\begin{align*}
 \frac{d\vec L }{dt} &= \vec r\times\frac{d\vec p}{dt}\\
 &=\vec r\times\vec F^{net}
+\end{align*}
 ```
 where the term on the right is the net torque on the particle. Thus, the rate of change of angular momentum is given by:
 ```{math}
@@ -487,9 +541,12 @@ In this case, the particle is moving in a straight line, but we can still define
 ```
 We can take the time derivative of the angular momentum to see if it changes with time:
 ```{math}
+
+\begin{align*}
 \frac{d\vec L}{dt} = &= \frac{d}{dt} (\vec r\times \vec p)\\
 &=\frac{d\vec r}{dt}\times \vec p + \vec r\times\frac{d\vec p}{dt}\\
 &=\vec v\times \vec p + \vec r\times\frac{d\vec p}{dt}\\
+\end{align*}
 ```
 The first term is zero because $\vec v$ and $\vec p$ are parallel (so their cross-product must be zero). The second term is zero because the particle's momentum is constant in time (since its velocity is constant). Thus, the particle's angular momentum does not change with time, and it is conserved.  
 
@@ -505,8 +562,11 @@ We can write Newton's Second Law using the angular momentum, $\vec L_i$, for par
 ```
 where $\vec \tau_i^{net}$ is the net torque exerted on particle $i$. We can sum each side of this equation for all of the particles in the system:
 ```{math}
+
+\begin{align*}
 \frac{d\vec L_1}{dt} + \frac{d\vec L_2}{dt} + \frac{d\vec L_3}{dt} + \dots &= \vec \tau_1^{net} + \vec \tau_2^{net} +\vec \tau_3^{net} + \dots\\
 \therefore \frac{d}{dt} \sum_i\vec L_i &= \sum_i \vec \tau_i^{net}
+\end{align*}
 ```
 The sum of all of the torques on all of the particles will include a sum over torques that are internal to the system and torques that are external to the system. The sum over internal torques is zero:
 ```{math}
@@ -529,7 +589,10 @@ Now, consider a solid object that is modelled as a system of many particles of m
 ```
 The total momentum of the system is the sum of the angular momenta of the individual particles:
 ```{math}
+
+\begin{align*}
 \vec L &= \sum_i\vec L_i = \sum_i  m_i r_i^2 \vec \omega_i
+\end{align*}
 ```
 Because all of the particles are part of the same object, they must all move in unison and have the same angular velocity, $\vec\omega$, relative to the axis of rotation. We can thus define the angular momentum about the rotation axis for a solid object with angular velocity, $\vec\omega$, as:
 ```{math}
@@ -572,14 +635,20 @@ During a spin, a figure skater brings his arms close to his body and increases h
 :class: dropdown
 We can consider the rotation axis to be vertical through the centre of the skater. When the figure skater is spinning, there is no net external torque on him. Thus, his angular momentum is conserved as he bring his arms in. As he bring his arms in, his moment of inertia decreases, since he is bringing the mass of his arms closer to the axis of rotation. If $I_1$ and $I_2$ are the moments of inertia of the skater before and after brining his arms in, respectively, we can write the angular momentum about his axis of rotation as:
 ```{math}
+
+\begin{align*}
 L_1 &= I_1\omega_1\\
 L_2 &= I_2\omega_2
+\end{align*}
 ```
 Since there is no external torque on the skater, the angular momentum is the same before and after he changes his moment of inertia:
 ```{math}
+
+\begin{align*}
 L_1 &= L_2\\
 I_1\omega_1 &= I_2\omega_2\\
 \therefore \frac{I_1}{I_2} &= \frac{\omega_2}{\omega_1}
+\end{align*}
 ```
 **Discussion:** A spinning figure skater is a good example of the conservation of angular momentum. By changing their shape, they can change their moment of inertia and thus their angular velocity. 
 :::
@@ -616,7 +685,10 @@ L = rp\sin\phi = rmv\sin\phi
 ```
 where the mass of the planet is $m$. The rate at which the planet sweeps out the area can be written in terms of the angular momentum of the planet:
 ```{math}
+
+\begin{align*}
 \frac{dA}{dt} &=  \frac{1}{2} r v\sin\phi = \frac{L}{2m}
+\end{align*}
 ```
 The only force exerted on the planet is the gravitational force from the Sun. That force is always anti-parallel to the vector $\vec r$ from the Sun to the planet, and cannot result in a torque on the planet about the Sun. Thus, the angular momentum of the planet about the Sun must be conserved, and $L$ is constant. In turn, this means that the rate at which area is swept out by the planet, which is proportional to $L$, is also constant. Thus, Kepler's Second Law is equivalent to saying that the angular momentum of a planet relative to the Sun is constant. 
 :::
@@ -647,8 +719,11 @@ where, $\omega$, is the angular speed of the object about the centre of mass, an
 
 An object is said to be rolling without slipping on a surface if the point on the object that is in contact with the surface is instantaneously at rest relative to the surface. We can model an object that is rolling without slipping by superimposing rotational motion about the centre of mass with translational motion of the centre of mass. The angular speed, $\omega$, and the angular acceleration, $\alpha$, of the object about an axis through its centre of mass are related to the speed, $v_{CM}$, and linear acceleration, $a_{CM}$, of the centre of mass, respectively:
 ```{math}
+
+\begin{align*}
 v_{CM} &= \omega R\\
 a_{CM} &= \alpha R
+\end{align*}
 ```
 These conditions are equivalent to stating that the object is rolling without slipping.
 
@@ -802,8 +877,11 @@ a_{CM}=\alpha R_1
 ```
 where $R_1$ is the radius that is analogous to rolling motion. Since the torque from the force of gravity is zero, we can write Newton's Second Law for rotational quantities as:
 ```{math}
+
+\begin{align*}
 \vec\tau^{ext}&=I\vec\alpha\\
 TR_1 &= I\alpha
+\end{align*}
 ```
 where $TR_1$ is the magnitude of the torque from the force of tension, since the tension is perpendicular to the vector $\vec r$ between the centre of mass and the point where the tension is exerted. The moment of inertia of the yo-yo about its centre of mass is the sum of the moments of inertia of the three disks about their axis of symmetry:
 ```{math}
@@ -811,8 +889,11 @@ I=\frac{1}{2}MR_2^2 +\frac{1}{2} MR_2^2+\frac{1}{2}MR_1^2=\frac{1}{2}M(2R_2^2+R_
 ```
 We can also write Newton's Second Law in the vertical direction for the yo-yo (of mass $3M$):
 ```{math}
+
+\begin{align*}
 \sum F_y = -F_g + T &= -3Ma_{CM}\\
 -3Mg + T = -3Ma_{CM}
+\end{align*}
 ```
 where we $a_{CM}$ is the magnitude of the acceleration of the centre of mass (since we included the sign in the first equation).
 
@@ -822,11 +903,16 @@ T=3M (g-a_{CM})
 ```
 and substituting this into the rotational equation:
 ```{math}
+
+\begin{align*}
 TR_1 &= I\alpha\\
 3M (g-a_{CM}) R_1 &=  I\alpha
+\end{align*}
 ```
 We can solve for $a_{CM}$ by using the condition for rolling without slipping ($\alpha R_1 = a_{CM}$):
 ```{math}
+
+\begin{align*}
 3M (g-a_{CM}) R_1 &=  I\frac{a_{CM}}{R_1}\\
 \frac{I}{R_1}a_{CM}+3MR_1a_{CM}&= 3MgR_1\\
 a_{CM}\left(\frac{I}{R_1}+3MR_1\right)&= 3MgR_1\\
@@ -834,6 +920,7 @@ a_{CM}&=\frac{3MgR_1}{\frac{I}{R_1}+3MR_1}\\
 &=\frac{3MgR_1}{\frac{\frac{1}{2}M(2R_2^2+R_1^2)}{R_1}+3MR_1}\\
 &=\left(\frac{3R_1^2}{\frac{1}{2}(2R_2^2+R_1^2)+3R_1^2}\right)g\\
 \therefore a_{CM}&=\left( \frac{3R_1^2}{R_2^2+\frac{7}{2}R_1^2}\right)g
+\end{align*}
 ```
 :::
 
@@ -858,9 +945,12 @@ L'=I\omega = \left(\frac{1}{2}M+m\right)R^2\omega
 ```
 Using conservation of angular momentum, the angular velocity of the disk after the collision is:
 ```{math}
+
+\begin{align*}
 L &= L'\\
 Rmv &= \left(\frac{1}{2}M+m\right)R^2\omega\\
 \therefore \omega &= \frac{mv}{\left(\frac{1}{2}M+m\right)R}
+\end{align*}
 ```
 We do not expect that mechanical energy is conserved during the collision, since the projectile embeds itself, which must cost energy. The mechanical energy before the collision is given by the kinetic energy of the projectile:
 ```{math}
@@ -868,13 +958,19 @@ E = \frac{1}{2}mv^2
 ```
 After the collision, the kinetic energy is the rotational kinetic energy of the disk with embedded projectile about the axis of rotation:
 ```{math}
+
+\begin{align*}
 E' &= \frac{1}{2}I\omega^2 = \frac{1}{2} \left(\frac{1}{2}M+m\right)R^2 \left( \frac{mv}{\left(\frac{1}{2}M+m\right)R}\right)^2\\
 &= \frac{1}{2} \frac{m^2}{\left(\frac{1}{2}M+m\right)} v^2
+\end{align*}
 ```
 We can see that $E'$ is less than $E$, by taking their ratio:
 ```{math}
+
+\begin{align*}
 \frac{E'}{E} &= \frac{\frac{1}{2} \frac{m^2}{\left(\frac{1}{2}M+m\right)} v^2}{\frac{1}{2}mv^2}\\
 &=\frac{m}{\left(\frac{1}{2}M+m\right)}<1
+\end{align*}
 ```
 and we confirm that mechanical energy is not conserved in the collision (and that energy was lost since one had to deform the projectile and disk).
 

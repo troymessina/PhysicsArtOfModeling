@@ -79,9 +79,12 @@ Electric current flows through a conductor with a narrowing cross section, as il
 ```
 This situation is very similar to the flow of an incompressible fluid. In this case, the number of charges entering the conductor must be equal to the number of charges exiting the conductor during a given amount of time. That is, the total current, $I$, must be the same at both ends, since there is no place in the conductor for charges to accumulate. Since the current must be the same on both ends, we can relate the current densities at each end:
 ```{math}
+
+\begin{align*}
 j&=\frac{I}{A}\\
 \therefore I&=j_1A_1=j_2A_2\\
 \therefore \frac{j_2}{j_1}&=\frac{A_1}{A_2}
+\end{align*}
 ```
 and we find that the current density at the exit of the conductor must be higher than at the entrance. This is similar to the continuity equation in the Fluid Mechanics chapter ([Section %s](#sec:fluidmechanics:continuity)), where the current density plays a role analogous to the velocity in the fluids case.
 :::
@@ -114,7 +117,10 @@ In a conducting material, each atom will generally have one "free" electron that
 ```
 where $Al$ is the volume of that section of the conductor, and $e$ is the magnitude of the charge of the electron. The negative sign is to indicate that the charges are negative (they are electrons). That charge will take an amount of time, $\Delta t$, to flow through a given plane of the conductor, so that we can relate the length of the section, $l$, to the drift speed and $\Delta t$:
 ```{math}
+
+\begin{align*}
 l&=v_d\Delta t
+\end{align*}
 ```
 Thus, the current that flows through a cross-section of the conductor is given by:
 ```{math}
@@ -125,7 +131,10 @@ I=\frac{\Delta Q}{\Delta t}=\frac{-e n Al}{\Delta t}=-enAv_d
 ```
 which allows us to connect a macroscopic quantity, current, to the microscopic description of moving charges. Note that the negative sign reflects the fact that the current (of positive charges) is in the opposite direction from the drift velocity of the (negative) electrons. The current density is directly related to the microscopic quantities, since it does not depend on the (macroscopic) cross-sectional area, $A$, of the conductor:
 ```{math}
+
+\begin{align*}
 \vec j&=\frac{I}{A}\hat E = -en\vec v_d
+\end{align*}
 ```
 ```{math}
 \therefore\; \boxed{\vec j = -en\vec v_d}
@@ -142,8 +151,11 @@ n=\frac{(6.022e23 {\rm mole^{-1}})(8.92e3 {\rm kg/m^3})}{(63.5e-3 {\rm kg/mole})
 ```
 Since each copper atom contributes one free electron, this is the same as the density of free electrons. From this, we easily obtain the drift velocity from the current:
 ```{math}
+
+\begin{align*}
 v_d&=\frac{j}{en}=\frac{I}{Aen}=\frac{(1 {\rm A})}{\pi(0.0005 {\rm m})^2(1.6e-19 {\rm C})(8.46e28 {\rm m^{-3}})}\\
 &=9.4e-5 {\rm m/s}\sim0.1 {\rm mm/s}
+\end{align*}
 ```
 The drift velocity is thus very slow, less than one millimetre per second. Note that a $1 {\rm mm}$ diameter copper wire would not actually be able to sustain such a high current density without damage.
 :::
@@ -243,13 +255,19 @@ E=\frac{\Delta V}{L}
 ```
 Combining this with Ohm's Law, we have:
 ```{math}
+
+\begin{align*}
 j&=\sigma E\\
 \therefore j&=\sigma\frac{\Delta V}{L}\\
+\end{align*}
 ```
 Since the current density is a microscopic quantity, we can replace it with the current, $I$, a macroscopic quantity, for the conductor of cross-sectional area $A$, to find:
 ```{math}
+
+\begin{align*}
 j&=\frac{I}{A}\\
 \therefore I&=jA=\sigma\frac{\Delta V}{L}A
+\end{align*}
 ```
 This last equation is often written by isolating the potential difference:
 ```{math}
@@ -303,8 +321,11 @@ By analogy with fluid mechanics, the charges that enter the first resistor, $R_1
 
 Ohm's Law (the macroscopic version), must also be true for each resistor:
 ```{math}
+
+\begin{align*}
 \Delta V_1 &= R_1I\\
 \Delta V_2 &= R_2I
+\end{align*}
 ```
 where $\Delta V_1$ and $\Delta V_2$ are the potential differences across each resistor. $\Delta V_1$ and $\Delta V_2$ must sum to $\Delta V$:
 ```{math}
@@ -319,7 +340,10 @@ since the potential energy (per unit charge) that is lost in each resistor must 
 ```
 It makes sense that the equivalent resistance is found by summing the two resistors when they are in series. If the two resistors are made of the same material and have the same cross-sectional area, combining them in series is equivalent to fabricating a longer resistor with the two lengths added together. The result is easily extended to any number of resistors:
 ```{math}
+
+\begin{align*}
 R_{eff}&=R_1+R_2+R_2+\dots
+\end{align*}
 ```
 
 :::{attention} Olivia's Thoughts 
@@ -347,8 +371,11 @@ When two resistors are connected in parallel, the same voltage is applied across
 ```
 Applying Ohm's Law to each resistor, we find that they each have difference currents going through them:
 ```{math}
+
+\begin{align*}
 I_1&=\frac{\Delta V}{R_1}\\
 I_2&=\frac{\Delta V}{R_2}
+\end{align*}
 ```
 
 The total current, $I$, that enters the combination of resistors, must also exit the combination of resistors (continuity), so that the total current, $I$, is the sum of the current through each resistor:
@@ -357,8 +384,11 @@ I=I_1+I_2
 ```
 Combining this with Ohm's Law, we find:
 ```{math}
+
+\begin{align*}
 I&=I_1+I_2=\frac{\Delta V}{R_1}+\frac{\Delta V}{R_2}=\left( \frac{1}{R_1}+\frac{1}{R_2} \right)\Delta V\\
 \therefore \Delta V &= \frac{1}{\frac{1}{R_1}+\frac{1}{R_2}}I
+\end{align*}
 ```
 Thus, the effective resistance, $R_{eff}$, of two resistors connected in parallel is given by:
 ```{math}
@@ -413,8 +443,11 @@ As we discussed in [Section %s](#sec:current:micromodel), charges that move thro
 ```
 If there are many charges going through the resistor, the rate, $P$, at which they will dissipate energy in the resistor is given by:
 ```{math}
+
+\begin{align*}
 P&=\frac{d}{dt}\Delta U=\frac{d}{dt}q\Delta V=I\Delta V\\
 \therefore P&=I\Delta V
+\end{align*}
 ```
 where we recognized that $dq/dt=I$ is the definition of current. $P$ corresponds to the rate at which energy is dissipated in the resistor, and has dimensions of power. Combining this with Ohm's Law, the power that is dissipated in a resistor can be written in different ways:
 ```{math}
@@ -426,13 +459,19 @@ A hair-dryer is rated as consuming $1500 {\rm W}$ when connected to an outlet wi
 :class: dropdown
 Since the power of the hair-dryer and the potential difference across it are known, we can easily determine its resistance:
 ```{math}
+
+\begin{align*}
 P&=\frac{(\Delta V)^2}{R}\\
 \therefore R&=\frac{(\Delta V)^2}{P}=\frac{(120 {\rm V})^2}{(1500 {\rm W})}=9.6 {\rm \Omega}
+\end{align*}
 ```
 Similarly, we can determine the current through the hair dryer:
 ```{math}
+
+\begin{align*}
 P&=I\Delta V\\
 \therefore I &=\frac{P}{\Delta V}=\frac{(1500 {\rm W})}{(120 {\rm V})}=12.5 {\rm A}
+\end{align*}
 ```
 **Discussion: **Most household appliances are rated by the electrical power that they consume. This rating assumes that the appliance will be connected to a fixed potential difference ($120 {\rm V}$ in North America), so it is  straightforward to determine the current that they will draw. This is important because the current that is drawn by the appliance has to go through the wiring in the house, and if the current is too large, the wiring (which has resistance) will heat up ($P=I^2R$) which could result in an electrical fire. Circuits in a house have safety devices (fuses or breakers) that are designed to interrupt the circuit if the current is too large.
 :::
@@ -472,13 +511,19 @@ The instantaneous power, $P(t)$, can be described in terms of the instantaneous 
 ```
 where we used the fact that $T=\frac{2\pi}{\omega}$ to evaluate the integral. In order to make the formula similar to the DC equivalent (without the additional factor of $1/2$), we can define the "root mean square" current, $I_{rms}$, as an average current, from which we can calculate the average power that is dissipated in a resistor:
 ```{math}
+
+\begin{align*}
 I_{rms}&=\frac{I_0}{\sqrt 2}\\
 \therefore\bar P&=I_{rms}^2R
+\end{align*}
 ```
 Similarly, one can define the "root mean square" voltage, $\Delta V_{rms}$, so that the average power dissipated with an alternating current can be written in the same form as for the DC case:
 ```{math}
+
+\begin{align*}
 V_{rms}&=\frac{\Delta V_0}{\sqrt 2}\\
 \therefore\bar P&=I_{rms}^2R =\frac{\Delta V_{rms}^2}{R}=I_{rms}\Delta V_{rms}
+\end{align*}
 ```
 
 # Electrical safety
@@ -579,8 +624,11 @@ Even though there is not net displacement, the electrons will still transfer ene
 ```
 We introduce the "root mean square" current (voltage), $I_{rms}$ ($\Delta V_{rms}$), as an average effective current (voltage):
 ```{math}
+
+\begin{align*}
 I_{rms}&=\frac{1}{\sqrt 2}I_0\\
 \Delta V_{rms}&=\frac{1}{\sqrt 2}\Delta V_0
+\end{align*}
 ```
 such that the power can be expressed using a similar formula as in the direct current case, using the root mean square values:
 ```{math}
@@ -628,8 +676,11 @@ R = \rho \frac{L}{A}
 
 **Combining resistors:**
 ```{math}
+
+\begin{align*}
 R_{eff}&=R_1+R_2+R_2+\dots\quad\text{(Series)}\\
 R_{eff}&=\frac{1}{\frac{1}{R_1}+\frac{1}{R_2}+\frac{1}{R_3}+\dots}\quad\text{(Parallel)}
+\end{align*}
 ```
 **Power dissipated in a resistor:**
 ```{math}
@@ -638,8 +689,11 @@ P=I \Delta V=\frac{(\Delta V)^2}{R}=I^2R
 
 **RMS voltage and current:**
 ```{math}
+
+\begin{align*}
 I_{rms}&=\frac{1}{\sqrt 2}I_0\\
 \Delta V_{rms}&=\frac{1}{\sqrt 2}\Delta V_0
+\end{align*}
 ```
 :::
 
@@ -719,6 +773,8 @@ R(T)=\rho(T) \frac{L}{A}=\frac{\rho_0 L}{A}[1+\alpha(T-T_0)]=R_0[1+\alpha(T-T_0)
 ```
 where $R_0$ is the resistance at the reference temperature, $T_0$. Since we are given the resistance at two different temperatures, we can determine both $\alpha$ and $R_0$, for a choice of $T_0=20 {\rm \degree C}$:
 ```{math}
+
+\begin{align*}
 R_1&=R_0[1+\alpha(T_1-T_0)]\\
 R_2&=R_0[1+\alpha(T_2-T_0)]\\
 \therefore\frac{R_1}{R_2}&=\frac{1+\alpha(T_1-T_0)}{1+\alpha(T_2-T_0)}\\
@@ -727,6 +783,7 @@ R_1 [1+\alpha(T_2-T_0)]&=R_2 [1+\alpha(T_1-T_0)]\\
 \therefore \alpha &= \frac{R_2-R_1}{R_1(T_2-T_0) - R_2(T_1-T_0) }\\
 &=\frac{(106.8 {\rm \Omega}) - (103.4 {\rm \Omega})}{(103.4 {\rm \Omega})((40 {\rm \degree C})-(20 {\rm \degree C})) - (106.8 {\rm \Omega})((30 {\rm \degree C})-(20 {\rm \degree C})) }\\
 &=0.0034
+\end{align*}
 ```
 Referring to [](#tab:current:materials), the material could likely be gold.
 

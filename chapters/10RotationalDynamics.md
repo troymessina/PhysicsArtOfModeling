@@ -187,9 +187,12 @@ where $\vec v_s$ is the (instantaneous) tangential velocity around the circle (i
 
 Given the angular kinematic quantities, the related linear quantities at a position $\vec r$ from the axis of rotation are given by:
 ```{math}
+
+\begin{align*}
 d\vec s &= d\vec\theta \times \vec r\nonumber\\
 \vec v_s &= \vec \omega \times \vec r\nonumber\\
 \vec a_s&= \vec \alpha \times \vec r
+\end{align*}
 ```
 where the linear quantities are always in the direction perpendicular to $\vec r$ (tangent to the circle, for motion around a circle). In other words, one cannot, say, take the acceleration vector, obtain the angular acceleration vector, and then get back the original acceleration vector - one will only get back the component of the acceleration vector that is perpendicular to $\vec r$.  
 
@@ -230,8 +233,11 @@ Putting this altogether, we get:
 
 If more than one force is exerted on the particle, it is easy to show that the **net torque** from the net force on the particle **is equal to the sum of the torques on the particle**:
 ```{math}
+
+\begin{align*}
 \vec{r} \times (\vec{F}_1 + \vec{F}_2 + \vec{F}_3 + \dots) &=  (\vec{r} \times \vec{F}_1 + \vec{r} \times \vec{F}_2 + \vec{r} \times \vec{F}_3 + \dots) \\
 \therefore \vec{r} \times \sum \vec{F} &= \sum \vec{\tau} = \vec{\tau}_{net}
+\end{align*}
 ```
 
 We can write "Newton's Second Law for the rotational dynamics of a particle":
@@ -246,7 +252,6 @@ This equation provides us an alternate formulation to Newton's Second Law that i
 
 (ex:rotationaldynamics:rocket)=
 :::{note} Example 10.1
-:label: ex:rotationaldynamics:rocket
 ```{figure} figures/RotationalDynamics/rocket.png
 :label: fig:rotationaldynamics:rocket
 :width: 300px
@@ -414,7 +419,6 @@ Left panel: a particle rotating about a circle centred at the origin with an axi
 
 (ex:rotationaldynamics:torque)=
 :::{note} Example 10.2
-:label: ex:rotationaldynamics:torque
 A force given by $\vec F=F_x\hat x + F_y \hat y + F_z \hat z$ is exerted at a position $\vec r=r_x \hat x + r_y \hat y + r_z\hat z$. Calculate the torque about the $z$ axis as well as the torque about the origin.
 :::{note} Solution
 :label: ex:rotationaldynamics:torquesoln
@@ -614,7 +618,6 @@ where $dm$ is a small mass element that makes up the object, $r$ is the distance
 
 (ex:rotationaldynamics:ring)=
 :::{note} Example 10.4
-:label: ex:rotationaldynamics:ring
 Calculate the moment of inertia of a uniform thin ring of mass $M$ and radius $R$, rotated about an axis that goes through its centre and is perpendicular to the disk.
 :::{note} Solution
 :label: ex:rotationaldynamics:ringsoln
@@ -687,7 +690,6 @@ where $I_{CM}$ is the moment of inertia of an object of mass $M$ about an axis t
 
 (ex:rotationldynamics:rod)=
 :::{note} Example 10.5
-:label: ex:rotationldynamics:rod
 In the previous section, we calculated the moment of inertia of a rod of length $L$ and mass $M$ through an axis that is perpendicular to the rod and through one of its ends, and found that it was given by:
 \begin{align*}
 I=\frac{1}{3}ML^2
@@ -715,7 +717,6 @@ In this section, we consider the conditions under which an object is in static o
 An object is in static equilibrium, if **both the sum of the external forces exerted on the object and the sum of the external torques (about any axis) are zero**. If the object is in static equilibrium the centre of mass will have no acceleration and the object will have no angular acceleration. In the centre of mass frame of reference, the object is immobile. 
 (ex:rotationaldynamics:scale)=
 :::{note} Example 10.6
-:label: ex:rotationaldynamics:scale
 ```{figure} figures/RotationalDynamics/scale.png
 :label: fig:rotationaldynamics:scale
 :width: 500px
@@ -1025,8 +1026,11 @@ The sum of the torques in the $z$ direction must be zero for static equilibrium,
 \end{align*}
 Using the $x$ and $y$ components of Newton's Second Law, we can now use the tension to determine the $x$ and $y$ components of the force exerted by the hinge:
 ```{math}
+
+\begin{align*}
 R_x &= T\cos\theta = \frac{3g}{2\tan\theta} \left( m + \frac{M}{2}\right)\\
 R_y &= (M+m)g - T\sin\theta = (M+m)g - \frac{3}{2}g \left( m + \frac{M}{2}\right)=  \left( \frac{1}{4}M-\frac{1}{2}m\right)g
+\end{align*}
 ```
 We find that the $y$ component of the force from the hinge could be in the positive or negative $y$ direction, depending on the sign of $\left( \frac{1}{4}M-\frac{1}{2}m\right)$. In particular, if $M>2m$, then the force exerted by the hinge, $\vec R$, has a component in the positive $y$ direction, as illustrated in [](#fig:rotationaldynamics:sign_fbd). However, if $M<2m$, then the hinge exerts a force that has a negative component in the $y$ direction, unlike that illustrated in the Figure. 
 

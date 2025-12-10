@@ -1,2 +1,6 @@
 # MyST build outputs
 _build
+
+# Generated PDF exports (built by CI)
+exports/*.pdf
+chapters/exports/

@@ -4,16 +4,6 @@ numbering:
   headings:
   heading_1:
     start: 2
-exports:
-  - format: pdf
-    template: lapreprint-typst
-    output: exports/Ch01Introduction.pdf
-    id: introduction-export
-downloads:
-  - file: 01Introduction.md
-    title: Source File
-  - id: introduction-export
-    title: Download Ch01Introduction.pdf
 ---
 (chap:introduction)=
 # Overview
@@ -63,14 +53,20 @@ Use Chloe's law ($t \propto \sqrt{h}$) to determine how much longer it will take
 :class: dropdown
 When we a relationship that is proportional (indicated by a $\propto$), we can introduce a **constant of proportionality**, which we will call $k$, to rewrite the relationship as an equality:
 ```{math}
+
+\begin{align*}
 t &\propto \sqrt{h} \\
 \rightarrow t&=k\sqrt{h}
+\end{align*}
 ```
 Let $t_1$ be the time to fall a distance $h_1=1 {\rm m}$, and $t_2$ be the time to fall a distance $h_2=2 {\rm m}$. 
 By taking the ratio, $\frac{t_1}{t_2}$, our unknown constant $k$ will cancel:
 ```{math}
+
+\begin{align*}
 \frac{t_1}{t_2}&=\frac{k\sqrt{(1 {\rm m})}}{k\sqrt{(2 {\rm m})}}=\frac{1}{\sqrt 2}\\
 \therefore t_2 &= \sqrt{2} t_1
+\end{align*}
 ```
 and we find that it will take $\sqrt{2}\sim 1.41$ times longer to drop by $2 {\rm m}$ than it will by $1 {\rm m}$.
 :::

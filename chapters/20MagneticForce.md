@@ -141,9 +141,12 @@ The motion of a charged particle in a uniform magnetic field (out of the page) i
 ```
 Indeed, the force is always perpendicular to the velocity, and the force is constant in magnitude since both the speed and magnetic field remain constant. These are the only conditions required for uniform circular motion. We can easily determine the radius, $R$, of the circle, since the magnetic force is responsible for the centripetal acceleration:
 ```{math}
+
+\begin{align*}
 F_B &= m\frac{v^2}{R}\\
 qvB &= m\frac{v^2}{R}\\
 \therefore R &= \frac{mv}{qB}
+\end{align*}
 ```
 The radius is called the "cyclotron radius". 
 
@@ -160,7 +163,10 @@ Is the particle illustrated in [](#fig:magneticforce:cyclotron) positively or ne
 
 Referring to [](#fig:magneticforce:cyclotron), if the velocity of the particle is in the plane of the page (perpendicular to the magnetic field), as illustrated, the particle will undergo uniform circular motion. If the velocity of the particle has a component that is parallel to the magnetic field (for example a component coming out of the page, towards you), the particle will undergo "helical motion" (a spiral). The radius of the helix is determined by the component of the velocity, $\vec v_{\perp}$, that is perpendicular the magnetic field:
 ```{math}
+
+\begin{align*}
 \therefore R &= \frac{mv_{\perp}}{qB}
+\end{align*}
 ```
 The charged particle would also have a component of velocity towards you that is constant, resulting in the spiral motion illustrated in [](#fig:magneticforce:helix). Note that the distance between two spirals (labelled $h$ in the figure) is called the "pitch", and is determined by the component of velocity that is parallel to the magnetic field, $\vec v_\parallel$, since that component is not affected by the magnetic force. 
 ```{figure} figures/MagneticForce/helix.png
@@ -172,7 +178,6 @@ The helical motion of a charged particle with a component of velocity parallel t
 ```
 (ex:magneticforce:massspec)=
 :::{note} Example 20.1
-:label: ex:magneticforce:massspec
 A particle of unknown charge and unknown mass is observed to undergo uniform circular motion with a period, $T$, when travelling perpendicular to a uniform magnetic field, $B$. What is the ratio of the particle's charge to its mass, $q/m$?
 :::{note} Solution
 :class: dropdown
@@ -182,9 +187,12 @@ v = \frac{2\pi R}{T}
 ```
 and then use the equation for the cyclotron radius to relate this to the charge-to-mass ratio of the particle:
 ```{math}
+
+\begin{align*}
 R &= \frac{mv}{qB}\\
   &= \frac{2\pi R m}{qBT}\\
-\therefore \frac{q}{m} &= \frac{2\pi}{BT} 
+\therefore \frac{q}{m} &= \frac{2\pi}{BT}
+\end{align*}
 ```
 **Discussion:** When a charged particle undergoes uniform circular motion in a magnetic field, the radius of the motion depends on the particle's charge-to-mass ratio. This can often be used to measure the mass of, say, an ion, if the charge of the ion is known (usually one or two units of the electron charge). A mass spectrometer makes use of this principle in order to determine the composition of a sample. The sample is vaporized and ionized, the ions are then accelerated using an electric potential difference, before they undergo uniform circular motion. Ions of different masses (and same charge) will then undergo circular motion with different radii, which allows their masses to be determined, and thus the composition of the sample to be known.
 :::
@@ -215,7 +223,10 @@ as illustrated in [](#fig:magneticforce:microforce). A section of wire of length
 ```
 Recall the microscopic model of current to relate the drift velocity to the conventional current in the wire:
 ```{math}
+
+\begin{align*}
 I &= -nAev_d
+\end{align*}
 ```
 where the minus sign indicates that negative electrons flow in the opposite direction from the conventional current. We also introduce a vector, $\vec l$, with a magnitude equal to the length of the section of wire, and a direction that is parallel to the conventional current (thus anti-parallel to the electron drift velocity). The force on the section of the length, $l$, of the wire is thus given by:
 ```{math}
@@ -228,9 +239,12 @@ where the minus sign indicates that negative electrons flow in the opposite dire
 :::{attention} Olivia's Thoughts 
 If you forget this formula, you can obtain it rather easily from $\vec F=q\vec v\times \vec B$. For simplicity, we assume velocity is constant, so that velocity is the displacement, $\vec l$, per unit time. We can then rewrite the formula for the force as:
 ```{math}
+
+\begin{align*}
 \vec F&=q\vec v\times \vec B\\
 &=q\frac{\vec l}{t}\times \vec B\\
 &=\frac{q}{t}\vec l\times \vec B.
+\end{align*}
 ```
 In the last line, I have rewritten the equation to highlight the charge per unit time $q/t$, which is just the (constant) current, $I$. Using the current, the equation becomes,
 ```{math}
@@ -272,7 +286,6 @@ The magnetic force on a curved current-carrying wire is obtained by modelling th
 
 (ex:magneticforce:semicircle)=
 :::{note} Example 20.2
-:label: ex:magneticforce:semicircle
 A wire carrying current $I$ is bent so as to have a semi-circular section with radius $R$, as shown in [](#fig:magneticforce:semicircle). The wire is immersed in a uniform magnetic field, $\vec B$, that is perpendicular to the plane of the wire, as shown. Using the given coordinate system, what is the net force on the wire?
 ```{figure} figures/MagneticForce/semicircle.png
 :label: fig:magneticforce:semicircle
@@ -288,10 +301,13 @@ We can model the wire as being made of three sections: a straight section carryi
 
 Consider the first straight section, carrying current in the positive $y$ direction. The force on that section of wire, by the right hand rule, will be towards the left (negative $x$ direction):
 ```{math}
+
+\begin{align*}
 F_S &= I \vec l \times \vec B\\
 &= I (l\hat y) \times (-B\hat z)\\
 &= -IlB (\hat y \times \hat z)\\
 &=-IlB\hat x
+\end{align*}
 ```
 where $l$ is the (unknown) length of that section of wire. The force exerted on the other straight section of wire will have the same magnitude, but the opposite direction (since the current, and thus the vector $\vec l$, is in the opposite direction). Thus, the forces from the two straight sections of the wire cancel, as illustrated in [](#fig:magneticforce:semicircle_sol).
 ```{figure} figures/MagneticForce/semicircle_sol.png
@@ -309,12 +325,15 @@ d\vec l = dl(\sin\theta\hat x + \cos\theta \hat y)
 ```
 Thus, the infinitesimal force on that section of wire is given by:
 ```{math}
+
+\begin{align*}
 d\vec F &= I d\vec l \times \vec B \\
 &= I dl(\sin\theta\hat x + \cos\theta \hat y)\times (-B\hat z)\\
 &=-IBdl (\sin\theta\hat x \times \hat z + \cos\theta \hat y \times \hat z)\\
 &=-IBdl (-\sin\theta \hat y + \cos\theta\hat x) \\
 &= IBdl\sin\theta \hat y - IBdL\cos\theta \hat x\\
 & = dF_y\hat y + dF_x \hat x
+\end{align*}
 ``` 
 where, in the last line, we explicitly wrote out the $x$ and $y$ components of the infinitesimal force vector. In order to sum together these infinitesimal forces, it is most convenient to use the angle $\theta$ to identify each segment. $d\theta$ is related to $dl$, since $dl$ is the length of the circle subtended by the infinitesimal angle $d\theta$:
 ```{math}
@@ -357,9 +376,12 @@ Similarly, the force on the right vertical section (with current flowing upwards
 
 However, the net torque on the loop about its vertical axis of symmetry (shown by the vertical dashed line in the figure) is not zero. The total torque is found by summing the torques from the forces exerted on the two vertical sections of wire:
 ```{math}
+
+\begin{align*}
 \vec \tau &= \vec r\times \vec F + (-\vec r \times - \vec F)\\
 &= 2 \vec r \times F = 2 \left(-\frac{w}{2}\hat x\right) \times IhB\hat z = IBwh (-\hat x\times \hat z)\\
 \therefore \vec \tau&=IBwh (\hat y)
+\end{align*}
 ```
 where $\vec r$ is the vector from the axis of rotation to the location where the force is exerted.
 
@@ -422,13 +444,18 @@ I=\frac{\Delta Q}{\Delta t} = \frac{e}{T}
 ```
 The centripetal force on the electron is provided by the Coulomb force, $F_C$, exerted by the proton, which allows us to obtain the orbital speed, and thus the period of the orbit:
 ```{math}
+
+\begin{align*}
 F_C &= m\frac{v^2}{R}\\
 k\frac{e^2}{R^2}&= m\frac{v^2}{R}\\
 \therefore v &=\sqrt{\frac{ke^2}{mR}}\\
 \therefore T &= \frac{2\pi R}{v}
+\end{align*}
 ```
 The magnetic dipole moment is then given by:
 ```{math}
+
+\begin{align*}
 \mu &= IA\\
 &= \frac{e}{T} \pi R^2\\
 & = \frac{ev}{2\pi R} \pi R^2\\
@@ -436,6 +463,7 @@ The magnetic dipole moment is then given by:
 &=\frac{1}{2} \sqrt{\frac{ke^4R}{m}}\\
 &=\frac{1}{2} \sqrt{\frac{(9e9 {\rm N/C^{2}\cdot m^2})(1.6e-19 {\rm C})^4(0.5 \overset{\circ}{\rm A})}{(9.1e-31 {\rm kg})}}\\
 &=9\times 10^{24} {\rm A\cdot m^2}
+\end{align*}
 ```
 **Discussion:** In this example we calculated the orbital magnetic dipole moment of the electron in a hydrogen atom. This was a very simple model, since in reality, electrons do not orbit atoms in circular orbits, and one must use quantum mechanics to describe the motion precisely. 
 :::
@@ -484,10 +512,13 @@ E= \frac{\Delta V_{Hall}}{w}
 ```
 The equilibrium condition (that the electric force on an electron is equal to the magnetic force) is given by:
 ```{math}
+
+\begin{align*}
 F_E &= F_B\\
 eE &= ev_dB\\
 \frac{\Delta V_{Hall}}{w} &= v_d B\\
 \therefore \Delta V_{Hall}&= v_d wB
+\end{align*}
 ```
 If the drift velocity of electrons is known, then the Hall effect can be used to measure the strength of the magnetic field by simply measuring the Hall voltage. This is the most common way to measure the strength of a magnetic field (and the device to do so is called a Hall probe). Conversely, if the magnetic field is known, the Hall effect can be used to characterize the drift velocity of electrons and other microscopic quantities for the material from which the Hall probe is made.
 
@@ -517,9 +548,12 @@ Illustration of a velocity selector. Only charged particles with a specific spee
 ```
 In a velocity selector, both an electric and a magnetic force are exerted. [](#fig:magneticforce:vselector) shows a positive particle moving toward the right with speed $v$. The particle will experience an upwards electric force and a downwards magnetic force. If those two forces are equal, then the particle will move in a straight line. If, instead, one of the forces is larger than the other, the particle will be deflected and hit one of the charged plates. The condition for the two forces to be equal is given by:
 ```{math}
+
+\begin{align*}
 F_B &= F_E\\
 qvB &= qE\\
 \therefore v=\frac{E}{B}
+\end{align*}
 ```
 Thus, the electric and magnetic fields can be tuned so that their ratio gives the desired speed. Note that the speed selector works regardless of the sign of the charge or its mass, which makes it ideal to filter the particles entering a mass spectrometer.
 ## Galvanometer
@@ -575,7 +609,10 @@ The magnetic force can do no work, since it always acts in a direction perpendic
 
 In a uniform magnetic field, a charged particle with charge, $q$, mass $m$, and velocity vector, $\vec v$, perpendicular to a magnetic field, $\vec B$, will undergo uniform circular motion, with a cyclotron radius, $R$, given by:
 ```{math}
+
+\begin{align*}
 R &= \frac{mv}{qB}
+\end{align*}
 ```
 
 A straight wire of length, $l$, carrying current, $I$, will experience a magnetic force in a magnetic field, $\vec B$:
@@ -608,7 +645,10 @@ U= -\vec \mu \cdot \vec B = \mu B \cos\theta
 
 The Hall effect can be observed when current flows through a slab that is immersed in a magnetic field that is perpendicular to the slab. As the electrons move longitudinally through the slab, they will also be pushed to one side by the magnetic force, resulting in an excess of negative charge on that side. An electric potential difference (the "Hall potential") is then established between the two sides of the slab (in the direction perpendicular to the motion of the electrons). The Hall potential is given by:
 ```{math}
+
+\begin{align*}
 \Delta V_{Hall}&= v_d wB
+\end{align*}
 ```
 where $w$ is the width of the slab in the perpendicular direction, $B$ is the strength of the magnetic field, and $v_d$ is the drift velocity of electrons. The most common use of the Hall effect is to build a Hall probe to measure magnetic fields. However, Hall probes can also measure the drift velocity of electrons and other microscopic properties. The sign of the Hall potential also indicates the sign of the charges moving in the slab.
 
@@ -618,7 +658,10 @@ There are many applications of the magnetic force in our daily lives, including 
 :::{important} Important Equations
 **Magnetic force on a moving charge:**
 ```{math}
+
+\begin{align*}
 \vec F_B &= q\vec v\times \vec B
+\end{align*}
 ```
 
 **Magnetic force on a current-carrying wire:**
@@ -628,7 +671,10 @@ There are many applications of the magnetic force in our daily lives, including 
 
 **Cyclotron radius:**
 ```{math}
+
+\begin{align*}
 R &= \frac{mv}{qB}
+\end{align*}
 ```
 
 **Magnetic dipole moment:**
@@ -638,7 +684,10 @@ R &= \frac{mv}{qB}
 
 **Torque on a magnetic dipole:**
 ```{math}
+
+\begin{align*}
 \vec \tau &= \vec \mu \times \vec B
+\end{align*}
 ```
 :::
 
@@ -692,10 +741,13 @@ Integrate the torque over a circular path, using the equation $d\vec F = Id\vec 
 :class: dropdown
 First, we determine the velocity of the electron that were accelerated over a potential difference of $\Delta V=500 {\rm V}$. Their kinetic energy is given by their charge times the potential difference::
 ```{math}
+
+\begin{align*}
 K &= e\Delta V \\
 \frac{1}{2} mv^2 &= e\Delta V\\
 \therefore v &= \sqrt{\frac{2e\Delta V}{m}}= \sqrt{\frac{2(1.602e-19 {\rm C})(500 {\rm V})}{(9.109e-31 {\rm kg})}}\\
  &= 1.326e7 {\rm ms^{-1}}
+\end{align*}
 ```
 Now that we have the velocity, we must determine the direction of the magnetic field. We know that the electron is moving directly towards the phosphorescent screen (which we will define as $\vec x$) and the electron must be deflected directly upwards (which we will define as $\vec z$). Knowing this, we can use the right hand rule to quickly determine that the magnetic force will be acting in the $-\vec y$ direction. 
 
@@ -714,13 +766,19 @@ Deflection of an electron moving in a uniform magnetic field.
 ```
 From geometry and Pythagoras' Theorem, we have:
 ```{math}
+
+\begin{align*}
 R^2 &= (R-h)^2+d^2\\
 R^2 &= R^2-2Rh+h^2+d^2\\
 \therefore R &= \frac{h^2+d^2}{2h}=\frac{(3 {\rm cm})^2+(5 {\rm cm})^2}{2(3 {\rm cm})}=5.67 {\rm cm}
+\end{align*}
 ```
 The strength of the magnetic field is then given by:
 ```{math}
+
+\begin{align*}
 B&=\frac{mv}{qR}=\frac{(9.11e-31 {\rm kg})(1.326e7 {\rm ms^{-1}})}{(1.6e-19 {\rm C})(0.0567 {\rm m})}=0.00133 {\rm T}
+\end{align*}
 ```
 :::
 
@@ -730,12 +788,18 @@ B&=\frac{mv}{qR}=\frac{(9.11e-31 {\rm kg})(1.326e7 {\rm ms^{-1}})}{(1.6e-19 {\rm
 :class: dropdown
 First, we will determine the magnetic dipole moment of the square coil:
 ```{math}
+
+\begin{align*}
 \mu &= NIA\\
 \mu &=NIa^2
+\end{align*}
 ```
 Now that we have the magnetic dipole moment, we can calculate the torque on the square coil that is produced by the magnetic field. Note that, in a galvanometer, the magnetic field is configured such that it is radial and always perpendicular to the magnetic dipole moment of the coil:
 ```{math}
+
+\begin{align*}
 \tau_B &= \mu B sin(90 {\rm \degree})= NIa^2B\\
+\end{align*}
 ```
 The deflection, $\theta$, for a given current will occur when the torque produced by the wire is equal to the torque produced by the spring. The torque produced by the spring is given by:
 ```{math}
@@ -743,10 +807,13 @@ The deflection, $\theta$, for a given current will occur when the torque produce
 ``` 
 where $\theta$ is measured in radians. The above equation is the rotational equivalent of Hooke's Law. Equating the torque from the spring and from the magnetic field, we can determine the current:
 ```{math}
+
+\begin{align*}
 \tau_B&=\tau_S\\
 NIa^2B &= \kappa \theta\\
 I &= \frac{\kappa \theta}{Na^2B} = \frac{(1.5e-8 {\rm Nm(rad)^{-1}}) (0.7 {\rm rad})}{70(0.025 {\rm m})^2(8e-3 {\rm T})}\\
 &= 30 {\rm \mu A}
+\end{align*}
 ```
 :::
 
@@ -767,10 +834,13 @@ d\vec l  = dl (-\sin\theta \hat x + \cos\theta \hat z)
 ```
 The magnetic force on that element of the loop is given by:
 ```{math}
+
+\begin{align*}
 d\vec F &=Id\vec l \times \vec B\\
 &=Idl(-\sin\theta \hat x + \cos\theta \hat z) \times (-B\hat x)\\
 &=-IBdl\cos\theta (\hat z \times \hat x)\\
 &=-IBdl\cos\theta\hat y
+\end{align*}
 ```
 and the force on that element of wire is out of the page (negative $y$ direction), as illustrated. That infinitesimal force will create an infinitesimal torque:
 ```{math}
@@ -778,10 +848,13 @@ d\vec \tau = \vec r \times d\vec F
 ```
 where $\vec r$ is the vector from the axis of rotation (through the centre of the loop, parallel to the $z$ axis) to the point where the force is exerted. The length of the vector, $\vec r$, is simply $r=R\cos\theta$, and the force is perpendicular to the vector $\vec r$. Thus, the torque on the infinitesimal element is given by:
 ```{math}
+
+\begin{align*}
 d\vec \tau &= \vec r \times d\vec F\\
 &= (R\cos\theta \hat x)\times (-IBdl\cos\theta\hat y)\\
 &=-IBR\cos^2\theta dl (\hat x \times \hat y)\\
 &=-IBR\cos^2\theta dl \hat z
+\end{align*}
 ```
 and the torque on that infinitesimal element is in the negative $z$ direction, as anticipated from the direction of the force. Note that had we considered the loop to be oriented such that the magnetic field is not in the plane of the loop, the vector $\vec r$ in the torque would have a component in the $y$ direction. 
 
@@ -792,10 +865,13 @@ dl = Rd\theta
 
 The net torque is then given by:
 ```{math}
+
+\begin{align*}
 \vec \tau &= \int d\vec \tau\\
 &=\int -IBR\cos^2\theta dl \hat z\\
 &= (-IBR^2\hat z)\int_0^{2\pi} \cos^2\theta d\theta\\
 &=(-IBR^2\hat z)\pi
+\end{align*}
 ```
 The magnetic moment of the loop is:
 ```{math}
