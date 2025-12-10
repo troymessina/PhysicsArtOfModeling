@@ -186,14 +186,22 @@ According to [](#tab:modelandexperiment:derivedSIunits), voltage has the dimensi
 ```
 while force, speed and current have dimensions:
 ```{math}
+:nowrap:
+
+\begin{align*}
 {\rm [force]}&={\rm M\cdot L\cdot T^{-2}} \\
 {\rm [speed]}&={\rm L\cdot T^{-1}}\\
 {\rm [current]}&={\rm I}
+\end{align*}
 ```
 The dimension of force multiplied by speed divided by electric charge
 ```{math}
+:nowrap:
+
+\begin{align*}
 \left[\frac{\rm force\cdot speed}{\rm current}\right]&=\frac{\rm [force]\cdot [speed]}{\rm [current]}=\frac{\rm M\cdot L\cdot T^{-2} \cdot L\cdot T^{-1} }{\rm I}\\
 &={\rm M\cdot L^2 \cdot T^{-3}\cdot I^{-1}}
+\end{align*}
 ```
 where, in the last line, we combined the powers of the same dimensions. By inspection, this is the same dimension as voltage.
 :::
@@ -210,8 +218,12 @@ Is this a reasonable prediction?
 :class: dropdown
 First, we can see that the speed will be larger if $h$ is bigger, which makes sense, since we expect the speed to be greater if the object fell a greater distance. Similarly, we expect that the speed would be higher if the mass of the planet, $M$, is larger, as it would exert a larger gravitational force, as given by this model. We also expect that the object will have a greater speed if it has a larger mass, $m$, if the drag from the atmosphere on the planet is significant. Finally, if the radius of the planet $R$ is larger, we would expect the speed to be smaller, as the planet would be less dense and exert less gravitational force at its surface. However, if we verify the dimensions for the prediction of $v$, we find the model does not predict dimensions of speed:
 ```{math}
+:nowrap:
+
+\begin{align*}
 [v] &= \frac{[m][M][h]}{[R]}\\
 &=\frac{MML}{L}=M^2
+\end{align*}
 ``` 
 and our model predicts a speed with dimensions of mass squared. By performing simple dimensional analysis, we can easily confirm that our model is definitely wrong. You should always check the dimensions of any model prediction, to make sure it is correct.
 :::
@@ -254,14 +266,22 @@ where $x$, $y$, and $z$ are our unknown exponents, since we don't know yet how w
 ```
 We know the dimensions for radius and time, and the dimension for $E$ can be found in [](#tab:modelandexperiment:derivedSIunits). Density is mass divided by volume, so its dimension is $M/L^3$. Our equation then becomes:
 ```{math}
+:nowrap:
+
+\begin{align*}
 L&=(ML^2T^{-2})^x(ML^{-3})^y(T)^z\\
 L&=(M^xL^{2x}T^{-2x})(M^yL^{-3y})(T^z)\\
+\end{align*}
 ```
 We have three unknowns, so we need three equations. We can recognize that the left hand side (with dimension of length, $L$) is equivalent to $L^1\cdot M^0\cdot T^0$. We can then separate the above expression into three equations, one for each of $M$, $L$, and $T$: 
 ```{math}
+:nowrap:
+
+\begin{align*}
 M^0&=M^xM^y \rightarrow 0 = x+y\\
 L^1&=L^{2x}L^{-3y} \rightarrow 1=2x-3y\\
 T^0&=T^{-2x}T^{z} \rightarrow 0=z-2x
+\end{align*}
 ```
 Solving the sytem of equations, we find that $x=1/5$, $y=-1/5$, and $z=2/5$. 
 So, the combination of $E$, $\rho$, and $t$ that gives us the dimension of length is:
@@ -343,9 +363,13 @@ Determining the uncertainty and central value on a measurement is greatly simpli
 
 If we have $N$ measurements of some quantity $t$, $\{t_1, t_2, t_3, \dots t_N\}$, then the mean, $\bar t$, and standard deviation, $\sigma_t$, are defined as:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \bar t &= \frac{1}{N}\sum_{i=1}^{i=N} t_i=\frac{t_1 +t_2 +t_3 +\dots+ t_N}{N} \\
 \sigma_t^2 &=\frac{1}{N-1}\sum_{i=1}^{i=N}(t_i-\bar t)^2 = \frac{(t_1-\bar t)^2+(t_2-\bar t)^2+(t_3-\bar t)^2+\dots+(t_N-\bar t)^2}{N-1} \\
 \sigma_t &=\sqrt{\sigma_t^2}
+\end{align*}
 ```
 The mean is just the arithmetic average of the values, and the standard deviation, $\sigma_t$, requires one to first calculate the mean, then the variance ($\sigma^2_t$, the square of the standard deviation). You should also note that for the variance, we divide by $N-1$ instead of $N$. The standard deviation and variance are quantities that come from statistics and are a good measure of how spread out the values of $t$ are about their mean, and are thus a good measure of the uncertainty.
 
@@ -360,8 +384,12 @@ In order to calculate the standard deviation, we first need to calculate the mea
 ```
 We can now calculate the variance using the mean:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \sigma^2_k &= \frac{1}{4}[(0.58-0.44)^2+(0.44-0.44)^2\\
          &+(0.37-0.44)^2+(0.42-0.44)^2+(0.38-0.44)^2]=7.3e-3 {\rm s^2.m}
+\end{align*}
 ```
 and the standard deviation is then given by the square root of the variance:
 ```{math}
@@ -430,14 +458,22 @@ which is close to the value obtained by averaging the five values of $k$ in [](#
 
 2. **The Min-Max method** A pedagogical way to determine $k$ and its uncertainty is to use the "Min-Max method". Since $k=t/\sqrt x$, $k$ will be the biggest when $t$ is the biggest, and the smallest when $t$ is the smallest. We can thus determine "minimum" and "maximum" values of $k$ corresponding to the minimum value of $t$, $t^{min}=0.61 {\rm s}$ and the maximum value of $t$, $t^{max}=0.91 {\rm s}$:
 ```{math}
+:nowrap:
+
+\begin{align*}
 k^{min} &= \frac{t^{min}}{\sqrt x}=\frac{0.61\,s}{\sqrt{(3\,m)}} = 0.35 {\rm s.m^{-\frac{1}{2}}}\\
 k^{max} &= \frac{t^{max}}{\sqrt x}=\frac{0.91\,s}{\sqrt{(3\,m)}} = 0.53{\rm s.m^{-\frac{1}{2}}}\\
+\end{align*}
 ```
 This gives us the range of values of $k$ that correspond to the range of values of $t$. We can choose the middle of the range as the central value of $k$ and half of the range as the uncertainty:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \bar k &= \frac{1}{2}(k^{min}+k^{max})= 0.44 {\rm s.m^{-\frac{1}{2}}}\\
 \sigma_k &= \frac{1}{2}(k^{max}-k^{min})= 0.09 {\rm s.m^{-\frac{1}{2}}}\\
 \therefore k&= 0.44 \pm 0.09 {\rm s.m^{-\frac{1}{2}}}
+\end{align*}
 ```
 which, in this case, gives the same value as that obtained by averaging the individual values of $k$. While the Min-Max method is useful for illustrating the concept of propagating uncertainties, we usually do not use it in practice as it tends to overestimate the uncertainty. 
 
@@ -445,8 +481,12 @@ which, in this case, gives the same value as that obtained by averaging the indi
 
 The derivative method lets us propagate the uncertainty in a general way, so long as the relative uncertainties on all quantities are "small" (less than 10-20\%). If we have a function, $F(x,y)$ that depends on multiple variables with uncertainties (e.g. $x\pm\sigma_x$, $y\pm\sigma_y$), then the central value and uncertainty in $F(x,y)$ are given by:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \bar F &= F(\bar x, \bar y) \nonumber \\
 \sigma_F &= \sqrt{\left(\frac{dF}{dx}\sigma_x \right)^2 + \left(\frac{dF}{dy}\sigma_y \right)^2 }
+\end{align*}
 ```
 That is, the central value of the function $F$ is found by evaluating the function at the central values of $x$ and $y$. The uncertainty in $F$, $\sigma_F$, is found by taking the quadrature sum of the partial derivatives of $F$ evaluated at the central values of $x$ and $y$ multiplied by the uncertainties in the corresponding variables that $F$ depends on. The uncertainty will contain one term in the sum per variable that $F$ depends on.
 
@@ -464,18 +504,30 @@ Here, $k=k(x,t)$ is a function of both $x$ and $t$. The central value is easily 
 ```
 Next, we need to determine and evaluate the partial derivative of $k$ with respect to $t$ and $x$:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \frac{dk}{dt}&=\frac{1}{\sqrt{x}}\frac{d}{dt}t=\frac{1}{\sqrt{x}}=\frac{1}{\sqrt{(3 {\rm m})}}=0.58 {\rm m^{-\frac{1}{2}}}\\
 \frac{dk}{dx}&=t\frac{d}{dx}x^{-\frac{1}{2}}=-\frac{1}{2}tx^{-\frac{3}{2}}= -\frac{1}{2}(0.76 {\rm s})(3.00 {\rm m})^{-\frac{3}{2}}=-0.073 {\rm s.m^{-\frac{3}{2}}}
+\end{align*}
 ```
 And finally, we plug this into the quadrature sum to get the uncertainty in $k$:\\
 ```{math}
+:nowrap:
+
+\begin{align*}
 \sigma_k&=\sqrt{\left(\frac{dk}{dx}\sigma_x \right)^2 + \left(\frac{dk}{dt}\sigma_t \right)^2 }\\
 &= \sqrt{\left((0.073 {\rm s.m^{-\frac{3}{2}}}) (0.01 {\rm m}) \right)^2 + \left((0.58 {\rm m^{-\frac{1}{2}}})(0.15 {\rm s}) \right)^2 } \\
 &=0.09 {\rm s.m^{-\frac{1}{2}}}
+\end{align*}
 ```
 So we find that:
 ```{math}
+:nowrap:
+
+\begin{align*}
 k&= 0.44 \pm 0.09 {\rm s.m^{-\frac{1}{2}}}
+\end{align*}
 ```
 which is consistent with what we found with the other two methods.
 
@@ -584,17 +636,25 @@ Any quantity that you measure will have an uncertainty. Almost any quantity that
 The best way to determine an uncertainty is to repeat the measurement and use the mean and standard deviation of the measurements as the central value and uncertainty. 
 If we have $N$ measurements of some quantity $t$, $\{t_1, t_2, t_3, \dots t_N\}$, then the mean, $\bar t$, and standard deviation, $\sigma_t$, are defined as:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \bar t &= \frac{1}{N}\sum_{i=1}^{i=N} t_i=\frac{t_1 +t_2 +t_3 +\dots+ t_N}{N} \\
 \sigma_t^2 &=\frac{1}{N-1}\sum_{i=1}^{i=N}(t_i-\bar t)^2 = \frac{(t_1-\bar t)^2+(t_2-\bar t)^2+(t_3-\bar t)^2+\dots+(t_N-\bar t)^2}{N-1} \\
 \sigma_t &=\sqrt{\sigma_t^2}
+\end{align*}
 ```
 
 You have to pay special attention to systematic uncertainties, which are difficult to determine. You should always think of ways that your measured values could be wrong, even after repeated measurements. Relative uncertainties tell you whether your measurement is precise.
 
 There are multiple ways to propagate uncertainties. You can estimate the uncertainty using relative uncertainties or use the Min-Max method, which tends to overestimate the uncertainties. The preferred way to propagate uncertainties is with the derivative method, which you can use so long as the relative uncertainties on the measurements are small. If we have a function, $F(x,y)$ that depends on multiple variables with uncertainties (e.g. $x\pm\sigma_x$, $y\pm\sigma_y$), then the central value and uncertainty in $F(x,y)$ are given by:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \bar F &= F(\bar x, \bar y) \nonumber \\
 \sigma_F &= \sqrt{\left(\frac{dF}{dx}\sigma_x \right)^2 + \left(\frac{dF}{dy}\sigma_y \right)^2 }
+\end{align*}
 ```
 This can be easily calculated using a computer. 
 
@@ -603,14 +663,22 @@ If you expect two measured quantities to be linearly related (one is proportiona
 :::{important} Important Equations
 **Central value and uncertainty:**
 ```{math}
+:nowrap:
+
+\begin{align*}
 \bar t &= \frac{1}{N}\sum_{i=1}^{i=N} t_i=\frac{t_1 +t_2 +t_3 +\dots+ t_N}{N} \\
 \sigma_t^2 &=\frac{1}{N-1}\sum_{i=1}^{i=N}(t_i-\bar t)^2 = \frac{(t_1-\bar t)^2+(t_2-\bar t)^2+(t_3-\bar t)^2+\dots+(t_N-\bar t)^2}{N-1} \\
 \sigma_t &=\sqrt{\sigma_t^2}
+\end{align*}
 ```
 **Derivative method:**
 ```{math}
+:nowrap:
+
+\begin{align*}
 \bar F &= F(\bar x, \bar y) \nonumber \\
 \sigma_F &= \sqrt{\left(\frac{dF}{dx}\sigma_x \right)^2 + \left(\frac{dF}{dy}\sigma_y \right)^2 }
+\end{align*}
 ```
 ```{table} How to propagate uncertainties from measured values $x\pm\sigma_x$ and $y\pm\sigma_y$ to a quantity $z(x,y)$ for common operations.
 :label: tab:modelandexperiment:prop_uncertaintiessummary
@@ -676,7 +744,11 @@ Chelsea is preparing meticulously for her upcoming trip to Europe. Being a self-
 :label: soln:modelandexperiment:juggling
 We can use their equation to determine the dimension of the quantity on the left hand side:
 ```{math}
+:nowrap:
+
+\begin{align*}
 [?]&=\frac{[v_2^{2}]-[v_1^{2}]}{[a]}=\frac{\left(\frac{L}{T}\right)^{2}-\left(\frac{L}{T}\right)^2}{\frac{L}{T^{2}}}= L
+\end{align*}
 ```
 Thus, the dimension of the unknown quantity is length. Given the context, they were likely attempting to model the height at which a vertically thrown ball would travel before stopping.
 :::

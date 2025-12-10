@@ -187,9 +187,13 @@ where $\vec v_s$ is the (instantaneous) tangential velocity around the circle (i
 
 Given the angular kinematic quantities, the related linear quantities at a position $\vec r$ from the axis of rotation are given by:
 ```{math}
+:nowrap:
+
+\begin{align*}
 d\vec s &= d\vec\theta \times \vec r\nonumber\\
 \vec v_s &= \vec \omega \times \vec r\nonumber\\
 \vec a_s&= \vec \alpha \times \vec r
+\end{align*}
 ```
 where the linear quantities are always in the direction perpendicular to $\vec r$ (tangent to the circle, for motion around a circle). In other words, one cannot, say, take the acceleration vector, obtain the angular acceleration vector, and then get back the original acceleration vector - one will only get back the component of the acceleration vector that is perpendicular to $\vec r$.  
 
@@ -230,8 +234,12 @@ Putting this altogether, we get:
 
 If more than one force is exerted on the particle, it is easy to show that the **net torque** from the net force on the particle **is equal to the sum of the torques on the particle**:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \vec{r} \times (\vec{F}_1 + \vec{F}_2 + \vec{F}_3 + \dots) &=  (\vec{r} \times \vec{F}_1 + \vec{r} \times \vec{F}_2 + \vec{r} \times \vec{F}_3 + \dots) \\
 \therefore \vec{r} \times \sum \vec{F} &= \sum \vec{\tau} = \vec{\tau}_{net}
+\end{align*}
 ```
 
 We can write "Newton's Second Law for the rotational dynamics of a particle":
@@ -1020,8 +1028,12 @@ The sum of the torques in the $z$ direction must be zero for static equilibrium,
 \end{align*}
 Using the $x$ and $y$ components of Newton's Second Law, we can now use the tension to determine the $x$ and $y$ components of the force exerted by the hinge:
 ```{math}
+:nowrap:
+
+\begin{align*}
 R_x &= T\cos\theta = \frac{3g}{2\tan\theta} \left( m + \frac{M}{2}\right)\\
 R_y &= (M+m)g - T\sin\theta = (M+m)g - \frac{3}{2}g \left( m + \frac{M}{2}\right)=  \left( \frac{1}{4}M-\frac{1}{2}m\right)g
+\end{align*}
 ```
 We find that the $y$ component of the force from the hinge could be in the positive or negative $y$ direction, depending on the sign of $\left( \frac{1}{4}M-\frac{1}{2}m\right)$. In particular, if $M>2m$, then the force exerted by the hinge, $\vec R$, has a component in the positive $y$ direction, as illustrated in [](#fig:rotationaldynamics:sign_fbd). However, if $M<2m$, then the hinge exerts a force that has a negative component in the $y$ direction, unlike that illustrated in the Figure. 
 

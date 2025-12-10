@@ -71,10 +71,13 @@ We can use Newton's Second Law to obtain the position, $x(t)$, velocity, $v(t)$,
 ```
 We can write the acceleration in Newton's Second Law more explicitly as the second derivative of the position, $x(t)$, with respect to time. If we do this, we can see that Newton's Second Law for the mass attached to the spring is a differential equation for the function $x(t)$ (we call it an "equation of motion"):
 ```{math}
-:label: eq:simpleharmonicmotion:shmspring
+:nowrap:
+
+\begin{align*}
 ma &= -kx\nonumber\\
 m\frac{d^2x}{dt^2} &= -kx\nonumber\\
 \therefore \frac{d^2x}{dt^2} &= -\frac{k}{m}x
+\end{align*}
 ```
 We want to find the position function, $x(t)$. Equation {\ref{eq:simpleharmonicmotion:shmspring}} tells us that the second derivative of $x(t)$ with respect to time must equal the negative of the $x(t)$ function multiplied by a constant, $k/m$. Without having taken a course on differential equations, it might not be obvious what the function $x(t)$ could be. Several, equivalent functions can satisfy this equation. One possible choice, which we present here as a guess, is\footnote{Other possible guesses that work are $A \sin(\omega t + \phi)$, and $x(t) = A\cos(\omega t) + B\sin(\omega t)$.}:
 ```{math}
@@ -82,10 +85,14 @@ We want to find the position function, $x(t)$. Equation {\ref{eq:simpleharmonicm
 ```
 where $A$, $\omega$, and $\phi$ are constants that we need to determine. We can take the second order derivative with respect to time of the function above to verify that it indeed "solves" the differential equation:
 ```{math}
+:nowrap:
+
+\begin{align*}
 x(t) &= A \cos(\omega t + \phi)\\
 \frac{d}{dt}x(t) &= -A\omega\sin(\omega t + \phi)\\
 \frac{d^2}{dt^2}x(t) &=\frac{d}{dt}\left( -A\omega\sin(\omega t + \phi)\right)= -A\omega^2\cos(\omega t + \phi)\\
 \therefore \frac{d^2}{dt^2}x(t) &= - \omega^2 x(t)
+\end{align*}
 ```
 The last equation has exactly the same form as [](#eq:simpleharmonicmotion:shmspring), which we obtained from Newton's Second Law, if we define $\omega$ as:
 ```{math}
@@ -111,19 +118,27 @@ In [Chapter %s](#chap:momentumandcm), we found, $x(t)$, from a function, $a(t$),
 
 We still need to identify what the constants $A$ and $\phi$ have to do with the motion of the mass. The constant $A$ is the maximal value that $x(t)$ can take (when the cosine is equal to 1). This corresponds to the amplitude of the motion of the mass, which we already had labelled, $A$. The constant, $\phi$, is called the "phase" and depends on when we choose $t=0$ to be. Suppose that we define time $t=0$ to be when the mass is at $x=A$; in that case:
 ```{math}
+:nowrap:
+
+\begin{align*}
 x(t=0) &= A\\
 A \cos(\omega t + \phi) &= A\\
 A \cos(\omega (0) + \phi) &= A\\
 \cos(\phi) &= 1\\
 \therefore \phi = 0
+\end{align*}
 ```
 If we define $t=0$ to be when the mass is at $x=A$, then the phase, $\phi$, is zero. In general, the value of $\phi$ can take any value between $-\pi$ and $+\pi$[^33] and, physically, corresponds to our choice of when $t=0$ (i.e. the position of the mass when we choose $t=0$).
 
 Since we have determined the position as a function of time for the mass, its velocity and acceleration as a function of time are easily found by taking the corresponding time derivatives:
 ```{math}
+:nowrap:
+
+\begin{align*}
 x(t) &= A \cos(\omega t + \phi)\\
 v(t) &= \frac{d}{dt}x(t) = -A\omega\sin(\omega t + \phi)\\
 a(t)&= \frac{d}{dt}v(t) = -A\omega^2\cos(\omega t + \phi)
+\end{align*}
 ```
 
 :::{tip} Checkpoint
@@ -226,31 +241,51 @@ A vertical spring-mass system.
 ```
 When no mass is attached to the spring, the spring is at rest (we assume that the spring has no mass). We choose the origin of a one-dimensional vertical coordinate system ($y$ axis) to be located at the rest length of the spring (left panel of [](#fig:simpleharmonicmotion:vertspring)). When a mass $m$ is attached to the spring, the spring will extend  and the end of the spring will move to a new equilibrium position, $y_0$, given by the condition that the net force on the mass $m$ is zero. The only forces exerted on the mass are the force from the spring and its weight. The condition for the equilibrium is thus:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \sum F_y = F_g - F(y_0) &=0\\
  mg - ky_0 &= 0 \\
  \therefore mg &= ky_0
+\end{align*}
 ```
 Now, consider the forces on the mass at some position $y$ when the spring is extended downwards relative to the equilibrium position (right panel of [](#fig:simpleharmonicmotion:vertspring)). Newton's Second Law at that position can be written as:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \sum F_y = mg - ky &= ma\\
-\therefore m \frac{d^2y}{dt^2}& = mg - ky 
+\therefore m \frac{d^2y}{dt^2}& = mg - ky
+\end{align*}
 ```
 Note that the net force on the mass will always be in the direction so as to "restore" the position of the mass back to the equilibrium position, $y_0$. If the mass had been moved upwards relative to $y_0$, the net force would be downwards.
 
 We can substitute the equilibrium condition, $mg = ky_0$, into the equation that we obtained from Newton's Second Law:
 ```{math}
- m \frac{d^2y}{dt^2}& = mg - ky \\
+:nowrap:
+
+\begin{align*}
+m \frac{d^2y}{dt^2}& = mg - ky \\
 m \frac{d^2y}{dt^2}&= ky_0 - ky\\
 m \frac{d^2y}{dt^2}&=-k(y-y_0) \\
 \therefore \frac{d^2y}{dt^2} &= -\frac{k}{m}(y-y_0)
+\end{align*}
 ```
 Consider a new variable, $y'=y-y_0$. This is the same as defining a new $y'$ axis that is shifted downwards by $y_0$; in other words, this the same as defining a new $y'$ axis whose origin is at $y_0$ (the equilibrium position) rather than at the position where the spring is at rest. Noting that the second time derivative of $y'(t)$ is the same as that for $y(t)$:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \frac{d^2y}{dt^2} &= \frac{d^2}{dt^2} (y' + y_0) = \frac{d^2y'}{dt^2}\\
+\end{align*}
 ```
 we can write the equation of motion for the mass, but using $y'(t)$ to describe its position:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \frac{d^2y'}{dt^2} &= -\frac{k}{m}y'
+\end{align*}
 ```
 This is the same equation as that for the simple harmonic motion of a horizontal spring-mass system [](#eq:simpleharmonicmotion:shmspring), but with the **origin located at the equilibrium position** instead of at the rest length of the spring. In other words, a vertical spring-mass system will undergo simple harmonic motion in the vertical direction about the equilibrium position. In general, a spring-mass system will undergo simple harmonic motion if a constant force that is co-linear with the spring force is exerted on the mass (in this case, gravity). That motion will be centred about a point of equilibrium where the net force on the mass is zero rather than where the spring is at its rest position.
 
@@ -277,30 +312,46 @@ We introduce a horizontal coordinate system, such that the end of the spring wit
 
 If we assume that both springs are in extension at equilibrium, as shown in the figure, then the condition for equilibrium is given by requiring that the sum of the forces on the mass is zero when the mass is located at $x_0$. The extension of the spring on the left is $x_0 - x_1$, and the extension of the spring on the right is $x_2-x_0$:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \sum F_x = -k_1(x_0-x_1) + k_2 (x_2 - x_0) &= 0\\
 -k_1x_0+k_1x_1+k_2x_2-k_2x_0 &=0\\
 -(k_1+k_2)x_0 +k_1x_1+k_2x_2 &=0\\
 \therefore k_1x_1+k_2x_2 &=(k_1+k_2)x_0
+\end{align*}
 ```
 Note that if the mass is displaced from $x_0$ in any direction, the net force on the mass will be in the direction of the equilibrium position, and will act to "restore" the position of the mass back to $x_0$. 
 
 When the mass is at some position $x$, as shown in the bottom panel (for the $k_1$ spring in compression and the $k_2$ spring in extension), Newton's Second Law for the mass is:
 ```{math}
+:nowrap:
+
+\begin{align*}
 -k_1(x-x_1) + k_2 (x_2 - x) &= m a \\
 -k_1x +k_1x_1 + k_2 x_2 - k_2 x &= m \frac{d^2x}{dt^2}\\
 -(k_1+k_2)x  + k_1x_1 + k_2 x_2&= m \frac{d^2x}{dt^2}
+\end{align*}
 ``` 
 Note that, mathematically, this equation is of the form $-kx + C =ma$, which is the same form of the equation that we had for the vertical spring-mass system (with $C=mg$), so we expect that this will also lead to simple harmonic motion. We can use the equilibrium condition ($k_1x_1+k_2x_2 =(k_1+k_2)x_0$) to re-write this equation:
 ```{math}
+:nowrap:
+
+\begin{align*}
 -(k_1+k_2)x  + k_1x_1 + k_2 x_2&= m \frac{d^2x}{dt^2}\\
 -(k_1+k_2)x  + (k_1+k_2)x_0&= m \frac{d^2x}{dt^2}\\
 \therefore -(k_1+k_2) (x-x_0) &= m \frac{d^2x}{dt^2}
+\end{align*}
 ``` 
 Let us define $k=k_1+k_2$ as the "effective" spring constant from the two springs combined. We can also define a new coordinate, $x' = x-x_0$, which simply corresponds to a new $x$ axis whose origin is located at the equilibrium position (in a way that is exactly analogous to what we did in the vertical spring-mass system). We can thus write Newton's Second Law as:
 ```{math}
+:nowrap:
+
+\begin{align*}
 -(k_1+k_2) (x-x_0) &= m \frac{d^2x}{dt^2}\\
  -kx' &= m \frac{d^2x'}{dt^2}\\
  \therefore \frac{d^2x'}{dt^2} &= -\frac{k}{m}x'
+\end{align*}
 ```
 and we find that the motion of the mass attached to two springs is described by the same equation of motion for simple harmonic motion as that of a mass attached to a single spring. In this case, the mass will oscillate about the equilibrium position, $x_0$, with a an effective spring constant $k=k_1+k_2$. Combining the two springs in this way is thus equivalent to having a single spring, but with spring constant $k=k_1+k_2$. The angular frequency of the oscillations is given by:
 ```{math}
@@ -337,15 +388,23 @@ The pendulum can swing in the vertical plane, and we have shown our choice of co
 
 The force of tension cannot create a torque on the mass about the axis of rotation, as it is anti-parallel to the vector from the point of rotation to the mass. The net torque is thus the torque from the force of gravity:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \vec\tau^{net} &=\vec \tau_g \\
 &=\vec r \times \vec F_g = (L\sin\theta \hat x - L\cos\theta \hat y) \times (-mg\hat y)\\
 &=-mgL\sin\theta \hat z
+\end{align*}
 ```
 where $L$ is the magnitude of the vector, $\vec r$, from the axis of rotation to where the force of gravity is exerted. The net torque is equal to the angular acceleration, $\alpha$, multiplied by the moment of inertia, $I$, of the mass:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \vec\tau^{net} &= I\vec\alpha\\
 -mgL\sin\theta \hat z&= mL^2 \vec\alpha\\
 -g\sin\theta \hat z&= L \vec\alpha
+\end{align*}
 ```
 where $I=ML^2$ is the moment of inertia for a point mass a distance $L$ away from the axis of rotation. For the position illustrated in [](#fig:simpleharmonicmotion:simplep), the angular acceleration of the pendulum is in the negative $z$ direction (into the page) and corresponds to a clockwise motion for the pendulum, as we would expect. The angular acceleration is the second time derivative of the angle, $\theta$:
 ```{math}
@@ -353,8 +412,12 @@ where $I=ML^2$ is the moment of inertia for a point mass a distance $L$ away fro
 ```
 We can thus re-write the equation that we obtained from the rotational dynamics version of Newton's Second Law as:
 ```{math}
+:nowrap:
+
+\begin{align*}
 -g\sin\theta \hat z&= L \vec\alpha\\
 \frac{d^2\theta}{dt^2} &= -\frac{g}{L}\sin\theta
+\end{align*}
 ```
 where we only used the magnitudes in the second equation, since all of the angular quantities are in the $z$ direction. This equation of motion for $\theta(t)$ almost looks like the equation for simple harmonic oscillation for the angle $\theta$ (except that we have $\sin\theta$ instead of $\theta$). However, consider the "the small angle approximation"\footnote{Look up the Maclaurin/Taylor series for the sine function!} for the sine function:
 ```{math}
@@ -362,8 +425,12 @@ where we only used the magnitudes in the second equation, since all of the angul
 ```
 If the oscillations of the pendulum are "small", such that the small angle approximation is valid, then the equation of motion for the pendulum is:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \frac{d^2\theta}{dt^2} &= -\frac{g}{L}\sin\theta \approx -\frac{g}{L}\theta \\
 \therefore \frac{d^2\theta}{dt^2} &=-\frac{g}{L}\theta \quad (\text{for small }\theta)
+\end{align*}
 ```
 and the angle that the pendulum makes with the vertical is described by the equation for simple harmonic oscillation with angular frequency:
 ```{math}
@@ -399,12 +466,20 @@ A physical pendulum which oscillates in a vertical plane about an axis through t
 ```
 The only forces exerted on the pendulum are its weight (exerted at its centre of mass) and a contact force exerted at the axis of rotation. The physical pendulum can be modelled in exactly the same way as the simple pendulum, except that we use the moment of inertia of the object about the axis of rotation. Only the weight results in a torque about the rotation axis, since the contact force is exerted at the rotation axis:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \tau^{net} = \tau_g &= I\alpha\\
 -mgh\sin\theta &= I\alpha = I \frac{d^2\theta}{dt^2}
+\end{align*}
 ```
 where $h$ is the distance from the axis of rotation to the centre of mass. In the small angle approximation, this becomes:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \frac{d^2\theta}{dt^2} &=-\frac{mgh}{I}\theta \quad (\text{for small }\theta)
+\end{align*}
 ```
 and we find that the physical pendulum oscillates with an angular frequency:
 ```{math}
@@ -427,14 +502,22 @@ where $A$ is the amplitude of the motion, $\phi$ is the phase, which depends on 
 ```
 is the angular frequency of the motion. The mass will oscillate about an equilibrium position with a period, $T$, and frequency, $f$, given by:
 ```{math}
+:nowrap:
+
+\begin{align*}
 T&=\frac{2\pi}{\omega}=2\pi\sqrt{\frac{m}{k}}\\
 f&=\frac{1}{T}=\frac{\omega}{2\pi}=\frac{1}{2\pi}\sqrt{\frac{k}{m}}
+\end{align*}
 ```
 The velocity and acceleration of the mass are found by taking the time derivatives of the position $x(t)$:
 ```{math}
+:nowrap:
+
+\begin{align*}
 x(t)&= A \cos(\omega t + \phi)\\
 v(t)&=\frac{d}{dt}x(t) = -A\omega\sin(\omega t + \phi)\\
 a(t)&= \frac{d^2}{dt^2}x(t) =\frac{d}{dt}\left( -A\omega\sin(\omega t + \phi)\right)= -A\omega^2\cos(\omega t + \phi)
+\end{align*}
 ```
 The total mechanical energy of the mass, at some position $x$, is given by:
 ```{math}
@@ -469,15 +552,23 @@ where $h$ is the distance between the centre of mass and the axis of rotation, a
 :::{important} Important Equations
 **Position, velocity, and \\acceleration for SHM:**
 ```{math}
+:nowrap:
+
+\begin{align*}
 x(t)&= A \cos(\omega t + \phi)\\
 v(t)&=\frac{d}{dt}x(t) = -A\omega\sin(\omega t + \phi)\\
 a(t)&= \frac{d^2}{dt^2}x(t) = -A\omega^2\cos(\omega t + \phi)
+\end{align*}
 ```
 **Period and frequency:**
 ```{math}
+:nowrap:
+
+\begin{align*}
 \omega &= \sqrt{\frac{k}{m}}\\
 T&=\frac{2\pi}{\omega}=2\pi\sqrt{\frac{m}{k}}\\
 f&=\frac{1}{T}=\frac{\omega}{2\pi}=\frac{1}{2\pi}\sqrt{\frac{k}{m}}
+\end{align*}
 ```
 **Mechanical energy:**
 ```{math}
@@ -588,23 +679,39 @@ where we noted that, when the platform moves down, both the top and bottom sprin
 
 At equilibrium, the sum of the forces is equal to zero. We can use this to solve for the displacement at $x_0$:
 ```{math}
+:nowrap:
+
+\begin{align*}
 0&=mg-(k_1+k_2)x_0\\
 \therefore x_0&=\frac{mg}{k_1+k_2}=\frac{(30 {\rm kg})(9.8 {\rm m/s^2})}{(2400 {\rm Nm})+(3480 {\rm Nm})}=0.05 {\rm m}
+\end{align*}
 ```
 We will confirm that this is a simple harmonic oscillator by showing that the system's motion can be described by the equation:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \frac{d^2x}{dt^2}&=-\omega^2x
+\end{align*}
 ```
 For some position $x$ below equilibrium, we can rewrite Newton's second law as:
 ```{math}
+:nowrap:
+
+\begin{align*}
 ma&=mg-(k_1+k_2)x\\
 m\frac{d^2x}{dt^2}&=mg-(k_1+k_2)x
+\end{align*}
 ```
 In order to show that this is simple harmonic motion, we need to combine the right hand side of the equation into one term. We found earlier that $mg=(k_1+k_2)x_0$, which we can use here:
 ```{math}
+:nowrap:
+
+\begin{align*}
 m\frac{d^2x}{dt^2}&=(k_1+k_2)x_0-(k_1+k_2)x\\
 \frac{d^2x}{dt^2}&=\frac{(k_1+k_2)}{m}(x_0-x)\\
 \frac{d^2x}{dt^2}&=-\frac{(k_1+k_2)}{m}(x-x_0)\\
+\end{align*}
 ```
 We now define an $x'$ axis such that $x'=x-x_0$. This means that the origin of the $x'$ axis is at the new equilibrium position:
 ```{figure} figures/SimpleHarmonicMotion/playgroundfbd.png
@@ -616,30 +723,50 @@ The forces acting on the platform and our new coordinate system.
 ```
 We can now rewrite our expression using the $x'$ axis:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \frac{d^2x}{dt^2}&=-\frac{(k_1+k_2)}{m}x'
+\end{align*}
 ```
 This equation tells us that this is simple harmonic motion about the new equilibrium position, where $\omega=\sqrt{(k_1+k_2)/m}$. We know that the lowest point that the platform reaches is $35 {\rm cm}$ above the ground, which, on our $x'$ axis, corresponds to $x'=10 {\rm cm}$ ([](#fig:simpleharmonicmotion:playgroundfbd)). Thus, the amplitude of the oscillation is $A=0.1 {\rm m}$. Because this is simple harmonic motion, we know that the position of the platform can be described by the following function:
 ```{math}
+:nowrap:
+
+\begin{align*}
 x'(t)&= A \cos(\omega t + \phi)
+\end{align*}
 ```
 We set $t=0$ to be when the platform is at its lowest point ($x'=A$). The value of $\phi$ is thus:
 ```{math}
+:nowrap:
+
+\begin{align*}
 x'(0)&= A \cos(\omega (0) + \phi)\\
 A&= A \cos(\phi)\\
 1&=\cos(\phi)\\
 \therefore \phi&=0
+\end{align*}
 ```
 The velocity is given by:
 ```{math}
+:nowrap:
+
+\begin{align*}
 v(t)=\frac{d}{dt}x(t) &= -A\omega\sin(\omega t + \phi)\\
 &=-A\omega\sin(\omega t)
+\end{align*}
 ```
 The speed will be maximized when $\sin(\omega t)=1\quad \textrm{or} -1$ . So, the maximum speed will be:
 ```{math}
+:nowrap:
+
+\begin{align*}
 |v|&=A\omega\\
 |v|&=A\sqrt{\frac{(k_1+k_2)}{m}}\\
 |v|&=(0.1 {\rm m})\sqrt{\frac{(2400 {\rm Nm}+3480 {\rm Nm})}{30 {\rm kg}}}\\
 |v|&=1.4 {\rm m/s}
+\end{align*}
 ```
 :::
 
@@ -652,22 +779,38 @@ I\alpha=-\kappa\theta
 ```
 where $I$ is the moment of inertia of the rod. Rewriting $\alpha$ more explicitly as the second time derivative of the angle, we get:
 ```{math}
+:nowrap:
+
+\begin{align*}
 I\frac{d^2\theta}{dt^2}&=-\kappa\theta\\
 \frac{d^2\theta}{dt^2}&=-\frac{\kappa}{I}\theta\\
+\end{align*}
 ```
 By inspection, we can see that the torsional pendulum is a simple harmonic oscillator, where $\omega=\sqrt{\kappa/I}$. The period of the motion is therefore:
 ```{math}
+:nowrap:
+
+\begin{align*}
 T&=\frac{2\pi}{\omega}\\
 T&=2\pi\sqrt{\frac{I}{\kappa}}
+\end{align*}
 ```
 We can rearrange this expression to get $\kappa$:
 ```{math}
+:nowrap:
+
+\begin{align*}
 T^2&=\frac{4\pi^2I}{\kappa}\\
 \kappa&=\frac{4\pi^2I}{T^2}
+\end{align*}
 ```
 The moment of inertia for one of the masses is $m(L/2)^2$, where $L/2$ is the distance from the mass to the axis of rotation. The moment of inertia for the two masses attached to the mass-less rod is:
 ```{math}
+:nowrap:
+
+\begin{align*}
 I&=2m\left(\frac{L}{2}\right)^2=\frac{mL^2}{2}\\
+\end{align*}
 ```
 Putting this into our expression for $\kappa$:
 ```{math}
@@ -679,17 +822,25 @@ F_g=\frac{GMm}{d^2}
 ```
 Assuming that, at equilibrium, the force vector is perpendicular to the rod, the torque from one of the large spheres is just the force multiplied by the distance to the axis of rotation. Since there are two large spheres, each of which creates a torque on the pendulum, the total torque due to gravity is: 
 ```{math}
+:nowrap:
+
+\begin{align*}
 \tau_g&=2F_g\frac{L}{2}\\
 &=F_gL\\
 &=\frac{GMm}{d^2}L
+\end{align*}
 ```
 (Note that $\tau g$ is the torque due to gravity **at equilibrium only**). We can use Newton's second law for the pendulum to find an expression for $G$. At equilibrium, the net torque is equal to zero, and the angle of deflection is $\beta$:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \tau_{net}&=\tau_{wire}-\tau_g\\
 0&=\tau_{wire}-\tau_g\\
 \tau_g&=\tau_{wire}\\
 \frac{GMm}{d^2}L&=\kappa\beta\\
 \therefore G&=\frac{\kappa\beta d^2}{LMm}
+\end{align*}
 ```
 Using our expression for $\kappa$ found in part a), this becomes:
 ```{math}

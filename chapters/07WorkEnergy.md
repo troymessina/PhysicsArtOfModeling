@@ -97,12 +97,16 @@ A constant force in the positive $x$ direction, $\vec F$, acts on a box, as in [
 ## Work in one dimension - varying force
 Suppose that instead of a constant force, $\vec F$, we have a force that changes with position, $\vec F(x)$, and can take on three different values between $x=x_0$ and $x=x_3$:
 ```{math}
-  \vec F (x)=
+:nowrap:
+
+\begin{align*}
+\vec F (x)=
   \begin{cases}
     F_1\hat x & x<\Delta x \\
     F_2\hat x & \Delta x \leq x< 2\Delta x \\
     F_3\hat x & 2\Delta x \leq x
   \end{cases}
+\end{align*}
 ```
 as illustrated in [](#fig:workenergy:work1d), which shows the force on an object as it moves from position $x=x_0$ to position $x=x_3$, along three (equal) displacement vectors, $\vec d_1=\vec d_2=\vec d_3=\Delta x \hat x$. 
 ```{figure} figures/WorkEnergy/work1dvarying.png
@@ -114,9 +118,13 @@ A varying force, $\vec F(x)$, exerted on an object as it moves from position $x=
 ```
 The total work done by the force over the three separate displacements is the sum of the work done over each displacement:
 ```{math}
+:nowrap:
+
+\begin{align*}
 W^{tot}&=W_1+W_2+W_3\\
 &=\vec F_1\cdot \vec d_1+\vec F_2\cdot \vec d_2+\vec F_3\cdot \vec d_3\\
 &= F_1\Delta x +F_2\Delta x + F_3\Delta x
+\end{align*}
 ``` 
 
 If instead of 3 segments we had $N$ segments and the $x$ component of the force had the $N$ corresponding values $F_i$ in the $N$ segments, the total work done by the force would be:
@@ -147,12 +155,16 @@ The force exerted by the spring on the block changes continuously with position,
 ```
 and points in the positive $x$ direction when the end of the spring has a negative $x$ position (with our coordinate choice illustrated in [](#fig:workenergy:spring), where the origin is located at the rest length of the spring). To calculate the work done by the force, we sum the work done by the force over many infinitesimally small displacements $d\vec x$ (using an integral):
 ```{math}
+:nowrap:
+
+\begin{align*}
 W &= \int_{-D}^0 \vec F(x) \cdot d\vec x\\
 &=\int_{-D}^0 (-kx \hat x) \cdot (dx \hat x)\\
 &=\int_{-D}^0 -kxdx (\hat x \cdot \hat x)\\
 &=-\int_{-D}^0 kx dx\\
 &=-\left[\frac{1}{2}kx^2  \right]_{-D}^0\\
 &=\frac{1}{2}kD^2
+\end{align*}
 ```
 In order to determine the work that was done by the block on the spring, we need to determine the force, $\vec F'(x)$, exerted by the block on the spring. By Newton's Third Law, this is equal in magnitude but opposite in direction to the force exerted by the spring on the block:
 ```{math}
@@ -160,9 +172,13 @@ In order to determine the work that was done by the block on the spring, we need
 ```
 The work done by the block on the spring over the same displacement is:
 ```{math}
+:nowrap:
+
+\begin{align*}
 W' &= \int_{-D}^0 \vec F'(x) \cdot d\vec x\\
 &=\int_{-D}^0 (kx \hat x) \cdot (dx \hat x)\\
 &=\int_{-D}^0 kx dx=-\frac{1}{2}kD^2\\
+\end{align*}
 ```
 which is negative. This makes sense because the force exerted by the block on the spring is in the direction opposite to the direction of displacement, so the work should be negative. 
 :::
@@ -178,9 +194,13 @@ A force, $\vec F$, exerted on an object as it moves from position $x=x_0$ to pos
 ```
 The work done by the force is given by:
 ```{math}
+:nowrap:
+
+\begin{align*}
 W = \vec F \cdot \vec d &= Fd\cos\theta\\
 &= F_{\parallel}d\\
 &= Fd_{\parallel}\\
+\end{align*}
 ```
 where we highlighted the fact that the scalar product "picks out" components of vectors that are parallel to each other. $F_{\parallel} = F\cos\theta$ is the component of $\vec F$ that is parallel to $\vec d$, and $d_{\parallel}=d\cos\theta$ is the component of $\vec d$ that is parallel to $\vec F$. These are also shown in [](#fig:workenergy:workangle).
 
@@ -223,8 +243,12 @@ f_k = \mu_k N = \mu_k mg
 ```
 The normal force will have the same magnitude as the weight because the crate is not moving (accelerating) in the direction perpendicular to the $xy$ plane.  The displacement vector from $A$ to $B$ can be written as:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \vec d &= (x_B-x_A)\hat x + (y_B-y_A) \hat y\\
 \therefore ||\vec d|| &=d= \sqrt{(x_B-x_A)^2 + (y_B-y_A)^2}
+\end{align*}
 ```  
 The force of kinetic friction will be in the opposite direction of the displacement vector, so the angle between the two vectors is $180{\rm \degree}$ ($\cos\theta=-1$). The work done by the force of kinetic friction is thus:
 ```{math}
@@ -234,10 +258,14 @@ and is negative, as expected.
 
 For path 2, we break up the motion into two segments, with displacements vectors $\vec d_1$ (along $y$) and $\vec d_2$ (along $x$). We can write the two displacement vectors as:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \vec d_1 &= 0\hat x + (y_B-y_A) \hat y\\
 \therefore ||\vec d_1||&=d_1=(y_B-y_A)\\
 \vec d_2 &= (x_B-x_A)\hat x + 0 \hat y\\
 \therefore ||\vec d_2||&=d_2=(x_B-x_A)\\
+\end{align*}
 ```
 Along each segment, the force of kinetic friction is anti-parallel to the displacement (note that the force of friction changes direction over the two segments), but the magnitude is $f_k=\mu_kmg$. The work done along the first segment is thus:
 ```{math}
@@ -276,24 +304,40 @@ and points in the negative $y$ direction with a magnitude of $mg$. To calculate 
 ```
 and we can then determine the work:
 ```{math}
+:nowrap:
+
+\begin{align*}
 W &= \vec F_g \cdot \vec d = (-mg \hat y) \cdot (L\hat x + H\hat y)\\
 &=F_xd_x+F_yd_y= (0)(L) + (-mg)(H)\\
 &= -mgH
+\end{align*}
 ```
 Along path 1, the work done by the weight is negative, and does not depend on the horizontal distance $L$. Let us now calculate the work done along the second path, which we break up into two segments with displacement vectors $\vec d_1$ (vertical) and $\vec d_2$ (horizontal). The displacement vectors are:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \vec d_1 &= H\hat y\\
 \vec d_2 &= L\hat x
+\end{align*}
 ```
 The work done along the vertical segment is:
 ```{math}
+:nowrap:
+
+\begin{align*}
 W_1 &= \vec F_g \cdot \vec d_1 = (-mg \hat y) \cdot (H\hat y)\\
 &=-mgH
+\end{align*}
 ```
 The work done along the horizontal segment is:
 ```{math}
+:nowrap:
+
+\begin{align*}
 W_2 &= \vec F_g \cdot \vec d_2 = (-mg \hat y) \cdot (L\hat x)\\
 &=0
+\end{align*}
 ```
 which is zero, because the force of gravity is always vertical and thus perpendicular to the displacement vector of the horizontal segment. The total work done by the weight along the second path is:
 ```{math}
@@ -369,37 +413,57 @@ d\vec l = dx \hat x + dy \hat y
 ```
 The total work done by the force is then:
 ```{math}
+:nowrap:
+
+\begin{align*}
 W &= \int_A^B \vec F(\vec r) \cdot d\vec l\\
 &=\int_A^B (F_x\hat x + F_y \hat y) \cdot (dx \hat x + dy \hat y)\\
 &=\int_A^B (F_x dx + F_ydy)\\
 \therefore W&= \int_A^B F_x dx + \int_A^B F_ydy
+\end{align*}
 ```
 where in the last line, we simply used the property that the integral of a sum is the sum of the corresponding integrals. At this point, we have two integrals over integration variables ($x$ and $y$) that are meaningful. However, we have not yet used the fact that our path is a parabola, and in general, we expect that the shape of the path is important. By saying that we are integrating (or calculating the work) over a specific path, we are really saying that $x$ and $y$ are not independent; that is, if we know the value of $x$ at some point on the path, we know the corresponding value of $y$ ($y = a+bx^2$). 
 
 Since $x$ and $y$ are not independent, we can use a "substitution of variables" in order to express $y$ in terms of $x$, and $dy$ in terms of $dx$:
 ```{math}
+:nowrap:
+
+\begin{align*}
 y(x) &= a + bx^2\\
 \frac{dy}{dx} &= 2bx\\
 \therefore dy &= 2bxdx
+\end{align*}
 ``` 
 This allows us to convert the integral over $y$ to an integral over $x$, which also allows us to be explicit for the limits of the integral (in our example, the integral goes from $x=0$ to $x=x_1$):
 ```{math}
+:nowrap:
+
+\begin{align*}
 W&= \int_A^B F_x dx + \int_A^B F_ydy\\
 &=\int_0^{x_1} F_x dx + \int_0^{x_1} F_y(2bxdx)\\
 &=\int_0^{x_1} (F_x + 2bxF_y)dx
+\end{align*}
 ```
 where we would need to know how $F_x$ and $F_y$ depends on $x$ and $y$ in order to actually evaluate the integral.
 
 For example, if the force were constant ($F_x$ and $F_y$ constant), then the work done along the parabolic path would be:
 ```{math}
+:nowrap:
+
+\begin{align*}
 W &= \int_0^{x_1} (F_x + 2bxF_y)dx\\
 &=\left[F_x x + bF_yx^2  \right]_0^{x_1}\\
 &=F_x x_1 + bF_yx_1^2
+\end{align*}
 ```
 As we mentioned earlier, **if the force is constant in magnitude and direction**, then the work done is independent of path. We can easily check this, using the displacement vector $\vec d = x_1\hat x + bx_1^2 \hat y$:
 ```{math}
+:nowrap:
+
+\begin{align*}
 W &= \vec F \cdot \vec d = (F_x\hat x+ F_y\hat y) \cdot (x_1\hat x + bx_1^2 \hat y)\\
 &=F_x x_1 + bF_yx_1^2
+\end{align*}
 ```
 as we found above. 
 :::
@@ -409,11 +473,15 @@ So far, we have considered the work done on an object by a single force. If more
  
 Suppose that three forces, $\vec F_1$, $\vec F_2$, and $\vec F_3$ are exerted on an object as it moves such that its displacement vector is $\vec d$. The net work done on the object is easily shown to be equivalent to the work done by the net force::
 ```{math}
+:nowrap:
+
+\begin{align*}
 W^{net} &= W_1 + W_2 + W_3 \\
 &= \vec F_1 \cdot \vec d + \vec F_2 \cdot \vec d  + \vec F_3 \cdot \vec d \\
 &=(F_{1x}d_x+F_{1y}d_y+F_{1z}d_z)+ (F_{2x}d_x+F_{2y}d_y+F_{2z}d_z) + (F_{3x}d_x+F_{3y}d_y+F_{3z}d_z)\\
 &=(F_{1x} + F_{2x} + F_{3x})d_x+(F_{1y} + F_{2y} + F_{3y})d_y+(F_{1z} + F_{2z} + F_{3z})d_z\\
 &=\vec F^{net} \cdot \vec d
+\end{align*}
 ```
 where $\vec F^{net} = \vec F_1 + \vec F_2 + \vec F_3$ is the net force. The result is easily generalized to any number of forces, including if those forces change as a function of position:
 ```{math}
@@ -452,33 +520,56 @@ With our choice of coordinate system, the displacement vector is given by:
 ```
 Before calculating the work done by each force, we need to determine the magnitude of the normal force (and thus of the force of kinetic friction). Since the crate is moving at a constant velocity, its **acceleration is zero**, so the sum of the forces must be zero. Writing out the $y$ component of Newton's Second Law allows us to find the magnitude of the normal force:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \sum F_y &= N\cos\theta -F_g - f_k\sin\theta = 0\\
 \therefore mg &= N\cos\theta-\mu_kN\sin\theta = N(\cos\theta-\mu_k\sin\theta)\\
 \therefore N &= \frac{mg}{\cos\theta-\mu_k\sin\theta}
+\end{align*}
 ```
 Writing out the $x$ component of Newton's Second Law allows us to find the magnitude of the unknown force $F$:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \sum F_x &= F - N\sin\theta - f_k\cos\theta = 0\\
 \therefore F &= N\sin\theta+\mu_kN\cos\theta = N(\sin\theta+\mu_k\cos\theta)\\
 &=mg\frac{\sin\theta+\mu_k\cos\theta}{\cos\theta-\mu_k\sin\theta}
+\end{align*}
 ```
 We now proceed to calculate the work done by each force. The work done by the normal force is identically zero, since it is perpendicular to the displacement vector. The work done by the applied force, $\vec F = F\hat x$, is:
 ```{math}
+:nowrap:
+
+\begin{align*}
 W_F &= \vec F \cdot \vec d = (F\hat x)\cdot(d (\cos\theta \hat x + \sin\theta \hat y))\\
 &=Fd\cos\theta=mg\frac{\sin\theta+\mu_k\cos\theta}{\cos\theta-\mu_k\sin\theta}d\cos\theta
+\end{align*}
 ```
 The work done by the force of gravity, $\vec F_g = -mg \hat y$, is:
 ```{math}
+:nowrap:
+
+\begin{align*}
 W_g &= \vec F_g \cdot \vec d = (-mg \hat y)\cdot(d (\cos\theta \hat x + \sin\theta \hat y))\\
 &=-mgd\sin\theta
+\end{align*}
 ```
 The work done by the force of friction, $\vec f_k$, noting that $\vec f_k$ and $\vec d$ are antiparallel:
 ```{math}
+:nowrap:
+
+\begin{align*}
 W_f &= \vec f_k \cdot \vec d = -f_kd = -\mu_kNd\\
 &=-\mu_k\frac{mg}{\cos\theta-\mu_k\sin\theta}d
+\end{align*}
 ```
 The net work done on the crate is thus:
 ```{math}
+:nowrap:
+
+\begin{align*}
 W^{net}&=W_F + W_g + W_f\\
 &=mg\frac{\sin\theta+\mu_k\cos\theta}{\cos\theta-\mu_k\sin\theta}d\cos\theta-mgd\sin\theta -\mu_k\frac{mg}{\cos\theta-\mu_k\sin\theta}d\\
 &=mgd \left(  \frac{\sin\theta+\mu_k\cos\theta}{\cos\theta-\mu_k\sin\theta}\cos\theta - \sin\theta - \mu_k\frac{1}{\cos\theta-\mu_k\sin\theta} \right)\\
@@ -486,6 +577,7 @@ W^{net}&=W_F + W_g + W_f\\
 &=mgd \left(  \frac{\sin\theta\cos\theta+\mu_k\cos^2\theta - \sin\theta\cos\theta+\mu_k\sin^2\theta - \mu_k}{\cos\theta-\mu_k\sin\theta} \right)\\
 &=mgd \left(  \frac{\mu_k(\cos^2\theta+\sin^2\theta) - \mu_k}{\cos\theta-\mu_k\sin\theta} \right)\\
 &=0
+\end{align*}
 ```
 where we used the fact that $\cos^2\theta+\sin^2\theta=1$. Thus we find that the net work done on the crate is zero!
 
@@ -536,15 +628,23 @@ That is, we will only have to evaluate $K$ at the end points of the path in orde
 
 In order to determine the form for the function $K$, we start by noting that, by using Newton's Second Law, we can write the integral for work in terms of the acceleration of the object:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \sum \vec F &= \vec F^{net} = m\vec a\\
 \therefore \int_A^B F^{net}(\vec r) \cdot d\vec l &= \int_A^B m\vec a\cdot d\vec l =m\int_A^B \vec a\cdot d\vec l
+\end{align*}
 ```
 where we assumed that the mass of the object does not change along the path and can thus be factored out of the integral. Consider the scalar product of the acceleration, $\vec a$, and the path element, $d\vec l=dx\hat x  +dy\hat y + dz\hat z$, written in terms of the velocity vector:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \vec a & = \frac{d\vec v}{dt}\\
 \therefore \vec a\cdot d\vec l &= \frac{d\vec v}{dt}\cdot d\vec l\\
 &=\left(\frac{dv_x}{dt}\hat x+ \frac{dv_y}{dt}\hat y + \frac{dv_z}{dt}\hat z\right) \cdot (dx\hat x  +dy\hat y + dz\hat z)\\
 &=\frac{dv_x}{dt}dx+\frac{dv_y}{dt}dy+\frac{dv_z}{dt}dz
+\end{align*}
 ```
 Any of the terms in the sum can be re-arranged so that the time derivative acts on the element of path ($dx$, $dy$, or $dz$) instead of the velocity, for example:
 ```{math}
@@ -552,26 +652,42 @@ Any of the terms in the sum can be re-arranged so that the time derivative acts 
 ```
 where we recognize that $\frac{dx}{dt} = v_x$. We can thus write the scalar product between the acceleration vector and the path element as:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \vec a\cdot d\vec l&= \frac{dv_x}{dt}dx+\frac{dv_y}{dt}dy+\frac{dv_z}{dt}dz\\
 &=\frac{dx}{dt}dv_x + \frac{dy}{dt}dv_y+\frac{dz}{dt}dv_z\\
 &=v_xdv_x + v_ydv_y + v_zdv_z
+\end{align*}
 ```
 The integral for the net work done can be written as:
 ```{math}
+:nowrap:
+
+\begin{align*}
 W^{net} &= \int_A^B F^{net}(\vec r) \cdot d\vec l =m \int_A^B (v_xdv_x + v_ydv_y + v_zdv_z)\\
 &=m\int_A^B v_xdv_x +m\int_A^B  v_ydv_y + m\int_A^B v_zdv_z
+\end{align*}
 ```
 which corresponds to the sum of three integrals over the three independent components of the velocity vector. The components of the velocity vector are functions that change over the path and have fixed values at either end of the path. Let the velocity vector of the object at point $A$ be $\vec v_A=(v_{Ax}, v_{Ay}, v_{Az})$ and the velocity vector at point $B$ be $\vec v_B=(v_{Bx}, v_{By}, v_{Bz})$. The integral over, say, the $x$ component of velocity is then:
 ```{math}
+:nowrap:
+
+\begin{align*}
 m\int_A^B v_xdv_x &= m\int_{v_{Ax}}^{v_{Bx}} v_xdv_x= m\left[\frac{1}{2}v_x^2  \right]_{v_{Ax}}^{v_{Bx}}\\
 &=\frac{1}{2}m(v_{Bx}^2-v_{Ax}^2)
+\end{align*}
 ``` 
 We can thus write the net work integral as:
 ```{math}
+:nowrap:
+
+\begin{align*}
 W^{net} &=m\int_A^B v_xdv_x +m\int_A^B  v_ydv_y + m\int_A^B v_zdv_z\\
 &=\frac{1}{2}m(v_{Bx}^2-v_{Ax}^2) + \frac{1}{2}m(v_{By}^2-v_{Ay}^2) +\frac{1}{2}m(v_{Bz}^2-v_{Az}^2)\\
 &=\frac{1}{2}m(v_{Bx}^2+v_{By}^2+v_{Bz}^2)-\frac{1}{2}m(v_{Ax}^2+v_{Ay}^2+v_{Az}^2)\\
 &=\frac{1}{2}mv_B^2 - \frac{1}{2}mv_A^2
+\end{align*}
 ```
 where we recognized that the magnitude (squared) of the velocity is given by $v_A^2 = v_{Ax}^2+v_{Ay}^2+v_{Az}^2$. We have thus arrived at our desired result; namely, we have found a function of speed, $K(v)$, that when evaluated at the endpoints of the path allows us to calculate the net work done on the object over that path:
 ```{math}
@@ -626,9 +742,13 @@ W^{net} = W_F = \frac{1}{2}kD^2
 ```
 By the Work-Energy Theorem, this is equal to the change in kinetic energy. Noting that the object started at rest ($v_i=0$), the final speed $v_f$ is found to be:
 ```{math}
+:nowrap:
+
+\begin{align*}
 W^{net} &=  \frac{1}{2}mv_f^2 - \frac{1}{2}mv_i^2 =  \frac{1}{2}mv_f^2 - 0\\
 \frac{1}{2}kD^2 &=\frac{1}{2}mv_f^2\\
 \therefore v_f &=\sqrt{\frac{kD^2}{m}}
+\end{align*}
 ```
 :::
 
@@ -664,9 +784,13 @@ W_f = \vec f_k \cdot \vec d = -f_kD = -\mu_kmgD
 ```
 Applying the work energy theorem, and noting that the block started at rest ($v_i=0$), the final speed $v_f$ is found to be:
 ```{math}
+:nowrap:
+
+\begin{align*}
 W^{net} =W_F + W_f&= \frac{1}{2}mv_f^2 - \frac{1}{2}mv_i^2 \\
 \frac{1}{2}kD^2-\mu_kmgD  &=\frac{1}{2}mv_f^2\\
 \therefore v_f &=\sqrt{\frac{kD^2}{m}-2\mu_kgD}
+\end{align*}
 ```
 **Discussion:** We can think of this in terms of the concept of energy. The spring does positive work on the block, and so it increases its kinetic energy. Friction does negative work on the block, decreasing its kinetic energy. Only the spring is "introducing" energy into the block, as friction is removing that energy by doing negative work. Another way to think about it is that the spring is inputting energy; some of that energy goes into increasing the kinetic energy of the block, and some of it is lost by friction.
 
@@ -711,8 +835,12 @@ W=\Delta K
 ```
 you can calculate that the skater's speed at the bottom should be
 ```{math}
+:nowrap:
+
+\begin{align*}
 mgh &= \frac{1}{2}mv^2_f−\frac{1}{2}mv^2_i\\
 mgh &= \frac{1}{2}mv^2_f − 0
+\end{align*}
 ```
 Therefore,
 ```{math}
@@ -720,9 +848,13 @@ gh = \frac{1}{2}v^2_f
 ```
 and
 ```{math}
+:nowrap:
+
+\begin{align*}
 v_f &= \sqrt{2gh}\\
 v_f &= \sqrt{2\times 9.8\times 6}\\
 v_f &= 10.8 {\rm m/s}
+\end{align*}
 ```
 :::
 Next, increase and decrease the skater's mass. Notice their motion does not change. This is seemingly a contradiction. Can you explain why this scenario has mass independent motion?
@@ -767,9 +899,13 @@ A constant net force of 10 Newtons applied to an object moving a of 0.1 meter.
 Now, we can simply add the last column on the right.
 
 ```{math}
+:nowrap:
+
+\begin{align*}
 W^{tot} &= \sum_{i=0}^N\vec F_i \cdot \Delta \vec x_i \\
 &= 0.1 + 0.1 + 0.1 + 0.1 + 0.1 +0.1 + 0.1 + 0.1 + 0.1 + 0.1\\
 &= 1~{\rm J}
+\end{align*}
 ```
 Notice that this is the same as
 ```{math}
@@ -806,9 +942,13 @@ A spring with spring constant  $k=10 {\rm N/m}$ is stretched from its equilibriu
 Now, we can simply add the last column on the right.
 
 ```{math}
+:nowrap:
+
+\begin{align*}
 W^{tot} &= \sum_{i=0}^N\vec F_i \cdot \Delta \vec x_i \\
 &= 0.000 + 0.001 + 0.002 + 0.003 + 0.004 + 0.005 + 0.006 + 0.007 + 0.008 + 0.009\\
 &= 0.045~{\rm J}
+\end{align*}
 ```
 :::
 Let's compare to the work computed from integration in the previous section.
@@ -820,11 +960,15 @@ W^{tot} = \frac{1}{2}kx^2 = \frac{1}{2}10\cdot\left(0.1\right)^2 = 0.05~\text{J}
 So, our approximation is close. You might notice that the area of this graph is a triangle, and we could calculate
 
 ```{math}
+:nowrap:
+
+\begin{align*}
 W &= A_{triangle}\\
 &= \frac{1}{2}\text{base} \cdot~\text{height} \\
 &= \frac{1}{2}Fx \\
 &= \frac{1}{2}kx \cdot x \\
 &= \frac{1}{2}kx^2
+\end{align*}
 ```
 
 We could improve our approximation by dividing the $F$ vs. $x$ graph into smaller intervals as shown in [](#). The calculation using a table would be tedious. Let's see how a computer can help us solve this problem.
@@ -911,9 +1055,13 @@ W = P t
 ```
 Then, using the Work-Energy Theorem, we can find the speed of the car at some time $t$:
 ```{math}
+:nowrap:
+
+\begin{align*}
 W &= \frac{1}{2}mv_f^2 - \frac{1}{2}mv_i^2\\
 Pt &= \frac{1}{2}mv_f^2 \\
 \therefore v_f &= \sqrt{\frac{2Pt}{m}}
+\end{align*}
 ```
 **Discussion:** The model for the final speed of the car makes sense because:
 * The dimension of the expression for $v_f$ is speed (you should check this!).
@@ -948,8 +1096,12 @@ wouldn't make any sense. Since $v$ is a constant velocity, the power would alway
 # Summary
 The work, $W$, done on an object by a force, $\vec F$, while the object has moved through a displacement, $\vec d$, is defined as the scalar product:
 ```{math}
+:nowrap:
+
+\begin{align*}
 W = \vec F \cdot \vec d &= Fd\cos\theta\\
 &= F_xd_x+F_yd_y+F_zd_z
+\end{align*}
 ```
 If the force changes with position and/or the object moves along an arbitrary path in space, the work done by that force over the path is given by:
 ```{math}
@@ -979,17 +1131,25 @@ P = \frac{dW}{dt}
 ```
 If a constant force $\vec F$ is exerted on an object that has a constant velocity $\vec v$, then the power that corresponds to the work being done by that force is:
 ```{math}
+:nowrap:
+
+\begin{align*}
 P &= \frac{d}{dt} W = \frac{d}{dt}(\vec F \cdot \vec d)\\
 &= \vec F \cdot \frac{d}{dt}\vec d = \vec F \cdot \vec v
+\end{align*}
 ```
 
 :::{important} Important Equations
 **Work:**
 ```{math}
+:nowrap:
+
+\begin{align*}
 W &= \vec F \cdot \vec d = Fd\cos\theta\\
 W &= F_xd_x+F_yd_y+F_zd_z\\
 W &=\int_A^B \vec F(\vec r) \cdot  d\vec l\\
 W^{net} &= \int_A^B \vec F^{net}(\vec r) \cdot d\vec l
+\end{align*}
 ```
 **Kinetic Energy:**
 ```{math}
@@ -1002,8 +1162,12 @@ W^{net} = \Delta K = \frac{1}{2} mv_B^2 - \frac{1}{2} mv_A^2
 ```
 **Power:**
 ```{math}
+:nowrap:
+
+\begin{align*}
 P &= \frac{dW}{dt}\\
 P &= \vec F \cdot \vec v
+\end{align*}
 ```
 :::
 
@@ -1091,7 +1255,11 @@ d\vec l = dx \hat x + dy \hat y
 ```
 The scalar product with the force of gravity is thus:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \vec F_g \cdot d\vec l &= (-mg\hat y) \cdot (dx \hat x + dy \hat y)= -mgdy
+\end{align*}
 ```
 The work done by gravity can thus be converted into an integral over $y$ (for which we know the start and end values), and is given by:
 ```{math}
@@ -1101,16 +1269,24 @@ The work done by gravity is positive, which makes sense, since the force of grav
 
 We can now find the speed of the skier when they leave the jump using the Work-Energy theorem:
 ```{math}
+:nowrap:
+
+\begin{align*}
 W^{net}&=\frac{1}{2}mv_f^2-\frac{1}{2}mv_t^2\\
 mgh &= \frac{1}{2}mv_f^2-\frac{1}{2}mv_t^2\\
 \therefore v_t&=\sqrt{v_f^2-2gh}=\sqrt{(12 {\rm m/s})^2 - 2(9.8 {\rm m/s^2})(5 {\rm m})}=6.8 {\rm m/s}
+\end{align*}
 ```
 
 * b. We can again use the Work-Energy Theorem to determine the work done by friction as the skier slides up the ramp. We know that the speed of the skier at the bottom of the ramp is $v_i$, and we just found that the speed of the skier at the top of the ramp is $v_t=\sqrt{v_f^2-2gh}$. The net work done on the skier going up the ramp is equal to:
 ```{math}
+:nowrap:
+
+\begin{align*}
 W^{net}&=\frac{1}{2}mv_t^2-\frac{1}{2}mv_i^2\\
 &=\frac{1}{2}m(v_t^2-v_i^2) = \frac{1}{2}m(v_f^2-2gh -v_i^2)\\
 &=\frac{1}{2}m(v_f^2-v_i^2)-mgh
+\end{align*}
 ```
 The net work done is also the sum of the work done by each of the forces acting on the skier as they slide up the ramp. The forces on the skier are the force of gravity, the force of friction, and the normal force. The normal force does no work, since it is always perpendicular to the displacement. The net work is thus the sum of the work done by the force gravity, $W_g$, and the work done by the force of friction, $W_f$, over the displacement corresponding to the length of the ramp: 
 ```{math}
@@ -1122,9 +1298,13 @@ W_g = \vec F_g \cdot \vec d = (-mg\hat y) \cdot  (d_x\hat x + h \hat y) = -mgh
 ```
 where $\vec d$ is the displacement vector up the ramp (unknown horizontal distance, $d_x$, and vertical distance, $h$). We can now determine the work done by the force of friction:
 ```{math}
+:nowrap:
+
+\begin{align*}
 W^{net}&=W_g+W_f\\
 \frac{1}{2}m(v_f^2-v_i^2)-mgh &=  -mgh + W_f\\
 \therefore W_f &= \frac{1}{2}m(v_f^2-v_i^2) = \frac{1}{2}(80 {\rm kg})((12 {\rm m/s})^2-(15 {\rm m/s})^2)=-3240 {\rm J}
+\end{align*}
 ```
 And we find that the force of friction did negative work (it reduced the kinetic energy of the skier).
 
@@ -1149,18 +1329,30 @@ A free-body diagram of the forces exerted on the child.
 ```
 The child is moving at a constant speed, so the net force is equal to zero. The sum of the $x$ and $y$ components of the forces are equal to zero (Newton's Second Law):
 ```{math}
+:nowrap:
+
+\begin{align*}
 \sum F_x &= F-F_T\sin\theta =0\\
 \sum F_y &= F_T\cos\theta -mg = 0
+\end{align*}
 ``` 
 Rearranging these equations gives:
 ```{math}
+:nowrap:
+
+\begin{align*}
 F&=F_T\sin\theta\\
 mg&=F_T\cos\theta
+\end{align*}
 ```
 We want an expression for $F$ that does not depend on $F_T$ (since $F_T$ is unknown), so we can divide one equation by the other:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \frac{F}{mg} &= \frac{F_T\sin\theta}{F_T\cos\theta}=\tan\theta\\
 \therefore F(\theta)&=mg\tan\theta
+\end{align*}
 ```
 where we indicated that the force $\vec F(\theta)$ depends on the angle $\theta$. The work done by the force, $\vec F$, is given by:
 ```{math}
@@ -1184,13 +1376,21 @@ where $L$ is the radius of the circle. The vector $d\vec l$ makes an angle $\the
 ```
 We can now write the integral for the work using limit that are based on the angle $\theta$, from $\theta=0$ to $\theta=\theta_1$:
 ```{math}
+:nowrap:
+
+\begin{align*}
 W&=\int_0^{\theta_1}mgL\sin\theta d\theta\\
 &=mgL[-\cos\theta]_0^{\theta_1}=mgL(1-\cos\theta_1)
+\end{align*}
 ```
 
 * b. We know that the work done by $\vec F$ is $W=mgL(1-\cos\theta_1)$. So, we want to prove that $L(1-\cos\theta_1)$ is equal to $h$. Expanding $L(1-\cos\theta_1)$ gives:
 ```{math}
+:nowrap:
+
+\begin{align*}
 L(1-\cos\theta_1)&=L-L\cos\theta_1
+\end{align*}
 ```
 This can be illustrated on a diagram, as in [](#fig:workenergy:swingprobgeometry), which shows that $h$ is equal to $L-L\cos\theta$.
 ```{figure} figures/WorkEnergy/swingprobgeometry.png

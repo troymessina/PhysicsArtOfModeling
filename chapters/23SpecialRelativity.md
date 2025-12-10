@@ -87,8 +87,12 @@ where, again, we used primes ('), to denote quantities that are measured in the 
 
 The description of how the wires will move should not depend on the frame of reference in which we choose to model the wires (they will move under the forces exerted on them regardless of whether we are observing them from a fixed or a moving point, and indeed regardless of whether we observe them at all!). Thus, the net force (per unit length) exerted on a wire cannot depend on our frame of reference. The total repulsive electric force, $F_E$, calculated in the stationary frame of reference must be equal to the sum of the magnetic and electric forces, $F'_B$ and $F'_E$, calculated in the moving frame of reference [^47]:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \frac{F_E}{l}&=\frac{F'_E}{l}+\frac{F'_B}{l}\\
 \frac{\lambda^2}{2\pi \epsilon_0r}&=\frac{\lambda'^2}{2\pi \epsilon_0r}  -\frac{\mu_0 \lambda'^2 v^2}{2\pi r}
+\end{align*}
 ```
 where we recognized that the charge per unit length, $\lambda'$, must be different in the moving frame of reference, or the above would give an inconsistent equation (the electric forces would cancel and we would find that the magnetic force is equal to zero). Thus, the repulsive electric force must be larger as observed in the moving frame of reference, or the net force on the wire would be different when evaluated in the two frames of reference. This is a truly bizarre conclusion, as we will see.
 
@@ -98,14 +102,22 @@ Before proceeding, let us clearly state our assumptions in modelling the force b
 
 The first assumption allows us to state that the net force in the two frames of reference must be the same. The second assumption implies that we must change the charge density, $\lambda'$, in the moving frame of reference, since the constants must remain the same, and this is the only quantity that can lead to a different electric force in the moving frame of reference (which is required if the net force is to be the same, according to our first assumption). Let us determine the new charge density, $\lambda'$, in terms of the charge density that is measured at rest. Starting with the requirement that the net force on the wire must not depend on the frame of reference, we find:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \frac{\lambda^2}{2\pi \epsilon_0r}&=\frac{\lambda'^2}{2\pi \epsilon_0r}  -\frac{\mu_0 \lambda'^2 v^2}{2\pi r}\\
 \lambda^2&=\lambda'^2-\epsilon_0\mu_0\lambda'^2 v^2\\
 \lambda^2&=\lambda'^2(1-\epsilon_0\mu_0v^2)\\
 \therefore \lambda'&=\lambda \frac{1}{\sqrt{\epsilon_0\mu_0-v^2}}
+\end{align*}
 ```
 Finally, recognizing that we can use the speed of light, $c$, to replace the combination of constants, $\epsilon_0\mu_0$, we find:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \lambda'&=\lambda \frac{1}{\sqrt{1-\frac{v^2}{c^2}}}
+\end{align*}
 ```
 Thus, the charge per unit length on the wire is larger when measured from the moving frame of reference ($\lambda'$ is greater than $\lambda$ if $v<c$). It should be somewhat bothersome to you that the charge per unit length depends on the frame of reference in which it is measured, but this is the only way for our two assumptions to hold.
 
@@ -204,14 +216,22 @@ From the perspective of a person watching the clock go by, the pulse of light tr
 
 To an observer that sees the clock move by with speed, $v$, the speed of the pulse of light, which must also be equal to $c$, is given by:
 ```{math}
+:nowrap:
+
+\begin{align*}
 c&=\frac{2\sqrt{L^2+\left(\frac{v\Delta t'}{2}\right)^2}}{\Delta t'}
+\end{align*}
 ```
 where the distance in the numerator was simply found by Pythagoras' theorem, as the spaceship will travel a horizontal distance, $v\Delta t'$, as measured by the observer that is not moving with the spaceship. Squaring this relationship, we can isolate the period of the clock, $\Delta t'$, as measured by the observer that sees the clock move with speed, $v$:
 ```{math}
+:nowrap:
+
+\begin{align*}
 c^2&=\frac{4L^2}{\Delta t'^2}+v^2\\
 \Delta t'^2 (c^2-v^2)&=4L^2\\
 \therefore \Delta t' &= 2L\frac{1}{\sqrt{c^2-v^2}}\\
 &=\frac{2L}{c}\frac{1}{\sqrt{1-\frac{v^2}{c^2}}}
+\end{align*}
 ```
 Note that the term $2L/c$ is simply the period of the clock as measured in a frame of reference where the clock is stationary. Thus, we can relate the two clock periods:
 ```{math}
@@ -478,34 +498,53 @@ The reference frame $S'$ is moving relative to reference frame, $S$, with speed 
 ```
 If we ignore any of Special Relativity, then the coordinates in $S'$ are easily related to those in the $S$ frame of reference using the "Galilean transformations":
 ```{math}
+:nowrap:
+
+\begin{align*}
 x' &= x - vt\\
 y' &= y\\
 z' &= z\\
 t' &= t
+\end{align*}
 ```
 and this corresponds to transformations that we have implicitly used before considering Special Relativity. These equations also allow us to relate the speeds measured in different frames of reference. Suppose that an object has a velocity, $\vec u=(u_x,u_y,u_z)$, as measured in the frame of reference, $S$. We can obtain the components of the velocity vector, $\vec u'$, as measured in the frame of reference, $S'$, by taking the time derivatives of the above equations:
 ```{math}
+:nowrap:
+
+\begin{align*}
 u'_x &= \frac{dx'}{dt'}=\frac{dx'}{dt}=\frac{d}{dt}(x-vt)=\frac{dx}{dt}-v=u_x - v\\
 u'_y &=\frac{dy'}{dt'}=u_y\\
 u'_z &=\frac{dz'}{dt'}=u_z
+\end{align*}
 ```
 which is trivial, since $t=t'$. The transformations above are equivalent (identical) to the rules for transforming velocity that we derived in [Section  %s](#sec:describingmotionin1D:relativemotion) for kinematics. In Galilean relativity, time is an absolute quantity that does not depend on the frame of reference. In Special Relativity, the time coordinate depends on the frame of reference, so we cannot simply convert a time derivative in $t'$ to a derivative in $t$. Instead, we must use the Lorentz transformations.
 
 We can use the formulas for length contraction and time dilation to derive the Lorentz transformations. Referring to [](#fig:specialrelativity:translation), $x$ refers to the distance between a point in space-time and the origin of the $x$ axis in frame $S$, as measured in frame $S$. Similarly, $x'$, is the distance to the point in space-time as measured in frame $S'$, from the origin of $S'$. In frame  $S$, the distance $x'$ will be contracted to the length $x'/\gamma$, so that the Galilean transformation for the $x$ coordinate is modified as follows:
 ```{math}
+:nowrap:
+
+\begin{align*}
 x' &= x - vt\quad\text{(Galilean)}\\
 \frac{x'}{\gamma} &= x - vt\\
 \therefore x'&=\gamma (x-vt)\quad\text{(Lorentz)}
+\end{align*}
 ```
 The $y$ and $z$ coordinates are the same between frames of references, since all of the length contraction will take place in the direction of the relative motion between frames of reference, which we chose to be in the $x$ direction.
 
 We can obtain the equation for the time coordinate by considering that, in the $S'$ frame of reference, it is the $x$ coordinate that is contracted to $x/\gamma$. In the $S'$ frame of reference, the distance between the origins of the two systems is $vt'$ (note the prime on $t$). We can thus write the contracted distance $x$, in the $S'$ frame of reference:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \frac{x}{\gamma}&=vt'+x'\\
 t'&= \frac{1}{v}\left(\frac{x}{\gamma}-x'\right)
+\end{align*}
 ```
 We can eliminate $x'$ from the last equation using the Lorentz transformation for $x'$ that we just found:
 ```{math}
+:nowrap:
+
+\begin{align*}
 t'&= \frac{1}{v}\left(\frac{x}{\gamma}-x'\right)\\
 t'&= \frac{1}{v}\left(\frac{x}{\gamma}-\gamma x+\gamma vt\right)\\
 \frac{t'}{\gamma}&=\frac{1}{v}\left(\frac{x}{\gamma^2}-x+vt\right)\\
@@ -513,20 +552,29 @@ t'&= \frac{1}{v}\left(\frac{x}{\gamma}-\gamma x+\gamma vt\right)\\
 &=\frac{1}{v}\left(-\frac{v^2}{c^2}x+vt\right)\\
 &=t-\frac{vx}{c^2}\\
 \therefore t'&=\gamma\left(t-\frac{vx}{c^2} \right)
+\end{align*}
 ```
 where we wrote out the $\gamma$ factor out explicitly in the fourth line. We can summarize the Lorentz transformations as follows:
 ```{math}
+:nowrap:
+
+\begin{align*}
 x' &=\gamma (x-vt)\\
 y' &= y\\
 z' &= z\\
 t' &=\gamma\left(t-\frac{vx}{c^2} \right)
+\end{align*}
 ```
 and the inverse relations are easily found:
 ```{math}
+:nowrap:
+
+\begin{align*}
 x &=\gamma (x'+vt')\\
 y &= y'\\
 z &= z'\\
 t &=\gamma\left(t'+\frac{vx'}{c^2} \right)
+\end{align*}
 ```
 Note that the Lorentz transformations reduce to the Galilean transformations when the speed, $v$, between frames of reference is small (so that $\gamma \sim 1$).
 
@@ -536,22 +584,34 @@ In a frame, $S$, a pulse of light is emitted (at the speed of light) in the posi
 :class: dropdown
 In order to use the Lorentz transformations, we need to define "events", with coordinates in space-time, that we can then convert from one frame of reference to another. Let $A$ be the event that corresponds to the emission of the pulse of light, and $B$ the event that corresponds to the absorption of the pulse. In frame, $S$, the coordinates of these events are:
 ```{math}
+:nowrap:
+
+\begin{align*}
 x_A&=0\\
 t_A&=0\\
 x_B&=d\\
 t_B&=\frac{d}{c}
+\end{align*}
 ```
 where in the last line, we used the fact that, in frame, $S$, the pulse travels at the speed of light. Applying the Lorentz transformations, we can find the coordinates of the same events in frame $S'$:
 ```{math}
+:nowrap:
+
+\begin{align*}
 x'_A&=\gamma (x_A-vt_A)=0\\
 t'_A&=\gamma\left(t_A-\frac{vx_A}{c^2} \right)=0\\
 x'_B&=\gamma (x_B-vt_B)=\gamma \left(d-v\frac{d}{c}\right)\\
 t'_B&=\gamma\left(t_B-\frac{vx_B}{c^2} \right)=\gamma\left(\frac{d}{c}-\frac{vd}{c^2} \right)
+\end{align*}
 ``` 
 The speed, $v'_p$, of the pulse of light in frame $S'$ is given by:
 ```{math}
+:nowrap:
+
+\begin{align*}
 v'_p&=\frac{(x'_B-x'_A)}{(t'_B-t'_A)}=\frac{\gamma \left(d-v\frac{d}{c}\right)}{\gamma\left(\frac{d}{c}-\frac{vd}{c^2} \right)}\\
 &=\frac{\left(d-v\frac{d}{c}\right)}{\left(\frac{d}{c}-\frac{vd}{c^2} \right)}=c\frac{\left(\frac{d}{c}-v\frac{d}{c^2}\right)}{\left(\frac{d}{c}-\frac{vd}{c^2} \right)}=c
+\end{align*}
 ```
 which is the speed of light, as expected. 
 
@@ -561,14 +621,22 @@ which is the speed of light, as expected.
 
 Einstein's second postulate states that the speed of light is independent of the frame of reference. Consider two points in space-time corresponding to the emission ($A$) and the absorption ($B$) of a pulse of light. In the reference frame, $S$, the distance squared in space between these two events must be equal to the distance (squared) that light travelled between the time of emission and absorption:
 ```{math}
+:nowrap:
+
+\begin{align*}
 (x_B-x_A)^2+(y_B-y_A)^2+(z_B-z_A)^2&= c^2(t_B-t_A)^2\\
 \therefore \Delta x^2 + \Delta y^2 +\Delta z^2&=c^2\Delta t^2
+\end{align*}
 ```
 where $(x_A,y_A,z_A,ct_A)$ and $(x_B,y_B,z_B,ct_B)$ are the space-time coordinates of events $A$ and $B$. The above equation must hold in all frame of references (e.g. adding a prime to each coordinate), since it is a statement that the speed of light is $c$.
 
 We can define $s$ as the "space-time interval" between events $A$ and $B$:
 ```{math}
+:nowrap:
+
+\begin{align*}
 s^2 = \Delta x^2 + \Delta y^2 +\Delta z^2&-c^2\Delta t^2
+\end{align*}
 ```
 which turns out to be "Lorentz invariant" (meaning that this value is the same in all reference frames). The space-time interval can be thought of as a "distance" in space-time that is the same in all reference frames. If the events $A$ and $B$ corresponds to the emission and absorption of light, then $s=0$, and we say that the interval between $A$ and $B$ is light-like or null. If $s<0$, the events are on a time-like interval, and if $s>0$, the events are separated by a space-like interval. Since $s$ does not depend on the frame of reference, all observers will agree on whether events are separated by time or space-like intervals.
 
@@ -631,13 +699,20 @@ u'_x = \frac{d}{dt'} x'
 ```
 In Galilean relativity, we could simply replace the derivative over $t'$ by a derivative over $t$, since the two are equivalent. This is no longer the case. However, we can use the chain rule and the Lorentz transformations to convert a derivative over $t'$ to a derivative over $t$:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \frac{d}{dt'} &= \frac{dt}{dt'}\frac{d}{dt}\\
 &= \frac{d}{dt'} \gamma\left(t'+\frac{vx'}{c^2} \right)\frac{d}{dt}\\
 &=\gamma \left(1+\frac{v}{c^2}\frac{dx'}{dt'}\right)\frac{d}{dt}\\
 &=\gamma \left(1+\frac{vu'_x}{c^2}\right)\frac{d}{dt}
+\end{align*}
 ```
 where we recognized that $\frac{dx'}{dt'}=u'_x$. The $x$ component of the velocity, as measured in the $S'$ frame of reference, is then given by:
 ```{math}
+:nowrap:
+
+\begin{align*}
 u'_x &= \frac{d}{dt'} x'\\
 &= \gamma \left(1+\frac{vu'_x}{c^2}\right)\frac{d}{dt}x'\\
 &=\gamma \left(1+\frac{vu'_x}{c^2}\right)\frac{d}{dt}\gamma (x-vt)\\
@@ -645,21 +720,30 @@ u'_x &= \frac{d}{dt'} x'\\
 \frac{u'_x}{\gamma^2}&=u_x -v +\frac{vu'_xu_x}{c^2}-\frac{v^2u'_x}{c^2}\\
 u'_x\left (1-\frac{v^2}{c^2}\right)&=u_x -v +\frac{vu'_xu_x}{c^2}-\frac{v^2u'_x}{c^2}\\
 u'_x \left( 1- \frac{vu_x}{c^2}\right) &=u_x -v
+\end{align*}
 ```
 ```{math}
 \therefore \; \boxed{u'_x=\frac{u_x -v}{1- \frac{vu_x}{c^2}}}
 ```
 where we made use of the Lorentz transformation: $x'=\gamma (x-vt)$. We can proceed in a similar way to determine the $y$ and $z$ components. Note that, unlike the Galilean case, all of the velocity components must transform, since the time derivative is involved for each component. Intuitively, we expect all components of velocity to be affected, since one needs to guarantee that the total speed is always below $c$. The velocity transformations for all components are given by the following:
 ```{math}
+:nowrap:
+
+\begin{align*}
 u'_x&=\frac{u_x -v}{1- \frac{vu_x}{c^2}}\\
 u'_y &=\frac{u_y}{\gamma\left(1- \frac{vu_x}{c^2}\right)}\\
 u'_z &=\frac{u_z}{\gamma\left(1- \frac{vu_x}{c^2}\right)}
+\end{align*}
 ```
 and the reverse transformations are given by:
 ```{math}
+:nowrap:
+
+\begin{align*}
 u_x &=\frac{u'_x +v}{1+ \frac{vu_x}{c^2}}\\
 u_y &=\frac{u'_y}{\gamma\left(1+ \frac{vu_x}{c^2}\right)}\\
 u_z &=\frac{u'_z}{\gamma\left(1+ \frac{vu_x}{c^2}\right)}
+\end{align*}
 ```
 :::{note} Example 23.6
 An archer can shoot a very fast arrow with a speed of $0.5c$. The archer is on a train moving with speed $v=0.7c$ and fires an arrow in the direction of motion. What is the speed of the arrow, as measured in the frame of reference of the ground?
@@ -671,9 +755,13 @@ u'_x = 0.5c
 ```
 The speed of the arrow, as measured from the ground, is thus given by:
 ```{math}
+:nowrap:
+
+\begin{align*}
 u_x &=\frac{u'_x +v}{1+ \frac{vu_x}{c^2}}\\
 &=\frac{(0.5c) +(0.7c)}{1+ \frac{(0.7c)(0.5c)}{c^2}}\\`
 &=\frac{(1.2c)}{1+(0.7)(0.5)}=\frac{1.2}{1.35}c=0.89c
+\end{align*}
 ```
 **Discussion:** By using the Lorentz transformations for velocity, we see that the arrow does not exceed the speed of light. Had we used Galilean relativity, we would have concluded that the arrow has a speed of $1.2c$ when measured from the ground. 
 :::
@@ -695,9 +783,13 @@ p = m_0\frac{dx}{dt'}=m_0\frac{dt}{dt'}\frac{dx}{dt}=m_0\frac{dt}{dt'}u
 ```
 where $u$ is the speed of the particle in frame, $S$. We can use time dilation to re-express the derivative:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \Delta t &= \gamma \Delta t'\\
 \frac{\Delta t}{\Delta t'}&=\gamma\\
 \therefore \frac{dt}{dt'}&=\gamma
+\end{align*}
 ```
 where in the last line, we simply took the limit of an infinitesimally short time interval. Therefore, the relativistic momentum of the particle in frame $S$ can be defined as
 ```{math}
@@ -724,17 +816,29 @@ A constant force of $1\times 10^{-22} {\rm N}$ is applied to an electron (with m
 :class: dropdown
 In both cases, we can start with Newton's Second Law:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \vec F &= \frac{d\vec p}{dt}\\
 \therefore \int \vec F dt &= \Delta \vec p = \vec p
+\end{align*}
 ```
 where $\vec p$ is the final momentum of the electron (which is different depending on whether we use the classical or the relativistic definition of momentum). Since the force is constant:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \int \vec F dt&=\vec F \Delta t=\vec p\\
 \therefore \Delta t &=\frac{p}{F}
+\end{align*}
 ```
 where $\Delta t$ is the length of time over which the force is applied. With the classical definition of momentum, the time is given by:
 ```{math}
- \Delta t &=\frac{p}{F} = \frac{mu}{F}=\frac{(9.11\times 10^{-31} {\rm kg})(0.99)(3\times 10^{8} {\rm m/s})}{(1\times 10^{-22} {\rm N})}=2.71 {\rm s}
+:nowrap:
+
+\begin{align*}
+\Delta t &=\frac{p}{F} = \frac{mu}{F}=\frac{(9.11\times 10^{-31} {\rm kg})(0.99)(3\times 10^{8} {\rm m/s})}{(1\times 10^{-22} {\rm N})}=2.71 {\rm s}
+\end{align*}
 ```
 With the relativistic definition of momentum, we first need the gamma factor:
 ```{math}
@@ -742,7 +846,11 @@ With the relativistic definition of momentum, we first need the gamma factor:
 ```
 We can then calculate the time over which the force needs to be applied:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \Delta t &=\frac{p}{F} = \frac{\gamma m_0u}{F}=\gamma  \frac{m_0u}{F}=(7.1)(2.71 {\rm s})=19.2 {\rm s}
+\end{align*}
 ```
 **Discussion:** When using the relativistic definition of momentum, we find that the time over which the force must be applied to reach a given speed is longer. This makes sense, since it will take infinitely long to reach the speed of light. Also, note that the time that is required using relativistic dynamics is just the time-dilated time that is required in classical dynamics.
 :::
@@ -755,17 +863,25 @@ W = \int_A^B \vec F\cdot d\vec l=\int_0^t \left(\frac{d}{dt}m_0\gamma\vec u \rig
 ```
 where we recognized that an infinitesimal segment, $d\vec l$, along the path of the object is given by $d\vec l=\vec u dt$. The time infinitesimals, $dt$, cancel, and we are left with:
 ```{math}
+:nowrap:
+
+\begin{align*}
 W&=\int_0^t \left(\frac{d}{dt}m_0\gamma\vec u \right)\cdot(\vec u dt)\\
 &=\int d(m_0\gamma \vec u)\cdot \vec u
+\end{align*}
 ```
 which we can integrate by parts. We can integrate this over the speed, $u$, and we assume that the object started with a speed of $u=0$ at the beginning of the path and has a speed, $u=U$, at the end of the path:
 ```{math}
+:nowrap:
+
+\begin{align*}
 W&=\int_0^U d(m_0\gamma \vec u)\cdot \vec u = \Big[\gamma m_0 \vec u\cdot\vec u\Big]_0^U-\int_0^U m_0\gamma u du\quad\text{(int. by parts)}\\
 &=\gamma m_0 U^2-m_0\int_0^U\frac{udu}{\sqrt{1-\frac{u^2}{c^2}}}\\
 &=\gamma m_0 U^2-m_0\Big[ c^2\sqrt{1-\frac{u^2}{c^2}} \Big]_0^U\\
 &=\gamma m_0 U^2-m_0c^2+m_0c^2\sqrt{1-\frac{U^2}{c^2}}\\
 &=\gamma \left(m_0 U^2+m_0c^2\left(1-\frac{U^2}{c^2}\right)\right)-m_0c^2\\
-&=m_0c^2(\gamma -1)	
+&=m_0c^2(\gamma -1)
+\end{align*}
 ```
 Since the object started at rest (with a speed $u=0$) the above integral corresponds to what we would call the kinetic energy of the object, with speed $u$:
 ```{math}
@@ -819,12 +935,16 @@ The mass of the proton can then be expressed as $m_p=939.4 {\rm MeV/c^2}$.
 
 Finally, it is interesting to examine the relationship between the momentum and the energy of a relativistic object. Consider the quantity $c^2p^2$:
 ```{math}
+:nowrap:
+
+\begin{align*}
 c^2p^2 &= c^2(\gamma m_0 u)^2\\
 &=c^2\gamma^2m_0^2u^2\\
 &=c^4\gamma^2m_0^2\frac{u^2}{c^2}\\
 &=c^4\gamma^2m_0^2\left(1- \frac{1}{\gamma^2}\right)\\
 &=c^4\gamma^2m_0^2 - c^4m_0^2\\
 &=E^2-c^4m_0^2
+\end{align*}
 ```
 where we recognized that $c^4\gamma^2m_0^2$ is simply the energy, $E$, squared. This is generally called the "energy-momentum" relation and written:
 ```{math}
@@ -865,7 +985,11 @@ The gamma factor is always greater or equal to 1. If a time interval, $\Delta t$
 ```
 since $\gamma \geq 1$. We call the time that is measured in a frame of reference that we consider "at rest" to be the "proper time" in that frame of reference. For example, a muon decays in $2.2 {\rm \mu s}$ when at rest. If a muon moves at high speed, in the frame of reference where the muon is moving, it will take *longer* (time dilation), for the muon to decay. The time $2.2 {\rm \mu s}$ is the "proper time" for the muon decay (since it is measured when the muon is at rest). As a consequence of time dilation, observers in different frames of reference will measure different lengths due to "length contraction". If an object has a "proper length", $L$, in a frame of reference, $S$, that is at rest relative to the object, the object will have a contracted length, $L'$, in a reference frame, $S'$, moving with speed, $v$, relative to $S$:
 ```{math}
+:nowrap:
+
+\begin{align*}
 L'&=\frac{L}{\gamma}
+\end{align*}
 ``` 
 Note that only the dimension of the object that is co-linear with the velocity vector, $\vec v$, is contracted. 
 
@@ -879,35 +1003,55 @@ For a given event in space-time, we can define past and future "light cones". On
 
 The Lorentz transformations allow us to convert the coordinates of events in one frame of reference, $S$, to those in a frames, $S'$, moving with constant speed, $v$, relative to $S$:
 ```{math}
+:nowrap:
+
+\begin{align*}
 x' &=\gamma (x-vt)\\
 y' &= y\\
 z' &= z\\
 t' &=\gamma\left(t-\frac{vx}{c^2} \right)
+\end{align*}
 ```
 and the inverse relations are easily found:
 ```{math}
+:nowrap:
+
+\begin{align*}
 x &=\gamma (x'+vt')\\
 y &= y'\\
 z &= z'\\
 t &=\gamma\left(t'+\frac{vx'}{c^2} \right)
+\end{align*}
 ```
 Certain quantities, which are measured to be the same in all frames of reference, are said to be "Lorentz invariant". In particular, we can define the space-time interval, $s$, between two events in space-time as:
 ```{math}
+:nowrap:
+
+\begin{align*}
 s^2 = \Delta x^2 + \Delta y^2 +\Delta z^2&-c^2\Delta t^2
+\end{align*}
 ```
 One can think of this as a sort of "distance" in space-time, that does not depend on the frame of reference.
 
 If an object has a velocity vector, $\vec u$, as measured in frame of reference $S$, then its velocity, $\vec u'$, in a frame, $S'$, moving with speed, $v$, relative to $S$, is given by:
 ```{math}
+:nowrap:
+
+\begin{align*}
 u'_x&=\frac{u_x -v}{1- \frac{vu_x}{c^2}}\\
 u'_y &=\frac{u_y}{\gamma\left(1- \frac{vu_x}{c^2}\right)}\\
 u'_z &=\frac{u_z}{\gamma\left(1- \frac{vu_x}{c^2}\right)}
+\end{align*}
 ```
 and the reverse transformations are given by:
 ```{math}
+:nowrap:
+
+\begin{align*}
 u_x &=\frac{u'_x +v}{1+ \frac{vu_x}{c^2}}\\
 u_y &=\frac{u'_y}{\gamma\left(1+ \frac{vu_x}{c^2}\right)}\\
 u_z &=\frac{u'_z}{\gamma\left(1+ \frac{vu_x}{c^2}\right)}
+\end{align*}
 ```
 
 In order for momentum and energy to be conserved in Special Relativity, these need to be redefined. If a particles with rest mass, $m_0$, has a velocity, $\vec u$, in an inertial frame of reference, its relativistic momentum, $\vec p$, is defined to be:
@@ -920,8 +1064,12 @@ where the gamma factor is evaluated using the speed, $u$:
 ```
 This relativistic definition of momentum is equivalent to the classical definition when $u<<c$. We can think of relativistic momentum in the same way as classical momentum, if we model the mass of the object as increasing with its speed:
 ```{math}
+:nowrap:
+
+\begin{align*}
 m(u)&=\gamma m_0\\
 \therefore \vec p &= m(u) \vec u
+\end{align*}
 ```
 where $m_0$ is the mass of the object measured when the object is at rest (its "rest mass"). An object with a rest mass can never reach the speed of light, as this would correspond to it having infinite momentum (or infinite mass). 
 
@@ -959,7 +1107,11 @@ p=\frac{E}{c}
 :::{important} Important Equations
 **Lorentz factor:**
 ```{math}
+:nowrap:
+
+\begin{align*}
 \gamma &= \frac{1}{\sqrt{1-\frac{v^2}{c^2}}}
+\end{align*}
 ```
 
 **Time dilation**
@@ -974,17 +1126,25 @@ L'=\frac{L}{\gamma}
 
 **Lorentz transformations:**
 ```{math}
+:nowrap:
+
+\begin{align*}
 x' &=\gamma (x-vt)\\
 y' &= y\\
 z' &= z\\
 t' &=\gamma\left(t-\frac{vx}{c^2} \right)
+\end{align*}
 ```
 
 **Velocity addition:**
 ```{math}
+:nowrap:
+
+\begin{align*}
 u'_x&=\frac{u_x -v}{1- \frac{vu_x}{c^2}}\\
 u'_y &=\frac{u_y}{\gamma\left(1- \frac{vu_x}{c^2}\right)}\\
 u'_z &=\frac{u_z}{\gamma\left(1- \frac{vu_x}{c^2}\right)}
+\end{align*}
 ```
 
 **The spacetime interval:**
@@ -1076,9 +1236,13 @@ In order to determine the amount of energy released in each reaction, we need to
 ```
 On the left-hand side, the total mass is:
 ```{math}
+:nowrap:
+
+\begin{align*}
 M_{LHS}&=4m_p+2m_e\\
 &=4(938.3 {\rm MeV/c^2})+2(0.511 {\rm MeV/c^2})\\
 &=3754.22 {\rm MeV/c^2}
+\end{align*}
 ```
 whereas on the right-hand side, the total mass is:
 ```{math}
@@ -1086,10 +1250,14 @@ M_{RHS}=m_\alpha=3727.4 {\rm MeV/c^2}
 ```
 Thus, the total energy released in each reaction is given by:
 ```{math}
+:nowrap:
+
+\begin{align*}
 E &= c^2\Delta M\\
 &= c^2(M_{LHS}-M_{RHS})\\
 &=c^2((3754.22 {\rm MeV/c^2})-(3727.4 {\rm MeV/c^2}))\\
 &=26.8 {\rm MeV}=4.29\times 10^{-12} {\rm J}
+\end{align*}
 ```
 where we showed the answer in both ${\rm MeV}$ and ${\rm J}$. Although it may not seem like that much energy per reaction, keep in mind that there are of order $1\times 10^{38}$ reactions per second in the Sun, corresponding to a power output of order $4\times 10^{26} {\rm W}$, enough to keep us warm in the summer.
 :::
@@ -1099,6 +1267,9 @@ where we showed the answer in both ${\rm MeV}$ and ${\rm J}$. Although it may no
 :class: dropdown
 * a. From the total energy, we can calculate the gamma factor, which will give us the velocity of the proton (in the reference frame of the scientist):
 ```{math}
+:nowrap:
+
+\begin{align*}
 E &= \gamma m_0 c^2\\
 \frac{1}{\gamma} &= \frac{m_0c^2}{E}\\
 \sqrt{1-\frac{v^2}{c^2}} &= \frac{m_0c^2}{E}\\
@@ -1108,21 +1279,30 @@ E &= \gamma m_0 c^2\\
 &= \left(\sqrt{1-\frac{(938.3 {\rm MeV})^2}{(2.5\times 10^{3} {\rm MeV})^2}}\right)c\\
 &= 0.93c\\ 
 &= 2.78\times 10^{8} {\rm m/s}\\
+\end{align*}
 ```
 * b. In the frame of the lab, when one second goes by, the proton will travel a distance:
 ```{math}
+:nowrap:
+
+\begin{align*}
 d &= vt\\
 &= (2.78\times 10^{8} {\rm m/s})(1 {\rm s})\\
 &=2.78\times 10^{8} {\rm m}
+\end{align*}
 ```
 * c. In order to find out how far the proton travels in the lab when one second of proper time goes by in the proton's frame of reference, we need to determine how much time went by in the lab's frame of reference. 
 
 The gamma factor for the proton can be obtained from the speed that we determined in part a), or from the total energy directly:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \gamma &= \frac{E}{m_0c^2}\\
 &=\frac{(2.5\times 10^{3} {\rm MeV})}{(938.3 {\rm MeV/c^2})c^2}\\
 &=\frac{(2.5\times 10^{3} {\rm MeV})}{(938.3 {\rm MeV})}\\
 &=2.66
+\end{align*}
 ```
 Thus, when $\Delta t=1 {\rm s}$ elapses in the proton's frame of reference, a time dilated time, $\Delta t'$, elapses in the lab frame of reference:
 ```{math}
@@ -1130,9 +1310,13 @@ Thus, when $\Delta t=1 {\rm s}$ elapses in the proton's frame of reference, a ti
 ```
 In the lab frame, the proton will travel a distance:
 ```{math}
+:nowrap:
+
+\begin{align*}
 d &= vt\\
 &= (2.78\times 10^{8} {\rm m/s})(2.66 {\rm s})\\
 &=7.39\times 10^{8} {\rm m}
+\end{align*}
 ```
 :::
 

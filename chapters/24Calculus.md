@@ -18,13 +18,21 @@ This appendix gives a very brief introduction to calculus with a focus on the to
 # Functions of real numbers
 In calculus, we work with functions and their properties, rather than with variables as we do in algebra. We are usually concerned with describing functions in terms of their slope, the area (or volumes) that they enclose, their curvature, their roots (when they have a value of zero) and their continuity. The functions that we will examine are a mapping from one or more *independent* real numbers to one real number. By convention, we will use $x,y,z$ to indicate independent variables, and $f()$ and $g()$, to denote functions. For example, if we say:
 ```{math}
+:nowrap:
+
+\begin{align*}
 f(x) &= x^2\\
 \therefore f(2) &= 4
+\end{align*}
 ```
 we mean that $f(x)$ is a function that can be evaluated for any real number, $x$, and the result of evaluating the function is to square the number $x$. In the second line, we evaluated the function with $x=2$. Similarly, we can have a function, $g(x,y)$ of multiple variables:
 ```{math}
+:nowrap:
+
+\begin{align*}
 g(x,y)&=x^2+2y^2\\
 \therefore g(2,3)&=22
+\end{align*}
 ```
 
 We can easily visualize a function of 1 variable by plotting it, as in [](#fig:calculus:xsquared).
@@ -72,21 +80,33 @@ where $\Delta f$ is the small change in $f(x)$ that corresponds to the small cha
 
 As an example, let us determine the function $f'(x)$ that is the derivative of $f(x)=x^2$. We start by calculating $\Delta f$:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \Delta f &= f(x+\Delta x)-f(x)\\
 &=(x+\Delta x)^2 - x^2\\
 &=x^2+2x\Delta x+\Delta x^2 -x^2\\
 &=2x\Delta x+\Delta x^2
+\end{align*}
 ```
 We now calculate $\frac{\Delta f}{\Delta x}$:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \frac{\Delta f}{\Delta x}&=\frac{2x\Delta x+\Delta x^2}{\Delta x}\\
 &=2x+\Delta x
+\end{align*}
 ```
 and take the limit $\Delta x\to 0$:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \frac{df}{dx}&=\lim_{\Delta x\to 0 }\frac{\Delta f}{\Delta x}\\
 &=\lim_{\Delta x\to 0 }(2x+\Delta x)\\
 &=2x
+\end{align*}
 ```
 We have thus found that the function, $f'(x)=2x$, is the derivative of the function $f(x)=x^2$. This is illustrated in [](#fig:Calculus:ffprime). Note that:
 * For $x>0$, $f'(x)$ is positive and increasing with increasing $x$, just as we described earlier (the function $f(x)$ is increasing and getting steeper).
@@ -148,12 +168,19 @@ Use the properties from [](#tab:Calculus:combders) to show that the derivative o
 :class: dropdown
 Since $\tan(x)=\frac{\sin(x)}{\cos(x)}$, we can write:
 ```{math}
+:nowrap:
+
+\begin{align*}
 h(x) &= \frac{f(x)}{g(x)} \\
 f(x) &= \sin(x)\\
 g(x) &= \cos(x)
+\end{align*}
 ```
 Using the fourth row in [](#tab:Calculus:combders), and the common derivatives from [](#tab:Calculus:commonders), we have:
 ```{math}
+:nowrap:
+
+\begin{align*}
 f'(x) &= \cos(x) \\
 g'(x) &= -\sin(x) \\
 g^2(x) &= \cos^2(x) \\
@@ -161,6 +188,7 @@ h'(x) &=\frac{f'(x)g(x)-f(x)g'(x)}{g^2(x)}\\
 &= \frac{\cos(x)\cos(x) - \sin(x) (-\sin(x))}{\cos^2(x)}\\
 &=\frac{\cos^2(x)+\sin^2(x)}{\cos^2(x)}\\
 &=\frac{1}{\cos^2(x)}
+\end{align*}
 ```
 as required.
 :::
@@ -171,20 +199,32 @@ Use the properties from [](#tab:Calculus:combders) to calculate the derivative o
 :class: dropdown
 To calculate the derivative of $h(x)$, we need to use the Chain Rule. $h(x)$ is found by first taking $\sin(x)$ and then taking that result squared. We can thus identify:
 ```{math}
+:nowrap:
+
+\begin{align*}
 h(x) &= \sin^2(x) = f(g(x))\\
 f(x) &= x^2 \\
 g(x) &= \sin(x)
+\end{align*}
 ```
 Using the common derivatives from [](#tab:Calculus:commonders), we have:
 ```{math}
+:nowrap:
+
+\begin{align*}
 f'(x) &= 2x \\
 g'(x) &= \cos(x)
+\end{align*}
 ```
 Applying the Chain Rule, we have:
 ```{math}
+:nowrap:
+
+\begin{align*}
 h'(x) &= f'(g(x))g'(x)\\
 &= 2\sin(x)g'(x)\\
 &= 2\sin(x)\cos(x)
+\end{align*}
 ```
 where $f'(g(x))$ means apply the derivative of $f(x)$ to the function $g(x)$. Since the derivative of $f(x)$ is $f'(x)=2x$, when we apply it to $g(x)$ instead of $2x$, we get $2g(x)=2\cos(x)$.
 :::
@@ -212,8 +252,12 @@ One possibility is to quantify the rate of change in the $x$ direction. The soli
 ```
 Calculating the partial derivative is very easy, as we just treat all variables as constants except for the variable with respect to which we are differentiating[^a]. For the function $f(x,y)=x^2-2y^2$, we have:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \frac{\partial f}{\partial x}&=\frac{\partial}{\partial x}\left(x^2-2y^2\right) = 2x\\
 \frac{\partial f}{\partial y}&=\frac{\partial}{\partial y}\left(x^2-2y^2\right) = -4y
+\end{align*}
 ```
 At $x=-2$, the partial derivative of $f(x,y)$ is indeed negative, consistent with our observation that, along the solid line, at point $P$, the function is decreasing.
 
@@ -226,9 +270,13 @@ Determine the partial derivatives of $f(x,y,z)=ax^2+byz-\sin(z)$.
 :class: dropdown
 In this case, we have three partial derivatives to evaluate. Note that $a$ are $b$ constants and can be thought of as numbers that we do not know.
 ```{math}
+:nowrap:
+
+\begin{align*}
 \frac{\partial f}{\partial x}&=\frac{\partial}{\partial x}\left(ax^2+byz-\sin(z)\right) = 2ax\\
 \frac{\partial f}{\partial y}&=\frac{\partial}{\partial y}\left(ax^2+byz-\sin(z)\right) = bz \\
-\frac{\partial f}{\partial z}&=\frac{\partial}{\partial z}\left(ax^2+byz-\sin(z)\right) = by-\cos(z) 
+\frac{\partial f}{\partial z}&=\frac{\partial}{\partial z}\left(ax^2+byz-\sin(z)\right) = by-\cos(z)
+\end{align*}
 ``` 
 :::
 
@@ -246,16 +294,24 @@ Determine the gradient of the function $f(x,y)=x^2-2y^2$ at the point $x=-2$ and
 :class: dropdown
 We have already found the partial derivatives that we need to evaluate at $x=-2$ and $y=-2$:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \frac{\partial f}{\partial x}&= 2x\\
 \frac{\partial f}{\partial y}&= -4y \\
 \therefore \nabla f(x,y) &= \frac{\partial f}{\partial x}\hat x+\frac{\partial f}{\partial y} \hat y \\
 &=2x\hat x-4y\hat y
+\end{align*}
 ```
 Evaluating the gradient at $x=-2$ and $y=-2$:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \nabla f(x,y) &= 2x\hat x-4y\hat y\\
 &=-4 \hat x + 8 \hat y\\
 &=4 (-\hat x+2\hat y)\\
+\end{align*}
 ```
 The gradient vector points in the direction $(-1,2)$. That is, the function increases the most in the direction where you would take 1 pace in the negative $x$ direction and 2 paces in the positive $y$ direction. You can confirm this by looking at point $P$ in [](#fig:Calculus:fxy) and imagining in which direction you would have to go to climb the surface to get the steepest climb.
 :::
@@ -299,17 +355,25 @@ Suppose that we are given a function $f(x)$ and we know that this is the derivat
 ```
 Since we have a symbol for indicating that we take the derivative with respect to $x$ ($\frac{d}{dx}$), we also have a symbol, $\int dx$, for indicating that we take the anti-derivative with respect to $x$:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \int f(x) dx &= F(x) \\
 \therefore \frac{d}{dx}\left(\int f(x) dx\right) &= \frac{dF}{dx}=f(x)
+\end{align*}
 ```
 Earlier, we justified the symbol for the derivative by pointing out that it is like $\frac{\Delta f}{\Delta x}$ but for the case when $\Delta x\to 0$. Similarly, we will justify the anti-derivative sign, $\int f(x) dx$, by showing that it is related to a sum of $f(x)\Delta x$, in the limit $\Delta x\to 0$. The $\int$ sign looks like an "S" for sum.
 
 While it is possible to exactly determine the derivative of a function $f(x)$, the anti-derivative can only be determined up to a constant. Consider for example a different function, $\tilde F(x)=F(x)+C$, where $C$ is a constant. The derivative of $\tilde F(x)$ with respect to $x$ is given by:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \frac{d\tilde{F}}{dx}&=\frac{d}{dx}\left(F(x)+C\right)\\
 &=\frac{dF}{dx}+\frac{dC}{dx}\\
 &=\frac{dF}{dx}+0\\
 &=f(x)
+\end{align*}
 ```
 Hence, the function $\tilde F(x)=F(x)+C$ is also an anti-derivative of $f(x)$. The constant $C$ can often be determined using additional information (sometimes called "initial conditions"). Recall the function, $f(x)=x^2$, shown in [](#fig:Calculus:ffprime) (left panel). If you imagine shifting the whole function up or down, the derivative would not change. In other words, if the origin of the axes were not drawn on the left panel, you would still be able to determine the derivative of the function (how steep it is). Adding a constant, $C$, to a function is exactly the same as shifting the function up or down, which does not change its derivative. Thus, when you know the derivative, you cannot know the value of $C$, unless you are also told that the function must go through a specific point (a so-called initial condition).
 
@@ -327,22 +391,34 @@ Determining the anti-derivative, $F(x)$, given the function $f(x)=2x$ and the in
 
 The procedure for determining the anti-derivative $F(x)$ is illustrated above in [](#fig:Calculus:fint). We start by drawing the point that we know the function $F(x)$ must go through, $(x_0,F_0)$. We then choose a value of $\Delta x$ and use the derivative, $f(x)$, to calculate $\Delta F_0$, the amount by which $F(x)$ changes when $x$ changes by $\Delta x$. Using the derivative $f(x)$ evaluated at $x_0$, we have:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \frac{\Delta F_0}{\Delta x} &\approx f(x_0)\;\;\;\; (\text{in the limit} \Delta x\to 0 )\\
 \therefore \Delta F_0 &= f(x_0) \Delta x
+\end{align*}
 ```
 We can then estimate the value of the function $F_1=F(x_1)$ at the next point, $x_1=x_0+\Delta x$, as illustrated by the black arrow in [](#fig:Calculus:fint) 
 ```{math}
+:nowrap:
+
+\begin{align*}
 F_1&=F(x_1)\\
 &=F(x+\Delta x) \\
 &\approx F_0 + \Delta F_0\\
 &\approx F_0+f(x_0)\Delta x
+\end{align*}
 ```
 Now that we have determined the value of the function $F(x)$ at $x=x_1$, we can repeat the procedure to determine the value of the function $F(x)$ at the next point, $x_2=x_1+\Delta x$. Again, we use the derivative evaluated at $x_1$, $f(x_1)$, to determine $\Delta F_1$, and add that to $F_1$ to get $F_2=F(x_2)$, as illustrated by the grey arrow in [](#fig:Calculus:fint):
 ```{math}
+:nowrap:
+
+\begin{align*}
 F_2&=F(x_1+\Delta x) \\
 &\approx F_1+\Delta F_1\\
 &\approx F_1+f(x_1)\Delta x\\
 &\approx F_0+f(x_0)\Delta x+f(x_1)\Delta x
+\end{align*}
 ```
 Using the summation notation, we can generalize the result and write the function $F(x)$ evaluated at any point, $x_N=x_0+N\Delta x$:
 ```{math}
@@ -369,7 +445,11 @@ As you can see, each term in the sum corresponds to the area of a rectangle betw
 
 Re-arranging equation {eq}`eqn:Calculus:intsum` gives us a prescription for determining the anti-derivative:
 ```{math}
+:nowrap:
+
+\begin{align*}
 F(x_N) - F(x_0)&=\lim_{\Delta x\to 0}\sum_{i=1}^{i=N} f(x_{i-1}) \Delta x
+\end{align*}
 ```
 We see that if we determine the area between $f(x)$ and the $x$ axis from $x_0$ to $x_N$, we can obtain the difference between the anti-derivative at two points, $F(x_N)-F(x_0)$
 
@@ -393,36 +473,56 @@ The symbol $\int f(x) dx$ without the limits is called the **indefinite integral
 
 As an example, let us determine the integral of $f(x)=2x$ between $x=1$ and $x=4$, as well as the indefinite integral of $f(x)$, which is the case that we illustrated in Figures \ref{fig:Calculus:fint} and \ref{fig:Calculus:fintarea}. Using equation {eq}`eqn:Calculus:intdef`, we have:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \int_{x_0}^{x_N}f(x) dx&=\lim_{\Delta x\to 0}\sum_{i=1}^{i=N} f(x_{i-1}) \Delta x \\
-&=\lim_{\Delta x\to 0}\sum_{i=1}^{i=N} 2x_{i-1} \Delta x 
+&=\lim_{\Delta x\to 0}\sum_{i=1}^{i=N} 2x_{i-1} \Delta x
+\end{align*}
 ```
 where we have:
 ```{math}
+:nowrap:
+
+\begin{align*}
 x_0 &=1 \\
 x_N &=4 \\
 \Delta x &= \frac{x_N-x_0}{N}
+\end{align*}
 ```
 Note that $N$ is the number of times we have $\Delta x$ in the interval between $x_0$ and $x_N$. Thus, taking the limit of $\Delta x\to 0$ is the same as taking the limit $N\to\infty$. Let us illustrate the sum for the case where $N=3$, and thus when $\Delta x=1$, corresponding to the illustration in [](#fig:Calculus:fintarea):
 ```{math}
+:nowrap:
+
+\begin{align*}
 \sum_{i=1}^{i=N=3} 2x_{i-1} \Delta x &=2x_0\Delta x+2x_1\Delta x+2x_2\Delta x\\
 &=2\Delta x (x_0+x_1+x_2) \\
 &=2 \frac{x_3-x_0}{N}(x_0+x_1+x_2) \\
 &=2 \frac{(4)-(1)}{(3)}(1+2+3) \\
 &=12
+\end{align*}
 ```
 where in the second line, we noticed that we could factor out the $2\Delta x$ because it appears in each term. Since we only used 4 points, this is a pretty coarse approximation of the integral, and we expect it to be an underestimate (as the missing area represented by the hashed lines in [](#fig:Calculus:fintarea) is quite large).
 
 If we repeat this for a larger value of N, $N=6$ ($\Delta x = 0.5$), we should obtain a more accurate answer:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \sum_{i=1}^{i=6} 2x_{i-1} \Delta x &=2 \frac{x_6-x_0}{N}(x_0+x_1+x_2+x_3+x_4+x_5)\\
 &=2\frac{4-1}{6} (1+1.5+2+2.5+3+3.5)\\
 &=13.5
+\end{align*}
 ```
 
 Writing this out again for the general case so that we can take the limit $N\to\infty$, and factoring out the $2\Delta x$:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \sum_{i=1}^{i=N} 2x_{i-1} \Delta x &=2 \Delta x\sum_{i=1}^{i=N}x_{i-1}\\
 &=2 \frac{x_N-x_0}{N}\sum_{i=1}^{i=N}x_{i-1}
+\end{align*}
 ```
 Now, consider the combination:
 ```{math}
@@ -434,10 +534,14 @@ that appears above. This corresponds to the arithmetic average of the values fro
 ```
 Putting everything together:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \lim_{N\to\infty}\sum_{i=1}^{i=N} 2x_{i-1} \Delta x &=2 (x_N+x_0)\lim_{N\to\infty}\frac{1}{N}\sum_{i=1}^{i=N}x_{i-1}\\
 &=2 (x_N-x_0)\frac{1}{2}(x_N+x_0)\\
 &=x_N^2 - x_0^2\\
 &=(4)^2 - (1)^2 = 15
+\end{align*}
 ```
 where in the last line, we substituted in the values of $x_0=1$ and $x_N=4$. Writing this as the integral:
 ```{math}
@@ -445,8 +549,12 @@ where in the last line, we substituted in the values of $x_0=1$ and $x_N=4$. Wri
 ```
 we can immediately identify the anti-derivative and the indefinite integral:
 ```{math}
+:nowrap:
+
+\begin{align*}
 F(x) &= x^2 +C \\
 \int 2xdx&=x^2 +C
+\end{align*}
 ```
 This is of course the result that we expected, and we can check our answer by taking the derivative of $F(x)$:
 ```{math}
@@ -527,14 +635,22 @@ The strategy is to divide the rod up into $N$ pieces of length $\Delta x$. If we
 ```
 where $\mu(x_i)$ is evaluated at the position, $x_i$, of our tiny piece of rod. The total mass, $M$, of the rod is then the sum of the masses of the tiny rods, in the limit where $\Delta x\to 0$:
 ```{math}
+:nowrap:
+
+\begin{align*}
 M &= \lim_{\Delta x\to 0}\sum_{i=1}^{i=N}\Delta m_i \\
   &= \lim_{\Delta x\to 0}\sum_{i=1}^{i=N} \mu(x_i) \Delta x
+\end{align*}
 ```
 But this is precisely the definition of the integral (equation {eq}`eqn:Calculus:intsum`), which we can easily evaluate with an anti-derivative:
 ```{math}
+:nowrap:
+
+\begin{align*}
 M &=\lim_{\Delta x\to 0}\sum_{i=1}^{i=N} \mu(x_i) \Delta x \\
   &= \int_0^L \mu(x) dx \\
   &= G(L) - G(0)
+\end{align*}
 ```
 where $G(x)$ is the anti-derivative of $\mu(x)$.
 
@@ -548,12 +664,16 @@ G(x)=a\frac{1}{4}x^4 + C
 ```
 Let $a=5 {\rm kg/m^4}$ and let's say that the length of the rod is $L=0.5 {\rm m}$. The total mass of the rod is then:
 ```{math}
+:nowrap:
+
+\begin{align*}
 M&=\int_0^L \mu(x) dx \\
 &=\int_0^L ax^3 dx \\
 &= G(L)-G(0)\\
 &=\left[ a\frac{1}{4}L^4 \right] - \left[ a\frac{1}{4}0^4 \right]\\
 &=5 {\rm kg/m^4}\frac{1}{4}(0.5 {\rm m})^4 \\
 &=78 {\rm g}\\
+\end{align*}
 ```
 
 With a little practice, you can solve this type of problem without writing out the sum explicitly. Picture an *infinitesimal* piece of the rod of length $dx$ at position $x$. It will have an *infinitesimal* mass, $dm$, given by:
@@ -657,13 +777,21 @@ where $a$ and $b$ are constants. How far does the train move between $t=t_0$ and
 :class: dropdown
 We need to find the value of $t$ for which the function $N(t)$ is maximal. This will occur when its derivative with respect to $t$ is zero:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \frac{dN}{dt} &= b-2ct =0\\
 \therefore t &= \frac{b}{2c}
+\end{align*}
 ```
 At that time, the number of customers will be:
 ```{math}
+:nowrap:
+
+\begin{align*}
 N\left( t=\frac{b}{2c} \right) &=a+bt-ct^2\\
 &=a+\frac{b^2}{2c} - \frac{b^2}{4c} = a+\frac{b^2}{4c}
+\end{align*}
 ```
 :::
 
@@ -676,14 +804,22 @@ v(t)=\frac{dx}{dt}
 ```
 We need to find how its position, $x(t)$, changes with time, given the speed. In other words, we need to find the anti-derivative of $v(t)$ to get the function for the position as a function of time, $x(t)$:
 ```{math}
+:nowrap:
+
+\begin{align*}
 x(t) &= \int v(t) dt = \int (at+bt^2) dt\\
 &=\frac{1}{2}at^2 + \frac{1}{3}bt^3 + C
+\end{align*}
 ```
 where $C$ is an arbitrary constant. The distance covered, $\Delta x$, between time $t_0$ and time $t_1$ is simply the difference in position at those two times:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \Delta x &= x(t_1) - x(t_0)\\
 &=\frac{1}{2}at_1^2 + \frac{1}{3}bt_1^3 + C - \frac{1}{2}at_0^2 - \frac{1}{3}bt_0^3 - C\\
 &=\frac{1}{2}a(t_1^2-t_0^2) + \frac{1}{3}b(t_1^3-t_0^3)
+\end{align*}
 ```
 :::
 [^a]:To take the derivative is to "differentiate"!

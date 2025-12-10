@@ -94,8 +94,12 @@ Since the wires have no resistance, the electric potential is constant along a w
 
 We can apply Ohm's Law (the macroscopic version) to the resistor and determine the current in the circuit, since we know the potential difference across the resistor:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \Delta V&=RI\\
 \therefore I&=\frac{\Delta V}{R}=\frac{(9 {\rm V})}{(2 {\rm \Omega})}=4.5 {\rm A}
+\end{align*}
 ```
 
 It is helpful to think of circuits in terms of energy. Charges move along the circuit and their potential energy changes as they go through components, while it remains constant as they move through a wire. If a positive charge enters the negative terminal of a battery and exits the positive terminal, its potential energy will have increased. If that charge then enters a resistor, its potential energy will decrease as it moves through the resistor, since the charge will "use" its potential energy to heat up the resistor. Batteries provide the energy to "push" the charges through the resistors in the circuit by converting chemical potential energy into the electrical potential energy of the charges.
@@ -141,8 +145,12 @@ so that the circuit can be simplified to that shown in [](#fig:circuits:batteryr
 
 The potential difference across the effective resistor is the same as that across the battery (between points ${\rm e}$ and ${\rm c}$), so that Ohm's Law can be applied to the effective resistor to determine the current that traverses it:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \Delta V &= R_{eff}I\\
 \therefore I&=\frac{\Delta V}{R_{eff}}=\frac{(12 {\rm V})}{(6 {\rm \Omega})}=2 {\rm A}
+\end{align*}
 ```
 This current is the same that traverses each individual resistor, since it is the same as the current that goes through the battery. Referring back to the full circuit ([](#fig:circuits:tworesistors)), we can now use Ohm's Law to calculate the voltage drop across each resistor, since we know the current through each resistor. The voltage across the $2 {\rm \Omega}$ resistor is given by:
 ```{math}
@@ -203,8 +211,12 @@ The terminals of the real battery are located at points ${\rm a}$ and ${\rm c}$ 
 
 The circuit in [](#fig:circuits:realbatterycircuit) is now identical to that analyzed in [Example 19.1](#ex:circuits:tworesistors), and can be treated the same way. We can combine the $2 {\rm \Omega}$ resistor with the internal resistance, $r$, in series to obtain an effective resistor, $R_{eff}=r+R$. The voltage drop across the effective resistor will be the same as the potential difference across the ideal battery, and we can make use of Ohm's Law to find the internal resistance, $r$:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \Delta V_{ideal}&= R_{eff}I=(r+R)I\\
 \therefore r &= \frac{\Delta V_{ideal}}{I}-R=\frac{(6 {\rm V})}{(2 {\rm A})}-(2 {\rm \Omega})=1 {\rm \Omega}
+\end{align*}
 ```
 Now that we know the internal resistance, we can determine the voltage drop across the internal resistor, using Ohm's Law:
 ```{math}
@@ -293,8 +305,12 @@ A junction with 5 segments and 5 currents.
 
 The junction rule states that the current entering the junction must equal the current coming out of the junction. This allows us to relate the currents to each other in an equation:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \text{incoming currents}&=\text{outgoing currents}\\
 I_1+I_3+I_4 &=I_2+I_5
+\end{align*}
 ```
 
 ## Loop rule
@@ -457,9 +473,13 @@ We can now proceed using Kirchhoff's rules to solve for the values of the curren
 
 **Applying the junction rule (step 5):** In the circuit from [](#fig:circuits:bigcircuit_simp), there are two junctions (at points ${\rm b}$ and ${\rm e}$), so we will get two equations from the junction rule. To apply the junction rule, the sum of the currents coming into the junction must be equal to the currents going out of the junction:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \text{incoming currents}&=\text{outgoing currents}&\\
 I_2+I_3 &= I_1 \quad &\text{(junction b)}\\
 I_1 &= I_2+I_3 \quad &\text{(junction e)}\\
+\end{align*}
 ```
 Note that the two equations are not independent (in fact, they are the same). It is generally the case that if there $N$ junctions, one will obtain less than $N$ independent equations (usually, $N-1$ equations will be independent). In this case, the two junctions only gave us one equation. 
 
@@ -486,9 +506,13 @@ Although it appears that we have obtained 3 additional equations, only two of th
 
 At this point, after choosing one of the junction equations, and two of the loop equations, we have 3 independent equations that we can solve for the 3 unknown currents\footnote{The 3 unknowns do not necessarily have to be the currents, and could be any combination of the currents, battery voltage and resistors. As long as there at most 3 unknown quantities, this circuit can be solved.}:
 ```{math}
+:nowrap:
+
+\begin{align*}
 I_1 &= I_2+I_3 \quad &\text{(junction e)}\\
 -\Delta V_1+\Delta V_2+I_2R_6+I_1R_8&=0\quad&\text{(loop abcdefa)}\\
 -\Delta V_1+I_3R_3+I_1R_8&=0\quad&\text{(loop abefa)}
+\end{align*}
 ```
 It is only a matter of some simple math to solve for the 3 unknowns from these 3 equations (which we carry out in the example below). 
 
@@ -507,8 +531,12 @@ The same circuit as in [](#fig:circuits:bigcircuit), with values filled in.
 
 Since this circuit is the same that we just analyzed, we know that it can be simplified into the circuit shown in [](#fig:circuits:bigcircuit_vals_simp), with resistors:
 ```{math}
+:nowrap:
+
+\begin{align*}
 R_6&=r_2+R_1+R_2=(1 {\rm \Omega})+(3 {\rm \Omega})+(4 {\rm \Omega})=8 {\rm \Omega}\\
 R_8&=r_1+\frac{R_4R_5}{R_4+R_5}=(1 {\rm \Omega})+\frac{(2 {\rm \Omega})(2 {\rm \Omega})}{(2 {\rm \Omega})+(2 {\rm \Omega})}=2 {\rm \Omega}
+\end{align*}
 ```
 
 ```{figure} figures/Circuits/circuitspng/bigcircuit_vals_simp.png
@@ -520,34 +548,54 @@ Simplified version of the circuit in [](#fig:circuits:bigcircuit_vals).
 ```
 From above, we know that this leads to the following three equations:
 ```{math}
+:nowrap:
+
+\begin{align*}
 I_1 &= I_2+I_3 \quad &\text{(junction e)}\\
 -\Delta V_1+\Delta V_2+I_2R_6+I_1R_8&=0\quad&\text{(loop abcdefa)}\\
 -\Delta V_1+I_3R_3+I_1R_8&=0\quad&\text{(loop abefa)}
+\end{align*}
 ```
 In order to solve these types of equations, it is usually convenient to place the battery voltages on the right hand side, and the resistor voltages on the left hand side. Although it is generally bad practice to fill numbers into the equations before solving them, it is almost always a good idea when solving the $N$ equations for the $N$ currents. Furthermore, in order to make the equations legible, it is also useful to not write in the units (which is very bad practice in general!). Thus, filling in the values for the resistors and the battery voltages, moving the voltages to the right hand side, we obtain the following system of equations:
 ```{math}
+:nowrap:
+
+\begin{align*}
 I_1-I_2-I_3&=0  \quad &\text{(junction e)}\\
 2I_1+8I_2&=8 \quad&\text{(loop abcdefa)}\\
 2I_1+4I_3&=12 \quad&\text{(loop abefa)}
+\end{align*}
 ```
 Subtracting the second equation from the third equation (to eliminate $I_1$):
 ```{math}
+:nowrap:
+
+\begin{align*}
 4I_3-8I_2&=4\\
 \therefore I_3&=1+2I_2
+\end{align*}
 ```
 Substituting this into the junction equation:
 ```{math}
+:nowrap:
+
+\begin{align*}
 I_1-I_2-I_3&=0\\
 I_1-I_2-1-2I_2&=0\\
 \therefore I_2=\frac{1}{3}(I_1-1)
+\end{align*}
 ```
 Finally, substituting this into the equation from loop ${\rm abcdefa}$, allows us to determine $I_1$ and the other two currents:
 ```{math}
+:nowrap:
+
+\begin{align*}
 2I_1+8I_2&=8\\
 2I_1+8\left(\frac{1}{3}(I_1-1) \right)&=8\\
 \therefore I_1&=\frac{16}{7}=2.29 {\rm A}\\
 \therefore I_2&=\frac{1}{3}(I_1-1)=0.43 {\rm A}\\
 \therefore I_3&=1+2I_2=1.86 {\rm A}\\
+\end{align*}
 ```
 In this case, the currents are all positive, so the diagram in [](#fig:circuits:bigcircuit_vals_simp) is correct and we do not need to reverse the direction of any of the currents. 
 
@@ -572,8 +620,12 @@ The components of the effective $R_8$ resistor from [](#fig:circuits:bigcircuit_
 
 The current $I_1$, that goes through the $\Delta V_1$ battery also goes through the $r_1$ internal resistance of the battery. That current then splits up into currents, $I_4$ and $I_5$, to go through the resistors $R_4$ and $R_5$. Although it should be obvious that half of $I_1$ will go through each resistor (since these are equal), we can determine this from applying Kirchhoff's rules to the combination of resistors in [](#fig:circuits:bigcircuit_vals_r8):
 ```{math}
+:nowrap:
+
+\begin{align*}
 I_1&=I_4+I_5 \quad&\text{(junction)}\\
 I_5R_5-I_4R_4&=0\quad&\text{(clockwise loop)}
+\end{align*}
 ```
 From the loop equation, we have:
 ```{math}
@@ -607,7 +659,11 @@ A much less weird looking circuit.
 ```
 What used to be a strange kite shape is now just a parallel circuit, which can be further simplified by calculating the effective resistance:
 ```{math}
+:nowrap:
+
+\begin{align*}
 R_{eff} &= (R_1^{-1}+R_2^{-1}+(R_3+R_4)^{-1})^{-1}
+\end{align*}
 ```
 Which gives a series circuit with only one resistor:
 ```{figure} figures/Circuits/circuitspng/circuit3Josh.png
@@ -637,10 +693,14 @@ Constructing an ammeter from a galvanometer by placing a "shunt" resistor in par
 
 By modelling the ammeter, we can determine the total current, $I$, that we would like to measure using the known values of the resistors and the current, $I_G$, measured by the galvanometer. Considering any of the two junctions, and a clockwise loop, we have:
 ```{math}
+:nowrap:
+
+\begin{align*}
 I&=I_G+I_S \quad&\text{(junction)}\\
 I_GR_G-I_SR_S&=0\quad&\text{(clockwise loop)}\\
 \therefore I_S&=\frac{R_G}{R_S}I_G\\
 \therefore I &= I_G+I_S=\left(1+\frac{R_G}{R_S}\right) I_G
+\end{align*}
 ```  
 which allows us to determine the current $I$ from the current $I_G$, measured by the galvanometer. We also see that most of the current goes through the shunt (since $R_S$ is chosen to be smaller than $R_G$). The ammeter will have a total resistance, $R_A$, given by:
 ```{math}
@@ -700,14 +760,22 @@ When using a voltmeter, the circuit is modified.
 
 We can model this circuit quite easily by combining the voltmeter (modelled as a resistor) in parallel with one of the resistors:
 ```{math}
+:nowrap:
+
+\begin{align*}
 R_{eff}&=\frac{R_VR}{R_V+R}\\
 &=\frac{(10 {\rm k\Omega})(1 {\rm k\Omega})}{(10 {\rm k\Omega})+(1 {\rm k\Omega})}\\
 &=\frac{10}{11}{\rm k\Omega}=0.91 {\rm k\Omega}
+\end{align*}
 ```
 The sum of the voltage drops across the effective resistor and the other resistor must equal the potential difference across the battery (Kirchhoff's loop rule):
 ```{math}
+:nowrap:
+
+\begin{align*}
 R_{eff}I+RI&=\Delta V\\
 \therefore I &= \frac{\Delta V}{R_{eff}+R}=\frac{(12 {\rm V})}{(0.91 {\rm k\Omega})+(1 {\rm k\Omega})}=6.29e-3 {\rm A}
+\end{align*}
 ```
 The voltage drop across the effective resistor is the same as the reading on the voltmeter:
 ```{math}
@@ -744,11 +812,15 @@ I=\frac{dQ}{dt}
 ```
 Substituting this into the loop equation, we obtain a separable differential equation for the charge on the capacitor as a function of time, $Q(t)$:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \Delta V - IR - \frac{Q}{C} &= 0\\
 \Delta V - \frac{dQ}{dt}R - \frac{Q}{C} &= 0\\
 \Delta V - \frac{Q}{C} &= \frac{dQ}{dt}R\\
 C\Delta V - Q &= RC\frac{dQ}{dt}\\
 \therefore \frac{dt}{RC}&=\frac{dQ}{C\Delta V - Q }
+\end{align*}
 ```
 This is similar to differential equations that we have solved previously (in fact, it is the same equation as in [Example 6.4](#ex:applyingnewtonslaws:drag) where we looked at the effect of velocity-dependent drag). The solution to the equation, assuming that the switch is closed at $t=0$, is given by an exponential:
 ```{math}
@@ -802,11 +874,19 @@ When a capacitor is placed in a circuit, the current in the circuit will no long
 :::{important} Important Equations
 **Ohm's Law:**
 ```{math}
+:nowrap:
+
+\begin{align*}
 \Delta V &= IR
+\end{align*}
 ```
 **Junction Rule:**
 ```{math}
+:nowrap:
+
+\begin{align*}
 \sum I_{in} &= \sum I_{out}
+\end{align*}
 ```
 **Loop Rule:**
 ```{math}
@@ -873,10 +953,14 @@ A circuit with a battery of unknown voltage.
 
 We start with Kirchhoff's loop rule, which leads to a differential equation for the charge stored on the capacitor as function of time, $Q(t)$:
 ```{math}
+:nowrap:
+
+\begin{align*}
 \Delta V - IR &=0\\
 \frac{Q}{C} - IR &=0\\
 \frac{Q}{C} - \frac{dQ}{dt}R &=0\\
 \therefore \frac{dQ}{dt} = -\frac{1}{RC}Q
+\end{align*}
 ```
 This differential equation is straightforward to solve, since it says that the derivative of $Q(t)$ is equal to a constant multiplied by $Q(t)$. Thus, $Q(t)$ must be an exponential function:
 ```{math}
@@ -886,7 +970,11 @@ where $Q_0$ is the (unknown) charge on the capacitor at $t=0$. You can easily ve
 
 Now that we have an equation for the charge as a function of time, it is straightforward to find the current, since it is just the time derivative of the charge. The current as a function of time, $I(t)$, is given by:
 ```{math}
+:nowrap:
+
+\begin{align*}
 I &=\frac{dQ}{dt}=-\frac{1}{RC}Q=\frac{Q_0}{RC} e^{-\frac{t}{RC}}=I_0e^{-\frac{t}{RC}}
+\end{align*}
 ```
 where $I_0=\frac{Q_0}{RC}$ is the current at $t=0$.\\
 
@@ -897,9 +985,13 @@ I_0=\frac{Q_0}{RC}=\frac{(9 {\rm V})}{(2 {\rm \Omega})}=4.5 {\rm A}
 
 We then know that the current, at time $t=5 {\rm s}$, is equal to $I(5)=0.05 {\rm A}$, allowing us to determine the capacitance:
 ```{math}
+:nowrap:
+
+\begin{align*}
 I(5)&=I_0e^{-\frac{t}{RC}}\\
 \ln\left( \frac{I(5)}{I_0} \right)&=-\frac{t}{RC}\\
 \therefore C&=\frac{t}{R \ln\left( \frac{I_0}{I(5)} \right)}=\frac{(5 {\rm s})}{(2 {\rm \Omega})\ln\left( \frac{(4.5 {\rm A})}{(0.05 {\rm A})} \right)}=0.56 {\rm F}
+\end{align*}
 ```
 
 * b. To find the charge stored in the capacitor at $t = 2 {\rm s}$, we can use the function $Q(t)$ that we determined before:
@@ -923,22 +1015,34 @@ In order to know the voltage across one of the resistors, we need to determine t
 
 We can model the circuit with the voltmeter in place, since we know the voltage across the parallel combination of the voltmeter and resistor (that voltage which is readout by the voltmeter). We can combine the voltmeter and one of the resistors into a an equivalent resistor, $R_{eff}$:
 ```{math}
+:nowrap:
+
+\begin{align*}
 R_{eff} &= \frac{1}{R_V^{-1}+R^{-1}}\\
 R_{eff} &= \frac{1}{(20 {\rm k\Omega})^{-1}+(2.5 {\rm k\Omega})^{-1}}\\
 R_{eff} &= 2.22 {\rm k\Omega}\\
+\end{align*}
 ```
 Now that we have the effective resistance as well as the voltage drop across that effective resistor, we can solve for current through the circuit:
 ```{math}
+:nowrap:
+
+\begin{align*}
 I &= \frac{\Delta V_{vm}}{R_{eff}}\\
 I &= \frac{5.647 {\rm V}}{2.22 {\rm k\Omega}}\\
 I &= 2.541 {\rm mA}\\
+\end{align*}
 ```
 
 Now that we have the current, we can combine the known resistances and determine the voltage drop across the battery. 
 ```{math}
+:nowrap:
+
+\begin{align*}
 \Delta V_{battery} &= I(R_{eff}+R)\\
 \Delta V_{battery} &= (2.541 {\rm mA})(2.222 {\rm k\Omega}+2.5 {\rm k\Omega})\\
 \Delta V_{battery} &= 12 {\rm V}\\
+\end{align*}
 ```
 Thus, with no voltmeter present, the voltage across each resistor is $6 {\rm V}$.
 :::
