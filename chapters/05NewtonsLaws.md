@@ -59,9 +59,12 @@ Newton's Second Law is often written as a vector equation:
 ```
 where $\sum \vec F$ is the vector sum of the forces exerted on an object, $\vec a$ is the acceleration vector of the object, and $m$ is the "inertial mass" of the object. As we will see, a force is represented by a vector, and the sum of the force vectors on an object is often called the "net force". Recall that using vectors to write an equation is just a shorthand for writing the equation out for each component. In three dimensions, this would thus correspond to three independent scalar equations (one for each component of the force and acceleration vectors):
 ```{math}
+
+\begin{align*}
 \sum F_x &= ma_x \\
 \sum F_y &= ma_y \\
 \sum F_z &= ma_z
+\end{align*}
 ```
 Newton's Second Law is the foundation for Classical Physics, in which we seek to quantitatively describe the motion of any object. The motion of an object is fully specified by its acceleration as long as we know the position and velocity at a specific point in time. That is, by knowing the position and velocity of the object at a point in time and its acceleration, we can describe its motion both in the future and in the in past; we call Classical Physics a deterministic theory (as opposed to, say, Quantum Mechanics, which would only tell us the probability that a particle would be at some particular position in the future). The right-hand side of Newton's Second Law thus contains the kinematic description of the object; if we know the acceleration, we know everything about the motion of the object.
 
@@ -484,10 +487,13 @@ Applying Newton's Second Law is straightforward once all of the forces exerted o
 Newton's Second Law is a vector equation that relates the vector sum of all forces exerted on an object and the acceleration vector of the object. This corresponds to one scalar equation per component of the vector.
 
 ```{math}
+
+\begin{align*}
 \sum \vec F &=m\vec a\\
 \sum F_x &= ma_x \\
 \sum F_y &= ma_y \\
 \sum F_z &= ma_z
+\end{align*}
 ```
 In order to use Newton's Second Law, we thus need to introduce a coordinate system so that we can work with the components of the vectors (forces and acceleration) in that coordinate system. Usually, a good choice of coordinate system is one where the $x$ (or $y$) axis is parallel to the acceleration vector. [](#fig:newtonslaws:2blocksI_fbd_m1) shows the free-body diagram from the $m_1$ block from the previous example ([Example 5.4](#ex:newtonslaws:2blocksI)) along with a good choice of coordinate system. 
 ```{figure} figures/NewtonsLaws/2blocksI_fbd_m1.png
@@ -499,20 +505,29 @@ In order to use Newton's Second Law, we thus need to introduce a coordinate syst
 ```
 To apply Newton's Second Law using the free-body diagram and coordinate system from [](#fig:newtonslaws:2blocksI_fbd_m1), we first write out all of the vector and then identify their $x$ and $y$ components. The force vectors are:
 ```{math}
+
+\begin{align*}
 \vec T &= T\hat x+0\hat y\\
 \vec f_{k1}&=-f_{k1}\hat x+0\hat y\\
 \vec F_{g1}&=m_1g(\sin\theta \hat x-\cos\theta \hat y)\\
 \vec N_1&=0\hat x+N_1\hat y
+\end{align*}
 ```
 We can now write out the $x$ component of Newton's Second Law:
 ```{math}
+
+\begin{align*}
 \sum F_x = T-f_{k1}+F_{g1}\sin\theta &= m_1 a\\
 \therefore T-f_{k1}+F_{g1}\sin\theta &= m_1 a
+\end{align*}
 ```
 where we note that the normal force has no component in the $x$ direction. The $y$ component of Newton's Second Law for mass $m_1$ is given by:
 ```{math}
+
+\begin{align*}
 \sum F_y = N_1-F_{g1}\cos\theta&=0\\
 \therefore N_1-F_{g1}\cos\theta&=0
+\end{align*}
 ```
 where we note that the forces of tension and friction have no $y$ component. The two equations that we obtained above for $x$ and $y$ fully specify the motion of the $m_1$ block if all quantities are known[^14].
 
@@ -563,13 +578,19 @@ We can then proceed to draw the free-body diagram for each mass, and use that to
 
 For $m_1$, we can write Newton's Second Law, starting with the $x$ components:
 ```{math}
+
+\begin{align*}
 \sum F_x = F_{g1}\sin\theta-f_{k1}-T_1&=m_1a_1\\
 \therefore m_1 g\sin\theta -\mu_k N_1 - T_1 &= m_1 a_1
+\end{align*}
 ```
 where, in the second line, we used the magnitude of the weight ($F_{g1}=m_1g$) and of the force of kinetic friction ($f_{k1}=\mu_kN_1$). For the $y$ component of Newton's Second Law, in which the acceleration has no component, we have:
 ```{math}
+
+\begin{align*}
 \sum F_y = N_1 - F_{g1}\cos\theta &= 0\\
 \therefore N_1=m_1g\cos\theta
+\end{align*}
 ```
 which shows us that the magnitude of the normal force can easily be expressed in terms of the weight ($F_{g1}=m_1g$) and the angle of the incline.
 
@@ -585,22 +606,31 @@ For $m_2$, we can proceed in much the same way, choosing a different coordinate 
 
 We start by writing out the $x$ component of Newton's Second Law for $m_2$:
 ```{math}
+
+\begin{align*}
 \sum F_x = T_2 - f_{k2} &= m_2 a_2\\
 \therefore T_2 - \mu_k N_2 = m_2 a_2
+\end{align*}
 ```
 where again, we expressed the kinetic force of friction using the normal force and the coefficient of kinetic friction. The $y$ component of Newton's Second Law gives:
 ```{math}
+
+\begin{align*}
 \sum F_y = N_2 - F_{g2} &=0\\
 \therefore N_2 = m_2g
+\end{align*}
 ```
 where again, we expressed the weight in terms of the mass and $g$, and we find that the normal force has the same magnitude as the weight. 
 
 Now that we have written Newton's Second Law **for each mass**, we can write all four equations that we obtained to describe **the system of two masses**. We should also note that the magnitude of the tension forces are the same for the two masses ($T_1=T_2=T$), and that since the masses are connected by a string, the magnitude of their acceleration vectors are the same ($a_1=a_2=a$). Using this, we can describe the full system with the following 4 equations:
 ```{math}
+
+\begin{align*}
 m_1 g\sin\theta -\mu_k N_1 - T &= m_1 a\\
 N_1=m_1g\cos\theta\\
 T - \mu_k N_2 = m_2 a\\
 N_2 = m_2g
+\end{align*}
 ```
 Of the variables above ($m_1$, $m_2$, $\mu_k$, $T$, $N_1$, $N_2$, $a$), one would only need to specify all but four of them to fully describe the motion of the system. For example, if one specifies the two masses and the coefficient of kinetic friction, all of the other variables can be determined.
 :::
@@ -620,8 +650,11 @@ Free-body diagram for a mass that is free-falling in the absence of air resistan
 
 Writing out the $y$ component of Newton's Second Law, being careful to distinguish between inertial and gravitational mass, and noting that both the weight and the acceleration are in the negative $y$ direction:
 ```{math}
+
+\begin{align*}
 \sum F_y = -F_g &= -m_I a\\
 \therefore m_Gg &= m_I a
+\end{align*}
 ```
 This makes it clear that $g$ is not necessarily the acceleration due to gravity. It is only the acceleration due to gravity in the limit that the inertial and gravitational masses are the same. If $m_G=m_I$, then we have:
 ```{math}
@@ -657,25 +690,37 @@ Free-body diagram for the forces acting on a mass suspended from the ceiling of 
 ```
 Writing out the $x$ and $y$ components of Newton's Second Law for the mass, we have:
 ```{math}
+
+\begin{align*}
 \sum \vec F &= \vec T + \vec F_g= m \vec a\\
 \therefore\sum F_x &= T\sin\theta = ma\\
 \therefore\sum F_y &= T\cos\theta-F_g=0
+\end{align*}
 ```
 We can, instead, model the motion of the mass in the frame of reference of the car, by pretending that we are sitting in the car. In the frame of reference of the car, the mass is immobile, and thus has no acceleration. In the non-inertial frame of reference of the car, we still have the weight and tension forces exerted on the mass; these have the same magnitude and direction as in the inertial frame of reference of the ground. One could replace the string with a spring scale, and observers in the car and on the ground would agree that the spring scale reads the same number. Those observers would also agree that the weight of the mass is the same. However, the two observers disagree on whether the mass is accelerating, since the observer in the car measures that the mass has no acceleration.
 
 In the frame of reference of the car, the acceleration of the mass is zero. If we want Newton's Second Law to hold, this implies that, in the reference frame of the car, the sum of the forces on the mass must be zero:
 ```{math}
+
+\begin{align*}
 \sum \vec F & = 0\quad\quad\text{(car reference frame)}
+\end{align*}
 ```
 We know from analysing the motion from the frame of reference of the ground that the vector sum of the forces $\vec T$ and $\vec F_g$ is equal to $m\vec a$. The only way for the force in the frame of reference of the car to add up to zero is if there is an additional force, $\vec F_I$, that is exerted in that frame of reference:
 ```{math}
+
+\begin{align*}
 \sum \vec F &= \vec T + \vec F_g + \vec F_I =0\quad\quad\text{(car reference frame)}
+\end{align*}
 ```
 Since we know that $\vec T + \vec F_g=m\vec a$, we can substitute this in the equation above:
 ```{math}
+
+\begin{align*}
 \sum \vec F &= \vec T + \vec F_g + \vec F_I =0\quad\quad\text{(car reference frame)}\\
 &=m\vec a+\vec F_I = 0\\
 \therefore F_I &= -m\vec a
+\end{align*}
 ```
 and we find that this "inertial force", $\vec F_I$, must be exerted in the opposite direction from the acceleration of the frame of reference, with a magnitude given by $ma$. The free-body diagram for the mass, as viewed in the reference frame of the car, is illustrated in [](#fig:newtonslaws:car_fbd2). 
 ```{figure} figures/NewtonsLaws/car_fbd2.png
@@ -705,9 +750,12 @@ Free-body diagram for the forces exerted on a person as modelled in a frame of r
 ```
 All of the forces are in the vertical direction, so we only need to write out the $y$ component of Newton's Second Law, which we can easily solve for the normal force:
 ```{math}
+
+\begin{align*}
 \sum F_y = N+F_I-F_g &=0\\
 N + ma -mg &=0\\
 \therefore N=m(g-a)
+\end{align*}
 ```
 Remember that you need to be careful about the signs. We have included the fact that $F_I$ is exerted upwards with the plus sign in the first equation (the $y$ component of $\vec F_I=0\hat x+F_I\hat y$ is $+F_I$). We then used the fact that the magnitude of the inertial force is given by $F_I=ma$ in the second line.
 
@@ -758,9 +806,12 @@ Newton's Second Law, in vector form, can be written as:
 ```
 which is just a short-hand notation for the scalar equations written out for each component:
 ```{math}
+
+\begin{align*}
 \sum F_x &= ma_x \\
 \sum F_y &= ma_y \\
 \sum F_z &= ma_z
+\end{align*}
 ```
 
 The force of gravity (or weight), $\vec F_g$, near the surface of the Earth is given by:
@@ -865,48 +916,69 @@ This allows us to build a free-body diagram for the forces on Katie, as shown in
 
 With a free-body diagram, we can write the $x$ and $y$ components of Newton's Second Law. In the $x$ direction, both the force of friction and the weight have components. The force of friction is in the negative $x$ direction, whereas the component of gravity in the $x$ direction is $F_g\sin\theta$. The acceleration vector is also in the $x$ direction. Putting this altogether into Newton's Second Law:
 ```{math}
+
+\begin{align*}
 \sum F_x = F_g\sin\theta - f_k &= ma\\
 \therefore mg\sin\theta -\mu_k N &= ma
+\end{align*}
 ```
 where we used the fact that the weight is given by $mg$ ($m$ is Katie's mass) and the magnitude of the force of friction is given by $f_k=\mu_kN$.
 
 Next, we write out the $y$ component of Newton's Second Law. The normal force is in the positive $y$ direction, whereas the component of gravity in the $y$ direction is $-F_g\cos\theta$. The acceleration has no component in the $y$ direction. Putting this into Newton's Second Law:
 ```{math}
+
+\begin{align*}
 \sum F_y = N-F_g\cos\theta &=0\\
 \therefore N-mg\cos\theta &=0
+\end{align*}
 ```
 
 We now have two equations that describe Katie's motion:
 ```{math}
+
+\begin{align*}
 mg\sin\theta -\mu_k N &= ma\\
 N-mg\cos\theta &=0
+\end{align*}
 ```
 We have three unknowns, $m$, $N$, and $a$, but only two equations! Hopefully, one of these will cancel out! At this point, all of the physics for the problem is done! We can now proceed to solve these equations to find the acceleration. The second equation allows us to solve for the normal force, $N=mg\cos\theta$, which we substitute into the first equation:
 ```{math}
+
+\begin{align*}
 mg\sin\theta -\mu_k N &= ma\\
 \therefore mg\sin\theta -\mu_k mg\cos\theta &= ma\\
+\end{align*}
 ```
 As you can see, the mass $m$ can be cancelled out of this equation, and we can find the acceleration:
 ```{math}
+
+\begin{align*}
 a&=g\sin\theta -\mu_k g\cos\theta\\
 &=g(\sin\theta-\mu_k\cos\theta)\\
 &=(9.8 {\rm N/kg})\left(\sin(50 {\rm \degree})-(0.45)\cos(50 {\rm \degree})\right)\\
-&=4.67 {\rm N/kg} 
+&=4.67 {\rm N/kg}
+\end{align*}
 ```
 At this point, we should ask ourselves if our result makes sense. In particular, we have found that the acceleration has unit of ${\rm N/kg}$ instead of ${\rm m/s^2}$. A quick examination of Newton's Second Law shows us that these two units are equivalent:
 ```{math}
+
+\begin{align*}
 F &= ma\\
 a &= \frac{F}{m}\\
 \therefore {\rm [a]} &= \frac{\rm [F]}{\rm [m]}=\frac{\rm N}{\rm kg}
+\end{align*}
 ```
 Often, one write the magnitude of the Earth's gravitation field as $g=9.8 {\rm m/s^2}$, since it has the same dimension as acceleration, and does indeed correspond to the acceleration that is felt by falling objects near the surface of the Earth. In fact, $g$, is usually defined as the acceleration of object near the Earth, although this is misleading, as it requires that inertial and gravitational mass be the same. 
 
 
 Knowing that Katie's initial velocity is $v_{0x}=0 {\rm m/s}$, her acceleration is $a_x=a=4.67 {\rm m/s^2}$ in the $x$ direction (the same direction as the slope), and the distance that she must travel is $x=40 {\rm m}$, we can find the time it takes for her to face-plant. If we set the origin of the $x$ axis where she starts (so that her initial position along the $x$ axis, $x_0=0$), the distance that she covered in the time, $t$, is given by:
 ```{math}
+
+\begin{align*}
 x(t)&=x_0+v_{0x}t+\frac{1}{2}at^2\\
 40 {\rm m}&=(0)+(0)t+\frac{1}{2}(4.67 {\rm m/s^2})t^2\\
 \therefore t&=\sqrt{\frac{2(40 {\rm m})}{(4.67 {\rm m/s^2})}}=4.14 {\rm s}
+\end{align*}
 ```
 Katie has $4.14 {\rm s}$ of gliding bliss before face-planting into the large pile of snow.
 :::
@@ -940,8 +1012,11 @@ The are illustrated in the free-body diagram in [](#fig:newtonslaws:twoboxes_fbd
 
 Considering the $y$ component of Newton's Second Law for box 2 (the top box), we can find the value of the normal force exerted by box 1:
 ```{math}
+
+\begin{align*}
 \sum F_y &= N_2 - F_{2g} = 0\\
 \therefore N_2 &= m_2 g
+\end{align*}
 ```
 The maximal magnitude of the force of static friction, $f_{2s}$, between the two boxes is given by:
 ```{math}

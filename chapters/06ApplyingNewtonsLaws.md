@@ -62,22 +62,31 @@ The forces are shown in the free-body diagram in [](#fig:applyingnewtonslaws:blo
 ```
 The $x$ component of Newton's Second Law is:
 ```{math}
+
+\begin{align*}
 \sum F_x = F - N &=0\\
 \therefore N = F
+\end{align*}
 ```
 which tells us that the normal force exerted by the wall has the same magnitude as the applied force, $\vec F$. The $y$ component of Newton's Second Law is:
 ```{math}
+
+\begin{align*}
 \sum F_y = f_s - F_g &=0\\
 \therefore f_s -mg &=0\\
 \therefore f_s = mg\\
+\end{align*}
 ```
 which tells us that the force of friction must have the same magnitude as the weight. This makes sense, since they are the only forces with components in the $y$ direction, and thus, they must cancel each other out. 
 
 The force of friction will be less than or equal to $\mu_sN$, and thus less than or equal to $\mu_s F$, since $\vec F$ and $\vec N$ have the same magnitude (from the $x$ component of Newton's Second Law). Furthermore, since $f_s=mg$, we can write:
 ```{math}
+
+\begin{align*}
 f_s &\leq \mu_s F\\
 \therefore mg &\leq \mu_s F\\
 \therefore \frac{mg}{\mu_s} &\leq F
+\end{align*}
 ```
 which gives us the condition that $F\geq mg/\mu_s$, and thus the minimum magnitude of $F$ in order to keep the box from sliding down.
 
@@ -141,26 +150,38 @@ These are shown on the free-body diagram in [](#fig:applyingnewtonslaws:blockI_f
 
 Writing out the $x$ component of Newton's Second Law, and using the fact that the acceleration is in the $x$ direction ($\vec a=a_1\hat x$):
 ```{math}
+
+\begin{align*}
 \sum F_x = F_g\sin\theta - f_{k1} &= ma_1\\
 \therefore mg\sin\theta - \mu_{k1} N_1 &= ma_1
+\end{align*}
 ```
 where we expressed the magnitude of the kinetic force of friction in terms of the normal force exerted by the plane, and the weight in terms of the mass and gravitational field, $g$. The $y$ component of Newton's Second Law can be written:
 ```{math}
+
+\begin{align*}
 \sum F_y = N_1-F_g\cos\theta &= 0\\
 \therefore N_1 = mg\cos\theta
+\end{align*}
 ```
 which we used to express the normal force in terms of the weight. We can use this expression for the normal force by substituting it into the equation we obtained from the $x$ component to find the acceleration along the incline:
 ```{math}
+
+\begin{align*}
 mg\sin\theta - \mu_{k1} N_1 &= ma_1\\
 mg\sin\theta - \mu_{k1} mg\cos\theta&= ma_1\\
 \therefore a_1 &= g(\sin\theta-\mu_{k1}\cos\theta)
+\end{align*}
 ```
 Now that we know the acceleration down the incline, we can easily find the velocity at the bottom of the incline using kinematics. We choose the origin of the $x$ axis to be zero where the block started ($x_0=0$), so that the block is at position $x=L$ at the bottom of the incline. Using kinematics, we can find the speed, $v$, given that the initial speed, $v_0=0$:
 ```{math}
+
+\begin{align*}
 v^2-v_0^2&=2a_1(x-x_0)\\
 v^2&=2a_1L\\
 \therefore v &= \sqrt{2a_1L}\\
 &=\sqrt{2Lg(\sin\theta-\mu_{k1}\cos\theta)}
+\end{align*}
 ```
 We can now proceed to build a model for the second segment. We first identify the forces on the block when it is on the horizontal surface; these are:
 1.  $\vec F_{g1}$, its weight.
@@ -179,28 +200,40 @@ The forces are illustrated by the free-body diagram in [](#fig:applyingnewtonsla
 
 Writing out the $x$ component of Newton's Second Law:
 ```{math}
+
+\begin{align*}
 \sum F_x = -f_{k2} &= -ma_2\\
 \therefore \mu_{k2}N_2 &= ma_2
+\end{align*}
 ```
 where we expressed the force of kinetic friction using the normal force. We  have to be careful here with the sign of the acceleration; the equation that we wrote implies that $a_2$ is a positive number, since $\mu_{k2}$ is positive and $N_2$ is also positive (it is the magnitude of the normal force). $a_2$ is the magnitude of the acceleration, and we included the fact that the acceleration points in the negative $x$ direction when we put a negative sign in the first line. The $x$ component of the acceleration is $-a_2$, and the vector is given by $\vec a_2=-a_2\hat x$.
 
 The $y$ component of Newton's Second Law will allow us to find the normal force:
 ```{math}
+
+\begin{align*}
 \sum F_y = N_2 -F_g &=0\\
 \therefore N_2 = mg
+\end{align*}
 ```
 which we can substitute back into the $x$ equation to find the magnitude of the acceleration along the horizontal surface:
 ```{math}
+
+\begin{align*}
 ma_2 &=\mu_{k2}N_2 \\
 \therefore a_2&=\mu_{k2}g
+\end{align*}
 ```
 Now that we have found the acceleration along the horizontal surface, we can use kinematics to find the distance that the block travelled before stopping. We choose the origin of the $x$ axis to be the bottom of the incline ($x_0=0$), the acceleration is negative $a_x = -a_2 = -mu_{k2}g$, the final speed is zero, $v=0$, and the initial speed, $v_0$ is given by our model for the first segment. Using one of the kinematic equations:
 ```{math}
+
+\begin{align*}
 v^2-v_0^2&=2(-a_2)(x-x_0)\\
 v_0^2&=2a_2x\\
 \therefore x &=\frac{1}{2a_2}v_0^2\\
 &=\frac{1}{2\mu_{k2}g}2Lg(\sin\theta-\mu_{k1}\cos\theta)\\
 \therefore x&=\frac{(\sin\theta-\mu_{k1}\cos\theta)}{\mu_{k2}}L
+\end{align*}
 ```
 **Discussion:** The model for the distance $x$ that it takes the block to stop makes sense because:
 * All of the terms in the fraction are dimensionless, so the value of $x$ will have the same dimension as $L$. 
@@ -237,12 +270,15 @@ Consider the block of mass $m$ that is shown in [](#fig:applyingnewtonslaws:bloc
 
 The horizontal force, $\vec F$, exerted on the block can be written as:
 ```{math}
-  \vec F (x)=
+
+\begin{align*}
+\vec F (x)=
   \begin{cases}
     F_1\hat x & x<\Delta x \quad \text{(segment 1)}\\
     F_2\hat x & \Delta x \leq x< 2\Delta x \quad \text{(segment 2)}\\
     F_3\hat x & 2\Delta x \leq x\quad \text{(segment 3)}
   \end{cases}
+\end{align*}
 ```
 as it depends on the location of the block. To find the speed of the block at the end of the third segment, we can model each segment separately. The forces exerted on the block are the same in each segment:
 1.  $\vec F_g$, its weight, with magnitude $mg$.
@@ -269,15 +305,21 @@ a_i = \frac{F_i}{m}
 ```
 If the speed of the block is $v_0$ at the beginning of segment 1 ($x=x_0$), we can find its speed at the end of segment 1 ($x=x_1$), $v_1$, using kinematics and the fact that the acceleration in segment 1 is $a_1$:
 ```{math}
+
+\begin{align*}
 v_1^2-v_0^2 &= 2a_1(x_1 - x_0)\\
 v_1^2 &=v_0^2+ 2a_1\Delta x\\
 \therefore v_1^2 &=v_0^2+2\frac{F_1}{m}\Delta x
+\end{align*}
 ```
 We can now easily find the speed at the end of segment 2 ($x=x_2$), $v_2$, since we know the speed at the beginning of segment 2 ($x_1$,$v_1$) and the acceleration $a_2$:
 ```{math}
+
+\begin{align*}
 v_2^2 -v_1^2 &= 2a_2(x_2 - x_1)\\
 \therefore v_2^2 &= v_1^2 + 2a_2\Delta x\\
 &=v_0^2+ 2\frac{F_1}{m}\Delta x + 2\frac{F_2}{m}\Delta x
+\end{align*}
 ```
 It is easy to show that the speed at the end of the third segment is:
 ```{math}
@@ -285,7 +327,10 @@ v_3^2 = v_0^2+ 2\frac{F_1}{m}\Delta x + 2\frac{F_2}{m}\Delta x +2\frac{F_3}{m}\D
 ```
 If there were $N$ segments, with the force being different in each segment, we could use the summation notation to write:
 ```{math}
+
+\begin{align*}
 v_N^2 &= v_0^2 + 2\sum_{i=1}^{i=N} \frac{F_i}{m}\Delta x
+\end{align*}
 ```
 Finally, if the magnitude of the force varied continuously as a function of $x$, $\vec F(x)$, we would model this by taking segments whose length, $\Delta x$, tends to zero (and we would need an infinite number of such segments). For example, if we wanted to know the speed of the object at position $x=X$ along the $x$ axis, with a force that was given by $\vec F(x)=F(x)\hat x$, if the object started at position $x_0$ with speed $v_0$, we would take the following limit:
 ```{math}
@@ -301,17 +346,26 @@ v^2 = v_0^2 + 2 \int_{x_0}^{X}\frac{F(x)}{m}dx
 ```
 Naturally, we can find the above result starting directly from calculus. If the component of the (net) force in the $x$ direction is given by $F(x)$, then the  acceleration is given by $a(x) = \frac{F(x)}{m}$. The velocity is related to the acceleration:
 ```{math}
+
+\begin{align*}
 a(x) &= \frac{dv}{dt}\\
 \therefore dv &= a(x)dt\\
+\end{align*}
 ```
 We cannot simply integrate the last equation to find that $v=\int a(x)dt$ because the acceleration is given as a function of position, $a(x)$, and not a function of time, $t$. Thus, we cannot simply take the integral over $t$ and must instead "change variables" to take the integral over $x$. $x$ and $t$ are related through velocity:
 ```{math}
+
+\begin{align*}
 v &= \frac{dx}{dt}\\
 \therefore dt &= \frac{1}{v}dx
+\end{align*}
 ```
 We can thus write:
 ```{math}
+
+\begin{align*}
 dv &= a(x)dt = a(x)\frac{1}{v}dx \\
+\end{align*}
 ```
 The equation above is called a "separable differential equation", which can also be written:
 ```{math}
@@ -323,15 +377,21 @@ vdv = a(x)dx
 ``` 
 This last equation says that $vdv$ is equal to $a(x)dx$. Remember that $dx$ is the length of a very small segment in $x$, and that $dv$ is the change in velocity over that very small segment. Since the terms on the left and right are equal, if we sum (integrate) the quantity $vdv$ over many segments, that sum must be equal to the sum (integral) of the quantity $a(x)dx$ over the same segments. Let us choose those segment such that for the beginning of the first interval the position and speed are $x_0$ and $v_0$, respectively, and the position and speed at the end of the last segment are $X$ and $V$, respectively. We then must have that:
 ```{math}
+
+\begin{align*}
 \int_{v_0}^{V}vdv&=\int_{x_0}^{X}a(x)dx\\
  \frac{1}{2}V^2 - \frac{1}{2}v_0^2 &= \int_{x_0}^{X}a(x)dx\\
 \therefore V^2 &= v_0^2 + 2\int_{x_0}^{X}a(x)dx\\
+\end{align*}
 ```
 which is the same as we found earlier. If the acceleration is constant, we recover our formula from kinematics:
 ```{math}
+
+\begin{align*}
 V^2 &= v_0^2+ 2\int_{x_0}^{X}adx\\
 &=v_0^2+ 2a(X-x_0)\\
 \therefore V^2- v_0^2 &= 2a(X-x_0)
+\end{align*}
 ```
 
 (ex:applyingnewtonslaws:blockspring)=
@@ -359,23 +419,32 @@ The forces on the block are:
 
 Since the block is not moving vertically, the magnitude of the normal force must equal the weight $N=mg$, since these are the only forces with components in the vertical direction. The $x$ component of Newton's Second Law gives us the acceleration of the block (which depends on $x$):
 ```{math}
+
+\begin{align*}
 \sum F_x = -kx &= ma(x)\\
 \therefore a(x)&=-\frac{k}{m}x
+\end{align*}
 ```
 Again, recall that if $x$ is negative, then the acceleration will be in the positive direction. Since this scenario is exactly the same that we described above in the text, namely a force that varies continuously with position, we can apply the formula that we found earlier for determining the velocity after a varying force has been applied from position $x=x_0$ to position $x=X$:
 ```{math}
+
+\begin{align*}
 V^2 &= v_0^2 + 2\int_{x_0}^{X}a(x)dx
+\end{align*}
 ```
 $V$ is the final speed that we would like to find, $v_0=0$ because the block starts at rest, and $x_0=-D$ is the starting position of the block. $X$ is the position along the $x$ axis where the block leaves the spring.
 
 We have to think a little about what the value of $X$ should be: when the spring is compressed and the block accelerating, the spring is pushing the block in the positive $x$ direction. Once the block reaches $x=0$ the spring would want to pull the block backwards, but since it is not attached to the block, it stops exerting a force on the block at that point. The block thus leaves the spring at $x=0$, so that the final position is $X=0$. The speed of the block when it leaves the spring is thus:
 ```{math}
+
+\begin{align*}
 V^2 &= v_0^2 + 2\int_{x_0}^{X}a(x)dx\\
 &= 0 + 2\int_{-D}^{0}a(x)dx\\
 &= 2\int_{-D}^{0}-\frac{k}{m}xdx\\
 &= 2\left[ - \frac{k}{m}\frac{1}{2}x^2\right]_{-D}^{0}\\
 &= \frac{k}{m}D^2\\
 \therefore V &= \sqrt{\frac{k}{m}}D
+\end{align*}
 ```
 **Discussion:** This model for the speed of the block when it leaves the spring makes sense because:
 * The dimension for the expression for $V$ is correct (you should check this!).
@@ -410,39 +479,57 @@ Since the object will fall in a straight line, this is a one-dimensional problem
 
 Newton's Second Law for the object gives:
 ```{math}
+
+\begin{align*}
 \sum F_x = F_g - F_d &= ma\\
 mg - bv &= ma\\
-\therefore a &= g-\frac{b}{m}v 
+\therefore a &= g-\frac{b}{m}v
+\end{align*}
 ```
 In this case, the acceleration depends explicitly on velocity rather than position, as we had before. However, we can use the same methodology to find how the velocity changes with time. First, we can note that the acceleration is zero if:
 ```{math}
+
+\begin{align*}
 g-\frac{b}{m}v &=0\\
 \therefore v = \frac{mg}{b}
+\end{align*}
 ```
 That is, once the object reaches a speed of $v_{term}=mg/b$, it will stop accelerating, i.e. it will reach "terminal velocity". Note that this is the same condition as requiring that the drag force ($bv$) have the same magnitude as the weight ($mg$).
 
 Writing the acceleration as $a=\frac{dv}{dt}$, we can write:
 ```{math}
+
+\begin{align*}
 \frac{dv}{dt} &= \left(g-\frac{b}{m}v \right)
+\end{align*}
 ```
 which again, is a separable differential equation, in which we can write the terms that depend on $v$ and those that depend on $t$ on separate sides of the equal sign:
 ```{math}
+
+\begin{align*}
 \frac{dv}{g-\frac{b}{m}v}&= dt\\
 \frac{dv}{v-\frac{mg}{b}}&= -\frac{b}{m}dt\\
+\end{align*}
 ```
 where we re-arranged the equation in the second line so that it would be easier to integrate in the next step. We can find the velocity, $v(t)$, at some time, $t$, by stating that $v=0$ at $t=0$ and taking the integrals (sum) on both sides. Again, we are modelling the motion as being made up of a large number of very small segments where the quantities on both sides of the equation are the same. Thus, if we sum (integrate) those quantities over all of the same segments, the left and right hand side of the equations will still be equal to each other:
 ```{math}
+
+\begin{align*}
 \int_0^{v(t)}\frac{dv}{v-\frac{mg}{b}} &= -\int_0^t\frac{b}{m} dt\\
 \left[\ln\left(v-\frac{mg}{b} \right)\right]_0^{v(t)} &=-\frac{b}{m}t\\
 \ln\left(v(t)-\frac{mg}{b} \right)-\ln\left(-\frac{mg}{b} \right)&=-\frac{b}{m}t\\
 \ln\left( \frac{v(t)-\frac{mg}{b}}{-\frac{mg}{b}} \right)&=-\frac{b}{m}t\\
+\end{align*}
 ```
 where, in the last line, we used the property that $\ln(a)-\ln(b)=\ln(a/b)$. By taking the exponential on either side of the equation ($e^{\ln(x)}=x$), we can find an expression for the velocity as a function of time:
 ```{math}
+
+\begin{align*}
 \frac{v(t)-\frac{mg}{b}}{-\frac{mg}{b}} &= e^{-\frac{b}{m}t}\\
 v(t)-\frac{mg}{b} &= -\frac{mg}{b}e^{-\frac{b}{m}t}\\
 \therefore v(t) &= \frac{mg}{b}-\frac{mg}{b}e^{-\frac{b}{m}t}\\
 &=\frac{mg}{b}\left(1-e^{-\frac{b}{m}t}\right)
+\end{align*}
 ```
 **Discussion:** This equation tells us that the velocity increases as a function of time, but the rate of increase decreases exponentially with time. At time $t=0$, the velocity is zero, as expected. As $t$ approaches infinity, $v$ approaches, $\frac{mg}{b}$, which is the terminal velocity. The time dependence of the velocity is illustrated in [](#fig:applyingnewtonslaws:drag_vt).
 
@@ -493,12 +580,18 @@ The forces are depicted in the free-body diagram shown in [](#fig:applyingnewton
 ``` undergoing uniform circular motion.}
 Writing out the $x$ and $y$ components of Newton's Second Law:
 ```{math}
+
+\begin{align*}
 \sum F_x &= T = ma_R\\
 \sum F_y &= N - F_g =0
+\end{align*}
 ```
 The $y$ component just tells us that the normal force must have the same magnitude as the weight because the object is not accelerating in the vertical direction. The $x$ component tells us the relation between the magnitudes of the tension in the string and the radial acceleration. Using the speed of the object, we can also write the relation between the tension and the speed:
 ```{math}
+
+\begin{align*}
 T &= ma_R=m\frac{v^2}{R}\\
+\end{align*}
 ```
 Thus, we find that the tension in the string increases with the square of the speed, and decreases with the radius of the circle.
 
@@ -546,19 +639,28 @@ The forces on the car are shown in the free-body diagram in [](#fig:applyingnewt
 ```
 The $y$ component of Newton's Second Law tells us that the normal force exerted by the road must equal the weight of the car:
 ```{math}
+
+\begin{align*}
 \sum F_y = N-F_g&=0\\
 \therefore N &=mg
+\end{align*}
 ```
 The $x$ component relates the force of friction to the radial acceleration (and thus to the speed):
 ```{math}
+
+\begin{align*}
 \sum F_x = f_s =ma_R&=m\frac{v^2}{R}\\
 \therefore f_s &= m\frac{v^2}{R}
+\end{align*}
 ```
 The force of friction must be less than or equal to $f_s\leq\mu_sN=\mu_smg$ (since $N=mg$ from the $y$ component of Newton's Second Law), which gives us a condition on the speed:
 ```{math}
+
+\begin{align*}
 f_s = m\frac{v^2}{R}&\leq\mu_smg\\
 v^2 &\leq \mu_s g R\\
 \therefore v &\leq \sqrt{\mu_s g R}
+\end{align*}
 ```
 Thus, if the speed is less than $\sqrt{\mu_s g R}$, the car will not skid and the magnitude of the force of static friction, which results in an acceleration towards the centre of the circle, will be smaller or equal to its maximal possible value.
 
@@ -599,13 +701,19 @@ The radial component of the acceleration will change the direction of the veloci
 
 The minimum speed for the ball at the top of the circle is given by the condition that the tension in the string is zero just at the top of the trajectory (position 3). The ball can still go around the circle because, at position 3, gravity is towards the centre of the circle and can thus give an acceleration that is radial, even with no tension. The $y$ component of Newton's Second Law, at position 3 gives:
 ```{math}
+
+\begin{align*}
 \sum F_y = -F_g &= ma_y\\
 \therefore a_y &=-g
+\end{align*}
 ```
 The magnitude of the acceleration is the radial acceleration, and is thus related to the speed at the top of the trajectory:
 ```{math}
+
+\begin{align*}
 a_R&=-a_y=g = \frac{v^2}{R}\\
 \therefore v_{min}&=\sqrt{gR}
+\end{align*}
 ```
 which is the minimum speed at the top of the trajectory for the ball to be able to continue along the circle. The tension in the string would change as the ball moves around the circle, and will be highest at the bottom of the trajectory, since the tension has to be bigger than gravity so that the net force at the bottom of the trajectory is upwards (towards the centre of the circle).
 
@@ -656,19 +764,26 @@ There is thus an "ideal speed" at which the force of static friction is precisel
 
 Let us model the situation where the force of static friction is identically zero so that we can determine the ideal speed for the banked curve. The only two forces on the car are thus its weight and the normal force. The $x$ and $y$ component of Newton's Second Law give:
 ```{math}
-:label: eq:applyingnewtonslaws:carbank_x
+
+\begin{align*}
 \sum F_x &= N\sin\theta = ma_R=m\frac{v^2}{R}\nonumber\\
 \therefore N\sin\theta &= m\frac{v^2}{R}
+\end{align*}
 ```
 ```{math}
-:label: eq:applyingnewtonslaws:carbank_y
+
+\begin{align*}
 \sum F_y &= N\cos\theta-F_g = 0\nonumber\\
 \therefore N\cos\theta&=mg
+\end{align*}
 ```
 We can divide Equation {eq}`eq:applyingnewtonslaws:carbank_x` by Equation {eq}`eq:applyingnewtonslaws:carbank_y`, noting that $\tan\theta=\sin\theta/\cos\theta$, to obtain:
 ```{math}
+
+\begin{align*}
 \tan\theta &= \frac{v^2}{gR}\\
 \therefore v_{ideal} &=\sqrt{gR\tan\theta}
+\end{align*}
 ```
 At this speed, the force of static friction is zero. In practice, one would use this equation to determine which bank angle to use when designing a road, so that the ideal speed is around the speed limit or the average speed of traffic. We leave it as an exercise to determine the maximal speed that the car can go around the curve before sliding out.
 
@@ -686,18 +801,27 @@ If we model your motion looking at you from the ground, we would include a force
 ```
 The $y$ component of Newton's Second Law in both frames of reference is the same:
 ```{math}
+
+\begin{align*}
 \sum F_y&=N-F_g=0\\
 \therefore N&=mg
+\end{align*}
 ```
 and simply tells us that the normal force is equal to the weight. In the reference frame of the ground, the $x$ component of Newton's Second Law gives:
 ```{math}
+
+\begin{align*}
 \sum F_x &= f_s = ma_R\\
 \therefore f_s &= m\frac{v^2}{R}
+\end{align*}
 ```
 In the frame of reference of the car, where your acceleration is zero and an inertial force of magnitude $F_I=mv^2/R$ is exerted on you, the $x$ component of Newton's Second Law gives:
 ```{math}
+
+\begin{align*}
 \sum F_x &= f_s-F_I = 0\\
 \therefore f_s - m\frac{v^2}{R} &= 0
+\end{align*}
 ```
 which of course, mathematically, is exactly equivalent. The inertial force is not a real force in the sense that it is not exerted by anything. It only comes into play because we are trying to use Newton's Laws in a non-inertial frame of reference. However, it does provide a good model for describing the sensation that we have of being pushed outwards when the car goes around a curve. Sometimes, people will refer to this force as a "centrifugal" force, which means "a force that points away from the centre". You should however remember that this is not a real force exerted on the object, but is the result of modelling motion in a non-inertial frame of reference.
 
@@ -756,18 +880,27 @@ A free-body diagram for the forces on the ant is shown in [](#fig:applyingnewton
 ```
 Newton's Second Law has to be written out in three components. The $z$ component relates the weight and normal force:
 ```{math}
+
+\begin{align*}
 \sum F_z &= N - F_g = 0\\
 \therefore N&=mg
+\end{align*}
 ```
 The $x$ component of Newton's Second Law is such that the $x$ component of the acceleration is its radial component:
 ```{math}
+
+\begin{align*}
 \sum F_x &= -f_s\cos\theta = -ma_R = -m\frac{v^2}{R}\\
 \therefore f_s\cos\theta &= m\frac{v^2}{R}
+\end{align*}
 ```
 The $y$ component of Newton's Second Law relates the tangential component of the force of static friction to the tangential component of the acceleration:
 ```{math}
+
+\begin{align*}
 \sum F_y &= f_s\sin\theta = ma_T \\
 \therefore f_s\sin\theta &= m\alpha R
+\end{align*}
 ```
 where we used the fact that the (linear) tangential acceleration, $a_T$, is related to the angular acceleration, $\alpha$, by:
 ```{math}
@@ -775,9 +908,12 @@ a_T = \alpha R
 ```
 Summarizing the three equations that we obtained from the three components of Newton's Second Law:
 ```{math}
+
+\begin{align*}
 f_s\cos\theta &= m\frac{v^2}{R}\\
 f_s\sin\theta &= m\alpha R\\
 N&=mg
+\end{align*}
 ```
 Also, note that the speed, $v(t)$ at some time $t$ is given by simple kinematics:
 ```{math}
@@ -785,22 +921,31 @@ v(t)=v_0+a_Tt=(0)+\alpha R t
 ```
 The ant will start to slip when the force of friction reaches its maximal amplitude, $f_s=\mu_sN=\mu_Smg$. The $x$ of Newton's Second Law can be used to find an expression for the time at which force of friction reaches its maximal value (in terms of the unknown angle $\theta$):
 ```{math}
+
+\begin{align*}
 f_s\cos\theta &= m\frac{v^2}{R}\\
 \mu_sg\cos\theta &= R\alpha^2t^2\\
 \therefore t &= \sqrt{\frac{\mu_sg\cos\theta}{R\alpha^2}}
+\end{align*}
 ```
 We can use the $y$ component to determine the angle $\theta$:
 ```{math}
+
+\begin{align*}
 f_s\sin\theta &= m\alpha R\\
 \mu_sg\sin\theta &= \alpha R\\
 \therefore \sin\theta &= \frac{\alpha R}{\mu_s g}\\
 \therefore \theta &= \sin^{-1}\left( \frac{\alpha R}{\mu_s g}  \right)=\sin^{-1}\left( \frac{(1 {\rm rad/s^2})(0.1 {\rm m})}{(0.5)(9.8 {\rm N/kg})}  \right)\\
 &=1.17 {\rm \degree}
+\end{align*}
 ```
 The angle is very small, and we see that the force of friction is mostly directed towards the centre of the circle. The radial acceleration is thus much larger than the tangential acceleration. We can then use the angle to find the time using the expression we derived above:
 ```{math}
+
+\begin{align*}
 t &= \sqrt{\frac{\mu_sg\cos\theta}{R\alpha^2}}= \sqrt{\frac{(0.5)(9.8 {\rm N/kg})\cos(1.17 {\rm \degree})}{(0.1 {\rm m})(1 {\rm rad/s^2})^2}}\\
 &=7.0 {\rm s}
+\end{align*}
 ```
 :::
 
@@ -887,23 +1032,32 @@ The forces are illustrated in [](#fig:applyingnewtonslaws:conicalpendulumfbd), a
 ```
 The $y$ component of Newton's Second law gives the relation between the tension in the string, the weight, and the angle $\theta$
 ```{math}
+
+\begin{align*}
 \sum F_y&=0 \\
 F_T\cos\theta -F_g&=0 \\
 F_T\cos\theta&=mg \\
 \therefore F_T&=\frac{mg}{\cos\theta} \\
+\end{align*}
 ```
 * b. In order for the mass to move in a circle, the net force must be directed towards the centre of the circle at all times. The $x$ component of Newton's Second Law, combined with our expression for the magnitude of the tension, $F_T$, allows us to determine the speed of the mass:
 ```{math}
+
+\begin{align*}
 \sum F_x&=ma_r \\
 F_T\sin\theta&=m\frac{v^2}{R}\\
 \left(\frac{mg}{\cos\theta}\right)\sin\theta &=m\frac{v^2}{R}\\
 g\tan\theta&=\frac{v^2}{R}\\
 \therefore v &= \sqrt{gR\tan\theta}
+\end{align*}
 ```
 * c. Now that we know the speed, we can easily find the period, $T$, of the motion:
 ```{math}
+
+\begin{align*}
 T&=\frac{2\pi R}{v} \\
 &=\frac{2\pi R}{\sqrt{gR\tan\theta }}=2\pi\sqrt{\frac{R}{g\tan\theta}}
+\end{align*}
 ```
 :::
 
@@ -914,8 +1068,11 @@ We need to determine if the speed of Barb and Kenny is large enough for them to 
 
 Writing Newton's Second Law in the vertical direction, for the case where only the weight acts on Barb or Kenny (mass $m$), when they are going at speed $v$
 ```{math}
+
+\begin{align*}
 mg &= ma_R = m\frac{v^2}{R}\\
 \therefore v &= \sqrt{gR} = \sqrt{(9.8 {\rm m/s^2})(22 {\rm m})}=14.68 {\rm m/s}
+\end{align*}
 ```
 This corresponds to the minimum speed that they must have at the top of the loop to make it around. If they go faster, the normal force from their seat (downwards, since they are upside-down), would result in a larger net force towards the centre of the circle. This situation corresponds to the normal force from their seat just barely reaching 0 at the top of the loop. Since the roller coaster is quoted as having a speed of $15 {\rm m/s}$ at the top of the loop, they will just barely make it. However, this is way too close to the minimal speed to not fall out of the roller coaster, so Kenny is correct in being sceptical! The engineers designing the roller coaster should include a much bigger safety margin! 
 :::

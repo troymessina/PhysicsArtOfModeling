@@ -133,10 +133,13 @@ The velocity, $v_x$, is simply the difference in position, $\Delta x=x_f-x_o$, b
 ```
 where the arrow indicates the limit as the changes become very small. For the rock in one dimension as it moves from 0.5 m to 1.0 m over the duration of 1 second,
 ```{math}
+
+\begin{align*}
 \vec v &= \frac{x_f-x_o {\rm m}}{t_f-t_o {\rm s}} \hat x \\
 \vec v &= \frac{1.0-0.5 {\rm m}}{1-0 {\rm s}} \hat x \\
 \vec v &= \frac{0.5 {\rm m}}{1 {\rm s}} \hat x \\
 \vec v &= \left(0.5, 0, 0\right) {\rm m/s}
+\end{align*}
 ```
 Therefore, the rock has a velocity of 0.5 m/s along the $x$-direction. We arbitrarily chose the change in position over the first second. However, with constant velocity, one could choose any time interval and the corresponding change in position to obtain the same constant velocity.
 
@@ -146,10 +149,12 @@ Rearranging the first line of equation {eq}`eqn:momentumandcm:constveleq` we see
 ```
 Therefore, we can think of the position equation {eq}`eqn:MomentumAndCM:1dxvst_noa` as
 ```{math}
-:label: eqn:MomentumAndCM:1dxvst_noa2
+
+\begin{align*}
 x(t) &= x_o+ \Delta x \\
 x(t) &= x_o + v\Delta t\\
 x(t) &= x_o + vt
+\end{align*}
 ```
 We often use $t$ for $\Delta t$ to indicate some total amount of time has passed since our initial position was recorded. As long as the velocity is constant, we can use equation {eq}`eqn:MomentumAndCM:1dxvst_noa` to determine the position of an object between any two points in time. In one dimension, the vector quantity of velocity indicates the speed of an object along a single coordinate direction. The vector can be positive (along the $+x$-direction) or negative (along the $-x$-direction).
 :::{note} Example 4.1
@@ -224,13 +229,19 @@ rock.make_trail=True
 ### Constant momentum in 2D and 3D
 As mentioned previously, a momentum vector is a three-dimensional equation.
 ```{math}
+
+\begin{align*}
 m\vec v &= mv_x \hat x + mv_y \hat y + mv_z \hat z\\ 
 m\vec v &= m\left( v_x \hat x + v_y \hat y + v_z \hat z\right)
+\end{align*}
 ```
 The velocity vector can be written in differential form
 ```{math}
+
+\begin{align*}
 \vec v &= \frac{dx}{dt}\hat x + \frac{dy}{dt}\hat y + \frac{dz}{dt}\hat z\\
 \vec v &= \left(\frac{dx}{dt},\frac{dy}{dt},\frac{dz}{dt}\right)
+\end{align*}
 ```
 Additionally, the position of an object with constant velocity can be written as three kinematic equations corresponding to {eq}`eqn:MomentumAndCM:1dxvst_noa`.
 ```{math}
@@ -271,10 +282,13 @@ This speed is in two dimensions where the angle is
 ```
 Using the speed and angle, we can write the vector velocity of Train B
 ```{math}
+
+\begin{align*}
 \vec{v_B} &= v_B\cos(\theta)\hat{x} + v_B\sin(\theta)\hat{y}\\
 \vec{v_B} &= 74.5\cos(26.6^o)\hat{x} + 74.5\sin(26.6^o)\hat{y}\\
 \vec{v_B} &= 66.6\hat{x} + 33.3\hat{y}~{\rm km/hr}\\
 \vec{v_B} &= (66.6, 33.3, 0)~{\rm km/hr}
+\end{align*}
 ```
 * c) Train A has momentum 
 ```{math}
@@ -298,17 +312,22 @@ We define a velocity changing with time as **acceleration**.
 ```
 where the arrow indicates the limit as the changes become very small. Just as we did with constant velocity and position, we can write kinematic equations of motion for velocity by applying the definition of acceleration.
 ```{math}
-:label: eqn:MomentumAndCM:nonConstv
+
+\begin{align*}
 v(t) &= v_o + \Delta v \\
 v(t) &= v_o + a\Delta t\\
 v(t) &= v_o + a t
+\end{align*}
 ```
 With constant acceleration, we can use graphical analysis to determine equations describing velocity and position as a function of time. In [](#fig:MomentumAndCM:graphkinematics)(a), a graph of constant acceleration is shown. Since acceleration is a change in velocity over time, we know that multiplying an acceleration by time gives a change in velocity. See Equation {eq}`eqn:MomentumAndCM:nonConstv`. Notice that this change in velocity is the same as the area of the acceleration vs. time graph. The change in velocity is, of course, added to any pre-existing velocity an object has. This is depicted in [](#fig:MomentumAndCM:graphkinematics)(b) as a blue shaded triangle. Since a change in position comes from velocity and changes in velocity, we can apply the same analysis to the velocity vs. time graph to obtain an expression for position vs. time. For constant motion (no acceleration), the position changes as the red shaded area of [](#fig:MomentumAndCM:graphkinematics)(b), which has an area $\Delta x = v_ot$. This results in Equation {eq}`eqn:MomentumAndCM:1dxvst_noa2` and is shown in [](#fig:MomentumAndCM:graphkinematics)(c) as a red straight line. We would expect a linear form after seeing this for velocity with constant acceleration. To analyze motion with constant acceleration, we must add both the red rectangular and the blue triangular areas in [](#fig:MomentumAndCM:graphkinematics)(b). The rectangular area again has area $v_ot$. The triangular area is $1/2 (v_f-v_o) t=1/2\Delta v t= 1/2at^2$. Putting these together, one obtains the following set of kinematic equations.
 
 ```{math}
+
+\begin{align*}
 x(t) &= x_o + v_o t + \frac{1}{2} a t^2\\
 v(t) &= v_o + a t\\
 a(t) &= a
+\end{align*}
 ```
 We see that accelerated motion results in quadratic position vs. time.
 ```{figure} ./figures/MomentumAndCM/graphkinematics.png
@@ -321,9 +340,12 @@ Graphs depicting (a) constant acceleration, (b) constant and accelerated velocit
 
 If we assume the acceleration is constant with time, we can use integral calculus to determine equations describing position vs. time.
 ```{math}
+
+\begin{align*}
 x(t) &= \int v(t) dt\\
 x(t) &= \int \left(v_0 + at\right) dt\\
 x(t) &= x_o + v_o t + \frac{1}{2}at^2
+\end{align*}
 ```
 :::{note} Example 4.3
 A more realistic rock sliding on a frozen pond more is when the rock decelerates due to friction. If the rock has an initial velocity of $v_o=0.5~{\rm m/s}$ and slides for $t = 10~{\rm s}$ before coming to rest ($v(10{\rm s}) = 0~{\rm ms/s}$).
@@ -334,18 +356,24 @@ A more realistic rock sliding on a frozen pond more is when the rock decelerates
 :class: dropdown
 * a) We can use the kinematic equation for velocity as a function of time {eq}`eqn:MomentumAndCM:nonConstv`. This is one dimensional, and we only need to solve for the $x$-direction. We'll, therefore, ignore the vectors. 
 ```{math}
+
+\begin{align*}
 v(t) &= v_o + at\\
 0 &= 0.5 + a\cdot 10\\
 a &= \frac{-0.5}{10}\\
 a &= -0.05~{\rm m/s^2}
+\end{align*}
 ```
 Notice the acceleration is negative, indicating it is in the opposite direction of the initial velocity. This means the acceleration slows the rock.
 * b) Now, we can use the acceleration to solve for the final position of the rock at $t=5~{\rm s}$.
 ```{math}
+
+\begin{align*}
 x(t) &= x_o + v_o t+ \frac{1}{2}at^2\\
 x(10{\rm s}) &= 0.5 + 0.5\cdot 10 + \frac{1}{2}(-0.05)\cdot 10^2\\
 x(10{\rm s}) &= 0.5 + 5 - 2.5\\
 x(10{\rm s}) &= 3~{\rm m}
+\end{align*}
 ```
 Without friction, the rock slid 5 meters over 10 seconds and would have continued to slide at the same rate. Now, with friction, we see that the rock travels 3 meters over 10 seconds and stops sliding. 
 * c) Using the same time intervals as [](#tab:MomentumAndCM:1dmotion), we can use the equations from part a) and b) to calculate velocity and position at each time.
@@ -400,9 +428,12 @@ We can write the change in momentum as Newton's Second Law, since $m\vec a$ must
 ```
 The equation above is the original form in which Newton first developed his theory. It says that the net force on an object is equal to the rate of change of its momentum. **If the net force on the object is zero, then its momentum is constant** (as is its velocity). In terms of components, Newton's Second Law written for the rate of change of momentum is given by:
 ```{math}
+
+\begin{align*}
 \frac{dp_x}{dt} =& \sum F_x\\
 \frac{dp_y}{dt} =& \sum F_y\\
 \frac{dp_z}{dt} =& \sum F_z
+\end{align*}
 ```
 
 :::{note} Example 4.4
@@ -419,17 +450,26 @@ The total momentum of the particle is not conserved, because the sum of the forc
 ```
 Note that the $x$ and $y$ components of momentum are conserved, since there are no forces with components in that direction. We can find how the $z$ component of the momentum changes with time by taking the anti-derivative of the force with respect to time (from $t=0$ to $t=T$):
 ```{math}
+
+\begin{align*}
 \frac{dp_z}{dt} &= -mg\\
 dp_z &= -mg dt\\
+\end{align*}
 ```
 As long as the force does not depend on time (true for gravity near the Earth's surface), we can simply add up the total time that passes, which corresponds to a total change in momentum.
 ```{math}
+
+\begin{align*}
 dp_z &= -mg dt\\
 \Delta p_z &= -mg \Delta t
+\end{align*}
 ```
 Furthermore, if the initial time is zero ($t_o=0~{\rm s}$, and the initial momentum is zero ($p(t=0)=0$), we can write this result as
 ```{math}
+
+\begin{align*}
 p_z(T) &= -mgT\\
+\end{align*}
 ```
 If the initial momentum is not zero, the $z$ component of momentum, $p_z(T)$ at some time $T$, is given by its value at time $t=0$ ($p_o$) plus $-mgT$. If the object started at rest ($\vec v=0$), then the magnitude of the momentum, as a function of time, is given by:
 ```{math}
@@ -482,13 +522,19 @@ When we swat a fly with our hand, our hand exerts a force on the table surface d
 
 Let us estimate the average magnitude of the swatting force by considering the deceleration of our swatting hand and modelling the motion as one-dimensional. Let us assume that our swatting hand has a mass $m=1 {\rm kg}$ and that it is has a speed of $2 {\rm m/s}$ just before it makes contact. Furthermore, let us assume that it is in contact with the table for a period of time $\Delta t$. This allows us to find the average acceleration of our hand and thus the average force exerted by the table on our hand to stop it:
 ```{math}
+
+\begin{align*}
 a &= \frac{\Delta v}{\Delta t}\\
 \therefore F &= ma = m  \frac{\Delta v}{\Delta t}
+\end{align*}
 ```
 By Newton's Third Law, the force decelerating our hand has the same magnitude as the force that our hand exerts on the table, allowing us to calculate the impulse given to the person's hand:
 ```{math}
+
+\begin{align*}
 J &= F\Delta t =  \left(m  \frac{\Delta v}{\Delta t}\right) \Delta t = m\Delta v\\
 &=(1 {\rm kg})(2 {\rm m/s})=2 {\rm kg\cdot m/s}
+\end{align*}
 ```
 **Discussion:** Note that the impulse given to the table corresponds exactly to the change in momentum of the hand ($\Delta p=m\Delta v$).
 :::
@@ -499,10 +545,13 @@ So far, we calculated the impulse that is given by a single force. We can also c
 ```
 Compare this to Newton's Second Law written out using momentum:
 ```{math}
+
+\begin{align*}
 \frac{d}{dt}\vec p &= \vec F^{net}\\
 \int_{\vec p_A}^{\vec p_B} d\vec p &=  \int_{t_A}^{t_B}\vec F^{net} dt\\
 \vec p_B - \vec p_A &=  \int_{t_A}^{t_B}\vec F^{net}dt\\
 \therefore \Delta \vec p &= \int_{t_A}^{t_B}\vec F^{net}	 dt
+\end{align*}
 ```
 and we find that the net impulse received by a particle is precisely equal to its change in momentum:
 % boxed equation
@@ -525,8 +574,11 @@ where $v_A$ is the initial speed of the car, and the final momentum of either pe
 
 The change in momentum is equal to the impulse received by either person during a period of time $\Delta t$, which is related to the force that was exerted on them:
 ```{math}
+
+\begin{align*}
 J=F\Delta t &= \Delta p = -mv_A\\
 F&=-m \frac{v_A}{\Delta t}
+\end{align*}
 ```
 For the driver, this corresponds:
 ```{math}
@@ -580,12 +632,18 @@ Remember - "internal" and "external" are not magical properties of a specific ty
 ## Conservation of momentum
 Consider a system of two particles with momenta $\vec p_1$ and $\vec p_2$.  Newton's Second Law must hold for each particle:
 ```{math}
+
+\begin{align*}
 \frac{d\vec p_1}{dt}&=\sum_k \vec F_{1k}\\
 \frac{d\vec p_2}{dt}&=\sum_k \vec F_{2k}
+\end{align*}
 ```
 where $F_{ik}$ is the $k$-th force that is acting on particle $i$.  We can sum these two equations together:
 ```{math}
+
+\begin{align*}
 \frac{d\vec p_1}{dt}+\frac{d\vec p_2}{dt} &= \sum_k \vec F_{1k} + \sum_k \vec F_{2k}
+\end{align*}
 ```
 The quantity on the right is the sum of the forces exerted on particle 1 plus the sum of the forces exerted on particle 2. In other words, it is the sum of all of the forces exerted on all of the particles in the system, which we can write as a single sum. On the left hand side, we have the sum of the two time derivatives of the momenta, which is equal to the time-derivative of the sum of the momenta. We can thus re-write the equation as:
 ```{math}
@@ -605,7 +663,10 @@ because for every force that particle 1 exerts on particle 2, there will be an e
 ```
 Furthermore, if we introduce the "total momentum of the system", $\vec P=\vec p_1 + \vec p_2$, as the sum of the momenta of the individual particles, we find:
 ```{math}
+
+\begin{align*}
 \frac{d\vec P}{dt} &= \sum \vec F^{ext}
+\end{align*}
 ```
 which is the equivalent of Newton's Second Law for a system where, $\vec P$, is the total momentum of the system, and the sum of the forces is only over external forces to the system.
 
@@ -630,8 +691,11 @@ where the sum of the forces is the sum over all forces external to the system. T
 
 We already argued in the previous section that we can make all forces internal if we choose our system to be large enough. If we make the system be the Universe, then there are no forces external to the Universe, and the total momentum of the Universe must be constant:
 ```{math}
+
+\begin{align*}
 \frac{d\vec P^{Universe}}{dt} &= \sum_{Universe} \vec F^{ext} = 0 \\
 \therefore \vec P^{Universe}&=\text{constant}
+\end{align*}
 ```
 
 In summary, we saw that:
@@ -657,19 +721,28 @@ When the train collides with the car, it will exert a "collision" force on the c
 
 We can model this system in one dimension (along the track), defining our $x$ axis. We choose the ground as a frame of reference, the positive direction parallel to the initial velocity of the train, and the origin to be located where the car initially starts. Before the collision, the $x$ component of the momenta of the train (mass $Nm$) and car (mass $m$) are:
 ```{math}
+
+\begin{align*}
 p_{train}&=Nmv\\
 p_{car}&=0
+\end{align*}
 ```
 After the collision, the car is attached to the train (and thus has the same speed, $v'$), so the momenta of the train and car after the collision are:
 ```{math}
+
+\begin{align*}
 p'_{train}&=Nmv'\\
 p'_{car}&=mv'
+\end{align*}
 ```
 where the primes $'$ denote quantities after the collision. Applying conservation of momentum to the system, the total momentum before and after the collision must be equal:
 ```{math}
+
+\begin{align*}
 p_{train}+p_{car}&=p'_{train}+p'_{car}\\
 \therefore Nmv &= Nmv' +mv'\\
 \therefore v' &=\frac{N}{N+1}v
+\end{align*}
 ```
 and the speed of the train with the additional car attached is reduced by a factor $N/(N+1)$ compared to what it was before the collision.
 
@@ -679,9 +752,12 @@ E= \frac{1}{2}Nmv^2
 ```
 The total mechanical energy of the system, $E'$, after the collision is:
 ```{math}
+
+\begin{align*}
 E' &= \frac{1}{2}Nmv'^2 + \frac{1}{2}mv'^2 = \frac{1}{2}(N+1)mv'^2 \\
 &=\frac{1}{2}(N+1)m \left( \frac{N}{N+1}v \right)^2\\
 &=\frac{1}{2}m\frac{N^2}{N+1}v^2
+\end{align*}
 ```
 and we see that $E'<E$, and thus that the total mechanical energy of the system is not conserved (it is reduced after the collision).
 
@@ -716,9 +792,12 @@ The mechanical energy will not be conserved. You had to use chemical potential e
 
 Before the collision, both you and your friend have zero speed, and thus zero kinetic energy and zero momentum. After the collision, your friend has a velocity $\vec v_f$. We can use conservation of total momentum, $\vec P$, to determine your velocity, $\vec v_s$, after the collision. 
 ```{math}
+
+\begin{align*}
 \vec P &=\vec P'\\
 0 &= m_s\vec v_s + m_f\vec v_f\\
 \therefore \vec v_s &= -\frac{m_f}{m_s}\vec v_f
+\end{align*}
 ```
 where primes ($'$) denote a quantity after the collision. We find that your velocity is in the opposite direction from that of your friend. Before the collision, the mechanical energy, $E$, of the system is zero (we can ignore gravitational potential energy, since everything is in the horizontal plane). After the collision, the mechanical energy, $E'$, is:
 ```{math}
@@ -746,41 +825,59 @@ A proton of mass $m_p$ colliding inelastically with a nucleus of mass $m_N$.
 :class: dropdown
 As a system, we consider the proton and the nucleus together, so that the total momentum of the system is conserved during the collision, as no other external forces are exerted on the two particles (since they are in vacuum). Because momentum is a vector, each component of the total momentum, $\vec P$, is conserved during the collision:
 ```{math}
+
+\begin{align*}
 \vec P &= \vec P'\\
 \therefore P_x &= P'_x\\
 \therefore P_y &= P'_y
+\end{align*}
 ```
 where, as usual, primes ($'$) denote quantities after the collision. After the collision, both particles will have velocity vectors that have $x$ and $y$ components. Let the velocity vector of the nucleus after the collision be $\vec v'_N$ and let $\phi$ be the angle that it makes with the $x$ axis, as shown in [](#fig:momentumandcm:protonnucleus). 
 
 We can start by considering the conservation of the $x$ component of the total momentum. The initial and final momenta in the $x$ direction are given by:
 ```{math}
+
+\begin{align*}
 P_x &= m_p v_p\\
 P'_x &= m_p v'_p\cos\theta + m_N v'_N\cos\phi\\
 \therefore m_p v_p &= m_p v'_p\cos\theta + m_N v'_N\cos\phi
+\end{align*}
 ```
 which gives us a first equation to determine the final velocity of the nucleus.
 
 The $y$ component of the total momentum before the collision is zero since we chose the coordinate system such that the initial velocity of the proton is in the $x$ direction. The initial and final momenta in the $y$ direction are given by:
 ```{math}
+
+\begin{align*}
 P_y &= 0\\
 P'_y &= m_p v'_p\sin\theta - m_N v'_N\sin\phi\\
 \therefore m_p v'_p\sin\theta &= m_N v'_N\sin\phi
+\end{align*}
 ```
 which gives us a second equation to solve for the velocity of the nucleus. With the two equations from momentum conservation, we can solve for the magnitude and direction of the velocity of the nucleus. From the $y$ component of momentum conservation, we can find an expression for the speed of the nucleus:
 ```{math}
+
+\begin{align*}
 m_p v'_p\sin\theta &= m_N v'_N\sin\phi\\
 \therefore v'_N &= \frac{m_p}{m_N}v'_p\sin\theta \frac{1}{\sin\phi}
+\end{align*}
 ```
 which we can substitute into the $x$ equation for momentum conservation to solve for the angle $\phi$:
 ```{math}
+
+\begin{align*}
 m_p v_p &= m_p v'_p\cos\theta + m_N v'_N\cos\phi\\
 m_p v_p &= m_p v'_p\cos\theta + m_N\frac{m_p}{m_N}v'_p\sin\theta \frac{\cos\phi}{\sin\phi} \\
 v_p &= v'_p\cos\theta + v'_p\sin\theta \frac{1}{\tan\phi}\\
 \therefore \tan\phi &=  \frac{v'_p\sin\theta}{v_p-v'_p\cos\theta}
+\end{align*}
 ```
 If we were given numbers for the initial and final speed of the proton, as well as the angle $\theta$, we would be able to find a value for the angle $\phi$, which we could then use to determine the final speed of the nucleus:
 ```{math}
- v'_N &= \frac{m_p}{m_N}v'_p\sin\theta \frac{1}{\sin\phi}
+
+\begin{align*}
+v'_N &= \frac{m_p}{m_N}v'_p\sin\theta \frac{1}{\sin\phi}
+\end{align*}
 ```
 **Discussion:** By using the conservation of momentum equation and writing out the $x$ and $y$ components, we were able to find two equations to determine the magnitude and direction of the nucleus' velocity after the collision. In the limit where $m_N >> m_p$, the final speed of the nucleus would be very small (close to zero). 
 :::
@@ -802,40 +899,56 @@ A block of mass $M$ moves with velocity $\vec v_M$ in the $x$ direction, as show
 :class: dropdown
 Because this is an elastic collision, both the total momentum and total mechanical energy are conserved. Equating the total momentum before and after the collision, and considering only the $x$ component gives the following equation:
 ```{math}
+
+\begin{align*}
 \vec P &=\vec P'\\
 Mv_M+mv_m&=Mv'_M+mv'_m
+\end{align*}
 ```
 where the primes ($'$) correspond to the quantities after the collision. Note that, in principle, the $x$ components of the velocities ($v_M$, $v'_M$, $v_m$, $v'_m$) could be negative numbers if the corresponding block is moving in the negative $x$ direction.
 
 For the mechanical energy of the two blocks, we only need to consider their kinetic energy since their gravitational potential energies are the same before and after the collision on the horizontal surface. The total mechanical energy of the system, before and after the collision is given by:
 ```{math}
+
+\begin{align*}
 E &=E'\\
 \frac{1}{2}Mv_M^2+\frac{1}{2}mv_m^2&=\frac{1}{2}Mv'^2_M+\frac{1}{2}mv'^2_m\\
 \therefore Mv_M^2+mv_m^2&=Mv'^2_M+mv'^2_m
+\end{align*}
 ```
 where we cancelled the factor of one half in the last line. This gives two equations (conservation of energy and momentum) and two unknowns (the two speeds after the collision). This is not a linear system of equations, because the equation from conservation of energy is quadratic in the speeds.
 
 The following method allows many models for elastic collisions between two particles to be solved easily by converting the quadratic equation from energy conservation into an equation that is linear in the speeds. First, write both equations so that the quantities related to each particle are on opposite sides of the equation. For momentum, this gives:
 ```{math}
-:label: eqn:momentumandcm:exptemp
+
+\begin{align*}
 Mv_M+mv_m&=Mv'_M+mv'_m\nonumber\\
 \therefore M(v_M-v'_M) &= m(v'm-v_m)
+\end{align*}
 ```
 For conservation of energy, this gives:
 ```{math}
-:label: eqn:momentumandcm:exptemp2
+
+\begin{align*}
 Mv_M^2+mv_m^2&=Mv'^2_M+mv'^2_m\nonumber\\
 \therefore  M(v_M^2-v'^2_M)&= M(v'^2_m-v^2_m)
+\end{align*}
 ```
 which we can re-write as:
 ```{math}
+
+\begin{align*}
 M(v_M^2-v'^2_M)&= M(v'^2_m-v^2_m)\\
 M(v_M-v'_M)(v_M+v'_M)&= M(v'_m-v_m)(v'_m+v_m)
+\end{align*}
 ```
 We can then divide Equation {eq}`eqn:momentumandcm:exptemp2` by Equation {eq}`eqn:momentumandcm:exptemp`:
 ```{math}
+
+\begin{align*}
 \frac{M(v_M-v'_M)(v_M+v'_M)}{M(v_M-v'_M)}&= \frac{M(v'_m-v_m)(v'_m+v_m)}{m(v'm-v_m)}\\
 \therefore v_M+v'_M&=v'_m+v_m
+\end{align*}
 ```
 which gives us an equation that is much easier to work with, since it is linear in the speeds. If we re-arrange this last equation back so that quantities before and after the collision are on different sides of the equality:
 % boxed equation
@@ -846,31 +959,46 @@ we can see that the relative speed between $M$ and $m$ is the same before and af
 
 By using this equation with the original conservation of momentum equation, we now have two equations and two unknowns that are easy to solve:
 ```{math}
+
+\begin{align*}
 v_M-v_m &= - (v'_M-v'_m)\\
 Mv_M+mv_m&=Mv'_M+mv'_m
+\end{align*}
 ```
 Solving for $v'_m$ in both equations gives:
 ```{math}
+
+\begin{align*}
 v_M-v_m &= - (v'_M-v'_m)\\
 \therefore v'_m &= v_M+v'_M-v_m\\
 Mv_M+mv_m&=Mv'_M+mv'_m\\
 \therefore v'_m&=\frac{1}{m}(Mv_M+mv_m-Mv'_M)
+\end{align*}
 ```
 Equating the two expressions for $v'_m$ allows us to solve for $v'_M$:
 ```{math}
+
+\begin{align*}
 \frac{1}{m}(Mv_M+mv_m-Mv'_M)&=v_M+v'_M-v_m\\
 Mv_M+mv_m-Mv'_M&=mv_M+mv'_M-mv_m\\
 (M-m)v_M+2mv_m&=(M+m)v'_M\\
 \therefore v'_M&=\frac{M-m}{M+m}v_M+\frac{2m}{M+m}v_m
+\end{align*}
 ```
 One can easily solve for the other speed, $v'_m$:
 ```{math}
+
+\begin{align*}
 \therefore v'_m &= \frac{m-M}{M+m}v_m+\frac{2M}{M+m}v_M
+\end{align*}
 ```
 And writing these together:
 ```{math}
+
+\begin{align*}
 v'_M&=\frac{M-m}{M+m}v_M+\frac{2m}{M+m}v_m\\
 v'_m &= \frac{m-M}{M+m}v_m+\frac{2M}{M+m}v_M
+\end{align*}
 ```
 **Discussion:** The formulas that we obtained above are valid for any one dimensional elastic collision. 
 :::
@@ -899,8 +1027,11 @@ A proton elastically collides with a proton at rest.
 :class: dropdown 
 This example highlights a particular feature of elastic collisions when the two objects have the same mass and one of the objects is initially at rest. The conservation of momentum for the system comprised of the two protons can be written as:
 ```{math}
+
+\begin{align*}
 m\vec v_1 &= m\vec v'_1 + m\vec v'_2\\
 \vec v_1 &= \vec v'_1 + \vec v'_2
+\end{align*}
 ```
 where the left hand side corresponds to the initial total momentum and the right hand side to the total momentum after the collision. In the second line, we cancelled out the mass, and obtained a vector relation between the velocity vectors. We can graphically illustrate the vector relation as in [](#fig:momentumandcm:vsum) which shows the triangle that is formed by adding the two outgoing velocity vectors to obtain the initial velocity vector.
 ```{figure} figures/MomentumAndCM/vsum.png
@@ -912,8 +1043,11 @@ Graphical illustration of the relation between the initial and final velocity ve
 ```
 Conservation of kinetic energy for the collision can be written as:
 ```{math}
+
+\begin{align*}
 \frac{1}{2}mv_1^2 &= \frac{1}{2}mv'^2_1+\frac{1}{2}mv'^2_2\\
 v_1^2 &= v'^2_1+ v'^2_2
+\end{align*}
 ```
 where the left hand side corresponds to the initial kinetic energy and the right hand side to the final kinetic energy. We cancelled the mass and factor of one half in the second line. This last equation gives a relation between the magnitudes of the velocity vectors. By comparing the equation above to Pythagoras' theorem, and by inspecting the triangle in [](#fig:momentumandcm:vsum), it is clear that the triangle must be a right angle triangle, and thus that $\vec v'_1$ and $\vec v'_2$ must be perpendicular.
 :::
@@ -934,20 +1068,29 @@ In the frame of reference $S$, the total momentum, $\vec P$, of the two particle
 ```
 Consider a frame of reference, $S'$, that is moving with velocity, $\vec v_{CM}$, relative to the frame of reference $S$. In that frame of reference, the velocities of the two particles are different and given by:
 ```{math}
+
+\begin{align*}
 \vec v'_1&=\vec v_1- \vec v_{CM}\\
 \vec v'_2&=\vec v_2- \vec v_{CM}
+\end{align*}
 ```
 The total momentum, $\vec P'$, in the frame of reference $S'$ is then given by[^6]:
 ```{math}
+
+\begin{align*}
 \vec P' &= m_1\vec v'_1 + m_2 \vec v'_2\\
 &=m_1(\vec v_1- \vec v_{CM})+m_2(\vec v_2- \vec v_{CM})\\
 &= m_1\vec v_1 + m_2\vec v_2 - (m_1+m_2) \vec v_{CM}
+\end{align*}
 ```
 We can choose the velocity of the frame $S'$, $\vec v_{CM}$, such that the total momentum in that frame of reference is zero:
 ```{math}
+
+\begin{align*}
 \vec P' &= 0\\
 m_1\vec v_1 + m_2\vec v_2 - (m_1+m_2) \vec v_{CM} &=0\\
 \therefore \vec v_{CM} &= \frac{m_1\vec v_1 + m_2\vec v_2 }{m_1+m_2}
+\end{align*}
 ```
 This "special" frame of reference, in which the total momentum of the system is zero, is called the "centre of mass frame of reference". The velocity of centre of mass frame of reference can easily be obtained if there are $N$ particles involved instead of two:
 % boxed equation
@@ -972,15 +1115,21 @@ In the frame of reference of a lab, a block of mass $m$ has a velocity $\vec v_1
 :class: dropdown
 Since this is a one dimensional situation, we only need to evaluate the $x$ component of the velocity of the centre of mass:
 ```{math}
+
+\begin{align*}
 \vec v_{CM} &= \frac{m_1\vec v_1 + m_2\vec v_2 }{m_1+m_2}\\
 \therefore v_{CMx} &= \frac{m_1 v_{1x} + m_2 v_{2x}}{m_1+m_2}\\
 &=\frac{mv_1 + m(0) }{m+m}\\
 &=\frac{1}{2}v_1
+\end{align*}
 ```
 The centre of mass frame of reference is thus also moving along the positive direction of the $x$ axis, but with a speed that is half of that of the moving block. In the centre of mass frame of reference, it appears that the block on the left is slower than in the lab frame and that the block on the right is moving in the negative $x$ direction. The velocities of the two blocks in the centre of mass frame of reference are given by:
 ```{math}
+
+\begin{align*}
 v'_1&=v_1-v_{CMx}=\frac{1}{2}v_1\\
 v'_2&=(0)-v_{CMx}=-\frac{1}{2}v_1
+\end{align*}
 ```
 Thus, in the reference frame of the centre of mass, the two block are approaching each other with the same speed ($v_1/2$), which is only the case because the two blocks have the same mass. The blocks, as viewed in the centre of mass frame of reference, are shown in [](#fig:momentumandcm:cmframe).
 ```{figure} figures/MomentumAndCM/cmframe.png
@@ -1070,8 +1219,11 @@ Consider a system comprised of $N$ point particles. Each point particle $i$, of 
 ```
 where $\vec F_{ik}$ is the k-th force exerted on particle $i$. We can write Newton's Second Law once for each of the $N$ particles, and we can sum those $N$ equations together:
 ```{math}
+
+\begin{align*}
 \sum_k \vec F_{1k} + \sum_k \vec F_{2k} + \sum_k \vec F_{3k} +\dots &= m_1\vec a_1 + m_2 \vec a_2 + m_3 \vec a_3 + \dots\\
-\sum \vec F = \sum_i m_i \vec a_i 
+\sum \vec F = \sum_i m_i \vec a_i
+\end{align*}
 ```
 where the sum on the left is the sum of all of the forces exerted on all of the particles in the system[^8] and the sum over $i$ on the right is over all of the $N$ particles in the system. As we have already seen, the sum of all of the forces exerted on the system can be divided into separate sums over external and internal forces:
 ```{math}
@@ -1079,8 +1231,10 @@ where the sum on the left is the sum of all of the forces exerted on all of the 
 ```
 and the sum over the internal forces is zero[^9]. We can thus write that the sum of the external forces exerted on the system is given by:
 ```{math}
-:label: eqn:momentumandcm:cmtemp1
+
+\begin{align*}
 \sum \vec F^{ext}&= \sum_i m_i \vec a_i
+\end{align*}
 ```
 We would like this equation to resemble Newton's Second Law, but for the system as a whole. Suppose that the system has a total mass, $M$:
 ```{math}
@@ -1088,8 +1242,10 @@ M = m_1 + m_2 + m_3 +\dots = \sum_i m_i
 ```
 we would like to have an equation of the form:
 ```{math}
-:label: eqn:momentumandcm:cmtemp2
+
+\begin{align*}
 \sum \vec F^{ext}&=M\vec a_{CM}
+\end{align*}
 ```
 to describe the system as a whole. However, it is not (yet) clear what is accelerating with acceleration, $\vec a_{CM}$, since the particles in the system could all be moving in different directions. Suppose that there is a point in the system, whose position is given by the vector, $\vec r_{CM}$, in such a way that the acceleration above is the second time-derivative of that position vector:
 ```{math}
@@ -1097,15 +1253,21 @@ to describe the system as a whole. However, it is not (yet) clear what is accele
 ```
 We can compare Equations {eq}`eqn:momentumandcm:cmtemp1` and {eq}`eqn:momentumandcm:cmtemp2` to determine what the position vector $\vec r_{CM}$ corresponds to:
 ```{math}
+
+\begin{align*}
 \sum \vec F^{ext}&= \sum_i m_i \vec a_i = \sum_i m_i \frac{d^2 }{dt^2}\vec r_i \\
 \sum \vec F^{ext}&=M\vec a_{CM} = M \frac{d^2 }{dt^2}\vec r_{CM}\\
 \therefore M \frac{d^2 }{dt^2}\vec r_{CM}&= \sum_i m_i \frac{d^2 }{dt^2}\vec r_i
+\end{align*}
 ```
 Re-arranging, and noting that the masses are constant in time, and so they can be factored into the derivatives:
 ```{math}
+
+\begin{align*}
 \frac{d^2 }{dt^2}\vec r_{CM} &= \frac{1}{M}\sum_i m_i \frac{d^2 }{dt^2}\vec r_i\\
 \frac{d^2 }{dt^2}\vec r_{CM} &= \frac{d^2 }{dt^2}\left(\frac{1}{M}\sum_i m_i\vec r_i \right)\\
 \therefore \vec r_{CM} &=\frac{1}{M}\sum_i m_i\vec r_i
+\end{align*}
 ```
 where in the last line we set the quantities that have the same time derivative equal to each other[^10]. $\vec r_{CM}$ is the vector that describes the position of the "centre of mass" (CM). The position of the centre of mass is described by Newton's Second Law applied to the system as a whole:
 % boxed equation
@@ -1122,10 +1284,13 @@ we find that it can be modelled by considering the block as a single particle of
 
 The position of the centre of mass is a vector equation that is true for each coordinate:
 ```{math}
+
+\begin{align*}
 \vec r_{CM} &=\frac{1}{M}\sum_i m_i\vec r_i\nonumber\\
 \therefore x_{CM} &= \frac{1}{M}\sum_i m_i x_i\nonumber\\
 \therefore y_{CM} &= \frac{1}{M}\sum_i m_i y_i\nonumber\\
 \therefore z_{CM} &= \frac{1}{M}\sum_i m_i z_i
+\end{align*}
 ```
 The centre of mass is that **position in a system that is described by Newton's Second Law when it is applied to the system as a whole**. The centre of mass can be thought of as an average position for the system (it is the average of the positions of the particles in the system, weighted by their mass). By describing the position of the centre of mass, we are not worried about the detailed positions of the all of the particles in the system, but rather only the average position of the system as a whole. In other words, this is equivalent to viewing the whole system as a single particle of mass $M$ located at the position of the centre of mass. 
 
@@ -1140,17 +1305,23 @@ Consider, for example, a person throwing a dumbbell that is made from two spheri
 
 If we take the derivative with respect to time of the centre of mass position, we obtain the velocity of the centre of mass, and its components, which allow us to describe how the system is moving as a whole:
 ```{math}
+
+\begin{align*}
 \vec v_{CM} &= \frac{d}{dt}\vec r_{CM} = \frac{1}{M}\sum_i m_i\frac{d}{dt}\vec r_i=  \frac{1}{M}\sum_i m_i\vec v_i\nonumber\\
 \therefore v_{CMx} &= \frac{1}{M}\sum_i m_i v_{ix}\nonumber\\
 \therefore v_{CMy} &= \frac{1}{M}\sum_i m_i v_{iy}\nonumber\\
 \therefore v_{CMz} &= \frac{1}{M}\sum_i m_i v_{iz}
+\end{align*}
 ```
 Note that this is the same velocity that we found earlier for the velocity of the centre of mass frame of reference. In the centre of mass frame of reference, the total momentum of the system is zero. This makes sense, because the centre of mass represents the average position of the system; if we move "with the system", then the system appears to have zero momentum.
 
 We can also define the total momentum of the system, $\vec P$, in terms of the total mass, $M$, of the system and the velocity of the centre of mass:
 ```{math}
+
+\begin{align*}
 \vec P &= \sum m_i \vec v_i = \frac{M}{M}\sum m_i \vec v_i\\
 &=M\vec v_{CM}
+\end{align*}
 ```
 which we can also use in Newton's Second Law:
 ```{math}
@@ -1160,10 +1331,13 @@ and again, we see that the total momentum of the system is conserved if the net 
 
 Finally, we can also define the acceleration of the centre of mass by taking the time derivative of the velocity:
 ```{math}
+
+\begin{align*}
 \vec a_{CM} &= \frac{d}{dt}\vec v_{CM} = \frac{1}{M}\sum_i m_i\frac{d}{dt}\vec v_i=  \frac{1}{M}\sum_i m_i\vec a_i\nonumber\\
 \therefore a_{CMx} &= \frac{1}{M}\sum_i m_i a_{ix}\nonumber\\
 \therefore a_{CMy} &= \frac{1}{M}\sum_i m_i a_{iy}\nonumber\\
 \therefore a_{CMz} &= \frac{1}{M}\sum_i m_i a_{iz}
+\end{align*}
 ```
 
 :::{note} Example 4.13
@@ -1181,10 +1355,13 @@ Since this is a one-dimensional problem, we can define an $x$ axis that is co-li
 
 The Sun, Earth, and Mars are not point particles. However, because they are spherically symmetric, their centres of mass correspond to their geometric centres. We can thus model them as point particles with the mass of the body located at the corresponding geometric centre. If $r_E=1.50e11 {\rm m}$ ($r_M=2.28e11 {\rm m}$) is the distance from the centre of the Earth (Mars) to the centre of the Sun, then the position of the centre of mass is given by:
 ```{math}
+
+\begin{align*}
 x_{CM} &= \frac{1}{M}\sum_i m_i x_i\\
 &=\frac{M_S(0)+M_Er_E+M_Mr_M}{M_S+M_E+M_M}\\
 &=\frac{(2.00e30 {\rm kg})(0)+(5.97e24 {\rm kg})(1.50e11 {\rm m})+(6.39e23 {\rm kg})(2.28e11 {\rm m})}{(2.00e30 {\rm kg})+(5.97e24 {\rm kg})+(6.39e23 {\rm kg})}\\
 &=5.21e5 {\rm m}
+\end{align*}
 ```
 The centre of mass of the Sun-Earth-Mars system during a syzygy is located approximately $500 {\rm km}$ from the centre of the Sun.
 
@@ -1207,14 +1384,20 @@ We consider the system comprised of the three people and their rafts and model e
 
 We can define a coordinate system such that the origin is located where Alice is initially located, the $x$ axis is in the direction from Alice to Brice, and the $y$ axis is in the direction from Alice to Chloe. The initial positions of Alice, Brice, and Chloe are thus:
 ```{math}
+
+\begin{align*}
 \vec r_A &= 0\hat x + 0\hat y\\
 \vec r_B &= r_{AB}\hat x + 0\hat y\\
 \vec r_C &= 0\hat x + r_{AC}\hat y
+\end{align*}
 ```
 respectively. The $x$ and $y$ coordinates of the centre of mass are thus:
 ```{math}
+
+\begin{align*}
 x_{CM} &= \frac{1}{M}\sum_i m_i x_i = \frac{m_A(0) + m_Br_{AB} + m_C(0)}{m_A + m_B + m_C}=\left(\frac{m_B}{m_A + m_B + m_C}\right)r_{AB}\\
 y_{CM} &= \frac{1}{M}\sum_i m_i y_i = \frac{m_A(0) + m_B(0) + m_Cr_{AC}}{m_A + m_B + m_C}=\left(\frac{m_C}{m_A + m_B + m_C}\right)r_{AC}\\
+\end{align*}
 ```
 which corresponds to the position where the three rafts will meet, relative to the initial position of Alice.
 
@@ -1245,8 +1428,11 @@ A small mass element of length $\Delta x$, will thus have a mass, $\Delta m$, gi
 
 If there are $N$ mass elements that make up the rod, the $x$ position of the centre of mass of the rod is given by:
 ```{math}
+
+\begin{align*}
 x_{CM} &= \frac{1}{M}\sum_i^N m_i x_i = \frac{1}{M}\sum_i^N \Delta m x_i \\
 &=\frac{1}{M}\sum_i^N \lambda \Delta x x_i\\
+\end{align*}
 ```
 where $x_i$ is the $x$ coordinate of the $i$-th mass element. Of course, we can take the limit over which the length, $\Delta x$, of each mass element goes to zero to obtain an integral:
 ```{math}
@@ -1254,9 +1440,12 @@ x_{CM} = \lim_{\Delta x \to 0} \frac{1}{M}\sum_i^N \lambda \Delta x x_i = \frac{
 ``` 
 where the discrete variable $x_i$ became the continuous variable $x$, and $\Delta x$ was replaced by $dx$ (which is the same, but indicates that we are taking the limit of $\Delta x \to 0$). The integral is easily found:
 ```{math}
+
+\begin{align*}
 x_{CM} &= \frac{1}{M} \int_0^L \lambda x dx = \frac{1}{M}\lambda \left[ \frac{1}{2} x^2\right]_0^L\\
 &=\frac{1}{M}\lambda \frac{1}{2} L^2 = \frac{1}{M}\left( \frac{M}{L}\right) \frac{1}{2} L^2\\
 &=\frac{1}{2}L
+\end{align*}
 ```
 where we substituted the definition of $\lambda$ back in to find, as expected, that the centre of mass of the rod is half its length away from one of the ends.
 
@@ -1271,17 +1460,23 @@ dm = \lambda(x) dx
 ```
 The $x$ position of the centre of mass is thus found the same way as before, except that the linear mass density is now a function of $x$:
 ```{math}
+
+\begin{align*}
 x_{CM} &= \frac{1}{M} \int_0^L \lambda(x) x dx =\frac{1}{M} \int_0^L (2a + 3bx) x dx=\frac{1}{M} \int_0^L (2ax + 3bx^2) dx\\
 &=\frac{1}{M}  \left[  ax^2 + bx^3  \right]_0^L\\
 &=\frac{1}{M} (aL^2 + bL^3 )
+\end{align*}
 ```
 
 In general, for a continuous object, the position of the centre of mass is given by:
 ```{math}
+
+\begin{align*}
 \vec r_{CM} &=\frac{1}{M}\int \vec r dm\nonumber\\
 \therefore x_{CM} &= \frac{1}{M}\int x dm\nonumber\\
 \therefore y_{CM} &=  \frac{1}{M}\int y dm\nonumber\\
 \therefore z_{CM} &=  \frac{1}{M}\int z dm\\
+\end{align*}
 ```
 where in general, one will need to write $dm$ in terms of something that depends on position (or a constant) so that the integrals can be evaluated over the spatial coordinates ($x$,$y$,$z$) over the range that describe the object. In the above, we wrote $dm = \lambda dx$ to express the mass element in terms of spatial coordinates.
 :::{note} Example 4.15
@@ -1311,15 +1506,21 @@ dm = \rho dV = \rho \pi r^2(z) dz
 ```
 where $dV = \pi r(z)^2 dz$ is the volume of the disk with radius $r(z)$ and thickness $dz$. The radius of the infinitesimal disk depends on its $z$ position, since the radii of the different disks must describe a parabola:
 ```{math}
+
+\begin{align*}
 z(r) &= \frac{1}{a^2}r^2\\
 r(z) &= a\sqrt z\\
 \therefore dm &= \rho \pi r^2(z) dz= \rho \pi a^2  z dz
+\end{align*}
 ```
 where we introduced the constant $a$ so that the dimensions are correct. The constant $a$ determines how "steep" the parabolic sides are. The $z$ coordinate of the centre of mass is thus given by:
 ```{math}
+
+\begin{align*}
 z_{CM} &=  \frac{1}{M}\int z dm =\frac{1}{M}\int_0^h z  (\rho \pi a^2 z dz)=\frac{\rho \pi a^2}{M}\int_0^h z^2dz \\
 &=\frac{\rho \pi a^2}{M}\left[ \frac{1}{3}z^3 \right]_0^h\\
 &=\frac{\rho \pi a^2}{3M}h^3
+\end{align*}
 ```
 However, we are not quite done, since we do not know the total mass, $M$, of the water. To find the total mass of water, $M$, we proceed in an analogous way, and determine the value of the sum (integral) of all of the mass elements:
 ```{math}
@@ -1327,7 +1528,10 @@ M = \int dm = \int_0^h \rho \pi a^2 z dz = \rho \pi a^2 \left[ \frac{1}{2}z^2 \r
 ```
 Substituting this value for $M$, we can determine the $z$ coordinate of the centre of mass of the full bowl:
 ```{math}
+
+\begin{align*}
 z_{CM} &=\frac{\rho \pi a^2}{3M}h^3 = \frac{2\rho \pi a^2}{3\rho \pi a^2 h^2}h^3=\frac{2}{3}h
+\end{align*}
 ```
 Regardless of the actual shape of the parabola (the parameter $a$), the centre of mass will always be two thirds of the way up from the bottom of the bowl.
 
@@ -1370,11 +1574,16 @@ In particular, if the object has gone around the whole circle, then $s=2\pi R$ (
 
 By using the angle, $\theta$, instead of $x$ and $y$, we are effectively using polar coordinates, with a fixed radius. As we already saw, the $x$ and $y$ positions are related to $\theta$ by:
 ```{math}
+
+\begin{align*}
 x(t) &= R\cos(\theta(t))\\
 y(t) &= R\sin(\theta(t))\\
+\end{align*}
 ```
 where $R$ is a constant. For an object moving along the circle, we can write its position vector, $\vec r(t)$, as:
 ```{math}
+
+\begin{align*}
 \vec r(t)&= \begin{pmatrix}
            x(t) \\
            y(t) \\
@@ -1383,9 +1592,12 @@ where $R$ is a constant. For an object moving along the circle, we can write its
            \cos(\theta(t)) \\
            \sin(\theta(t)) \\
          \end{pmatrix}
+\end{align*}
 ```
 and the velocity vector is thus given by:
 ```{math}
+
+\begin{align*}
 \vec v(t) &=\frac{d}{dt}\vec r(t) 
 =\frac{d}{dt} R \begin{pmatrix}
            \cos(\theta(t)) \\
@@ -1398,20 +1610,26 @@ and the velocity vector is thus given by:
  &= R \begin{pmatrix}
            -\sin(\theta(t))\frac{d\theta}{dt} \\
            \cos(\theta(t))\frac{d\theta}{dt} \\
-         \end{pmatrix}     \\  
+         \end{pmatrix}     \\
+\end{align*}
 ```
 where we used the Chain Rule to calculate the time derivatives of the trigonometric functions (since $\theta(t)$ is function of time). We can write this in component form:
 ```{math}
-:label: eqn:MomentumAndCM:vcircle
+
+\begin{align*}
 v_x &= -R\sin(\theta(t))\frac{d\theta}{dt}\nonumber\\
 v_y &= R\cos(\theta(t))\frac{d\theta}{dt}
+\end{align*}
 ```
 The magnitude of the velocity vector is given by:
 ```{math}
+
+\begin{align*}
 ||\vec v|| &=\sqrt{ v_x^2+v_y^2}\\
 &=\sqrt{ \left(-R\sin(\theta(t))\frac{d\theta}{dt}\right)^2+\left(R\cos(\theta(t))\frac{d\theta}{dt}\right)^2}\\
 &=\sqrt{ R^2\left( \frac{d\theta}{dt}\right)^2[\sin^2(\theta(t))+\cos^2(\theta(t)]}\\
 &=R\left |\frac{d\theta}{dt}\right|
+\end{align*}
 ```
 The position and velocity vectors are illustrated in [](#fig:MomentumAndCM:vcircle) for an angle $\theta$ in the first quadrant ($0<\theta<\frac{\pi}{2}$).
 ```{figure} figures/DescribingMotionInND/vcircle.png
@@ -1425,9 +1643,12 @@ In this case, you can note that the $x$ component of the velocity is negative (f
 
 We can simplify our description of motion along the circle by using either $s(t)$ or $\theta(t)$ instead of the vectors for position and velocity. If we use $s(t)$ to represent position along the circumference ($s=0$ where the circle intersects the $x$ axis), then the velocity along the $s$ axis is:
 ```{math}
+
+\begin{align*}
 v_s(t)&=\frac{d}{dt}s(t)\\
 &=\frac{d}{dt}R\theta(t)\\
 &=R\frac{d\theta}{dt}
+\end{align*}
 ```
 where we used the fact that $\theta=s/R$ to convert from $s$ to $\theta$. The velocity along the $s$ axis is thus precisely equal to the magnitude of the two-dimensional velocity vector (derived above), which makes sense since the velocity vector is tangent to the circle (and thus in the $s$ "direction").
 
@@ -1437,9 +1658,12 @@ s(t)=s_0+v_st
 ```
 or, in terms of $\theta$:
 ```{math}
+
+\begin{align*}
 \theta(t)&=\frac{s(t)}{R}=\frac{s_0}{R}+\frac{v_s}{R}t\\
 &=\theta_0 + \frac{d\theta}{dt}t\\
 &=\theta_0 + \omega t
+\end{align*}
 ```
 ```{math}
 \boxed{\omega = \frac{d\theta}{dt}}
@@ -1455,42 +1679,60 @@ Similarly, if the object is accelerating, we can define an **angular acceleratio
 ```
 which can directly be related to the acceleration in the $s$ direction, $a_s(t)$:
 ```{math}
+
+\begin{align*}
 a_s(t) &= \frac{d}{dt}v_s\\
 &=\frac{d}{dt}\omega R=R\frac{d\omega}{dt}
+\end{align*}
 ```
 ```{math}
 \boxed{a_s(t)=R\alpha }
 ```
 Thus, the linear quantities (those along the $s$ axis) can be related to the angular quantities by multiplying the angular quantities by $R$:
 ```{math}
+
+\begin{align*}
 s&=R\theta\\
 v_s&=R\omega\\
 a_s&=R\alpha
+\end{align*}
 ```
 If the object started at $t=0$ with a position $s=s_0$ ($\theta=\theta_0$), and an initial linear velocity $v_{0s}$ (angular velocity $\omega_0$), and has a **constant linear acceleration** around the circle, $a_s$ (angular acceleration, $\alpha$), then the position of the object can be described using either the linear or the angular quantities:
 ```{math}
+
+\begin{align*}
 s(t) &= s_0+v_{s0}t+\frac{1}{2}a_s t^2\\
 \theta(t) &= \theta_0+\omega_0t+\frac{1}{2}\alpha t^2
+\end{align*}
 ```
 
 We can compute the acceleration **vector** and identify components that are parallel and perpendicular to the velocity vector:
 ```{math}
+
+\begin{align*}
 \vec a&=\vec a_{\parallel}(t) + \vec a_{\bot}(t)\\
 &=\frac{dv}{dt}\hat v(t)+v\frac{d\hat v}{dt}\\
+\end{align*}
 ```
 The first term, $\vec a_{\parallel}(t)=\frac{dv}{dt}\hat v(t)$, is parallel to the velocity vector $\hat v$, and has a magnitude given by:
 ```{math}
+
+\begin{align*}
 ||\vec a_{\parallel}(t)||&=\frac{dv}{dt}=\frac{d(R\omega)}{dt}=R\alpha
+\end{align*}
 ```
 That is, the component of the acceleration vector that is parallel to the velocity is precisely the acceleration in the $s$ direction (the linear acceleration). This component of the acceleration is responsible for increasing (or decreasing) the speed of the object and is zero if the object goes around the circle with a constant speed (linear or angular). 
 
 As we saw earlier, the perpendicular component of the acceleration, $\vec a_{\bot}(t)$, is responsible for changing the direction of the velocity vector (as the object continuously changes direction when going in a circle). When the motion is around a circle, this component of the acceleration vector is called ``centripetal'' acceleration (i.e. acceleration pointing towards the centre of the circle, as we will see). We can calculate the centripetal acceleration in terms of our angular variables, noting that the unit vector in the direction of the velocity is $\hat v=-\sin(\theta)\hat x+\cos(\theta)\hat y$:
 ```{math}
+
+\begin{align*}
 \vec a_{\bot}(t)&=v\frac{d\hat v}{dt}\\
 &=(\omega R)\frac{d}{dt} \left[-\sin(\theta)\hat x+\cos(\theta)\hat y\right]\\
 &=\omega R \left[-\frac{d}{dt}\sin(\theta)\hat x+\frac{d}{dt}\cos(\theta)\hat y\right]\\
 &=\omega R \left[-\cos(\theta)\frac{d\theta}{dt}\hat x-\sin(\theta)\frac{d\theta}{dt}\hat y\right]\\
 &=\omega R [-\cos(\theta)\omega\hat x-\sin(\theta)\omega\hat y]
+\end{align*}
 ```
 ```{math}
 \boxed{\vec{a}_{\bot}(t)=\omega^2 R[-\cos(\theta)\hat{x}-\sin(\theta)\hat{y}]}
@@ -1532,20 +1774,29 @@ When an object is moving around in a circle, it will typically complete more tha
 
 The period, $T$, is defined to be the time that it takes to complete one revolution around the circle. If the object has constant angular speed $\omega$, we can find the time, $T$, that it takes to complete one full revolution, from $\theta=0$ to $\theta=2\pi$:
 ```{math}
+
+\begin{align*}
 \omega&=\frac{\Delta \theta}{T}=\frac{2\pi}{T}\nonumber\\
+\end{align*}
 ```
 ```{math}
 \boxed{T=\frac{2\pi}{\omega}}
 ```
 We would obtain the same result using the linear quantities; in one revolution, the object covers a distance of $2\pi R$ at a speed of $v$:
 ```{math}
+
+\begin{align*}
 v&=\frac{2\pi R}{T}\\
 T&=\frac{2\pi R}{v}=\frac{2\pi R}{\omega R}=\frac{2\pi}{\omega}
+\end{align*}
 ```
 
 The frequency, $f$, is defined to be the inverse of the period:
 ```{math}
+
+\begin{align*}
 f&=\frac{1}{T}=\frac{\omega}{2\pi}
+\end{align*}
 ```
 and has SI units of ${\rm Hz}={\rm s^{-1}}$. Think of frequency as the number of revolutions completed per second. Thus, if the frequency is $f= 1 {\rm Hz}$, the object goes around the circle once per second. Given the frequency, we can of course obtain the angular velocity:
 ```{math}
@@ -1631,30 +1882,45 @@ We can always choose in which frame of reference to model a collision. In some c
 
 If a system has a total mass $M$, then one can use Newton's Second Law to describe its motion:
 ```{math}
+
+\begin{align*}
 \sum \vec F^{ext} &= M \vec a_{CM}\\
 \sum \vec F^{ext} &=\frac{d}{dt} \vec P
+\end{align*}
 ```
 where the sum of the forces is over all of the external forces on the system. The acceleration vector, $\vec a_{CM}$, describes the motion of the "centre of mass" of the system. $\vec P=M\vec v_{CM}$ is the total momentum of the system.
 
 The centre of mass of a system is a mass-weighted average of the positions of all of the particles of mass $m_i$ and position $\vec r_i$ that comprise the system:
 ```{math}
+
+\begin{align*}
 \vec r_{CM} &=\frac{1}{M}\sum_i m_i\vec r_i
+\end{align*}
 ```
 The vector equation can be broken into components to find the $x$, $y$, and $z$ component of the position of the centre of mass. Similarly, one can also define the velocity of the centre of mass of the system, in terms of the individual velocities, $\vec v_i$, of the particles in the system:
 ```{math}
+
+\begin{align*}
 \vec v_{CM} &= \frac{1}{M}\sum_i m_i\vec v_i
+\end{align*}
 ```
 Finally, one can define the acceleration of the centre of mass of the system, in terms of the individual accelerations, $\vec a_i$, of the particles in the system:
 ```{math}
+
+\begin{align*}
 \vec a_{CM} &=  \frac{1}{M}\sum_i m_i\vec a_i
+\end{align*}
 ```
 
 If the system is a continuous object, we can find its centre of mass using a sum (integral) of infinitesimally small mass elements, $dm$, weighted by their position:
 ```{math}
+
+\begin{align*}
 \vec r_{CM} &=\frac{1}{M}\int \vec r dm\\
 \therefore x_{CM} &= \frac{1}{M}\int x dm\\
 \therefore y_{CM} &=  \frac{1}{M}\int y dm\\
 \therefore z_{CM} &=  \frac{1}{M}\int z dm
+\end{align*}
 ```
 The strategy to set up the integrals above is usually to express the mass element, $dm$, in terms of the position and density of the material of which the object is made. One can then integrate over position in the range defined by the dimensions of the object.
 
@@ -1676,27 +1942,42 @@ The strategy to set up the integrals above is usually to express the mass elemen
 ```
 **Newton's Second Law for a \\ system:**
 ```{math}
+
+\begin{align*}
 \sum \vec F^{ext} &= M \vec a_{CM}\\
 \sum \vec F^{ext} &=\frac{d}{dt} \vec P
+\end{align*}
 ```
 **Position of the Centre of Mass \\ of a system:**
 ```{math}
-\vec r_{CM} &=\frac{1}{M}\sum_i m_i\vec r_i 
+
+\begin{align*}
+\vec r_{CM} &=\frac{1}{M}\sum_i m_i\vec r_i
+\end{align*}
 ```
 **Velocity of the Centre of Mass \\ of a system:**
 ```{math}
+
+\begin{align*}
 \vec v_{CM} &= \frac{1}{M}\sum_i m_i\vec v_i \\
+\end{align*}
 ```
 **Acceleration of the Centre of Mass \\ of a system:**
 ```{math}
+
+\begin{align*}
 \vec a_{CM} &=  \frac{1}{M}\sum_i m_i\vec a_i \\
+\end{align*}
 ```
 **Position of the Centre of Mass for a \\ continuous object:**
 ```{math}
+
+\begin{align*}
 \vec r_{CM} &=\frac{1}{M}\int \vec r dm\\
 \therefore x_{CM} &= \frac{1}{M}\int x dm\\
 \therefore y_{CM} &=  \frac{1}{M}\int y dm\\
 \therefore z_{CM} &=  \frac{1}{M}\int z dm
+\end{align*}
 ```
 :::
 
@@ -1776,10 +2057,13 @@ The collision between the bullet and pendulum is inelastic, because some of the 
 
 In order to model the pendulum's motion we first apply conservation of momentum to determine the speed, $v'$, of the pendulum and embedded bullet just after the collision. Applying conservation of momentum in the $x$ direction to the system formed by the pendulum and the bullet, just before and after the collision, we have:
 ```{math}
+
+\begin{align*}
 P &= mv\\
 P' &= (M+m)v'\\
 \therefore mv &= (M+m)v'\\
 \therefore v' &= \frac{m}{m+M}v
+\end{align*}
 ```
 where $P$ and $P'$ are the initial and final momenta of the system, respectively. The pendulum with the bullet embedded in it will thus have a speed of $v'$ at the bottom of the pendulum's motion, before it swings upwards. 
 
@@ -1793,11 +2077,14 @@ E' = (m+M)gh
 ```
 Applying conservation of mechanical energy allows us to find the initial speed of the bullet:
 ```{math}
+
+\begin{align*}
 E &= E'\\
 \frac{1}{2}(m+M) v'^2 &= (m+M)gh\\
 v'^2 &= 2gh\\
 \left( \frac{m}{m+M}v\right)^2&= 2gh\\
 \therefore v &= \frac{m+M}{m} \sqrt{2gh}
+\end{align*}
 ```
 where is the second last line we used the expression for $v'$ that we obtained from conservation of momentum.
 
@@ -1817,38 +2104,56 @@ v_{CM} = \frac{Mv_M+mv_m}{m+M}
 ```
 where we note that $v_m$ is a negative number, since the block of mass $m$ is moving in the negative $x$ direction. The total momentum, $\vec P^{CM}$, in the centre of mass frame of reference must be zero. Writing this out for the $x$ component and transforming the velocities of the two blocks into the centre of mass frame of reference:
 ```{math}
+
+\begin{align*}
 P^{CM}_x = M(v_M-v_{CM})+m(v_m-v_{CM})&=0\\
 \therefore (v_m-v_{CM}) &= -\frac{M}{m}(v_M-v_{CM})
+\end{align*}
 ```
 Also note that we can write the velocity difference $v_M-v_{CM}$ without using the centre of mass velocity:
 ```{math}
+
+\begin{align*}
 v_M-v_{CM} &= v_M-\frac{Mv_M+mv_m}{m+M}=\frac{1}{m+M}(v_M(m+M)-Mv_M-mv_m)\\
 &=\frac{m}{m+M}(v_M-v_m)
+\end{align*}
 ```
 We can then use conservation of energy in the centre of mass frame to determine the maximal compression of the spring. Before the collision, the total mechanical energy in the system, $E$, is the sum of the kinetic energies of the two blocks (as the spring is not compressed):
 ```{math}
+
+\begin{align*}
 E&=\frac{1}{2}m(v_m-v_{CM})^2+\frac{1}{2}M(v_M-v_{CM})^2\\
 &=\frac{1}{2}\frac{M^2}{m}(v_M-v_{CM})^2+\frac{1}{2}M(v_M-v_{CM})^2\\
 &=\frac{1}{2}M \left( 1 + \frac{M}{m}\right) (v_M-v_{CM})^2\\
 &=\frac{1}{2}M \left(\frac{m+M}{m} \right)(v_M-v_{CM})^2\\
 &=\frac{1}{2}M \left(\frac{m+M}{m} \right)\left(\frac{m}{m+M}(v_M-v_m)\right)^2\\
 &=\frac{1}{2} \left(\frac{mM}{m+M}\right)(v_M-v_m)^2
+\end{align*}
 ```
 where we used our expressions above to simplify the expression. When the spring is maximally compressed, the two blocks are at rest and the mechanical energy of the system, $E'$, is all "stored" as spring potential energy:
 ```{math}
+
+\begin{align*}
 E'&=\frac{1}{2}kx^2
+\end{align*}
 ```
 where $x$ is the distance by which the spring is compressed. Equating the two allows us to determine the maximal compression of the spring:
 ```{math}
+
+\begin{align*}
 E &= E' \\
 \frac{1}{2} \left(\frac{mM}{m+M}\right)(v_M-v_m)^2 &= \frac{1}{2}kx^2\\
 \therefore x &= \sqrt{\frac{1}{k} \left(\frac{mM}{m+M}\right)}(v_M-v_m)
+\end{align*}
 ```
 **Discussion:** By modelling the collision in the centre of mass frame of reference, we were easily able to determine the maximal compression of the spring. This would have been more difficult in the lab frame of reference, because the two blocks would still be moving when the spring is maximally compressed, so we would have needed to determine their speeds to determine the total mechanical energy when the spring is compressed.
 
 When we calculated the initial kinetic energy, we found that it was given by:
 ```{math}
+
+\begin{align*}
 E=\frac{1}{2} \left(\frac{mM}{m+M}\right)(v_M-v_m)^2 &=\frac{1}{2}M_{red}(v_M-v_m)^2
+\end{align*}
 ```
 The combination of masses in parentheses is called the "reduced mass" of the system, and is a sort of effective mass that can be used to model the system as a whole. 
 :::
@@ -1887,9 +2192,12 @@ y = R\sin\theta
 ```
 Now that we have expressed $dm$ and $y$ in terms of $\theta$, we can determine the $y$ position of the centre of mass:
 ```{math}
+
+\begin{align*}
 y_{CM}  &= \frac{1}{M}\int y dm =  \frac{1}{M}\int_0^\pi R\sin\theta \lambda Rd\theta\\
 &= \frac{R^2\lambda}{M}\int_0^\pi \sin\theta d\theta = \frac{R^2\lambda}{M} \bigl[-\cos\theta\bigr]_0^\pi\\
 &=\frac{2R^2\lambda}{M}=\frac{2R}{\pi}
+\end{align*}
 ```
 where in the last equality, we used the expression for the mass per unit length, $\lambda$, obtained above.
 :::

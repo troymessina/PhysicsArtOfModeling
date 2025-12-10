@@ -57,8 +57,11 @@ Placing $+Q$ at the origin of a coordinate system, the force exerted on $+q$, wh
 ```
 The work done by the electric force when $+q$ moves from $r_A$ to $r_B$ is given by:
 ```{math}
+
+\begin{align*}
 W&=\int_A^B \vec F^E\cdot d\vec r=\int_{\vec r_A}^{\vec r_B} \left(k\frac{Qq}{r^2}\hat r\right)\cdot d\vec r=kQq \int_{r_A}^{r_B} \frac{1}{r^2}dr\\
 &=kQq \left[\frac{-1}{r} \right]_{r_A}^{r_B}=-\left(\frac{kQq}{r_B}-\frac{kQq}{r_A}\right)
+\end{align*}
 ```
 where we noted that, since $\vec F^E$ and $d\vec r$ are parallel, their scalar product is simply the product of their magnitudes. By comparing with [](#eqn:potential:potentialwork), we can identify the potential energy, $U(\vec r)$, of a charge, $+q$, located at a relative position, $\vec r$, from a point charge, $+Q$, as:
 ```{math}
@@ -107,13 +110,19 @@ Four charges of varying magnitude are fixed in position. If the electric potenti
 # Electric potential
 As you recall, we defined the **electric field**, $\vec E(\vec r)$, to be the **electric force per unit charge**. By defining an electric field everywhere in space, we were able to easily determine the force on any test charge, $q$, whether the test charge is positive or negative (since the sign of $q$ will change the direction of the force vector, $q\vec E$):
 ```{math}
+
+\begin{align*}
 \vec E(\vec r) &= \frac{\vec F^E(\vec r)}{q}\\
 \therefore \vec F^E(\vec r)&=q\vec E(\vec r)
+\end{align*}
 ```
 Similarly, we define the **electric potential**, $V(\vec r)$, to be the **electric potential energy per unit charge**. This allows us to define electric potential, $V(\vec r)$, everywhere in space, and then determine the potential energy of a specific charge, $q$, by simply multiplying $q$ with the electric potential at that position in space.
 ```{math}
+
+\begin{align*}
 V(\vec r) &= \frac{ U(\vec r)}{q}\\
 \therefore U(\vec r)&= q V(\vec r)
+\end{align*}
 ```
 The S.I. unit for electric potential is the "volt" (V). Electric potential, $V(\vec r)$, is a scalar field whose value is "the electric potential" at that position in space. Say that the electric potential at a position in space is  $V=10 {\rm V}$. The above formula tells us that a positive charge $q=1 {\rm C}$, located at that position, will have a potential energy of $U=10 {\rm J}$. Similarly, a negative charge, $q=-1 {\rm C}$, will have negative potential energy, $U=-10 {\rm J}$, at the same location.
 
@@ -135,8 +144,11 @@ Electric potential increases along the $x$ axis. A proton and an electron are pl
 
 If the only force exerted on a particle is the electric force, and the particle moves in space such that the electric potential changes by $\Delta V$, we can use conservation of energy to determine the corresponding change in kinetic energy of the particle:
 ```{math}
+
+\begin{align*}
 \Delta E &= \Delta U + \Delta K = 0\\
 \Delta U &= q\Delta V\\
+\end{align*}
 ```
 ```{math}
 \boxed{\therefore \Delta K = -q \Delta V}
@@ -145,8 +157,11 @@ where $\Delta E$ is the change in total mechanical energy of the particle, which
 
 In order to describe the energies of particles such as electrons, it is convenient to use a different unit of energy than the Joule, so that the quantities involved are not orders of magnitude smaller than 1. A common choice is the "electron volt", eV}. One electron volt corresponds to the energy acquired by a particle with a charge of $e$ (the charge of the electron) when it is accelerated by a potential difference of $1 {\rm V}$:
 ```{math}
+
+\begin{align*}
 \Delta E &= q\Delta V\\
 1 {\rm eV}&=(e)(1 {\rm V})=1.6\times 10^{-19} {\rm J}
+\end{align*}
 ```
 An electron that has accelerated from rest across a region with a $150 {\rm V}$ potential difference across it will have a kinetic of $150 {\rm eV}=2.4\times 10^{-17} {\rm J}$. As you can see, it is easier to describe the energy of an electron in electron volts than Joules.
 
@@ -166,19 +181,31 @@ It is often useful in physics to take previously learned concepts and compare th
 	
 Suppose that an object with a large mass, $M$, is sitting in space. Now place an object of a much smaller mass, $m$, at any distance, $r$, from the centre of $M$. The gravitational potential energy of the small mass is given by the following formula:
 ```{math}
+
+\begin{align*}
 U_g&=\frac{GMm}{r}
+\end{align*}
 ```
 Which is very similar to the formula for electrical potential energy:
 ```{math}
+
+\begin{align*}
 U(\vec r)&=\frac{kQq}{r}
+\end{align*}
 ```	
 Now, if we were to remove the mass $m$ from its position, we would no longer have an object with gravitational potential energy. However, we could still describe the gravitational potential for the point, $r$, which would result in gravitational potential energy when any mass $m$ is placed there. This is the gravitational equivalent to electric potential, and can be defined as:
 ```{math}
+
+\begin{align*}
 V_g&=\frac{U_g}{m}
+\end{align*}
 ```
 which is also very similar to the formula for electric potential:
 ```{math}
+
+\begin{align*}
 V_E&=\frac{U_E}{q}
+\end{align*}
 ```
 This comparison is illustrated in [](#fig:potential:gravvselec).
 ```{figure} figures/Potential/gravvselec.png
@@ -220,7 +247,10 @@ Conversely, we found that when an **electron moves from a region of high electri
 ## Electric potential from electric field
 At the beginning of [Section %s](#sec:potential:potentialdefinition), we determined the potential energy of a point charge, $q$, in the presence of another point charge, $Q$ ([](#fig:potential:potential)). This was done by calculating the work done by the Coulomb (electric) force exerted by charge $Q$ on $q$. We can write the same integral for the work done by the electric force on $q$, but using the electric field, $\vec E$, to write the force:
 ```{math}
+
+\begin{align*}
 W&=\int_A^B \vec F^E\cdot d\vec r=\int_A^B q \vec E\cdot d\vec r=q \int_A^B  \vec E\cdot d\vec r
+\end{align*}
 ```
 where we recognized that the charge, $q$, is constant and can come out of the integral. The integral that is left is thus the work done by the electric field, $\vec E$, *per unit charge*. In other words, this is the negative change in electric potential:
 ```{math}
@@ -235,8 +265,11 @@ V(\vec r)=-\int \vec E\cdot d\vec r + C
 ```
 The relation between electric potential and electric field is analogous to the relation between electric potential energy and electric force:
 ```{math}
+
+\begin{align*}
 \Delta V &=V(\vec r_B)-V(\vec r_A)=-\int_A^B  \vec E\cdot d\vec r\\
 \Delta U &=U(\vec r_B)-U(\vec r_A)=-\int_A^B  \vec F^E\cdot d\vec r
+\end{align*}
 ```
 as the bottom equation is just $q$ times the first equation. We can think of electric potential being to potential energy what electric field is to electric force. Electric potential and electric field are electric potential energy and electric force, *per unit charge*, respectively.
 
@@ -246,7 +279,10 @@ For a point charge, $Q$, located at the origin, the electric field at some posit
 ```
 The potential difference between location $A$ (at position $\vec r_A$) and location $B$ (at position $\vec r_B$), as in [](#fig:potential:potential), is given by:
 ```{math}
+
+\begin{align*}
 \Delta V &=- \int_A^B  \vec E\cdot d\vec r= -\int_{\vec r_A}^{\vec r_B}  \frac{kQ}{r^2}\hat r\cdot d\vec r=-\left(\frac{kQ}{r_B}-\frac{kQ}{r_A}\right)
+\end{align*}
 ```
 and we note that we can write a function for the electric potential, $V(\vec r)$, at a distance $r$ from a point charge, $Q$, as:
 ```{math}
@@ -299,23 +335,32 @@ What is the electric potential at the edge of a hydrogen atom (a distance of $1 
 :class: dropdown
 We can easily calculate the electric potential, a distance of $1 \overset{\circ}{\rm A}$ from a proton, since this corresponds to the potential from a point charge (with $C=0$):
 ```{math}
+
+\begin{align*}
 V(\vec r)&=\frac{kQ}{r}\\
 &=\frac{(9\times 10^{9} {\rm N\cdot m^2/C^{2}})(1.6\times 10^{-19} {\rm C})}{(1\times 10^{-10} {\rm m})}\\
 &=14.4 {\rm V}
+\end{align*}
 ```
 We can calculate the potential energy of the electron (relative to infinity, where the potential is $0 {\rm V}$, since we chose $C=0$):
 ```{math}
+
+\begin{align*}
 U&=(-e)V\\
 &=(-1.6\times 10^{-19} {\rm C})(14.4 {\rm V})=-14.4 {\rm eV}\\
 &=-2.3\times 10^{-18} {\rm J}
+\end{align*}
 ```
 
 where we also expressed the potential energy in electron volts. In order to remove the electron from the hydrogen atom, we must exert a force (do work) until the electron is infinitely far from the proton. At infinity, the potential energy of the electron will be zero (by our choice of $C=0$). When moving the electron from the hydrogen atom to an infinite distance away, we must do positive work to counter the attractive force from the proton. The work that we must do is exactly equal to the change in potential energy of the electron (and equal to the negative of the work done by the force exerted by the proton):
 ```{math}
+
+\begin{align*}
 W&=\Delta U\\
 &=(U_{final}-U_{initial})\\
 &=(0 {\rm J}--2.3\times 10^{-18} {\rm J})\\
 &=2.3\times 10^{-18} {\rm J}
+\end{align*}
 ```
 The positive work that we must do, exerting a force that is opposite to the electric force, is positive and equal to $2.3\times 10^{-18} {\rm J}$, or $14.4 {\rm eV}$. If you look up the ionization energy of hydrogen, you will find that it is $13.6 {\rm eV}$, so that this very simplistic model is quite accurate (we could improve the model by adjusting the proton-electron distance so that the potential is $13.6 {\rm V}$). 
 
@@ -348,11 +393,14 @@ Note that the electric field outside the region between the two plates is zero e
 
 We can now determine the potential difference between the two plates, since we know the electric field in that region. Using the coordinate system that is shown, we calculate the potential difference between the positive plate located at $x=L$ and the negative plate located at $x=0$:
 ```{math}
+
+\begin{align*}
 \Delta V &=V(L)-V(0)\\
 &=- \int_0^L  \vec E\cdot d\vec x\\
 &=-\int_0^L\frac{-\sigma}{\epsilon_0} \hat x \cdot d\vec x\\
 &=\frac{\sigma}{\epsilon_0}\int_0^L dx\\
 &=\frac{\sigma}{\epsilon_0}L
+\end{align*}
 ```
 where we recognized that $\hat x$ and $d\vec x$ are parallel. It is very easy to get the wrong sign when calculating potential differences, so be careful!
 
@@ -360,13 +408,18 @@ Since the potential difference, $\Delta V=V(L)-V(0)$, is positive, the plate at 
 
 In general, if the electric field is constant, the change in potential between two points separated by a distance, $L$, along an axis that is anti-parallel with the field (in this example, the field points in the negative $x$ direction) is given by:
 ```{math}
+
+\begin{align*}
 \Delta V &=- \int_0^L  \vec E\cdot d\vec x\\
 &=E\int_0^L dx\\
 &= EL
+\end{align*}
 ```
 
 Note that we can only calculate the difference in electric potential between plates, not the actual value of the potential, $V$. If we want to define a specific value of electric potential, we need to choose a location where we define $0 {\rm V}$ to be. By convention, when possible, one chooses the negative plate to be the location of $0 {\rm V}$. In order to determine the electric potential anywhere between the two plates, we can calculate the potential difference between the plate at $x=0$ (the one at $0 {\rm V}$) and some position between the plates along the $x$ axis ($x<L$):
 ```{math}
+
+\begin{align*}
 \Delta V &=V(x)-V(0)\\
 &=-\int_0^x E \hat x \cdot d\vec x\\
 &= Ex \\
@@ -374,6 +427,7 @@ Note that we can only calculate the difference in electric potential between pla
 \therefore V(x)&=V(0)+Ex\\
 &=Ex\\
 &=\frac{\sigma}{\epsilon_0}x
+\end{align*}
 ```
 where we find that the electric potential increases **linearly** between its value at the negative plate ($0 {\rm V}$) and its value at the positive plate ($EL$). Of course, we could have chosen any value of the electric potential for the negative plate, which is equivalent to choosing the value of the arbitrary constant, $C$.
 
@@ -456,8 +510,11 @@ V(r)=\frac{kQ}{r}
 ```
 In order to draw equipotential lines every $10 {\rm V}$, the radii of the corresponding equipotential circles, for $V=10 {\rm V}$, $V=20 {\rm V}$, $V=30 {\rm V}$, etc., are given by:
 ```{math}
+
+\begin{align*}
 r&=\frac{kQ}{V}\\
 r_{10V}&=\frac{kQ}{(10 {\rm V})}\quad r_{20V}=\frac{kQ}{(20 {\rm V})}\quad r_{30V}=\frac{kQ}{(30 {\rm V})}\quad \dots
+\end{align*}
 ```
 
 # Calculating electric potential from charge distributions
@@ -465,7 +522,10 @@ In this section, we give two examples of determining the electric potential for 
 1.  Model the charge distribution as the sum of infinitesimal point charges, $dq$, and add together the electric potentials, $dV$, from all charges, $dq$. This requires that one choose $0 {\rm V}$ to be located at infinity, so that the $dV$ are all relative to the same point.
 2.  Calculate the electric field (either as a integral or from Gauss' Law), and use:
 ```{math}
+
+\begin{align*}
 \Delta V &=V(\vec r_B)-V(\vec r_A)=-\int_A^B  \vec E\cdot d\vec r
+\end{align*}
 ```
 The first method is similar to how we calculated the electric field for distributed charges in [Chapter  %s](#chapter:chargesfields), but with the simplification that we only need to sum scalars instead of vectors. The second method was already introduced in this chapter.
 (ex:potential:ring)=
@@ -510,12 +570,17 @@ In this case, we can use Gauss' Law to determine the electric field at a certain
 
 By using a cylindrical surface of length, $L$, and radius, $r$, we can use Gauss' Law to determine the field at a distance, $r$, from the wire:
 ```{math}
+
+\begin{align*}
 \oint \vec E\cdot d\vec A&=\frac{Q^{enc}}{\epsilon_0}\\
 2\pi r L E&= \frac{\lambda L}{\epsilon_0}\\
 \therefore \vec E(r)&=\frac{\lambda}{2\pi\epsilon_0 r}\hat r
+\end{align*}
 ```
 Using the electric field, we can calculate the potential difference between two points that are at distances, $r_A$ and $r_B$, from the wire:
 ```{math}
+
+\begin{align*}
 \Delta V &=V(r_B)-V(r_A)\\
 &=-\int_{r_A}^{r_B}  \vec E\cdot d\vec r\\
 &=-\int_{r_A}^{r_B}  \left( \frac{\lambda}{2\pi\epsilon_0 r}\hat r \right)\cdot d\vec r\\
@@ -524,14 +589,18 @@ Using the electric field, we can calculate the potential difference between two 
 &=-\frac{\lambda}{2\pi\epsilon_0}\left[|\ln(r)|\right]_{r_A}^{r_B} \\
 &= -\frac{\lambda}{2\pi\epsilon_0}\ln\left(\frac{r_B}{r_A}\right)\\
 \therefore\Delta V &=\frac{\lambda}{2\pi\epsilon_0}\ln\left(\frac{r_A}{r_B}\right)
+\end{align*}
 ```
 where, in the second last line, we removed the absolute value from the logarithm, since $r_A<r_B$, and in the last line, we removed the minus sign by inverting the argument of the logarithm. Since we know the potential difference, $\Delta V$, for two points located at distances $r_B=2 {\rm cm}$ and $r_A=1 {\rm cm}$, we can determine the charge density on the wire:
 ```{math}
+
+\begin{align*}
 \Delta V &=V(r_B)-V(r_A)=-100 {\rm V}\\
 \Delta V &=\frac{\lambda}{2\pi\epsilon_0}\ln\left(\frac{r_A}{r_B}\right)\\
 \therefore \lambda &= \frac{2\pi\epsilon_0\Delta V}{\ln\left(\frac{r_A}{r_B}\right)}\\
 &=\frac{2\pi(8.85\times 10^{-12} {\rm C^2\cdot N^{-1}\cdot m^{-2}})(-100 {\rm V})}{\ln\left(\frac{1}{2}\right)}\\
 &=8.02\times 10^{-9} {\rm C/m}
+\end{align*}
 ```
 where, again, one needs to be very careful with the signs! Note that it also makes sense that the potential difference, $\Delta V =V(r_B)-V(r_A)$, is negative, since $r_A$ is closer to the positively charged wire. A positive charge at rest would move away from the positively charged wire, from $r_A$ to $r_B$, from high potential to low potential.
 
@@ -558,11 +627,17 @@ Thus, if two spheres are at the same electric potential, the one with the smalle
 
 Because a conducting sphere is symmetric, the charges will distribute themselves symmetrically around the whole outer surface of the sphere. The charge per unit area, $\sigma$, at the surface of the sphere is thus given by:
 ```{math}
+
+\begin{align*}
 \sigma &= \frac{Q}{4\pi R^2}
+\end{align*}
 ```
 The charge density can be related to the electric field at the surface of the sphere:
 ```{math}
+
+\begin{align*}
 E&=k\frac{Q}{R^2}=k\frac{4\pi R^2\sigma}{R^2}=4\pi\sigma k=\frac{\sigma}{\epsilon_0}
+\end{align*}
 ```
 where in the last equality, we used $k$ with $\epsilon_0$ and confirmed the general result from [Section %s](#sec:gauss:conductors), where we determined the electric field near a conductor with surface charge $\sigma$. 
 
@@ -577,17 +652,23 @@ Two conducting spheres are connected by a conducting wire. The charge $Q$ that w
 
 Because the charges on the large sphere can move around freely, some of them will move to the smaller sphere. Very quickly, the charges will stop moving and the spheres of radius $R_1$ and $R_2$ will end up carrying charges $Q_1$ and $Q_2$, respectively (we assume that the wire is small enough that negligible amounts of charge are distributed on the wire). Since the two conducting spheres are connected by a conductor, they form an equipotential, and are thus at the same voltage, $V$, relative to infinity. Since the two spheres are at the same electric potential, the electric field at the surface of each sphere are related:
 ```{math}
+
+\begin{align*}
 E_1&=\frac{V}{R_1}\\
 E_2&=\frac{V}{R_2}\\
 \therefore \frac{E_2}{E_1}&=\frac{R_1}{R_2}\\
 \therefore E_2&=E_1\frac{R_1}{R_2}
+\end{align*}
 ```
 and the electric field at the surface of the smaller sphere, $E_2$, is stronger since $R_2<R_1$. We can also compare the surface charge densities on the two spheres:
 ```{math}
+
+\begin{align*}
 E_1&=\frac{\sigma_1}{\epsilon_0}\\
 E_2&=\frac{\sigma_2}{\epsilon_0}\\
 \therefore \frac{\sigma_2}{\sigma_1}&=\frac{E_2}{E_1}=\frac{R_1}{R_2}\\
 \therefore \sigma_2&=\sigma_1 \frac{R_1}{R_2}
+\end{align*}
 ```
 and we find that the charge density is higher on the smaller sphere. Thus, there are more charges per unit area on the smaller sphere than the bigger sphere.
 
@@ -634,7 +715,10 @@ We can easily calculate the capacitance of a parallel plate capacitor. We model 
 ``` 
 In [Example 17.3](#ex:potential:parallelplates), we found an expression for the potential difference between two parallel plates:
 ```{math}
+
+\begin{align*}
 \Delta V &= \frac{\sigma}{\epsilon_0}L=\left(\frac{L}{A\epsilon_0}\right)Q
+\end{align*}
 ```
 Comparing with, $Q=C\Delta V$, the capacitance of the parallel plate capacitor is found to be:
 ```{math}
@@ -693,8 +777,11 @@ dW = \Delta Vdq
 ```
 since the charge $dq$ has now gained potential energy, $\Delta Vdq$. The potential difference is dependent on the (constant) capacitance of the capacitor, and the amount of charge, $q$, already stored on the plates:
 ```{math}
+
+\begin{align*}
 q &= C\Delta V\\
 \therefore \Delta V&=\frac{q}{C}
+\end{align*}
 ```
 In order to determine the work required to transfer a total amount of charge, $Q$, we sum the work in transferring each infinitesimal charge, $dq$:
 ```{math}
@@ -736,14 +823,20 @@ In particular, a negative charge will experience a decrease in potential energy 
 
 In order to describe the energies of particles interacting with electric forces, it is more convenient to use the "electron volt" instead of the Joule. An electron volt is defined as the energy that is gained by a charge with a magnitude $e$ (the magnitude of the charge of the electron) when accelerated through a potential difference of $\Delta V=1 {\rm V}$:
 ```{math}
+
+\begin{align*}
 1 {\rm eV}&=(e)(1 {\rm V})=1.6\times 10^{-19} {\rm J}
+\end{align*}
 ```
 
 The electric potential function can be determined in two different ways:
 1.  By modelling the charge distribution as the sum of infinitesimal point charges, $dq$, and adding together the electric potentials, $dV$, from all charges, $dq$. This requires that one choose $0 {\rm V}$ to be located at infinity, so that the $dV$ are all relative to the same point.
 2.  By calculating the electric field (either as a integral or from Gauss' Law), and using:
 ```{math}
+
+\begin{align*}
 \Delta V &=V(\vec r_B)-V(\vec r_A)=-\int_A^B  \vec E\cdot d\vec r
+\end{align*}
 ```
 It is worth noting that one needs to be very careful with the signs when using the above integral. In particular note that one takes the negative of the integral, from $A$ to $B$, to determine the potential at $B$ minus the potential at $A$. 
 
@@ -884,9 +977,12 @@ Q^{enc}=\rho \pi R^2 L
 ``` 
 Thus, applying Gauss' Law outside the cylinder, gives the electric field for $r>R$:
 ```{math}
+
+\begin{align*}
 \int E\cdot dA &= \frac{Q_{enc}}{\epsilon_0}\\
 E 2\pi rL &= \frac{\rho \pi R^2 L}{\epsilon_0}\\
 \therefore E(r) &= \frac{\rho R^2}{2\epsilon_0r}\quad(r\geq R)
+\end{align*}
 ```
 Inside the cylinder, the enclosed charge is that enclosed by a cylinder of radius, $r$, and length, $L$:
 ```{math}
@@ -894,14 +990,19 @@ Q^{enc}=\rho \pi r^2 L
 ```
 Applying Gauss' Law, the electric field inside the cylinder is given by:
 ```{math}
+
+\begin{align*}
 \int E\cdot dA &= \frac{Q_{enc}}{\epsilon_0}\\
 E 2\pi rL &= \frac{\rho \pi r^2 L}{\epsilon_0}\\
 \therefore E(r) &= \frac{\rho r}{2\epsilon_0}\quad(r<R)
+\end{align*}
 ```
 Now that we have found the electric field, we can determine the electric potential. What we really want to find is the change in potential when moving a positive point charge from infinity (our 0 {\rm V} point) to the point of interest. We know that the potential at the surface (meaning the potential difference between infinity and the surface) is $V_S=100 {\rm V}$. To find the potential at any point, all we have to do is calculate the potential difference between the surface and the point of interest, and add that to $V_S$.
 
 We will start with the potential inside the cylinder, $r<R$:
 ```{math}
+
+\begin{align*}
 \Delta V_{r<R} &= V(r)-V_S = -\int_{R}^{r} \vec E\cdot d \vec r\\
 &= -\int_{R}^{r} \frac{\rho r}{2\epsilon_0} \hat r \cdot d \vec r\\
 &= -\int_{R}^{r} \frac{\rho r}{2\epsilon_0} dr\\
@@ -909,11 +1010,14 @@ We will start with the potential inside the cylinder, $r<R$:
 &= \frac{\rho (R^2-r^2)}{4\epsilon_0}\\
 \therefore V(r) &= V_S + \frac{\rho (R^2-r^2)}{4\epsilon_0}\\
 &=100 {\rm V}+\frac{\rho (R^2-r^2)}{4\epsilon_0}
+\end{align*}
 ```
 Thus, everywhere inside the cylinder, the electric potential is larger than $100 {\rm V}$, since $R^2-r^2>0$. 
 
 We proceed in the same way to determine the potential at position $r$ outside the cylinder, $r>R$:
 ```{math}
+
+\begin{align*}
 \Delta V_{r>R} &=  V(r) - V_S = -\int_{R}^{r} \vec E\cdot d \vec r\\
 &= -\int_{R}^{r} \frac{\rho R^2}{2\epsilon_0r} \hat r \cdot d \vec r\\
 &= - \frac{\rho R^2}{2\epsilon_0} \int_{R}^{r} \frac{1}{r}dr\\
@@ -921,6 +1025,7 @@ We proceed in the same way to determine the potential at position $r$ outside th
 &=- \frac{\rho R^2}{2\epsilon_0}\ln\left( \frac{r}{R} \right)\\
 \therefore V(r) &= V_S - \frac{\rho R^2}{2\epsilon_0} \ln \left( \frac{r}{R} \right)\\
 &= 100 {\rm V} - \frac{\rho R^2}{2\epsilon_0} \ln \left( \frac{r}{R} \right)
+\end{align*}
 ```
 Since $r>R$, $\ln (r/R)$ is positive, so the electric potential decreases from as you move away from the cylinder, as expected.
 :::
@@ -940,23 +1045,32 @@ Solving for $E$ between two cylinders using Gauss' law.
 ```
 Applying Gauss' Law:
 ```{math}
+
+\begin{align*}
 \int E\cdot dA &= \frac{Q_{enc}}{\epsilon_0}\\
 E 2\pi rL &= \frac{\lambda L}{\epsilon_0}\\
 \therefore E(r) &= \frac{\lambda }{2\pi \epsilon_0 r}
+\end{align*}
 ```
 and the electric field points in the radial direction (outwards if the inner electrode is positive). We can find the potential difference between the two electrodes using the electric field:
 ```{math}
+
+\begin{align*}
 \Delta V &= V(R_B)-V(R_A)= -\int_{R_A}^{R_B} \vec E \cdot d\vec r\\
 &=-\int_{R_A}^{R_B} \frac{\lambda }{2\pi \epsilon_0 r} dr\\
-&= -\frac{\lambda }{2\pi \epsilon_0}\ln\left( \frac{R_B}{R_A} \right) 
+&= -\frac{\lambda }{2\pi \epsilon_0}\ln\left( \frac{R_B}{R_A} \right)
+\end{align*}
 ```
 where we should note that the minus sign is ambiguous, as the actual sign of the potential difference will depend on the sign of $\lambda$, the charge on the inner cylinder. If the charge on the inner cylinder is positive, the potential difference is negative, indicating that the outer cylinder is at a lower potential than the inner one (which makes sense, as the electric field would point outwards between the two cylinders). 
 
 We can determine the capacitance between the electrodes, by taking the absolute value of the potential difference above, and using the fact that the charge, $Q$, on a length, $L$, of one electrode is given by $Q=\lambda L$:
 ```{math}
+
+\begin{align*}
 Q &= C\Delta V\\
 \lambda L &= C\frac{\lambda }{2\pi \epsilon_0}\ln\left( \frac{R_B}{R_A} \right)\\
 \therefore C&=\frac{2\pi \epsilon_0}{L\ln\left( \frac{R_B}{R_A} \right)}
+\end{align*}
 ```
 We note that the capacitance does not depend on the (arbitrary) charge per unit length, $\lambda$ that we placed on the inner cylinder in order to model the capacitor. The capacitance only depends on the geometry of the capacitor, and the material that is used between the plates.
 :::
