@@ -88,20 +88,18 @@ jobs:
       - name: Build HTML Assets
         run: myst build --html
 
-      # Step 9: Validate links in the built HTML files
-      # This checks that all internal and external links are working
+      # Step 9: Validate internal links in the built HTML files
+      # This checks that all internal links within the documentation are working
       # We use lychee, a fast link checker written in Rust
-      - name: Check links with lychee
+      # Only internal links are checked to avoid issues with external sites
+      - name: Check internal links with lychee
         uses: lycheeverse/lychee-action@v2
         with:
           # Check all HTML files in the build directory
-          args: --verbose --no-progress './_build/html/**/*.html'
-          # Accept status codes 200-299 (success) and 429 (rate limit)
-          # Some sites rate-limit automated checkers, so we accept 429
+          # --offline flag ensures only internal/local links are checked
+          # This avoids false positives from external sites being down or rate-limiting
+          args: --verbose --no-progress --offline './_build/html/**/*.html'
           fail: true
-        env:
-          # GitHub token for checking links to GitHub (avoids rate limits)
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # Step 10: Upload lychee report as artifact (if link checking fails)
       # This allows you to download and review which links are broken
