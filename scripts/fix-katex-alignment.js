@@ -12,9 +12,9 @@ const fs = require('fs');
 const path = require('path');
 
 function fixMathBlocks(content) {
-  // Regular expression to match ```{math} blocks
+  // Regular expression to match both ```{math} and ```math blocks
   // This captures the entire block including opening/closing backticks
-  const mathBlockRegex = /```\{math\}([\s\S]*?)```/g;
+  const mathBlockRegex = /```\{?math\}?([\s\S]*?)```/g;
 
   let modified = false;
   const result = content.replace(mathBlockRegex, (match, fullContent) => {
