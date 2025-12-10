@@ -67,8 +67,11 @@ jobs:
 
       # Step 6: Install Typst for PDF generation
       # Typst is a modern typesetting system used to create PDF documents
+      # Pin to v0.12.0 for compatibility with mystmd template packages
       - name: Setup Typst
         uses: typst-community/setup-typst@v4
+        with:
+          typst-version: '0.12.0'
 
       # Step 7: Cache MyST build outputs to speed up incremental builds
       # This stores the build directory so unchanged files don't need to be rebuilt
@@ -86,21 +89,32 @@ jobs:
       # This creates PDF files from your markdown content
       - name: Build PDF Assets
         run: myst build --pdf
-        # Alternative: run: myst build --typst
+        continue-on-error: true
 
       # Step 9: Build HTML version of the documentation
       # This creates the website files that will be deployed
       - name: Build HTML Assets
         run: myst build --html
 
-      # Step 10: Upload the built HTML files as an artifact
+      # Step 10: Copy PDF to HTML build directory for deployment
+      - name: Copy PDF to build
+        run: |
+          mkdir -p ./_build/html/exports
+          if [ -f ./exports/ModelingWithPhysics.pdf ]; then
+            cp ./exports/ModelingWithPhysics.pdf ./_build/html/exports/
+            echo "PDF copied successfully"
+          else
+            echo "Warning: PDF file not found, skipping copy"
+          fi
+
+      # Step 11: Upload the built HTML files as an artifact
       # This packages the website files for deployment
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: './_build/html'
 
-      # Step 11: Deploy the website to GitHub Pages
+      # Step 12: Deploy the website to GitHub Pages
       # This makes your documentation publicly available
       - name: Deploy to GitHub Pages
         id: deployment

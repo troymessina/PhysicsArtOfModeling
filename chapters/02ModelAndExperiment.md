@@ -4,16 +4,6 @@ numbering:
   headings:
   heading_1:
     start: 3
-exports:
-  - format: pdf
-    template: lapreprint-typst
-    output: exports/Ch02ModelExperiment.pdf
-    id: ch2-export
-downloads:
-  - file: 02ModelAndExperiment.md
-    title: Source File
-  - id: ch2-export
-    title: Download Ch02ModelExperiment.pdf
 ---
 (chap:modelandexperiment)=
 # Overview
