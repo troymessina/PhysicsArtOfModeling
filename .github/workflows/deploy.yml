@@ -96,15 +96,14 @@ jobs:
       - name: Build HTML Assets
         run: myst build --html
 
-      # Step 10: Copy PDF to HTML build directory for deployment
-      - name: Copy PDF to build
+      # Step 10: Verify PDF was generated
+      - name: Check PDF exists
         run: |
-          mkdir -p ./_build/html/exports
-          if [ -f ./exports/ModelingWithPhysics.pdf ]; then
-            cp ./exports/ModelingWithPhysics.pdf ./_build/html/exports/
-            echo "PDF copied successfully"
+          if [ -f ./_build/html/ModelingWithPhysics.pdf ]; then
+            echo "PDF generated successfully"
+            ls -lh ./_build/html/ModelingWithPhysics.pdf
           else
-            echo "Warning: PDF file not found, skipping copy"
+            echo "Warning: PDF was not generated"
           fi
 
       # Step 11: Upload the built HTML files as an artifact
