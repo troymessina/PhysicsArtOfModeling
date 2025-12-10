@@ -5,7 +5,7 @@ numbering:
   heading_1:
     start: 5
 ---
-(chap:momentumandcm)=
+(chapter:momentumandcm)=
 # Overview
 
 In this chapter, we introduce the concepts of linear momentum and of centre of mass. Momentum is a quantity that, like energy, can be defined from Newton's Second Law, to facilitate building models. Since momentum is often a conserved quantity within a system, it can make calculations much easier than using forces. The concepts of momentum and of centre of mass will also allow us to apply Newton's Second Law to systems comprised of multiple particles including solid objects. 
@@ -31,7 +31,7 @@ You hit a pool ball square on with the cue ball. If both balls have the same mas
 :::
 
 :::{caution} Review
-Throughout this chapter there are discussions of kinetic energy. [Chapter 7](#chap:workenergy) is when we will discuss kinetic energy in detail. Feel free to read ahead. However, it is enough to know that kinetic energy is the energy of motion and is a conserved quantity in some scenarios. We describe kinetic energy with the equation 
+Throughout this chapter there are discussions of kinetic energy. [Chapter 7](#chapter:workenergy) is when we will discuss kinetic energy in detail. Feel free to read ahead. However, it is enough to know that kinetic energy is the energy of motion and is a conserved quantity in some scenarios. We describe kinetic energy with the equation 
 ```{math}
 K=\frac{1}{2} mv^2
 ```
@@ -204,7 +204,7 @@ arr = arrow(pos=rock.pos, axis=rock.vel, color=color.white)
 ```
 Try, putting these three lines of code in the trinket below and see what happens when you run the program.
 :::{iframe} https://trinket.io/embed/glowscript/8f1815879d?toggleCode=true
-:label: chap:momentumandcm:blanktrinket
+:label: chapter:momentumandcm:blanktrinket
 :width: 90%
 :align: center
 :placeholder: ../chapters/figures/MomentumAndCM/BlankTrinket.jpg
@@ -477,13 +477,13 @@ p(t) = p_z(t) = -mgt
 ```
 and indeed changes with time.
 
-If the force of drag were not negligible, there would be a non-conservative force acting on the particle, so its mechanical energy would no longer be conserved (We will see more about this in [Chapter 7](#chap:workenergy) and [Chapter 8](#chapter:potentialecons). The particle will accelerate until it reaches terminal velocity. During that phase of acceleration, the net force on the particle is not zero (it is accelerating), so its momentum is not conserved. Once the particle reaches terminal velocity, the net force on the particle is zero, and its momentum is conserved from then on.
+If the force of drag were not negligible, there would be a non-conservative force acting on the particle, so its mechanical energy would no longer be conserved (We will see more about this in [Chapter 7](#chapter:workenergy) and [Chapter 8](#chapter:potentialecons). The particle will accelerate until it reaches terminal velocity. During that phase of acceleration, the net force on the particle is not zero (it is accelerating), so its momentum is not conserved. Once the particle reaches terminal velocity, the net force on the particle is zero, and its momentum is conserved from then on.
 
 **Discussion:** This simple example highlights the fact that mechanical energy and momentum are conserved under different conditions. Just because one is conserved does not mean that the other is conserved. It also shows that Newton's Second Law is a statement about change in momentum, not momentum itself (just like it is a statement about acceleration, change in velocity, not velocity).
 :::
 
 ## Impulse
-Forces are a concept central to physics and are related the concept of energy. We'll see in [Chapter 7](#chap:workenergy) that we calculate the "work", $W$, done by a force exerted on an object over a specific path between two points:
+Forces are a concept central to physics and are related the concept of energy. We'll see in [Chapter 7](#chapter:workenergy) that we calculate the "work", $W$, done by a force exerted on an object over a specific path between two points:
 ```{math}
 W = \int_A^B \vec F \cdot d\vec l
 ```

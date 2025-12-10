@@ -6,7 +6,7 @@ numbering:
     start: 6
 ---
 
-(chap:NewtonsLaws)=
+(chapter:NewtonsLaws)=
 # Overview
 
 In this chapter, we introduce Newton's Laws, which is a succinct theory of physics that describes an incredibly large number of phenomena in the natural world. Newton's Laws are one possible formulation of what we call "Classical Physics" (as opposed to "Modern Physics" which include Quantum Mechanics and Special Relativity). Newton's Laws make the connection between dynamics (the causes of motion) and the kinematics of motion (the description of that motion). 

@@ -5,7 +5,7 @@ numbering:
   heading_1:
     start: 8
 ---
-(chap:workenergy)=
+(chapter:workenergy)=
 # Overview
 
 In this chapter, we introduce a new way to build models derived from Newton's theory of classical physics. We will introduce the concepts of work and energy, which will allow us to model situations using scalar quantities, such as energy, instead of vector quantities, such as forces. It is important to remember that even when we are using energy and work, these tools are derived from Newton's Laws; that is, we may not be using Newton's Second Law explicitly, but the models that we develop are still based on the same theory of classical physics. 
@@ -789,7 +789,7 @@ mgh = 60\times 9.8 \times 6 = 3528 {\rm J}
 Does the sensor's measurement of potential energy agree with the amount of work you calculated above? If the kinetic energy is not zero, does the sum of potential and kinetic energy sum to the calculated energy above?
 
 :::{iframe} https://phet.colorado.edu/sims/html/energy-skate-park/latest/energy-skate-park_en.html
-:label: chap:workenergy:skateparkphet
+:label: chapter:workenergy:skateparkphet
 :width: 100%
 :align: center
 A PhET simulation to explore work-energy.
@@ -963,7 +963,7 @@ while x < 0.1:
 Run this code to see that it works to produce the values in the table above. If you want to create more intervals, you only need to decrease the value of $\Delta x$ or dx in your code. Try changing this value to dx=0.005 (20 intervals). Then, try `dx = 0.001`. Does this make the summation closer to the exact value of $W=\frac{1}{2}kx^2=0.05~\text{J}$? How small does `dx` need to be to be within 1% of the exact value?
 
 :::{iframe} https://trinket.io/embed/glowscript/8f1815879d
-:label: chap:workenergy:blanktrinket
+:label: chapter:workenergy:blanktrinket
 :width: 100%
 :align: center
 An empty trinket.

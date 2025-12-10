@@ -37,14 +37,14 @@ All of the carts start at the same height and with the same speed, so they all s
 
 (sec:potentialecons:conservative)=
 # Conservative forces
-In [Chapter %s](#chap:workenergy), we introduced the concept of work, $W$, done by a force, $\vec F(\vec r)$, acting on an object as it moves along a path from position $A$ to position $B$:
+In [Chapter %s](#chapter:workenergy), we introduced the concept of work, $W$, done by a force, $\vec F(\vec r)$, acting on an object as it moves along a path from position $A$ to position $B$:
 ```{math}
 :label: eq:potentialecons:workdef
 W = \int_A^B \vec F(\vec r) \cdot d\vec l
 ```
 where $\vec F(\vec r)$ is a force vector that, in general, is different at different positions in space ($\vec r$). We can also say that $\vec F$ depends on position by writing $\vec F(\vec r)=\vec F(x,y,z)$, since the position vector, $\vec r$, is simply the vector $\vec r = x\hat x + y \hat y+ z\hat z$. That is, $\vec F(\vec r)$ is just a short hand notation for $\vec F(x,y,z)$, and $d\vec l$ is a (very) small segment along the particular path over which one calculates the work.
 
-The above integral is, in general, difficult to evaluate, as it depends on the specific path over which the object moved. In [Example 7.2](#ex:workenergy:workfriction) of [Chapter %s](#chap:workenergy), we calculated the work done by friction on a crate that was slid across the floor along two different paths and indeed found that the work depended on the path that was taken. In [Example 7.3](#ex:workenergy:workgravity) of the same chapter, we saw that the work done by the force of gravity when moving a box along two different paths did not depend on the path chosen[^15].
+The above integral is, in general, difficult to evaluate, as it depends on the specific path over which the object moved. In [Example 7.2](#ex:workenergy:workfriction) of [Chapter %s](#chapter:workenergy), we calculated the work done by friction on a crate that was slid across the floor along two different paths and indeed found that the work depended on the path that was taken. In [Example 7.3](#ex:workenergy:workgravity) of the same chapter, we saw that the work done by the force of gravity when moving a box along two different paths did not depend on the path chosen[^15].
 
 We call "conservative forces" those forces for which the work done only depends on the initial and final positions and not on the path taken between those two positions. "Non-conservative" forces are those for which the work done does depend on the path taken. The force of gravity is an example of a conservative force, whereas friction is an example of a non-conservative force.
 
@@ -256,7 +256,7 @@ The change in potential energy, $\Delta U = U(z_B) - U(z_A)$ is equal to the neg
 \therefore W_g &= -mgH
 \end{align*}
 ```
-which is the same as what we found in [Example 7.3](#ex:workenergy:workgravity) of [Chapter %s](#chap:workenergy). The work done by gravity is negative, as we found previously. This makes sense because gravity has a component opposite to the direction of motion.  
+which is the same as what we found in [Example 7.3](#ex:workenergy:workgravity) of [Chapter %s](#chapter:workenergy). The work done by gravity is negative, as we found previously. This makes sense because gravity has a component opposite to the direction of motion.  
 
 The work done by a person, $W_p$, to move the box can easily be found by considering the net work done on the box. While the box is moving, only the person and gravity are exerting forces on the box, so those are the only two forces performing work. Since the box starts and ends at rest, the net work done on the box must be zero (no change in kinetic energy, recall the Work-Energy Theorem):
 ```{math}
@@ -465,7 +465,7 @@ But what if there's an external agent acting on our new system? We can keep "zoo
 A block of mass $m$ can slide along a horizontal frictionless surface. A horizontal spring, with spring constant, $k$, is attached to a wall on one end, while the other end can move, as shown in [](#fig:potentialecons:blockspring). A coordinate system is defined such that the $x$ axis is horizontal and the free end of the spring is at $x=0$ when the spring is at rest. The block is pushed against the spring so that the spring is compressed by a distance $D$. The block is then released. What speed will the block have when it leaves the spring?
 :::{note} Solution
 :class: dropdown
-This is again the same example that we saw in [Chapter %s](#chap:ApplyingNewtonsLaws) and [Chapter %s](#chap:workenergy). We will show here that it is solved very easily using conservation of energy. The forces acting on the block are:
+This is again the same example that we saw in [Chapter %s](#chapter:ApplyingNewtonsLaws) and [Chapter %s](#chapter:workenergy). We will show here that it is solved very easily using conservation of energy. The forces acting on the block are:
 1.  Weight, which does no work since it is perpendicular to the block's displacement.
 2.  The normal force, which does no work since it is perpendicular to the block's displacement.
 3.  The force from the spring, which is conservative and can be modelled with a potential energy $U(x)=\frac{1}{2}kx^2$, where $x$ is the position of the end of the spring.
@@ -680,7 +680,7 @@ E = \frac{1}{2}mv^2 + mgh
 In the simulation is an Energy Diagram for the skater, which allows us to examine how their total energy, $E$. Without friction, the energy is divided between kinetic and potential energy depending on the position of the skater on the ramp. The vertical axis corresponds to energy and the horizontal axis corresponds to the position of the skater.
 
 :::{iframe} https://phet.colorado.edu/sims/html/energy-skate-park/latest/energy-skate-park_en.html
-:label: chap:momentumandcm:blanktrinket
+:label: chapter:momentumandcm:blanktrinket
 :width: 100%
 :align: center
 A PhET simulation for work-energy.
@@ -1102,4 +1102,4 @@ We can see that this equation of motion is equivalent to Newton's Second Law.
 [^18]:Remember, the kinetic energy is given by $K=\frac{1}{2}mv^2$. Since neither mass nor the value of $v^2$ can be negative, the kinetic energy of an object can never be negative.
 [^19]:The integral, $S$, is called the "action" of the system.
 [^20]:If the Lagrangian does not depend on time, then we can shift the system in time and the equations of motion would be unaffected. We say that the Lagrangian is symmetric, or unaffected, by changes in time.
-[^21]:See [Chapter %s](#chap:momentumandcm).
+[^21]:See [Chapter %s](#chapter:momentumandcm).

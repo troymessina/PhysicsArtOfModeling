@@ -5,7 +5,7 @@ numbering:
   heading_1:
     start: 4
 ---
-(chap:vectors)=
+(chapter:vectors)=
 # Overview
 
 :::{hint} Learning Objectives
@@ -433,7 +433,7 @@ Two possible orientations for a three dimensional coordinate system. You can con
 # Exploring Vectors with Simulations
 
 ## Using PhET to Explore Vector Properties
-The properties of vectors described in this section can be explored using the Phet Simulation in [](#chap:vectors:PhET). To begin, click on the "Explore 2D". Drag a vector $\vec{a}$ onto the graph, and place it anywhere. Take note of the vector properties.
+The properties of vectors described in this section can be explored using the Phet Simulation in [](#chapter:vectors:PhET). To begin, click on the "Explore 2D". Drag a vector $\vec{a}$ onto the graph, and place it anywhere. Take note of the vector properties.
 * magnitude, $\vert\vec{a}\vert=\vert\vert\vec{a}\vert\vert$
 * angle, $\theta$
 * $x$-component, $a_x$
@@ -445,7 +445,7 @@ a_x = \vert\vec{a}\vert \cos\theta\\
 a_y = \vert\vec{a}\vert \sin\theta
 ```
 :::{iframe}https://phet.colorado.edu/sims/html/vector-addition/latest/vector-addition_all.html
-:label: chap:vectors:PhET
+:label: chapter:vectors:PhET
 :width: 100%
 :align: center
 :placeholder: ../chapters/figures/Vectors/PhetVectors.jpg
@@ -457,7 +457,7 @@ Click on the "Equations" tab. The simulation has two vectors $\vec{a}$ and $\vec
 What happens when we subtract vectors. Subtracting is the same as adding the negative of a vector, that is, making each component the negative of its value. Explore how subtracting a vector changes the resulting $\vec{c}.
 
 ## Drawing Vectors in VPython
-We can create our own vector simulations using the VPython trinket in [](#chap:vectors:vectortrinket). Clicking the button to run the simulation shows the cartesian unit vectors located at the origin for reference. In VPython we can define a cartesian vector in two ways.
+We can create our own vector simulations using the VPython trinket in [](#chapter:vectors:vectortrinket). Clicking the button to run the simulation shows the cartesian unit vectors located at the origin for reference. In VPython we can define a cartesian vector in two ways.
 ```python
 r1 = vec(1, 2, 3)
 r1 = vector(1, 2, 3)
@@ -469,7 +469,7 @@ arw1 = arrow(pos=vec(0,0,0), axis=r1, color=color.white)
 ```
 Copy this code at the bottom of the trinket below to see how it draws the arrow.
 :::{iframe} https://trinket.io/embed/glowscript/ad8349ada0?toggleCode=true
-:label: chap:vectors:vectortrinket
+:label: chapter:vectors:vectortrinket
 :width: 100%
 :align: center
 :placeholder: ../chapters/figures/MomentumAndCM/BlankTrinket.jpg
@@ -608,7 +608,7 @@ F_z &= ma_z\\
 ```
 
 ## Work and scalar products
-As we will see, "work" is a scalar quantity that allows us to determine the change in the speed (squared) of an object that results from a force exerted over a particular displacement ([](#chap:workenergy)). Both force and the displacement are vector quantities (a force has a magnitude and is exerted in a particular direction). The work, $W$, done by a force, $\vec F$, over a displacements, $\vec d$, is defined as:
+As we will see, "work" is a scalar quantity that allows us to determine the change in the speed (squared) of an object that results from a force exerted over a particular displacement ([](#chapter:workenergy)). Both force and the displacement are vector quantities (a force has a magnitude and is exerted in a particular direction). The work, $W$, done by a force, $\vec F$, over a displacements, $\vec d$, is defined as:
 ```math
 W = \vec F \cdot \vec d
 ```

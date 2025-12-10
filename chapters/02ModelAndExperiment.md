@@ -5,7 +5,7 @@ numbering:
   heading_1:
     start: 3
 ---
-(chap:modelandexperiment)=
+(chapter:modelandexperiment)=
 # Overview
 In this chapter, we will learn about the process of doing science and lay the foundations for developing skills that will be of use throughout your scientific careers. In particular, we will start to learn how to test a model with an experiment, as well as learn to estimate whether a given result or model makes sense.
 :::{hint} Learning Objectives
@@ -227,7 +227,7 @@ There are some basic steps you can follow when you are trying to find the SI uni
 :::
 
 :::{tip} Checkpoint
-In Chloe's theory of falling objects from [](#chap:introduction), the time, $t$, for an object to fall a distance, $x$, was given by $t=k\sqrt{x}$. What must the SI units of Chloe's constant, $k$, be?
+In Chloe's theory of falling objects from [](#chapter:introduction), the time, $t$, for an object to fall a distance, $x$, was given by $t=k\sqrt{x}$. What must the SI units of Chloe's constant, $k$, be?
 1. ${\rm T.L^{\frac{1}{2}}}$
 2. ${\rm T.L^{-\frac{1}{2}}}$
 3. ${\rm s.m^{\frac{1}{2}}}$
@@ -284,7 +284,7 @@ Thus, by measuring the blast radius at some time, and knowing the density of the
 # Making measurements
 Having introduced some tools for the modelling aspect of physics, we now address the other side of physics, namely performing experiments. Since the goal of developing theories and models is to describe the real world, we need to understand how to make meaningful measurements that test our theories and models.
 
-Suppose that we wish to test Chloe's theory of falling objects from [](#chap:introduction):
+Suppose that we wish to test Chloe's theory of falling objects from [](#chapter:introduction):
 ```{math}
 t=k\sqrt{x}
 ```
