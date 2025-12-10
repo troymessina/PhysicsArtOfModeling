@@ -49,22 +49,42 @@ project:
   exports:
     - format: pdf
       id: ModelingWithPhysics-export
-      template: https://github.com/rowanc1/typst-book.git
+      template: lapreprint-typst
       articles:
         - ./chapters/00preface.md
         - ./chapters/01Introduction.md
         - ./chapters/02ModelAndExperiment.md
-#        - ./chapters/03Vectors.md
-#        - ./chapters/04NewMomentumAndCM.md
-#        - ./chapters/15ChargesFields.md
+        - ./chapters/03Vectors.md
+        - ./chapters/04NewMomentumAndCM.md
+        - ./chapters/05NewtonsLaws.md
+        - ./chapters/06ApplyingNewtonsLaws.md
+        - ./chapters/07WorkEnergy.md
+        - ./chapters/08PotentialECons.md
+        - ./chapters/09Gravity.md
+        - ./chapters/10RotationalDynamics.md
+        - ./chapters/11AngularMomentumRolling.md
+        - ./chapters/12SimpleHarmonicMotion.md
+        - ./chapters/13Waves.md
+        - ./chapters/14FluidMechanics.md
+        - ./chapters/15ChargesFields.md
+        - ./chapters/16Gauss.md
+        - ./chapters/17ElectricPotential.md
+        - ./chapters/18Current.md
+        - ./chapters/19Circuits.md
+        - ./chapters/20MagneticForce.md
+        - ./chapters/21MagneticSource.md
+        - ./chapters/22Induction.md
+        - ./chapters/23SpecialRelativity.md
+        - ./chapters/24Calculus.md
+        - ./chapters/25VisualPython.md
+        - ./chapters/26Labs.md
       output: ./exports/ModelingWithPhysics.pdf
-#  downloads:
-#    - file: ./exports/ModelingWithPhysics.pdf
-#    - id: ModelingWithPhysics-export
-#      title: Modeling With Physics
+  downloads:
+    - id: ModelingWithPhysics-export
+      title: Download PDF
 
 site:
-  template: book-theme 
+  template: book-theme
   title: Modeling with Physics
   options:
     logo: ./chapters/figures/primary_rgb.png
@@ -75,9 +95,9 @@ site:
         hypothesis: true
         utterances: true
   nav: []
-  #actions:
-  #  - title: Learn More
-  #    url: https://mystmd.org/guide
+  actions:
+    - title: Download PDF
+      url: /exports/ModelingWithPhysics.pdf
   domains: []
 #html:
   
