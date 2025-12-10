@@ -172,7 +172,6 @@ The helical motion of a charged particle with a component of velocity parallel t
 ```
 (ex:magneticforce:massspec)=
 :::{note} Example 20.1
-:label: ex:magneticforce:massspec
 A particle of unknown charge and unknown mass is observed to undergo uniform circular motion with a period, $T$, when travelling perpendicular to a uniform magnetic field, $B$. What is the ratio of the particle's charge to its mass, $q/m$?
 :::{note} Solution
 :class: dropdown
@@ -272,7 +271,6 @@ The magnetic force on a curved current-carrying wire is obtained by modelling th
 
 (ex:magneticforce:semicircle)=
 :::{note} Example 20.2
-:label: ex:magneticforce:semicircle
 A wire carrying current $I$ is bent so as to have a semi-circular section with radius $R$, as shown in [](#fig:magneticforce:semicircle). The wire is immersed in a uniform magnetic field, $\vec B$, that is perpendicular to the plane of the wire, as shown. Using the given coordinate system, what is the net force on the wire?
 ```{figure} figures/MagneticForce/semicircle.png
 :label: fig:magneticforce:semicircle

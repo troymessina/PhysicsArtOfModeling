@@ -103,7 +103,6 @@ When an object undergoes linear motion, we always model the motion of the object
 
 (ex:applyingnewtonslaws:block)=
 :::{note} Example 6.2
-:label: ex:applyingnewtonslaws:block
 A block of mass $m$ is placed at rest on an incline that makes an angle $\theta$ with respect to the horizontal, as shown in [](#fig:applyingnewtonslaws:blockI). The block is nudged slightly so that the force of static friction is overcome and the block starts to accelerate down the incline. At the bottom of the incline, the block slides on a horizontal surface.
 
 The coefficient of kinetic friction between the block and the incline is $\mu_{k1}$, and the coefficient of kinetic friction between the block and horizontal surface is $\mu_{k2}$. If one assumes that the block started at rest a distance $L$ from the bottom of the incline, how far along the horizontal surface will the block slide before stopping?
@@ -337,7 +336,6 @@ V^2 &= v_0^2+ 2\int_{x_0}^{X}adx\\
 
 (ex:applyingnewtonslaws:blockspring)=
 :::{note} Example 6.3
-:label: ex:applyingnewtonslaws:blockspring
 ```{figure} figures/ApplyingNewtonsLaws/blockspring.png
 :label: fig:applyingnewtonslaws:blockspring
 :width: 40%
@@ -394,7 +392,6 @@ which gives the same value for $V$. As we will see in a later chapter, kinetic a
 
 (ex:applyingnewtonslaws:drag)=
 :::{note} Example 6.4
-:label: ex:applyingnewtonslaws:drag
 An object of mass $m$ is released from rest out of a helicopter. The drag (air-resistance) on the object can be modelled as having a magnitude given by $bv$, where $v$ is the speed of the object and $b$ is a constant of proportionality. How does the velocity of the object depend on time?
 :::{note} Solution
 :class: dropdown
@@ -524,7 +521,6 @@ An object is undergoing uniform circular motion in the horizontal plane, when th
 
 (ex:applyingnewtonslaws:car)=
 :::{note} Example 6.5
-:label: ex:applyingnewtonslaws:car
 ```{figure} figures/ApplyingNewtonsLaws/car.png
 :label: fig:applyingnewtonslaws:car
 :width: 25%

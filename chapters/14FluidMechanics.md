@@ -659,7 +659,6 @@ d &= v_2t = \sqrt{2gh_1}\sqrt{\frac{2h_2}{g}} = \sqrt{4h_1h_2}
 
 (ex:fluidmechanics:kitchen)=
 :::{note} Example 14.7
-:label: ex:fluidmechanics:kitchen
 You measure that water comes out of your kitchen faucet at a rate of $6 {\rm l/min}$. The faucet has a diameter of $2 {\rm cm}$. At what rate will water flow out of your basement faucet, which has a diameter of $1 {\rm cm}$ and is located a height, $h=3 {\rm m}$, below your kitchen faucet? Assume that atmospheric pressure, $P_0$, does not change appreciably between your kitchen and basement.
 :::{note} Solution
 :class: dropdown

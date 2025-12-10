@@ -370,7 +370,6 @@ The forces on the block are illustrated in [](#fig:newtonslaws:blockH_forces) an
 
 (ex:newtonslaws:blockI)=
 :::{note} Example 5.2
-:label: ex:newtonslaws:blockI
 ```{figure} figures/NewtonsLaws/blockI.png
 :label: fig:newtonslaws:blockI
 :width: 20%
@@ -397,7 +396,6 @@ The forces on the block are illustrated in [](#fig:newtonslaws:blockI_forces) an
 
 (ex:newtonslaws:2blockswedge)=
 :::{note} Example 5.3
-:label: ex:newtonslaws:2blockswedge 
 ```{figure} figures/NewtonsLaws/2blockswedge.png
 :label: fig:newtonslaws:2blockswedge
 :width: 20%
@@ -443,7 +441,6 @@ In [Example 5.3](#fig:newtonslaws:2blockswedge) above, we would draw one free-bo
 
 (ex:newtonslaws:2blocksI)=
 :::{note} Example 5.4
-:label: ex:newtonslaws:2blocksI
 ```{figure} figures/NewtonsLaws/2blocksI.png
 :label: fig:newtonslaws:2blocksI
 :width: 20%
@@ -529,7 +526,6 @@ The following example shows how to write Newton's Second Law for a system of two
 
 (ex:newtonslaws:2blocksHI)=
 :::{note} Example 5.5
-:label: ex:newtonslaws:2blocksHI
 ```{figure} figures/NewtonsLaws/2blocksHI.png
 :label: fig:newtonslaws:2blocksHI
 :width: 60%

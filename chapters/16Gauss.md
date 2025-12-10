@@ -159,7 +159,6 @@ Consider the water flowing through a net analogy again, although now the net is 
 
 (ex:gauss:qsphere)=
 :::{note} Example 16.3
-:label: ex:gauss:qsphere
 A negative electric charge, $-Q$, is located at the origin of a coordinate system. Calculate the flux of the electric field through a spherical surface of radius, $R$, that is centred at the origin.
 :::{note} Solution
 :class: dropdown
@@ -224,7 +223,6 @@ Ultimately, the points above should dictate the choice of Gaussian surface **so 
 
 (ex:gauss:spherical)=
 :::{note} Example 16.4
-:label: ex:gauss:spherical
 An insulating sphere of radius, $R$, contains a total charge, $Q$, which is uniformly distributed throughout its volume. Determine an expression for the electric field as a function of distance, $r$, from the centre of the sphere.
 Note that this is identical, mathematically, to the derivation that was done in [Section %s](#sec:gravity:gauss) for the case of gravity. 
 :::{note} Solution
@@ -456,7 +454,6 @@ Suppose that I enclose a spherical charge with a cylindrical Gaussian surface, a
 
 (ex:gauss:infiniteplate)=
 :::{note} Example 16.6
-:label: ex:gauss:infiniteplate
 Determine the electric field above an infinitely large plane of charge with uniform surface charge per unit area, $\sigma$.
 :::{note} Solution
 :class: dropdown
