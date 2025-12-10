@@ -5,7 +5,7 @@ numbering:
   heading_1:
     start: 7
 ---
-(chap:ApplyingNewtonsLaws)=
+(chapter:ApplyingNewtonsLaws)=
 # Overview
 
 In this chapter, we take a closer look at how to use Newton's Laws to build models to describe motion. Whereas the previous chapter was focused on identifying the forces that are acting on an object, this chapter focuses on using those forces to describe the motion of the object.
@@ -459,7 +459,7 @@ v(t)-\frac{mg}{b} &= -\frac{mg}{b}e^{-\frac{b}{m}t}\\
 :::
 
 # Uniform circular motion
-As we saw in [Chapter %s](#chap:momentumandcm), "uniform circular motion" is defined to be motion along a circle with constant speed. This may be a good time to review [Section %s](#sec:momentumandcm:circularmotion) for the kinematics of motion along a circle. In particular, for the uniform circular motion of an object around a circle of radius $R$, you should recall that:
+As we saw in [Chapter %s](#chapter:momentumandcm), "uniform circular motion" is defined to be motion along a circle with constant speed. This may be a good time to review [Section %s](#sec:momentumandcm:circularmotion) for the kinematics of motion along a circle. In particular, for the uniform circular motion of an object around a circle of radius $R$, you should recall that:
 * The velocity vector, $\vec v$, is always tangent to the circle.
 * The acceleration vector, $\vec a$, is always perpendicular to the velocity vector, because the magnitude of the velocity vector does not change.
 * The acceleration vector, $\vec a$, always points towards the centre of the circle.

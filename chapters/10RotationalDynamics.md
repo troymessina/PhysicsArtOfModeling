@@ -5,7 +5,7 @@ numbering:
   heading_1:
     start: 11
 ---
-(chap:rotationaldynamics)=
+(chapter:rotationaldynamics)=
 # Overview
 In this Chapter, we use Newton's Second Law to develop a formalism to describe how objects rotate. In particular, we will introduce the concept of torque which plays a similar role to that of force in non-rotational dynamics. We will also introduce the concept of moment of inertia to describe how objects resist rotational motion. 
 

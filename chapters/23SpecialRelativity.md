@@ -5,7 +5,7 @@ numbering:
   heading_1:
     start: 24
 ---
-(chap:specialrelativity)=
+(chapter:specialrelativity)=
 # Overview
 In this chapter, we introduce the theory of Special Relativity, originally formulated by Albert Einstein in 1905. Along with the development of Quantum Mechanics, Special Relativity marks the start of "modern physics", and the introduction of theories to describe our world that are decidedly counter-intuitive. 
  
