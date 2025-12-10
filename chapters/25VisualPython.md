@@ -122,7 +122,6 @@ cyl = cylinder(pos=vec(0,0,0), axis=vec(1,0,0), radius=0.1, length=5, size=2, co
 ```
 The axis can easily be changed to orient a cylinder along the cartesian axes. If it desired for the cylinder to be oriented at an angle, one would use the Pythagorean Theorem or trigonometry to determine the unit vector pointed in the desired direction. Then, this would become the axis vector. For example, a cylinder oriented at $45\degree$ in the $xy$-plane would be found by
 ```{math}
-:nowrap:
 
 \begin{align*}
 x &= r\cos 45\degree\\
@@ -266,7 +265,6 @@ Change the code for the ball example above so that the ball is thrown upward alo
 :class: dropdown
 The velocity will now initially be ```ball.vel = vec(0,10,0)```. There is an acceleration ```ball.acc = vec(0,-9.8,0)```. The position and velocity update will follow the kinematic equations
 ```{math}
-:nowrap:
 
 \begin{align*}
 \vec r(t + \Delta t) &= \vec r(t) + \vec v\Delta t + \frac{1}{2}\vec a\Delta t^2\\

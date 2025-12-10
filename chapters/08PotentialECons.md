@@ -78,7 +78,6 @@ since this means that the work done over a closed path is zero. The condition fo
 ```
 where the integral on the right is called a "surface integral" over the surface, $S$, enclosed by the closed path over which the work is being calculated. Don't worry, it is way beyond the scope of this text to understand this integral or Stokes' Theorem in detail! It is however useful in that it gives us the following conditions on the components of a force for that force to be conservative (by requiring the terms in parentheses to be zero):
 ```{math}
-:nowrap:
 
 \begin{align*}
 \frac{\partial F_z}{\partial y}-\frac{\partial F_y}{\partial z} &= 0 \nonumber\\
@@ -119,7 +118,6 @@ conservative? Note that we have defined the $z$ axis to be vertical and positive
 :class: dropdown
 The force is expected to be conservative since it is constant in magnitude and direction. We can verify this using the conditions in [](#eq:potentialecons:conservative):
 ```{math}
-:nowrap:
 
 \begin{align*}
 \frac{\partial F_z}{\partial y}-\frac{\partial F_y}{\partial z} &= \frac{\partial }{\partial y}(-mg) - 0 &= 0\\
@@ -140,7 +138,6 @@ Is the following force conservative?
 :class: dropdown
 Since the force only depends on position, it *could* be conservative, so we must check using the conditions from [](#eq:potentialecons:conservative):
 ```{math}
-:nowrap:
 
 \begin{align*}
 \frac{\partial F_z}{\partial y}-\frac{\partial F_y}{\partial z} &= \frac{\partial }{\partial y}\left(\frac{-kz}{(x^2+y^2+z^2)^\frac{3}{2}}\right)-\frac{\partial }{\partial z}\left( \frac{-ky}{(x^2+y^2+z^2)^\frac{3}{2}}\right)\\
@@ -183,7 +180,6 @@ where we have defined the $z$ axis to be vertical and positive upwards. We alrea
 ```
 The work done by gravity from position $A$ to position $B$ is:
 ```{math}
-:nowrap:
 
 \begin{align*}
 W &= \int_A^B \vec F(\vec r) \cdot d\vec l\\
@@ -194,7 +190,6 @@ W &= \int_A^B \vec F(\vec r) \cdot d\vec l\\
 ``` 
 By inspection, we can now identify the functional form for the potential energy function, $U(\vec r)$. We require that:
 ```{math}
-:nowrap:
 
 \begin{align*}
 -W &= U(\vec r_B) - U(\vec r_A) = U(z_B) - U(z_A)
@@ -202,7 +197,6 @@ By inspection, we can now identify the functional form for the potential energy 
 ```
 where we replaced the position vector, $\vec r$, with the $z$ coordinate, since this is a one dimensional situation. Therefore:
 ```{math}
-:nowrap:
 
 \begin{align*}
 -W=mg(z_B-z_A)&= U(z_B) - U(z_A)\\
@@ -256,7 +250,6 @@ U(z_B=H) = mgH
 ```
 The change in potential energy, $\Delta U = U(z_B) - U(z_A)$ is equal to the negative of the work done by gravity. The work done by gravity, $W_g$, is thus:
 ```{math}
-:nowrap:
 
 \begin{align*}
 -W_g &=  U(z_B) - U(z_A) = mgH - 0\\
@@ -267,7 +260,6 @@ which is the same as what we found in [Example 7.3](#ex:workenergy:workgravity) 
 
 The work done by a person, $W_p$, to move the box can easily be found by considering the net work done on the box. While the box is moving, only the person and gravity are exerting forces on the box, so those are the only two forces performing work. Since the box starts and ends at rest, the net work done on the box must be zero (no change in kinetic energy, recall the Work-Energy Theorem):
 ```{math}
-:nowrap:
 
 \begin{align*}
 W^{net} = 0 &= W_g + W_p\\
@@ -288,7 +280,6 @@ where the $x$ axis is defined to be co-linear with the spring and the origin is 
 :class: dropdown
 Since the force depends on position, it could be conservative, which we can check with the conditions from [](#eq:potentialecons:conservative):
 ```{math}
-:nowrap:
 
 \begin{align*}
 \frac{\partial F_z}{\partial y}-\frac{\partial F_y}{\partial z} &= 0 - 0 &= 0\\
@@ -298,7 +289,6 @@ Since the force depends on position, it could be conservative, which we can chec
 ```
 and the force is indeed conservative. To determine the potential energy function, let us calculate the work done by the spring from position $x_A$ to position $x_B$:
 ```{math}
-:nowrap:
 
 \begin{align*}
 W &=\int_A^B \vec F(\vec r) \cdot d\vec l\\
@@ -309,7 +299,6 @@ W &=\int_A^B \vec F(\vec r) \cdot d\vec l\\
 ```
 Again, comparing with:
 ```{math}
-:nowrap:
 
 \begin{align*}
 -W &= U(\vec r_B) - U(\vec r_A) = U(x_B) - U(x_A)
@@ -341,7 +330,6 @@ U(x) = \frac{1}{2}kx^2 + C
 ``` 
 As you recall from [Example 8.4](#ex:potentialecons:springpotential), to find this function (in one dimension), we took the $x$ component of the spring force and (effectively) found the negative of its anti-derivative, which we defined as the potential energy function:
 ```{math}
-:nowrap:
 
 \begin{align*}
 F(x) &= -kx\\
@@ -353,7 +341,6 @@ Thus, the force can be obtained from the negative of the potential energy functi
 
 In three dimensions, the situation is similar, although the potential energy function (and the components of the force vector) will generally depend on all three position coordinates, $x$, $y$, and $z$. In three dimensions, the the three components of the force vector are given by taking the gradient of the negative of the potential energy function[^16]:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \vec F(\vec r) &= -\vec\nabla U(\vec r)=-\vec\nabla U(x,y,z)\nonumber\\
@@ -374,7 +361,6 @@ W^{net}=W^C+W^{NC}
 ```
 The work done by conservative forces can be expressed in terms of changes in potential energy functions. For example, suppose that two conservative forces, $\vec F_1$ and $\vec F_2$, are exerted on the object. The work done by those two forces is given by:
 ```{math}
-:nowrap:
 
 \begin{align*}
 W_1 &= -\Delta U_1\\
@@ -383,7 +369,6 @@ W_2 &= -\Delta U_2
 ```
 where $U_1$ and $U_2$ are the changes in potential energy associated with forces $\vec F_1$ and $\vec F_2$, respectively. We can re-arrange the Work-Energy Theorem as follows[^17]:
 ```{math}
-:nowrap:
 
 \begin{align*}
 W^{net}=W^C+W^{NC}=-\Delta U_1 - \Delta U_2 +W^{NC} &= \Delta K\\
@@ -408,7 +393,6 @@ We can introduce the "mechanical energy", $E$, of an object as the sum of the po
 ```
 If the object started at position $A$, with potential energy $U_A$ and kinetic energy $K_A$, and ended up at position $B$ with potential energy $U_B$ and kinetic energy $K_B$, then we can write the mechanical energy at both positions and its change $\Delta E$, as:
 ```{math}
-:nowrap:
 
 \begin{align*}
 E_A &= U_A + K_A\\
@@ -424,7 +408,6 @@ W^{NC} = \Delta U + \Delta K = \Delta E
 ```
 and if there is no work done by non-conservative forces on the object, then the mechanical energy of the object does not change:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \Delta E &= 0\quad\text{if no non-conservative forces}\\
@@ -491,7 +474,6 @@ The block starts at rest at position $A$ ($x=-D$), where the spring is compresse
 
 At position $A$, the kinetic energy of the block is $K_A=0$ since the block is at rest, and the potential energy from the spring force of the block is $U_A=\frac{1}{2}kD^2$. The mechanical energy of the block at position $A$ is thus:
 ```{math}
-:nowrap:
 
 \begin{align*}
 K_A&=0\\
@@ -501,7 +483,6 @@ U_A&=\frac{1}{2}kD^2\\
 ```
 At position $B$, the spring potential energy of the block is zero (since the spring is at rest), and all of the energy is kinetic:
 ```{math}
-:nowrap:
 
 \begin{align*}
 K_B&=\frac{1}{2}mv_B^2\\
@@ -511,7 +492,6 @@ U_B&=0\\
 ```
 Since there are no non-conservative forces doing work on the block, the mechanical energies at $A$ and $B$ are the same:
 ```{math}
-:nowrap:
 
 \begin{align*}
 W^{NC}&=\Delta E=E_B-E_A= 0\\
@@ -547,7 +527,6 @@ Let us divide the motion into two segments: (1) a segment along the incline (pos
 
 Starting with the first segment, we can choose the gravitational potential energy to be zero when the block is at the bottom of the incline. The block starts at a height $h=L\sin\theta$ above the  bottom of the incline. The gravitational potential energy for the beginning and end of the first segment are thus:
 ```{math}
-:nowrap:
 
 \begin{align*}
 U_A &= mgL\sin\theta\\
@@ -556,7 +535,6 @@ U_B &= 0
 ```
 Since the block starts at rest, its kinetic energy is zero at position $A$, and if the speed of the box is $v_B$ at position $B$, we can write its kinetic energy at both positions as:
 ```{math}
-:nowrap:
 
 \begin{align*}
 K_A &=0\\
@@ -565,7 +543,6 @@ K_B &= \frac{1}{2}mv_B^2
 ```
 The mechanical energy of the object at positions $A$ and $B$ is thus:
 ```{math}
-:nowrap:
 
 \begin{align*}
 E_A &= U_A+K_A = mgL\sin\theta\\
@@ -579,7 +556,6 @@ W^{NC}=W_f = -f_kL=-\mu_{k1}mg\cos\theta L
 ```
 Applying conservation of energy along the first segment, we have:
 ```{math}
-:nowrap:
 
 \begin{align*}
 W^{NC} &= \Delta E\\
@@ -591,7 +567,6 @@ Note that the above equation, in words, could be read as, "the change in kinetic
 
 We now proceed in an analogous way for the second segment, from position $B$ to position $C$. The only force that can do work along this segment (of length $x$) is the force of kinetic friction, since both the weight and normal force are perpendicular to the displacement. There are no conservative forces doing work, so there is no change in potential energy. The initial kinetic energy is $K_B$ (from above), and the final kinetic energy, $K_C$, is zero. The change in mechanical energy is thus:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \Delta E &= E_C - E_B = K_C - K_B = -K_B\\
@@ -605,7 +580,6 @@ W^{NC}=W_f = -f_kx = -\mu_{k2} N x=-\mu_{k2} mg x
 ```
 Finally, we can find $x$ by setting the work done by non-conservative forces equal to the change in mechanical energy:
 ```{math}
-:nowrap:
 
 \begin{align*}
 W^{NC} &= \Delta E\\
@@ -741,7 +715,6 @@ The Lagrangian description of a "system" is based on a quantity, $L$, called the
 ```
 where $K$ is the kinetic energy of the system, and $U$ is its potential energy. A "system" can be a rather complex collection of objects, although we will illustrate how the Lagrangian formulation is implemented for a single object of mass $m$ moving in one dimension under the influence of gravity. Let $x$ be the direction of motion (which is vertical) such that the potential and kinetic energies of the object are given by:
 ```{math}
-:nowrap:
 
 \begin{align*}
 U(x) &= mgx\\
@@ -763,7 +736,6 @@ Thus, in the Lagrangian formulation, one first writes down the Lagrangian for th
 
 Given the Lagrangian that we found above for a particle moving in one dimension under the influence of gravity, we can determine each term in the Euler-Lagrange equation:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \frac{\partial L}{\partial v_x} &= \frac{\partial }{\partial v_x}\left(\frac{1}{2}mv_x^2 - mgx \right)=mv_x\\
@@ -773,7 +745,6 @@ Given the Lagrangian that we found above for a particle moving in one dimension 
 ```
 Putting these into the Euler-Lagrange equation:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \frac{d}{dt}\left(\frac{\partial L}{\partial v_x}\right)-\frac{\partial L}{\partial x} &= 0\\
@@ -814,7 +785,6 @@ A force is conservative if the work done by that force on a closed path is zero:
 ```
 Equivalently, the force is conservative if the work done by the force on an object moving from position $A$ to position $B$ does not depend on the particular path between the two points. The conditions for a force to be conservative are given by:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \frac{\partial F_z}{\partial y}-\frac{\partial F_y}{\partial z} &= 0 \nonumber\\
@@ -834,7 +804,6 @@ It is important to note that an arbitrary constant can be added to the potential
 
 We can break up the net work done on an object as the sum of the work done by conservative ($W^C$) and non-conservative forces ($W^{NC}$):
 ```{math}
-:nowrap:
 
 \begin{align*}
 W^{net}&=W^{NC}+W^{C}=W^{NC}-\Delta U
@@ -844,7 +813,6 @@ where $\Delta U$ is the difference in the total potential energy of the object (
 
 The Work-Energy Theorem states that the net work done on an object in going from position $A$ to position $B$ is equal to the object's change in kinetic energy:
 ```{math}
-:nowrap:
 
 \begin{align*}
 W^{net}&=\frac{1}{2}mv_B^2-\frac{1}{2}mv_A^2=\Delta K
@@ -884,7 +852,6 @@ which is the difference between the kinetic energy, $K$, and the potential energ
 \oint \vec F(\vec r) \cdot d\vec l = 0
 ```
 ```{math}
-:nowrap:
 
 \begin{align*}
 \frac{\partial F_z}{\partial y}-\frac{\partial F_y}{\partial z} &= 0 \nonumber\\
@@ -894,7 +861,6 @@ which is the difference between the kinetic energy, $K$, and the potential energ
 ```
 **Potential energy for a conservative force:**
 ```{math}
-:nowrap:
 
 \begin{align*}
 \Delta U&=-W\\
@@ -904,7 +870,6 @@ U(\vec r_B) - U(\vec r_A)&= - \int_A^B \vec F(\vec r) \cdot d\vec l
 
 **Work-energy theorem:**
 ```{math}
-:nowrap:
 
 \begin{align*}
 W^{net}&=\frac{1}{2}mv_B^2-\frac{1}{2}mv_A^2=\Delta K
@@ -912,7 +877,6 @@ W^{net}&=\frac{1}{2}mv_B^2-\frac{1}{2}mv_A^2=\Delta K
 ```
 **Work:**
 ```{math}
-:nowrap:
 
 \begin{align*}
 W^{net}&=W^{NC}+W^{C}=W^{NC}-\Delta U\\
@@ -921,7 +885,6 @@ W^{NC}&=\Delta K+\Delta U
 ```
 **Energy:**
 ```{math}
-:nowrap:
 
 \begin{align*}
 E&=U+K\\
@@ -1010,7 +973,6 @@ Remember that the total mechanical energy is the sum of the total potential ener
 
 Since the ball starts from rest, its kinetic energy is zero at position $A$. At this point, the ball is not touching the spring, so the potential energy from the spring force is zero. The mechanical energy of the ball at position $A$ is simply equal to its gravitational potential energy:
 ```{math}
-:nowrap:
 
 \begin{align*}
 E_A&=U_A+K_A\\
@@ -1019,7 +981,6 @@ E_A&=mgh
 ```
 At position $B$, the ball is again at rest, so the kinetic energy of the ball is zero. Now that the ball is in contact with the spring, it will experience a force from the spring that can be modelled with a potential energy $U(y)=\frac{1}{2}ky_1^2$, where $y_1$ is the distance between the rest position of the spring and its compressed length. At point $B$ ($y=-y_1$), the ball will have both spring and gravitational potential energy, so its mechanical energy at position $B$ is given by:
 ```{math}
-:nowrap:
 
 \begin{align*}
 E_B&=U_B+K_B=U_B\\
@@ -1029,7 +990,6 @@ E_B&=-mgy_1+\frac{1}{2}ky_1^2
 ```
 Since mechanical energy is conserved in this system (no non-conservative forces are doing work), we can now set $E_A=E_B$ and solve for $y_1$:
 ```{math}
-:nowrap:
 
 \begin{align*}
 E_A&=E_B\\
@@ -1062,7 +1022,6 @@ E=mgL(1-\cos\theta)+\frac{1}{2}mv^2
 ```
 Conservation of energy tells us that the total energy at any point must be the same as the initial energy. So, we can use our initial conditions to find the total energy of the system. The mass starts from rest (initial kinetic energy is zero) an angle $\theta_0$ above the vertical:
 ```{math}
-:nowrap:
 
 \begin{align*}
 E&=mgL(1-\cos\theta)+\frac{1}{2}mv^2\\
@@ -1071,7 +1030,6 @@ E_{initial}&=mgL(1-\cos\theta_0)
 ``` 
 Now that we have found the total energy of the system, we can write our general expression for the energy of the system at any point:
 ```{math}
-:nowrap:
 
 \begin{align*}
 E&=mgL(1-\cos\theta)+\frac{1}{2}mv^2\\
@@ -1080,7 +1038,6 @@ mgL(1-\cos\theta_0)&=mgL(1-\cos\theta)+\frac{1}{2}mv^2
 ```
 All that's left to do is simplify the expression and rearrange for $v$:
 ```{math}
-:nowrap:
 
 \begin{align*}
 mgL(1-\cos\theta_0)&=mgL(1-\cos\theta)+\frac{1}{2}mv^2\\
@@ -1098,7 +1055,6 @@ gL(\cos\theta-\cos\theta_0)&=\frac{1}{2}v^2\\
 :class: dropdown
 We are going to find an equation of motion of the system using the Lagrangian method. We choose to use a one dimension coordinate system, with the $x$ axis defined to be co-linear with the spring, positive in the direction where the spring is extended, and set the origin to be located at the rest position of the spring. The kinetic energy and potential energy of the mass are given by
 ```{math}
-:nowrap:
 
 \begin{align*}
 K&=\frac{1}{2}mv_x^2\\
@@ -1107,7 +1063,6 @@ U&=\frac{1}{2}kx^2
 ```
 since the only force exerted on the mass that can do work is the force from the spring. We have chosen the potential energy to be zero at $x=0$. The Lagrangian for this system is:
 ```{math}
-:nowrap:
 
 \begin{align*}
 L&=K-U\\
@@ -1120,7 +1075,6 @@ The Euler-Lagrange equation in one dimension is:
 ```
 We can calculate the terms of the Euler-Lagrange equation:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \frac{\partial L}{\partial v_x}&=\frac{\partial }{\partial v_x}\left(\frac{1}{2}mv_x^2-\frac{1}{2}kx^2\right)\\
@@ -1133,7 +1087,6 @@ We can calculate the terms of the Euler-Lagrange equation:
 ```
 and then put them together to get:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \frac{d}{dt}\left(\frac{\partial L}{\partial v_x}\right)-\frac{\partial L}{\partial x} &= 0\\

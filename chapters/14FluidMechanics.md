@@ -107,7 +107,6 @@ where, $V=Ah$, is the volume of the fluid, and, $\rho$, its density.
 
 The net (horizontal) force exerted by the external fluid on the fluid element is zero along the vertical surfaces. Let $P_1$ be the pressure in the fluid above the fluid element, and $P_2$ be the pressure below the fluid element. If we choose a $y$ axis that is positive upwards and the fluid element does not accelerate in the vertical direction, then the $y$ component of Newton's Second Law, written for the fluid element, is:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \sum F_y = F_2 - F_1 -mg &= 0\\
@@ -155,7 +154,6 @@ dm = \rho A dy
 ```
 We can model the pressure exerted by the fluid above the fluid element as $P+dP$, and the pressure exerted by the fluid below as $P$, where $dP$ is a small (negative) change in pressure[^38]. The $y$ component of Newton's Second Law written for the infinitesimal fluid element is thus:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \sum F_y = PA - (P+dP)A -dm g &=0\\
@@ -169,7 +167,6 @@ We can thus determine how pressure changes with height, $y$:
 ```
 This tells us that the rate of change of pressure with increasing $y$ is negative; in other words, the pressure decreases as the elevation increases, as we had already concluded. We can integrate the equation to obtain the change in pressure in going from $y_1$ to $y_2$:
 ```{math}
-:nowrap:
 
 \begin{align*}
 dP &= -\rho g dy\\
@@ -185,7 +182,6 @@ If we assume that the density of air is proportional to its pressure, how does t
 :class: dropdown
 We know that the rate of change of pressure with altitude (position $y$, where positive $y$ is defined to be upwards) is given by:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \frac{dP}{dy} &= -\rho g
@@ -193,7 +189,6 @@ We know that the rate of change of pressure with altitude (position $y$, where p
 ```
 Since we can assume that the density is proportional to the pressure, we can introduce an arbitrary constant, $a$, and state that:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \rho &=aP\\
@@ -202,7 +197,6 @@ Since we can assume that the density is proportional to the pressure, we can int
 ```
 where the constant $a$ can be evaluated if we know the pressure and density at some point. We can thus write that the rate of change of the density with position $y$ is given by:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \frac{1}{a} \frac{d\rho}{dy} &= -\rho g\\
@@ -211,7 +205,6 @@ where the constant $a$ can be evaluated if we know the pressure and density at s
 ```
 This is a separable differential equation for $\rho$, allowing us to separate the variables and integrate from, say, an altitude of $y=0$, where the density is $\rho_0$, to an altitude $y$, where the density is $\rho$:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \frac{d\rho}{\rho} &= - ag dy\\
@@ -222,7 +215,6 @@ This is a separable differential equation for $\rho$, allowing us to separate th
 ```
 We can take the exponential on each side of the equation to get rid of the logarithm:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \frac{\rho}{\rho_0} &= e^{-agy}\\
@@ -231,7 +223,6 @@ We can take the exponential on each side of the equation to get rid of the logar
 ```
 We thus find that the density of the air decreases exponentially with altitude. This is why it is more difficult to breathe at high altitude. Since we assumed that the density of the air is proportional to its pressure, the air pressure will also decrease exponentially with increasing altitude:
 ```{math}
-:nowrap:
 
 \begin{align*}
 P(y) &= P_0e^{-agy}
@@ -318,7 +309,6 @@ P_A=P_0+\rho g h
 ```
 Since this must also be equal to the pressure at point $B$, we can find the difference between the pressure we want to measure and atmospheric pressure:
 ```{math}
-:nowrap:
 
 \begin{align*}
 P_A &= P_B \\
@@ -357,7 +347,6 @@ Using a manometer filled with water ($\rho=1\times 10^3 {\rm kg/m^3}$), you cons
 :class: dropdown
 The pressure, $P_1$, on the open side of the manometer is given by:
 ```{math}
-:nowrap:
 
 \begin{align*}
 P_B &= P_A\\
@@ -442,7 +431,6 @@ M = \frac{W_a}{g}
 ```
 However, since we do not know its volume, $V$, we cannot directly determine its density. When the object is submerged in water, the measured weight will be the actual weight of the object (as measured in air) minus the magnitude of the force of buoyancy exerted by the water:
 ```{math}
-:nowrap:
 
 \begin{align*}
 W_w &= W_a - \rho_w g V\\
@@ -459,7 +447,6 @@ where $\rho_w$ is the density of water. Given the volume, we can now determine t
 :::{attention} Olivia's Thoughts
 Whether or not an object will float depends on its density. Let's consider an object that is placed in water. The only forces acting on the object are its weight and the force of buoyancy. We want to know when the net force will be zero. I'm going to write out Newton's Second Law for the object, but writing the mass of the object in terms of its density and volume.
 ```{math}
-:nowrap:
 
 \begin{align*}
 F_g&=F_B\\
@@ -522,7 +509,6 @@ The mass of fluid exiting the narrow end of the pipe is given by:
 ```
 The mass of fluid entering the wide end of the pipe must equal the mass exiting the narrow end of the pipe:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \rho_1 A_1 v_1 \Delta t &= \rho_2 A_2 v_2 \Delta t
@@ -570,7 +556,6 @@ Q=(5 {\rm l/min})\left(\frac{1}{1000}{\rm m^3/l}\right) \left(\frac{1}{60}{\rm m
 ```
 Since we know the area of the hose, we can determine the speed of the water to achieve the given flow rate:
 ```{math}
-:nowrap:
 
 \begin{align*}
 Q &= Av=\pi \left(\frac{D}{2}\right)^2v \\
@@ -597,7 +582,6 @@ The fluid that is to the left of the element of fluid exerts a pressure, $P_1$, 
 
 In a period of time, $\Delta t$, the left part of the fluid element will move a distance $l_1 = v_1 \Delta t$, while the right part of the fluid element will move a distance $l_2=v_2\Delta t$. We can calculate the work done by each force, defining positive work to be in the direction of motion:
 ```{math}
-:nowrap:
 
 \begin{align*}
 W_1 &=  F_1l_1 = (P_1A_1)(v_1 \Delta t)\\
@@ -620,7 +604,6 @@ W_g = -\Delta m g (y_2-y_1) = -(A_1 v_1 \Delta t \rho) g (y_2-y_1)
 ```
 The net work done on the element of fluid over the time $\Delta t$ is thus:
 ```{math}
-:nowrap:
 
 \begin{align*}
 W^{net} &= W_1+W_2+W_g = P_1A_1v_1 \Delta t - P_2A_2v_2 \Delta t -A_1 v_1 \Delta t \rho g (y_2-y_1)
@@ -628,7 +611,6 @@ W^{net} &= W_1+W_2+W_g = P_1A_1v_1 \Delta t - P_2A_2v_2 \Delta t -A_1 v_1 \Delta
 ```
 Note that, because of the equation of continuity, $A_1v_1 = A_2 v_2$, we can factor out a $A_1v_1$ from each term:
 ```{math}
-:nowrap:
 
 \begin{align*}
 W^{net} &=A_1v_1 \Delta t \Bigl(P_1- P_2 - \rho g (y_2-y_1)\Bigr)
@@ -636,7 +618,6 @@ W^{net} &=A_1v_1 \Delta t \Bigl(P_1- P_2 - \rho g (y_2-y_1)\Bigr)
 ```
 The net work done on the fluid must equal the change in kinetic energy, $\Delta K$, of the mass element, $\Delta m$, from one end of the pipe to the other:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \Delta K &= \frac{1}{2}\Delta m v_2^2 - \frac{1}{2}\Delta m v_1^2\\
@@ -645,7 +626,6 @@ The net work done on the fluid must equal the change in kinetic energy, $\Delta 
 ```
 Using the Work-Energy Theorem, we have:
 ```{math}
-:nowrap:
 
 \begin{align*}
 W^{net} &=\Delta K\\
@@ -719,7 +699,6 @@ We model the flow of the water using a two-dimensional coordinate system with a 
  
 At the top of tank, at a height $y = h_1+h_2$, the water has a speed of zero and is at atmospheric pressure, $P_0$. At the exit of the hole at the bottom of the tank, at a height $y = h_2$, the water has a speed $v_2$ and is also at atmospheric pressure. Using Bernoulli's equation at the top (1) and bottom (2) of the tank, we have:
 ```{math}
-:nowrap:
 
 \begin{align*}
 P_1 +\frac{1}{2}\rho v_1^2+ \rho g y_1&= P_2 + \frac{1}{2}\rho v_2^2 + \rho g y_2\\
@@ -731,7 +710,6 @@ which is exactly the speed that any object falling a distance $h_1$ would have.
 
 Using kinematics, we can find the time that it would take the water to fall a distance $h_2$ (where the water's velocity is horizontal as it exits the tank):
 ```{math}
-:nowrap:
 
 \begin{align*}
 h_2 &= \frac{1}{2}gt^2\\
@@ -740,7 +718,6 @@ h_2 &= \frac{1}{2}gt^2\\
 ```
 The distance $d$ covered by the water is thus given by:
 ```{math}
-:nowrap:
 
 \begin{align*}
 d &= v_2t = \sqrt{2gh_1}\sqrt{\frac{2h_2}{g}} = \sqrt{4h_1h_2}
@@ -756,7 +733,6 @@ You measure that water comes out of your kitchen faucet at a rate of $6 {\rm l/m
 :class: dropdown
 The water flows out of the kitchen faucet at a speed, $v_1$, where the pressure is atmospheric. If the area of the kitchen faucet is $A_1$ we can determine the speed, $v_1$, from the given flow rate, $Q_1=6 {\rm l/min}=1\times 10^{-4} {\rm m^3/s}$:
 ```{math}
-:nowrap:
 
 \begin{align*}
 Q_1 &= A_1 v_1\\
@@ -765,7 +741,6 @@ v_1 &= \frac{Q_1}{A_1}=\frac{(1\times 10^{-4} {\rm m^3/s})}{\pi (0.01 {\rm cm})^
 ```
 The water will flow out of the basement faucet with a speed, $v_2$, where the pressure is also atmospheric, $P_0$. We can use Bernoulli's equation to relate the flow out of the basement faucet (2) to that at the kitchen faucet (1). We choose the $y$ axis of a vertical coordinate system such that the basement is located at $y_2=0$ and the kitchen faucet is located at $y_1=3 {\rm m}$:
 ```{math}
-:nowrap:
 
 \begin{align*}
 P_1 +\frac{1}{2}\rho v_1^2+ \rho g y_1&= P_2 + \frac{1}{2}\rho v_2^2 + \rho g y_2\\
@@ -777,7 +752,6 @@ P_0+\frac{1}{2}\rho v_1^2+ \rho g y_1&= P_0 + \frac{1}{2}\rho v_2^2 \\
 ```
 The corresponding flow rate at the basement faucet will be:
 ```{math}
-:nowrap:
 
 \begin{align*}
 Q_2 &= A_2 v_2 = \pi(0.005 {\rm m})^2(7.67 {\rm m/s})=6.03\times 10^{-4} {\rm m^3/s}=36.17 {\rm l/min}
@@ -875,7 +849,6 @@ Q = Q_1 + Q_2
 ```
 The flow through each house is related to the pressure difference, $\Delta P$, across each house (which is the same), as well as the resistance of that house:
 ```{math}
-:nowrap:
 
 \begin{align*}
 Q_1 &= \frac{\Delta P}{R_1}\\
@@ -884,7 +857,6 @@ Q_2 &= \frac{\Delta P}{R_2}
 ```
 The total flow rate is thus:
 ```{math}
-:nowrap:
 
 \begin{align*}
 Q = Q_1 + Q_2&=\frac{\Delta P}{R_1}+\frac{\Delta P}{R_2}\\
@@ -893,7 +865,6 @@ Q = Q_1 + Q_2&=\frac{\Delta P}{R_1}+\frac{\Delta P}{R_2}\\
 ```
 We can write this as the flow through an effective resistance, $R$, with a pressure difference $\Delta P$:
 ```{math}
-:nowrap:
 
 \begin{align*}
 Q &= \frac{\Delta P}{R}\\
@@ -961,7 +932,6 @@ Q =  \frac{\pi r^4}{8\eta L}\Delta P
 :::{important} Important Equations
 **In the presence of gravity:**
 ```{math}
-:nowrap:
 
 \begin{align*}
 \frac{dP}{dy}&=-\rho g\\
@@ -971,7 +941,6 @@ F_B&=\rho Vg
 ```
 **Equation of continuity:**
 ```{math}
-:nowrap:
 
 \begin{align*}
 \rho Av&=\textrm{constant}\\
@@ -985,7 +954,6 @@ P+\frac{1}{2}\rho v^2+\rho gy=\textrm{constant}
 ```
 **Viscosity:**
 ```{math}
-:nowrap:
 
 \begin{align*}
 Q&=\frac{\Delta P}{R}\\
@@ -1078,7 +1046,6 @@ We can combine the weight of the door and the weight of the people into the tota
 ```
 For the door to float, the net force on the door must be greater than or equal to zero. We want to find the minimum buoyant force for them to float, so we set the net force equal to zero:
 ```{math}
-:nowrap:
 
 \begin{align*}
 F_g&=F_B\\
@@ -1088,7 +1055,6 @@ m_R+m_r+m_d&=\rho_wV_w
 ```
 where the weight includes the mass of Rebecca ($m_R$), Ryan ($m_r$) and the door ($m_d$). We added the subscript $W$ to the right side of the equation to remind ourselves that the buoyant force depends on the density and volume **of the displaced water**. We want to find the maximum density of the wood in order for Rebcca and Ryan to stay above the water's surface. This means that the maximum volume of water that can be displaced is the volume of the door, $V_w=V_d$ (so that the surface of the door is level with the surface of the water, as in [](#fig:fluidmechanics:notthetitanic)). We can rewrite the mass of the door in terms of its volume and density, and apply our condition that $V_w=V_d$ :
 ```{math}
-:nowrap:
 
 \begin{align*}
 m_R+m_r+\rho_dV_d&=\rho_wV_d\\
@@ -1097,7 +1063,6 @@ m_R+m_r+\rho_dV_d&=\rho_wV_d\\
 ```
 A quick calculation tells us that the volume of the door is $(2 {\rm m})(1 {\rm m})(0.12 {\rm m})=0.24 {\rm m^3}$. We can now calculate the desired density of the wood:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \rho_d&=\frac{\rho_wV_d-m_R-m_r}{V_d}\\
@@ -1108,7 +1073,6 @@ A quick calculation tells us that the volume of the door is $(2 {\rm m})(1 {\rm 
 The maximum density of the wood that would allow them to both float is $527 {\rm kg/m^3}$. Balsa wood has a density that is about $150 {\rm kg/m^3}$, so would allow them to survive. However, it is unlikely that a random floating door is made of balsa wood (although one would choose lighter materials when constructing a ship).
 * b. No, they could not both stay on the door because the density of oak is greater than the maximum density of $527 {\rm kg/m^3}$. We can find the amount of mass that can be added to the door ($m_A$) in order for the person on it to stay above water:
 ```{math}
-:nowrap:
 
 \begin{align*}
 F_g&=F_B\\
@@ -1120,7 +1084,6 @@ m_A&=V_d(\rho_w-\rho_d)
 ```
 where we again used the condition that $V_w=V_d$. We can plug in the appropriate values and solve:
 ```{math}
-:nowrap:
 
 \begin{align*}
 m_A&=V_d(\rho_w-\rho_d)\\
@@ -1148,7 +1111,6 @@ Q=\frac{2 {\rm l}}{2 {\rm hr}}\cdot \frac{1 {\rm hr}}{3600 {\rm s}}\cdot \frac{0
 ```
 Using our values, we can calculate $P_1$:
 ```{math}
-:nowrap:
 
 \begin{align*}
 P_1 &= (2.8\times 10^{-7} {\rm m^3/s})\frac{8(1.0\times 10^{3} {\rm Pa\cdot s}) (0.032 {\rm m})}{\pi (3\times 10^{-4} {\rm m})^4}+80 {\rm mm Hg}\cdot \frac{133 {\rm Pa}}{1 {\rm mm Hg}}+1 {\rm atm}\\
@@ -1172,7 +1134,6 @@ P_0+\frac{1}{2}\rho v_0^2+\rho gy_0=P_1+\frac{1}{2}\rho v_1^2+\rho gy_1\\
 ```
 Using our values to solve for $y_0$, we get:
 ```{math}
-:nowrap:
 
 \begin{align*}
 P_0+\rho gy_0&=P_1\\

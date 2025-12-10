@@ -92,7 +92,6 @@ d\vec l = dl\hat y
 ```
 The vector, $\vec r$, from $d\vec l$ to the point at which we would like to know the magnetic field is given by:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \vec r &= r\cos\theta\hat x -r\sin\theta\hat y\\
@@ -109,7 +108,6 @@ d\vec l \times \vec r=-dl r \cos\theta \hat z
 ```
 Note that we can also determine the cross-product algebraically instead of using the right-hand rule and the magnitude:
 ```{math}
-:nowrap:
 
 \begin{align*}
 d\vec l \times \vec r &= (dl\hat y) \times (r\cos\theta\hat x -r\sin\theta\hat y)\\
@@ -130,7 +128,6 @@ dl = dy = \frac{dy}{d\theta}d\theta = \frac{h}{\cos^2\theta}d\theta
 ```
 and $r$ is given by:
 ```{math}
-:nowrap:
 
 \begin{align*}
 r=\frac{h}{\cos\theta}\quad \to \quad
@@ -139,7 +136,6 @@ r=\frac{h}{\cos\theta}\quad \to \quad
 ```
 Putting this altogether into $d\vec B$:
 ```{math}
-:nowrap:
 
 \begin{align*}
 d\vec B &=-\frac{\mu_0 I}{4\pi}\frac{dl\cos\theta}{r^2}\hat z\\
@@ -149,7 +145,6 @@ d\vec B &=-\frac{\mu_0 I}{4\pi}\frac{dl\cos\theta}{r^2}\hat z\\
 ```
 We define the angle, $\theta_0$, to be the maximum amplitude of the angle $\theta$ when integrating over the wire (see [](#fig:magneticsource:bswire)), so that we integrate $\theta$ from $-\theta_0$ to $+\theta_0$:
 ```{math}
-:nowrap:
 
 \begin{align*}
 B_z&=\int_{-\theta_0}^{+\theta_0}dB_z\\
@@ -160,7 +155,6 @@ B_z&=\int_{-\theta_0}^{+\theta_0}dB_z\\
 ```
 Using the given dimensions:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \sin\theta_0&=\frac{L/2}{\sqrt{h^2+\frac{L^2}{4}}}\\
@@ -212,7 +206,6 @@ The vector, $\vec r$, from the wire element to the point where we wish to determ
 ```
 and the angle $\theta$ will be the same for all wire elements along the ring. The cross-product, $d\vec l \times \vec r$, can be evaluated algebraically:
 ```{math}
-:nowrap:
 
 \begin{align*}
 d\vec l \times \vec r &= (dl \hat x) \times ( - r\sin\theta \hat y+r\cos\theta \hat z)\\
@@ -223,7 +216,6 @@ d\vec l \times \vec r &= (dl \hat x) \times ( - r\sin\theta \hat y+r\cos\theta \
 ```
 so that the element of magnetic field, $d\vec B$, corresponding to that choice of $d\vec l$, will lie in the $y-z$ plane, as illustrated in [](#fig:magneticsource:bsring). Note that the vector $d\vec B$ is perpendicular to the vector $\vec r$ (since it is the cross-product of $\vec r$ with another vector). The magnetic field element, $d\vec B$, is given by:
 ```{math}
-:nowrap:
 
 \begin{align*}
 d\vec B &= \frac{\mu_0 I}{4\pi}\frac{d\vec l\times \vec r}{r^3}\\
@@ -243,7 +235,6 @@ As the wire element, $d\vec l$, moves along the ring, the tip of corresponding m
 
 The total magnetic field will be in the negative $z$ direction, as anticipated from [](#fig:magneticsource:ringfield). Summing together the $z$ components of the infinitesimal magnetic fields:
 ```{math}
-:nowrap:
 
 \begin{align*}
 dB_z &= -\frac{\mu_0 I}{4\pi r^2}dl\sin\theta\\
@@ -253,7 +244,6 @@ B_z &= \int dB_z\\
 ```
 Note that in this case, both $r$ and $\theta$ are constant for all of the $d\vec l$, allowing us to take them out of the integral. The integral is then just a sum of the $dl$ elements, which must add up to the circumference of the ring:
 ```{math}
-:nowrap:
 
 \begin{align*}
 B_z &= \int dB_z\\
@@ -264,7 +254,6 @@ B_z &= \int dB_z\\
 ```
 In terms of the variables that we are given:
 ```{math}
-:nowrap:
 
 \begin{align*}
 r &= \sqrt{R^2+h^2}\\
@@ -409,7 +398,6 @@ The circulation of the magnetic field along a circular path of radius, $h$, is g
 ```
 where $\cos\theta$ is 1 if the field forms circles (correct) or 0 if the field is radial (incorrect). We can now evaluate the current that is enclosed by the Amperian loop. The current that is enclosed is given by the net current that traverses the surface defined by the Amperian loop (in this case, a circle of radius $h$). Since the loop encloses the entire wire, the enclosed current is simply $I$. Applying Ampère's Law:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \oint \vec B \cdot d\vec l &=\mu_0 I^{enc}\\
@@ -485,7 +473,6 @@ By symmetry, and following the discussion in this chapter, we know that the magn
 ```
 The entire cable is enclosed by the loop, so that the enclosed current is, $I$. Thus, Ampère's Law gives:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \oint \vec B \cdot d\vec l &=\mu_0 I^{enc}\\
@@ -499,7 +486,6 @@ Inside of the cable, the circulation integral around a circular path of radius, 
 ```
 However, in this case, the smaller Amperian loop does not enclose all of the current flowing through the cable. We are told that the current density, $j$, is uniform in the cable. We can thus determine the current per unit area (i.e. the current density) that flows through the whole cable, and use that to determine how much current flows through the surface with area $\pi r^2$ that is defined by the Amperian loop:
 ```{math}
-:nowrap:
 
 \begin{align*}
 j &= \frac{I}{A}=\frac{I}{\pi R^2}\\
@@ -508,7 +494,6 @@ j &= \frac{I}{A}=\frac{I}{\pi R^2}\\
 ```
 Finally, we can apply Ampère's Law to determine the magnitude of the magnetic field inside the cable:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \oint \vec B \cdot d\vec l &=\mu_0 I^{enc}\\
@@ -545,7 +530,6 @@ Stokes' theorem allows one to convert the circulation integral (a path integral 
 ```
 where the subscript $C$ indicates that the integral is over a one-dimensional path, whereas the subscript $S$ indicates that the integral is over a two-dimensional surface. The term, $\nabla \times \vec B$, is called the "curl" of the magnetic field and is a local measure of the amount of rotation in the field. Applying Stokes' theorem to Ampère's Law yield:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \oint \vec B \cdot d\vec l &= \mu_0 I^{enc}\\
@@ -573,7 +557,6 @@ and the name "curl" is chosen because this is a measure of the amount of rotatio
 
 Since Ampère's Law in differential form is a vector equation (both sides are vectors), it really corresponds to three equations in Cartesian coordinates, one per component. For example, the $x$ component of the equation is a "partial differential equation" for the $y$ and $z$ components of the magnetic field:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \left(\frac{\partial B_z}{\partial y}-\frac{\partial B_y}{\partial z}\right) &=\mu_0j_x
@@ -613,7 +596,6 @@ In order to evaluate the circulation of the magnetic field around the loop, $abc
 ```
 Over each segment, the vector $d\vec l$ will be parallel to that segment. Only the last term is non-zero. The integrals over the segments $ab$ and $cd$ are zero because the magnetic field is perpendicular to $d\vec l$ over those segments (so the scalar product is zero). The integral over the segment $bc$ is zero because the magnetic field is zero just outside the solenoid. The integral over the last segment, where $d\vec l$ and $\vec B$ are parallel, is simply given by:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \oint_{abcd} \vec B \cdot d\vec l &= \int_d^a \vec B \cdot d\vec l\\
@@ -625,7 +607,6 @@ since the length of the segment is $l$, and the magnetic field is constant in ma
 
 In order to apply Ampère's Law, we must determine the current that is enclosed by our Amperian loop. Since the rectangular loop has a length, $l$, it will enclose $N=nl$ loops of current, $I$, since there are $n$ loops per unit length. Thus the enclosed current is $I^{enc}=nlI$. Applying Ampère's Law, we find the magnetic field inside a solenoid:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \oint \vec B \cdot d\vec l &=\mu_0 I^{enc}\\
@@ -656,7 +637,6 @@ An Amperian loop of radius $r$ to determine the magnetic field inside of a toroi
 ```
 Again, we can use Ampère's Law to determine the strength of the magnetic field inside the toroid. Consider the circular Amperian loop of radius $r$ that is illustrated in [](#fig:magneticsource:amperetoroid). Since the magnetic field is parallel to the Amperian loop everywhere along the loop, and the magnetic field does not change magnitude (by symmetry), the circulation is given by:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \oint \vec B \cdot d\vec l &= B (2\pi r)
@@ -664,7 +644,6 @@ Again, we can use Ampère's Law to determine the strength of the magnetic field 
 ```
 If the toroid contains $N$ loops of current, then the enclosed current is given by $I^{enc}=NI$, since the Amperian loop include $N$ times the current $I$ coming out of the page. Ampère's Law thus gives the magnitude of the magnetic field as:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \oint \vec B \cdot d\vec l &=\mu_0 I^{enc}\\
@@ -708,7 +687,6 @@ d\vec B = \frac{\mu_0 I}{4\pi}\frac{d\vec l\times \vec r}{r^3}
 ```
 The magnetic field at a distance, $h$, from an infinitely long wire carrying current, $I$, is given by:
 ```{math}
-:nowrap:
 
 \begin{align*}
 B&=\frac{\mu_0 I}{2\pi h}
@@ -735,7 +713,6 @@ Ampère's Law is the magnetism analogue to Gauss' Law. Just like Gauss' Law, it 
 In order to apply Ampère's Law, we must first choose an Amperian loop over which to compute the closed path integral (instead of choosing a Gaussian surface to calculate the flux of the electric field on a closed surface). The circulation integral will be straightforward to evaluate if:
 1.  **The angle between $\vec B$ and $d\vec l$ is constant along the path**, so that:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \oint  \vec B \cdot d\vec l &= \oint B dl \cos\theta\\
@@ -845,7 +822,6 @@ The square loop is simply made of four straight sections of wire of length, $L$.
 
 The magnetic field at the centre is just four times the magnetic field produced by a single segment, which we determined in this chapter. The magnetic field at the centre of the loop is thus four times the magnetic field at a distance, $h=\frac{L}{2}$, from a wire of length, $L$:
 ```{math}
-:nowrap:
 
 \begin{align*}
 B &= 4\times\frac{\mu_0 I}{2\pi \frac{L}{2}}\frac{L/2}{\sqrt{\frac{L^2}{4}+\frac{L^2}{4}}}=2\sqrt 2\frac{\mu_0 I}{\pi L}
@@ -862,7 +838,6 @@ We know that the magnetic field at a distance, $h$, from the centre of a loop of
 ```
 For the two coils in the Helmholtz configuration, the magnetic field from each coil will be in the same direction. The centre of the two coils are located at $z=\pm\frac{R}{2}$. Thus, if we are located at position, $z$, along the $z$ axis, one coil will be at a distance of $z+\frac{R}{2}$, and the other at a distance $z-\frac{R}{2}$. The total magnetic field as a function of $z$ is then given by:
 ```{math}
-:nowrap:
 
 \begin{align*}
 B^{tot}(z) &= B\left(z+\frac{R}{2}\right)+B\left(z-\frac{R}{2}\right)\\

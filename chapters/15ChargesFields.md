@@ -154,7 +154,6 @@ Calculate the magnitude of the electric force between the electron and the proto
 :class: dropdown
 We model this by assuming that the electron and proton are point charges a distance of $1 \overset{\circ}{\rm A}=1\times 10^{-10} {\rm m}$ apart (1 Angstrom is about the size of the hydrogen atom). The proton and electron have the same charge with magnitude $e=1.6\times 10^{-19} {\rm C}$, so the (attractive) electric force between them has a magnitude of:
 ```{math}
-:nowrap:
 
 \begin{align*}
 F_e &= k\frac{Q_1Q_2}{r^2}\\
@@ -164,7 +163,6 @@ F_e &= k\frac{Q_1Q_2}{r^2}\\
 ```
 which is a small number, but acting on a very small mass. In comparison, the force of gravity between an electron ($m_e=9.1\times 10^{-31} {\rm kg}$) and a proton ($m_p=1.7\times 10^{-27} {\rm kg}$) is given by:
 ```{math}
-:nowrap:
 
 \begin{align*}
 F_g&=G\frac{m_em_p}{r^2}\\
@@ -210,7 +208,6 @@ F_{q1}=\left |k\frac{Q_1q}{a^2}\right |=(9\times 10^9 {\rm N\cdot m^2/C^{2}})\fr
 ```
 and components:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \vec F_{q1}&=-F_{q1}\cos(60 {\rm \degree})\hat x-F_{q1}\sin(60 {\rm \degree})\hat y\\
@@ -223,7 +220,6 @@ F_{q2}=\left |k\frac{Q_2q}{a^2}\right |=(9\times 10^9 {\rm N\cdot m^2/C^{2}})\fr
 ```
 and components:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \vec F_{q2}&=-F_{q2}\cos(60 {\rm \degree})\hat x+F_{q2}\sin(60 {\rm \degree})\hat y\\
@@ -232,7 +228,6 @@ and components:
 ```
 Finally, we can add the two force vectors together to obtain the net force on $q$:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \vec F^{net}&=\vec F_{q1}+\vec F_{q2}\\
@@ -301,7 +296,6 @@ E_1=\left |k\frac{Q_1}{a^2}\right |=(9\times 10^{9} {\rm N\cdot m^2/C^{2}})\frac
 ```
 and components:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \vec E_1&=E_1\cos(60 {\rm \degree})\hat x+E_1\sin(60 {\rm \degree})\hat y\\
@@ -314,7 +308,6 @@ E_2=\left |k\frac{Q_2}{a^2}\right |=(9\times 10^{9} {\rm N\cdot m^2/C^{2}})\frac
 ```
 and components:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \vec E_2&=E_2\cos(60 {\rm \degree})\hat x-E_2\sin(60 {\rm \degree})\hat y\\
@@ -323,7 +316,6 @@ and components:
 ```
 Finally, we can add the two force vectors together to obtain the net force on $q$:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \vec E^{net}&=\vec E_1+\vec E_2\\
@@ -333,7 +325,6 @@ Finally, we can add the two force vectors together to obtain the net force on $q
 ```
 which has a magnitude of $15.8\times 10^{4} {\rm N/C}$. By knowing the electric field at the empty corner of the triangle, we can now calculate the net electric force that would act on any charge placed in that location. For example, if we place a charge $q=-1 {\rm nC}$ (as in [](#ex:chargesfields:chargetriangle)), we can easily find the corresponding electric force:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \vec F_q &= q\vec E=(-1 {\rm nC})\left[ (13.5\times 10^{4} {\rm N/C})\hat x-(8.2\times 10^{4} {\rm N/C})\hat y \right]\\
@@ -428,7 +419,6 @@ d\vec E = dE\cos\theta \hat x - dE\sin\theta \hat y
 ```
 The total electric field at the origin will be obtained by summing the electric fields from the different $dq$ over the entire semi-circle:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \vec E &= \int d\vec E = \int \left(dE\cos\theta \hat x - dE\sin\theta \hat y\right)\\
@@ -447,7 +437,6 @@ ds = Rd\theta
 ```
 The total charge on the wire is given by $Q$, and the wire has a length $\pi R$ (half the circumference of a circle). Since the charge is distributed uniformly on the wire, the charge per unit length of any piece of wire must be constant. In particular, $dq$ divided by $ds$ must be equal to $Q$ divided by $\pi R$:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \frac{dq}{ds}&=\frac{Q}{\pi R}\\
@@ -456,7 +445,6 @@ The total charge on the wire is given by $Q$, and the wire has a length $\pi R$ 
 ```
 where in the last equality we used the relation $ds=Rd\theta$. We now have all of the ingredients to solve the integral:
 ```{math}
-:nowrap:
 
 \begin{align*}
 E_x &= \int k\frac{dq}{R^2} \cos\theta = \int_{-\pi/2}^{+\pi/2} k\frac{Q}{\pi R^2}\cos\theta d\theta\\
@@ -524,7 +512,6 @@ dE = k\frac{dq}{r^2}
 ```
 The $x$ and $z$ components of the total electric field will then be given by:
 ```{math}
-:nowrap:
 
 \begin{align*}
 E_x &= -\int dE\sin\theta=-\int k\frac{dq}{r^2}\sin\theta\\
@@ -538,7 +525,6 @@ In general, if we had chosen a $dq$ that is not along one of the axes of the coo
 
 We now have to evaluate the integral for the $z$ component of the electric field:
 ```{math}
-:nowrap:
 
 \begin{align*}
 E_z &= \int k\frac{dq}{r^2}\cos\theta \\
@@ -546,7 +532,6 @@ E_z &= \int k\frac{dq}{r^2}\cos\theta \\
 ```
 and determine which quantities change as we move $dq$ around the ring. In this case, both $r^2$ and $\cos\theta$ are the same for all elements on the ring, and the integral is trivial:
 ```{math}
-:nowrap:
 
 \begin{align*}
 E_z &= k\frac{1}{r^2}\cos\theta\int dq=k\frac{Q}{r^2}\cos\theta=kQ\frac{a}{(R^2+a^2)^\frac{3}{2}}  \\
@@ -590,7 +575,6 @@ dE = k\frac{dq}{r^2}
 ```
 The $x$ and $y$ components of the total electric field will then be given by:
 ```{math}
-:nowrap:
 
 \begin{align*}
 E_x &= \int dE\cos\theta=\int k\frac{dq}{r^2}\cos\theta \\
@@ -603,7 +587,6 @@ Again, before proceeding with the integrals, we consider symmetry. Specifically,
 ```
 Within the integrand, both $r$ and $\theta$ will change as we sum over the different charges $dq$ along the rod. A straightforward option to write the integral is to use $y$ as the integration constant, and to write $dq$, $r$, and $\cos\theta$ in terms of $y$. The charge $dq$ covers an infinitesimal length of the rod, $dy$. Since the rod is uniformly charged, the charge per unit length must be the same over a small length $dy$ as it is over the whole length of the rod:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \frac{dq}{dy}&=\frac{Q}{L}\\
@@ -616,7 +599,6 @@ dq = \lambda dy
 ```
 We can also express $r^2$ and $\cos\theta$ in terms of $y$ (and $R$, which is constant):
 ```{math}
-:nowrap:
 
 \begin{align*}
 r^2 &= y^2+R^2\\
@@ -625,7 +607,6 @@ r^2 &= y^2+R^2\\
 ```
 Finally, we can combine this all into an integral that we can evaluate:
 ```{math}
-:nowrap:
 
 \begin{align*}
 E_x &= \int k\frac{dq}{r^2}\cos\theta\\
@@ -645,7 +626,6 @@ Solving the integral above in terms of the integration variable $y$ is difficult
 
 We go back to step 7 in our procedure and choose $\theta$ (instead of $y$) as the integration variable for the integral:
 ```{math}
-:nowrap:
 
 \begin{align*}
 E_x &=\int k\frac{dq}{r^2}\cos\theta\\
@@ -653,7 +633,6 @@ E_x &=\int k\frac{dq}{r^2}\cos\theta\\
 ```
 That is, we need to express $1/r^2$ and $dq$ in terms of $\theta$. To do this, we refer back to [](#fig:chargesfields:finiteline). Starting with $1/r^2$, we get:
 ```{math}
-:nowrap:
 
 \begin{align*}
 r &= \frac{R}{\cos\theta}\\
@@ -662,7 +641,6 @@ r &= \frac{R}{\cos\theta}\\
 ```
 Now we need to find an expression for $dq$. We know that $dq=\lambda dy$, and $\lambda$ is just a constant, so we need to find $dy$ as a function of $\theta$:
 ```{math}
-:nowrap:
 
 \begin{align*}
 y &= R\tan\theta\\
@@ -672,7 +650,6 @@ y &= R\tan\theta\\
 ```
 where in the second line, we took the derivative of $y=R\tan\theta$ with respect to $\theta$. With these expressions for $1/r^2$ and $dq$, the integral becomes trivial:
 ```{math}
-:nowrap:
 
 \begin{align*}
 E_x &= \int k\frac{dq}{r^2}\cos\theta\\
@@ -688,7 +665,6 @@ where $\theta_0$ is the angle subtended by half of the rod. Referring to [](#fig
 ```
 So that the total electric field is given by:
 ```{math}
-:nowrap:
 
 \begin{align*}
 E_x &=\frac{2k\lambda}{R}\sin\theta_0=\frac{k\lambda}{R}\frac{L}{\sqrt{\left(\frac{L}{2}\right)^2+R^2}}
@@ -733,7 +709,6 @@ dq = \sigma dA=\sigma 2\pi r dr
 ```
 where $dA=2\pi r dr$ is the area of the infinitesimal ring of radius $r$ and thickness $dr$ (think of unfolding the ring into a rectangle of height $dr$ and length $2\pi r$, the circumference of the circle, in order to determine the area). We now have all of the ingredients in order to determine the total electric field:
 ```{math}
-:nowrap:
 
 \begin{align*}
 E &= \int dE = \int_0^R kdq\frac{a}{(r^2+a^2)^\frac{3}{2}}  = 2\pi k a \sigma \int_0^R \frac{r}{(r^2+a^2)^\frac{3}{2}}dr\\
@@ -806,7 +781,6 @@ An electric dipole in a uniform electric field.
 ```
 Although the net force on the dipole is zero, there is still a net torque about its centre that will cause the dipole to rotate (unless the dipole vector is already parallel to the electric field vector). If the dipole vector makes an angle, $\theta$, with the electric field vector (as in [](#fig:chargesfields:dipoleinfield)), the magnitude of the net torque on the dipole about an axis perpendicular to the page and through the centre of the dipole is given by:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \tau&=\frac{l}{2}F^+\sin\theta+\frac{l}{2}F^-\sin\theta\\
@@ -832,7 +806,6 @@ When an electric dipole is such that its dipole vector is anti-parallel to the e
 
 We can also model the behaviour of the dipole using energy. If a dipole is rotated away from its equilibrium orientation and then released, it will gain (rotational) kinetic energy as it tries to return to equilibrium, and will oscillate about the equilibrium position. When the dipole is held out of equilibrium, we can think of it has having potential energy. To determine the functional form of that potential energy function, we consider the work done in rotating the dipole from an angle $\theta_1$ to an angle $\theta_2$ (where the angle is between the dipole and the electric field vectors):
 ```{math}
-:nowrap:
 
 \begin{align*}
 W&=\int_{\theta_1}^{\theta_2} \tau d\theta=\int_{\theta_1}^{\theta_2} -pE\sin\theta d\theta=-pE\int_{\theta_1}^{\theta_2} \sin\theta d\theta\\
@@ -994,7 +967,6 @@ R = \frac{L}{2}\tan\left(\frac{\pi}{6}\right)=\frac{\sqrt{3}}{6}L
 ```
 Thus, the magnitude of the electric field from one wire is given by:
 ```{math}
-:nowrap:
 
 \begin{align*}
 E&= \frac{2k\lambda}{R}\sin\left(\frac{\pi}{3}\right)=\frac{\sqrt{3}k\lambda}{R}=\frac{\sqrt{3}k\lambda}{\frac{\sqrt{3}}{6}L}=\frac{6k\lambda}{L}
@@ -1002,7 +974,6 @@ E&= \frac{2k\lambda}{R}\sin\left(\frac{\pi}{3}\right)=\frac{\sqrt{3}k\lambda}{R}
 ```
 The charge, $Q$, is evenly distributed along the rod of length, $L$, so that we can rewrite the charge density as $\lambda=\frac{Q}{L}$, which gives:
 ```{math}
-:nowrap:
 
 \begin{align*}
 E &= \frac{6k\lambda}{L} = \frac{6kQ}{L^2}
@@ -1032,7 +1003,6 @@ When the dipole is rotated from the equilibrium position by an angle $\theta$, i
 ```
 where we have inserted a minus sign to indicate that this is a restoring torque, in the opposite direction of increasing angle $\theta$. The net torque is then equal to the moment of inertia times the angular acceleration of the dipole (Newton's Second Law applied for rotation):
 ```{math}
-:nowrap:
 
 \begin{align*}
 -pE\sin\theta &= I\alpha\\
@@ -1041,7 +1011,6 @@ where we have inserted a minus sign to indicate that this is a restoring torque,
 ```
 where in the last equality, we made the small angle approximation ($\sin\theta\sim\theta$). This has the form for simple harmonic motion, with angular frequency, $\omega$:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \frac{d^2\theta}{dt^2}&=-\omega^2 \theta\\

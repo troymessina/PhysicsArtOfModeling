@@ -132,7 +132,6 @@ The coil lies the $x-y$ plane, perpendicular to the increasing magnetic field, s
 ```
 The flux through one circular loop of radius, $r$, is given by:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \Phi_B (t) &= \vec B \cdot \vec A = ( B_0(1+at)\hat z) \cdot (\pi r^2 \hat z) =B_0(1+at) (\pi r^2)
@@ -140,7 +139,6 @@ The flux through one circular loop of radius, $r$, is given by:
 ```
 We can apply Faraday's law to determine the induced voltage:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \Delta V &= -N \frac{d\Phi_B}{dt} = -N \frac{d}{dt} B_0(1+at) (\pi r^2)\\
@@ -203,7 +201,6 @@ A(t)=Lw(t)=Lvt
 ``` 
 that increases with time. The magnitude of the flux through the loop will increase with time, resulting in an induced current (clockwise, according to Lenz's law). At some time $t$, the flux through the loop is given by:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \Phi_B (t) &=  \vec B \cdot \vec A =BA=BLvt
@@ -236,7 +233,6 @@ F_B = ILB = \frac{B^2L^2v}{R}
 ```
 Thus, in order for the bar to move at constant velocity towards the right, a force with the same magnitude must be exerted towards the right. In other words, work must be done to pull the bar to the right, by exerting a force with the magnitude, $F_B$. The rate at which that work must be done is given by:
 ```{math}
-:nowrap:
 
 \begin{align*}
 P &= \frac{d}{dt}W\\
@@ -258,7 +254,6 @@ I'll quickly sum up what is happening in this example:
 
 Finally, also note that this situation is closely related to the Hall effect, which is simply a different way to think about this problem. Consider the electrons that are in the bar, as the bar moves at constant speed to the right through the magnetic field (ignore the existence of the U-shaped rail). The electrons will experience a magnetic force that is upwards (consistent with the direction of the induced current discussed above). Eventually, electrons accumulate at the top of the bar, and start preventing more electrons from accumulating there, by producing an electric field, $\vec E$, in the bar. The equilibrium condition is that the magnetic force and the electric force have the same magnitude (and opposite directions):
 ```{math}
-:nowrap:
 
 \begin{align*}
 qvB &= qE\\
@@ -317,7 +312,6 @@ I = \frac{\Delta V}{R}=\frac{NAB\omega\sin(\omega t)}{R}
 ```
 The magnetic moment, $\vec \mu$, for the current in the coil is given by:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \vec \mu &= I\vec A = \frac{NAB\omega\sin(\omega t)}{R} (A(\cos(\omega t) \hat x -\sin(\omega t)\hat z))\\
@@ -326,7 +320,6 @@ The magnetic moment, $\vec \mu$, for the current in the coil is given by:
 ```
 The torque exerted by the magnetic field on the coil with the induced current is thus given by:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \vec \tau &= \vec \mu \times \vec B = \left(\frac{NA^2B\omega\sin(\omega t)}{R} (\cos(\omega t) \hat x -\sin(\omega t)\hat z)\right) \times (B\hat x)\\
@@ -418,7 +411,6 @@ The circulation of the electric field is easily found, since the electric field 
 ```
 Applying Faraday's law, the electric field is found to be:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \oint \vec E\cdot d\vec l &= -\frac{d\Phi_B}{dt}\\
@@ -439,7 +431,6 @@ The flux of the magnetic field through that loop is however related to the area 
 ```
 Again, applying Faraday's law:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \oint \vec E\cdot d\vec l &= -\frac{d\Phi_B}{dt}\\
@@ -508,7 +499,6 @@ as is the voltage in the secondary coil:
 ```
 Since the flux (and thus its time-derivative) are the same in both coils, we can isolate the time-derivative in each equation to obtain the relationship between the voltages in the two coils:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \frac{\Delta V_p}{N_p}&=\frac{\Delta V_s}{N_s}\\
@@ -551,7 +541,6 @@ We model the transmission of power from the power plant to the town using the ci
 
 We do not know the resistance of the town, but we can still calculate the power that is dissipated in the transmission lines that have a total resistance of $R=0.5 {\rm \Omega}$. The power plant produces power, $P$, and transmits it through the lines at a potential difference, $\Delta V$, resulting in a current, $I$:
 ```{math}
-:nowrap:
 
 \begin{align*}
 P &= I\Delta V\\
@@ -564,7 +553,6 @@ P_{line} = I^2 R = \frac{P^2}{\Delta V^2}R
 ```
 With the two different voltages, this corresponds to:
 ```{math}
-:nowrap:
 
 \begin{align*}
 P_{line}&=\frac{P^2}{\Delta V^2}R=\frac{(150e3 {\rm W})^2}{(300000 {\rm V})^2}(0.5 {\rm \Omega})=0.1 {\rm W}\\
@@ -577,7 +565,6 @@ Thus, when the power is transmitted at low voltage, more than 80\% is dissipated
 # Maxwell's equations and electromagnetic waves
 This section is meant to be informative, as the material is beyond the scope of this textbook. Nonetheless, it is worth summarizing what we have learned about electricity and magnetism, as Maxwell did. We can summarize the main laws from electromagnetism as follows:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \oint \vec E\cdot d\vec A &= \frac{Q}{\epsilon_0}&\text{(Gauss' Law)}\\
@@ -590,7 +577,6 @@ where we wrote the magnetic flux in Faraday's law using the integral explicitly.
 
 When we covered Ampère's Law, we only considered a static current as the source of the magnetic field. However, if there is an electric field present that is created by charges that are moving, then those can also contribute a current to Ampère's Law:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \oint \vec E\cdot d\vec A &= \frac{Q}{\epsilon_0}\quad \text{(Gauss' Law)}\\
@@ -600,7 +586,6 @@ When we covered Ampère's Law, we only considered a static current as the source
 ```
 so that Ampère's Law, in its most general form, is written:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \oint \vec B\cdot d\vec l &= \mu_0 \left(I^{enc}+\epsilon_0\frac{d}{dt} \oint \vec E\cdot d\vec A\right)\quad \text{(Ampère's Law)}
@@ -608,7 +593,6 @@ so that Ampère's Law, in its most general form, is written:
 ```
 Writing out the four equations again:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \oint \vec E\cdot d\vec A &= \frac{Q}{\epsilon_0} &\text{(Gauss' Law)}\\
@@ -623,7 +607,6 @@ In fact, as Maxwell did, we can obtain the wave equation ([Section %s](#sec:wave
 
 We first write out Maxwell's equations in differential form, as we have already shown for Gauss' Law (([Section %s](#sec:gauss:interpretation)) and Ampère's Law (([Section %s](#sec:magneticsource:interpretation))
 ```{math}
-:nowrap:
 
 \begin{align*}
 \nabla \cdot \vec E &= \frac{\rho}{\epsilon_0} &\text{(Gauss' Law)}\\
@@ -634,7 +617,6 @@ We first write out Maxwell's equations in differential form, as we have already 
 ```
 If we consider a vacuum region in space, with no charges and no currents, these equations reduce to:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \nabla \cdot \vec E &= 0 ~~~~&\nabla \cdot \vec B&= 0\\
@@ -647,7 +629,6 @@ We will make use of the following identity from vector calculus:
 ```
 where:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \nabla^2\vec E &= \frac{\partial^2 \vec E}{\partial x^2}+\frac{\partial^2 \vec E}{\partial y^2} + \frac{\partial^2 \vec E}{\partial z^2}\\
@@ -659,7 +640,6 @@ is called the "vector Laplacian".
 
 Consider taking the curl ($\nabla \times$) of the equation that has the curl of the electric field (Faraday's law):
 ```{math}
-:nowrap:
 
 \begin{align*}
 \nabla \times \bigg(\nabla \times \vec E &= -\frac{\partial\vec B}{\partial t}\bigg)\\
@@ -671,7 +651,6 @@ Consider taking the curl ($\nabla \times$) of the equation that has the curl of 
 ```
 where, in the third line, we made use of Gauss' Law ($\nabla \cdot \vec E=0$), and, in the fourth line, Ampère's Law ($\nabla \times \vec B = \mu_0 \epsilon_0\frac{\partial E}{\partial t}$). The last equation that we obtained is a vector equation (the vector Laplacian has three components, as does the time-derivative of $\vec E$ on the right-hand side). Consider the $x$ component of this equation:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \frac{\partial^2 E_x}{\partial x^2}+\frac{\partial^2  E_x}{\partial y^2} + \frac{\partial^2 E_x}{\partial z^2}  &= \mu_0 \epsilon_0\frac{\partial^2 E_x}{\partial t^2}
@@ -683,7 +662,6 @@ c = \frac{1}{\sqrt{\epsilon_0\mu_0}}
 ```
 then, the $x$ component of the equation can be written as:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \frac{\partial^2 E_x}{\partial x^2}+\frac{\partial^2  E_x}{\partial y^2} + \frac{\partial^2 E_x}{\partial z^2} &= \frac{1}{c^2}\frac{\partial^2 E_x}{\partial t^2}
@@ -732,7 +710,6 @@ When an electric motor is used, a "back emf" is induced in the coil of the motor
 
 Since a changing magnetic flux induces a voltage, an electric field is also induced. We can replace the voltage in Faraday's law with the circulation of the electric field to write a more general version of Faraday's law:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \oint \vec E\cdot d\vec l &= -\frac{d\Phi_B}{dt}
@@ -744,7 +721,6 @@ When a metallic object passes through a region of magnetic field, the induced el
 
 Transformers are used to convert an alternating voltage, $\Delta V_p$, into a different alternating voltage, $\Delta V_s$. A "primary" coil, with $N_p$ windings, creates a changing magnetic flux that is guided (e.g. by an iron core) to a "secondary" coil, with $N_s$ windings. The voltage induced in the secondary coil is given by:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \Delta V_s &= \frac{N_p}{N_s}\Delta V_p
@@ -769,7 +745,6 @@ c = \frac{1}{\sqrt{\epsilon_0\mu_0}}
 
 **Faraday's law:**
 ```{math}
-:nowrap:
 
 \begin{align*}
 \oint \vec E\cdot d\vec l &= -\frac{d\Phi_B}{dt}
@@ -788,7 +763,6 @@ c = \frac{1}{\sqrt{\epsilon_0\mu_0}}
 
 **Secondary voltage in a transformer:**
 ```{math}
-:nowrap:
 
 \begin{align*}
 \Delta V_s &= \frac{N_p}{N_s}\Delta V_p
@@ -844,7 +818,6 @@ A generator is made of $N$ circular loops of radius $R=0.3 {\rm m}$, rotating at
 :class: dropdown
 This is identical to the motional emf that is generated by a bar moving in a magnetic field. As the airplane moves as illustrated (towards the left, in an upwards magnetic field), the electrons in the wing of the airplane will be pushed into the page. Eventually, the electric field from the electrons will prevent further electrons from accumulating at that side of the wing, and there will be a constant (Hall) voltage, $\Delta V$, across the wing tips. This will happen when the magnetic and electric force are equal and opposite:
 ```{math}
-:nowrap:
 
 \begin{align*}
 qvB &= qE = q\frac{\Delta V}{L}
@@ -861,7 +834,6 @@ where $L$ is the wingspan of the airplane. The induced potential is thus given b
 :class: dropdown
 The voltage produced by a generator is given by:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \Delta V&=NAB\omega\sin(\omega t)

@@ -187,7 +187,6 @@ where $\vec v_s$ is the (instantaneous) tangential velocity around the circle (i
 
 Given the angular kinematic quantities, the related linear quantities at a position $\vec r$ from the axis of rotation are given by:
 ```{math}
-:nowrap:
 
 \begin{align*}
 d\vec s &= d\vec\theta \times \vec r\nonumber\\
@@ -234,7 +233,6 @@ Putting this altogether, we get:
 
 If more than one force is exerted on the particle, it is easy to show that the **net torque** from the net force on the particle **is equal to the sum of the torques on the particle**:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \vec{r} \times (\vec{F}_1 + \vec{F}_2 + \vec{F}_3 + \dots) &=  (\vec{r} \times \vec{F}_1 + \vec{r} \times \vec{F}_2 + \vec{r} \times \vec{F}_3 + \dots) \\
@@ -1028,7 +1026,6 @@ The sum of the torques in the $z$ direction must be zero for static equilibrium,
 \end{align*}
 Using the $x$ and $y$ components of Newton's Second Law, we can now use the tension to determine the $x$ and $y$ components of the force exerted by the hinge:
 ```{math}
-:nowrap:
 
 \begin{align*}
 R_x &= T\cos\theta = \frac{3g}{2\tan\theta} \left( m + \frac{M}{2}\right)\\

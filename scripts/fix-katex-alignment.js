@@ -4,8 +4,8 @@
  * Fix KaTeX parse errors caused by alignment characters (&) in math blocks
  *
  * This script processes MyST markdown files and fixes math blocks that contain
- * alignment characters by wrapping them in \begin{align*}...\end{align*} and
- * adding the :nowrap: option to the math directive.
+ * alignment characters by wrapping them in \begin{align*}...\end{align*}.
+ * It also removes any :nowrap: options that were previously added.
  */
 
 const fs = require('fs');
@@ -14,31 +14,42 @@ const path = require('path');
 function fixMathBlocks(content) {
   // Regular expression to match ```{math} blocks
   // This captures the entire block including opening/closing backticks
-  const mathBlockRegex = /```\{math\}((?:\s*:[^\n]*\n)?)([\s\S]*?)```/g;
+  const mathBlockRegex = /```\{math\}([\s\S]*?)```/g;
 
   let modified = false;
-  const result = content.replace(mathBlockRegex, (match, options, mathContent) => {
-    // Check if the math content contains alignment character &
-    if (!mathContent.includes('&')) {
-      return match; // No alignment character, keep as is
-    }
+  const result = content.replace(mathBlockRegex, (match, fullContent) => {
+    // Remove any :nowrap: directive if present
+    let cleanContent = fullContent.replace(/^\s*:nowrap:\s*\n/gm, '');
 
-    // Check if already has :nowrap: option
-    if (options.includes(':nowrap:')) {
-      return match; // Already has :nowrap:, keep as is
+    // Check if the math content contains alignment character &
+    if (!cleanContent.includes('&')) {
+      // If we removed :nowrap:, mark as modified
+      if (cleanContent !== fullContent) {
+        modified = true;
+        return '```{math}' + cleanContent + '```';
+      }
+      return match; // No alignment character and no changes, keep as is
     }
 
     // Check if content already has \begin{align*} or other environment
-    if (mathContent.trim().startsWith('\\begin{')) {
-      // Has environment but missing :nowrap:, add it
-      modified = true;
-      return '```{math}\n:nowrap:\n' + mathContent + '```';
+    if (cleanContent.trim().startsWith('\\begin{')) {
+      // Already wrapped, ensure proper formatting with blank line after ```{math}
+      const trimmed = cleanContent.trim();
+      const expectedFormat = '\n\n' + trimmed + '\n';
+
+      // Check if formatting is correct
+      if (cleanContent !== expectedFormat) {
+        modified = true;
+        return '```{math}\n\n' + trimmed + '\n```';
+      }
+      return match;
     }
 
-    // Need to wrap content in align* environment and add :nowrap:
+    // Need to wrap content in align* environment
     modified = true;
-    const trimmedContent = mathContent.trim();
-    return '```{math}\n:nowrap:\n\n\\begin{align*}\n' + trimmedContent + '\n\\end{align*}\n```';
+    const trimmedContent = cleanContent.trim();
+    // Add a blank line after ```{math} for better formatting
+    return '```{math}\n\n\\begin{align*}\n' + trimmedContent + '\n\\end{align*}\n```';
   });
 
   return { result, modified };

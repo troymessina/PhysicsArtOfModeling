@@ -200,7 +200,6 @@ What is the value of the phase $\phi$ if the displacement of the point at $x=0$ 
 
 The equation above is written in terms of the wavelength, $\lambda$, and period, $T$, of the wave. Often, one uses the "wave number", $k$, and the "angular frequency", $\omega$, to describe the wave. These are defined as:
 ```{math}
-:nowrap:
 
 \begin{align*}
 k &= \frac{2\pi}{\lambda}\\
@@ -249,7 +248,6 @@ This last property is called "the superposition principle", and is the result of
 
 In three dimensions, the displacement of a particle in the medium depends on its three spatial coordinates, $D(x,y,z,t)$, and the wave equation in Cartesian coordinates is given by:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \frac{\partial^2D}{\partial x^2}+\frac{\partial^2D}{\partial y^2}+\frac{\partial^2D}{\partial z^2}&=\frac{1}{v^2}\frac{\partial^2D}{\partial t^2}\\
@@ -273,7 +271,6 @@ We can model the propagation speed of the pulse by considering the speed, $v$, o
 
 In a short amount of time, $t$, the point $A$ on the rope will have moved up by a distance $v't$, whereas point $B$ will have moved to the right by a distance $vt$. If $t$ is small enough, we can consider the points $A$, $B$, and $C$ to form the corners of a triangle. That triangle is similar to the triangle that is made by vectorially summing the applied force $\vec F$ and the tension $\vec F_T$, as shown in the top left of [](#fig:waves:pulse). In this case, we mean the geometry term "similar", which describes two triangles which have the same angles. We can thus write:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \frac{F}{F_T}&=\frac{v't}{vt}=\frac{v'}{v}\\
@@ -290,7 +287,6 @@ p = mv' = \mu vt v'
 ```
 If the vertical force, $\vec F$, was exerted for a length of time, $t$, on the mass element, it will give it a vertical impulse, $Ft$, equal to the change in the vertical momentum of the mass element:
 ```{math}
-:nowrap:
 
 \begin{align*}
 Ft &= \Delta p \\
@@ -300,7 +296,6 @@ Ft &= \mu vt v'\\
 ```
 We can equate this expression for $F$ with that obtained from the similar triangles to obtain an expression for the speed, $v$, of the pulse:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \mu v v' &= F_T \frac{v'}{v}\\
@@ -383,7 +378,6 @@ A small section of rope under tension as a wave passes through.
 ```
 We assume that the weight of the mass element is negligible compared to the force of tension that is in the rope. Thus, the only forces exerted on the mass element are those from the tension in the rope, pulling on the mass element from each side, with forces, $\vec F_{T1}$ and $\vec F_{T2}$. In general, the forces from tension on either side of the mass element will have different directions and make different angles, $\theta$, with the horizontal, although their magnitude is the same. Let $D(x,t)$ be the vertical displacement of the mass element located at position $x$. We can write the $y$ (vertical) component of Newton's Second Law for the mass element, $dm$, as:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \sum F_y = F_{T2y} - F_{T1y} &= (dm)a_y\\
@@ -397,7 +391,6 @@ where we used the fact that the force of tension has a magnitude, $F_T$, on eith
 ```
 in which the sine of the angle is approximately equal to the tangent of the angle, which is equal to the slope of the rope. Applying this approximation to Newton's Second Law:
 ```{math}
-:nowrap:
 
 \begin{align*}
 F_T\left(\frac{\partial D}{\partial x}\Bigr|_{right} - \frac{\partial D}{\partial x}\Bigr|_{left}\right) &= dm \frac{\partial ^2D}{\partial t^2}
@@ -409,7 +402,6 @@ dm = \mu dx
 ```
 Replacing $dm$ in the equation gives:
 ```{math}
-:nowrap:
 
 \begin{align*}
 F_T\left(\frac{\partial D}{\partial x}\Bigr|_{right} - \frac{\partial D}{\partial x}\Bigr|_{left}\right) &= \mu dx \frac{\partial ^2D}{\partial t^2}\\
@@ -418,7 +410,6 @@ F_T\left(\frac{\frac{\partial D}{\partial x}\Bigr|_{right} - \frac{\partial D}{\
 ```
 The term in parentheses is the difference in the first derivatives of $D(x,t)$ with respect to $x$, divided by the distance, $dx$, between which those derivatives are evaluated. This is precisely the definition of the second derivative with respect to $x$, so we can write:
 ```{math}
-:nowrap:
 
 \begin{align*}
 F_T \frac{\partial ^2D}{\partial x^2} &= \mu \frac{\partial ^2D}{\partial t^2}\\
@@ -427,7 +418,6 @@ F_T \frac{\partial ^2D}{\partial x^2} &= \mu \frac{\partial ^2D}{\partial t^2}\\
 ```
 which is precisely the wave equation:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \frac{\partial ^2D}{\partial x^2} &= \frac{1}{v^2} \frac{\partial ^2D}{\partial t^2}\\
@@ -435,7 +425,6 @@ which is precisely the wave equation:
 ```
 with speed:
 ```{math}
-:nowrap:
 
 \begin{align*}
 v&= \sqrt{\frac{F_T}{\mu}}
@@ -446,7 +435,6 @@ as we found earlier. Thus, we find that the speed of the propagation of the wave
 # The speed of a wave
 In the previous section we found that the speed of a transverse wave in a rope is related to the ratio of the tension in the rope to the linear mass density of the rope:
 ```{math}
-:nowrap:
 
 \begin{align*}
 v&= \sqrt{\frac{F_T}{\mu}}
@@ -512,7 +500,6 @@ In this section, we show how to describe the energy transported by a one-dimensi
 
 Of course, there is no actual spring, but we can still determine an effective spring constant, $k_s$, from the angular frequency:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \omega &= \sqrt{\frac{k_s}{m}}\\
@@ -584,7 +571,6 @@ P = \frac{dE}{dr}\frac{dr}{dt}=\frac{dE}{dr}v
 ```
 where $\frac{dr}{dt}=v$ is the speed of the wave (the rate of change of the radius of a shell). The power transmitted by the spherical wave is thus given by:
 ```{math}
-:nowrap:
 
 \begin{align*}
 P &=\frac{dE}{dr}v =2\pi\rho  \omega^2 A^2  r^2 v
@@ -594,7 +580,6 @@ where the power appears to depends on how far you are from the source ($r$).
 
 Suppose that you have a $50 {\rm W}$ speaker emitting sound; each radial shell emanating from the speaker must transport energy at a rate of $50 {\rm W}$. This is simply a statement that the energy radiated by the speaker has to move from one shell to the next and be conserved. Since the power transported by a shell appears to depend on the radius of the shell, if the power transmitted by each shell is the same, then the amplitude of the wave in each shell must decrease, so that the power does not actually depend on the radius of the shell. In particular, for a spherical wave, the amplitude will decrease as a function of distance from the source:
 ```{math}
-:nowrap:
 
 \begin{align*}
 P& = \text{constant}\\
@@ -709,7 +694,6 @@ In general, most objects can be characterized by a harmonic (or "resonant") freq
 ## Mathematical description of a standing wave
 A standing wave is the result of two identical waves, travelling in opposite directions, interfering. Consider the waves described by $D_1(x,t)$ and $D_2(x,t)$ that are modelled as follows:
 ```{math}
-:nowrap:
 
 \begin{align*}
 D_1(x,t) &= A\sin(kx-\omega t)\\
@@ -718,7 +702,6 @@ D_2(x,t) &= A\sin(kx+\omega t)\\
 ```
 These two waves are identical, but travel in opposite directions (due to the sign in front of the $\omega t$). The superposition of these waves is given by:
 ```{math}
-:nowrap:
 
 \begin{align*}
 D(x,t) &= D_1(x,t) + D_2(x,t)\\
@@ -731,7 +714,6 @@ We can use the following trigonometric identity to combine these into a single t
 ```
 The resulting wave is thus given by:
 ```{math}
-:nowrap:
 
 \begin{align*}
 D(x,t) &= 2A\sin\left(\frac{kx-\omega t + kx+\omega t}{2} \right) \cos\left( \frac{kx-\omega t - kx-\omega t}{2}\right)\\
@@ -740,7 +722,6 @@ D(x,t) &= 2A\sin\left(\frac{kx-\omega t + kx+\omega t}{2} \right) \cos\left( \fr
 ```
 If this wave describes the wave on a string of length $L$ with both ends held fixed, and we set the origin of our coordinate system at one end of the string, then we require that the displacement at $x=0$ and $x=L$ is always zero. The first condition is always true, and the second requires that:
 ```{math}
-:nowrap:
 
 \begin{align*}
 D(x=L,t) &= 0\\
@@ -750,7 +731,6 @@ D(x=L,t) &= 0\\
 ```
 and $kL$ must be a multiple of $2\pi$. In terms of the wavelength, $\lambda$, this gives:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \frac{2\pi}{\lambda}L &= n\pi\\
@@ -767,7 +747,6 @@ A(x) = 2A\sin\left(\frac{n\pi}{L}x\right)
 ```
 Each point on the string will vibrate with the same angular frequency, $\omega$, but with a different amplitude, depending on their position. For the $n$-th harmonic, the nodes of the standing wave are located at:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \sin\left(\frac{n\pi}{L}x\right) &=0\\
@@ -777,7 +756,6 @@ Each point on the string will vibrate with the same angular frequency, $\omega$,
 ```
 Thus, for example, the second node ($m=2$) of the third harmonic ($n=3$), is located at $x=2L/3$, as can be seen in the bottom panel of [](#fig:waves:standing). The anti-nodes are located at:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \frac{n\pi}{L}x &= m\frac{\pi}{2} \quad\quad m=1,3,5,7,\dots\\
@@ -839,7 +817,6 @@ D(x,t) = A \sin(kx-\omega t + \phi)
 ```
 where $D(x,t)$ is the displacement of the particle in the medium at position $x$ at time $t$. $\phi$ is the phase of the wave and depends on our choice of when $t=0$. $k$ is the wave number of the wave, and $\omega$ its angular frequency. These are related to the wavelength and frequency, respectively:
 ```{math}
-:nowrap:
 
 \begin{align*}
 k &= \frac{2\pi}{\lambda}\\
@@ -895,7 +872,6 @@ A(x) = 2A\sin\left(\frac{n\pi}{L}x\right)
 ```
 The condition for a standing wave to exist on a string is that the length of the string must be equal to a multiple of half of the wavelength of the standing wave:
 ```{math}
-:nowrap:
 
 \begin{align*}
 L &= n\frac{\lambda}{2}\quad\quad n=1,2,3,\dots\\
@@ -907,7 +883,6 @@ f &= \frac{nv}{2L}
 :::{important} Important Equations
 **Travelling 1d waves:**
 ```{math}
-:nowrap:
 
 \begin{align*}
 D(x,t) &= A \sin(kx-\omega t + \phi)\\
@@ -935,7 +910,6 @@ P = \frac{1}{2}\omega^2\mu A^2 v
 
 **Spherical waves:**
 ```{math}
-:nowrap:
 
 \begin{align*}
 P &= 2\pi\rho\omega^2r^2 v\\
@@ -946,7 +920,6 @@ I&=\frac{P}{4\pi r^2}=\frac{1}{2}\rho\omega^2A^2v
 
 **Standing waves:**
 ```{math}
-:nowrap:
 
 \begin{align*}
 D(x,t)&=2A\sin\left(\frac{n\pi}{L}x\right)\cos(\omega t)\\
@@ -956,7 +929,6 @@ A(x) &= 2A\sin\left(\frac{n\pi}{L}x\right)
 
 **Standing waves on a string (both ends fixed):**
 ```{math}
-:nowrap:
 
 \begin{align*}
 L &= n\frac{\lambda}{2}\quad\quad n=1,2,3,\dots\\
@@ -1062,7 +1034,6 @@ D(x,t)=2A\sin(kx)cos(\omega t)
 ```
 We let the fixed end be at $x=0$. At the fixed end, the displacement is equal to zero. At the free end ($x=L$) the displacement is maximized. The first condition is always true. The second condition will be met when:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \sin(kL)&=1\\
@@ -1071,7 +1042,6 @@ We let the fixed end be at $x=0$. At the fixed end, the displacement is equal to
 ```
 This condition can be expressed as:
 ```{math}
-:nowrap:
 
 \begin{align*}
 kL&=\frac{(2n-1)\pi}{2}\\
@@ -1081,7 +1051,6 @@ kL&=\frac{(2n-1)\pi}{2}\\
 ```
 where, in the second line, we used $k=2\pi /\lambda$. We can check that this formula works for the first three harmonics:
 ```{math}
-:nowrap:
 
 \begin{align*}
 n=1: \quad \lambda&=\frac{4L}{2(1)-1} \\
@@ -1099,7 +1068,6 @@ Referring back to our diagram ([](#fig:waves:clarinet)), we can see that our for
 ```
 Writing $\lambda$ in terms of the velocity, $v$, and frequency, $f$, gives:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \frac{v}{f}&=\frac{4L}{2n-1}\\
@@ -1108,7 +1076,6 @@ Writing $\lambda$ in terms of the velocity, $v$, and frequency, $f$, gives:
 ```
 From this formula, we can see that, if we want to find the lowest frequency, we want $n=1$. The length of the clarinet is $0.6 {\rm m}$, and $v$ is the speed of sound in air which is $343 {\rm m/s}$ at room temperature. Using these values, the lowest frequency is:
 ```{math}
-:nowrap:
 
 \begin{align*}
 f&=\frac{(343 {\rm m/s})(2(1)-1)}{4(0.6 {\rm m})}\\
@@ -1136,7 +1103,6 @@ D_I(x,t)=A_I\cos(k_1x-\omega t)\\
 ```
 We will use the formulas $k=2\pi/\lambda$ and $\omega=2\pi f$ to rewrite this equation in the form $D=(a(t\pm x/v))$. The frequency, $f$, of the wave will be the same in both ropes. The velocity of the wave, and therefore its wavelength, depends on the mass density of the rope. Since the incident wave travels through the first rope ($\mu_1$), its velocity will be $v_1$ and its wavelength will be $\lambda_1$. The incident wave can thus be described by:
 ```{math}
-:nowrap:
 
 \begin{align*}
 D_I&=A_I\cos\left( \frac{2\pi}{\lambda_1}x-2\pi ft\right)\\
@@ -1150,7 +1116,6 @@ where we used $v=f\lambda$, and noted that $\cos(-x)=\cos(x)$.\\
 
 The transmitted wave (denoted by the subscript $T$) will also travel in the positive $x$ direction, but its speed will be $v_2$, since it travels through the second rope:
 ```{math}
-:nowrap:
 
 \begin{align*}
 D_T&=A_T\cos \left( 2\pi f\left(t-\frac{x}{v_2}\right)\right)
@@ -1158,7 +1123,6 @@ D_T&=A_T\cos \left( 2\pi f\left(t-\frac{x}{v_2}\right)\right)
 ```
 The reflected wave (denoted by $R$) will travel in the $-x$ direction and at the same speed as the incident pulse.
 ```{math}
-:nowrap:
 
 \begin{align*}
 D_R&=A_R\cos \left( 2\pi f\left(t+\frac{x}{v_1}\right)\right)
@@ -1166,7 +1130,6 @@ D_R&=A_R\cos \left( 2\pi f\left(t+\frac{x}{v_1}\right)\right)
 ```
 * b. We will consider the boundary conditions at the interface between the two ropes. One boundary condition is that the rope must be continuous. As a result, the vertical displacement on the $-x$ side of the boundary must be the same as the vertical displacement on the $+x$ side of the boundary at every instant: 
 ```{math}
-:nowrap:
 
 \begin{align*}
 D_{-x}&=D_{+x}\quad\text{at $x=0$}
@@ -1174,7 +1137,6 @@ D_{-x}&=D_{+x}\quad\text{at $x=0$}
 ```
 The amplitude on the $+x$ side is equal to the amplitude of the transmitted pulse. For the $-x$ side of the boundary, we have to take into account that the incident and reflected pulses will superimpose (when the front of the incident pulse reaches the boundary, it will be reflected and interfere with the end of the incident pulse). This boundary condition can thus be expressed as:
 ```{math}
-:nowrap:
 
 \begin{align*}
 A_I+A_R&=A_T
@@ -1182,7 +1144,6 @@ A_I+A_R&=A_T
 ```
 The slope of the rope must also be continuous at the boundary. Since the incident and reflected pulses superimpose, and the principle of superposition states that the net displacement is the sum of the displacement of these two waves, we can write:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \frac{\partial}{\partial x}(D_I+D_R)\Bigr|_{x=0}=\frac{\partial}{\partial x}D_T\Bigr|_{x=0}\\
@@ -1191,7 +1152,6 @@ The slope of the rope must also be continuous at the boundary. Since the inciden
 ```
 Using our equations for the incident, transmitted, and reflected pulses found in part a), and taking the appropriate partial derivatives, this equation becomes:
 ```{math}
-:nowrap:
 
 \begin{align*}
 (A_I/v_1) \sin \left(2\pi f\left( t-\frac{x}{v_1}\right)\right)\Bigr|_{x=0}+(-A_R/v_1) \sin \left( 2\pi f\left( t+\frac{x}{v_1}\right)\right)\Bigr|_{x=0}&=\\(A_T/v_2) \sin \left( 2\pi f\left( t-\frac{x}{v_2}\right)\right)\Bigr|_{x=0}
@@ -1199,7 +1159,6 @@ Using our equations for the incident, transmitted, and reflected pulses found in
 ```
 Evaluating at $x=0$ gives:
 ```{math}
-:nowrap:
 
 \begin{align*}
 (A_I/v_1) \sin (2\pi ft) +(-A_R/v_1) \sin (2\pi ft)&=(A_T/v_2) \sin (2\pi ft)\\
@@ -1208,7 +1167,6 @@ Evaluating at $x=0$ gives:
 ```
 Using our first condition, $A_I+A_R=A_T$, we get:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \frac{A_I}{v_1} -\frac{A_R}{v_1}&=\frac{A_I}{v_2}+\frac{A_R}{v_2}\\
@@ -1216,7 +1174,6 @@ Using our first condition, $A_I+A_R=A_T$, we get:
 ```
 Now, we can rearrange to find the reflection coefficient, $R=A_R/A_I$:
 ```{math}
-:nowrap:
 
 \begin{align*}
 A_I\left( \frac{v_2-v_1}{v_1v_2}\right)&=A_R\left( \frac{v_2+v_1}{v_1v_2}\right)\\
@@ -1225,7 +1182,6 @@ R&=\frac{v_2-v_1}{v_2+v_1}
 ```
 Since the velocities in the first and second rope are $v_1=\sqrt{F_T/\mu_1}$ and $v_2=\sqrt{F_T/\mu_2}$, respectively, the reflection coefficient can be written as:
 ```{math}
-:nowrap:
 
 \begin{align*}
 R&=\frac{\sqrt{\frac{F_T}{\mu_2}}-\sqrt{\frac{F_T}{\mu_1}}}{\sqrt{\frac{F_T}{\mu_2}}+\sqrt{\frac{F_T}{\mu_1}}}\\

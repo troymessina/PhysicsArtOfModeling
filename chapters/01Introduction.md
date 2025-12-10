@@ -63,7 +63,6 @@ Use Chloe's law ($t \propto \sqrt{h}$) to determine how much longer it will take
 :class: dropdown
 When we a relationship that is proportional (indicated by a $\propto$), we can introduce a **constant of proportionality**, which we will call $k$, to rewrite the relationship as an equality:
 ```{math}
-:nowrap:
 
 \begin{align*}
 t &\propto \sqrt{h} \\
@@ -73,7 +72,6 @@ t &\propto \sqrt{h} \\
 Let $t_1$ be the time to fall a distance $h_1=1 {\rm m}$, and $t_2$ be the time to fall a distance $h_2=2 {\rm m}$. 
 By taking the ratio, $\frac{t_1}{t_2}$, our unknown constant $k$ will cancel:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \frac{t_1}{t_2}&=\frac{k\sqrt{(1 {\rm m})}}{k\sqrt{(2 {\rm m})}}=\frac{1}{\sqrt 2}\\

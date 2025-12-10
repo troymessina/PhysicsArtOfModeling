@@ -43,7 +43,6 @@ Use Chloe's Theory ($t \propto \sqrt{h}$) to determine how much longer it will t
 :class: dropdown
 When we have a proportionality law (with a $\propto$) sign, we can always change this to an equal sign by introducing a constant, which we will call $k$:
 ```{math}
-:nowrap:
 
 \begin{align*}
 t &\propto \sqrt{h} \\
@@ -52,7 +51,6 @@ t &\propto \sqrt{h} \\
 ```
 Let $t_1$ be the time to fall a distance $h_1=1 {\rm m}$, and $t_2$ be the time to fall a distance $h_2=2 {\rm m}$. In terms of our unknown constant, $k$, we have:
 ```{math}
-:nowrap:
 
 \begin{align*}
 t_1 &=k\sqrt{h_1}=k \sqrt{(1 {\rm m})}\\
@@ -61,7 +59,6 @@ t_2 &=k\sqrt{h_2}=k \sqrt{(2 {\rm m})}\\
 ```
 By taking the ratio, $\frac{t_1}{t_2}$, our unknown constant $k$ will cancel:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \frac{t_1}{t_2}&=\frac{\sqrt{(1 {\rm m})}}{\sqrt{(2 {\rm m})}}=\frac{1}{\sqrt 2}\\

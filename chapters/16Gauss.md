@@ -75,7 +75,6 @@ The surface that is defined corresponds to a rectangle in the $xz$ plane with ar
 ```
 The flux through the surface is thus given by:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \Phi_E&=\vec E\cdot \vec A=(E\cos\theta\hat x+E\sin\theta\hat y)\cdot(LH\hat y)\\
@@ -259,7 +258,6 @@ In order to apply Gauss' law,  we need to calculate:
 
 The net flux through the surface is found in the same way as in [Example 16.3](#ex:gauss:qsphere), and is given by:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \Phi_E&=\oint \vec E\cdot d\vec A=\oint E dA= E\oint dA=E(4\pi r^2)
@@ -269,7 +267,6 @@ where our choice of spherical surface led to $\vec E\cdot d\vec A=EdA$, since $\
 
 The Gaussian surface with $r\geq R$ encloses the whole charged sphere, so the charge enclosed is simply the charge of the sphere, $Q^{enc}=Q$. Applying Gauss' law allows us to determine the magnitude of the electric field:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \oint \vec E\cdot d\vec A&=\frac{Q^{enc}}{\epsilon_0} \\
@@ -289,7 +286,6 @@ Next, we determine the magnitude of the electric field inside the charged sphere
 ```
 The flux integral is trivial again, since the electric field always makes the same angle with the Gaussian surface, and the magnitude of the electric field is constant in magnitude along the surface:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \Phi_E&=\oint \vec E\cdot d\vec A=\oint E dA= E\oint dA=E(4\pi r^2)
@@ -305,7 +301,6 @@ Q^{enc}=\frac{4}{3}\pi r^3 \rho=\frac{4}{3}\pi r^3 \frac{Q}{\frac{4}{3}\pi R^3}=
 ```
 Finally, we apply Gauss' law to find the magnitude of the electric field inside the sphere:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \oint \vec E\cdot d\vec A&=\frac{Q^{enc}}{\epsilon_0} \\
@@ -419,7 +414,6 @@ Q^{enc}=\lambda L
 ```
 where $\lambda$ is the charge per unit length on the wire. Putting this all together into Gauss' law gives us the electric field at a distance $R$ from the wire:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \oint \vec E\cdot d\vec A&=\frac{Q^{enc}}{\epsilon_0} \\
@@ -499,7 +493,6 @@ A cylindrical surface or a box are both good choices for a Gaussian surface abov
 ```
 Let us choose a box (right panel of [](#fig:gauss:fluxplane)) of length, $L$, with a square cross-section of side, $a$. We place the box such that the plane intersects the centre of the box (although this is not required, since we already know that the electric field will not depend on distance from the plane). The flux through the box is simply the flux through the two horizontal planes (of area $a^2$):
 ```{math}
-:nowrap:
 
 \begin{align*}
 \oint \vec E\cdot d\vec A&= \int_{top} EdA+\int_{bottom}EdA=2Ea^2
@@ -511,7 +504,6 @@ Q^{enc}=\sigma a^2
 ```
 Applying Gauss' law allows us to determine the magnitude of the electric field:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \oint \vec E\cdot d\vec A&=\frac{Q^{enc}}{\epsilon_0} \\
@@ -536,7 +528,6 @@ Cross-section of a conducting plane where the charges migrate to the surface. A 
 ```
 To determine the electric field near the plane, we choose a Gaussian surface that is a box (as in [Example 16.6](#ex:gauss:infiniteplate)), but require the lower end of the box to go through the plane, as illustrated in [Example 16.6](#ex:gauss:infiniteplate). With this choice of Gaussian surface, only the top surface (area $a^2$) will have flux through it, since the **electric field inside a conductor must be zero**[^42]. The total flux is given by:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \oint \vec E\cdot d\vec A&= \int_{top} EdA=Ea^2
@@ -548,7 +539,6 @@ Q^{enc}=\frac{\sigma}{2}a^2
 ```
 where we used the fact that only half of the charges are inside the volume enclosed by our Gaussian surface, so that the charge per unit area is half ($\frac{\sigma}{2}$) of that for the entire plane. Applying Gauss' law, we find that the electric field is given by:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \oint \vec E\cdot d\vec A&=\frac{Q^{enc}}{\epsilon_0} \\
@@ -558,7 +548,6 @@ Ea^2&= \frac{\sigma a^2}{2\epsilon_0}\\
 ```
 as in [Example 16.6](#ex:gauss:infiniteplate), but now the factor of two comes from having half of the charge density, whereas before it was because two of the faces of the box had non-zero flux. We can generalize this result to determine the electric field near the surface of any conductor. Very close to the surface of any object, one can consider the surface as being similar to an infinite plane. If that surface carries charge per unit area, $\sigma$, then the electric field just above the surface is given by:
 ```{math}
-:nowrap:
 
 \begin{align*}
 E&= \frac{\sigma}{\epsilon_0} \quad \text{(Field near a conducting surface)}
@@ -578,7 +567,6 @@ We can use Gauss' law to determine the amount of charge that has accumulated on 
 
 Now consider the flux out of the surface $S_2$, which is outside of the shell. The net charge enclosed will be $Q^{enc}=+Q-Q+Q=+Q$. If we say that the radius of $S_2$ is $r$,  then the flux out of the spherical surface is given by:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \oint \vec E\cdot d\vec A &= E(4\pi r^2)\\
@@ -586,7 +574,6 @@ Now consider the flux out of the surface $S_2$, which is outside of the shell. T
 ```
 and the electric field, from Gauss' law, is simply that of a point charge, $+Q$:
 ```{math}
-:nowrap:
 
 \begin{align*}
 E&=\frac{1}{4\pi\epsilon_0}\frac{Q}{r^2}
@@ -598,7 +585,6 @@ and the shell has no effect on the field. Right at the surface of the shell (out
 ```
 Above, we found the electric field at the surface of a conductor that carries charge per unit area, $\sigma$, to be:
 ```{math}
-:nowrap:
 
 \begin{align*}
 E&= \frac{\sigma}{\epsilon_0}
@@ -606,7 +592,6 @@ E&= \frac{\sigma}{\epsilon_0}
 ```
 which is clearly the same result that we obtained using the spherical surface, $S_2$:
 ```{math}
-:nowrap:
 
 \begin{align*}
 E&= \frac{\sigma}{\epsilon_0}=\frac{1}{4\pi\epsilon_0}\frac{Q}{r^2}
@@ -636,7 +621,6 @@ where the subscript on the integral indicates whether the sum (integral) should 
 ```
 where $\rho$ is the charge per unit volume at a specific position in space. This is the version of Gauss' law that is usually seen in advanced textbooks and in Maxwell's unified theory of electromagnetism. This version of Gauss' law relates a local property of the field (its divergence) to a local property of charge at that position in space (the charge per unit volume at that position in space). If we integrate both sides of the equation over volume, we recover the original formulation of Gauss' law: the left hand side, by the divergence theorem, leads to flux when integrated over volume, whereas on the right hand side, the integral over volume of charge per unit volume, $\rho$, will give the total charge enclosed in that volume, $Q^{enc}$:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \int_V  \left(\nabla \cdot \vec E \right)dV&= \int_V \left(\frac{\rho}{\epsilon_0}\right) dV\\
@@ -683,7 +667,6 @@ Note that Gauss' law does not specify a closed surface over which to calculate t
 
 We showed how Gauss' law can be used to understand and quantify how charges arrange themselves on a conductor, in such a way that the electric field is zero everywhere in the conductor. Finally, we briefly introduced a more modern version of Gauss' law that uses divergence instead of flux:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \nabla \cdot \vec E &= \frac{\rho}{\epsilon_0}
@@ -694,7 +677,6 @@ This last version has the advantage that it relates a local property of the fiel
 :::{important} Important Equations
 **Gauss' Law:**
 ```{math}
-:nowrap:
 
 \begin{align*}
 \Phi & = \frac{Q_{enc}}{\epsilon_0}\\
@@ -772,7 +754,6 @@ Q=\int dQ =\int_0^R4a\pi r^4 dr=\frac{4}{5}a\pi R^5
 ```
 The entire charge of the sphere is enclosed. Applying Gauss' law, we can determine the electric field outside the sphere:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \oint \vec E\cdot d\vec A&= \frac{Q^{enc}}{\epsilon_0}\\
@@ -792,7 +773,6 @@ Q^{enc}=\int dQ =\int_0^r 4a\pi r^4 dr=\frac{4}{5}a\pi r^5
 ```
 Applying Gauss' law:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \oint \vec E\cdot d\vec A&= \frac{Q^{enc}}{\epsilon_0}\\
@@ -808,7 +788,6 @@ and we find that the electric field is zero at the centre of the sphere and incr
 :class: dropdown
 * a. To find the surface charge density on the inner surface, we draw a cylindrical Gaussian surface, $S_1$, whose cross-sectional radius is slightly larger than $R$, as in [](#fig:gauss:coaxial_triangle_side). We know that the electric field inside of the (conducting) shell is zero, so that the flux out of $S_1$ will be zero. By Gauss' law, we find:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \oint \vec E \cdot d \vec A &=\frac{Q_{enc}}{\epsilon_0}\\
@@ -818,7 +797,6 @@ and we find that the electric field is zero at the centre of the sphere and incr
 ```
 Since $Q_{enc}=0$ and the wire has a constant charge per unit length $\lambda$, the charge per unit length on the inner surface of the shell must be $-\lambda$, so that the net charge charge per unit length is zero. The surface charge density, $\sigma_{in}$, is the linear charge density divided by the circumference of the cross section:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \sigma_{in}&=\frac{\lambda}{2\pi R}

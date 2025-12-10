@@ -121,7 +121,6 @@ Newton's Universal Theory of Gravity states that if two bodies, with masses $M_1
 ```
 where $\hat r_{21}$ is the unit vector from $M_2$ to $M_1$:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \vec r_{21} &= \vec r_2 - \vec r_1\\
@@ -154,7 +153,6 @@ Calculate the magnitude of the force of gravity between yourself and a person st
 :class: dropdown
 If we assume that the two people have a mass of $50 {\rm kg}$, the force of gravity exerted by one on the other, if they are separated by $50 {\rm cm}$, is given by:
 ```{math}
-:nowrap:
 
 \begin{align*}
 F&=G\frac{M_1M_2}{r^2}\\
@@ -164,7 +162,6 @@ F&=G\frac{M_1M_2}{r^2}\\
 ```
 This is a very small force, compared to their weight, $F_g$:
 ```{math}
-:nowrap:
 
 \begin{align*}
 F_g&=M_1g\\
@@ -206,7 +203,6 @@ a_R=\frac{v^2}{R}
 ```
 Newton's Second Law for the planet can be written as:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \sum F = F_g &= ma_R\\
@@ -220,7 +216,6 @@ v=\frac{2\pi R}{T}
 ```
 Re-arranging the equation from Newton's Second Law:
 ```{math}
-:nowrap:
 
 \begin{align*}
 G\frac{M}{R}&=v^2\\
@@ -240,7 +235,6 @@ The acceleration due to Earth's gravity depends on the force that the Earth exer
 :class: dropdown
 We can find the acceleration due to Earth's gravity by determining the acceleration of a mass $m$ upon which gravity is the only acting force. In other words, we model an object that is in free-fall a distance $R$ away from the centre of the Earth. Newton's Second Law can be used in one dimension (corresponding to the direction that connects the falling mass to the centre of the Earth):
 ```{math}
-:nowrap:
 
 \begin{align*}
 \sum F &= G\frac{Mm}{R^2}=ma\\
@@ -249,7 +243,6 @@ We can find the acceleration due to Earth's gravity by determining the accelerat
 ```
 where $M=5.97\times 10^{24} {\rm kg}$ is the mass of the Earth. At the surface of the Earth, $R=R_\oplus=6.371\times 10^{6} {\rm m}$:
 ```{math}
-:nowrap:
 
 \begin{align*}
 a&=G\frac{M}{R_\oplus^2}=(6.67\times 10^{-11} {\rm Nm^2/kg^2})\frac{(5.97\times 10^{24} {\rm kg})}{(6.371\times 10^{6} {\rm m})^2}\\
@@ -258,7 +251,6 @@ a&=G\frac{M}{R_\oplus^2}=(6.67\times 10^{-11} {\rm Nm^2/kg^2})\frac{(5.97\times 
 ```
 which, of course, is the value of $g$ that we have been using so far for the acceleration due to gravity near the surface of the Earth. To find the altitude at which this is reduced by half, we first find the value of $R$ that corresponds to this acceleration:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \frac{1}{2}G\frac{M}{R_\oplus^2}&=G\frac{M}{R^2}\\
@@ -290,7 +282,6 @@ The apparent weight, given by the normal force, is different at the Earth's equa
 
 Consider, instead, a person standing on a spring scale at the equator ([](#fig:gravity:apparentweight)). That person is accelerating because they are undergoing uniform circular motion as they rotate along with the Earth. Again, the only forces acting on the person are their weight and the normal force exerted by the scale. The sum of the forces must now be equal to the person's mass, $m$, times the radial acceleration, $a_r$, that is necessary for them to follow the surface of the Earth as the Earth rotates about its axis. Newton's Second Law allows us to find the magnitude of the normal force acting on the person:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \sum F &= F_g-N=ma_r=m\frac{v^2}{R}\\
@@ -321,7 +312,6 @@ N=m\left(G\frac{M}{R^2} - \frac{v^2}{R}  \right)
 ```
 At a certain speed, $v$, your apparent weight is zero and you feel weightless:
 ```{math}
-:nowrap:
 
 \begin{align*}
 G\frac{M}{R^2} &= \frac{v^2}{R}\\
@@ -374,7 +364,6 @@ g(R_\oplus)=\frac{GM}{R_\oplus^2}=9.81 {\rm N/kg}
 ```
 where $R_\oplus$ is the radius of the Earth. Of course, this also corresponds to the acceleration of objects in free-fall near the surface of the Earth, which we can find from Newton's Second Law:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \sum \vec F &= \vec F_g = m\vec a\\
@@ -397,7 +386,6 @@ Two small objects with different masses, $m_1$ and $m_2$, are located a distance
 
 Suppose that there are two large mass bodies, $M_1$ and $M_2$, and a smaller mass body, $m$. We can calculate the net gravitational force on $m$ by summing the gravitational force vectors from $M_1$ and $M_2$ separately. If the gravitational fields from $M_1$ and $M_2$ are given by $\vec g_1(\vec r)$ and $\vec g_2(\vec r)$, respectively, then the total gravitational force on $m$ is given by:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \vec F &= m\vec g_1(\vec r) + m\vec g_2(\vec r)=m(\vec g_1(\vec r)+\vec g_2(\vec r))\\
@@ -458,7 +446,6 @@ where we factored $g(r)$ out of the integral, since the magnitude of $\vec g(\ve
 ```
 Inserting this into Gauss's law, we find:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \oint \vec g(\vec r) \cdot d\vec A &= 4\pi G M^{enc}\\
@@ -509,7 +496,6 @@ M^{enc} = \rho \frac{4}{3}\pi r^3 = M\frac{r^3}{R^3}
 ```
 Applying Gauss's law, we can now find the magnitude of the gravitational field inside of the spherical body at a distance $r$ from the centre:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \oint \vec g(\vec r) \cdot d\vec A &= 4\pi G M^{enc}\\
@@ -538,7 +524,6 @@ Consider a large spherical body of mass $M$ with a coordinate system whose origi
 ```
 where in the second equality, we use the fact that the unit vector in the direction of $\vec r$ is simply the vector $\vec r$ divided by its magnitude. We can write the force out in Cartesian coordinates:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \vec r &= x\hat x + y \hat y + z\hat z\\
@@ -558,7 +543,6 @@ Calculating the work done on a mass $m$ by the force of gravity exerted by mass 
 ```
 The work done by the force of gravity on $m$ in going from $r_A$ to $r_B$ is given by:
 ```{math}
-:nowrap:
 
 \begin{align*}
 W &= \int_{r_A}^{r_B}\vec F(r) \cdot d\vec r = \int_{r_A}^{r_B} \left(- G\frac{Mm}{r^2}\hat r \right)\cdot d\vec r =\int_{r_A}^{r_B} - G\frac{Mm}{r^2}dr\\
@@ -604,7 +588,6 @@ If the mechanical energy, $E$, is negative, it is not possible for the rocket to
 
 If the mechanical energy, $E$, is exactly zero, then the object's kinetic energy will become zero just as it reaches infinity. In other words, it will just barely be able to escape the gravitational pull from mass $M$. The condition for this to happen is:
 ```{math}
-:nowrap:
 
 \begin{align*}
 E &= 0\\
@@ -634,7 +617,6 @@ Show that an object of mass $m$ in a circular orbit of radius $r$ around a body 
 :class: dropdown
 The only force acting on the object is gravity, so it has a mechanical energy given by:
 ```{math}
-:nowrap:
 
 \begin{align*}
 E&=U+K\\
@@ -643,7 +625,6 @@ E&=-G\frac{Mm}{r}+\frac{1}{2}mv^2
 ```
 In order for the object to just escape the gravitational pull of $M$, it's mechanical energy must be equal to zero:
 ```{math}
-:nowrap:
 
 \begin{align*}
 E&=0\\
@@ -652,7 +633,6 @@ E&=0\\
 ```
 Since the object is in a circular orbit, we can use Newton's Second Law to find an expression for $v^2$:
 ```{math}
-:nowrap:
 
 \begin{align*}
 F_{net}&=\frac{mv^2}{r}\\
@@ -662,7 +642,6 @@ F_{net}&=\frac{mv^2}{r}\\
 ```
 where in the second line we used the fact that $F_{net}$ is equal to the force of gravity exerted by $M$ on the object. The kinetic energy of the object is thus:
 ```{math}
-:nowrap:
 
 \begin{align*}
 K&=\frac{1}{2}mv^2\\
@@ -671,7 +650,6 @@ K&=\frac{1}{2}\frac{GMm}{r}
 ```
 You will notice that this is very similar to our expression for $U$. In fact, we have:
 ```{math}
-:nowrap:
 
 \begin{align*}
 K&=-\frac{1}{2}U\\
@@ -685,7 +663,6 @@ K&=-\frac{1}{2}U\\
 The mechanical energy of a body of mass $m$ determines whether it is gravitationally bound to (i.e. cannot escape) the body of mass $M$. The path (orbit) that $m$ will take depends on its velocity with respect to $M$. Clearly, if the velocity of $m$ is directed at the centre of $M$, then $m$ will just collide with $M$. In all other cases, the orbit that $m$ will take depends on the mechanical energy of $m$ as well as the speed of $m$ at the point of closest approach to $M$ (see [](#fig:gravity:conical)). The velocity of $m$ at the point of closest approach will always be perpendicular to the line joining the centres of $m$ and $M$. The different possible orbits are:
 1.  A **circular orbit** of radius $R$ (where $R$ is the distance of closest approach) if the **mechanical energy is negative** (i.e. it is bound) and the speed is exactly equal to the value necessary for the gravitational force to provide the required centripetal acceleration for uniform circular motion:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \sum F = G\frac{Mm}{R^2} &= m\frac{v^2}{R}\\\therefore v_{circ}=\sqrt{\frac{GM}{R}}
@@ -800,7 +777,6 @@ Einstein's Theory of General Relativity describes gravitation as the bending of 
 ```
 **Gravitational force and\\ gravitational field:**
 ```{math}
-:nowrap:
 
 \begin{align*}
 \vec F_{12}&=-G\frac{M_1M_2}{r^2}\hat r_{21}\\
@@ -881,7 +857,6 @@ F = G\frac{Mm}{R^2}
 ```
 where $M$ is the mass of the Earth. Newton's Second Law applied to the satellite is:
 ```{math}
-:nowrap:
 
 \begin{align*}
 \sum F_r = F &= ma_r\\
@@ -894,7 +869,6 @@ v=\frac{2\pi R}{T}
 ```
 which we can substitute into the equation from Newton's Second Law to find the distance $R$ (i.e. the radius of the circular orbit):
 ```{math}
-:nowrap:
 
 \begin{align*}
 G\frac{Mm}{R^2}&=m\frac{v^2}{R}\\
@@ -937,7 +911,6 @@ v = \frac{2\pi R}{T}
 ```
 where $T=24 {\rm h}$ is the orbital period. The net work that must be done to place the satellite in orbit is thus given by:
 ```{math}
-:nowrap:
 
 \begin{align*}
 W &= E_B - E_A = \frac{1}{2}mv^2 - G\frac{Mm}{R} - \left(- G\frac{Mm}{R_\oplus}\right)\\
@@ -986,7 +959,6 @@ The integral is written over $dM$, where both $r$, and $\theta$ are different fo
 
 The distance, $r$, between $P$ and a mass element $dM$ located at angle $\theta$ is easily found to be:
 ```{math}
-:nowrap:
 
 \begin{align*}
 r &= \frac{h}{\cos\theta}\\
@@ -1001,7 +973,6 @@ dM = \lambda dx = \frac{M}{L} dx
 
 We now need to express $dx$ in terms of $d\theta$. This can be found as follows, by first expressing $x$ in terms of $\theta$, and then taking the derivative of $x$ with respect to $\theta$
 ```{math}
-:nowrap:
 
 \begin{align*}
 x &= h\tan\theta\\
@@ -1015,7 +986,6 @@ dM = \frac{M}{L} dx = \frac{M}{L}  \frac{h}{\cos^2\theta} d\theta
 ```
 We can now write the integral in terms of $\theta$:
 ```{math}
-:nowrap:
 
 \begin{align*}
 g = \int \frac{GdM}{r^2}\cos\theta&=G\int \frac{1}{r^2}\cos\theta dM\\
@@ -1029,7 +999,6 @@ Now that we have the integral over $\theta$, we need to set the limits to corres
 ```
 The magnitude of the field is thus given by:
 ```{math}
-:nowrap:
 
 \begin{align*}
 g &=\frac{GM}{Lh}\int_{-\theta_0}^{\theta_0}\cos\theta d\theta\\
