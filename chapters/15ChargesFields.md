@@ -178,7 +178,6 @@ A trinket demonstrating Coulomb Force between opposite charges.
 
 (ex:chargesfields:chargetriangle)=
 :::{note} Example 15.2
-:label: ex:chargesfields:chargetriangle
 Three charges, $Q_1=1 {\rm nC}$, $Q_2=-2 {\rm nC}$, and $q=-1 {\rm nC}$, are held fixed at the three corners of an equilateral triangle with sides of length $a=1 {\rm cm}$, with a coordinate system as shown in [](#fig:chargesfields:chargetriangle). What is the electric force vector on charge $q$? (Note that $1 {\rm nC}=1\times 10^{-9} {\rm C}$).
 ```{figure} figures/ChargesFields/chargetriangle.png
 :label: fig:chargesfields:chargetriangle
@@ -258,7 +257,6 @@ A negative charge is placed at the origin of a coordinate system. At some point 
 In [Example 15.2](#ex:chargesfields:chargetriangle), we determined the electric force on charge $q$, exerted by two other charges $Q_1$ and $Q_2$. If we now changed the value of $q$ and wanted to determine the force, we can use the electric field to simplify the process considerably. That is, we can determine the value of the electric field, $\vec E$, from $Q_1$ and $Q_2$ at the position of $q$, and then simply multiply that field vector by a charge $q$ to obtain the force on that charge, without having to add force vectors.
 (ex:chargesfields:epointcharges)=
 :::{note} Example 15.3
-:label: ex:chargesfields:epointcharges
 Two charges, $Q_1=1 {\rm nC}$, and $Q_2=-2 {\rm nC}$ are held fixed at two corners of an equilateral triangle with sides of length $a=1 {\rm cm}$, with a coordinate system as shown in [](#fig:chargesfields:chargetriangle). What is the electric field vector at the third corner of the triangle? 
 ```{figure} figures/ChargesFields/fieldtriangle.png
 :label: fig:chargesfields:fieldtriangle
@@ -457,7 +455,6 @@ Since $R$ and $k$ are constant, we just have to integrate over $\theta$. However
 
 (ex:chargesfields:ring)=
 :::{note} Example 15.4
-:label: ex:chargesfields:ring
 A ring of radius $R$ carries a total charge $+Q$. Determine the electric field a distance $a$ from the centre of the ring, along the axis of symmetry of the ring.}
 In order to determine the electric field, we carry out the procedure outlined above, and start by drawing a good diagram, as in [](#fig:chargesfields:ring), showing: our coordinate system, our choice of $dq$, the electric field element vector $d\vec E$ that corresponds to $dq$, and variables ($r$, $\theta$) to specify the position of $dq$.
 ```{figure} figures/ChargesFields/ring.png
@@ -512,7 +509,6 @@ A trinket demonstrating the addition of $d\vec{E}$ for a charged ring.
 
 (ex:chargesfields:finiteline)=
 :::{note} Example 15.5
-:label: ex:chargesfields:finiteline
 You have rubbed a glass rod with a silk cloth such that the glass rod has acquired a positive charge. The rod has a length, $L$, a negligible cross-section, and has acquired a total positive charge, $+Q$, that is uniformly distributed along the length of the rod. What is the electric field a distance $R$ from the centre of the rod?
 :::{note} Solution
 :class: dropdown
@@ -611,7 +607,6 @@ E_x=\lim_{\theta_0\to\frac{\pi}{2}}\frac{2k\lambda}{R}\sin\theta_0=\frac{2k\lamb
 
 (ex:chargesfields:squarecircle)=
 :::{note} Example 15.6
-:label: ex:chargesfields:squarecircle
 Calculate the electric field a distance, $a$, above a infinite plane that carries uniform charge per unit area, $\sigma$.}
 In this case, we need to determine the field above an object that is two dimensional (a plane). In the previous examples (a ring, a line of charge), we modelled a one dimensional object (e.g. the line), as being made of many point charges (0-dimensional objects). We treated those point charges has having an infinitesimal length along the object so that we could sum them together to obtain the object (e.g. $dy$ was the length of the charge for the rod/line of charge).
 :::{note} Solution

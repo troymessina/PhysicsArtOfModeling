@@ -790,7 +790,6 @@ In this section, we give a few examples of modelling elastic collisions. Even th
 
 (ex:momentumandcm:1delastic)=
 :::{note} Example 4.10
-:label: ex:momentumandcm:1delastic
 ```{figure} figures/MomentumAndCM/1delastic.png
 :label: fig:momentumandcm:1delastic
 :width: 60%

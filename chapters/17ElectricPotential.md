@@ -324,7 +324,6 @@ The positive work that we must do, exerting a force that is opposite to the elec
 
 (ex:potential:parallelplates)=
 :::{note} Example 17.3
-:label: ex:potential:parallelplates
 Two large parallel plates are separated by a distance, $L$. The plates are oppositely charged and carry the same magnitude of charge per unit area, $\sigma$. What is the potential difference between the two plates? Write an expression for the electric potential in the region between the two plates. Assume that the plates are large enough that you can treat them as infinite (that is, neglect what happens near the edges).
 :::{note} Solution
 :class: dropdown
@@ -471,7 +470,6 @@ In this section, we give two examples of determining the electric potential for 
 The first method is similar to how we calculated the electric field for distributed charges in [Chapter  %s](#chapter:chargesfields), but with the simplification that we only need to sum scalars instead of vectors. The second method was already introduced in this chapter.
 (ex:potential:ring)=
 :::{note}  Example 17.4
-:label: ex:potential:ring
 A ring of radius $R$ carries a total charge $+Q$. Determine the electric potential a distance $a$ from the centre of the ring, along the axis of symmetry of the ring. Assume that zero electric potential is defined at infinity.
 :::{note}Solution
 :class: dropdown

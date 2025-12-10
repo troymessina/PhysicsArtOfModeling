@@ -179,7 +179,6 @@ The radius of the Earth is 6371 {\rm km}. What is the order of magnitude of the 
 
 (ex:gravity:keplerconstant)=
 :::{note} Example 9.2
-:label: ex:gravity:keplerconstant
 Determine the constant in Kepler's Third Law for planets orbiting the Sun, namely the value of the ratio:
 ```{math}
 \frac{s^3}{T^2}
@@ -216,7 +215,6 @@ Thus, we find that the ratio of the cube of the orbital radius to the period squ
 
 (ex:gravity:gofr)=
 :::{note} Example 9.3
-:label: ex:gravity:gofr
 The acceleration due to Earth's gravity depends on the force that the Earth exerts on an object. Using the Earth's mass and radius, determine the acceleration of falling objects due to Earth's gravity at the surface of the Earth. Also, determine the altitude where the acceleration due to Earth's gravity is half of that at the Earth's surface.
 :::{note} Solution
 :class: dropdown

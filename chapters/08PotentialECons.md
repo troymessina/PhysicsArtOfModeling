@@ -107,7 +107,6 @@ You push a crate from A to B along any path.
 
 (ex:potentialecons:gravity)=
 :::{note} Example 8.1
-:label: ex:potentialecons:gravity
 Is the force of gravity on an object of mass $m$, near the surface of the Earth, given by:
 ```{math}
 \vec F(x,y,z) =0\hat x + 0\hat y -mg \hat z
@@ -126,7 +125,6 @@ and the force is indeed conservative since all three conditions are zero.
 
 (ex:potentialecons:gravitycons)=
 :::{note} Example 8.2
-:label: ex:potentialecons:gravitycons
 Is the following force conservative?
 ```{math}
 \vec F(x,y,z) = \frac{-k}{r^3}\vec r = \frac{-kx}{(x^2+y^2+z^2)^\frac{3}{2}}\hat x + \frac{-ky}{(x^2+y^2+z^2)^\frac{3}{2}}\hat y + \frac{-kz}{(x^2+y^2+z^2)^\frac{3}{2}}\hat z
@@ -250,7 +248,6 @@ W^{net} = 0 &= W_g + W_p\\
 
 (ex:potentialecons:springpotential)=
 :::{note} Example 8.4
-:label: ex:potentialecons:springpotential
 The force exerted by a spring that is extended or compressed by a distance, $x$, is given by Hooke's Law:
 ```{math}
 \vec F(x) = -k x\hat x
@@ -407,7 +404,6 @@ But what if there's an external agent acting on our new system? We can keep "zoo
 
 (ex:potentialecons:blockspring)=
 :::{note} Example 8.5
-:label: ex:potentialecons:blockspring
 ```{figure} figures/PotentialECons/blockspring.png
 :label: fig:potentialecons:blockspring
 :width: 40%
@@ -450,7 +446,6 @@ as we found previously.
 
 (ex:potentialecons:blockI)=
 :::{note} Example 8.6
-:label: ex:potentialecons:blockI
 ```{figure} figures/PotentialECons/blockI.png
 :label: fig:potentialecons:blockI
 :width: 50%

@@ -281,7 +281,6 @@ Thus, as viewed from the muon's frame of reference, the distance that it travell
 
 (ex:specialrelativity:alphatrip)=
 :::{note} Example 23.2
-:label: ex:specialrelativity:alphatrip
 A spaceship carrying your friend Alice speeds away at a speed of $0.99c$ towards the nearest star, Proxima Centauri, a distance of $4.2 {\rm ly}$ (light-years) away. How much time does the trip take as measured by Alice? How far has the spaceship travelled, according to Alice?}
 Alice's trip is illustrated in [](#fig:specialrelativity:alphatrip), showing the trip as viewed from Earth's and from Alice's frame of reference.
 ```{figure} figures/SpecialRelativity/alphatrip.png

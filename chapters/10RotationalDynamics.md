@@ -246,7 +246,6 @@ This equation provides us an alternate formulation to Newton's Second Law that i
 
 (ex:rotationaldynamics:rocket)=
 :::{note} Example 10.1
-:label: ex:rotationaldynamics:rocket
 ```{figure} figures/RotationalDynamics/rocket.png
 :label: fig:rotationaldynamics:rocket
 :width: 300px
@@ -414,7 +413,6 @@ Left panel: a particle rotating about a circle centred at the origin with an axi
 
 (ex:rotationaldynamics:torque)=
 :::{note} Example 10.2
-:label: ex:rotationaldynamics:torque
 A force given by $\vec F=F_x\hat x + F_y \hat y + F_z \hat z$ is exerted at a position $\vec r=r_x \hat x + r_y \hat y + r_z\hat z$. Calculate the torque about the $z$ axis as well as the torque about the origin.
 :::{note} Solution
 :label: ex:rotationaldynamics:torquesoln
@@ -614,7 +612,6 @@ where $dm$ is a small mass element that makes up the object, $r$ is the distance
 
 (ex:rotationaldynamics:ring)=
 :::{note} Example 10.4
-:label: ex:rotationaldynamics:ring
 Calculate the moment of inertia of a uniform thin ring of mass $M$ and radius $R$, rotated about an axis that goes through its centre and is perpendicular to the disk.
 :::{note} Solution
 :label: ex:rotationaldynamics:ringsoln
@@ -687,7 +684,6 @@ where $I_{CM}$ is the moment of inertia of an object of mass $M$ about an axis t
 
 (ex:rotationldynamics:rod)=
 :::{note} Example 10.5
-:label: ex:rotationldynamics:rod
 In the previous section, we calculated the moment of inertia of a rod of length $L$ and mass $M$ through an axis that is perpendicular to the rod and through one of its ends, and found that it was given by:
 \begin{align*}
 I=\frac{1}{3}ML^2
@@ -715,7 +711,6 @@ In this section, we consider the conditions under which an object is in static o
 An object is in static equilibrium, if **both the sum of the external forces exerted on the object and the sum of the external torques (about any axis) are zero**. If the object is in static equilibrium the centre of mass will have no acceleration and the object will have no angular acceleration. In the centre of mass frame of reference, the object is immobile. 
 (ex:rotationaldynamics:scale)=
 :::{note} Example 10.6
-:label: ex:rotationaldynamics:scale
 ```{figure} figures/RotationalDynamics/scale.png
 :label: fig:rotationaldynamics:scale
 :width: 500px

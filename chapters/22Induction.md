@@ -113,7 +113,6 @@ A loop being pulled out of a region with uniform magnetic field.
 
 (ex:induction:changingB)=
 :::{note} Example 22.1
-:label: ex:induction:changingB
 A uniform time-varying magnetic field is given by:
 ```{math}
 \vec B(t) = B_0(1+at)\hat z

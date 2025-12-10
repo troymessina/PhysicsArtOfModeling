@@ -110,7 +110,6 @@ It is also useful to make the analogy with fluid dynamics; one can think of the 
 ```
 (ex:circuits:tworesistors)=
 :::{note} Example 19.1
-:label: ex:circuits:tworesistors
 Two resistors, of $2 {\rm \Omega}$ and $4 {\rm \Omega}$, respectively, are connected in series to a $12 {\rm V}$ battery. What is the current through each of the resistors, and what is the voltage across each resistor?
 :::{note} Solution
 :class: dropdown

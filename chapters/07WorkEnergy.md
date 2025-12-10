@@ -131,7 +131,6 @@ where the work was calculated in going from $x=x_0$ to $x=x_f$, and $d\vec x=dx\
 
 (ex:workenergy:spring)=
 :::{note} Example 7.1
-:label: ex:workenergy:spring 
 A block is pressed against the free end of a horizontal spring with spring constant, $k$, so as to compress the spring by a distance $D$ relative to its rest length, as shown in [](#fig:workenergy:spring). The other end of the spring is fixed to a wall. What is the work done by the spring force on the block in going from $x=-D$ to $x=0$? What is the work done by the block on the spring over the same displacement?
 ```{figure} figures/WorkEnergy/spring.png
 :label: fig:workenergy:spring
@@ -206,7 +205,6 @@ An arbitrary two dimensional path of an object from $A$ to $B$ broken into three
 
 (ex:workenergy:workfriction)=
 :::{note} Example 7.2
-:label: ex:workenergy:workfriction
 Compare the work done by the force of kinetic friction in sliding a crate along a horizontal surface from position $A$ (coordinates $x_A, y_A$) to position $B$ (coordinates $x_B, y_B$) using the two different paths depicted in [](#fig:workenergy:workfriction). Assume that the mass of the crate is $m$ and that the coefficient of kinetic friction between the crate and the ground is $\mu_k$.
 ```{figure} figures/WorkEnergy/workfriction.png
 :label: fig:workenergy:workfriction
@@ -258,7 +256,6 @@ which is more work than was done along path 1. This makes sense because for both
 
 (ex:workenergy:workgravity)=
 :::{note} Example 7.3
-:label: ex:workenergy:workgravity
 A box of mass $m$ is moved from the floor onto a table using two different paths, as shown in [](#fig:workenergy:workgravity). The table is a horizontal distance $L$ away from where the box starts and a height $H$ above the floor. Compare the work done by the weight of the box along the two possible paths.
 ```{figure} figures/WorkEnergy/workgravity.png
 :label: fig:workenergy:workgravity
@@ -347,7 +344,6 @@ You should note that this is not an integral like any other that we have seen so
 
 (ex:workenergy:workparabola)=
 :::{note} Example 7.4
-:label: ex:workenergy:workparabola
 ```{figure} figures/WorkEnergy/workparabola.png
 :label: fig:workenergy:workparabola
 :width: 40%
@@ -426,7 +422,6 @@ W^{net} = \int_A^B F^{net}(\vec r) \cdot d\vec l
 
 (ex:workenergy:networkramp)=
 :::{note} Example 7.5
-:label: ex:workenergy:networkramp
 You push with an unknown horizontal force, $\vec F$, against a crate of mass $m$ that is located on an inclined plane that makes an angle $\theta$ with respect to the horizontal, as shown in [](#fig:workenergy:workincline). The coefficient of kinetic friction between the crate and the incline is $\mu_k$. You push in such a way that that crates moves at a constant speed up the incline. What is the net work done on the crate if it moves up the incline by a distance $d$?
 ```{figure} figures/WorkEnergy/workincline.png
 :label: fig:workenergy:workincline
@@ -928,7 +923,6 @@ Pt &= \frac{1}{2}mv_f^2 \\
 
 (ex:workenergy:powerconstantv)=
 :::{note} Example 7.10
-:label: ex:workenergy:powerconstantv
 You are pushing a crate along a horizontal surface at constant speed, $v$. You find that you need to exert a force of $\vec F$ on the crate in order to overcome the friction between the crate and the ground. How much power are you expending by pushing on the crate?
 :::{note} Solution
 :class: dropdown
