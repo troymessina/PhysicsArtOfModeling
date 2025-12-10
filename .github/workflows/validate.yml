@@ -1,0 +1,137 @@
+# Validation workflow for branches and pull requests
+# This workflow runs quality checks before code is merged to main
+
+name: Validate Branch
+
+# Trigger: This workflow runs on pull requests and pushes to non-main branches
+# This allows us to catch issues before they reach the main branch
+on:
+  pull_request:
+    # Runs on all pull requests
+  push:
+    branches:
+      - '**'        # All branches
+      - '!main'     # EXCEPT main (main uses deploy.yml instead)
+
+# Environment variables available to all jobs and steps
+env:
+  # `BASE_URL` determines the website is served from, including CSS & JS assets
+  BASE_URL: /${{ github.event.repository.name }}
+
+# Sets permissions for this workflow
+permissions:
+  contents: read    # Read repository contents
+
+# Concurrency control: Cancel previous validation runs when new commits are pushed
+# This saves resources since we only care about validating the latest code
+# Unlike deployment, it's safe to cancel in-progress validations
+concurrency:
+  group: 'validation-${{ github.ref }}'
+  cancel-in-progress: true
+
+jobs:
+  # Job 1: Build and validate the documentation
+  build-and-validate:
+    name: Build and Validate Links
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Check out the repository code
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Step 2: Set up Node.js environment
+      # This is needed to run npm and install MyST Markdown
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18.x
+
+      # Step 3: Cache npm global packages to speed up builds
+      # This caches the mystmd installation so it doesn't need to be downloaded every time
+      - name: Cache npm global packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-npm-global-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-npm-global-
+
+      # Step 4: Install MyST Markdown CLI tool globally
+      # MyST is used to build the documentation from markdown files
+      - name: Install MyST Markdown
+        run: npm install -g mystmd
+
+      # Step 5: Install Typst for PDF generation
+      # Typst is a modern typesetting system used to create PDF documents
+      - name: Setup Typst
+        uses: typst-community/setup-typst@v4
+
+      # Step 6: Cache MyST build outputs to speed up incremental builds
+      # This stores the build directory so unchanged files don't need to be rebuilt
+      - name: Cache MyST build
+        uses: actions/cache@v4
+        with:
+          path: |
+            ./_build
+            ./.myst
+          key: ${{ runner.os }}-myst-build-${{ hashFiles('**/*.md', 'myst.yml') }}
+          restore-keys: |
+            ${{ runner.os }}-myst-build-
+
+      # Step 7: Build PDF version of the documentation
+      # This verifies that PDF generation works without errors
+      - name: Build PDF Assets
+        run: myst build --pdf
+
+      # Step 8: Build HTML version of the documentation
+      # This creates the website files that will be validated
+      - name: Build HTML Assets
+        run: myst build --html
+
+      # Step 9: Validate internal links in the built HTML files
+      # This checks that all internal links within the documentation are working
+      # We use lychee, a fast link checker written in Rust
+      # Only internal links are checked to avoid issues with external sites
+      - name: Check internal links with lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          # Check all HTML files in the build directory
+          # --offline flag ensures only internal/local links are checked
+          # This avoids false positives from external sites being down or rate-limiting
+          args: --verbose --no-progress --offline './_build/html/**/*.html'
+          fail: true
+
+      # Step 10: Upload lychee report as artifact (if link checking fails)
+      # This allows you to download and review which links are broken
+      - name: Upload link check results
+        if: always()  # Run even if previous steps fail
+        uses: actions/upload-artifact@v4
+        with:
+          name: link-check-results
+          path: lychee/out.md
+          retention-days: 7  # Keep results for 7 days
+
+      # Step 11: Verify build output exists and is valid
+      # This ensures the build process created the expected files
+      - name: Verify build output
+        run: |
+          echo "Checking that build output exists..."
+          if [ ! -d "./_build/html" ]; then
+            echo "Error: HTML build directory not found!"
+            exit 1
+          fi
+
+          echo "Checking for index.html..."
+          if [ ! -f "./_build/html/index.html" ]; then
+            echo "Error: index.html not found in build output!"
+            exit 1
+          fi
+
+          echo "Build verification successful!"
+          echo "Build output size:"
+          du -sh ./_build/html
+
+          echo "Number of HTML files:"
+          find ./_build/html -name "*.html" | wc -l
+
+# End of file .github/workflows/validate.yml
