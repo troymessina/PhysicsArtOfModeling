@@ -55,18 +55,19 @@ We can define the momentum, $\vec p$, of a particle of mass $m$ and velocity $\v
 Since this is a vector equation, it corresponds to three equations, one for each component of the momentum vector, which are defined by the velocity in each of the three dimensions. It should be noted that the numerical value for the momentum of a particle is arbitrary, as it depends in which frame of reference the velocity of the particle is defined. For example, your velocity with respect to the surface of the Earth may be zero, and so your momentum relative to the surface of the Earth is zero. However, relative to the surface of the Sun, your velocity, and momentum, are not zero. As we will see, forces are related to a *changes* in momentum, just as they are related to a change in velocity (acceleration).
 
 Consider a point particle[^5] moving at constant velocity such as a rock sliding across a frozen pond. If we capture an image of the rock at the same time we start a stopwatch ($t_o = 0 {\rm s}$), it might be located at a position 0.5 meters from the shore as shown in [](#fig:momentumandcm:constvelmotiona). We will designate the direction the rock slides as being along the $x$-axis.
-:::{figure} 
-:label: fig:momentumandcm:constvelmotion
+```{figure} ./figures/MomentumAndCM/ConstVelDotsa.png
+:label: fig:momentumandcm:constvelmotiona
 :align: center
+:alt: The initial position is 0.5 m of a rock sliding across a frozen pond.
+The initial position is 0.5 m of a rock sliding across a frozen pond.
+```
 
-(fig:momentumandcm:constvelmotiona)=
-![The initial position is 0.5 m of a rock sliding across a frozen pond.](./figures/MomentumAndCM/ConstVelDotsa.png)
-
-(fig:momentumandcm:constvelmotionb)=
-![The position of a rock sliding across a frozen pond as time progresses.](./figures/MomentumAndCM/ConstVelDotsb.png)
-
-The motion diagram of a rock sliding across a frozen pond. 
-:::
+```{figure} ./figures/MomentumAndCM/ConstVelDotsb.png
+:label: fig:momentumandcm:constvelmotionb
+:align: center
+:alt: The position of a rock sliding across a frozen pond as time progresses.
+The motion diagram of a rock sliding across a frozen pond.
+```
 As time progresses, the rock will be at greater and greater distances from the shore. As shown in [](#fig:momentumandcm:constvelmotionb), the rock slides 0.5 meters every second. Suppose we recorded its $x$-position every second in a table and obtained the values in [](#tab:MomentumAndCM:1dmotion) (we will ignore measurement uncertainties discussed in [Section %s](#sec:ModelAndExperiment:uncertainties) and pretend that the values are exact).
 ```{table} Time and $x$-position of a rock sliding across a frozen pond recorded every second.
 :label: tab:MomentumAndCM:1dmotion
