@@ -833,7 +833,7 @@ It's possible, many students in Physics 1 have not had Calculus 2, and integrals
 ```{math}
 W = \vec{F}\cdot\vec{d}
 ```
-we can see that when the force and displacement are aligned, the work is $W=\lvert\vec{F}\rvert\lvert\vec{d}\rvert = Fd$. This is the height times width, or area, of the graph. We could break the graph into segments and add the segments. As described in the previous section, the area of the segments can be written $\vec F_i \cdot \Delta \vec x$ and summed to obtain the full area of the graph of $F$ vs. $x$.
+we can see that when the force and displacement are aligned, the work is $W=|\vec{F}||\vec{d}| = Fd$. This is the height times width, or area, of the graph. We could break the graph into segments and add the segments. As described in the previous section, the area of the segments can be written $\vec F_i \cdot \Delta \vec x$ and summed to obtain the full area of the graph of $F$ vs. $x$.
 ```{math}
 W^{tot} = \sum_{i=0}^N\vec F_i \cdot \Delta \vec x_i
 ```
