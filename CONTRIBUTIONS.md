@@ -1,75 +1,163 @@
+# Contributing to Modeling with Physics
 
-# Contributing to Hands-On Advanced Physics Laboratory
+Thank you for your interest in contributing to our physics textbook!
 
-Thank you for your interest in contributing to our physics laboratory textbook! This guide will help you understand our contribution process and standards.
+## Quick Links
+
+- **[FORMATTING_GUIDE.md](FORMATTING_GUIDE.md)** - MyST Markdown and math conventions with examples from the book
+- **[.vscode/README.md](.vscode/README.md)** - VS Code snippets to enforce conventions automatically
+
+---
 
 ## How to Contribute
 
-There are several ways you can contribute to this project:
+1. **Report errors**: Create an issue for factual errors or unclear explanations
+2. **Add content**: Propose new sections, examples, or problems
+3. **Improve content**: Enhance explanations or add figures
+4. **Fix formatting**: Address MyST Markdown issues
 
-1. **Report errors or suggest improvements**: Create an issue to report factual errors, unclear explanations, or suggest improvements.
-2. **Add new content**: Propose new sections, examples, or problems.
-3. **Improve existing content**: Enhance explanations, add clarifying figures, or update outdated information.
-4. **Fix technical issues**: Address formatting problems, or mystmd configuration issues.
+---
 
-## Contribution Process
+## Setup
 
-### For Minor Changes (Typos, Small Clarifications)
+### Prerequisites
+
+- Node.js (v18+)
+- npm
+- Git
+- Text editor (VS Code recommended)
+
+### Installation
+
+```bash
+# Install MyST
+npm install -g mystmd
+
+# Clone repository
+git clone https://github.com/troymessina/PhysicsArtOfModeling.git
+cd PhysicsArtOfModeling
+
+# Build and preview
+myst build --html
+myst start  # Opens at http://localhost:3000
+```
+
+**First build**: 2-5 minutes. **Incremental builds**: Much faster. **Live reload**: Auto-updates on save.
+
+### VS Code Setup (Recommended)
+
+1. Open repository in VS Code
+2. Snippets in `.vscode/myst-markdown.code-snippets` load automatically
+3. Install extensions: Markdown All in One, Code Spell Checker
+
+**Snippet examples**:
+- `chapter-front` → Complete chapter structure
+- `fig` → Figure with all metadata
+- `unit` → Roman units (enforces `{\rm m}` not `m`)
+- `vec` → Vector with arrow (`\vec F`)
+
+See [.vscode/README.md](.vscode/README.md) for full list.
+
+---
+
+## Contribution Workflow
+
+### Minor Changes (typos, clarifications)
 
 1. Fork the repository
-2. Make your changes
-3. Submit a pull request with a clear description of the changes
-4. Reference any related issues
+2. Create branch: `git checkout -b fix/description`
+3. Make changes (see [FORMATTING_GUIDE.md](FORMATTING_GUIDE.md) for conventions)
+4. Test: `myst build --html && myst start`
+5. Commit with clear message
+6. Submit pull request
 
-### For Major Contributions (New Sections, Significant Revisions)
+### Major Contributions (new sections, chapters)
 
-1. **Start with an issue**: Create an issue describing what you'd like to contribute and why
-2. **Wait for feedback**: Get alignment from maintainers before investing significant time
-3. **Fork and develop**: Once approved, fork the repository and develop your contribution
-4. **Submit a pull request**: Include comprehensive documentation of your changes
+1. **Create issue first** - describe what you want to contribute
+2. **Wait for approval** from maintainers
+3. Fork and develop following [FORMATTING_GUIDE.md](FORMATTING_GUIDE.md)
+4. Test thoroughly
+5. Submit pull request with detailed description
+
+---
+
+## Key Conventions
+
+Full details in **[FORMATTING_GUIDE.md](FORMATTING_GUIDE.md)**. Key points:
+
+✅ **Cross-references**: Use `[Section %s](#sec:...)` or `[](#fig:...)` - never hard-code numbers
+✅ **Units**: Must be roman `{\rm m}`, `{\rm kg}`, `{\rm N}` - NEVER italic
+✅ **Vectors**: Use arrow notation `\vec F`, `\vec v`, `\vec a`
+✅ **Alt text**: Required on all figures for accessibility
+✅ **Subscripts**: Descriptive = roman (`\vec F_g`), Coordinate = italic (`F_x`)
+
+---
+
+## Testing Checklist
+
+Before submitting:
+
+```bash
+myst build --html  # Check for errors
+myst start         # Preview at localhost:3000
+```
+
+- [ ] Cross-references work (click all links)
+- [ ] Equations render correctly
+- [ ] Figures load with alt text
+- [ ] Units are roman (`{\rm }`)
+- [ ] Vectors have arrows (`\vec`)
+- [ ] No hard-coded section/figure numbers
+
+---
 
 ## Content Guidelines
 
 ### Scientific Accuracy
-
-- All content must be scientifically accurate and up-to-date
-- Claims should be supported by references to peer-reviewed literature where appropriate
-- When describing experimental methods, include relevant safety considerations
+- Scientifically accurate and current
+- Support claims with references when appropriate
+- Include safety considerations for experiments
 
 ### Writing Style
+- Clear, concise academic English
+- Target: 1st year undergrads taking Calculus I
+- Define terms when first introduced
+- Use bold for key concepts: "The **scientific method** relies on..."
 
-- Write in clear, concise academic English
-- Target an undergraduate physics student audience (1st year concurrently taking Calculus I)
-- Use consistent terminology throughout
-- Define specialized terms when first introduced
-- Follow SI units and standard physics notation
+### Formatting
+See **[FORMATTING_GUIDE.md](FORMATTING_GUIDE.md)** for complete technical details on:
+- Chapter structure and frontmatter
+- Labels and cross-references
+- Admonitions (7 types)
+- Figures, tables, embedded content
+- Math notation and conventions
 
-### Technical Formatting
+---
 
-- Use mystmd syntax for all content
-- Mathematical equations should use LaTeX syntax
-- Include alt text for all figures and diagrams
-- Code examples should be properly formatted and commented
+## Getting Help
 
-## Licensing
+1. Check **[FORMATTING_GUIDE.md](FORMATTING_GUIDE.md)** for conventions
+2. Check **[.vscode/README.md](.vscode/README.md)** for snippets
+3. Look at existing chapters for examples
+4. Review [MyST documentation](https://mystmd.org/guide)
+5. Create issue with `question` label
 
-By contributing to this project, you agree that your contributions will be licensed under the same license as the main project (CC-BY-SA-4.0). All contributors will be acknowledged in the Contributors section.
-
-## Development Environment
-
-We recommend setting up a local development environment:
-
-1. Install [mystmd](https://mystmd.org/guide/quickstart-installation)
-2. Clone the repository: `git clone https://github.com/troymessina/PhysicsArtOfModeling.git`
-3. Navigate to the project directory: `cd PhysicsArtOfModeling`
-4. Build the project locally: `myst build`
-5. Preview the site: `myst start`
+---
 
 ## Code of Conduct
-
-All contributors are expected to adhere to our Code of Conduct:
 
 - Be respectful and inclusive
 - Focus on constructive feedback
 - Maintain scientific integrity
-- Respect intellectual property
+- Welcome newcomers
+- Assume good intentions
+
+---
+
+## License
+
+Contributions licensed under **CC-BY-SA-4.0**. Contributors acknowledged in the book.
+
+---
+
+**Thank you for helping make physics education more accessible!**
