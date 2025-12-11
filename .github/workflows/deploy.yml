@@ -85,16 +85,18 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-myst-build-
 
-      # Step 8: Build PDF version of the documentation
+      # Step 8: Build HTML version of the documentation
+      # This creates the website files that will be deployed
+      # NOTE: Must run BEFORE PDF build, as HTML build clears _build/html directory
+      - name: Build HTML Assets
+        run: myst build --html
+
+      # Step 9: Build PDF version of the documentation
       # This creates PDF files from your markdown content
+      # Runs AFTER HTML build so PDF ends up in the final _build/html directory
       - name: Build PDF Assets
         run: myst build --pdf
         continue-on-error: true
-
-      # Step 9: Build HTML version of the documentation
-      # This creates the website files that will be deployed
-      - name: Build HTML Assets
-        run: myst build --html
 
       # Step 10: Verify PDF was generated
       - name: Check PDF exists
