@@ -221,8 +221,6 @@ Type these prefixes and press Tab:
 - `xref-fig` - Cross-reference a figure
 - `vec` - Vector notation
 - `unit` - Roman units (common units dropdown)
-- `newton2` - Newton's Second Law
-- `work` - Work equation
 
 See [.vscode/README.md](.vscode/README.md) for complete list.
 

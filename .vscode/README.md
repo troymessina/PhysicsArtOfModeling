@@ -78,41 +78,6 @@ The snippets in `myst-markdown.code-snippets` are automatically loaded by VS Cod
 | `acc` | Acceleration vector |
 | `pos` | Position vector |
 
-### Common Physics Equations
-
-| Prefix | Description |
-|--------|-------------|
-| `newton2` | Newton's Second Law |
-| `newton2-comp` | Newton's 2nd Law in components |
-| `friction` | Friction force equation |
-| `work` | Work equation |
-| `work-int` | Work as line integral |
-| `kinetic` | Kinetic energy |
-| `spring-pe` | Spring potential energy |
-| `grav-pe` | Gravitational potential energy |
-| `shm` | Simple harmonic motion |
-| `omega` | Angular frequency |
-| `coulomb` | Coulomb's Law |
-| `efield` | Electric field definition |
-| `potential` | Electric potential difference |
-
-### Math Operators
-
-| Prefix | Description |
-|--------|-------------|
-| `dt` | Time derivative d/dt |
-| `d2t` | Second time derivative |
-| `pd` | Partial derivative |
-| `int` | Definite integral |
-| `sum` | Summation |
-| `dot` | Dot product |
-| `cross` | Cross product |
-| `mag` | Vector magnitude |
-| `delta` | Delta (finite change) |
-| `therefore` | Therefore symbol |
-| `propto` | Proportional to |
-| `approx` | Approximately equal |
-
 ### Problems and Solutions
 
 | Prefix | Description |
