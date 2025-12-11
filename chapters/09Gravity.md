@@ -97,7 +97,7 @@ We can re-arrange this relation so that all of the quantities related to one pla
 ```{math}
 \frac{T_1^2}{s_1^3}=\frac{T_2^2}{s_2^3}=\text{constant}
 ```
-In other words, the ratio between the orbital period squared and the semi-major axis cubed is a constant, independent of the particular planet. In [Example 9.2](#ex:gravity:keplerconstant), we will use Newton's Universal Theory of Gravity to evaluate the constant.
+In other words, the ratio between the orbital period squared and the semi-major axis cubed is a constant, independent of the particular planet. In Example 9.2, we will use Newton's Universal Theory of Gravity to evaluate the constant.
 
 :::{tip} Checkpoint
 An object is in a circular orbit with radius $r$ and has an orbital speed $v$. If you double the radius of the circular orbit, what will be the value of the orbital speed?}
@@ -263,7 +263,7 @@ which corresponds to an altitude of $h=R-R_\oplus=2640 {\rm km}$, well above the
 :::
 
 ## Weight and apparent weight
-You have probably seen images of astronauts floating around the International Space Station (ISS) or other orbiting vessels, and heard of the term "weightlessness"  to describe their motion. The ISS is in orbit at an altitude of approximately $400 {\rm km}$, where the force of Earth's gravity is far from negligible (in [Example 9.3](#ex:gravity:gofr) we showed that one needs to go to an altitude of $2640 {\rm km}$ for the force to be reduced by half of that at the surface of the Earth). The contradiction between being weightless and the fact that weight is not zero is resolved by understanding that the popular term "weightless" is imprecise from a physics perspective.
+You have probably seen images of astronauts floating around the International Space Station (ISS) or other orbiting vessels, and heard of the term "weightlessness"  to describe their motion. The ISS is in orbit at an altitude of approximately $400 {\rm km}$, where the force of Earth's gravity is far from negligible (in Example 9.3 we showed that one needs to go to an altitude of $2640 {\rm km}$ for the force to be reduced by half of that at the surface of the Earth). The contradiction between being weightless and the fact that weight is not zero is resolved by understanding that the popular term "weightless" is imprecise from a physics perspective.
 
 The correct term to use from a physics perspective is to say that the *apparent weight* of the astronauts is zero when they are floating around. Weight is the magnitude of the force of gravity exerted by the Earth. Apparent weight is, for example, the force that one measures when standing on a spring scale, which is equal to the normal force exerted by the spring scale on the person. Apparent weight could also be determined by the tension in a string from which a person is suspended. The apparent weight is the sum of the forces exerted on a person minus the force of gravity. If gravity is the only force exerted on a person (or object), that person's apparent weight is zero, which is what is popularly called being weightless.
 
@@ -291,7 +291,7 @@ Consider, instead, a person standing on a spring scale at the equator ([](#fig:g
 &=m\left(g - \frac{v^2}{R}  \right)
 \end{align*}
 ```
-where $M$ is the mass of the Earth, $R$ is the radius of the Earth, and $v$ is the speed at the surface of the Earth due to the Earth's rotation.  In the last line, we used the result from [Example 9.3](#ex:gravity:gofr) where we determined the value of $g$ in terms of the mass and radius of the Earth.
+where $M$ is the mass of the Earth, $R$ is the radius of the Earth, and $v$ is the speed at the surface of the Earth due to the Earth's rotation.  In the last line, we used the result from Example 9.3 where we determined the value of $g$ in terms of the mass and radius of the Earth.
 
 We see that the normal force is reduced compared to what it would be if the Earth were not rotating ($v=0$) or if one is standing at one of the poles. Your apparent weight, which you can measure by standing on a spring scale, is thus smaller at the equator than it is at the poles. The quantity in parenthesis can be thought of as a modified or "effective" value of $g$ at the equator.
 
@@ -349,7 +349,7 @@ The gravitational force exerted on a mass $m$ by a mass $M$ can be written as:
 ```
 if we define a coordinate system with the origin located at the centre of mass $M$ so that $\vec r$ is the position of $m$ relative to $M$. We can define the "gravitational field", $\vec g(\vec r)$, at position, $\vec r$, due to the presence of mass $M$ as the gravitational force per unit mass exerted by $M$:
 ```{math}
-\boxed{\vec g(\vec r) = \frac{\vec F(\vec r)}{m} =  - \frac{GM}{r^2}\hat r}
+\vec g(\vec r) = \frac{\vec F(\vec r)}{m} =  - \frac{GM}{r^2}\hat r
 ```
 The word "field" is just a mathematical term for a function that depends on position. Since $\vec g(\vec r)$ is a vector, we would refer to it as a "vector field".
 
@@ -531,7 +531,7 @@ r &= \sqrt{x^2+y^2+z^2} =(x^2+y^2+z^2)^\frac{1}{2} \\
 \therefore \vec F(x,y,z) &= - G\frac{Mm}{(x^2+y^2+z^2)^\frac{3}{2} }(x\hat x + y \hat y + z\hat z)
 \end{align*}
 ```
-Mathematically, this is equivalent to the force that we considered in [Example 8.2](#ex:potentialecons:gravitycons) of [Chapter %s](#chapter:potentialecons), which we showed was a conservative force. The force of gravity in Newton's theory is thus a conservative force, for which we can determine a potential energy function.
+Mathematically, this is equivalent to the force that we considered in Example 8.2 of [Chapter %s](#chapter:potentialecons), which we showed was a conservative force. The force of gravity in Newton's theory is thus a conservative force, for which we can determine a potential energy function.
 
 In order to determine the gravitational potential energy function for the mass $m$ in the presence of a mass $M$, we calculate the work done by the force of gravity on the mass $m$ over a path where the integral for work will be "easy" to evaluate, namely a straight line. [](#fig:gravity:potential) shows such a path in the radial direction, $r$, over which it will be easy to calculate the work done by the force of gravity from mass $M$ when mass $m$ moves from being a distance $r_A$ to a distance $r_B$ from the centre of mass $M$.
 ```{figure} figures/Gravity/potential.png
@@ -555,7 +555,7 @@ The difference in potential energy in going from position $A$ to position $B$ is
 ```
 By inspection, we can identify the potential energy function for gravity:
 ```{math}
-\boxed{U(r) = -G\frac{Mm}{r} + C}
+U(r) = -G\frac{Mm}{r} + C
 ```
 which is determined only up to a constant, $C$. 
 
@@ -566,7 +566,7 @@ Recall that if there are no other forces acting on an object, that object will m
 ## Mechanical energy with gravity
 Unless noted otherwise, we will continue our discussion of gravitational potential energy with the particular choice of constant $C=0$:
 ```{math}
-\boxed{U(r) = -G\frac{Mm}{r}}
+U(r) = -G\frac{Mm}{r}
 ```
 Furthermore, we will assume that $M$ is a large body, such as the Earth, which we can consider as fixed, and focus our discussion on describing the motion of mass $m$ (e.g. a satellite). If $M$ is much bigger than $m$, they will both experience a force of gravity from each other of the same magnitude (Newton's Third Law), but because $M$ is so much larger, its acceleration will be much smaller (Newton's Second Law). Thus, it is a good approximation to assume that $M$ is stationary and that only $m$ moves when $M>>m$. 
 
@@ -885,7 +885,7 @@ h = R-R_\oplus = 35.9\times 10^{6} {\rm m}
 ```
 Thus, geosynchronous satellites are located at an altitude of approximately $36000 {\rm km}$.
 
-**Discussion**: Note that we could have also easily used Kepler's Third Law to determine the radius of the orbit, since we already know the period ($24 {\rm h}$), and we know the value of the constant for Kepler's Third Law from [Example 9.2](#ex:gravity:keplerconstant).
+**Discussion**: Note that we could have also easily used Kepler's Third Law to determine the radius of the orbit, since we already know the period ($24 {\rm h}$), and we know the value of the constant for Kepler's Third Law from Example 9.2.
 :::
 
 :::{note} Solution 9.2
@@ -905,7 +905,7 @@ In orbit, the energy of the rocket, $E_B$, is given by:
 ```{math}
 E_B = K + U = \frac{1}{2}mv^2 - G\frac{Mm}{R}
 ```
-where $R=42.2\times 10^{6} {\rm m}$ is the radius of the geosynchronous orbit ([Problem %s](#prob:gravity:geosyncorbit)) and $v$ is the speed of the satellite in orbit. The speed is given by:
+where $R=42.2\times 10^{6} {\rm m}$ is the radius of the geosynchronous orbit (Problem 9.1) and $v$ is the speed of the satellite in orbit. The speed is given by:
 ```{math}
 v = \frac{2\pi R}{T}
 ```

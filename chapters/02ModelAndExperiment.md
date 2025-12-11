@@ -218,7 +218,7 @@ and our model predicts a speed with dimensions of mass squared. By performing si
 :::{attention} Olivia's Thoughts
 In this section, we were given three rules for combining dimensions. You'll notice that these rules are the same as the rules for algebra, except you're using dimensions instead of $x$'s and $y$'s. So, you can really just approach dimensional analysis problems as you would algebra problems.
 
-There are some basic steps you can follow when you are trying to find the SI units for a value/variable in your equation. I'll go through [](#ex:modelandexperiment:forceSI) in a bit of a different way. Let's say that you have the equation $F=ma$ and this time, you know the dimensions of $F$ and $m$, and you want to find the dimensions of $a$:
+There are some basic steps you can follow when you are trying to find the SI units for a value/variable in your equation. I'll go through the example in a bit of a different way. Let's say that you have the equation $F=ma$ and this time, you know the dimensions of $F$ and $m$, and you want to find the dimensions of $a$:
 1. Rewrite the values/variables in your equation in terms of their dimensions, leaving all other operations (multiplication, exponents, etc.) as is: $F=m\cdot a\rightarrow [F]=[m]\cdot[a]$
 2. Rearrange for your unknown dimension: $[a]=\frac{[F]}{[m]}$
 3. Substitute in your known dimensions: $[a]=\frac{[F]}{[m]} \rightarrow [a]=\frac{MLT^{-2}}{M}=\frac{ML}{MT^2}$
@@ -425,7 +425,7 @@ As a reminder, we want to emphasize the difference between "error" and "mistake"
 ```
 
 ### Propagating uncertainties
-Going back to the data in [](#tab:modelandexperiment:kmes_3m), we found that for a known drop height of $x=3 {\rm m}$, we measured different values of the drop time, which we found to be $t=0.76 \pm 0.15 {\rm s}$ (using the mean and standard deviation). We also calculated a value of $k$ corresponding to each value of $t$, and found $k=0.44 \pm 0.09{\rm s.m^{-\frac{1}{2}}}$ ([](#ex:modelandexperiment:stdcalc)).
+Going back to the data in [](#tab:modelandexperiment:kmes_3m), we found that for a known drop height of $x=3 {\rm m}$, we measured different values of the drop time, which we found to be $t=0.76 \pm 0.15 {\rm s}$ (using the mean and standard deviation). We also calculated a value of $k$ corresponding to each value of $t$, and found $k=0.44 \pm 0.09{\rm s.m^{-\frac{1}{2}}}$ (the example).
 
 Suppose that we did not have access to the individual values of $t$, but only to the value of $t=0.76 \pm 0.15 {\rm s}$ with uncertainty. How do we calculate a value for $k$ with uncertainty? In order to answer this question, we need to know how to "propagate" the uncertainties in a measured value to the uncertainty in a value derived the measured value. We briefly present different methods for propagating uncertainties, before advocating for the use of computers to do the calculations for you.
 

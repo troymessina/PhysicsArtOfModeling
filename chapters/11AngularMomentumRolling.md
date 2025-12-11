@@ -68,7 +68,7 @@ I = \sum_i mr_i^2
 
 Thus, the rotational kinetic energy of an object rotating with angular speed $\omega$ about an axis that is stationary in an inertial frame of reference is given by:
 ```{math}
-\boxed{K_{rot}=\frac{1}{2}I\omega^2}
+K_{rot}=\frac{1}{2}I\omega^2
 ```
 where $I$ is the object's moment of inertia about that axis. The rotational kinetic energy is functionally very similar to the linear kinetic energy; instead of mass, we use the moment of inertia, and instead of speed squared, we use angular speed squared. 
 
@@ -130,7 +130,7 @@ W^{net} &= \int_{\theta_1}^{\theta_2}\vec\tau^{net}\cdot d\vec \theta =  \int_{\
 ```
 where we used the fact that $\vec\omega$ are $d\vec\theta$ are parallel. We thus find that the Work-Energy Theorem can also be applied to find the change in rotational kinetic energy resulting from the net work done by a torque:
 ```{math}
-\boxed{W^{net}=\int_{\theta_1}^{\theta_2}\vec\tau^{net}\cdot d\vec \theta = \Delta K_{rot}}
+W^{net}=\int_{\theta_1}^{\theta_2}\vec\tau^{net}\cdot d\vec \theta = \Delta K_{rot}
 ```
 
 If a constant torque, $\vec\tau$, is exerted on an object that is rotating at constant angular velocity, $\vec\omega$, then the rate at which that work  is being done is given by:
@@ -181,7 +181,7 @@ is the numerator for the definition of the velocity of the centre of mass, which
 
 Thus, the total kinetic energy of an object of mass, $M$, that is rotating about an axis through its centre of mass with angular velocity, $\omega$, and whose centre of mass is moving with velocity, $\vec v_{CM}$, is given by:
 ```{math}
-\boxed{K_{tot}=K_{rot}+K_{trans}=\frac{1}{2} I_{CM}\omega ^2 + \frac{1}{2}M v_{CM}^2} 
+K_{tot}=K_{rot}+K_{trans}=\frac{1}{2} I_{CM}\omega ^2 + \frac{1}{2}M v_{CM}^2 
 ```
 The total kinetic energy can be thought of as the sum of the rotational and kinetic energies.
 
@@ -233,7 +233,7 @@ v &= -v_{rot} + v_{CM} = 0\\
 ```
 and we find that, for rolling without slipping, the speed due to rotation about the centre of mass has to be equal to the speed of the centre of mass. The speed due to rotation about the centre of mass can be expressed using the angular velocity of the wheel about the centre of mass ([](#eq:angularmomentumrolling:vrot)). For rolling without slipping, we thus have the following relationship between angular velocity and the speed of the centre of mass:
 ```{math}
-\boxed{\omega R = v_{CM}}\quad \text{(rolling without slipping)}
+\omega R = v_{CM}\quad \text{(rolling without slipping)}
 ```
 It makes sense for the angular velocity to be related to the speed of the centre of mass. The faster the wheel rotates, the faster the centre of mass will move. If the wheel is slipping with respect to the ground, then the point of contact is no longer stationary relative to the ground, and there is no relation between the angular velocity and the speed of the centre of mass. For rolling with slipping, imagine the motion of your bicycle wheel as you try to ride your bike on a slick sheet of ice.
 
@@ -450,7 +450,7 @@ In this section, we show that we can define a quantity called "angular momentum"
 ## Angular momentum of a particle
 The angular momentum relative to a point of rotation, $\vec L$, of a particle with linear momentum, $\vec p$, is defined as:
 ```{math}
-\boxed{\vec L = \vec r\times \vec p}
+\vec L = \vec r\times \vec p
 ```
 where $\vec r$ is the vector from the point of rotation to the particle, and the linear momentum, $\vec p$, is defined relative to an inertial frame of reference in which the point of rotation is at rest.
 
@@ -477,7 +477,7 @@ where $\vec F^{net}$ is the net force on the particle relative to the point of r
 ```
 where the term on the right is the net torque on the particle. Thus, the rate of change of angular momentum is given by:
 ```{math}
-\boxed{\frac{d\vec L}{dt}   = \vec \tau^{net}}
+\frac{d\vec L}{dt}   = \vec \tau^{net}
 ```
 which is analogous to the linear case, but we used angular momentum instead of linear momentum and net torque instead of net force. The net torque on a particle is thus equal to the rate of change of its angular momentum. In particular, the angular momentum of a particle will remain constant (not change with time) if the net torque on the particle is zero. 
 
@@ -488,7 +488,7 @@ We can also define the angular momentum of a particle using only angular quantit
 where we factored the mass $m$ out of the momentum and used the definition $\vec \omega = 1/r^2(\vec r \times \vec v)$. We can think of $mr^2$ as the moment of inertia, $I$, of the particle and write:
 ```{math}
 :label: eq:angularmomentumrolling:liw
-\boxed{\vec L  = mr^2 \vec\omega = I \vec\omega}
+\vec L  = mr^2 \vec\omega = I \vec\omega
 ```
 which is a close analogue to the definition of linear momentum, but we use moment of inertia instead of mass and angular velocity instead of velocity. 
 
@@ -578,7 +578,7 @@ where we defined, $\vec\tau^{ext}$, to be the net external torque exerted on the
 ```
 The rate of change of the total angular momentum of the system is then given by:
 ```{math}
-\boxed{\frac{d\vec L}{dt} = \vec \tau^{ext}}
+\frac{d\vec L}{dt} = \vec \tau^{ext}
 ```
 
 Up to this point, we did not require that the system be a solid object, so the particles in the system can move relative to each other. For example, the particles could be the Sun, planets, and everything else that is in our Solar System. The total angular momentum of all of the bodies in the Solar System (say, relative to the Sun) is conserved if there is no net torque on the solar system relative to the Sun (i.e. if there is no torque about the Sun exerted on any of the bodies in the system that is not exerted by one of the other bodies in the system).
@@ -596,7 +596,7 @@ The total momentum of the system is the sum of the angular momenta of the indivi
 ```
 Because all of the particles are part of the same object, they must all move in unison and have the same angular velocity, $\vec\omega$, relative to the axis of rotation. We can thus define the angular momentum about the rotation axis for a solid object with angular velocity, $\vec\omega$, as:
 ```{math}
-\boxed{\vec L = \left(\sum_i  m_i r_i^2\right) \vec \omega = I\vec\omega}
+\vec L = \left(\sum_i  m_i r_i^2\right) \vec \omega = I\vec\omega
 ```
 where we recognized that the sum in parentheses is simply the moment of inertia of the object relative to the axis of rotation. Again, it should be emphasized that this is the total angular momentum of the object about an axis of rotation, and not about a point. 
 
