@@ -118,7 +118,7 @@ Through careful studies of the force between two charged spheres, Coulomb observ
 
 This leads to Coulomb's Law for the electric force (or simply "Coulomb's Law"), $\vec F_{12}$, exerted on a point charge $Q_1$ by another point charge $Q_2$:
 ```{math}
-\boxed{\vec{F}_{12}=k\frac{Q_1Q_2}{r^2}\hat{r}_{21}}
+\vec{F}_{12}=k\frac{Q_1Q_2}{r^2}\hat{r}_{21}
 ```
 where $\hat r_{21}$ is the unit vector from $Q_2$ to $Q_1$ and $r$ is the distance between the two charges, as illustrated in [](#fig:chargesfields:coulombforce). Coulomb's constant, $k=8.99\times 10^9 {\rm N\cdot m^2/C^{2}}$, is simply a proportionality constant to ensure that the quantity on the right will have units of Newtons when all other quantities are in S.I. units. In some instances, it is more convenient to use the "permittivity of free space", $\epsilon_0$, rather than Coulomb's constant, in which case Coulomb's Law has the form:
 ```{math}
@@ -253,7 +253,7 @@ which, of course, is the result from Newton's Theory of Gravity. As you recall, 
 
 We proceed in an analogous way to define the "electric field", $\vec E(\vec r)$, as the *electric force per unit charge*. If we have a point charge, $Q$, located at the origin of a coordinate system, then the electric field from that point charge, $\vec E(\vec r)$, at some position, $\vec r$, relative to the origin is given by:
 ```{math}
-\boxed{\vec E(\vec r) = k\frac{Q}{r^2}\hat r}
+\vec E(\vec r) = k\frac{Q}{r^2}\hat r
 ```
 If we place a "test charge", $q$, at position $\vec r$ in space, it will experience a force given by:
 ```{math}
@@ -791,7 +791,7 @@ Although the net force on the dipole is zero, there is still a net torque about 
 ```
 In [](#fig:chargesfields:dipoleinfield), the torque vector is into the page (the forces will make it rotate clockwise), which is the same direction as the cross product, $\vec p \times \vec E$. Note that the magnitude of the torque is also equal to the magnitude of the cross product. Thus, in general, the torque vector on a dipole, $\vec p$, from an electric field, $\vec E$, is given by:
 ```{math}
-\boxed{\vec \tau =\vec p \times \vec E}
+\vec \tau =\vec p \times \vec E
 ```
 In particular, note that the torque is zero when the dipole and electric field vectors are parallel. Thus, a dipole will always experience a torque that tends to align it with the electric field vector. The dipole is thus in a stable equilibrium when it is parallel to the electric field.
 :::{tip} Checkpoint:label: cp:chargesfields:efield
@@ -814,7 +814,7 @@ W&=\int_{\theta_1}^{\theta_2} \tau d\theta=\int_{\theta_1}^{\theta_2} -pE\sin\th
 ```
 where the negative sign in the torque is to indicate that the torque is in the opposite direction from increasing $\theta$ (in [](#fig:chargesfields:dipoleinfield), the torque is clockwise whereas the angle $\theta$ increases counter-clockwise). The net work done in going from position $\theta_1$ to $\theta_2$ is the negative of the change in potential energy in going from $\theta_1$ to $\theta_2$. Thus, we define the potential energy of an electric dipole, $\vec p$, in an electric field, $\vec E$, as:
 ```{math}
-\boxed{U=-pE\cos\theta=-\vec p\cdot \vec E}
+U=-pE\cos\theta=-\vec p\cdot \vec E
 ```
 which has a negative sign, and we also recognize that this is equivalent to the scalar product between $\vec p$ and $\vec E$. Note that the negative sign makes sense because systems experience a force/torque that will decrease their potential energy. When the angle is zero, $\cos\theta=1$, is maximal. Since we need the position with $\theta=0$ to have the lowest potential energy, the minus sign guarantees that all values of $\theta$ other than zero will give a potential energy that is higher (greater than) $(-1) pE$. Remember that only changes in potential energy are relevant, so the minus sign should not bother you, although you should think about whether it makes sense.
 

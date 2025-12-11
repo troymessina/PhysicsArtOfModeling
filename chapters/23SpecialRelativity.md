@@ -230,7 +230,7 @@ c^2&=\frac{4L^2}{\Delta t'^2}+v^2\\
 ```
 Note that the term $2L/c$ is simply the period of the clock as measured in a frame of reference where the clock is stationary. Thus, we can relate the two clock periods:
 ```{math}
-\boxed{\Delta t' = \Delta t \frac{1}{\sqrt{1-\frac{v^2}{c^2}}}}
+\Delta t' = \Delta t \frac{1}{\sqrt{1-\frac{v^2}{c^2}}}
 ```
 To re-iterate: the period of the clock, $\Delta t'$, as measured in a frame of reference that is moving relative to the clock is longer than the period of the clock, $\Delta t$, as measured in the "rest frame" of the clock (the reference frame where the clock is stationary). We call this effect **"time dilation"**, and it is not just some mathematical curiosity. The clock that we imagined with a pulse of light is a real clock that one could actually construct; we could use it to measure time. That clock will appear to tick slower if it is moving. **Time goes by slower in a moving reference frame**. If a person climbs on a ship that is moving, that person will age at a slower rate than a person that remained on Earth. By travelling at high speeds, you effectively travel into the future, as observed on Earth. The equation above allows us to relate the amount of time that went by in one reference frame to the amount of time that went by in a different frame of reference.
 
@@ -238,7 +238,7 @@ We define the time that is measured at rest as the "proper time". In our example
 
 The factor by which time is dilated comes up often in Special Relativity, and is called the gamma factor:
 ```{math}
-\boxed{\gamma = \frac{1}{\sqrt{1-\frac{v^2}{c^2}}}}
+\gamma = \frac{1}{\sqrt{1-\frac{v^2}{c^2}}}
 ```
 As a corollary to Einstein's postulates, we will see that nothing can ever exceed the speed of light in vacuum. The gamma factor is always greater than one, since $v$ (the speed between the two different inertial frames of reference) must always be smaller than $c$. You may also recognize that the gamma factor appeared in our introductory example with the force between two wires. Here, we derived the gamma factor from kinematic considerations, whereas in the example with the two wires, it came straight out of the equations for electromagnetism.
 
@@ -332,7 +332,7 @@ One interesting issue uncovered by [Example 23.2](#ex:specialrelativity:alphatri
 # Length contraction
 As we saw in the examples from the previous section, time dilation implies "length contraction". When an object is measured in a frame of reference that is at rest relative to the object, the length of the object, $L$, is called the "rest length" or the "proper length" of the object. If that object is moving relative to an observer, the observer will measure the object to be shorter, and have a "contracted length", $L'$, given by:
 ```{math}
-\boxed{L'=L\sqrt{1-\frac{v^2}{c^2}} =\frac{L}{\gamma}}
+L'=L\sqrt{1-\frac{v^2}{c^2}} =\frac{L}{\gamma}
 ```
 In [Example 23.2](#ex:specialrelativity:alphatrip), Alice measured a contracted distance between Earth and Proxima Centauri, as she was in a frame of reference that is moving relative to the Earth-Proxima Centauri reference frame. One point that is important to note is that length contraction only occurs along the direction parallel to the direction of motion.
 :::{note} Example 23.3
@@ -704,7 +704,7 @@ u'_x \left( 1- \frac{vu_x}{c^2}\right) &=u_x -v
 \end{align*}
 ```
 ```{math}
-\therefore \; \boxed{u'_x=\frac{u_x -v}{1- \frac{vu_x}{c^2}}}
+\therefore \; u'_x=\frac{u_x -v}{1- \frac{vu_x}{c^2}}
 ```
 where we made use of the Lorentz transformation: $x'=\gamma (x-vt)$. We can proceed in a similar way to determine the $y$ and $z$ components. Note that, unlike the Galilean case, all of the velocity components must transform, since the time derivative is involved for each component. Intuitively, we expect all components of velocity to be affected, since one needs to guarantee that the total speed is always below $c$. The velocity transformations for all components are given by the following:
 ```{math}
@@ -770,7 +770,7 @@ where $u$ is the speed of the particle in frame, $S$. We can use time dilation t
 ```
 where in the last line, we simply took the limit of an infinitesimally short time interval. Therefore, the relativistic momentum of the particle in frame $S$ can be defined as
 ```{math}
-\boxed{\vec p = m_0\gamma\vec u =  \frac{m_0\vec u}{\sqrt{1-\frac{u^2}{c^2}}} }
+\vec p = m_0\gamma\vec u =  \frac{m_0\vec u}{\sqrt{1-\frac{u^2}{c^2}}} 
 ```
 where $\gamma$ is calculated with the same speed, $u$, since that is the speed of the reference frame of the object relative to $S$. Note that as the speed, $u$, of the particle approaches the speed of light, the factor of $\gamma$ approaches infinity. This means that an object with a mass can never reach the speed of light, as it would have an infinite momentum. In order to define momentum in a way that resembles the classic definition, one can think of the mass of the object as depending on the speed of the object. We define the rest-mass, $m_0$, of the object as the mass that is measured when the object is at rest. We can then model the mass of the object as increasing with its speed:
 ```{math}
@@ -879,11 +879,11 @@ K=m_0c^2\gamma -m_0c^2
 The first term increases with speed and behaves as we would expect. The second term is constant, and depends only on the rest mass of the object (we call this term the rest mass energy). We can think of this in slightly different terms. Let us define the total energy, $E$, of the object as:
 ```{math}
 E=m_0c^2\gamma\\
-\therefore \;\boxed{E = K+m_0c^2}
+\therefore \;E = K+m_0c^2
 ```
 so that the total energy is just the rest mass energy plus the kinetic energy. This highlights a key aspect of Special Relativity. An object will have energy, $E$, even when it is at rest. That energy, at rest, is called the rest mass energy, and corresponds to energy that an object has by virtue of having mass. This is, of course, Einstein's famous equation:
 ```{math}
-\boxed{E=m_0c^2}\quad \text{(rest mass energy)}
+E=m_0c^2\quad \text{(rest mass energy)}
 ```
 This equation implies that mass can be thought of as a form of energy. Nuclear reactors function by converting a small amount of mass of uranium atoms into energy (in the form of heat), that is then used to produce high pressure steam to rotate a turbine.
 
@@ -918,7 +918,7 @@ c^2p^2 &= c^2(\gamma m_0 u)^2\\
 ```
 where we recognized that $c^4\gamma^2m_0^2$ is simply the energy, $E$, squared. This is generally called the "energy-momentum" relation and written:
 ```{math}
-\boxed{E^2=p^2c^2+m_0^2c^4}
+E^2=p^2c^2+m_0^2c^4
 ```
 An interesting consequence of this relationship is that particles with no mass will still have a momentum. For example, the photon, which is a particle of light and must thus have a mass of zero (or it could not move at the speed of light), will have a momentum given by:
 ```{math}

@@ -86,7 +86,7 @@ Before proceeding, you may wish to review:
 :::
 When an electric charge, $q$, has a velocity, $\vec v$, relative to a magnetic field, $\vec B$, a magnetic force is exerted on the particle:
 ```{math}
-\boxed{\vec F_B = q \vec v \times \vec B}
+\vec F_B = q \vec v \times \vec B
 ```
 We can make a few remarks about the magnetic force:
 * The magnetic force is always perpendicular to the velocity and to the magnetic field (since it is given by their cross-product).
@@ -233,7 +233,7 @@ where the minus sign indicates that negative electrons flow in the opposite dire
 \vec F = -nAle \vec v_d \times \vec B
 ```
 ```{math}
-\boxed{ \vec F= I \vec l \times \vec B}
+ \vec F= I \vec l \times \vec B
 ```
 
 :::{attention} Olivia's Thoughts 
@@ -404,7 +404,7 @@ The right hand rule for axial vectors is used to determine the direction of the 
 
 In terms of the magnetic dipole moment, the torque on a loop with magnetic dipole moment, $\vec \mu$, immersed in a magnetic field, $\vec B$, is given by:
 ```{math}
-\boxed{\vec \tau = \vec \mu \times \vec B}
+\vec \tau = \vec \mu \times \vec B
 ```
 The magnitude of the torque is given by:
 ```{math}
@@ -472,7 +472,7 @@ The magnetic dipole moment is then given by:
 ## Potential energy for a magnetic moment in a magnetic field
 A magnetic dipole moment in a magnetic field behaves in the same way as an electric dipole in an electric field. By analogy, we can define a potential energy, $U$, for a magnetic dipole moment, $\vec \mu$, in a magnetic field, $\vec B$:
 ```{math}
-\boxed{U =-\vec \mu \cdot \vec B =- \mu B \cos\theta}
+U =-\vec \mu \cdot \vec B =- \mu B \cos\theta
 ```
 where $\theta$ is the angle between the magnetic moment and the magnetic field. If a magnetic dipole is not aligned with a magnetic field and it is released, it will start to rotate (gain rotational kinetic energy) until it reaches a minimum in potential energy ($\theta = 0$). The magnetic moment would oscillate back and forth about $\theta =0$ if there are no losses. Note that the point where $\theta = \pi$, is an unstable equilibrium.
 :::{tip} Checkpoint

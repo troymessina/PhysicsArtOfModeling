@@ -34,7 +34,7 @@ We introduce the concept of work as the starting point for building models using
 
 The work done by a force, $\vec F$, on an object over a displacement, $\vec d$, is defined to be:
 ```{math}
-\boxed{W = \vec F \cdot \vec d = Fd\cos\theta = F_xd_x+F_yd_y+F_zd_z}
+W = \vec F \cdot \vec d = Fd\cos\theta = F_xd_x+F_yd_y+F_zd_z
 ```
 where $\theta$ is the angle between the vectors when they are placed tail to tail, as in [](#fig:workenergy:fddotproduct). The dimension of work, force times displacement, is also called "energy". The S.I. unit for energy is the Joule (abbreviated $\text{J}$) which is equivalent to $\text{Nm}$ or ${\rm kg m^2/s^2}$ in base units.
 ```{figure} figures/WorkEnergy/fddotproduct.png
@@ -131,7 +131,7 @@ W^{tot} = \sum_{i=0}^N\vec F_i \cdot \Delta \vec x
 ```
 where we introduced a vector $\Delta \vec x$ to be the vector of length $\Delta x$ pointing in the positive $x$ direction. In the limit where $\vec F(x)$ changes continuously as a function of position, we take the limit of an infinite number of infinitely small segments of length $dx$, and the sum becomes an integral:
 ```{math}
-\boxed{W^{tot} = \int_{x_0}^{x_f}\vec F(x) \cdot d\vec x}
+W^{tot} = \int_{x_0}^{x_f}\vec F(x) \cdot d\vec x
 ```
 where the work was calculated in going from $x=x_0$ to $x=x_f$, and $d\vec x=dx\hat x$ is an infinitely small displacement vector (of length $dx$) in the positive $x$ direction.
 
@@ -363,7 +363,7 @@ An arbitrary path between two points $A$ and $B$ with a force that depends on po
 ```
 The strategy for calculating the work in the general case is the same: we break up the path into small straight segments with displacement vectors $d\vec l$ ([](#fig:workenergy:dldiagram)) where we assume that the force is constant over the segment. The total work is the sum of the work over each segment:
 ```{math}
-\boxed{W = \int_A^B \vec F(\vec r) \cdot d\vec l}
+W = \int_A^B \vec F(\vec r) \cdot d\vec l
 ```
 As usual, we use the integral symbol to indicate that you need to take an infinite number of infinitely small segments $d\vec l$ in order to calculate the sum.
 ```{figure} figures/WorkEnergy/elementoflengthdl.png
@@ -662,11 +662,11 @@ W^{net} &=m\int_A^B v_xdv_x +m\int_A^B  v_ydv_y + m\int_A^B v_zdv_z\\
 ```
 where we recognized that the magnitude (squared) of the velocity is given by $v_A^2 = v_{Ax}^2+v_{Ay}^2+v_{Az}^2$. We have thus arrived at our desired result; namely, we have found a function of speed, $K(v)$, that when evaluated at the endpoints of the path allows us to calculate the net work done on the object over that path:
 ```{math}
-\boxed{K(v) = \frac{1}{2}mv^2}
+K(v) = \frac{1}{2}mv^2
 ```
 That is, if you know the speed at the start of the path, $v_A$, and the speed at the end of the path, $v_B$, then the net work done on the object along the path between $A$ and $B$ is given by:
 ```{math}
-\boxed{W^{net} = \Delta K = K(v_B) - K(v_a)}
+W^{net} = \Delta K = K(v_B) - K(v_a)
 ```
 We call $K(v)$ the "kinetic energy" of the object. We can say that the net work done on an object in going from $A$ to $B$ is equal to its change in kinetic energy (final kinetic energy minus initial kinetic energy). It is important to note that we defined kinetic energy in a way that it is equal to the net work done. You may have already seen kinetic energy from past introductions to physics as a quantity that is just given; here, we instead derived a function that has the desired property of being equal to the net work done and called it "kinetic energy". 
 
@@ -991,11 +991,11 @@ spring.axis=vec(0.25+x, 0, 0)
 # Power
 We finish the chapter by introducing the concept of "power", which is the rate at which work is done on an object, or more generally, the rate at which energy is being converted from one form to another. If an amount of work, $\Delta W$, was done in a period of time $\Delta t$, then the work was done at a rate of:
 ```{math}
-\boxed{P = \frac{\Delta W}{\Delta t}}
+P = \frac{\Delta W}{\Delta t}
 ```
 where $P$ is called the power. The SI unit for power is the "Watt", abbreviated $\text{W}$, which corresponds to ${\rm J/s}={\rm kg m^2/s^3}$ in base SI units. If the rate at which work is being done changes with time, then the instantaneous power is defined as:
 ```{math}
-\boxed{P = \frac{dW}{dt}}
+P = \frac{dW}{dt}
 ```
 You have probably already encountered power in your everyday life. For example, your $1000 {\rm W}$ hair dryer consumes "electrical energy" at a rate of $1000 {\rm J}$ per second and converts it into the kinetic energy of the fan as well as the thermal energy to heat up the air. Horsepower ($\text{hp}$) is an imperial unit of power that is often used for vehicles, the conversion being $1 {\rm hp} = 746 {\rm W}$. A $100 {\rm hp}$ car thus has an engine that consumes the chemical energy released by burning gasoline at a rate of $7.46e4 {\rm J}$ per second and converts it into work done on the car as well as into heat. 
 :::{tip} Checkpoint

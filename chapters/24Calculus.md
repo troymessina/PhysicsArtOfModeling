@@ -72,7 +72,7 @@ The slope (derivative) of a function tells us how rapidly the value of the funct
 We can approximate the derivative by evaluating how much $f(x)$ changes when $x$ changes by a small amount, say, $\Delta x$. In the limit of $\Delta x\to 0$, we get the derivative. In fact, this is the formal definition of the derivative: 
 ```{math}
 :label: eqn:Calculus:derdef
-\boxed{\frac{df}{dx}=\lim_{\Delta x\to 0}\frac{\Delta f}{\Delta x} =\lim_{\Delta x\to 0}\frac{f(x+\Delta x)-f(x)}{\Delta x} }
+\frac{df}{dx}=\lim_{\Delta x\to 0}\frac{\Delta f}{\Delta x} =\lim_{\Delta x\to 0}\frac{f(x+\Delta x)-f(x)}{\Delta x} 
 ```
 where $\Delta f$ is the small change in $f(x)$ that corresponds to the small change, $\Delta x$, in $x$. This makes the notation for the derivative more clear, $dx$ is $\Delta x$ in the limit where $\Delta x\to0$, and $df$ is $\Delta f$, in the same limit of $\Delta x\to 0$.
 
@@ -437,7 +437,7 @@ We see that if we determine the area between $f(x)$ and the $x$ axis from $x_0$ 
 The difference between the anti-derivative, $F(x)$, evaluated at two different values of $x$ is called the **integral** of $f(x)$ and has the following notation:
 ```{math}
 :label: eqn:Calculus:intdef
-\boxed{\int_{x_0}^{x_N}f(x) dx=F(x_N) - F(x_0)=\lim_{\Delta x\to 0}\sum_{i=1}^{i=N} f(x_{i-1}) \Delta x}
+\int_{x_0}^{x_N}f(x) dx=F(x_N) - F(x_0)=\lim_{\Delta x\to 0}\sum_{i=1}^{i=N} f(x_{i-1}) \Delta x
 ```
 As you can see, the integral has labels that specify the range over which we calculate the area between $f(x)$ and the $x$ axis. A common notation to express the difference $F(x_N) - F(x_0)$ is to use brackets:
 ```{math}

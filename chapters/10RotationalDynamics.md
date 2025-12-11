@@ -101,7 +101,7 @@ Defining the vector $\vec r$ and the angular velocity, $\vec \omega$ for a parti
 
 We define the vector, $\vec r$, for a particle to be the vector that goes from the axis of rotation to the particle and is in a plane perpendicular to the axis of rotation, as in [](#fig_rotationaldynamics_axis). Given the velocity vector of the particle, $\vec v$, we define its angular velocity vector, $\vec\omega$, **about the axis of rotation**, as:
 ```{math}
-\boxed{\vec \omega = \frac{1}{r^2} \vec r \times \vec v}
+\vec \omega = \frac{1}{r^2} \vec r \times \vec v
 ```
 The angular velocity vector is perpendicular to both the velocity vector and the vector $\vec r$, since it is defined as their cross-product. Thus, the **angular velocity vector is co-linear with the axis of rotation**. By using the angular velocity vector, we can specify **the direction of the axis of rotation as well as the direction in which the particle is rotating about that axis**. The direction of rotation is given by the right hand rule for axial vectors: when you point your thumb in the same direction as the angular velocity vector, the direction of rotation is the direction that your fingers point when you curl them, as illustrated in [](#fig_rotationaldynamics_hand).
 ```{figure} figures/RotationalDynamics/righthandruleaxial.png
@@ -220,7 +220,7 @@ We can define a point of rotation such that $\vec r$ is the position of the part
 \end{align*}
 The left hand-side of the equation is called "the torque of $\vec F$ relative to the point of rotation", and is usually denoted by $\vec \tau$:
 ```{math}
-\boxed{\vec \tau = \vec r \times \vec F}
+\vec \tau = \vec r \times \vec F
 ```
 The right-hand side of the equation is related to the angular acceleration vector, $\vec \alpha$, about that point of rotation:
 \begin{align*}
@@ -242,7 +242,7 @@ If more than one force is exerted on the particle, it is easy to show that the *
 
 We can write "Newton's Second Law for the rotational dynamics of a particle":
 ```{math}
-\boxed{\sum \vec \tau = \vec \tau _{net} = mr^2 \vec \alpha}
+\sum \vec \tau = \vec \tau _{net} = mr^2 \vec \alpha
 ```
 This equation provides us an alternate formulation to Newton's Second Law that is useful for describing the motion of a particle that is rotating. The left-hand side of the equation corresponds to the "causes of motion" (much like the sum of the forces in Newton's Second Law), and the right-hand side of the equation to the inertia and the kinematics. A few things to note when comparing to Newton's Second Law:
 1.  The rotational quantities, torque and angular acceleration, **are only defined with respect to a point or axis of rotation** (as this determines the vector $\vec r$). If one chooses a different point of rotation, then the torque and angular acceleration will be different.
@@ -487,11 +487,11 @@ We can thus write Newton's Second Law for rotational dynamics of a solid object 
 \end{align*}
 The term in parentheses describes how the various masses are distributed relative to the axis of rotation. The term in parenthesis is called the **moment of inertia of the object**, and usually denoted with the letter, $I$:
 ```{math} 
-\boxed{I = \sum_i  m_ir_i^2}
+I = \sum_i  m_ir_i^2
 ```
 The moment of inertia is a property of the object **relative to a specific axis of rotation**. Re-writing Newton's Second Law for the rotational dynamics of solid objects using the moment of inertia:
 ```{math} 
-\boxed{\vec\tau_{ext} = I\vec\alpha}
+\vec\tau_{ext} = I\vec\alpha
 ```
 The net torque exerted on an object in the direction of the axis of rotation is thus equal to its moment of inertia about that axis multiplied by its angular acceleration about that axis. In other words, the moment of inertia describes how the object will resist rotational motion given a net torque. An object with a smaller moment of inertia will have a larger angular acceleration for a given torque. Again, this is analogous to the linear case, where the acceleration of an object given a net force is determined by its inertial mass.
 ex:rotationaldynamics:dumbbell_2m)=
@@ -684,7 +684,7 @@ The sum, $\sum m_i x_i$ is the numerator in the definition of the $x$ coordinate
 
 We can thus write the parallel axis theorem:
 ```{math} 
-\boxed{I_h = I_{CM} + Mh^2}
+I_h = I_{CM} + Mh^2
 ```
 where $I_{CM}$ is the moment of inertia of an object of mass $M$ about an axis that goes through the centre of mass and, $I_h$, is the moment of inertia about a second axis that is parallel to the first and a distance $h$ away.
 

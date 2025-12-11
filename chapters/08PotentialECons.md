@@ -69,7 +69,7 @@ In order to write the path integral of the force over a closed path, we introduc
 ```
 The condition for a force to be conservative is thus:
 ```{math}
-\boxed{\oint \vec F(\vec r) \cdot d\vec l = 0}
+\oint \vec F(\vec r) \cdot d\vec l = 0
 ```
 since this means that the work done over a closed path is zero. The condition for this integral to be zero can be found by Stokes' Theorem:
 
@@ -154,7 +154,7 @@ where we used the Chain Rule to take the derivatives. Since all of the condition
 # Potential energy
 In this section, we introduce the concept of "potential energy". Potential energy is a scalar function of position that can be defined for any conservative force in a way to make it easy to calculate the work done by that force over any path. Since the work done by a conservative force in going from position $A$ to position $B$ does not depend on the particular path taken, but only on the end points, we can write the work done by a conservative force in terms of a "potential energy function", $U(\vec r)$, that can be evaluated at the end points:
 ```{math}
-\boxed{-W = - \int_A^B \vec F(\vec r) \cdot d\vec l = U(\vec r_B) - U(\vec r_A) = \Delta U}
+-W = - \int_A^B \vec F(\vec r) \cdot d\vec l = U(\vec r_B) - U(\vec r_A) = \Delta U
 ```
 where we have have chosen to define the function $U(\vec r)$ so that it relates to the **negative** of the work done for reasons that will be apparent in the next section. [](#fig:potentialecons:potentialpath) shows an example of an arbitrary path between two points $A$ and $B$ in two dimensions for which one could calculate the work done by a conservative force using a potential energy function.
 ```{figure} figures/PotentialECons/potentialpath.png
@@ -377,11 +377,11 @@ W^{net}=W^C+W^{NC}=-\Delta U_1 - \Delta U_2 +W^{NC} &= \Delta K\\
 ```
 That is, the work done by non-conservative forces is equal to the sum of the changes in potential and kinetic energies. In general, we can use $\Delta U$ to represent the change in the total potential energy of the object. The total potential energy is the sum of the potential energies associated with each of the conservative forces acting on the object ($\Delta U = \Delta U_1 + \Delta U_2$ above). The above expression can thus be written in a more general form:
 ```{math}
-\boxed{W^{NC}=\Delta U + \Delta K}
+W^{NC}=\Delta U + \Delta K
 ```
 In particular, note that if there are no non-conservative forces doing work on the object:
 ```{math}
-\boxed{\Delta K + \Delta U = 0}\\
+\Delta K + \Delta U = 0\\
 -\Delta U = \Delta K \quad\text{if no non-conservative forces}
 
 ```
@@ -389,7 +389,7 @@ That is, the sum of the changes in potential and kinetic energies of the object 
 
 We can introduce the "mechanical energy", $E$, of an object as the sum of the potential and kinetic energies of the object:
 ```{math}
-\boxed{E = U+K}
+E = U+K
 ```
 If the object started at position $A$, with potential energy $U_A$ and kinetic energy $K_A$, and ended up at position $B$ with potential energy $U_B$ and kinetic energy $K_B$, then we can write the mechanical energy at both positions and its change $\Delta E$, as:
 ```{math}
@@ -711,7 +711,7 @@ Although it is beyond the scope of this text to go into the details of this form
 
 The Lagrangian description of a "system" is based on a quantity, $L$, called the "Lagrangian", which is defined as:
 ```{math}
-\boxed{L = K - U}
+L = K - U
 ```
 where $K$ is the kinetic energy of the system, and $U$ is its potential energy. A "system" can be a rather complex collection of objects, although we will illustrate how the Lagrangian formulation is implemented for a single object of mass $m$ moving in one dimension under the influence of gravity. Let $x$ be the direction of motion (which is vertical) such that the potential and kinetic energies of the object are given by:
 ```{math}
@@ -730,7 +730,7 @@ S = \int Ldt
 ```
 where $L$ can depend on time explicitly or implicitly (through the fact that position and velocity, on which the Lagrangian depends, are themselves time-dependent). The requirement that the above integral be minimized is called the "Principle of Least Action"[^19], and is thought to be the fundamental principle that describes all of the laws of physics. The condition for the action to be minimized is given by the Euler-Lagrange equation:
 ```{math}
-\boxed{\frac{d}{dt}\left(\frac{\partial L}{\partial v_x}\right)-\frac{\partial L}{\partial x} = 0}
+\frac{d}{dt}\left(\frac{\partial L}{\partial v_x}\right)-\frac{\partial L}{\partial x} = 0
 ```
 Thus, in the Lagrangian formulation, one first writes down the Lagrangian for the system, and then uses the Euler-Lagrange equation to obtain the "equations of motion" for the system (i.e. equation that give the kinematic quantities, such as acceleration, for the system). 
 

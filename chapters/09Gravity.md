@@ -349,7 +349,7 @@ The gravitational force exerted on a mass $m$ by a mass $M$ can be written as:
 ```
 if we define a coordinate system with the origin located at the centre of mass $M$ so that $\vec r$ is the position of $m$ relative to $M$. We can define the "gravitational field", $\vec g(\vec r)$, at position, $\vec r$, due to the presence of mass $M$ as the gravitational force per unit mass exerted by $M$:
 ```{math}
-\boxed{\vec g(\vec r) = \frac{\vec F(\vec r)}{m} =  - \frac{GM}{r^2}\hat r}
+\vec g(\vec r) = \frac{\vec F(\vec r)}{m} =  - \frac{GM}{r^2}\hat r
 ```
 The word "field" is just a mathematical term for a function that depends on position. Since $\vec g(\vec r)$ is a vector, we would refer to it as a "vector field".
 
@@ -555,7 +555,7 @@ The difference in potential energy in going from position $A$ to position $B$ is
 ```
 By inspection, we can identify the potential energy function for gravity:
 ```{math}
-\boxed{U(r) = -G\frac{Mm}{r} + C}
+U(r) = -G\frac{Mm}{r} + C
 ```
 which is determined only up to a constant, $C$. 
 
@@ -566,7 +566,7 @@ Recall that if there are no other forces acting on an object, that object will m
 ## Mechanical energy with gravity
 Unless noted otherwise, we will continue our discussion of gravitational potential energy with the particular choice of constant $C=0$:
 ```{math}
-\boxed{U(r) = -G\frac{Mm}{r}}
+U(r) = -G\frac{Mm}{r}
 ```
 Furthermore, we will assume that $M$ is a large body, such as the Earth, which we can consider as fixed, and focus our discussion on describing the motion of mass $m$ (e.g. a satellite). If $M$ is much bigger than $m$, they will both experience a force of gravity from each other of the same magnitude (Newton's Third Law), but because $M$ is so much larger, its acceleration will be much smaller (Newton's Second Law). Thus, it is a good approximation to assume that $M$ is stationary and that only $m$ moves when $M>>m$. 
 

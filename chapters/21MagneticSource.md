@@ -49,7 +49,7 @@ How does an electromagnet work?
 # The Biot-Savart Law
 The Biot-Savart law allows us to determine the magnetic field at some position in space that is due to an electric current. More precisely, the Biot-Savart law allows us to calculate the infinitesimal magnetic field, $d\vec B$, that is produced by a small section of wire, $d\vec l$, carrying a current, $I$, such that $d\vec l$ is co-linear with the wire and points in the direction of the electric current:
 ```{math}
-\boxed{d\vec B = \frac{\mu_0 I}{4\pi}\frac{d\vec l\times \hat r}{r^2}}
+d\vec B = \frac{\mu_0 I}{4\pi}\frac{d\vec l\times \hat r}{r^2}
 ```
 where $\vec r$ is the vector from the element of wire, $d\vec l$, to the point where we would like to determine the magnetic field, as illustrated in [](#fig:magneticsource:biotsavart). $\mu_0$ is a constant of proportionality called the "permeability of free space", and has the value $\mu_0=4\pi \times 10^{-7} {\rm T\cdot m/A}$.
 ```{figure} figures/MagneticSource/biotsavart.png
@@ -162,7 +162,7 @@ Using the given dimensions:
 ```
 Thus, the magnetic field, $\vec B$, a distance, $h$, from the centre of a wire of length, $L$, carrying current, $I$, in the positive $y$ direction is given by:
 ```{math}
-\boxed{\vec B = -\frac{\mu_0 I}{2\pi h}\frac{L/2}{\sqrt{h^2+\frac{L^2}{4}}}\hat z}\quad\text{(finite wire)}
+\vec B = -\frac{\mu_0 I}{2\pi h}\frac{L/2}{\sqrt{h^2+\frac{L^2}{4}}}\hat z\quad\text{(finite wire)}
 ```
 The magnetic field must be rotationally symmetric; that is, if the wire is vertical, the magnetic field at a distance $h$ must look the same regardless of the angle from which we view the vertical wire (we should always see the magnetic field going into the page at the point that we use in [](#fig:magneticsource:bswire)). Thus, the magnetic field lines must form circles around the wire, as illustrated in [](#fig:magneticsource:wirefield). Note that the direction of the magnetic field is given by the right-hand rule for axial vectors; when you align your thumb with the current, your fingers curl in the direction of the magnetic field.
 
@@ -176,7 +176,7 @@ The magnetic field from a current-carrying wire forms concentric circles centred
 
 It is of particular interest to investigate the limiting case of an infinitely long wire, in the limit of $L\to\infty$, or equivalently, $\theta_0\to\frac{\pi}{2}$. The latter is easiest to evaluate, since $\sin\theta_0\to 1$. The magnitude of the magnetic field, $\vec B$, a distance, $h$, from an infinite wire carrying current, $I$, is given by:
 ```{math}
-\boxed{ B = \frac{\mu_0 I}{2\pi h}}\quad\text{(infinite wire)}
+ B = \frac{\mu_0 I}{2\pi h}\quad\text{(infinite wire)}
 ```
 One can often make the approximation that the wire is infinite in length, when the distance, $h$, is small compared to the length, $L$, of the wire. 
 ## Magnetic field from a circular current-carrying wire
@@ -261,7 +261,7 @@ r &= \sqrt{R^2+h^2}\\
 \end{align*}
 ```
 ```{math}
-\therefore\;\; \boxed{\vec B = -\frac{\mu_0 I}{2} \frac{R^2}{(R^2+h^2)^\frac{3}{2}} \hat z}\quad\text{(field from a loop of current)}
+\therefore\;\; \vec B = -\frac{\mu_0 I}{2} \frac{R^2}{(R^2+h^2)^\frac{3}{2}} \hat z\quad\text{(field from a loop of current)}
 ```
 In this case, the math was relatively straightforward (no substitutions to evaluate the integral), however it is challenging to visualize the problem in three dimensions.
 :::{tip} Checkpoint
@@ -351,7 +351,7 @@ When current is flowing in a straight cable, how to you expect the charges to be
 # Ampère's Law
 Ampère's Law is similar to Gauss' Law, as it allows us to (analytically) determine the magnetic field that is produced by an electric current in configurations that have a high degree of symmetry. Ampère's Law states:
 ```{math}
-\boxed{\oint \vec B \cdot d\vec l =\mu_0 I^{enc}}
+\oint \vec B \cdot d\vec l =\mu_0 I^{enc}
 ```
 where the integral on the left is a "path integral", similar to how we calculate the work done by a force over a particular path. The circle sign on the integral means that this is an integral over a "closed" path; a path where the starting and ending points are the same. $I^{enc}$ is the net current that crosses the surface that is defined by the closed path, often called the "current enclosed" by the path. This is different from Gauss' Law, where the integral is over a closed surface (not a closed path, as it is here). In the context of Gauss' Law, we refer to "calculating the **flux** of the electric field **through** a closed surface"; in the context of Ampère's Law, we refer to "calculating the **circulation** of the magnetic field **along** a closed path".
 
@@ -545,7 +545,7 @@ Thus, we can write Ampère's Law with integrals over the same surface on either 
 \int_S (\nabla \times \vec B) \cdot d\vec A = \mu_0 \int _S \vec j \cdot d\vec A\\
 ```
 ```{math}
-\therefore\;\;\boxed{ \nabla \times \vec B = \mu_0 \vec j}
+\therefore\;\; \nabla \times \vec B = \mu_0 \vec j
 ```
 This last equation now relates a local property (current density) to the magnetic field at that point, and is the usual form in which Ampère's Law is presented (the so-called "differential form", rather than the "integral form"). 
 
@@ -614,7 +614,7 @@ Bl &= \mu_0 nIl\\
 \end{align*}
 ```
 ```{math}
-\therefore\;\; \boxed{B = \mu_0 nI}\quad \text{(Field inside a solenoid)}
+\therefore\;\; B = \mu_0 nI\quad \text{(Field inside a solenoid)}
 ```
 which does not depend on our (arbitrary) choice of making an Amperian loop with an arbitrary length of $l$. In practice, when solenoids are used as electromagnets, they are typically filled with a ferromagnetic material, which will magnetise when there is a current, resulting in a stronger magnetic field. This is usually done by winding a wire around an iron rod. 
 

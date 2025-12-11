@@ -93,7 +93,7 @@ So far, we have considered the flux of a uniform electric field, $\vec E$, throu
 ```
 However, if the electric field is not constant in magnitude and/or in direction over the entire surface, then we divide the surface, $S$, into many infinitesimal surfaces, $dS$, and sum together (integrate) the fluxes from those infinitesimal surfaces:
 ```{math}
-\boxed{\Phi_E=\int \vec E\cdot d\vec A}
+\Phi_E=\int \vec E\cdot d\vec A
 ```
 where, $d\vec A$, is the normal vector for the infinitesimal surface, $dS$. This is illustrated in [](#fig:gauss:fluxdA), which shows, in the left panel, a surface for which the electric field changes magnitude along the surface (as the field lines are closer in the lower left part of the surface), and, in the right panel, a scenario in which the direction and magnitude of the electric field vary along the surface.
 
@@ -199,7 +199,7 @@ which, surprisingly, is independent of the radius of the spherical surface. Note
 # Gauss' Law
 Gauss' law is a relation between the net flux through a closed surface and the amount of charge, $Q^{enc}$, in the volume enclosed by that surface:
 ```{math}
-\boxed{\oint \vec E\cdot d\vec A=\frac{Q^{enc}}{\epsilon_0}}
+\oint \vec E\cdot d\vec A=\frac{Q^{enc}}{\epsilon_0}
 ```
 In particular, note that Gauss' law holds true for **any** closed surface, and the shape of that surface is not specified in Gauss' law.  That is, we **can always choose the surface to use** when calculating the flux. For obvious reasons, we often call the surface that we choose a "Gaussian surface". But again, this surface is simply a mathematical tool, there is no actual property that makes a surface "Gaussian"; it simply means that we chose that surface in order to apply Gauss' law.  In [Example 16.3](#ex:gauss:qsphere) above, we confirmed that Gauss' law is compatible with Coulomb's Law for the case of a point charge and a spherical Gaussian surface. 
 
@@ -617,7 +617,7 @@ and corresponds to the sum of three partial derivatives evaluated at that positi
 ```
 where the subscript on the integral indicates whether the sum (integral) should be carried out over a volume, $V$, or over a closed surface, $S$, as we have practised in this chapter. While it is not important at this level to understand the theorem in detail, the point is that one can convert a "flux over a closed surface" into an integral of the divergence of the field. In other words, we can convert a global property (flux) to a local property (divergence). Gauss' law in terms of divergence can be written as:
 ```{math}
-\boxed{\nabla \cdot \vec E = \frac{\rho}{\epsilon_0}}\quad \text{(Local version of Gauss' law)}
+\nabla \cdot \vec E = \frac{\rho}{\epsilon_0}\quad \text{(Local version of Gauss' law)}
 ```
 where $\rho$ is the charge per unit volume at a specific position in space. This is the version of Gauss' law that is usually seen in advanced textbooks and in Maxwell's unified theory of electromagnetism. This version of Gauss' law relates a local property of the field (its divergence) to a local property of charge at that position in space (the charge per unit volume at that position in space). If we integrate both sides of the equation over volume, we recover the original formulation of Gauss' law: the left hand side, by the divergence theorem, leads to flux when integrated over volume, whereas on the right hand side, the integral over volume of charge per unit volume, $\rho$, will give the total charge enclosed in that volume, $Q^{enc}$:
 ```{math}

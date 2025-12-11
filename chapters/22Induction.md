@@ -33,7 +33,7 @@ In the previous chapter, we described how an electric current produces a magneti
 
 Faraday's law connects the flux of a **time-varying** magnetic field to an induced voltage (rather than a current). For historical reasons, the induced voltage is also called an induced "electromotive force" (emf), even if it is a voltage and not a force. Faraday's law is as follows:
 ```{math}
-\boxed{\Delta V = -\frac{d\Phi_B}{dt}}
+\Delta V = -\frac{d\Phi_B}{dt}
 ```
 where $\Delta V$ is the induced voltage, and  $\Phi_B$ is the flux of the magnetic field through an open surface, defined in the same way as the flux of the electric field ([Section %s](#sec:gauss:flux)):
 ```{math}
@@ -379,7 +379,7 @@ We can include this into Faraday's law by using the electric field instead of th
 \Delta V =-\frac{d\Phi_B}{dt}\\
 ```
 ```{math}
-\therefore \;\;\boxed{\oint \vec E\cdot d\vec l = -\frac{d\Phi_B}{dt}}
+\therefore \;\;\oint \vec E\cdot d\vec l = -\frac{d\Phi_B}{dt}
 ```
 where the last line is a more general form of Faraday's law. Note that in the case of electrostatics, where the electric field is produced by a distribution of charges, the integral $\oint \vec E\cdot d\vec l$ must be zero, since the electric force is conservative; the work done by the electric field on a charge $q$ over a closed path, which is just a charge $q$ multiplied by that integral, must be zero. The force from an electric field that is induced by a time-varying magnetic field is not conservative!
 
