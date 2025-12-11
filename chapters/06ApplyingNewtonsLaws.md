@@ -575,9 +575,9 @@ The forces are depicted in the free-body diagram shown in [](#fig:applyingnewton
 :label: fig:applyingnewtonslaws:circleH_fbd
 :width: 25%
 :align: center
-:alt:  Free-body diagram (side view) for the object from [](#fig:applyingnewtonslaws:circleH_fbd)
- Free-body diagram (side view) for the object from [](#fig:applyingnewtonslaws:circleH_fbd)
-``` undergoing uniform circular motion.}
+:alt: Free-body diagram (side view) for the object undergoing uniform circular motion.
+Free-body diagram (side view) for the object undergoing uniform circular motion.
+```
 Writing out the $x$ and $y$ components of Newton's Second Law:
 ```{math}
 
