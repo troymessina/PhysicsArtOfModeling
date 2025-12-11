@@ -85,42 +85,36 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-myst-build-
 
-      # Step 8: Build PDF first so MyST registers the export
-      # This is needed for the download button to appear in the HTML
-      - name: Build PDF Assets (first pass)
+      # Step 8: Build PDF first (outputs to public/ directory)
+      - name: Build PDF Assets
         run: myst build --pdf
         continue-on-error: true
 
       # Step 9: Build HTML version of the documentation
-      # MyST will detect the PDF export and include the download button
-      # Note: This clears _build/html directory
       - name: Build HTML Assets
         run: myst build --html
 
-      # Step 10: Rebuild PDF to put it in the final _build/html directory
-      # (HTML build cleared the directory, so we need to regenerate the PDF)
-      - name: Build PDF Assets (final)
-        run: myst build --pdf
-        continue-on-error: true
-
-      # Step 11: Verify PDF was generated
-      - name: Check PDF exists
+      # Step 10: Copy PDF to HTML output directory
+      # (Same pattern as veillette/hands-on project)
+      - name: Copy PDF to output
         run: |
-          if [ -f ./_build/html/ModelingWithPhysics.pdf ]; then
-            echo "PDF generated successfully"
-            ls -lh ./_build/html/ModelingWithPhysics.pdf
+          mkdir -p _build/html/public
+          cp -f public/ModelingWithPhysics.pdf _build/html/public/ 2>/dev/null || true
+          if [ -f ./_build/html/public/ModelingWithPhysics.pdf ]; then
+            echo "PDF copied successfully"
+            ls -lh ./_build/html/public/ModelingWithPhysics.pdf
           else
-            echo "Warning: PDF was not generated"
+            echo "Warning: PDF was not copied"
           fi
 
-      # Step 12: Upload the built HTML files as an artifact
+      # Step 11: Upload the built HTML files as an artifact
       # This packages the website files for deployment
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: './_build/html'
 
-      # Step 13: Deploy the website to GitHub Pages
+      # Step 12: Deploy the website to GitHub Pages
       # This makes your documentation publicly available
       - name: Deploy to GitHub Pages
         id: deployment
