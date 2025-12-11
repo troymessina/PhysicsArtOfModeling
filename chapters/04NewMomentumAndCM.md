@@ -1569,7 +1569,7 @@ Instead of using $x$ and $y$, we could think of an axis that is bent around the 
 Another variable that could be used for position instead of $s$ is the angle, $\theta$, between the position vector of the object and the $x$ axis, as illustrated in [](#fig:MomentumAndCM:circle). If we express the angle $\theta$ in radians, then it is easy to convert between $s$ and $\theta$. Recall, an angle in radians is defined as the length of an arc subtended by that angle divided by the radius of the circle. We thus have:
 ```{math}
 :label: eqn:MomentumAndCM:raddef
-\boxed{\theta(t)=\frac{s(t)}{R}}
+\theta(t)=\frac{s(t)}{R}
 ```
 In particular, if the object has gone around the whole circle, then $s=2\pi R$ (the circumference of a circle), and the corresponding angle is, $\theta=\frac{2\pi R}{R}=2\pi$, namely $360^{\circ}$. 
 
@@ -1667,11 +1667,11 @@ or, in terms of $\theta$:
 \end{align*}
 ```
 ```{math}
-\boxed{\omega = \frac{d\theta}{dt}}
+\omega = \frac{d\theta}{dt}
 ```
 where we introduced $\theta_0$ as the angle corresponding to the position $s_0$, and we introduced $\omega=\frac{d\theta}{dt}$, which is analogous to velocity, but for an angle. $\omega$ is called the **angular velocity** and is a measure of the rate of change of the angle $\theta$ (as it is the time derivative of the angle). The relation between the "linear" velocity $v_s$ (the magnitude of the velocity vector, which corresponds to the velocity in the direction tangent to the circle) and $\omega$ is:
 ```{math}
-\boxed{v_s=R\frac{d\theta}{dt}=R\omega }
+v_s=R\frac{d\theta}{dt}=R\omega
 ```
 
 Similarly, if the object is accelerating, we can define an **angular acceleration**, $\alpha(t)$, as the rate of change of the angular velocity:
@@ -1687,7 +1687,7 @@ a_s(t) &= \frac{d}{dt}v_s\\
 \end{align*}
 ```
 ```{math}
-\boxed{a_s(t)=R\alpha }
+a_s(t)=R\alpha
 ```
 Thus, the linear quantities (those along the $s$ axis) can be related to the angular quantities by multiplying the angular quantities by $R$:
 ```{math}
@@ -1736,7 +1736,7 @@ As we saw earlier, the perpendicular component of the acceleration, $\vec a_{\bo
 \end{align*}
 ```
 ```{math}
-\boxed{\vec{a}_{\bot}(t)=\omega^2 R[-\cos(\theta)\hat{x}-\sin(\theta)\hat{y}]}
+\vec{a}_{\bot}(t)=\omega^2 R[-\cos(\theta)\hat{x}-\sin(\theta)\hat{y}]
 ```
 where you can easily verify that the vector $[-\cos(\theta)\hat x-\sin(\theta)\hat y]$ has unit length and points towards the centre of the circle (when the tail is placed on a point on the circle at angle $\theta$). The centripetal acceleration thus points towards the centre of the circle and has magnitude:
 ```{math}
@@ -1781,7 +1781,7 @@ The period, $T$, is defined to be the time that it takes to complete one revolut
 \end{align*}
 ```
 ```{math}
-\boxed{T=\frac{2\pi}{\omega}}
+T=\frac{2\pi}{\omega}
 ```
 We would obtain the same result using the linear quantities; in one revolution, the object covers a distance of $2\pi R$ at a speed of $v$:
 ```{math}
