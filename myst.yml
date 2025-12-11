@@ -94,12 +94,11 @@ site:
     comments:
         hypothesis: true
         utterances: true
-  nav:
-    - title: Download PDF
-      url: ModelingWithPhysics.pdf
+  nav: []
   actions:
-    - title: Download PDF
+    - title: PDF
       url: ModelingWithPhysics.pdf
+      icon: download
   domains: []
 #html:
   
