@@ -94,7 +94,9 @@ site:
     comments:
         hypothesis: true
         utterances: true
-  nav: []
+  nav:
+    - title: Download PDF
+      url: ModelingWithPhysics.pdf
   actions:
     - title: Download PDF
       url: ModelingWithPhysics.pdf
