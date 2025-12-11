@@ -201,7 +201,7 @@ Gauss' law is a relation between the net flux through a closed surface and the a
 ```{math}
 \oint \vec E\cdot d\vec A=\frac{Q^{enc}}{\epsilon_0}
 ```
-In particular, note that Gauss' law holds true for **any** closed surface, and the shape of that surface is not specified in Gauss' law.  That is, we **can always choose the surface to use** when calculating the flux. For obvious reasons, we often call the surface that we choose a "Gaussian surface". But again, this surface is simply a mathematical tool, there is no actual property that makes a surface "Gaussian"; it simply means that we chose that surface in order to apply Gauss' law.  In [Example 16.3](#ex:gauss:qsphere) above, we confirmed that Gauss' law is compatible with Coulomb's Law for the case of a point charge and a spherical Gaussian surface. 
+In particular, note that Gauss' law holds true for **any** closed surface, and the shape of that surface is not specified in Gauss' law.  That is, we **can always choose the surface to use** when calculating the flux. For obvious reasons, we often call the surface that we choose a "Gaussian surface". But again, this surface is simply a mathematical tool, there is no actual property that makes a surface "Gaussian"; it simply means that we chose that surface in order to apply Gauss' law.  In Example 16.3 above, we confirmed that Gauss' law is compatible with Coulomb's Law for the case of a point charge and a spherical Gaussian surface. 
 
 Physically, Gauss' law is a statement that field lines must begin or end on a charge (electric field lines originate on positive charges and terminate on negative charges). Recall, flux is a measure of the net number of lines coming out of a surface. If there is a net number of lines coming out of a closed surface (a positive flux), that surface must enclose a positive charge from where those field lines originate. Similarly, if there are the same number of field lines entering a closed surface as there are lines exiting that surface (a flux of zero), then the surface encloses no charge. Gauss' law simply states that the number of field lines exiting a closed surface is proportional to the amount of charge enclosed by that surface.
 
@@ -216,7 +216,7 @@ Ideally, one has chosen a surface such that this angle is $0$ or $180\degree$.
 ```{math}
 \oint \vec E\cdot d\vec A=\cos\theta\oint EdA =E\cos\theta\oint dA=EA\cos\theta
 ```
-Ultimately, the points above should dictate the choice of Gaussian surface **so that** the integral for the flux is easy to evaluate. The choice of surface will depend on the symmetry of the problem. For a point (or spherical) charge, a spherical Gaussian surface allows the flux to easily be calculated ([Example 16.3](#ex:gauss:qsphere)). For a line of charge, as we will see, a cylindrical surface results is a good choice for the Gaussian surface. Broadly, the steps for applying Gauss' law to determine the electric field are as follows:
+Ultimately, the points above should dictate the choice of Gaussian surface **so that** the integral for the flux is easy to evaluate. The choice of surface will depend on the symmetry of the problem. For a point (or spherical) charge, a spherical Gaussian surface allows the flux to easily be calculated (Example 16.3). For a line of charge, as we will see, a cylindrical surface results is a good choice for the Gaussian surface. Broadly, the steps for applying Gauss' law to determine the electric field are as follows:
 1.  Make a diagram showing the charge distribution.
 2.  Use symmetry arguments to determine in which way the electric field vector points.
 3.  Choose a Gaussian surface that goes through the point for which you want to know the electric field. Ideally, the surface is such that the electric field is constant in magnitude and always makes the same angle with the surface, so that the flux integral is straightforward to evaluate.
@@ -256,7 +256,7 @@ In order to apply Gauss' law,  we need to calculate:
 * the net flux through the surface.
 * the charge in the volume enclosed by the surface. 
 
-The net flux through the surface is found in the same way as in [Example 16.3](#ex:gauss:qsphere), and is given by:
+The net flux through the surface is found in the same way as in Example 16.3, and is given by:
 ```{math}
 
 \begin{align*}
@@ -316,7 +316,7 @@ Note that the electric field increases linearly with radius inside of the charge
 :::{attention} Olivia's Thoughts
 In [Chapter %s](#chapter:gravity), I provided an analogy to explain Gauss' law for gravity. If that analogy worked for you, I recommend you revisit it, as the same principles apply here. I'm now going to describe another way to think about Gauss' law that will be useful as you become more familiar with field lines.
 
-[](#fig:gauss:sphere_fieldlines) shows the field lines coming from a positively charged sphere, like the one in [Example 16.4](#ex:gauss:spherical). 
+[](#fig:gauss:sphere_fieldlines) shows the field lines coming from a positively charged sphere, like the one in Example 16.4. 
 ```{figure} figures/Gauss/sphere_fieldlines.png
 :label: fig:gauss:sphere_fieldlines
 :width: 30%
@@ -421,9 +421,9 @@ E(2\pi R L) &= \frac{\lambda L}{\epsilon_0}\\
 \therefore E&= \frac{\lambda}{2\pi\epsilon_0R}
 \end{align*}
 ```
-Note that this is the same result that we obtained in [Example 15.5](#ex:chargesfields:finiteline), when we took the limit of the finite line of charge having infinite length.
+Note that this is the same result that we obtained in Example 15.5, when we took the limit of the finite line of charge having infinite length.
 
-**Discussion:** In this example, we applied Gauss' law to determine the electric field at a distance from an infinitely long charged wire. We used symmetry to argue that the field should be radial and in the plane perpendicular to the wire, and recognized that a cylindrical Gaussian surface would exploit the symmetry so that the flux can easily be calculated. We obtained the same result as we did from integrating Coulomb's Law in [Example 15.5](#ex:chargesfields:finiteline). However, using Gauss' law was much less work than integrating Coulomb's Law.
+**Discussion:** In this example, we applied Gauss' law to determine the electric field at a distance from an infinitely long charged wire. We used symmetry to argue that the field should be radial and in the plane perpendicular to the wire, and recognized that a cylindrical Gaussian surface would exploit the symmetry so that the flux can easily be calculated. We obtained the same result as we did from integrating Coulomb's Law in Example 15.5. However, using Gauss' law was much less work than integrating Coulomb's Law.
 :::
 
 :::{tip} Checkpoint
@@ -511,14 +511,14 @@ Applying Gauss' law allows us to determine the magnitude of the electric field:
 \therefore E&= \frac{\sigma}{2\epsilon_0}
 \end{align*}
 ```
-which is the same result that we found in [Example 15.6](#ex:chargesfields:squarecircle).
+which is the same result that we found in Example 15.6.
 
-**Discussion:** In this example, we used Gauss' law to determine the electric field above an infinite plane. We found that we had a choice of Gaussian surfaces (cylinder, box) that allowed us to apply Gauss' law. We found the same result that we had found in [Example 15.6](#ex:chargesfields:squarecircle) where we had integrated Coulomb's Law (twice, once for a ring of charge, then for a disk, then took the limit of the disk radius going to infinity). Again, we see that in configurations with a high degree symmetry, Gauss' law can be very straightforward to apply.
+**Discussion:** In this example, we used Gauss' law to determine the electric field above an infinite plane. We found that we had a choice of Gaussian surfaces (cylinder, box) that allowed us to apply Gauss' law. We found the same result that we had found in Example 15.6 where we had integrated Coulomb's Law (twice, once for a ring of charge, then for a disk, then took the limit of the disk radius going to infinity). Again, we see that in configurations with a high degree symmetry, Gauss' law can be very straightforward to apply.
 :::
 
 (sec:gauss:conductors)=
 # Charges in a conductor
-We can use Gauss' law to understand how charges arrange themselves on a conductor. Consider an infinite plane that carries a total charge per unit area, $\sigma$, similar to what we considered in [Example 16.6](#ex:gauss:infiniteplate). In this case, we explicitly consider the plane to be a conductor and to have a finite thickness. If we zoom into the plane, we can illustrate that the charges are located on the surface of the plane, as illustrated in [](#fig:gauss:fluxconductingplane), where the plane is seen edge on. Thus, the **charge density at the surface is half of the total charge density** of the plane.
+We can use Gauss' law to understand how charges arrange themselves on a conductor. Consider an infinite plane that carries a total charge per unit area, $\sigma$, similar to what we considered in Example 16.6. In this case, we explicitly consider the plane to be a conductor and to have a finite thickness. If we zoom into the plane, we can illustrate that the charges are located on the surface of the plane, as illustrated in [](#fig:gauss:fluxconductingplane), where the plane is seen edge on. Thus, the **charge density at the surface is half of the total charge density** of the plane.
 ```{figure} figures/Gauss/fluxconductingplane.png
 :label: fig:gauss:fluxconductingplane
 :width: 40%
@@ -526,7 +526,7 @@ We can use Gauss' law to understand how charges arrange themselves on a conducto
 :alt:  Cross-section of a conducting plane where the charges migrate to the surface. A box-shaped Gaussian surface is also shown as seen from the side (the third dimension of the box is perpendicular to the plane of the page).
 Cross-section of a conducting plane where the charges migrate to the surface. A box-shaped Gaussian surface is also shown as seen from the side (the third dimension of the box is perpendicular to the plane of the page).
 ```
-To determine the electric field near the plane, we choose a Gaussian surface that is a box (as in [Example 16.6](#ex:gauss:infiniteplate)), but require the lower end of the box to go through the plane, as illustrated in [Example 16.6](#ex:gauss:infiniteplate). With this choice of Gaussian surface, only the top surface (area $a^2$) will have flux through it, since the **electric field inside a conductor must be zero**[^42]. The total flux is given by:
+To determine the electric field near the plane, we choose a Gaussian surface that is a box (as in Example 16.6), but require the lower end of the box to go through the plane, as illustrated in Example 16.6. With this choice of Gaussian surface, only the top surface (area $a^2$) will have flux through it, since the **electric field inside a conductor must be zero**[^42]. The total flux is given by:
 ```{math}
 
 \begin{align*}
@@ -546,7 +546,7 @@ Ea^2&= \frac{\sigma a^2}{2\epsilon_0}\\
 \therefore E&= \frac{\sigma}{2\epsilon_0}\quad \text{(Field above an infinite plane)}
 \end{align*}
 ```
-as in [Example 16.6](#ex:gauss:infiniteplate), but now the factor of two comes from having half of the charge density, whereas before it was because two of the faces of the box had non-zero flux. We can generalize this result to determine the electric field near the surface of any conductor. Very close to the surface of any object, one can consider the surface as being similar to an infinite plane. If that surface carries charge per unit area, $\sigma$, then the electric field just above the surface is given by:
+as in Example 16.6, but now the factor of two comes from having half of the charge density, whereas before it was because two of the faces of the box had non-zero flux. We can generalize this result to determine the electric field near the surface of any conductor. Very close to the surface of any object, one can consider the surface as being similar to an infinite plane. If that surface carries charge per unit area, $\sigma$, then the electric field just above the surface is given by:
 ```{math}
 
 \begin{align*}

@@ -713,7 +713,7 @@ We can easily calculate the capacitance of a parallel plate capacitor. We model 
 ```{math}
 \sigma =\frac{Q}{A}
 ``` 
-In [Example 17.3](#ex:potential:parallelplates), we found an expression for the potential difference between two parallel plates:
+In Example 17.3, we found an expression for the potential difference between two parallel plates:
 ```{math}
 
 \begin{align*}

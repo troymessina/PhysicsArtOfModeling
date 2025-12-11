@@ -190,7 +190,7 @@ ball.pos = ball.pos + ball.vel * dt # move ball after 5s
 ```
 The statements at the end of the lines after ```#``` are comments that are ignored by the computer. Copy the code above run these lines in the trinket below.
 :::{iframe} https://trinket.io/embed/glowscript/8f1815879d
-:label: app:visualpython:blanktrinket
+:label: app:visualpython:blanktrinket2
 :width: 100%
 :align: center
 A blank trinket ready to begin programming.

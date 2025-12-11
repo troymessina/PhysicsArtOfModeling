@@ -370,7 +370,7 @@ and we see that $E'<E$, and thus that the total mechanical energy of the system 
 
 We also found that mechanical energy was not conserved. This makes physical sense because, for the car to remain attached to the train, there presumably had to be some significant forces in play that "crushed" the car into the train. Some of the initial kinetic energy of the train was used to deform the train and the car during the collision. We can also think of deforming a material as giving it energy. Sometimes that energy is recoverable (e.g. compressing a spring), sometimes, it is not (e.g. crushing a car).
 
-If the car and train were equipped with large springs to absorb the energy of the impact, the collision could have conserved mechanical energy, as the springs compress and then expand back. The speed of the car and train would then be different after the collision in this case (see [Example 4.7](#ex:momentumandcm:1delastic)). It is a feature of collisions where the two bodies remain attached to each other that mechanical energy is not conserved.
+If the car and train were equipped with large springs to absorb the energy of the impact, the collision could have conserved mechanical energy, as the springs compress and then expand back. The speed of the car and train would then be different after the collision in this case (see Example 4.7). It is a feature of collisions where the two bodies remain attached to each other that mechanical energy is not conserved.
 :::
 
 # Collisions
@@ -801,7 +801,7 @@ to describe the system as a whole. However, it is not (yet) clear what is accele
 ```{math}
 \vec a_{CM} = \frac{d^2 }{dt^2}\vec r_{CM}
 ```
-We can compare Equations {eq}`eqn:momentumandcm:cmtemp1` and {eq}`eqn:momentumandcm:cmtemp2` to determine what the position vector $\vec r_{CM}$ corresponds to:
+We can compare the above two equations to determine what the position vector $\vec r_{CM}$ corresponds to:
 ```{math}
 
 \begin{align*}

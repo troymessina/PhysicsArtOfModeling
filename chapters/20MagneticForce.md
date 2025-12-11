@@ -360,7 +360,7 @@ Before proceeding, you may wish to review:
 * [Section %s](#sec:chargesfields:electricdipole) on electric dipoles.
 :::
 
-As noted in [Example 20.2](#ex:magneticforce:semicircle), the net magnetic force on any closed loop immersed in a uniform magnetic field is zero. Consider, for example, the current-carrying rectangular loop of height $h$ and width $w$, immersed in a uniform magnetic field, $\vec B$, as illustrated in [](#fig:magneticforce:rectangleloop) (note that the field is not perpendicular to the plane of the loop, as it was in [Example 20.2](#ex:magneticforce:semicircle)).
+As noted in Example 20.2, the net magnetic force on any closed loop immersed in a uniform magnetic field is zero. Consider, for example, the current-carrying rectangular loop of height $h$ and width $w$, immersed in a uniform magnetic field, $\vec B$, as illustrated in [](#fig:magneticforce:rectangleloop) (note that the field is not perpendicular to the plane of the loop, as it was in Example 20.2).
 ```{figure} figures/MagneticForce/rectangleloop.png
 :label: fig:magneticforce:rectangleloop
 :width: 40%
@@ -527,7 +527,7 @@ The Hall effect allows us to determine that it is negative charges that flow, an
 # Applications
 In this section, we briefly outline a few applications of the magnetic force.
 ## Velocity selector and mass spectrometer
-In [Example 20.1](#ex:magneticforce:massspec), we described how charged particles with different charge-to-mass ratios will undergo uniform circular motion with different radii, if they all have the same speed. This principle is used in mass spectrometers, which are devices that are able to detect trace amounts of matter in a sample. For example, when your bag gets swiped with a sticky tape at a security check at the airport, that piece of sticky tape is then analysed by a mass spectrometer.
+In Example 20.1, we described how charged particles with different charge-to-mass ratios will undergo uniform circular motion with different radii, if they all have the same speed. This principle is used in mass spectrometers, which are devices that are able to detect trace amounts of matter in a sample. For example, when your bag gets swiped with a sticky tape at a security check at the airport, that piece of sticky tape is then analysed by a mass spectrometer.
 
 The tape is vaporized in a way to ionize the atoms on the tape. The ions are then accelerated through an electric potential difference and then pass through a region with a magnetic field. The ions typically execute half of a circular orbit before being detected, as illustrated in [](#fig:magneticforce:massspec). The charge-to-mass ratio of the ions is determined from the radius of their orbit. Usually, their charge is either one or two times the electron charge, allowing their mass to be determined. 
 ```{figure} figures/MagneticForce/massspec.png

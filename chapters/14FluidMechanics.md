@@ -981,7 +981,7 @@ Q&= \frac{\pi r^4}{8\eta L}\Delta P \quad \textrm{(Poiseuille)}
 * Place your hand in a plastic bag, and immerse your hand with the bag in water. The deeper the column of water, the better. Describe what you feel on your hand in terms of the direction of the force exerted by the water pressure.
 * If you assume that the water that comes out of your bathroom faucet is gravity-fed from a water tank, determine the height of the corresponding water tower relative to your bathroom faucet. Measure the flow rate of water from the faucet to determine the height and discuss whether it makes sense. 
 * Try plugging the faucet in your bathroom tap with your thumb. Are you able to completely prevent water from coming out when the tap is open? Estimate the pressure of the water in the pipes leading to your bathroom faucet.
-* In your house/building, measure the flow rate between similar faucets at different heights, and compare with what one would expect from the model from [Example 14.7](#ex:fluidmechanics:kitchen).
+* In your house/building, measure the flow rate between similar faucets at different heights, and compare with what one would expect from the model from Example 14.7.
 :::
 
 :::{seealso} To try in the lab

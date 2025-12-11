@@ -244,7 +244,7 @@ v_0^2&=2a_2x\\
  :::
 
 :::{tip} Checkpoint
-A present is placed at rest on a plane that is inclined, at a distance $L$ from the bottom of the incline, much like the box in [Example 6.2](#ex:applyingnewtonslaws:block) above. At the bottom of the incline, the box is determined to have a speed $v$. If the box is instead released from a distance of $4L$ from the bottom of the incline, what will its speed at the bottom of the incline be?
+A present is placed at rest on a plane that is inclined, at a distance $L$ from the bottom of the incline, much like the box in Example 6.2 above. At the bottom of the incline, the box is determined to have a speed $v$. If the box is instead released from a distance of $4L$ from the bottom of the incline, what will its speed at the bottom of the incline be?
 1.  $v$
 2.  $2v$
 3.  $4v$
@@ -734,7 +734,7 @@ Consider a ball attached to a string, being spun in a vertical circle (such as t
 :::
 
 ## Banked curves
-As we saw in [Example 6.5](#ex:applyingnewtonslaws:car), there is a maximum speed with which a car can go around a curve before it starts to skid. You may have noticed that roads, highways especially, are banked where there are curves. Racetracks for cars that go around an oval (the boring kind of car races) also have banked curves. As we will see, this allows the speed of vehicles to be higher when going around the curve; or rather, it makes the curves safer as the speed at which vehicles *would* skid is higher. In [Example 6.5](#ex:applyingnewtonslaws:car), we saw that it was the force of static friction between the tires of the car and the road that provided the only force with a component towards the centre of the circle. The idea of using a banked curve is to change the direction of the normal force between the road and the car tires so that it, too, has a component in the direction towards the centre of the circle. 
+As we saw in Example 6.5, there is a maximum speed with which a car can go around a curve before it starts to skid. You may have noticed that roads, highways especially, are banked where there are curves. Racetracks for cars that go around an oval (the boring kind of car races) also have banked curves. As we will see, this allows the speed of vehicles to be higher when going around the curve; or rather, it makes the curves safer as the speed at which vehicles *would* skid is higher. In Example 6.5, we saw that it was the force of static friction between the tires of the car and the road that provided the only force with a component towards the centre of the circle. The idea of using a banked curve is to change the direction of the normal force between the road and the car tires so that it, too, has a component in the direction towards the centre of the circle. 
 
 Consider the car depicted in [](#fig:applyingnewtonslaws:carbank) which is seen from behind making a left turn around a curve that is banked by an angle $\theta$ with respect to the horizontal and can be modelled as an arc from a circle of radius $R$.
 ```{figure} figures/ApplyingNewtonsLaws/carbank.png
@@ -744,7 +744,7 @@ Consider the car depicted in [](#fig:applyingnewtonslaws:carbank) which is seen 
 :alt:  A car moving into the page and going around a banked curved so that it is turning towards the left (the centre of the circle is to the left). 
  A car moving into the page and going around a banked curved so that it is turning towards the left (the centre of the circle is to the left). 
 ```
-The forces exerted on the car are the same as in [Example 6.5](#ex:applyingnewtonslaws:car), except that they point in different directions. The forces are:
+The forces exerted on the car are the same as in Example 6.5, except that they point in different directions. The forces are:
 1.  $\vec F_g$, its weight with magnitude $mg$.
 2.  $\vec N$, a normal force exerted by the road, perpendicular to the surface of the road.
 3.  $\vec f_s$, a force of static friction between the tires and the road. This is static friction, because the surface of the tire does not move relative to the surface of the road if the car is not skidding. The force of static friction has a magnitude that is at most $f_s\leq\mu_sN$ and is perpendicular to the normal force. The force could be either upwards or downwards, *depending on the other forces on the car*.
@@ -777,7 +777,7 @@ Let us model the situation where the force of static friction is identically zer
 \therefore N\cos\theta&=mg
 \end{align*}
 ```
-We can divide Equation {eq}`eq:applyingnewtonslaws:carbank_x` by Equation {eq}`eq:applyingnewtonslaws:carbank_y`, noting that $\tan\theta=\sin\theta/\cos\theta$, to obtain:
+We can divide the above two equations, noting that $\tan\theta=\sin\theta/\cos\theta$, to obtain:
 ```{math}
 
 \begin{align*}

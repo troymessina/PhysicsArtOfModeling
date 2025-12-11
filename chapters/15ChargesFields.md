@@ -269,7 +269,7 @@ A negative charge is placed at the origin of a coordinate system. At some point 
 :class: dropdown
 1.
 :::
-In [Example 15.2](#ex:chargesfields:chargetriangle), we determined the electric force on charge $q$, exerted by two other charges $Q_1$ and $Q_2$. If we now changed the value of $q$ and wanted to determine the force, we can use the electric field to simplify the process considerably. That is, we can determine the value of the electric field, $\vec E$, from $Q_1$ and $Q_2$ at the position of $q$, and then simply multiply that field vector by a charge $q$ to obtain the force on that charge, without having to add force vectors.
+In Example 15.2, we determined the electric force on charge $q$, exerted by two other charges $Q_1$ and $Q_2$. If we now changed the value of $q$ and wanted to determine the force, we can use the electric field to simplify the process considerably. That is, we can determine the value of the electric field, $\vec E$, from $Q_1$ and $Q_2$ at the position of $q$, and then simply multiply that field vector by a charge $q$ to obtain the force on that charge, without having to add force vectors.
 (ex:chargesfields:epointcharges)=
 :::{note} Example 15.3
 Two charges, $Q_1=1 {\rm nC}$, and $Q_2=-2 {\rm nC}$ are held fixed at two corners of an equilateral triangle with sides of length $a=1 {\rm cm}$, with a coordinate system as shown in [](#fig:chargesfields:chargetriangle). What is the electric field vector at the third corner of the triangle? 
@@ -323,7 +323,7 @@ Finally, we can add the two force vectors together to obtain the net force on $q
 &=(13.5\times 10^{4} {\rm N/C})\hat x-(8.2\times 10^{4} {\rm N/C})\hat y
 \end{align*}
 ```
-which has a magnitude of $15.8\times 10^{4} {\rm N/C}$. By knowing the electric field at the empty corner of the triangle, we can now calculate the net electric force that would act on any charge placed in that location. For example, if we place a charge $q=-1 {\rm nC}$ (as in [](#ex:chargesfields:chargetriangle)), we can easily find the corresponding electric force:
+which has a magnitude of $15.8\times 10^{4} {\rm N/C}$. By knowing the electric field at the empty corner of the triangle, we can now calculate the net electric force that would act on any charge placed in that location. For example, if we place a charge $q=-1 {\rm nC}$ (as in the example), we can easily find the corresponding electric force:
 ```{math}
 
 \begin{align*}
@@ -683,7 +683,7 @@ Calculate the electric field a distance, $a$, above a infinite plane that carrie
 In this case, we need to determine the field above an object that is two dimensional (a plane). In the previous examples (a ring, a line of charge), we modelled a one dimensional object (e.g. the line), as being made of many point charges (0-dimensional objects). We treated those point charges has having an infinitesimal length along the object so that we could sum them together to obtain the object (e.g. $dy$ was the length of the charge for the rod/line of charge).
 :::{note} Solution
 :class: dropdown
-In order to model the two-dimensional object (the plane), we model it has being the sum of many one dimensional objects. We can model a plane either as a rectangle of width, $W$, and length, $L$, as shown in the left panel of [](#fig:chargesfields:planecharge) or as a disk of radius, $R$, as shown in the right panel. To model an infinite plane, we can then take the limit of either $L$ and $W$ going to infinity (rectangle), or of $R$ going to infinity (disk). We can model the rectangle as being the sum of many lines of **finite** length, $L$, and infinitesimal width, $dx$. Similarly, we can model the disk as the sum of infinitesimally thin rings of **finite** radius, $r$, and thickness, $dr$. In both cases, we know how to model the field from a line of charge ([Example 15.5](#ex:chargesfields:finiteline)) or from a ring ([Example 15.4](#ex:chargesfields:ring)). 
+In order to model the two-dimensional object (the plane), we model it has being the sum of many one dimensional objects. We can model a plane either as a rectangle of width, $W$, and length, $L$, as shown in the left panel of [](#fig:chargesfields:planecharge) or as a disk of radius, $R$, as shown in the right panel. To model an infinite plane, we can then take the limit of either $L$ and $W$ going to infinity (rectangle), or of $R$ going to infinity (disk). We can model the rectangle as being the sum of many lines of **finite** length, $L$, and infinitesimal width, $dx$. Similarly, we can model the disk as the sum of infinitesimally thin rings of **finite** radius, $r$, and thickness, $dr$. In both cases, we know how to model the field from a line of charge (Example 15.5) or from a ring (Example 15.4). 
 ```{figure} figures/ChargesFields/planecharge.png
 :label: fig:chargesfields:planecharge
 :width: 70%
@@ -699,7 +699,7 @@ We proceed by modelling the plane as a disk made up of infinitesimal rings. Our 
 :alt: Modelling the field from a disk as the sum of fields from concentric thin rings.
 Modelling the field from a disk as the sum of fields from concentric thin rings.
 ```
-We know from [](#ex:chargesfields:ring) that the magnitude of the electric field a distance $a$ from the centre of the ring, along its axis of symmetry (the $z$ axis in [](#fig:chargesfields:disk)), is given by:
+We know from the example that the magnitude of the electric field a distance $a$ from the centre of the ring, along its axis of symmetry (the $z$ axis in [](#fig:chargesfields:disk)), is given by:
 ```{math}
 dE = kdq\frac{a}{(r^2+a^2)^\frac{3}{2}} 
 ```
@@ -745,7 +745,7 @@ For example, referring to [](#fig:chargesfields:rodexample), if I wanted to dete
 Calculating the electric field produced by a rod at different positions.
 ```
 	
-In order to determine the bounds of the integral, think of the range in position variable that is required in order to cover the entire object. I recommend paying close attention to [Example 15.4](#ex:chargesfields:ring), [Example 15.5](#ex:chargesfields:finiteline), and [Example 15.6](#ex:chargesfields:squarecircle), and attempting questions which require integration on the Question Library.
+In order to determine the bounds of the integral, think of the range in position variable that is required in order to cover the entire object. I recommend paying close attention to Example 15.4, Example 15.5, and Example 15.6, and attempting questions which require integration on the Question Library.
 :::
 
 (sec:chargesfields:electricdipole)=
@@ -950,7 +950,7 @@ Suppose that an electric dipole, with electric dipole moment, $\vec p$, is place
 :::{note} Solution 15.1
 :label: soln:template:trianglecharge
 :class: dropdown
-We can model the object as the sum of three finite length wires of the length, $L$. In [Example 15.5](#ex:chargesfields:finiteline), we determined that the electric field produced at a distance, $R$, by a finite wire that subtends an angle $2\theta_0$ is given by:
+We can model the object as the sum of three finite length wires of the length, $L$. In Example 15.5, we determined that the electric field produced at a distance, $R$, by a finite wire that subtends an angle $2\theta_0$ is given by:
 ```{math}
 E = \frac{2k\lambda}{R}\sin\theta_0
 ```

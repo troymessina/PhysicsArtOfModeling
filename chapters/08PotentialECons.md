@@ -44,7 +44,7 @@ W = \int_A^B \vec F(\vec r) \cdot d\vec l
 ```
 where $\vec F(\vec r)$ is a force vector that, in general, is different at different positions in space ($\vec r$). We can also say that $\vec F$ depends on position by writing $\vec F(\vec r)=\vec F(x,y,z)$, since the position vector, $\vec r$, is simply the vector $\vec r = x\hat x + y \hat y+ z\hat z$. That is, $\vec F(\vec r)$ is just a short hand notation for $\vec F(x,y,z)$, and $d\vec l$ is a (very) small segment along the particular path over which one calculates the work.
 
-The above integral is, in general, difficult to evaluate, as it depends on the specific path over which the object moved. In [Example 7.2](#ex:workenergy:workfriction) of [Chapter %s](#chapter:workenergy), we calculated the work done by friction on a crate that was slid across the floor along two different paths and indeed found that the work depended on the path that was taken. In [Example 7.3](#ex:workenergy:workgravity) of the same chapter, we saw that the work done by the force of gravity when moving a box along two different paths did not depend on the path chosen[^15].
+The above integral is, in general, difficult to evaluate, as it depends on the specific path over which the object moved. In Example 7.2 of [Chapter %s](#chapter:workenergy), we calculated the work done by friction on a crate that was slid across the floor along two different paths and indeed found that the work depended on the path that was taken. In Example 7.3 of the same chapter, we saw that the work done by the force of gravity when moving a box along two different paths did not depend on the path chosen[^15].
 
 We call "conservative forces" those forces for which the work done only depends on the initial and final positions and not on the path taken between those two positions. "Non-conservative" forces are those for which the work done does depend on the path taken. The force of gravity is an example of a conservative force, whereas friction is an example of a non-conservative force.
 
@@ -170,7 +170,7 @@ For example, near the surface of the Earth, the force of gravity on an object of
 ```{math}
 \vec F_g = -mg \hat z
 ```
-where we have defined the $z$ axis to be vertical and positive upwards. We already showed in [Example 8.1](#ex:potentialecons:gravity) that this force is conservative and that we can thus define a potential energy function. To do so, we can calculate the work done by the force of gravity over a straight vertical path, from position $A$ to position $B$, as shown in [](#fig:potentialecons:gravitydl).
+where we have defined the $z$ axis to be vertical and positive upwards. We already showed in Example 8.1 that this force is conservative and that we can thus define a potential energy function. To do so, we can calculate the work done by the force of gravity over a straight vertical path, from position $A$ to position $B$, as shown in [](#fig:potentialecons:gravitydl).
 ```{figure} figures/PotentialECons/gravitydl.png
 :label: fig:potentialecons:gravitydl
 :width: 20%
@@ -256,7 +256,7 @@ The change in potential energy, $\Delta U = U(z_B) - U(z_A)$ is equal to the neg
 \therefore W_g &= -mgH
 \end{align*}
 ```
-which is the same as what we found in [Example 7.3](#ex:workenergy:workgravity) of [Chapter %s](#chapter:workenergy). The work done by gravity is negative, as we found previously. This makes sense because gravity has a component opposite to the direction of motion.  
+which is the same as what we found in Example 7.3 of [Chapter %s](#chapter:workenergy). The work done by gravity is negative, as we found previously. This makes sense because gravity has a component opposite to the direction of motion.  
 
 The work done by a person, $W_p$, to move the box can easily be found by considering the net work done on the box. While the box is moving, only the person and gravity are exerting forces on the box, so those are the only two forces performing work. Since the box starts and ends at rest, the net work done on the box must be zero (no change in kinetic energy, recall the Work-Energy Theorem):
 ```{math}
@@ -324,11 +324,11 @@ A conservative force acts on an object that is initially at rest. No other force
 (sec:potentialecons:forcefromu)=
 ## Recovering the force from potential energy
 
-Given a (scalar) potential energy function, $U(\vec r)$, it is possible to determine the (vector) force that is associated with it. Take, for example, the potential energy from a spring ([Example 8.4](#ex:potentialecons:springpotential)):
+Given a (scalar) potential energy function, $U(\vec r)$, it is possible to determine the (vector) force that is associated with it. Take, for example, the potential energy from a spring (Example 8.4):
 ```{math}
 U(x) = \frac{1}{2}kx^2 + C
 ``` 
-As you recall from [Example 8.4](#ex:potentialecons:springpotential), to find this function (in one dimension), we took the $x$ component of the spring force and (effectively) found the negative of its anti-derivative, which we defined as the potential energy function:
+As you recall from Example 8.4, to find this function (in one dimension), we took the $x$ component of the spring force and (effectively) found the negative of its anti-derivative, which we defined as the potential energy function:
 ```{math}
 
 \begin{align*}
@@ -550,7 +550,7 @@ E_B &= U_B+K_B = \frac{1}{2}mv_B^2\\
 \Delta E &= E_B - E_A = \frac{1}{2}mv_B^2 - mgL\sin\theta
 \end{align*}
 ```
-Finally, since we have a non-conservative force, the force of kinetic friction, acting on the first segment, we need to calculate the work done by that force. We found in [Example 6.2](#ex:applyingnewtonslaws:block) that the force of friction had magnitude $f_k=\mu_{k1}N=\mu_{k1}mg\cos\theta$. Since the force of friction is anti-parallel to the displacement vector, which points down the incline and has length $L$, the work done by friction is:
+Finally, since we have a non-conservative force, the force of kinetic friction, acting on the first segment, we need to calculate the work done by that force. We found in Example 6.2 that the force of friction had magnitude $f_k=\mu_{k1}N=\mu_{k1}mg\cos\theta$. Since the force of friction is anti-parallel to the displacement vector, which points down the incline and has length $L$, the work done by friction is:
 ```{math}
 W^{NC}=W_f = -f_kL=-\mu_{k1}mg\cos\theta L
 ```
@@ -587,9 +587,9 @@ W^{NC} &= \Delta E\\
 \therefore x&= L\frac{1}{\mu_{k2}}\left(\sin\theta - \mu_{k1}\cos\theta\right)
 \end{align*}
 ```
-which is the same result that we obtained in [Example 6.2](#ex:applyingnewtonslaws:block).
+which is the same result that we obtained in Example 6.2.
 
-**Discussion:** By using conservation of energy, we were able to model the motion of the block down the incline in a way that was much easier than what was done in [Example 6.2](#ex:applyingnewtonslaws:block). Furthermore, although we modelled friction as a non-conservative force doing work, we gained some insight into the idea that this could be thought of as an energy loss. In terms of energy, we would say that the block initially had gravitational potential energy, which was then converted into kinetic energy as well as thermal energy (in the heat generated by friction). 
+**Discussion:** By using conservation of energy, we were able to model the motion of the block down the incline in a way that was much easier than what was done in Example 6.2. Furthermore, although we modelled friction as a non-conservative force doing work, we gained some insight into the idea that this could be thought of as an energy loss. In terms of energy, we would say that the block initially had gravitational potential energy, which was then converted into kinetic energy as well as thermal energy (in the heat generated by friction). 
 :::
 
 (sec:potentialecons:ediagrams)=

@@ -332,7 +332,7 @@ which is zero, because the force of gravity is always vertical and thus perpendi
 ```{math}
 W^{tot} = W_1 + W_2 = -mgH
 ```
-which is the same as the work done along path 1. As we will see, when a force is constant in magnitude and direction, the work that it does on an object in going from one position to another is independent of the path taken. This was not the case in [Example 7.2](#ex:workenergy:workfriction), because the direction of the force of kinetic friction depends on the direction of the displacement. 
+which is the same as the work done along path 1. As we will see, when a force is constant in magnitude and direction, the work that it does on an object in going from one position to another is independent of the path taken. This was not the case in Example 7.2, because the direction of the force of kinetic friction depends on the direction of the displacement. 
 ::: 
 
 :::{tip} Checkpoint
@@ -563,8 +563,8 @@ where we used the fact that $\cos^2\theta+\sin^2\theta=1$. Thus we find that the
 
 :::{attention} Olivia's Thoughts
 Pay close attention to the words "on" and "by." There are a few things about this that can be tricky:
-1.  In [Example 7.5](#ex:workenergy:networkramp), we were asked to find the **net work** done **on** the crate. Sometimes, the question won't specify that it wants you to find the net work, and will just say "What is the work done **on** the crate?" When you are just asked for the work done "on" an object, the question is implicitly asking for the *net* work done on the object.
-2.  Just because the net work done **on** an object is zero doesn't mean that the work done **by** each of the forces is zero. This may seem obvious, but it's easy to get tripped up on a test or exam. If you are reading a question about work and it says that the object is moving at a constant speed, it's tempting to just jump ahead and say that the work must be equal to zero. However, you can only say this if it's asking you for the net work done on the object. For instance, in [Example 7.5](#ex:workenergy:networkramp), we concluded that since the crate was moving at a constant speed, the net work was equal to zero. But if the question asked you to find the work done on the crate **by gravity**, that would mean something different. The work done **by gravity** in this case is not equal to zero (it's actually negative).
+1.  In Example 7.5, we were asked to find the **net work** done **on** the crate. Sometimes, the question won't specify that it wants you to find the net work, and will just say "What is the work done **on** the crate?" When you are just asked for the work done "on" an object, the question is implicitly asking for the *net* work done on the object.
+2.  Just because the net work done **on** an object is zero doesn't mean that the work done **by** each of the forces is zero. This may seem obvious, but it's easy to get tripped up on a test or exam. If you are reading a question about work and it says that the object is moving at a constant speed, it's tempting to just jump ahead and say that the work must be equal to zero. However, you can only say this if it's asking you for the net work done on the object. For instance, in Example 7.5, we concluded that since the crate was moving at a constant speed, the net work was equal to zero. But if the question asked you to find the work done on the crate **by gravity**, that would mean something different. The work done **by gravity** in this case is not equal to zero (it's actually negative).
 3.  The work done "on" an object is not the same as the net work done "by" that object. For example, say you are in a tug-of-war and you pull the other team towards you, but you yourself do not move. The net work done **on** you is zero, but the work done **by** you is not zero. So, when you are talking about work, you should always state explicitly whether the work is being done "on" the object or "by" the object. 
 
 **Note**: The wording won't always be like this - sometimes it will say "How much work do you do on the box?" instead of "How much work is done **by** you on the box," so always be careful. Still, looking for key words like "by" and "on" is a good place to start. 
@@ -700,14 +700,14 @@ A block is pressed against a horizontal spring so as to compress the spring by a
 If the block is released from rest and there is no friction between the block and the horizontal surface, what is the speed of the block when it leaves the spring?
 :::{note} Solution
 :class: dropdown
-This is the same problem that we presented in [Section %s](#sec:applyingnewtonslaws:modellingwhereforcechanges) in [Example 6.3](#ex:applyingnewtonslaws:blockspring), where we solved a differential equation to find the speed. 
+This is the same problem that we presented in [Section %s](#sec:applyingnewtonslaws:modellingwhereforcechanges) in Example 6.3, where we solved a differential equation to find the speed. 
 
-Our first step is to calculate the net work done on the object in going from $x=-D$ to $x=0$ (which corresponds to when the object leaves the spring, as discussed in [Example 6.3](#ex:applyingnewtonslaws:blockspring)). The forces on the object are:
+Our first step is to calculate the net work done on the object in going from $x=-D$ to $x=0$ (which corresponds to when the object leaves the spring, as discussed in Example 6.3). The forces on the object are:
 1.  $\vec F_g$, its weight, with magnitude $mg$.
 2.  $\vec N$, the normal force exerted by the ground.
 3.  $\vec F(x)$, the force from the spring, with magnitude $kx$. 
 
-Both the normal force and weight are perpendicular to the displacement, so they will do no work. The net work done is thus the work done by the spring, which we calculated in [Example 7.1](#ex:workenergy:spring) to be:
+Both the normal force and weight are perpendicular to the displacement, so they will do no work. The net work done is thus the work done by the spring, which we calculated in Example 7.1 to be:
 ```{math}
 W^{net} = W_F = \frac{1}{2}kD^2
 ```
@@ -1049,11 +1049,11 @@ This is quite a general result for the rate at which a force does work when it i
 :::
 
 :::{attention} Olivia's Thoughts
-[Example 7.10](#ex:workenergy:powerconstantv) ties into what I brought up earlier. If you think to yourself: "The velocity is constant, so the work must be zero", the formula,
+Example 7.10 ties into what I brought up earlier. If you think to yourself: "The velocity is constant, so the work must be zero", the formula,
 ```{math}
 P = \frac{\Delta W}{\Delta t} = Fv
 ```
-wouldn't make any sense. Since $v$ is a constant velocity, the power would always be equal to zero, which of course isn't right. Again, remember that when the velocity is constant, it is only the **net work** that is equal to zero. In [Example 7.10](#ex:workenergy:powerconstantv), it's asking for the power that **you** are expending by pushing on the crate (which is the same as asking for the rate of the work done **by** you **on** the crate). So, the formula does indeed make sense. 
+wouldn't make any sense. Since $v$ is a constant velocity, the power would always be equal to zero, which of course isn't right. Again, remember that when the velocity is constant, it is only the **net work** that is equal to zero. In Example 7.10, it's asking for the power that **you** are expending by pushing on the crate (which is the same as asking for the rate of the work done **by** you **on** the crate). So, the formula does indeed make sense. 
 :::
 
 # Summary
@@ -1223,7 +1223,7 @@ The work done by gravity can thus be converted into an integral over $y$ (for wh
 ```{math}
 W = \int \vec F_g \cdot d\vec l = \int_h^0 -mgdy = [-mgy]_h^0 = mgh
 ```
-The work done by gravity is positive, which makes sense, since the force of gravity is generally in the same direction as the net displacement (downwards). We did not need to take into account the specific shape of the trajectory, because the force was constant in magnitude and direction (see [Example 7.4](#ex:workenergy:workparabola)).
+The work done by gravity is positive, which makes sense, since the force of gravity is generally in the same direction as the net displacement (downwards). We did not need to take into account the specific shape of the trajectory, because the force was constant in magnitude and direction (see Example 7.4).
 
 We can now find the speed of the skier when they leave the jump using the Work-Energy theorem:
 ```{math}

@@ -162,7 +162,7 @@ Here are some steps you can follow to find the direction of the current using Le
 5.  Decide which direction for the induced current will give you the desired field. We want the induced field to point opposite to the flux arrow. 
   
 
-This is how you would apply this method to [Example 22.1](#ex:induction:changingB) (note that I am using the example of a loop instead of a coil but the idea is the same):
+This is how you would apply this method to Example 22.1 (note that I am using the example of a loop instead of a coil but the idea is the same):
 1.  We draw the diagram, as in [](#fig:induction:lenzs_example)a.  
 2.  To show that the flux is increasing, I have drawn a "flux arrow" (again, made up) in the direction of the field lines (the $+z$ direction).
 3.  If the current is clockwise, the induced field points in the $-z$ direction inside the loop ([](#fig:induction:lenzs_example)b).
@@ -181,7 +181,7 @@ This is how you would apply this method to [Example 22.1](#ex:induction:changing
 
 # Induction in a moving conductor
 If we define a loop of wire, there are two ways in which the magnetic flux through that loop can change:
-1.  The magnetic field can change magnitude or direction, as we saw in [Example 22.1](#ex:induction:changingB).
+1.  The magnetic field can change magnitude or direction, as we saw in Example 22.1.
 2.  The loop can change size or orientation relative to the magnetic field.
 
 In this section, we examine the latter case, sometimes called "motional emf", as the induced voltage is the result of motion from the loop in which the voltage is induced. 

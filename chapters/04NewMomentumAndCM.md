@@ -320,7 +320,7 @@ v(t) &= v_o + a\Delta t\\
 v(t) &= v_o + a t
 \end{align*}
 ```
-With constant acceleration, we can use graphical analysis to determine equations describing velocity and position as a function of time. In [](#fig:MomentumAndCM:graphkinematics) (a), a graph of constant acceleration is shown. Since acceleration is a change in velocity over time, we know that multiplying an acceleration by time gives a change in velocity. See Equation {eq}`eqn:MomentumAndCM:nonConstv`. Notice that this change in velocity is the same as the area of the acceleration vs. time graph. The change in velocity is, of course, added to any pre-existing velocity an object has. This is depicted in [](#fig:MomentumAndCM:graphkinematics) (b) as a blue shaded triangle. Since a change in position comes from velocity and changes in velocity, we can apply the same analysis to the velocity vs. time graph to obtain an expression for position vs. time. For constant motion (no acceleration), the position changes as the red shaded area of [](#fig:MomentumAndCM:graphkinematics) (b), which has an area $\Delta x = v_ot$. This results in Equation {eq}`eqn:MomentumAndCM:1dxvst_noa2` and is shown in [](#fig:MomentumAndCM:graphkinematics) (c) as a red straight line. We would expect a linear form after seeing this for velocity with constant acceleration. To analyze motion with constant acceleration, we must add both the red rectangular and the blue triangular areas in [](#fig:MomentumAndCM:graphkinematics) (b). The rectangular area again has area $v_ot$. The triangular area is $1/2 (v_f-v_o) t=1/2\Delta v t= 1/2at^2$. Putting these together, one obtains the following set of kinematic equations.
+With constant acceleration, we can use graphical analysis to determine equations describing velocity and position as a function of time. In [](#fig:MomentumAndCM:graphkinematics) (a), a graph of constant acceleration is shown. Since acceleration is a change in velocity over time, we know that multiplying an acceleration by time gives a change in velocity. Notice that this change in velocity is the same as the area of the acceleration vs. time graph. The change in velocity is, of course, added to any pre-existing velocity an object has. This is depicted in [](#fig:MomentumAndCM:graphkinematics) (b) as a blue shaded triangle. Since a change in position comes from velocity and changes in velocity, we can apply the same analysis to the velocity vs. time graph to obtain an expression for position vs. time. For constant motion (no acceleration), the position changes as the red shaded area of [](#fig:MomentumAndCM:graphkinematics) (b), which has an area $\Delta x = v_ot$. This is shown in [](#fig:MomentumAndCM:graphkinematics) (c) as a red straight line. We would expect a linear form after seeing this for velocity with constant acceleration. To analyze motion with constant acceleration, we must add both the red rectangular and the blue triangular areas in [](#fig:MomentumAndCM:graphkinematics) (b). The rectangular area again has area $v_ot$. The triangular area is $1/2 (v_f-v_o) t=1/2\Delta v t= 1/2at^2$. Putting these together, one obtains the following set of kinematic equations.
 
 ```{math}
 
@@ -355,7 +355,7 @@ A more realistic rock sliding on a frozen pond more is when the rock decelerates
 * c) Create graphs of position vs. time and velocity vs. time similar to [](#fig:MomentumAndCM:1dxvst).
 ::: {note} Solution 4.3
 :class: dropdown
-* a) We can use the kinematic equation for velocity as a function of time {eq}`eqn:MomentumAndCM:nonConstv`. This is one dimensional, and we only need to solve for the $x$-direction. We'll, therefore, ignore the vectors. 
+* a) We can use the kinematic equation for velocity as a function of time. This is one dimensional, and we only need to solve for the $x$-direction. We'll, therefore, ignore the vectors. 
 ```{math}
 
 \begin{align*}
@@ -766,7 +766,7 @@ and we see that $E'<E$, and thus that the total mechanical energy of the system 
 
 We also found that mechanical energy was not conserved. This makes physical sense because, for the car to remain attached to the train, there presumably had to be some significant forces in play that "crushed" the car into the train. Some of the initial kinetic energy of the train was used to deform the train and the car during the collision. We can also think of deforming a material as giving it energy. Sometimes that energy is recoverable (e.g. compressing a spring), sometimes, it is not (e.g. crushing a car).
 
-If the car and train were equipped with large springs to absorb the energy of the impact, the collision could have conserved mechanical energy, as the springs compress and then expand back. The speed of the car and train would then be different after the collision in this case (see [Example 4.7](#ex:momentumandcm:1delastic)). It is a feature of collisions where the two bodies remain attached to each other that mechanical energy is not conserved.
+If the car and train were equipped with large springs to absorb the energy of the impact, the collision could have conserved mechanical energy, as the springs compress and then expand back. The speed of the car and train would then be different after the collision in this case (see Example 4.7). It is a feature of collisions where the two bodies remain attached to each other that mechanical energy is not conserved.
 :::
 
 # Collisions
@@ -943,7 +943,7 @@ M(v_M^2-v'^2_M)&= M(v'^2_m-v^2_m)\\
 M(v_M-v'_M)(v_M+v'_M)&= M(v'_m-v_m)(v'_m+v_m)
 \end{align*}
 ```
-We can then divide Equation {eq}`eqn:momentumandcm:exptemp2` by Equation {eq}`eqn:momentumandcm:exptemp`:
+We can then divide the above two equations:
 ```{math}
 
 \begin{align*}
@@ -1252,7 +1252,7 @@ to describe the system as a whole. However, it is not (yet) clear what is accele
 ```{math}
 \vec a_{CM} = \frac{d^2 }{dt^2}\vec r_{CM}
 ```
-We can compare Equations {eq}`eqn:momentumandcm:cmtemp1` and {eq}`eqn:momentumandcm:cmtemp2` to determine what the position vector $\vec r_{CM}$ corresponds to:
+We can compare the above two equations to determine what the position vector $\vec r_{CM}$ corresponds to:
 ```{math}
 
 \begin{align*}
@@ -1640,7 +1640,7 @@ The position and velocity vectors are illustrated in [](#fig:MomentumAndCM:vcirc
 :alt: The position vector, $\vec r(t)$ is always perpendicular to the velocity vector, $\vec v(t)$, for motion on a circle.
 The position vector, $\vec r(t)$ is always perpendicular to the velocity vector, $\vec v(t)$, for motion on a circle.
 ```
-In this case, you can note that the $x$ component of the velocity is negative (from the diagram and from equation {eq}`eqn:MomentumAndCM:vcircle`). From equation {eq}`eqn:MomentumAndCM:vcircle`, you can also see that $\frac{|v_x|}{|v_y|}=\tan(\theta)$, which is illustrated in [](#fig:describingmotioninnd:vcircle, showing that **the velocity vector is tangent to the circle** and perpendicular to the position vector. This is always the case for motion along a circle.
+In this case, you can note that the $x$ component of the velocity is negative (from the diagram and from the velocity equations above). You can also see that $\frac{|v_x|}{|v_y|}=\tan(\theta)$, which is illustrated in [](#fig:MomentumAndCM:vcircle), showing that **the velocity vector is tangent to the circle** and perpendicular to the position vector. This is always the case for motion along a circle.
 
 We can simplify our description of motion along the circle by using either $s(t)$ or $\theta(t)$ instead of the vectors for position and velocity. If we use $s(t)$ to represent position along the circumference ($s=0$ where the circle intersects the $x$ axis), then the velocity along the $s$ axis is:
 ```{math}
