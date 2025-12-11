@@ -85,20 +85,25 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-myst-build-
 
-      # Step 8: Build HTML version of the documentation
-      # This creates the website files that will be deployed
-      # NOTE: Must run BEFORE PDF build, as HTML build clears _build/html directory
-      - name: Build HTML Assets
-        run: myst build --html
-
-      # Step 9: Build PDF version of the documentation
-      # This creates PDF files from your markdown content
-      # Runs AFTER HTML build so PDF ends up in the final _build/html directory
-      - name: Build PDF Assets
+      # Step 8: Build PDF first so MyST registers the export
+      # This is needed for the download button to appear in the HTML
+      - name: Build PDF Assets (first pass)
         run: myst build --pdf
         continue-on-error: true
 
-      # Step 10: Verify PDF was generated
+      # Step 9: Build HTML version of the documentation
+      # MyST will detect the PDF export and include the download button
+      # Note: This clears _build/html directory
+      - name: Build HTML Assets
+        run: myst build --html
+
+      # Step 10: Rebuild PDF to put it in the final _build/html directory
+      # (HTML build cleared the directory, so we need to regenerate the PDF)
+      - name: Build PDF Assets (final)
+        run: myst build --pdf
+        continue-on-error: true
+
+      # Step 11: Verify PDF was generated
       - name: Check PDF exists
         run: |
           if [ -f ./_build/html/ModelingWithPhysics.pdf ]; then
@@ -108,14 +113,14 @@ jobs:
             echo "Warning: PDF was not generated"
           fi
 
-      # Step 11: Upload the built HTML files as an artifact
+      # Step 12: Upload the built HTML files as an artifact
       # This packages the website files for deployment
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: './_build/html'
 
-      # Step 12: Deploy the website to GitHub Pages
+      # Step 13: Deploy the website to GitHub Pages
       # This makes your documentation publicly available
       - name: Deploy to GitHub Pages
         id: deployment

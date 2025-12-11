@@ -96,8 +96,9 @@ site:
         utterances: true
   nav: []
   actions:
-    - title: Download PDF
+    - title: PDF
       url: ModelingWithPhysics.pdf
+      icon: download
   domains: []
 #html:
   
