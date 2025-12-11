@@ -46,7 +46,7 @@ A battery (as we will see in more detail in [Section %s](#chapter:circuits) is a
 
 "Electric current" is defined to be the rate at which charges cross a given plane (usually a plane perpendicular to some conductor through which we want to define the current). We define current, $I$, as the total amount of charge, $\Delta Q$, that flows through any cross-section of the conductor during an amount of time, $\Delta t$:
 ```{math}
-\boxed{I=\frac{\Delta Q}{\Delta t}=\frac{dQ}{dt}}
+I=\frac{\Delta Q}{\Delta t}=\frac{dQ}{dt}
 ```
 where we must take a derivative if the rate of flow is not constant in time. The S.I. unit of current is the Amp\`ere (\si{A}). In almost all cases, it is negative electrons that flow through a material. However, the current is defined to be in the direction of the flow of positive charges, as illustrated in [](#fig:current:simplecircuit). To distinguish that the current is in the direction opposite to that of the flowing electrons, one sometimes uses the term "conventional current" to indicate that the current is referring to a flow of positive charges.
 
@@ -54,7 +54,7 @@ Note that the definition of electric current is very similar to the "flow rate",
 
 We think of current as a macroscopic quantity, something that we can easily measure in the lab. Current is a measure of the average rate at which charges are moving through the conductor, and not a measure of what is going on at a microscopic level. In order to model the motion of charges at the microscopic level, we introduce the "current density", $\vec j$:
 ```{math}
-\boxed{\vec j = \frac{I}{A}\hat E}
+\vec j = \frac{I}{A}\hat E
 ```
 where $I$ is the current that flows through a surface with cross-sectional area $A$ and $\hat E$ is a unit vector in the direction of the electric field at our point of interest. As its name would suggest, the current density is the electric current per unit area. It follows that, given the current density, $\vec j$, one can always determine the current through a surface with area $A$ and normal vector $\hat n$:
 ```{math}
@@ -127,7 +127,7 @@ Thus, the current that flows through a cross-section of the conductor is given b
 I=\frac{\Delta Q}{\Delta t}=\frac{-e n Al}{\Delta t}=-enAv_d
 ```
 ```{math}
-\therefore\;\boxed{I=-enAv_d},
+\therefore\;I=-enAv_d,
 ```
 which allows us to connect a macroscopic quantity, current, to the microscopic description of moving charges. Note that the negative sign reflects the fact that the current (of positive charges) is in the opposite direction from the drift velocity of the (negative) electrons. The current density is directly related to the microscopic quantities, since it does not depend on the (macroscopic) cross-sectional area, $A$, of the conductor:
 ```{math}
@@ -137,7 +137,7 @@ which allows us to connect a macroscopic quantity, current, to the microscopic d
 \end{align*}
 ```
 ```{math}
-\therefore\; \boxed{\vec j = -en\vec v_d}
+\therefore\; \vec j = -en\vec v_d
 ```
 where, again, the negative sign indicates that the current density is in the opposite direction from the actual drift velocity of the electrons, which itself is anti-parallel to the electric field.
 
@@ -178,7 +178,7 @@ In the previous section, we developed a microscopic model of charges moving in a
 \vec j \propto \vec E
 ```
 ```{math}
-\boxed{\vec j = \sigma \vec E}
+\vec j = \sigma \vec E
 ```
 where we have introduced the "conductivity", $\sigma$, as the constant of proportionality. Conductivity is a property of the material from which the conductor is made, and is a measure of how large a current density (and by extension, current) there will be in material given a certain electric field. Materials with a high conductivity are said to be good conductors, as a large current will result from a small electric field. Gold and copper are examples of materials with a high conductivity.
 
@@ -271,15 +271,15 @@ j&=\frac{I}{A}\\
 ```
 This last equation is often written by isolating the potential difference:
 ```{math}
-\boxed{\Delta V = \rho \frac{L}{A} I}
+\Delta V = \rho \frac{L}{A} I
 ```
 where we replaced the inverse of the conductivity with the resistivity. This last equation is the equivalent of Ohm's Law, but written for a (macroscopic) resistor of length $L$, cross-sectional area $A$, and made of a material with resistivity, $\rho$. Written in this way, Ohm's Law is a statement that the **current through a resistor is proportional to the voltage applied across it**. The constant of proportionality, $R$, is called the "resistance":
 ```{math}
-\boxed{\Delta V = RI}
+\Delta V = RI
 ```
 This last equation is often called "Ohm's Law", even if, technically, Ohm's Law is the relation between current density and electric field. A resistor is a macroscopic object whose "resistance" can be characterized by a single value, $R$, its resistance. The resistance of a resistor can be determined from its macroscopic properties (length and cross-sectional area) and from the material from which it is made (with a given resistivity):
 ```{math}
-\boxed{R = \rho \frac{L}{A} }
+R = \rho \frac{L}{A} 
 ```
 The (derived) S.I. unit of resistance is the "Ohm", (${\rm\Omega}$).
 
@@ -336,7 +336,7 @@ since the potential energy (per unit charge) that is lost in each resistor must 
 \Delta V = \Delta V_1 + \Delta V_2=R_1I+R_2I=(R_1+R_2)I=R_{eff}I
 ```
 ```{math}
- \boxed{R_{eff}=R_1+R_2}\quad \text{(Series resistors)}
+ R_{eff}=R_1+R_2\quad \text{(Series resistors)}
 ```
 It makes sense that the equivalent resistance is found by summing the two resistors when they are in series. If the two resistors are made of the same material and have the same cross-sectional area, combining them in series is equivalent to fabricating a longer resistor with the two lengths added together. The result is easily extended to any number of resistors:
 ```{math}
@@ -392,7 +392,7 @@ I&=I_1+I_2=\frac{\Delta V}{R_1}+\frac{\Delta V}{R_2}=\left( \frac{1}{R_1}+\frac{
 ```
 Thus, the effective resistance, $R_{eff}$, of two resistors connected in parallel is given by:
 ```{math}
-\boxed{R_{eff}=\frac{1}{\frac{1}{R_1}+\frac{1}{R_2}}=\frac{R_1R_2}{R_1+R_2}}\quad \text{(Parallel resistors)}
+R_{eff}=\frac{1}{\frac{1}{R_1}+\frac{1}{R_2}}=\frac{R_1R_2}{R_1+R_2}\quad \text{(Parallel resistors)}
 ```
 where the two forms that are given are equivalent. The effective resistance of two resistors in parallel is smaller than the resistance of either resistor. This makes sense, because combining resistors in parallel is analogous to fabricating a single resistance with a larger cross-sectional area, allowing for "more space" for the charges to flow. Again, this result is easily extended for more than two resistors:
 ```{math}
@@ -451,7 +451,7 @@ P&=\frac{d}{dt}\Delta U=\frac{d}{dt}q\Delta V=I\Delta V\\
 ```
 where we recognized that $dq/dt=I$ is the definition of current. $P$ corresponds to the rate at which energy is dissipated in the resistor, and has dimensions of power. Combining this with Ohm's Law, the power that is dissipated in a resistor can be written in different ways:
 ```{math}
-\boxed{P=I \Delta V=\frac{(\Delta V)^2}{R}=I^2R}
+P=I \Delta V=\frac{(\Delta V)^2}{R}=I^2R
 ```
 :::{note} Example 18.4
 A hair-dryer is rated as consuming $1500 {\rm W}$ when connected to an outlet with a $120 {\rm V}$ potential difference. What is the resistance of the hair-dryer, and how much current goes through it when it is running?

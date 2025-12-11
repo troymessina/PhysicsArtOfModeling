@@ -65,7 +65,7 @@ W&=\int_A^B \vec F^E\cdot d\vec r=\int_{\vec r_A}^{\vec r_B} \left(k\frac{Qq}{r^
 ```
 where we noted that, since $\vec F^E$ and $d\vec r$ are parallel, their scalar product is simply the product of their magnitudes. By comparing with [](#eqn:potential:potentialwork), we can identify the potential energy, $U(\vec r)$, of a charge, $+q$, located at a relative position, $\vec r$, from a point charge, $+Q$, as:
 ```{math}
-\boxed{U(\vec r)=\frac{kQq}{r}+C}
+U(\vec r)=\frac{kQq}{r}+C
 ```
 where the potential energy is only defined up to some constant, $C$, which cancels when we take the difference in potential energy between two positions. Note that this is very similar to the function for the gravitational potential energy of a mass, $m$, a distance, $r$, from a mass, $M$ (see [Section %s](#sec:gravity:potentialenergy)).
 
@@ -151,7 +151,7 @@ If the only force exerted on a particle is the electric force, and the particle 
 \end{align*}
 ```
 ```{math}
-\boxed{\therefore \Delta K = -q \Delta V}
+\therefore \Delta K = -q \Delta V
 ```
 where $\Delta E$ is the change in total mechanical energy of the particle, which is zero when energy is conserved. The kinetic energy of a positive particle increases if the particle moves from a region of high potential to a region of low potential (as $\Delta V$ would be negative and $q$ is positive), and vice versa for a negative particle. This makes sense, since a positive and negative particle feel forces in opposite directions.
 
@@ -257,7 +257,7 @@ where we recognized that the charge, $q$, is constant and can come out of the in
 W=q \int_A^B  \vec E\cdot d\vec r=-q\Delta V = -q\left[ V(\vec r_B)-V(\vec r_A) \right]
 ```
 ```{math}
-\boxed{\therefore \Delta V =V(\vec r_B)-V(\vec r_A)=-\int_A^B  \vec E\cdot d\vec r}
+\therefore \Delta V =V(\vec r_B)-V(\vec r_A)=-\int_A^B  \vec E\cdot d\vec r
 ```
 which allows us to easily determine the change in electric potential associated with an electric field. Note that this result is general and does not require the electric field to be that of a point charge, and can be used to determine the electric potential associated with any electric field. We can also specify a function for the potential, up to an arbitrary constant, $C$, (think definite versus indefinite integrals):
 ```{math}
@@ -705,7 +705,7 @@ As long as the quantities of charge involved are not too large, it has been obse
 Q\propto \Delta V
 ```
 ```{math}
-\boxed{Q=C\Delta V}
+Q=C\Delta V
 ```
 The constant of proportionality, $C$, between charge and potential difference across the capacitor (usually called voltage across the capacitor) is called "capacitance", and has S.I. units of "Farads" (${\rm F}$). The capacitance of a particular capacitor is a measure of how much charge it can hold at given voltage and depends on the geometry of the capacitor as well as the material between the terminals. If too much charge is placed on a capacitor, the material between the two plates will break down, and a spark will usually damage the capacitor as well as discharge it.
 
@@ -713,7 +713,7 @@ We can easily calculate the capacitance of a parallel plate capacitor. We model 
 ```{math}
 \sigma =\frac{Q}{A}
 ``` 
-In [Example 17.3](#ex:potential:parallelplates), we found an expression for the potential difference between two parallel plates:
+In Example 17.3, we found an expression for the potential difference between two parallel plates:
 ```{math}
 
 \begin{align*}

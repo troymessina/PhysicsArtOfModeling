@@ -40,6 +40,6 @@ This version of the textbook is also open-access and can be found at https://git
 25. [Appendix B: An Introduction to Visual Python](#app:visualpython)
 27. [Appendix C: Guidelines for lab related activities](#app:labs)
 
-![http://creativecommons.org/licenses/by-sa/4.0/](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)
+![Creative Commons License](./figures/cc-by-sa.png)
 
 Introductory Physics: Building Models to Describe Our World by Ryan D. Martin, Emma Neary, Joshua Rinaldo, and Olivia Woodman is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). Based on a work at https://github.com/OSTP/PhysicsArtofModelling.

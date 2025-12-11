@@ -410,7 +410,7 @@ A block of mass $m$ is at rest on a wedge-shaped block of mass $M$ itself at res
 :::{note} Solution
 :class: dropdown
 Since it will be too messy to draw all of the forces on the same diagram, we have drawn each block separately in [](#fig:newtonslaws:2blockswedge_forces). 
-Usually, when multiple blocks are stacked on each other, it is easiest to start with the forces on the top block. In this case, the top block is in the same condition as the block from [Example 5.2](#ex:newtonslaws:blockI). The forces exerted on the top block are:
+Usually, when multiple blocks are stacked on each other, it is easiest to start with the forces on the top block. In this case, the top block is in the same condition as the block from Example 5.2. The forces exerted on the top block are:
 1.  $\vec F_g^m$, its weight.
 2.  $\vec N^m$, a normal force from the wedge-shaped block.
 3.  $\vec f_s^m$, a force of static friction exerted by the wedge-shaped block.
@@ -495,7 +495,7 @@ Newton's Second Law is a vector equation that relates the vector sum of all forc
 \sum F_z &= ma_z
 \end{align*}
 ```
-In order to use Newton's Second Law, we thus need to introduce a coordinate system so that we can work with the components of the vectors (forces and acceleration) in that coordinate system. Usually, a good choice of coordinate system is one where the $x$ (or $y$) axis is parallel to the acceleration vector. [](#fig:newtonslaws:2blocksI_fbd_m1) shows the free-body diagram from the $m_1$ block from the previous example ([Example 5.4](#ex:newtonslaws:2blocksI)) along with a good choice of coordinate system. 
+In order to use Newton's Second Law, we thus need to introduce a coordinate system so that we can work with the components of the vectors (forces and acceleration) in that coordinate system. Usually, a good choice of coordinate system is one where the $x$ (or $y$) axis is parallel to the acceleration vector. [](#fig:newtonslaws:2blocksI_fbd_m1) shows the free-body diagram from the $m_1$ block from the previous example (Example 5.4) along with a good choice of coordinate system. 
 ```{figure} figures/NewtonsLaws/2blocksI_fbd_m1.png
 :label: fig:newtonslaws:2blocksI_fbd_m1
 :width: 25%
@@ -548,7 +548,7 @@ The following example shows how to write Newton's Second Law for a system of two
 :alt:  Two blocks connected by a massless string and massless pulley. Both blocks are accelerating.
  Two blocks connected by a massless string and massless pulley. Both blocks are accelerating.
 ```
-A block of mass $m_1$ is placed on an incline that makes an angle of $\theta$ with the horizontal. The block of mass $m_1$ is connected by a massless string through a massless pulley to a second block of mass $m_2$, which rests on a horizontal surface. The blocks are accelerating in such a way that the block of mass $m_1$ is accelerating down the incline, as shown in [Example 5.5](#ex:newtonslaws:2blocksHI). The coefficient of kinetic friction between either block and the surface it is resting on is $\mu_k$. Write Newton's Second Law for both blocks.
+A block of mass $m_1$ is placed on an incline that makes an angle of $\theta$ with the horizontal. The block of mass $m_1$ is connected by a massless string through a massless pulley to a second block of mass $m_2$, which rests on a horizontal surface. The blocks are accelerating in such a way that the block of mass $m_1$ is accelerating down the incline, as shown in Example 5.5. The coefficient of kinetic friction between either block and the surface it is resting on is $\mu_k$. Write Newton's Second Law for both blocks.
 :::{note} Solution
 :class: dropdown
 

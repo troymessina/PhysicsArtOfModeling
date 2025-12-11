@@ -125,7 +125,7 @@ Wavelength, velocity, and amplitude for a transverse wave on a rope.
 The wavelength, speed, and period of the wave are related, since the amount of time that it takes for two successive maxima of the wave to pass through a given point will depend on the speed of the wave and the distance between maxima, $\lambda$. Since it takes a time, $T$, for two maxima a distance $\lambda$ apart to pass through a given point in the medium, the speed of the wave is given by:
 ```{math}
 :label: eq:waves:speed
-\boxed{v = \frac{\lambda}{T}=\lambda f}
+v = \frac{\lambda}{T}=\lambda f
 ```
 Thus, of the three quantities (speed, period/frequency, and wavelength), only two are independent, as the third quantity must depend on the value of the other two. **The speed of a wave depends on the properties of the medium through which the wave propagates and not on the mechanism that is generating the wave**. For example, the speed of sound waves depends on the pressure, density, and temperature of the air through which they propagate, and not on what is making the sound. When a mechanism generates a wave, that mechanism usually determines the frequency of the wave (e.g. frequency with which the hand in [](#fig:waves:wavelength) moves up and down), the speed is determined by the medium, and the wavelength can be determined from [](#eq:waves:speed).
 
@@ -183,7 +183,7 @@ D(x,t) = A\sin\left( \frac{2\pi x}{\lambda}- \frac{2\pi t}{T} \right)
 ```
 In the above derivation, we assumed that at time $t=0$, the displacement at $x=0$ was $D(x=0, t=0)=0$. In general, the displacement could have any value at $x=0$ and $t=0$, so we can allow the wave to shift left or right by including a phase, $\phi$, which can be determined from the displacement at $x=0$ and $t=0$:
 ```{math}
-\boxed{D(x,t) = A\sin\left( \frac{2\pi x}{\lambda}- \frac{2\pi t}{T} + \phi \right)}
+D(x,t) = A\sin\left( \frac{2\pi x}{\lambda}- \frac{2\pi t}{T} + \phi \right)
 ```
 where $\phi=0$ corresponds to the displacement being zero at $x=0$ and $t=0$.
 
@@ -208,7 +208,7 @@ k &= \frac{2\pi}{\lambda}\\
 ``` 
 Using the wave number and the angular frequency removes the factors of $2\pi$ in the expression for $D(x,t)$, which can now be written as:
 ```{math}
-\boxed{D(x,t) = A\sin\left( kx -\omega t + \phi \right)}
+D(x,t) = A\sin\left( kx -\omega t + \phi \right)
 ```
 It is important to note that the wave number, $k$, has no relation to the spring constant that we used for springs.
 
@@ -304,7 +304,7 @@ We can equate this expression for $F$ with that obtained from the similar triang
 ```
 The speed of a pulse (and wave) propagating through a rope with linear mass density, $\mu$, under a tension, $F_T$, is given by:
 ```{math}
-\boxed{v= \sqrt{\frac{F_T}{\mu}}}
+v= \sqrt{\frac{F_T}{\mu}}
 ```
 If the tension in the rope is higher, the pulse will propagate faster. If the linear mass density of the rope is higher, then the pulse will propagate slower. 
 
@@ -527,7 +527,7 @@ P = \frac{E_\lambda}{T} = \frac{\frac{1}{2}\omega^2 \mu A^2 \lambda}{T}=\frac{1}
 ```
 where $T$ is the period of the wave, and $v=\lambda/T$ is the speed of the wave. The power transmitted by a wave on a rope is thus given by:
 ```{math}
-\boxed{P=\frac{1}{2}\omega^2 \mu A^2 v}
+P=\frac{1}{2}\omega^2 \mu A^2 v
 ```
 We can see that the power transmitted by a wave goes as the amplitude, $A$, of the wave squared. It thus takes four times more energy to double the amplitude of waves that are sent down a rope. 
 
@@ -668,11 +668,11 @@ The wavelength of the fundamental standing wave for a string of length, $L$, is 
 ```
 In general, the $n$th harmonic will have a wavelength of:
 ```{math}
-\boxed{\lambda_n = \frac{2L}{n}\quad\quad n=1,2,3,\dots}
+\lambda_n = \frac{2L}{n}\quad\quad n=1,2,3,\dots
 ```
 The corresponding frequency is give by:
 ```{math}
-\boxed{f_n =\frac{nv}{2L}}
+f_n =\frac{nv}{2L}
 ```
 where $v=f\lambda$ is the speed of the waves on the string.
 
@@ -739,7 +739,7 @@ and $kL$ must be a multiple of $2\pi$. In terms of the wavelength, $\lambda$, th
 ```
 as we argued before, for the wavelength of the $n$-th harmonic. The standing wave for the $n$-th harmonic is thus described by
 ```{math}
-\boxed{D(x,t)=2A\sin\left(\frac{n\pi}{L}x\right)\cos(\omega t) }
+D(x,t)=2A\sin\left(\frac{n\pi}{L}x\right)\cos(\omega t) 
 ```
 A point at position $x$ will behave like a simple harmonic oscillator and oscillate with an amplitude given by:
 ```{math}
