@@ -185,7 +185,7 @@ Plot of position as a function of time for an object moving at varying velocitie
 ### Simulating the rock
 :::{caution} Review
 Before proceeding, you may wish to review:
-* [Appendix %s](#app:visualpython) for an introduction to programming with Visual Python using trinket.io.
+* [Appendix %s](#app:visualpython) for an introduction to programming with Visual Python.
 :::
 Under constant velocity motion we can describe a future position of an object using the current position, the velocity, and an increment of time to progress into the future. With equation {eq}`eqn:MomentumAndCM:1dxvst_noa`, we can model this motion on computer. We will use the Python language in this textbook, and in particular, we will use Visual Python so that we can apply physics to objects that visualize physical motion in 3D. To get started, we first need to define an object that will move through space. We will make a sphere call it ```rock```. The ```rock``` object can beplaced at a position using a vector ```pos=vec(x,y,z)```.
 ```python
@@ -203,13 +203,13 @@ We can visualize the velocity with a vector arrow that remains attached to the r
 ``` python
 arr = arrow(pos=rock.pos, axis=rock.vel, color=color.white)
 ```
-Try, putting these three lines of code in the trinket below and see what happens when you run the program.
-:::{iframe} https://trinket.io/embed/glowscript/8f1815879d?toggleCode=true
+Try, putting these three lines of code in the code below and see what happens when you run the program.
+:::{iframe} https://www.glowscript.org/#/user/troymessina/folder/IntroTextbook/program/blank
 :label: chapter:momentumandcm:blanktrinket
 :width: 90%
 :align: center
 :placeholder: ../chapters/figures/MomentumAndCM/BlankTrinket.jpg
-A blank trinket to simulate a rock sliding on a frozen pond.
+A blank Visual Python program to simulate a rock sliding on a frozen pond.
 :::
 
 This code draws the rock and the velocity vector, but it does not simulate the motion. To simulate the motion, we need to update the position of the rock as time progresses. We can use a loop to repeat calculations of the position. For example, we can repeat the calculations `while` the time is less than 2 seconds. Each time the position is calculated, we will add a small increment of time for the next calculation. Here is an example where we start at time $t=0$ and increment the position every $\Delta t = 0.1 {\rm s}$.
