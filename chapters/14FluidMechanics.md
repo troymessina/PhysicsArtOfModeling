@@ -118,7 +118,7 @@ P_2A - P_1A-\rho Ahg &=0\\
 where we used the fact that the force resulting from a pressure is given by the pressure multiplied by the area over which it is exerted. We thus find that the difference in pressure due to gravity in a fluid between two positions, $y_2$ and $y_1$, is given by:
 ```{math}
 :label: eq:fluidmechanics:pgrav
-\boxed{P(y_2) - P(y_1) = -\rho g (y_2 - y_1)}
+P(y_2) - P(y_1) = -\rho g (y_2 - y_1)
 ```
 where the $y$ axis is defined to increase in the upwards direction. Since the pressure in the fluid depends on the location in the fluid, we say that there is a "pressure gradient" in the fluid.
 :::{tip} Checkpoint
@@ -163,7 +163,7 @@ PA -PA -dPA - \rho A dy g &=0\\
 ```
 We can thus determine how pressure changes with height, $y$:
 ```{math}
-\boxed{\frac{dP}{dy} = -\rho g}
+\frac{dP}{dy} = -\rho g
 ```
 This tells us that the rate of change of pressure with increasing $y$ is negative; in other words, the pressure decreases as the elevation increases, as we had already concluded. We can integrate the equation to obtain the change in pressure in going from $y_1$ to $y_2$:
 ```{math}
@@ -399,7 +399,7 @@ Now, suppose that the fluid element is "displaced" and replaced by the hull of a
 
 Thus, if an object displaces a volume, $V$, of a fluid with density $\rho$, when immersed in the fluid, that object will experience an upwards force of buoyancy, $\vec F_B$, with magnitude:
 ```{math}
-\boxed{F_B = \rho V g}
+F_B = \rho V g
 ``` 
 This "principle" was originally discovered by Archimedes, who stated that the force of buoyancy is equal to the weight of the displaced fluid. Note that we drew the fluid element at the surface of the fluid, but this is not required, and a force of buoyancy will be present if the object is completely immersed in the liquid. If you refer back to [](#fig:fluidmechanics:pressure_gravity), you will recall that the net upwards force on an element of fluid must be equal to its weight, even if the fluid element is completely immersed.
 
@@ -516,13 +516,13 @@ The mass of fluid entering the wide end of the pipe must equal the mass exiting 
 ```
 Leading to the equation of continuity:
 ```{math}
-\boxed{\rho_1 A_1 v_1 = \rho_2 A_2 v_2}
+\rho_1 A_1 v_1 = \rho_2 A_2 v_2
 ```
 The quantity $\rho A v$ has dimensions of mass per time, and corresponds to the mass of fluid passing through a cross section $A$ per unit time.
 
 If the fluid is incompressible, as are most liquids, then the density is the same on both sides of the pipe, and the equation simplifies to:
 ```{math}
-\boxed{A_1 v_1 = A_2 v_2}\quad\text{(Incompressible fluid)}
+A_1 v_1 = A_2 v_2\quad\text{(Incompressible fluid)}
 ```
 For a liquid, we can define the "volumetric flow", $Q$, as:
 ```{math}
@@ -639,7 +639,7 @@ P_1 +\frac{1}{2}\rho v_1^2+ \rho g y_1= P_2 + \frac{1}{2}\rho v_2^2 + \rho g y_2
 ```
 Since the locations $1$ and $2$ that we chose are arbitrary, we can state that, for laminar incompressible flow, the following quantity evaluated at any position is a constant:
 ```{math}
-\boxed{P +\frac{1}{2}\rho v^2+ \rho g y=\text{constant}}
+P +\frac{1}{2}\rho v^2+ \rho g y=\text{constant}
 ```
 This statement is what we call Bernoulli's Equation, and is equivalent to conservation of energy for the fluid. If the fluid is not flowing ($v_1=v_2=0$), then this is equivalent to the statement of hydrostatic equilibrium that we derived in [](#eq:fluidmechanics:pgrav):
 ```{math}
@@ -788,7 +788,7 @@ F \propto A\frac{v}{l}
 ```
 The constant of proportionality is defined as the viscosity, $\eta$, of the fluid:
 ```{math}
-\boxed{F = \eta A\frac{v}{l}}
+F = \eta A\frac{v}{l}
 ```
 If the viscosity of the fluid is zero, then no force is required to pull the plate. The more viscous the fluid, the more difficult it is to pull the top plate. You can experiment with this by comparing the force required to move a small piece of paper across the top of a puddle of water and across the top of honey.
 
@@ -819,7 +819,7 @@ This makes some intuitive sense, as we expect more resistance (more impedance to
 
 The laminar flow rate, $Q$, of a viscous fluid through a pipe of length $L$ and radius $R$, when there is a pressure difference $\Delta P$, is given by:
 ```{math}
-\boxed{Q =  \frac{\pi r^4}{8\eta L}\Delta P}
+Q =  \frac{\pi r^4}{8\eta L}\Delta P
 ```
 This is usually referred to as "Poiseuille's Equation".
 
@@ -981,7 +981,7 @@ Q&= \frac{\pi r^4}{8\eta L}\Delta P \quad \textrm{(Poiseuille)}
 * Place your hand in a plastic bag, and immerse your hand with the bag in water. The deeper the column of water, the better. Describe what you feel on your hand in terms of the direction of the force exerted by the water pressure.
 * If you assume that the water that comes out of your bathroom faucet is gravity-fed from a water tank, determine the height of the corresponding water tower relative to your bathroom faucet. Measure the flow rate of water from the faucet to determine the height and discuss whether it makes sense. 
 * Try plugging the faucet in your bathroom tap with your thumb. Are you able to completely prevent water from coming out when the tap is open? Estimate the pressure of the water in the pipes leading to your bathroom faucet.
-* In your house/building, measure the flow rate between similar faucets at different heights, and compare with what one would expect from the model from [Example 14.7](#ex:fluidmechanics:kitchen).
+* In your house/building, measure the flow rate between similar faucets at different heights, and compare with what one would expect from the model from Example 14.7.
 :::
 
 :::{seealso} To try in the lab

@@ -55,18 +55,19 @@ We can define the momentum, $\vec p$, of a particle of mass $m$ and velocity $\v
 Since this is a vector equation, it corresponds to three equations, one for each component of the momentum vector, which are defined by the velocity in each of the three dimensions. It should be noted that the numerical value for the momentum of a particle is arbitrary, as it depends in which frame of reference the velocity of the particle is defined. For example, your velocity with respect to the surface of the Earth may be zero, and so your momentum relative to the surface of the Earth is zero. However, relative to the surface of the Sun, your velocity, and momentum, are not zero. As we will see, forces are related to a *changes* in momentum, just as they are related to a change in velocity (acceleration).
 
 Consider a point particle[^5] moving at constant velocity such as a rock sliding across a frozen pond. If we capture an image of the rock at the same time we start a stopwatch ($t_o = 0 {\rm s}$), it might be located at a position 0.5 meters from the shore as shown in [](#fig:momentumandcm:constvelmotiona). We will designate the direction the rock slides as being along the $x$-axis.
-:::{figure} 
-:label: fig:momentumandcm:constvelmotion
+```{figure} ./figures/MomentumAndCM/ConstVelDotsa.png
+:label: fig:momentumandcm:constvelmotiona
 :align: center
+:alt: The initial position is 0.5 m of a rock sliding across a frozen pond.
+The initial position is 0.5 m of a rock sliding across a frozen pond.
+```
 
-(fig:momentumandcm:constvelmotiona)=
-![The initial position is 0.5 m of a rock sliding across a frozen pond.](./figures/MomentumAndCM/ConstVelDotsa.png)
-
-(fig:momentumandcm:constvelmotionb)=
-![The position of a rock sliding across a frozen pond as time progresses.](./figures/MomentumAndCM/ConstVelDotsb.png)
-
-The motion diagram of a rock sliding across a frozen pond. 
-:::
+```{figure} ./figures/MomentumAndCM/ConstVelDotsb.png
+:label: fig:momentumandcm:constvelmotionb
+:align: center
+:alt: The position of a rock sliding across a frozen pond as time progresses.
+The motion diagram of a rock sliding across a frozen pond.
+```
 As time progresses, the rock will be at greater and greater distances from the shore. As shown in [](#fig:momentumandcm:constvelmotionb), the rock slides 0.5 meters every second. Suppose we recorded its $x$-position every second in a table and obtained the values in [](#tab:MomentumAndCM:1dmotion) (we will ignore measurement uncertainties discussed in [Section %s](#sec:ModelAndExperiment:uncertainties) and pretend that the values are exact).
 ```{table} Time and $x$-position of a rock sliding across a frozen pond recorded every second.
 :label: tab:MomentumAndCM:1dmotion
@@ -319,7 +320,7 @@ v(t) &= v_o + a\Delta t\\
 v(t) &= v_o + a t
 \end{align*}
 ```
-With constant acceleration, we can use graphical analysis to determine equations describing velocity and position as a function of time. In [](#fig:MomentumAndCM:graphkinematics)(a), a graph of constant acceleration is shown. Since acceleration is a change in velocity over time, we know that multiplying an acceleration by time gives a change in velocity. See Equation {eq}`eqn:MomentumAndCM:nonConstv`. Notice that this change in velocity is the same as the area of the acceleration vs. time graph. The change in velocity is, of course, added to any pre-existing velocity an object has. This is depicted in [](#fig:MomentumAndCM:graphkinematics)(b) as a blue shaded triangle. Since a change in position comes from velocity and changes in velocity, we can apply the same analysis to the velocity vs. time graph to obtain an expression for position vs. time. For constant motion (no acceleration), the position changes as the red shaded area of [](#fig:MomentumAndCM:graphkinematics)(b), which has an area $\Delta x = v_ot$. This results in Equation {eq}`eqn:MomentumAndCM:1dxvst_noa2` and is shown in [](#fig:MomentumAndCM:graphkinematics)(c) as a red straight line. We would expect a linear form after seeing this for velocity with constant acceleration. To analyze motion with constant acceleration, we must add both the red rectangular and the blue triangular areas in [](#fig:MomentumAndCM:graphkinematics)(b). The rectangular area again has area $v_ot$. The triangular area is $1/2 (v_f-v_o) t=1/2\Delta v t= 1/2at^2$. Putting these together, one obtains the following set of kinematic equations.
+With constant acceleration, we can use graphical analysis to determine equations describing velocity and position as a function of time. In [](#fig:MomentumAndCM:graphkinematics) (a), a graph of constant acceleration is shown. Since acceleration is a change in velocity over time, we know that multiplying an acceleration by time gives a change in velocity. Notice that this change in velocity is the same as the area of the acceleration vs. time graph. The change in velocity is, of course, added to any pre-existing velocity an object has. This is depicted in [](#fig:MomentumAndCM:graphkinematics) (b) as a blue shaded triangle. Since a change in position comes from velocity and changes in velocity, we can apply the same analysis to the velocity vs. time graph to obtain an expression for position vs. time. For constant motion (no acceleration), the position changes as the red shaded area of [](#fig:MomentumAndCM:graphkinematics) (b), which has an area $\Delta x = v_ot$. This is shown in [](#fig:MomentumAndCM:graphkinematics) (c) as a red straight line. We would expect a linear form after seeing this for velocity with constant acceleration. To analyze motion with constant acceleration, we must add both the red rectangular and the blue triangular areas in [](#fig:MomentumAndCM:graphkinematics) (b). The rectangular area again has area $v_ot$. The triangular area is $1/2 (v_f-v_o) t=1/2\Delta v t= 1/2at^2$. Putting these together, one obtains the following set of kinematic equations.
 
 ```{math}
 
@@ -354,7 +355,7 @@ A more realistic rock sliding on a frozen pond more is when the rock decelerates
 * c) Create graphs of position vs. time and velocity vs. time similar to [](#fig:MomentumAndCM:1dxvst).
 ::: {note} Solution 4.3
 :class: dropdown
-* a) We can use the kinematic equation for velocity as a function of time {eq}`eqn:MomentumAndCM:nonConstv`. This is one dimensional, and we only need to solve for the $x$-direction. We'll, therefore, ignore the vectors. 
+* a) We can use the kinematic equation for velocity as a function of time. This is one dimensional, and we only need to solve for the $x$-direction. We'll, therefore, ignore the vectors. 
 ```{math}
 
 \begin{align*}
@@ -765,7 +766,7 @@ and we see that $E'<E$, and thus that the total mechanical energy of the system 
 
 We also found that mechanical energy was not conserved. This makes physical sense because, for the car to remain attached to the train, there presumably had to be some significant forces in play that "crushed" the car into the train. Some of the initial kinetic energy of the train was used to deform the train and the car during the collision. We can also think of deforming a material as giving it energy. Sometimes that energy is recoverable (e.g. compressing a spring), sometimes, it is not (e.g. crushing a car).
 
-If the car and train were equipped with large springs to absorb the energy of the impact, the collision could have conserved mechanical energy, as the springs compress and then expand back. The speed of the car and train would then be different after the collision in this case (see [Example 4.7](#ex:momentumandcm:1delastic)). It is a feature of collisions where the two bodies remain attached to each other that mechanical energy is not conserved.
+If the car and train were equipped with large springs to absorb the energy of the impact, the collision could have conserved mechanical energy, as the springs compress and then expand back. The speed of the car and train would then be different after the collision in this case (see Example 4.7). It is a feature of collisions where the two bodies remain attached to each other that mechanical energy is not conserved.
 :::
 
 # Collisions
@@ -942,7 +943,7 @@ M(v_M^2-v'^2_M)&= M(v'^2_m-v^2_m)\\
 M(v_M-v'_M)(v_M+v'_M)&= M(v'_m-v_m)(v'_m+v_m)
 \end{align*}
 ```
-We can then divide Equation {eq}`eqn:momentumandcm:exptemp2` by Equation {eq}`eqn:momentumandcm:exptemp`:
+We can then divide the above two equations:
 ```{math}
 
 \begin{align*}
@@ -1251,7 +1252,7 @@ to describe the system as a whole. However, it is not (yet) clear what is accele
 ```{math}
 \vec a_{CM} = \frac{d^2 }{dt^2}\vec r_{CM}
 ```
-We can compare Equations {eq}`eqn:momentumandcm:cmtemp1` and {eq}`eqn:momentumandcm:cmtemp2` to determine what the position vector $\vec r_{CM}$ corresponds to:
+We can compare the above two equations to determine what the position vector $\vec r_{CM}$ corresponds to:
 ```{math}
 
 \begin{align*}
@@ -1568,7 +1569,7 @@ Instead of using $x$ and $y$, we could think of an axis that is bent around the 
 Another variable that could be used for position instead of $s$ is the angle, $\theta$, between the position vector of the object and the $x$ axis, as illustrated in [](#fig:MomentumAndCM:circle). If we express the angle $\theta$ in radians, then it is easy to convert between $s$ and $\theta$. Recall, an angle in radians is defined as the length of an arc subtended by that angle divided by the radius of the circle. We thus have:
 ```{math}
 :label: eqn:MomentumAndCM:raddef
-\boxed{\theta(t)=\frac{s(t)}{R}}
+\theta(t)=\frac{s(t)}{R}
 ```
 In particular, if the object has gone around the whole circle, then $s=2\pi R$ (the circumference of a circle), and the corresponding angle is, $\theta=\frac{2\pi R}{R}=2\pi$, namely $360^{\circ}$. 
 
@@ -1639,7 +1640,7 @@ The position and velocity vectors are illustrated in [](#fig:MomentumAndCM:vcirc
 :alt: The position vector, $\vec r(t)$ is always perpendicular to the velocity vector, $\vec v(t)$, for motion on a circle.
 The position vector, $\vec r(t)$ is always perpendicular to the velocity vector, $\vec v(t)$, for motion on a circle.
 ```
-In this case, you can note that the $x$ component of the velocity is negative (from the diagram and from equation {eq}`eqn:MomentumAndCM:vcircle`). From equation {eq}`eqn:MomentumAndCM:vcircle`, you can also see that $\frac{|v_x|}{|v_y|}=\tan(\theta)$, which is illustrated in [](#fig:describingmotioninnd:vcircle, showing that **the velocity vector is tangent to the circle** and perpendicular to the position vector. This is always the case for motion along a circle.
+In this case, you can note that the $x$ component of the velocity is negative (from the diagram and from the velocity equations above). You can also see that $\frac{|v_x|}{|v_y|}=\tan(\theta)$, which is illustrated in [](#fig:MomentumAndCM:vcircle), showing that **the velocity vector is tangent to the circle** and perpendicular to the position vector. This is always the case for motion along a circle.
 
 We can simplify our description of motion along the circle by using either $s(t)$ or $\theta(t)$ instead of the vectors for position and velocity. If we use $s(t)$ to represent position along the circumference ($s=0$ where the circle intersects the $x$ axis), then the velocity along the $s$ axis is:
 ```{math}
@@ -1666,11 +1667,11 @@ or, in terms of $\theta$:
 \end{align*}
 ```
 ```{math}
-\boxed{\omega = \frac{d\theta}{dt}}
+\omega = \frac{d\theta}{dt}
 ```
 where we introduced $\theta_0$ as the angle corresponding to the position $s_0$, and we introduced $\omega=\frac{d\theta}{dt}$, which is analogous to velocity, but for an angle. $\omega$ is called the **angular velocity** and is a measure of the rate of change of the angle $\theta$ (as it is the time derivative of the angle). The relation between the "linear" velocity $v_s$ (the magnitude of the velocity vector, which corresponds to the velocity in the direction tangent to the circle) and $\omega$ is:
 ```{math}
-\boxed{v_s=R\frac{d\theta}{dt}=R\omega }
+v_s=R\frac{d\theta}{dt}=R\omega
 ```
 
 Similarly, if the object is accelerating, we can define an **angular acceleration**, $\alpha(t)$, as the rate of change of the angular velocity:
@@ -1686,7 +1687,7 @@ a_s(t) &= \frac{d}{dt}v_s\\
 \end{align*}
 ```
 ```{math}
-\boxed{a_s(t)=R\alpha }
+a_s(t)=R\alpha
 ```
 Thus, the linear quantities (those along the $s$ axis) can be related to the angular quantities by multiplying the angular quantities by $R$:
 ```{math}
@@ -1735,7 +1736,7 @@ As we saw earlier, the perpendicular component of the acceleration, $\vec a_{\bo
 \end{align*}
 ```
 ```{math}
-\boxed{\vec{a}_{\bot}(t)=\omega^2 R[-\cos(\theta)\hat{x}-\sin(\theta)\hat{y}]}
+\vec{a}_{\bot}(t)=\omega^2 R[-\cos(\theta)\hat{x}-\sin(\theta)\hat{y}]
 ```
 where you can easily verify that the vector $[-\cos(\theta)\hat x-\sin(\theta)\hat y]$ has unit length and points towards the centre of the circle (when the tail is placed on a point on the circle at angle $\theta$). The centripetal acceleration thus points towards the centre of the circle and has magnitude:
 ```{math}
@@ -1780,7 +1781,7 @@ The period, $T$, is defined to be the time that it takes to complete one revolut
 \end{align*}
 ```
 ```{math}
-\boxed{T=\frac{2\pi}{\omega}}
+T=\frac{2\pi}{\omega}
 ```
 We would obtain the same result using the linear quantities; in one revolution, the object covers a distance of $2\pi R$ at a speed of $v$:
 ```{math}

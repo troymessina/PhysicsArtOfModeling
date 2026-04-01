@@ -118,7 +118,7 @@ Through careful studies of the force between two charged spheres, Coulomb observ
 
 This leads to Coulomb's Law for the electric force (or simply "Coulomb's Law"), $\vec F_{12}$, exerted on a point charge $Q_1$ by another point charge $Q_2$:
 ```{math}
-\boxed{\vec{F}_{12}=k\frac{Q_1Q_2}{r^2}\hat{r}_{21}}
+\vec{F}_{12}=k\frac{Q_1Q_2}{r^2}\hat{r}_{21}
 ```
 where $\hat r_{21}$ is the unit vector from $Q_2$ to $Q_1$ and $r$ is the distance between the two charges, as illustrated in [](#fig:chargesfields:coulombforce). Coulomb's constant, $k=8.99\times 10^9 {\rm N\cdot m^2/C^{2}}$, is simply a proportionality constant to ensure that the quantity on the right will have units of Newtons when all other quantities are in S.I. units. In some instances, it is more convenient to use the "permittivity of free space", $\epsilon_0$, rather than Coulomb's constant, in which case Coulomb's Law has the form:
 ```{math}
@@ -253,7 +253,7 @@ which, of course, is the result from Newton's Theory of Gravity. As you recall, 
 
 We proceed in an analogous way to define the "electric field", $\vec E(\vec r)$, as the *electric force per unit charge*. If we have a point charge, $Q$, located at the origin of a coordinate system, then the electric field from that point charge, $\vec E(\vec r)$, at some position, $\vec r$, relative to the origin is given by:
 ```{math}
-\boxed{\vec E(\vec r) = k\frac{Q}{r^2}\hat r}
+\vec E(\vec r) = k\frac{Q}{r^2}\hat r
 ```
 If we place a "test charge", $q$, at position $\vec r$ in space, it will experience a force given by:
 ```{math}
@@ -269,7 +269,7 @@ A negative charge is placed at the origin of a coordinate system. At some point 
 :class: dropdown
 1.
 :::
-In [Example 15.2](#ex:chargesfields:chargetriangle), we determined the electric force on charge $q$, exerted by two other charges $Q_1$ and $Q_2$. If we now changed the value of $q$ and wanted to determine the force, we can use the electric field to simplify the process considerably. That is, we can determine the value of the electric field, $\vec E$, from $Q_1$ and $Q_2$ at the position of $q$, and then simply multiply that field vector by a charge $q$ to obtain the force on that charge, without having to add force vectors.
+In Example 15.2, we determined the electric force on charge $q$, exerted by two other charges $Q_1$ and $Q_2$. If we now changed the value of $q$ and wanted to determine the force, we can use the electric field to simplify the process considerably. That is, we can determine the value of the electric field, $\vec E$, from $Q_1$ and $Q_2$ at the position of $q$, and then simply multiply that field vector by a charge $q$ to obtain the force on that charge, without having to add force vectors.
 (ex:chargesfields:epointcharges)=
 :::{note} Example 15.3
 Two charges, $Q_1=1 {\rm nC}$, and $Q_2=-2 {\rm nC}$ are held fixed at two corners of an equilateral triangle with sides of length $a=1 {\rm cm}$, with a coordinate system as shown in [](#fig:chargesfields:chargetriangle). What is the electric field vector at the third corner of the triangle? 
@@ -323,7 +323,7 @@ Finally, we can add the two force vectors together to obtain the net force on $q
 &=(13.5\times 10^{4} {\rm N/C})\hat x-(8.2\times 10^{4} {\rm N/C})\hat y
 \end{align*}
 ```
-which has a magnitude of $15.8\times 10^{4} {\rm N/C}$. By knowing the electric field at the empty corner of the triangle, we can now calculate the net electric force that would act on any charge placed in that location. For example, if we place a charge $q=-1 {\rm nC}$ (as in [](#ex:chargesfields:chargetriangle)), we can easily find the corresponding electric force:
+which has a magnitude of $15.8\times 10^{4} {\rm N/C}$. By knowing the electric field at the empty corner of the triangle, we can now calculate the net electric force that would act on any charge placed in that location. For example, if we place a charge $q=-1 {\rm nC}$ (as in the example), we can easily find the corresponding electric force:
 ```{math}
 
 \begin{align*}
@@ -683,7 +683,7 @@ Calculate the electric field a distance, $a$, above a infinite plane that carrie
 In this case, we need to determine the field above an object that is two dimensional (a plane). In the previous examples (a ring, a line of charge), we modelled a one dimensional object (e.g. the line), as being made of many point charges (0-dimensional objects). We treated those point charges has having an infinitesimal length along the object so that we could sum them together to obtain the object (e.g. $dy$ was the length of the charge for the rod/line of charge).
 :::{note} Solution
 :class: dropdown
-In order to model the two-dimensional object (the plane), we model it has being the sum of many one dimensional objects. We can model a plane either as a rectangle of width, $W$, and length, $L$, as shown in the left panel of [](#fig:chargesfields:planecharge) or as a disk of radius, $R$, as shown in the right panel. To model an infinite plane, we can then take the limit of either $L$ and $W$ going to infinity (rectangle), or of $R$ going to infinity (disk). We can model the rectangle as being the sum of many lines of **finite** length, $L$, and infinitesimal width, $dx$. Similarly, we can model the disk as the sum of infinitesimally thin rings of **finite** radius, $r$, and thickness, $dr$. In both cases, we know how to model the field from a line of charge ([Example 15.5](#ex:chargesfields:finiteline)) or from a ring ([Example 15.4](#ex:chargesfields:ring)). 
+In order to model the two-dimensional object (the plane), we model it has being the sum of many one dimensional objects. We can model a plane either as a rectangle of width, $W$, and length, $L$, as shown in the left panel of [](#fig:chargesfields:planecharge) or as a disk of radius, $R$, as shown in the right panel. To model an infinite plane, we can then take the limit of either $L$ and $W$ going to infinity (rectangle), or of $R$ going to infinity (disk). We can model the rectangle as being the sum of many lines of **finite** length, $L$, and infinitesimal width, $dx$. Similarly, we can model the disk as the sum of infinitesimally thin rings of **finite** radius, $r$, and thickness, $dr$. In both cases, we know how to model the field from a line of charge (Example 15.5) or from a ring (Example 15.4). 
 ```{figure} figures/ChargesFields/planecharge.png
 :label: fig:chargesfields:planecharge
 :width: 70%
@@ -699,7 +699,7 @@ We proceed by modelling the plane as a disk made up of infinitesimal rings. Our 
 :alt: Modelling the field from a disk as the sum of fields from concentric thin rings.
 Modelling the field from a disk as the sum of fields from concentric thin rings.
 ```
-We know from [](#ex:chargesfields:ring) that the magnitude of the electric field a distance $a$ from the centre of the ring, along its axis of symmetry (the $z$ axis in [](#fig:chargesfields:disk)), is given by:
+We know from the example that the magnitude of the electric field a distance $a$ from the centre of the ring, along its axis of symmetry (the $z$ axis in [](#fig:chargesfields:disk)), is given by:
 ```{math}
 dE = kdq\frac{a}{(r^2+a^2)^\frac{3}{2}} 
 ```
@@ -745,7 +745,7 @@ For example, referring to [](#fig:chargesfields:rodexample), if I wanted to dete
 Calculating the electric field produced by a rod at different positions.
 ```
 	
-In order to determine the bounds of the integral, think of the range in position variable that is required in order to cover the entire object. I recommend paying close attention to [Example 15.4](#ex:chargesfields:ring), [Example 15.5](#ex:chargesfields:finiteline), and [Example 15.6](#ex:chargesfields:squarecircle), and attempting questions which require integration on the Question Library.
+In order to determine the bounds of the integral, think of the range in position variable that is required in order to cover the entire object. I recommend paying close attention to Example 15.4, Example 15.5, and Example 15.6, and attempting questions which require integration on the Question Library.
 :::
 
 (sec:chargesfields:electricdipole)=
@@ -791,7 +791,7 @@ Although the net force on the dipole is zero, there is still a net torque about 
 ```
 In [](#fig:chargesfields:dipoleinfield), the torque vector is into the page (the forces will make it rotate clockwise), which is the same direction as the cross product, $\vec p \times \vec E$. Note that the magnitude of the torque is also equal to the magnitude of the cross product. Thus, in general, the torque vector on a dipole, $\vec p$, from an electric field, $\vec E$, is given by:
 ```{math}
-\boxed{\vec \tau =\vec p \times \vec E}
+\vec \tau =\vec p \times \vec E
 ```
 In particular, note that the torque is zero when the dipole and electric field vectors are parallel. Thus, a dipole will always experience a torque that tends to align it with the electric field vector. The dipole is thus in a stable equilibrium when it is parallel to the electric field.
 :::{tip} Checkpoint:label: cp:chargesfields:efield
@@ -814,7 +814,7 @@ W&=\int_{\theta_1}^{\theta_2} \tau d\theta=\int_{\theta_1}^{\theta_2} -pE\sin\th
 ```
 where the negative sign in the torque is to indicate that the torque is in the opposite direction from increasing $\theta$ (in [](#fig:chargesfields:dipoleinfield), the torque is clockwise whereas the angle $\theta$ increases counter-clockwise). The net work done in going from position $\theta_1$ to $\theta_2$ is the negative of the change in potential energy in going from $\theta_1$ to $\theta_2$. Thus, we define the potential energy of an electric dipole, $\vec p$, in an electric field, $\vec E$, as:
 ```{math}
-\boxed{U=-pE\cos\theta=-\vec p\cdot \vec E}
+U=-pE\cos\theta=-\vec p\cdot \vec E
 ```
 which has a negative sign, and we also recognize that this is equivalent to the scalar product between $\vec p$ and $\vec E$. Note that the negative sign makes sense because systems experience a force/torque that will decrease their potential energy. When the angle is zero, $\cos\theta=1$, is maximal. Since we need the position with $\theta=0$ to have the lowest potential energy, the minus sign guarantees that all values of $\theta$ other than zero will give a potential energy that is higher (greater than) $(-1) pE$. Remember that only changes in potential energy are relevant, so the minus sign should not bother you, although you should think about whether it makes sense.
 
@@ -950,7 +950,7 @@ Suppose that an electric dipole, with electric dipole moment, $\vec p$, is place
 :::{note} Solution 15.1
 :label: soln:template:trianglecharge
 :class: dropdown
-We can model the object as the sum of three finite length wires of the length, $L$. In [Example 15.5](#ex:chargesfields:finiteline), we determined that the electric field produced at a distance, $R$, by a finite wire that subtends an angle $2\theta_0$ is given by:
+We can model the object as the sum of three finite length wires of the length, $L$. In Example 15.5, we determined that the electric field produced at a distance, $R$, by a finite wire that subtends an angle $2\theta_0$ is given by:
 ```{math}
 E = \frac{2k\lambda}{R}\sin\theta_0
 ```

@@ -33,7 +33,7 @@ In the previous chapter, we described how an electric current produces a magneti
 
 Faraday's law connects the flux of a **time-varying** magnetic field to an induced voltage (rather than a current). For historical reasons, the induced voltage is also called an induced "electromotive force" (emf), even if it is a voltage and not a force. Faraday's law is as follows:
 ```{math}
-\boxed{\Delta V = -\frac{d\Phi_B}{dt}}
+\Delta V = -\frac{d\Phi_B}{dt}
 ```
 where $\Delta V$ is the induced voltage, and  $\Phi_B$ is the flux of the magnetic field through an open surface, defined in the same way as the flux of the electric field ([Section %s](#sec:gauss:flux)):
 ```{math}
@@ -162,7 +162,7 @@ Here are some steps you can follow to find the direction of the current using Le
 5.  Decide which direction for the induced current will give you the desired field. We want the induced field to point opposite to the flux arrow. 
   
 
-This is how you would apply this method to [Example 22.1](#ex:induction:changingB) (note that I am using the example of a loop instead of a coil but the idea is the same):
+This is how you would apply this method to Example 22.1 (note that I am using the example of a loop instead of a coil but the idea is the same):
 1.  We draw the diagram, as in [](#fig:induction:lenzs_example)a.  
 2.  To show that the flux is increasing, I have drawn a "flux arrow" (again, made up) in the direction of the field lines (the $+z$ direction).
 3.  If the current is clockwise, the induced field points in the $-z$ direction inside the loop ([](#fig:induction:lenzs_example)b).
@@ -181,7 +181,7 @@ This is how you would apply this method to [Example 22.1](#ex:induction:changing
 
 # Induction in a moving conductor
 If we define a loop of wire, there are two ways in which the magnetic flux through that loop can change:
-1.  The magnetic field can change magnitude or direction, as we saw in [Example 22.1](#ex:induction:changingB).
+1.  The magnetic field can change magnitude or direction, as we saw in Example 22.1.
 2.  The loop can change size or orientation relative to the magnetic field.
 
 In this section, we examine the latter case, sometimes called "motional emf", as the induced voltage is the result of motion from the loop in which the voltage is induced. 
@@ -379,7 +379,7 @@ We can include this into Faraday's law by using the electric field instead of th
 \Delta V =-\frac{d\Phi_B}{dt}\\
 ```
 ```{math}
-\therefore \;\;\boxed{\oint \vec E\cdot d\vec l = -\frac{d\Phi_B}{dt}}
+\therefore \;\;\oint \vec E\cdot d\vec l = -\frac{d\Phi_B}{dt}
 ```
 where the last line is a more general form of Faraday's law. Note that in the case of electrostatics, where the electric field is produced by a distribution of charges, the integral $\oint \vec E\cdot d\vec l$ must be zero, since the electric force is conservative; the work done by the electric field on a charge $q$ over a closed path, which is just a charge $q$ multiplied by that integral, must be zero. The force from an electric field that is induced by a time-varying magnetic field is not conservative!
 

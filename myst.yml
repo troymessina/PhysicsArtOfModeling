@@ -78,7 +78,7 @@ project:
         - ./chapters/24Calculus.md
         - ./chapters/25VisualPython.md
         - ./chapters/26Labs.md
-      output: ./exports/ModelingWithPhysics.pdf
+      output: public/ModelingWithPhysics.pdf
   downloads:
     - id: ModelingWithPhysics-export
       title: Download PDF
@@ -96,8 +96,9 @@ site:
         utterances: true
   nav: []
   actions:
-    - title: Download PDF
-      url: /exports/ModelingWithPhysics.pdf
+    - title: PDF
+      url: public/ModelingWithPhysics.pdf
+      icon: download
   domains: []
 #html:
   
