@@ -468,7 +468,7 @@ r1 = vec(1, 2, 3)
 arw1 = arrow(pos=vec(0,0,0), axis=r1, color=color.white)
 ```
 Copy this code at the bottom of the trinket below to see how it draws the arrow.
-:::{iframe} https://trinket.io/embed/glowscript/ad8349ada0?toggleCode=true
+:::{iframe} https://www.glowscript.org/#/user/troymessina/folder/IntroTextbook/program/vectors
 :label: chapter:vectors:vectortrinket
 :width: 100%
 :align: center
