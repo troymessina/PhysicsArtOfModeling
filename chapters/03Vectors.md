@@ -468,7 +468,7 @@ r1 = vec(1, 2, 3)
 arw1 = arrow(pos=vec(0,0,0), axis=r1, color=color.white)
 ```
 Copy this code at the bottom of the trinket below to see how it draws the arrow.
-:::{iframe}  https://troymessina.github.io/pyro/?example=vectors&header=true&sidebar=truee&tab=output&view=split&run=true
+:::{iframe}  https://troymessina.github.io/pyro/?example=vectors&header=true&sidebar=true&tab=output&view=split&run=true
 :label: chapter:vectors:vectortrinket
 :width: 100%
 :align: center
