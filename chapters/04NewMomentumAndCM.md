@@ -187,15 +187,16 @@ Plot of position as a function of time for an object moving at varying velocitie
 Before proceeding, you may wish to review:
 * [Appendix %s](#app:visualpython) for an introduction to programming with Visual Python.
 :::
-Under constant velocity motion we can describe a future position of an object using the current position, the velocity, and an increment of time to progress into the future. With equation {eq}`eqn:MomentumAndCM:1dxvst_noa`, we can model this motion on computer. We will use the Python language in this textbook, and in particular, we will use Visual Python so that we can apply physics to objects that visualize physical motion in 3D. To get started, we first need to define an object that will move through space. We will make a sphere call it ```rock```. The ```rock``` object can beplaced at a position using a vector ```pos=vec(x,y,z)```.
+Under constant velocity motion we can describe a future position of an object using the current position, the velocity, and an increment of time to progress into the future. With equation {eq}`eqn:MomentumAndCM:1dxvst_noa`, we can model this motion on computer. We will use the Python language in this textbook, and in particular, we will use Visual Python so that we can apply physics to objects that visualize physical motion in 3D. To get started, we first need to define an object that will move through space and the pond surface. We will make a sphere call it ```rock```. The ```rock``` object can beplaced at a position using a vector ```pos=vec(x,y,z)```. Similarly, we make the ```surface``` using a box object.
 ```python
 rock = sphere(pos=vec(0,0,0), color=color.green, radius=0.1)
+surface = box(pos=vec(0,-0.1,0), length=3, width=0.5, height=0.01, color=color.blue)
 ```
 We can define the velocity to be a vector along the x-direction also using the built-in vector function ```velocity=vec(vx, vy, vz)```. To set the velocity to the appropriate vector, it would be coded
 ``` python
 velocity = vec(0.5, 0, 0)
 ```
-Alternatively, it is possible to make the velocity one of the attributes of the rock object. We should be careful to only use this method when the attribute is a property of the object, e.g.,
+It is better practice to make the velocity one of the attributes of the rock object. We should be careful to only use this method when the attribute is a property of the object, e.g.,
 ``` python
 rock.vel = vec(0.5, 0, 0)
 ```
@@ -212,7 +213,90 @@ Try, putting these three lines of code in the code below and see what happens wh
 A blank Visual Python program to simulate a rock sliding on a frozen pond.
 :::
 
-<html><iframe src="../trinket/blank.html"></iframe></html>
+```{code-cell} javascript
+;(function() {;
+var ρσ_modules = {};
+ρσ_modules.pythonize = {};
+
+(function(){
+    function strings() {
+        var string_funcs, exclude, name;
+        string_funcs = set("capitalize strip lstrip rstrip islower isupper isspace lower upper swapcase center count endswith startswith find rfind index rindex format join ljust rjust partition rpartition replace split rsplit splitlines zfill".split(" "));
+        if (!arguments.length) {
+            exclude = (function(){
+                var s = ρσ_set();
+                s.jsset.add("split");
+                s.jsset.add("replace");
+                return s;
+            })();
+        } else if (arguments[0]) {
+            exclude = Array.prototype.slice.call(arguments);
+        } else {
+            exclude = null;
+        }
+        if (exclude) {
+            string_funcs = string_funcs.difference(set(exclude));
+        }
+        var ρσ_Iter0 = string_funcs;
+        ρσ_Iter0 = ((typeof ρσ_Iter0[Symbol.iterator] === "function") ? (ρσ_Iter0 instanceof Map ? ρσ_Iter0.keys() : ρσ_Iter0) : Object.keys(ρσ_Iter0));
+        for (var ρσ_Index0 of ρσ_Iter0) {
+            name = ρσ_Index0;
+            (ρσ_expr_temp = String.prototype)[(typeof name === "number" && name < 0) ? ρσ_expr_temp.length + name : name] = (ρσ_expr_temp = ρσ_str.prototype)[(typeof name === "number" && name < 0) ? ρσ_expr_temp.length + name : name];
+        }
+    };
+    if (!strings.__module__) Object.defineProperties(strings, {
+        __module__ : {value: "pythonize"}
+    });
+
+    ρσ_modules.pythonize.strings = strings;
+})();
+async function __main__() {
+"use strict";
+    var display = canvas;
+    var scene = canvas();
+
+    var version, print, arange, __name__, type, ρσ_ls, rock, surface, arr, t, delta_t;
+    version = ρσ_list_decorate([ "3.2", "glowscript" ]);
+    Array.prototype['+'] = function(r) {return this.concat(r)}
+    Array.prototype['*'] = function(r) {return __array_times_number(this, r)}
+    window.__GSlang = "vpython";
+    print = GSprint;
+    arange = range;
+    __name__ = "__main__";
+    type = pytype;
+    var strings = ρσ_modules.pythonize.strings;
+
+    strings();
+    "3";
+    rock = ρσ_interpolate_kwargs.call(this, sphere, [ρσ_desugar_kwargs({pos: vec(0, 0, 0), color: color.green, radius: .1})]);
+    "4";
+    surface = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vec(0, 1["-u"]()["*"](.1), 0), length: 3, width: .5, height: .01, color: color.blue})]);
+    "5";
+    rock.vel = vec(.5, 0, 0);
+    "6";
+    arr = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: rock.pos, axis: rock.vel, color: color.white})]);
+    "7";
+    t = 0;
+    "8";
+    delta_t = .1;
+    "9";
+    while (t["<"](2)) {
+        "10";
+        (await rate(10));
+        "11";
+        rock.pos = rock.pos["+"](rock.vel["*"](delta_t));
+        "12";
+        arr.pos = rock.pos;
+        "13";
+        t = t["+"](delta_t);
+    }
+};
+if (!__main__.__module__) Object.defineProperties(__main__, {
+    __module__ : {value: null}
+});
+
+;$(function(){ window.__context = { glowscript_container: $("#glowscript").removeAttr("id") }; __main__() })})()
+```
 
 This code draws the rock and the velocity vector, but it does not simulate the motion. To simulate the motion, we need to update the position of the rock as time progresses. We can use a loop to repeat calculations of the position. For example, we can repeat the calculations `while` the time is less than 2 seconds. Each time the position is calculated, we will add a small increment of time for the next calculation. Here is an example where we start at time $t=0$ and increment the position every $\Delta t = 0.1 {\rm s}$.
 ```python
