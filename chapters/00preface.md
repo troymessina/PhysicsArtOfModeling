@@ -1,6 +1,6 @@
 # Introductory Physics: Modeling with Physics
 
-:::{iframe} https://troymessina.github.io/pyro/?example=solar-system&view=output&run=True
+:::{iframe} https://troymessina.github.io/pyro/?example=solar-system&header=false&sidebar=false&tab=output&view=output&run=true
 :label: Cover
 :width: 100%
 :align: center
