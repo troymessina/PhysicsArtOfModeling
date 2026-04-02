@@ -204,7 +204,7 @@ We can visualize the velocity with a vector arrow that remains attached to the r
 arr = arrow(pos=rock.pos, axis=rock.vel, color=color.white)
 ```
 Try, putting these three lines of code in the code below and see what happens when you run the program.
-:::{iframe} https://www.glowscript.org/#/user/troymessina/folder/IntroTextbook/program/blank
+:::{iframe} ../trinket/blank.html
 :label: chapter:momentumandcm:blanktrinket
 :width: 90%
 :align: center
