@@ -204,13 +204,15 @@ We can visualize the velocity with a vector arrow that remains attached to the r
 arr = arrow(pos=rock.pos, axis=rock.vel, color=color.white)
 ```
 Try, putting these three lines of code in the code below and see what happens when you run the program.
-:::{iframe} ../trinket/blank.html
+:::{iframe} https://www.glowscript.org/#/user/troymessina/folder/IntroTextbook/program/blank
 :label: chapter:momentumandcm:blanktrinket
 :width: 90%
 :align: center
 :placeholder: ../chapters/figures/MomentumAndCM/BlankTrinket.jpg
 A blank Visual Python program to simulate a rock sliding on a frozen pond.
 :::
+
+<html><iframe src="../trinket/blank.html"></iframe></html>
 
 This code draws the rock and the velocity vector, but it does not simulate the motion. To simulate the motion, we need to update the position of the rock as time progresses. We can use a loop to repeat calculations of the position. For example, we can repeat the calculations `while` the time is less than 2 seconds. Each time the position is calculated, we will add a small increment of time for the next calculation. Here is an example where we start at time $t=0$ and increment the position every $\Delta t = 0.1 {\rm s}$.
 ```python
