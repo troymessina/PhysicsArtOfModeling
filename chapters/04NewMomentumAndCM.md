@@ -205,6 +205,7 @@ arr = arrow(pos=rock.pos, axis=rock.vel, color=color.white)
 ```
 Try, putting these three lines of code in the code below and see what happens when you run the program.
 :::{iframe} https://troymessina.github.io/pyro/?example=blank&header=true&sidebar=true&view=code
+:title: VPython Interactive
 :label: chapter:momentumandcm:blanktrinket
 :width: 90%
 :align: center
