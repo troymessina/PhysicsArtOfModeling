@@ -214,6 +214,7 @@ A blank Visual Python program to simulate a rock sliding on a frozen pond.
 :::
 
 ```{code-cell} javascript
+:tags: [remove-input]
 ;(function() {;
 var ρσ_modules = {};
 ρσ_modules.pythonize = {};
