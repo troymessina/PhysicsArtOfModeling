@@ -962,11 +962,12 @@ while x < 0.1:
 ```
 Run this code to see that it works to produce the values in the table above. If you want to create more intervals, you only need to decrease the value of $\Delta x$ or dx in your code. Try changing this value to dx=0.005 (20 intervals). Then, try `dx = 0.001`. Does this make the summation closer to the exact value of $W=\frac{1}{2}kx^2=0.05~\text{J}$? How small does `dx` need to be to be within 1% of the exact value?
 
-:::{iframe} https://trinket.io/embed/glowscript/8f1815879d
+:::{iframe} https://troymessina.github.io/pyro/?example=blank&header=true&sidebar=true&view=code
 :label: chapter:workenergy:blanktrinket
 :width: 100%
 :align: center
-An empty trinket.
+:placeholder: ../chapters/figures/MomentumAndCM/BlankTrinket.jpg
+An empty trinket for doing numerical calculation of work.
 :::
 
 For fun, we can graph and simulate the scenario of stretching a spring. To create a graph add the following two lines after the Web VPython 3.2 line. This will create a graph and `f1` is the data that is displayed on the graph.
