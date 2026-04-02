@@ -197,7 +197,6 @@ We can define the velocity to be a vector along the x-direction also using the b
 velocity = vec(0.5, 0, 0)
 ```
 It is better practice to make the velocity one of the attributes of the rock object. We should be careful to only use this method when the attribute is a property of the object, e.g.,
-``` python
 rock.vel = vec(0.5, 0, 0)
 ```
 We can visualize the velocity with a vector arrow that remains attached to the rock's position and has a length that is the magnitude of the velocity. To do this we write the following code.
@@ -205,7 +204,7 @@ We can visualize the velocity with a vector arrow that remains attached to the r
 arr = arrow(pos=rock.pos, axis=rock.vel, color=color.white)
 ```
 Try, putting these three lines of code in the code below and see what happens when you run the program.
-:::{iframe} https://www.glowscript.org/#/user/troymessina/folder/IntroTextbook/program/blank
+:::{iframe} https://troymessina.github.io/pyro/?example=blank&header=true&sidebar=true&view=code
 :label: chapter:momentumandcm:blanktrinket
 :width: 90%
 :align: center
