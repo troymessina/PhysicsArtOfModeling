@@ -25,7 +25,7 @@ The distinction should become clear as you work through this appendix. We hope t
 # The Pyro platform
 
 [Pyro](https://troymessina.github.io/pyro/) is web-based VPython programming platform. VPython, which is a language built on Python, allows Python programming to manipulate simulated objects in three-dimensional space. The code in [](#app:visualpython:earthmoonorbit) is a Visual Python program that simulates a moon-like mass orbiting an Earth-like mass. Click the play button to see the simulation.
-:::{iframe} https://troymessina.github.io/pyro/?example=earth-moon
+:::{iframe} https://troymessina.github.io/pyro/?example=earth-moon&view=split
 :label: app:visualpython:earthmoonorbit
 :width: 100%
 :align: center
@@ -41,7 +41,7 @@ A few notes about the embedded VPython code in this book using pyro:
 
 ## What is a trinket?
 We may refer to VPython programs as trinkets. A trinket is simply that, a Visual Python program. When starting a new program, a trinket will look like [](#app:visualpython:blanktrinket). The ```Web Vpython``` line indicates the language. This line should always be in a trinket that uses the Visual Python language. The version number may change as updates are made to the Visual Python language.
-:::{iframe} https://troymessina.github.io/pyro/?example=blank
+:::{iframe} https://troymessina.github.io/pyro/?example=blank&view=split
 :label: app:visualpython:blanktrinket
 :width: 100%
 :align: center
@@ -139,7 +139,7 @@ Notice in the code, we define the radius and length, ```R``` and ```L```. This m
 :label: ex:visualpython:cylinderclock
 :width: 100%
 :align: center
-Spheres on the corners of a 1x1x1 cube.
+Twelve cylinders positioned radially.
 :::
 
 ### ```for``` loops
