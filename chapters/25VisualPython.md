@@ -10,7 +10,7 @@ numbering:
 This appendix gives a very brief introduction to calculus with a focus on the tools needed in physics. 
  
 :::{hint} Learning Objectives
-* Understand the trinket.io platform
+* Understand the pyro platform
 * Understand how to create and position objects in Visual Python (VPython).
 * Understand how to create motion with objects in Visual Python (VPython).
 :::
@@ -20,33 +20,28 @@ When referring to general ideas or something very brief, VPython code may be wri
 ```python
 print("This code is meant to be implemented into a trinket.")
 ```
-The distinction should become clear as you work through this appendix. We hope to provide in this textbook all of the instruction necessary to create physics simulations using Visual Python in the trinket platform. In the event that more information is desired, a good reference is the ![VPython Documentation](https://www.glowscript.org/docs/VPythonDocs/index.html).
+The distinction should become clear as you work through this appendix. We hope to provide in this textbook all of the instruction necessary to create physics simulations using Visual Python in the trinket platform. In the event that more information is desired, a good reference is the [VPython Documentation](https://www.glowscript.org/docs/VPythonDocs/index.html).
 
 # The Pyro platform
 
-![Pyro](https://troymessina.github.io/pyro/) is web-based VPython programming platform. VPython, which is a language built on Python, allows Python programming to manipulate simulated objects in three-dimensional space. The code in [](#app:visualpython:earthmoonorbit) is a Visual Python program that simulates a moon-like mass orbiting an Earth-like mass. Click the play button to see the simulation.
-:::{iframe} https://trinket.io/embed/glowscript/7a039bd28b?example=earth-moon
+[Pyro](https://troymessina.github.io/pyro/) is web-based VPython programming platform. VPython, which is a language built on Python, allows Python programming to manipulate simulated objects in three-dimensional space. The code in [](#app:visualpython:earthmoonorbit) is a Visual Python program that simulates a moon-like mass orbiting an Earth-like mass. Click the play button to see the simulation.
+:::{iframe} https://troymessina.github.io/pyro/?example=earth-moon
 :label: app:visualpython:earthmoonorbit
 :width: 100%
 :align: center
 The moon orbiting the Earth.
 :::
-A few notes about the embedded trinkets in this book:
+A few notes about the embedded VPython code in this book using pyro:
 * The menu in the upper left corner allows full-screen viewing.
 * The center bar between the code and the simulation can be adjusted to make the either consume more of the screen for easier viewing.
-* The right mouse button allows rotation of the view.
-* The mouse wheel allows zooming in and out of the view.
-* If signed into trinket, readers should be able to click "Remix" in the upper right corner to save a trinket to their own account.
-
-## Trinket accounts
-The website trinket.io offers a variety of accounts. You can learn more about these at https://trinket.io/schools. The three main account modes trinket might be implemented in your course are
-* with free accounts for everyone where the instructor shares pre-written shells for students to complete
-* with free accounts for students and a pay account for the instructor. This allows the instructor to build trinket courses with assignments.
-* with pay accounts for everyone that offers the most options.
+* The right mouse button allows rotation of the output view.
+* The mouse wheel allows zooming in and out of the output view.
+* From the menu on the left, readers can save snippets in the browser. Snippets can be reloaded while the browser retains its cache.
+* From the menu on the left, readers can save python code to their computer.
 
 ## What is a trinket?
-A trinket is a Visual Python program written in the trinket.io web platform. When starting a new program, a trinket will look like [](#app:visualpython:blanktrinket). The ```Web Vpython``` line indicates the language. This line should always be in a trinket that uses the Visual Python language. The version number may change as updates are made to the Visual Python language.
-:::{iframe} https://trinket.io/embed/glowscript/8f1815879d
+We may refer to VPython programs as trinkets. A trinket is simply that, a Visual Python program. When starting a new program, a trinket will look like [](#app:visualpython:blanktrinket). The ```Web Vpython``` line indicates the language. This line should always be in a trinket that uses the Visual Python language. The version number may change as updates are made to the Visual Python language.
+:::{iframe} https://troymessina.github.io/pyro/?example=blank
 :label: app:visualpython:blanktrinket
 :width: 100%
 :align: center
@@ -57,8 +52,6 @@ Trinkets in this book are interactive. Readers can enter code and run the code w
 ```python
 print("Hello World! This is my first trinket.")
 ```
-
-If you wish, you can Remix the trinket to your own account. It will appear in your account as "BlankTrinket". You may rename your trinkets from the trinket.io website.
 
 # Programming in Visual Python
 
