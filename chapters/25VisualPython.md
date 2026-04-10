@@ -11,21 +11,21 @@ This appendix gives a very brief introduction to calculus with a focus on the to
  
 :::{hint} Learning Objectives
 * Understand the trinket.io platform
-* Understand how to create and position objects in trinket.
-* Understand how to create motion with objects in trinket.
+* Understand how to create and position objects in Visual Python (VPython).
+* Understand how to create motion with objects in Visual Python (VPython).
 :::
 
 # Code in this textbook
-When referring to general ideas or something very brief, Visual Python code may be written in-line. For example, ```this is a general code statement```. When giving explicit code to be implemented, Visual Python code will be written in "display mode". For example,
+When referring to general ideas or something very brief, VPython code may be written in-line. For example, ```this is a general code statement```. When giving explicit code to be implemented, Visual Python code will be written in "display mode". For example,
 ```python
 print("This code is meant to be implemented into a trinket.")
 ```
-The distinction should become clear as you work through this appendix. We hope to provide in this textbook all of the instruction necessary to create physics simulations using Visual Python in the trinket platform. In the event that more information is desired, a good reference is https://www.glowscript.org/docs/VPythonDocs/index.html.
+The distinction should become clear as you work through this appendix. We hope to provide in this textbook all of the instruction necessary to create physics simulations using Visual Python in the trinket platform. In the event that more information is desired, a good reference is the ![VPython Documentation](https://www.glowscript.org/docs/VPythonDocs/index.html).
 
-# The trinket.io platform
+# The Pyro platform
 
-Trinket.io is web-based programming platform with a few different programming languages available,e.g., Python, Visual Python, R, Java, and HTML5. In this textbook, we will use primarily Visual Python, which is a language built on Python that allows Python programming to manipulate simulated objects in three-dimensional space. The trinket [](#app:visualpython:earthmoonorbit) is a Visual Python program that simulates a moon-like mass orbiting an Earth-like mass. Click the play button to see the simulation.
-:::{iframe} https://trinket.io/embed/glowscript/7a039bd28b
+![Pyro](https://troymessina.github.io/pyro/) is web-based VPython programming platform. VPython, which is a language built on Python, allows Python programming to manipulate simulated objects in three-dimensional space. The code in [](#app:visualpython:earthmoonorbit) is a Visual Python program that simulates a moon-like mass orbiting an Earth-like mass. Click the play button to see the simulation.
+:::{iframe} https://trinket.io/embed/glowscript/7a039bd28b?example=earth-moon
 :label: app:visualpython:earthmoonorbit
 :width: 100%
 :align: center
