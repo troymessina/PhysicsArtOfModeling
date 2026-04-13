@@ -28,7 +28,7 @@ The distinction should become clear as you work through this appendix. We hope t
 :::{iframe} https://troymessina.github.io/pyro/?example=earth-moon&header=true&sidebar=true&tab=output&view=split&run=true 
 :label: app:visualpython:earthmoonorbit
 :width: 100%
-:height: 600px
+:height: 1000px
 :align: center
 The moon orbiting the Earth.
 :::
@@ -136,7 +136,7 @@ Make a collection of twelve cylinders arranged to evenly divide a circle into se
 :::{note} Solution
 :class: dropdown
 Notice in the code, we define the radius and length, ```R``` and ```L```. This makes the program easily edited to change the size of the model.
-:::{iframe} https://trinket.io/embed/glowscript/5f9607143b
+:::{iframe} https://troymessina.github.io/pyro/?example=clockface-cylinders&header=true&sidebar=true&tab=output&view=split&run=true
 :label: ex:visualpython:cylinderclock
 :width: 100%
 :align: center
@@ -144,13 +144,16 @@ Twelve cylinders positioned radially.
 :::
 
 ### ```for``` loops
-It is possible to simplify the code using a ```for``` loop. This loop will increment through the desired angles to create the clock face with a single cylinder object command. The advantage is streamlined code. The disadvantage is that the cylinder objects cannot be manipulated unless we complicate the program by tracking the object names. This kind of programming is beyond the scope of this textbook. [](#fig:visualpython:forloopcylinder) shows the code using a ```for``` loop. In this program, we define the number of cylinders we want ```numcyl```. This number is used to divide $2\pi$ into that many angle segments. The ```for``` loop uses the Python ```range()``` function, which is an "inclusive-exclusive" list. That is, ```for i in range(N):``` would increment ```i``` from 0 to N-1. Notice the tabbing after the line beginning the loop indicates which commands are inside the loop.
-:::{iframe} https://trinket.io/embed/glowscript/54a654fa7f
-:label: fig:visualpython:forloopcylinder
-:width: 100%
-:align: center
-For loop to place cylinders every $30\degree$.
-:::
+It is possible to simplify the code using a ```for``` loop. This loop will increment through the desired angles to create the clock face with a single cylinder object command. The advantage is streamlined code. The disadvantage is that the cylinder objects cannot be manipulated unless we complicate the program by tracking the object names. This kind of programming is beyond the scope of this textbook. The code using a ```for``` loop. In this program, we define the number of cylinders we want ```numcyl```. This number is used to divide $2\pi$ into that many angle segments. The ```for``` loop uses the Python ```range()``` function, which is an "inclusive-exclusive" list. That is, ```for i in range(N):``` would increment ```i``` from 0 to N-1. Notice the tabbing after the line beginning the loop indicates which commands are inside the loop.
+```python
+L=10
+R = 0.1
+numcyl = 12
+
+for i in range(numcyl):
+  cylinder(pos=vec(0,0,0), axis=vec(cos(2*pi*i/numcyl),sin(2*pi*i/numcyl),0), radius=R, length=L, color=color.magenta)
+```
+Try copying and pasting this code in the blank VPython trinket above to see that it works..
 
 ### User-defined attributes
 Object attributes are accessed using the "dot" notation. For example, the position of a sphere named ```ball``` can be accessed with ```ball.pos```. It is possible to add user-defined attributes to an object. Assigning attributes is a simple way to keep track of variables and constants associated with objects. These attributes do not affect the visualization of the object. Some examples of assigning attributes to a sphere named ```ball``` are shown in [](#tab:visualpython:userattributes). Users are free to choose the names of the attributes they assign. Rembember that computer code is unit agnostic. The units are whatever the programmer decides, and it is up to the programmer to keep track of units. In this book, we will primarily use SI (or mks) units.
