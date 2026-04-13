@@ -28,6 +28,7 @@ The distinction should become clear as you work through this appendix. We hope t
 :::{iframe} https://troymessina.github.io/pyro/?example=earth-moon&header=true&sidebar=true&tab=output&view=split&run=true 
 :label: app:visualpython:earthmoonorbit
 :width: 100%
+:height: 600px
 :align: center
 The moon orbiting the Earth.
 :::
@@ -41,7 +42,7 @@ A few notes about the embedded VPython code in this book using pyro:
 
 ## What is a trinket?
 We may refer to VPython programs as trinkets. A trinket is simply that, a Visual Python program. When starting a new program, a trinket will look like [](#app:visualpython:blanktrinket). The ```Web Vpython``` line indicates the language. This line should always be in a trinket that uses the Visual Python language. The version number may change as updates are made to the Visual Python language.
-:::{iframe} https://troymessina.github.io/pyro/?example=blank&view=split
+:::{iframe} https://troymessina.github.io/pyro/?example=blank&header=true&sidebar=true&tab=output&view=split&run=true
 :label: app:visualpython:blanktrinket
 :width: 100%
 :align: center
@@ -55,7 +56,7 @@ print("Hello World! This is my first trinket.")
 
 # Programming in Visual Python
 
-## Create objects in a trinket
+## Create objects
 The choice of Visual Python is so that readers can visualize the physics being discussed in the book. Therefore, almost every program will be focused on manipulating Visual Python objects. It is important for readers to become comfortable with creating these objects. In the following examples, we will demonstrate spheres and cylinders. All Visual Python objects have "attributes" such as position, color, and size. [](#tab:visualpython:objattrs) lists common objects and their attributes. Notice the attributes vary in definition such as vector, scalar, or some text-based variable. It is also possible to create new, user-defined attributes, which will be discussed below.
 ```{table} A quick reference for a few commonly used objects and their attributes
 :label: app:visualpython:objsattrs
