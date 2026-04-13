@@ -25,7 +25,7 @@ The distinction should become clear as you work through this appendix. We hope t
 # The Pyro platform
 
 [Pyro](https://troymessina.github.io/pyro/) is web-based VPython programming platform. VPython, which is a language built on Python, allows Python programming to manipulate simulated objects in three-dimensional space. The code in [](#app:visualpython:earthmoonorbit) is a Visual Python program that simulates a moon-like mass orbiting an Earth-like mass. Click the play button to see the simulation.
-:::{iframe} https://troymessina.github.io/pyro/?example=earth-moon&view=split
+:::{iframe} https://troymessina.github.io/pyro/?example=earth-moon&header=true&sidebar=true&tab=output&view=split&run=true 
 :label: app:visualpython:earthmoonorbit
 :width: 100%
 :align: center
