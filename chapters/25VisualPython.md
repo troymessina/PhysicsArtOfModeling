@@ -25,7 +25,7 @@ The distinction should become clear as you work through this appendix. We hope t
 # The Pyro platform
 
 [Pyro](https://troymessina.github.io/pyro/) is web-based VPython programming platform. VPython, which is a language built on Python, allows Python programming to manipulate simulated objects in three-dimensional space. The code in [](#app:visualpython:earthmoonorbit) is a Visual Python program that simulates a moon-like mass orbiting an Earth-like mass. Click the play button to see the simulation.
-:::{iframe} https://troymessina.github.io/pyro/?example=earth-moon&header=true&sidebar=true&tab=output&view=split&run=true 
+:::{iframe} https://troymessina.github.io/pyro/?example=earth-moon&header=true&sidebar=true&tab=output&view=output&run=true 
 :label: app:visualpython:earthmoonorbit
 :width: 100%
 :height: 1000px
@@ -42,7 +42,7 @@ A few notes about the embedded VPython code in this book using pyro:
 
 ## What is a trinket?
 We may refer to VPython programs as trinkets. A trinket is simply that, a Visual Python program. When starting a new program, a trinket will look like [](#app:visualpython:blanktrinket). The ```Web Vpython``` line indicates the language. This line should always be in a trinket that uses the Visual Python language. The version number may change as updates are made to the Visual Python language.
-:::{iframe} https://troymessina.github.io/pyro/?example=blank&header=true&sidebar=true&tab=output&view=split&run=true
+:::{iframe} https://troymessina.github.io/pyro/?example=blank&header=true&sidebar=true&tab=output&view=code&run=true
 :label: app:visualpython:blanktrinket
 :width: 100%
 :align: center
@@ -101,7 +101,7 @@ Make a collection of spheres each a different color arranged on the corners of a
 :::{note} Solution
 :class: dropdown
 Notice in the code, we define the half-length of the cube edges ```a``` and the sphere radii ```r```. Then, we displace each sphere the half-length along the various axes. This makes the program easily edited to change the size of the cube and size of the spheres.
-:::{iframe} https://trinket.io/embed/glowscript/77a3ced8b9
+:::{iframe} https://troymessina.github.io/pyro/?example=cubic-spheress&header=true&sidebar=true&tab=output&view=code&run=true
 :label: ex:visualpython:simplecube
 :width: 100%
 :align: center
@@ -136,7 +136,7 @@ Make a collection of twelve cylinders arranged to evenly divide a circle into se
 :::{note} Solution
 :class: dropdown
 Notice in the code, we define the radius and length, ```R``` and ```L```. This makes the program easily edited to change the size of the model.
-:::{iframe} https://troymessina.github.io/pyro/?example=clockface-cylinders&header=true&sidebar=true&tab=output&view=split&run=true
+:::{iframe} https://troymessina.github.io/pyro/?example=clockface-cylinders&header=true&sidebar=true&tab=output&view=code&run=true
 :label: ex:visualpython:cylinderclock
 :width: 100%
 :align: center
@@ -186,7 +186,7 @@ ball.pos = ball.pos + ball.vel * dt # move ball after 4s
 ball.pos = ball.pos + ball.vel * dt # move ball after 5s
 ```
 The statements at the end of the lines after ```#``` are comments that are ignored by the computer. Copy the code above run these lines in the trinket below.
-:::{iframe} https://trinket.io/embed/glowscript/8f1815879d
+:::{iframe} https://troymessina.github.io/pyro/?example=blank&header=true&sidebar=true&tab=output&view=code&run=true
 :label: app:visualpython:blanktrinket2
 :width: 100%
 :align: center
