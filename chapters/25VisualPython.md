@@ -101,7 +101,7 @@ Make a collection of spheres each a different color arranged on the corners of a
 :::{note} Solution
 :class: dropdown
 Notice in the code, we define the half-length of the cube edges ```a``` and the sphere radii ```r```. Then, we displace each sphere the half-length along the various axes. This makes the program easily edited to change the size of the cube and size of the spheres.
-:::{iframe} https://troymessina.github.io/pyro/?example=cubic-spheress&header=true&sidebar=true&tab=output&view=code&run=true
+:::{iframe} https://troymessina.github.io/pyro/?example=cubic-spheres&header=true&sidebar=true&tab=output&view=code&run=true
 :label: ex:visualpython:simplecube
 :width: 100%
 :align: center
