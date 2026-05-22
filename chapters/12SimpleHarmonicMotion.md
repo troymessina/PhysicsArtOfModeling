@@ -46,7 +46,7 @@ E = U + K =\frac{1}{2}kx^2 + \frac{1}{2}mv^2
 ```
 We can find the mechanical energy, $E$, by evaluating the energy at one of the turning points. At these points, the  kinetic energy of the mass is zero, so $E=U(x=A)=1/2kA^2$. We can then write the expression for mechanical energy as:
 ```{math}
-\boxed{\frac{1}{2}kx^2 + \frac{1}{2}mv^2 = \frac{1}{2}kA^2}
+\frac{1}{2}kx^2 + \frac{1}{2}mv^2 = \frac{1}{2}kA^2
 ```
 We can thus always know the speed, $v$, of the mass at any position, $x$, if we know the amplitude $A$:
 ```{math}
@@ -80,7 +80,7 @@ m\frac{d^2x}{dt^2} &= -kx\nonumber\\
 ```
 We want to find the position function, $x(t)$. Equation {\ref{eq:simpleharmonicmotion:shmspring}} tells us that the second derivative of $x(t)$ with respect to time must equal the negative of the $x(t)$ function multiplied by a constant, $k/m$. Without having taken a course on differential equations, it might not be obvious what the function $x(t)$ could be. Several, equivalent functions can satisfy this equation. One possible choice, which we present here as a guess, is\footnote{Other possible guesses that work are $A \sin(\omega t + \phi)$, and $x(t) = A\cos(\omega t) + B\sin(\omega t)$.}:
 ```{math}
-\boxed{x(t) = A \cos(\omega t + \phi)}
+x(t) = A \cos(\omega t + \phi)
 ```
 where $A$, $\omega$, and $\phi$ are constants that we need to determine. We can take the second order derivative with respect to time of the function above to verify that it indeed "solves" the differential equation:
 ```{math}
@@ -94,7 +94,7 @@ x(t) &= A \cos(\omega t + \phi)\\
 ```
 The last equation has exactly the same form as [](#eq:simpleharmonicmotion:shmspring), which we obtained from Newton's Second Law, if we define $\omega$ as:
 ```{math}
-\boxed{\omega = \sqrt{\frac{k}{m}}}
+\omega = \sqrt{\frac{k}{m}}
 ```
 We call $\omega$ the "angular frequency" of the spring-mass system. We have found that our guess for $x(t)$ satisfies the differential equation. 
 
@@ -166,11 +166,11 @@ We can make a few observations about the position and velocity illustrated in []
 
 The motion of the spring is clearly periodic. If the period of the motion is $T$, then the position of the mass at time $t$ will be the same as its position at $t+T$. The period of the motion, $T$, is easily found:
 ```{math}
-\boxed{T=\frac{2\pi}{\omega}=2\pi\sqrt{\frac{m}{k}}}
+T=\frac{2\pi}{\omega}=2\pi\sqrt{\frac{m}{k}}
 ```
 And the corresponding frequency is given by:
 ```{math}
-\boxed{f = \frac{1}{T}=\frac{\omega}{2\pi}=\frac{1}{2\pi}\sqrt{\frac{k}{m}}}
+f = \frac{1}{T}=\frac{\omega}{2\pi}=\frac{1}{2\pi}\sqrt{\frac{k}{m}}
 ```
 It should now be clear why $\omega$ is called the angular frequency, since it is related to the frequency of the motion.
 
@@ -349,12 +349,12 @@ and we find that the motion of the mass attached to two springs is described by 
 In the previous sections, we modelled the motion of a mass attached to a spring and found that its position, $x(t)$, was described by the following differential equation:
 ```{math}
 :label: eq:simpleharmonicmotion:shm
-\boxed{\frac{d^2x}{dt} = -\omega^2x}
+\frac{d^2x}{dt} = -\omega^2x
 ```
 A possible solution to that equation was given by:
 ```{math}
 :label: eq:simpleharmonicmotion:shmsol
-\boxed{x(t) = A\cos(\omega t+ \phi)}
+x(t) = A\cos(\omega t+ \phi)
 ```
 We then saw that the motion of a vertical spring-mass system, as well as that of a mass attached to two springs, could also be described by [](#eq:simpleharmonicmotion:shm). Any physical system that can described by [](#eq:simpleharmonicmotion:shm) is said to undergo "simple harmonic motion", or to be a "simple harmonic oscillator". If we find that the physical model of a system leads to [](#eq:simpleharmonicmotion:shm), then we immediately know that the position of system can be described by [](#eq:simpleharmonicmotion:shmsol).
 

@@ -457,7 +457,7 @@ Click on the "Equations" tab. The simulation has two vectors $\vec{a}$ and $\vec
 What happens when we subtract vectors. Subtracting is the same as adding the negative of a vector, that is, making each component the negative of its value. Explore how subtracting a vector changes the resulting $\vec{c}.
 
 ## Drawing Vectors in VPython
-We can create our own vector simulations using the VPython trinket in [](#chapter:vectors:vectortrinket). Clicking the button to run the simulation shows the cartesian unit vectors located at the origin for reference. In VPython we can define a cartesian vector in two ways.
+We can create our own vector simulations using VPython in [](#chapter:vectors:vectortrinket). Clicking the button to run the simulation shows the cartesian unit vectors located at the origin for reference. In VPython we can define a cartesian vector in two ways.
 ```python
 r1 = vec(1, 2, 3)
 r1 = vector(1, 2, 3)
@@ -468,7 +468,7 @@ r1 = vec(1, 2, 3)
 arw1 = arrow(pos=vec(0,0,0), axis=r1, color=color.white)
 ```
 Copy this code at the bottom of the trinket below to see how it draws the arrow.
-:::{iframe} https://trinket.io/embed/glowscript/ad8349ada0?toggleCode=true
+:::{iframe}  https://troymessina.github.io/pyro/?example=vectors&header=true&sidebar=true&tab=output&view=output&run=true
 :label: chapter:vectors:vectortrinket
 :width: 100%
 :align: center

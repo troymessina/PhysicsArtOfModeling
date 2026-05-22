@@ -85,26 +85,26 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-myst-build-
 
-      # Step 8: Build PDF version of the documentation
-      # This creates PDF files from your markdown content
+      # Step 8: Build PDF first (outputs to public/ directory)
       - name: Build PDF Assets
         run: myst build --pdf
         continue-on-error: true
 
       # Step 9: Build HTML version of the documentation
-      # This creates the website files that will be deployed
       - name: Build HTML Assets
         run: myst build --html
 
-      # Step 10: Copy PDF to HTML build directory for deployment
-      - name: Copy PDF to build
+      # Step 10: Copy PDF to HTML output directory
+      # (Same pattern as veillette/hands-on project)
+      - name: Copy PDF to output
         run: |
-          mkdir -p ./_build/html/exports
-          if [ -f ./exports/ModelingWithPhysics.pdf ]; then
-            cp ./exports/ModelingWithPhysics.pdf ./_build/html/exports/
+          mkdir -p _build/html/public
+          cp -f public/ModelingWithPhysics.pdf _build/html/public/ 2>/dev/null || true
+          if [ -f ./_build/html/public/ModelingWithPhysics.pdf ]; then
             echo "PDF copied successfully"
+            ls -lh ./_build/html/public/ModelingWithPhysics.pdf
           else
-            echo "Warning: PDF file not found, skipping copy"
+            echo "Warning: PDF was not copied"
           fi
 
       # Step 11: Upload the built HTML files as an artifact

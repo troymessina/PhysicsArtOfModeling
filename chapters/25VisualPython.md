@@ -10,43 +10,39 @@ numbering:
 This appendix gives a very brief introduction to calculus with a focus on the tools needed in physics. 
  
 :::{hint} Learning Objectives
-* Understand the trinket.io platform
-* Understand how to create and position objects in trinket.
-* Understand how to create motion with objects in trinket.
+* Understand the pyro platform
+* Understand how to create and position objects in Visual Python (VPython).
+* Understand how to create motion with objects in Visual Python (VPython).
 :::
 
 # Code in this textbook
-When referring to general ideas or something very brief, Visual Python code may be written in-line. For example, ```this is a general code statement```. When giving explicit code to be implemented, Visual Python code will be written in "display mode". For example,
+When referring to general ideas or something very brief, VPython code may be written in-line. For example, ```this is a general code statement```. When giving explicit code to be implemented, Visual Python code will be written in "display mode". For example,
 ```python
 print("This code is meant to be implemented into a trinket.")
 ```
-The distinction should become clear as you work through this appendix. We hope to provide in this textbook all of the instruction necessary to create physics simulations using Visual Python in the trinket platform. In the event that more information is desired, a good reference is https://www.glowscript.org/docs/VPythonDocs/index.html.
+The distinction should become clear as you work through this appendix. We hope to provide in this textbook all of the instruction necessary to create physics simulations using Visual Python in the trinket platform. In the event that more information is desired, a good reference is the [VPython Documentation](https://www.glowscript.org/docs/VPythonDocs/index.html).
 
-# The trinket.io platform
+# The Pyro platform
 
-Trinket.io is web-based programming platform with a few different programming languages available,e.g., Python, Visual Python, R, Java, and HTML5. In this textbook, we will use primarily Visual Python, which is a language built on Python that allows Python programming to manipulate simulated objects in three-dimensional space. The trinket [](#app:visualpython:earthmoonorbit) is a Visual Python program that simulates a moon-like mass orbiting an Earth-like mass. Click the play button to see the simulation.
-:::{iframe} https://trinket.io/embed/glowscript/7a039bd28b
+[Pyro](https://troymessina.github.io/pyro/) is web-based VPython programming platform. VPython, which is a language built on Python, allows Python programming to manipulate simulated objects in three-dimensional space. The code in [](#app:visualpython:earthmoonorbit) is a Visual Python program that simulates a moon-like mass orbiting an Earth-like mass. Click the play button to see the simulation.
+:::{iframe} https://troymessina.github.io/pyro/?example=earth-moon&header=true&sidebar=true&tab=output&view=output&run=true 
 :label: app:visualpython:earthmoonorbit
 :width: 100%
+:height: 1000px
 :align: center
 The moon orbiting the Earth.
 :::
-A few notes about the embedded trinkets in this book:
+A few notes about the embedded VPython code in this book using pyro:
 * The menu in the upper left corner allows full-screen viewing.
 * The center bar between the code and the simulation can be adjusted to make the either consume more of the screen for easier viewing.
-* The right mouse button allows rotation of the view.
-* The mouse wheel allows zooming in and out of the view.
-* If signed into trinket, readers should be able to click "Remix" in the upper right corner to save a trinket to their own account.
-
-## Trinket accounts
-The website trinket.io offers a variety of accounts. You can learn more about these at https://trinket.io/schools. The three main account modes trinket might be implemented in your course are
-* with free accounts for everyone where the instructor shares pre-written shells for students to complete
-* with free accounts for students and a pay account for the instructor. This allows the instructor to build trinket courses with assignments.
-* with pay accounts for everyone that offers the most options.
+* The right mouse button allows rotation of the output view.
+* The mouse wheel allows zooming in and out of the output view.
+* From the menu on the left, readers can save snippets in the browser. Snippets can be reloaded while the browser retains its cache.
+* From the menu on the left, readers can save python code to their computer.
 
 ## What is a trinket?
-A trinket is a Visual Python program written in the trinket.io web platform. When starting a new program, a trinket will look like [](#app:visualpython:blanktrinket). The ```Web Vpython``` line indicates the language. This line should always be in a trinket that uses the Visual Python language. The version number may change as updates are made to the Visual Python language.
-:::{iframe} https://trinket.io/embed/glowscript/8f1815879d
+We may refer to VPython programs as trinkets. A trinket is simply that, a Visual Python program. When starting a new program, a trinket will look like [](#app:visualpython:blanktrinket). The ```Web Vpython``` line indicates the language. This line should always be in a trinket that uses the Visual Python language. The version number may change as updates are made to the Visual Python language.
+:::{iframe} https://troymessina.github.io/pyro/?example=blank&header=true&sidebar=true&tab=output&view=code&run=true
 :label: app:visualpython:blanktrinket
 :width: 100%
 :align: center
@@ -58,11 +54,9 @@ Trinkets in this book are interactive. Readers can enter code and run the code w
 print("Hello World! This is my first trinket.")
 ```
 
-If you wish, you can Remix the trinket to your own account. It will appear in your account as "BlankTrinket". You may rename your trinkets from the trinket.io website.
-
 # Programming in Visual Python
 
-## Create objects in a trinket
+## Create objects
 The choice of Visual Python is so that readers can visualize the physics being discussed in the book. Therefore, almost every program will be focused on manipulating Visual Python objects. It is important for readers to become comfortable with creating these objects. In the following examples, we will demonstrate spheres and cylinders. All Visual Python objects have "attributes" such as position, color, and size. [](#tab:visualpython:objattrs) lists common objects and their attributes. Notice the attributes vary in definition such as vector, scalar, or some text-based variable. It is also possible to create new, user-defined attributes, which will be discussed below.
 ```{table} A quick reference for a few commonly used objects and their attributes
 :label: app:visualpython:objsattrs
@@ -107,7 +101,7 @@ Make a collection of spheres each a different color arranged on the corners of a
 :::{note} Solution
 :class: dropdown
 Notice in the code, we define the half-length of the cube edges ```a``` and the sphere radii ```r```. Then, we displace each sphere the half-length along the various axes. This makes the program easily edited to change the size of the cube and size of the spheres.
-:::{iframe} https://trinket.io/embed/glowscript/77a3ced8b9
+:::{iframe} https://troymessina.github.io/pyro/?example=cubic-spheres&header=true&sidebar=true&tab=output&view=code&run=true
 :label: ex:visualpython:simplecube
 :width: 100%
 :align: center
@@ -142,21 +136,24 @@ Make a collection of twelve cylinders arranged to evenly divide a circle into se
 :::{note} Solution
 :class: dropdown
 Notice in the code, we define the radius and length, ```R``` and ```L```. This makes the program easily edited to change the size of the model.
-:::{iframe} https://trinket.io/embed/glowscript/5f9607143b
+:::{iframe} https://troymessina.github.io/pyro/?example=clockface-cylinders&header=true&sidebar=true&tab=output&view=code&run=true
 :label: ex:visualpython:cylinderclock
 :width: 100%
 :align: center
-Spheres on the corners of a 1x1x1 cube.
+Twelve cylinders positioned radially.
 :::
 
 ### ```for``` loops
-It is possible to simplify the code using a ```for``` loop. This loop will increment through the desired angles to create the clock face with a single cylinder object command. The advantage is streamlined code. The disadvantage is that the cylinder objects cannot be manipulated unless we complicate the program by tracking the object names. This kind of programming is beyond the scope of this textbook. [](#fig:visualpython:forloopcylinder) shows the code using a ```for``` loop. In this program, we define the number of cylinders we want ```numcyl```. This number is used to divide $2\pi$ into that many angle segments. The ```for``` loop uses the Python ```range()``` function, which is an "inclusive-exclusive" list. That is, ```for i in range(N):``` would increment ```i``` from 0 to N-1. Notice the tabbing after the line beginning the loop indicates which commands are inside the loop.
-:::{iframe} https://trinket.io/embed/glowscript/54a654fa7f
-:label: fig:visualpython:forloopcylinder
-:width: 100%
-:align: center
-For loop to place cylinders every $30\degree$.
-:::
+It is possible to simplify the code using a ```for``` loop. This loop will increment through the desired angles to create the clock face with a single cylinder object command. The advantage is streamlined code. The disadvantage is that the cylinder objects cannot be manipulated unless we complicate the program by tracking the object names. This kind of programming is beyond the scope of this textbook. The code using a ```for``` loop. In this program, we define the number of cylinders we want ```numcyl```. This number is used to divide $2\pi$ into that many angle segments. The ```for``` loop uses the Python ```range()``` function, which is an "inclusive-exclusive" list. That is, ```for i in range(N):``` would increment ```i``` from 0 to N-1. Notice the tabbing after the line beginning the loop indicates which commands are inside the loop.
+```python
+L=10
+R = 0.1
+numcyl = 12
+
+for i in range(numcyl):
+  cylinder(pos=vec(0,0,0), axis=vec(cos(2*pi*i/numcyl),sin(2*pi*i/numcyl),0), radius=R, length=L, color=color.magenta)
+```
+Try copying and pasting this code in the blank VPython trinket above to see that it works..
 
 ### User-defined attributes
 Object attributes are accessed using the "dot" notation. For example, the position of a sphere named ```ball``` can be accessed with ```ball.pos```. It is possible to add user-defined attributes to an object. Assigning attributes is a simple way to keep track of variables and constants associated with objects. These attributes do not affect the visualization of the object. Some examples of assigning attributes to a sphere named ```ball``` are shown in [](#tab:visualpython:userattributes). Users are free to choose the names of the attributes they assign. Rembember that computer code is unit agnostic. The units are whatever the programmer decides, and it is up to the programmer to keep track of units. In this book, we will primarily use SI (or mks) units.
@@ -189,8 +186,8 @@ ball.pos = ball.pos + ball.vel * dt # move ball after 4s
 ball.pos = ball.pos + ball.vel * dt # move ball after 5s
 ```
 The statements at the end of the lines after ```#``` are comments that are ignored by the computer. Copy the code above run these lines in the trinket below.
-:::{iframe} https://trinket.io/embed/glowscript/8f1815879d
-:label: app:visualpython:blanktrinket
+:::{iframe} https://troymessina.github.io/pyro/?example=blank&header=true&sidebar=true&tab=output&view=code&run=true
+:label: app:visualpython:blanktrinket2
 :width: 100%
 :align: center
 A blank trinket ready to begin programming.

@@ -1,0 +1,392 @@
+{
+  "Chapter Frontmatter": {
+    "prefix": "chapter-front",
+    "body": [
+      "---",
+      "title: Chapter ${1:X} - ${2:Title}",
+      "numbering:",
+      "  headings:",
+      "  heading_1:",
+      "    start: ${1:X}",
+      "---",
+      "(chapter:${3:chaptername})=",
+      "# Overview",
+      "",
+      ":::{hint} Learning Objectives",
+      "* ${4:First objective}",
+      "* ${5:Second objective}",
+      ":::",
+      "",
+      ":::{note} Think About It",
+      "${6:Question...}",
+      "",
+      ":::{note} Answer",
+      ":class: dropdown",
+      "${7:Answer}",
+      ":::",
+      "",
+      "$0"
+    ],
+    "description": "Complete chapter frontmatter with Learning Objectives and Think About It"
+  },
+
+  "Section with Label": {
+    "prefix": "sec-label",
+    "body": [
+      "(sec:${1:chapter}:${2:section})=",
+      "# ${3:Section Title}",
+      "",
+      "$0"
+    ],
+    "description": "Section heading with label"
+  },
+
+  "Subsection with Label": {
+    "prefix": "subsec-label",
+    "body": [
+      "(subsec:${1:chapter}:${2:subsection})=",
+      "## ${3:Subsection Title}",
+      "",
+      "$0"
+    ],
+    "description": "Subsection heading with label"
+  },
+
+  "Learning Objectives": {
+    "prefix": "learn-obj",
+    "body": [
+      ":::{hint} Learning Objectives",
+      "* ${1:First objective}",
+      "* ${2:Second objective}",
+      ":::",
+      "$0"
+    ],
+    "description": "Learning Objectives admonition"
+  },
+
+  "Think About It": {
+    "prefix": "think",
+    "body": [
+      ":::{note} Think About It",
+      "${1:Question text...}",
+      "",
+      ":::{note} Answer",
+      ":class: dropdown",
+      "${2:Answer}",
+      ":::",
+      "$0"
+    ],
+    "description": "Think About It with dropdown answer"
+  },
+
+  "Checkpoint": {
+    "prefix": "checkpoint",
+    "body": [
+      ":::{tip} Checkpoint",
+      "${1:Question?}",
+      "1. ${2:Option 1}",
+      "2. ${3:Option 2}",
+      "3. ${4:Option 3}",
+      "",
+      ":::{tip} Answer",
+      ":class: dropdown",
+      "${5:1}.",
+      ":::",
+      "$0"
+    ],
+    "description": "Checkpoint with multiple choice and dropdown answer"
+  },
+
+  "Example with Solution": {
+    "prefix": "example",
+    "body": [
+      "(ex:${1:chapter}:${2:name})=",
+      ":::{note} Example ${3:X.Y}",
+      "${4:Problem statement...}",
+      "",
+      ":::{note} Solution",
+      ":class: dropdown",
+      "${5:Solution steps...}",
+      "",
+      "**Discussion:** ${6:Physical interpretation...}",
+      ":::",
+      "$0"
+    ],
+    "description": "Example with labeled solution dropdown"
+  },
+
+  "Student Thoughts": {
+    "prefix": "student-thoughts",
+    "body": [
+      ":::{attention} ${1|Olivia,Emma,Josh|}'s Thoughts",
+      "${2:Student perspective...}",
+      ":::",
+      "$0"
+    ],
+    "description": "Student thought box (Olivia/Emma/Josh)"
+  },
+
+  "Review Box": {
+    "prefix": "review",
+    "body": [
+      ":::{caution} Review",
+      "* [Section %s](#sec:${1:chapter}:${2:section}) on ${3:topic}.",
+      ":::",
+      "$0"
+    ],
+    "description": "Review/prerequisite box"
+  },
+
+  "Important Equations": {
+    "prefix": "important-eq",
+    "body": [
+      ":::{important} Important Equations",
+      "* $$\\boxed{${1:equation}}$$ - ${2:description}",
+      ":::",
+      "$0"
+    ],
+    "description": "Important Equations summary box"
+  },
+
+  "Reflect and Research": {
+    "prefix": "reflect",
+    "body": [
+      ":::{seealso} Reflect and research",
+      "* ${1:Research question 1}",
+      "* ${2:Research question 2}",
+      ":::",
+      "$0"
+    ],
+    "description": "Reflect and research box"
+  },
+
+  "Figure with Label": {
+    "prefix": "fig",
+    "body": [
+      "\\`\\`\\`{figure} figures/${1:Chapter}/${2:filename}.png",
+      ":label: fig:${3:chapter}:${4:name}",
+      ":width: ${5|10%,30%,50%,70%,100%|}",
+      ":align: center",
+      ":alt: ${6:Description of the image for accessibility}",
+      "${6:Description of the image for accessibility}",
+      "\\`\\`\\`",
+      "$0"
+    ],
+    "description": "Figure with all required metadata"
+  },
+
+  "Simple Image": {
+    "prefix": "img",
+    "body": [
+      "\\`\\`\\`{image} figures/${1:Chapter}/${2:filename}.${3|png,jpg,svg|}",
+      ":alt: ${4:Image description}",
+      ":width: ${5:50%}",
+      ":align: ${6|center,left,right|}",
+      "\\`\\`\\`",
+      "$0"
+    ],
+    "description": "Simple image without label"
+  },
+
+  "Table with Label": {
+    "prefix": "table",
+    "body": [
+      "\\`\\`\\`{table} ${1:Table caption}",
+      ":label: table:${2:chapter}:${3:name}",
+      "| ${4:Column 1} | ${5:Column 2} | ${6:Column 3} |",
+      "|${7|:---|,---:,:---:,---|} |${8|:---|,---:,:---:,---|} |${9|:---|,---:,:---:,---|} |",
+      "| ${10:Value 1} | ${11:Value 2} | ${12:Value 3} |",
+      "\\`\\`\\`",
+      "$0"
+    ],
+    "description": "Table with label and alignment options"
+  },
+
+  "Embedded Simulation": {
+    "prefix": "iframe",
+    "body": [
+      ":::{iframe} ${1:https://phet.colorado.edu/...}",
+      ":label: phet:${2:chapter}:${3:name}",
+      ":width: 100%",
+      ":align: center",
+      "${4:Simulation description}",
+      ":::",
+      "$0"
+    ],
+    "description": "Embedded iframe (PhET simulation)"
+  },
+
+  "Math Block": {
+    "prefix": "math",
+    "body": [
+      "\\`\\`\\`{math}",
+      "${1:equation}",
+      "\\`\\`\\`",
+      "$0"
+    ],
+    "description": "Math block"
+  },
+
+  "Math Block with Label": {
+    "prefix": "math-label",
+    "body": [
+      "\\`\\`\\`{math}",
+      ":label: eqn:${1:chapter}:${2:name}",
+      "${3:equation}",
+      "\\`\\`\\`",
+      "$0"
+    ],
+    "description": "Math block with label for cross-referencing"
+  },
+
+  "Aligned Equations": {
+    "prefix": "align",
+    "body": [
+      "\\`\\`\\`{math}",
+      "\\\\begin{align*}",
+      "${1:x} &= ${2:expression}\\\\\\\\",
+      "${3:y} &= ${4:expression}\\\\\\\\",
+      "\\\\end{align*}",
+      "\\`\\`\\`",
+      "$0"
+    ],
+    "description": "Aligned multi-line equations"
+  },
+
+  "Boxed Equation": {
+    "prefix": "boxed",
+    "body": [
+      "\\\\boxed{${1:equation}}$0"
+    ],
+    "description": "Boxed equation (for important formulas)"
+  },
+
+  "Cross-ref Section": {
+    "prefix": "xref-sec",
+    "body": [
+      "[Section %s](#sec:${1:chapter}:${2:section})$0"
+    ],
+    "description": "Cross-reference to section with auto-numbering"
+  },
+
+  "Cross-ref Chapter": {
+    "prefix": "xref-ch",
+    "body": [
+      "[Chapter %s](#chapter:${1:chaptername})$0"
+    ],
+    "description": "Cross-reference to chapter with auto-numbering"
+  },
+
+  "Cross-ref Figure": {
+    "prefix": "xref-fig",
+    "body": [
+      "[](#fig:${1:chapter}:${2:name})$0"
+    ],
+    "description": "Cross-reference to figure (auto-numbered)"
+  },
+
+  "Cross-ref Table": {
+    "prefix": "xref-tab",
+    "body": [
+      "[](#table:${1:chapter}:${2:name})$0"
+    ],
+    "description": "Cross-reference to table (auto-numbered)"
+  },
+
+  "Cross-ref Equation": {
+    "prefix": "xref-eq",
+    "body": [
+      "[](#eqn:${1:chapter}:${2:name})$0"
+    ],
+    "description": "Cross-reference to equation (auto-numbered)"
+  },
+
+  "Vector": {
+    "prefix": "vec",
+    "body": [
+      "\\\\vec ${1:F}$0"
+    ],
+    "description": "Vector with arrow notation"
+  },
+
+  "Unit Vector": {
+    "prefix": "uvec",
+    "body": [
+      "\\\\hat ${1:x}$0"
+    ],
+    "description": "Unit vector with hat notation"
+  },
+
+  "Roman Units": {
+    "prefix": "unit",
+    "body": [
+      "{\\\\rm ${1|m,kg,N,s,J,V,Hz,W,Pa,A,C,T,rad,°C,K|}}$0"
+    ],
+    "description": "Roman (upright) units - NEVER italic"
+  },
+
+  "Custom Unit": {
+    "prefix": "unitc",
+    "body": [
+      "{\\\\rm ${1:unit}}$0"
+    ],
+    "description": "Custom roman unit"
+  },
+
+  "Force Vector": {
+    "prefix": "force",
+    "body": [
+      "\\\\vec F_{${1:g}}$0"
+    ],
+    "description": "Force vector with subscript (e.g., Fg, FT, FN)"
+  },
+
+  "Velocity Vector": {
+    "prefix": "vel",
+    "body": [
+      "\\\\vec v_{${1:0}}$0"
+    ],
+    "description": "Velocity vector with optional subscript"
+  },
+
+  "Acceleration Vector": {
+    "prefix": "acc",
+    "body": [
+      "\\\\vec a_{${1:x}}$0"
+    ],
+    "description": "Acceleration vector"
+  },
+
+  "Position Vector": {
+    "prefix": "pos",
+    "body": [
+      "\\\\vec r_{${1:A}}$0"
+    ],
+    "description": "Position vector"
+  },
+
+  "Problem": {
+    "prefix": "problem",
+    "body": [
+      "(prob:${1:chapter}:${2:name})=",
+      ":::{note} Problem ${3:X.Y}",
+      "${4:Problem statement...}",
+      ":::",
+      "$0"
+    ],
+    "description": "Problem with label"
+  },
+
+  "Solution": {
+    "prefix": "solution",
+    "body": [
+      "(soln:${1:chapter}:${2:name})=",
+      ":::{note} Solution ${3:X.Y}",
+      ":class: dropdown",
+      "${4:Solution...}",
+      ":::",
+      "$0"
+    ],
+    "description": "Solution with dropdown"
+  }
+}

@@ -207,7 +207,7 @@ With this information, we can make a circuit diagram for the case when the $2 {\
 
 The terminals of the real battery are located at points ${\rm a}$ and ${\rm c}$ of the diagram, whereas the terminals of the ideal battery correspond to points ${\rm a}$ and ${\rm b}$. When no current flows through the internal resistor, $r$, there is no voltage drop across that resistor and the potential at ${\rm b}$ will be equal to the potential at ${\rm c}$, as we argued above.
 
-The circuit in [](#fig:circuits:realbatterycircuit) is now identical to that analyzed in [Example 19.1](#ex:circuits:tworesistors), and can be treated the same way. We can combine the $2 {\rm \Omega}$ resistor with the internal resistance, $r$, in series to obtain an effective resistor, $R_{eff}=r+R$. The voltage drop across the effective resistor will be the same as the potential difference across the ideal battery, and we can make use of Ohm's Law to find the internal resistance, $r$:
+The circuit in [](#fig:circuits:realbatterycircuit) is now identical to that analyzed in Example 19.1, and can be treated the same way. We can combine the $2 {\rm \Omega}$ resistor with the internal resistance, $r$, in series to obtain an effective resistor, $R_{eff}=r+R$. The voltage drop across the effective resistor will be the same as the potential difference across the ideal battery, and we can make use of Ohm's Law to find the internal resistance, $r$:
 ```{math}
 
 \begin{align*}
@@ -312,7 +312,7 @@ I_1+I_3+I_4 &=I_2+I_5
 ## Loop rule
 The loop rule states that: **The net voltage drop across a loop must be zero.**
 
-This is a statement about conservation of energy, that we already noted in [Example 19.1](#ex:circuits:tworesistors). Once you have identified a specific loop, if you trace a closed path around the loop, the electric potential must be the same at the end of the path as at the beginning of the path (since it is literally the same point in space). This means that if there is a voltage drop along the path (e.g. due to one or more resistors), then there must be equivalent voltage increases somewhere else on the path (e.g. due to one or more batteries). If this were not the case, it would be possible to have a path where charges could gain a net amount of energy by going around that path, which they could keep doing indefinitely and create an infinite amount of energy; instead, if charges gain potential energy in a battery, they must then lose exactly the same amount of energy inside one or more resistors along the path.
+This is a statement about conservation of energy, that we already noted in Example 19.1. Once you have identified a specific loop, if you trace a closed path around the loop, the electric potential must be the same at the end of the path as at the beginning of the path (since it is literally the same point in space). This means that if there is a voltage drop along the path (e.g. due to one or more resistors), then there must be equivalent voltage increases somewhere else on the path (e.g. due to one or more batteries). If this were not the case, it would be possible to have a path where charges could gain a net amount of energy by going around that path, which they could keep doing indefinitely and create an infinite amount of energy; instead, if charges gain potential energy in a battery, they must then lose exactly the same amount of energy inside one or more resistors along the path.
 
 [](#fig:circuits:loop) shows a loop (which could be part of a larger circuit) to which we can apply the loop rule. The loop contains two batteries, facing in opposite directions (which would not normally be a good use of batteries), as illustrated by the battery arrows. 
 
@@ -804,7 +804,7 @@ C\Delta V - Q &= RC\frac{dQ}{dt}\\
 \therefore \frac{dt}{RC}&=\frac{dQ}{C\Delta V - Q }
 \end{align*}
 ```
-This is similar to differential equations that we have solved previously (in fact, it is the same equation as in [Example 6.4](#ex:applyingnewtonslaws:drag) where we looked at the effect of velocity-dependent drag). The solution to the equation, assuming that the switch is closed at $t=0$, is given by an exponential:
+This is similar to differential equations that we have solved previously (in fact, it is the same equation as in Example 6.4 where we looked at the effect of velocity-dependent drag). The solution to the equation, assuming that the switch is closed at $t=0$, is given by an exponential:
 ```{math}
 Q(t) = C\Delta V\left( 1 - e^{-\frac{t}{RC}} \right)
 ```
