@@ -39,7 +39,7 @@ where $x$ is the position of the mass. The only other forces exerted on the mass
 
 As we saw in Section [Section %s](#sec:potentialecons:ediagrams), if the spring is compressed  (or extended) by a distance $A$ relative to the rest position, and the mass is then released, the mass will oscillate back and forth between $x=\pm A$[^32], which is illustrated in [](#fig:simpleharmonicmotion:spring). We call $A$ the "amplitude of the motion". When the mass is at $x=\pm A$, its speed is zero, as these points correspond to the location where the mass "turns around".
 
-:::{iframe} https://troymessina.github.io/pyro/?example=horizontal-spring-mass&header=true&sidebar=true&tab=output&view=code&run=true
+:::{iframe} https://troymessina.github.io/pyro/?example=horizontal-spring-mass&header=true&sidebar=true&tab=output&view=output&run=true
 :label: ex:visualpython:horizontalSpringMass
 :width: 100%
 :align: center
