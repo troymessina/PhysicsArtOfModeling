@@ -373,7 +373,7 @@ An example of using field lines to represent a vector field in space is shown in
 An example of determining a field vector from the continuous field lines.
 ```
 :::{tip} Checkpoint
-:label: cp:chargesfields:efield
+:label: cp:chargesfields:fieldlinescross
 It is possible for field lines to cross?
 1.  Yes.
 2.  No. 
@@ -794,7 +794,8 @@ In [](#fig:chargesfields:dipoleinfield), the torque vector is into the page (the
 \vec \tau =\vec p \times \vec E
 ```
 In particular, note that the torque is zero when the dipole and electric field vectors are parallel. Thus, a dipole will always experience a torque that tends to align it with the electric field vector. The dipole is thus in a stable equilibrium when it is parallel to the electric field.
-:::{tip} Checkpoint:label: cp:chargesfields:efield
+:::{tip} Checkpoint
+:label: cp:chargesfields:dipolestability
 When an electric dipole is such that its dipole vector is anti-parallel to the electric field vector, the dipole is
 1.  not in equilibrium.
 2.  in a stable equilibrium.

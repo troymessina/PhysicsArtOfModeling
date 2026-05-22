@@ -71,14 +71,14 @@ We can use Newton's Second Law to obtain the position, $x(t)$, velocity, $v(t)$,
 ```
 We can write the acceleration in Newton's Second Law more explicitly as the second derivative of the position, $x(t)$, with respect to time. If we do this, we can see that Newton's Second Law for the mass attached to the spring is a differential equation for the function $x(t)$ (we call it an "equation of motion"):
 ```{math}
-
+:label: eq:simpleharmonicmotion:shmspring
 \begin{align*}
 ma &= -kx\nonumber\\
 m\frac{d^2x}{dt^2} &= -kx\nonumber\\
 \therefore \frac{d^2x}{dt^2} &= -\frac{k}{m}x
 \end{align*}
 ```
-We want to find the position function, $x(t)$. Equation {\ref{eq:simpleharmonicmotion:shmspring}} tells us that the second derivative of $x(t)$ with respect to time must equal the negative of the $x(t)$ function multiplied by a constant, $k/m$. Without having taken a course on differential equations, it might not be obvious what the function $x(t)$ could be. Several, equivalent functions can satisfy this equation. One possible choice, which we present here as a guess, is\footnote{Other possible guesses that work are $A \sin(\omega t + \phi)$, and $x(t) = A\cos(\omega t) + B\sin(\omega t)$.}:
+We want to find the position function, $x(t)$. Equation [](#eq:simpleharmonicmotion:shmspring) tells us that the second derivative of $x(t)$ with respect to time must equal the negative of the $x(t)$ function multiplied by a constant, $k/m$. Without having taken a course on differential equations, it might not be obvious what the function $x(t)$ could be. Several, equivalent functions can satisfy this equation. One possible choice, which we present here as a guess, is\footnote{Other possible guesses that work are $A \sin(\omega t + \phi)$, and $x(t) = A\cos(\omega t) + B\sin(\omega t)$.}:
 ```{math}
 x(t) = A \cos(\omega t + \phi)
 ```

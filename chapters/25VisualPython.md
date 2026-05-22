@@ -28,7 +28,6 @@ The distinction should become clear as you work through this appendix. We hope t
 :::{iframe} https://troymessina.github.io/pyro/?example=earth-moon&header=true&sidebar=true&tab=output&view=output&run=true 
 :label: app:visualpython:earthmoonorbit
 :width: 100%
-:height: 1000px
 :align: center
 The moon orbiting the Earth.
 :::
@@ -57,9 +56,9 @@ print("Hello World! This is my first trinket.")
 # Programming in Visual Python
 
 ## Create objects
-The choice of Visual Python is so that readers can visualize the physics being discussed in the book. Therefore, almost every program will be focused on manipulating Visual Python objects. It is important for readers to become comfortable with creating these objects. In the following examples, we will demonstrate spheres and cylinders. All Visual Python objects have "attributes" such as position, color, and size. [](#tab:visualpython:objattrs) lists common objects and their attributes. Notice the attributes vary in definition such as vector, scalar, or some text-based variable. It is also possible to create new, user-defined attributes, which will be discussed below.
+The choice of Visual Python is so that readers can visualize the physics being discussed in the book. Therefore, almost every program will be focused on manipulating Visual Python objects. It is important for readers to become comfortable with creating these objects. In the following examples, we will demonstrate spheres and cylinders. All Visual Python objects have "attributes" such as position, color, and size. [](#tab:visualpython:objsattrs) lists common objects and their attributes. Notice the attributes vary in definition such as vector, scalar, or some text-based variable. It is also possible to create new, user-defined attributes, which will be discussed below.
 ```{table} A quick reference for a few commonly used objects and their attributes
-:label: app:visualpython:objsattrs
+:label: tab:visualpython:objsattrs
 | Object | Attributes |
 |:------ | :--------- |
 | sphere | pos (vector) – Position of center. Default (0,0,0).|

@@ -39,9 +39,9 @@ Before proceeding, you may wish to review:
 :::
 
 ## Scalar rotational kinematic quantities
-Recall that we can describe the motion of a particle along a circle of radius, $R$, by using its angular position, $\theta$, its angular velocity, $\omega$, and its angular acceleration, $\alpha$. With a suitable choice of coordinate system, the angular position can be defined as the angle made by the position vector of the particles, $\vec r$, and the $x$ axis of a coordinate system whose origin is the centre of the circle, as shown in [](#fig_rotationaldynamics_vcircle). 
+Recall that we can describe the motion of a particle along a circle of radius, $R$, by using its angular position, $\theta$, its angular velocity, $\omega$, and its angular acceleration, $\alpha$. With a suitable choice of coordinate system, the angular position can be defined as the angle made by the position vector of the particles, $\vec r$, and the $x$ axis of a coordinate system whose origin is the centre of the circle, as shown in [](#fig:rotationaldynamics:vcircle). 
 ```{figure}figures/RotationalDynamics/vcircle.png
-:label: fig_rotationaldynamics_vcircle
+:label: fig:rotationaldynamics:vcircle
 :alt: Angular position for a particle moving around the $z$ axis (out of the page), along a circle of radius $R$ with a centre at the origin.
 :width: 300px
 :align: center
@@ -71,13 +71,13 @@ a_s&= \frac{dv}{dt} =\frac{d}{dt}R\omega = R\alpha
 where the radius of the circle, $R$, is a constant that can be taken out of the time derivatives. For motion along a circle, the velocity vector, $\vec v$, of the particle is always tangent to the circle ([](#fig:rotationaldynamics:vcircle)), so $v_s$ corresponds to the speed of the particle. The acceleration vector, $\vec a$, is in general not tangent to the circle; $a_s$ represents the component of the acceleration vector that is tangent to the circle. If $a_s=0$, then $\alpha=0$, and the particle is moving with a constant speed (uniform circular motion), and the acceleration vector points towards the centre of the circle.
 
 :::{tip} Checkpoint
-Which of the following statements correctly describes the speeds at points $A$ and $B$ on the disk rotating about an axis through its centre, as illustrated in [](#fig_rotationaldynamics_rotatingdisk)?
+Which of the following statements correctly describes the speeds at points $A$ and $B$ on the disk rotating about an axis through its centre, as illustrated in [](#fig:rotationaldynamics:rotatingdisk)?
 1. Both points A and B have the same angular and linear speeds.
 2. Both points A and B have the same linear speed but they have different angular speeds.
 3. Both points A and B have the same angular speed but they have different linear speeds.
 
 ```{figure}figures/RotationalDynamics/rotatingdisk.png
-:label: fig_rotationaldynamics_rotatingdisk
+:label: fig:rotationaldynamics:rotatingdisk
 :width: 300px
 :alt: Two points at different radii on a rotating disk.
 Two points at different radii on a rotating disk.
@@ -90,58 +90,58 @@ Two points at different radii on a rotating disk.
 :::
 
 ## Vector rotational kinematic quantities
-In the previous section, we defined angular quantities to describe the motion of a particle about the $z$ axis along a circle of radius $R$ that lies in the $xy$ plane. By using vectors, we can define the angular quantities for rotation about an **axis that can point in any direction**. Given an axis of rotation, the path of any particle rotating about that axis can be described by a circle that lies in the plane perpendicular to that axis of rotation, as illustrated in [](#fig_rotationaldynamics_axis).
+In the previous section, we defined angular quantities to describe the motion of a particle about the $z$ axis along a circle of radius $R$ that lies in the $xy$ plane. By using vectors, we can define the angular quantities for rotation about an **axis that can point in any direction**. Given an axis of rotation, the path of any particle rotating about that axis can be described by a circle that lies in the plane perpendicular to that axis of rotation, as illustrated in [](#fig:rotationaldynamics:axis).
 ```{figure} figures/RotationalDynamics/axis.png
-:label: fig_rotationaldynamics_axis 
+:label: fig:rotationaldynamics:axis 
 :width: 300px
 :alt: Defining the vector $\vec r$ and the angular velocity, $\vec \omega$ for a particle with velocity $\vec v$ rotating about an axis in a general direction.
 :align: center
 Defining the vector $\vec r$ and the angular velocity, $\vec \omega$ for a particle with velocity $\vec v$ rotating about an axis in a general direction.
 ```
 
-We define the vector, $\vec r$, for a particle to be the vector that goes from the axis of rotation to the particle and is in a plane perpendicular to the axis of rotation, as in [](#fig_rotationaldynamics_axis). Given the velocity vector of the particle, $\vec v$, we define its angular velocity vector, $\vec\omega$, **about the axis of rotation**, as:
+We define the vector, $\vec r$, for a particle to be the vector that goes from the axis of rotation to the particle and is in a plane perpendicular to the axis of rotation, as in [](#fig:rotationaldynamics:axis). Given the velocity vector of the particle, $\vec v$, we define its angular velocity vector, $\vec\omega$, **about the axis of rotation**, as:
 ```{math}
 \vec \omega = \frac{1}{r^2} \vec r \times \vec v
 ```
-The angular velocity vector is perpendicular to both the velocity vector and the vector $\vec r$, since it is defined as their cross-product. Thus, the **angular velocity vector is co-linear with the axis of rotation**. By using the angular velocity vector, we can specify **the direction of the axis of rotation as well as the direction in which the particle is rotating about that axis**. The direction of rotation is given by the right hand rule for axial vectors: when you point your thumb in the same direction as the angular velocity vector, the direction of rotation is the direction that your fingers point when you curl them, as illustrated in [](#fig_rotationaldynamics_hand).
+The angular velocity vector is perpendicular to both the velocity vector and the vector $\vec r$, since it is defined as their cross-product. Thus, the **angular velocity vector is co-linear with the axis of rotation**. By using the angular velocity vector, we can specify **the direction of the axis of rotation as well as the direction in which the particle is rotating about that axis**. The direction of rotation is given by the right hand rule for axial vectors: when you point your thumb in the same direction as the angular velocity vector, the direction of rotation is the direction that your fingers point when you curl them, as illustrated in [](#fig:rotationaldynamics:hand).
 ```{figure} figures/RotationalDynamics/righthandruleaxial.png
-:label: fig_rotationaldynamics_hand
+:label: fig:rotationaldynamics:hand
 :width: 300px
 :alt: Using the right hand rule for axial vectors. In this case, the direction of rotation is counter clockwise when looking at the page (the direction that the fingers curl), so the rotation vector points out of the page (the direction of the thumb).
 :align: center
 Using the right hand rule for axial vectors. In this case, the direction of rotation is counter clockwise when looking at the page (the direction that the fingers curl), so the rotation vector points out of the page (the direction of the thumb).
 ```
 
-This definition of the angular velocity is consistent with the description from the previous section for motion about a circle of radius $R$ that lies in the $xy$ plane, as in [](#fig_rotationaldynamics_vcircle). In that case, the magnitude of the angular velocity is given by:
+This definition of the angular velocity is consistent with the description from the previous section for motion about a circle of radius $R$ that lies in the $xy$ plane, as in [](#fig:rotationaldynamics:vcircle). In that case, the magnitude of the angular velocity is given by:
 \begin{align*}
 \omega &=\frac{1}{r^2} || \vec r \times \vec v||= \frac{1}{r^2}r v\sin\phi= \frac{v}{R}\\
 \therefore v &= R\omega
 \end{align*}
-where $\phi$ is the angle between the vectors $\vec r$ and $\vec v$ ($90{\degree}$ for motion around a circle). The direction of the angular velocity in [](#fig_rotationaldynamics_vcircle) is in the positive $z$ direction, which corresponds to counter-clockwise rotation about the $z$ axis. 
+where $\phi$ is the angle between the vectors $\vec r$ and $\vec v$ ($90{\degree}$ for motion around a circle). The direction of the angular velocity in [](#fig:rotationaldynamics:vcircle) is in the positive $z$ direction, which corresponds to counter-clockwise rotation about the $z$ axis. 
 
 :::{tip} Checkpoint
+:label: cp:rotationaldynamics:doorangularvelocity
 You push on the right-hand side of a door to open it, as the door's hinges are on the left. The angular velocity vector of the door is:
 1. Upwards
 2. Downwards
 3. Forwards
 4. Backwards
 :::{tip} Answer
-:label: cp:rotationaldynamics:door
 :class: dropdown
 1.
 :::
 
 One can always define an angular velocity vector **relative to a point of rotation**, even if the particle is not moving along a circle. If we define the vector $\vec r$ to be the vector from the point of rotation to the particle, then the angular velocity vector describes the motion of the particle as if it were instantaneously moving in a circle centred at the point of rotation, in a plane given by the vectors $\vec r$ and $\vec v$. 
 
-Consider, for example, the particle in [](#fig_rotationaldynamics_vline) which is moving in a straight line with a velocity vector in the $xy$ plane at a position $\vec r$ relative to the origin. We can define its angular velocity vector relative to the origin, which will be in the positive $z$ direction. 
+Consider, for example, the particle in [](#fig:rotationaldynamics:vline) which is moving in a straight line with a velocity vector in the $xy$ plane at a position $\vec r$ relative to the origin. We can define its angular velocity vector relative to the origin, which will be in the positive $z$ direction. 
 ```{figure} figures/RotationalDynamics/vline.png
-:label: fig_rotationaldynamics_vline
+:label: fig:rotationaldynamics:vline
 :width: 300px
 :alt: Angular position for a particle moving in a straight line.
 :align: center
 Angular position for a particle moving in a straight line.
 ```
-The angular velocity describes the motion of the particle as if it were **instantaneously moving along a circle of radius $r$ centred about the origin**. The angular velocity is related to the component of $\vec v$, $v_\perp$, that is perpendicular to $\vec r$ (which is the component tangent to the circle of radius $r$, in [](#fig_rotationaldynamics_vline):
+The angular velocity describes the motion of the particle as if it were **instantaneously moving along a circle of radius $r$ centred about the origin**. The angular velocity is related to the component of $\vec v$, $v_\perp$, that is perpendicular to $\vec r$ (which is the component tangent to the circle of radius $r$, in [](#fig:rotationaldynamics:vline):
 ```{math}
 ||\vec \omega|| = \frac{1}{r^2} || \vec r \times \vec v||=\frac{v\sin\phi}{r}= \frac{v_\perp}{r}
 ```
@@ -153,7 +153,7 @@ Similarly, we can define the angular acceleration vector, $\vec \alpha$, about a
 ```
 where $\vec a$ is the particle's acceleration vector,  and $\vec r$ is the vector from the axis of rotation to the particle. The direction of the angular acceleration is co-linear with the axis of rotation and the right-hand rule gives the rotational direction of the angular acceleration. We can also define the angular acceleration about a point; in that case, the direction of the vector will define an instantaneous axis of rotation about a circle of radius $r$ centred at the point as well as the direction of the angular acceleration about that axis.
 
-Finally, we can define an angular displacement vector, $\vec \theta$, relative to an axis of rotation. The direction of the angular displacement vector will be co-linear with the axis of rotation, its direction will indicate the direction of rotation about that axis, and its magnitude (in radians) will correspond to the angular displacement (as shown in [](#fig_rotationaldynamics_axis)). We can only relate the angular displacement vector to an infinitesimal linear displacement vector, $d\vec s$, since the position vector $\vec r$ from the axis of rotation will be different at each end of the displacement vector if the displacement is large. The infinitesimal angular displacement vector that corresponds to an infinitesimal displacement vector, $d\vec s$, is defined as:
+Finally, we can define an angular displacement vector, $\vec \theta$, relative to an axis of rotation. The direction of the angular displacement vector will be co-linear with the axis of rotation, its direction will indicate the direction of rotation about that axis, and its magnitude (in radians) will correspond to the angular displacement (as shown in [](#fig:rotationaldynamics:axis)). We can only relate the angular displacement vector to an infinitesimal linear displacement vector, $d\vec s$, since the position vector $\vec r$ from the axis of rotation will be different at each end of the displacement vector if the displacement is large. The infinitesimal angular displacement vector that corresponds to an infinitesimal displacement vector, $d\vec s$, is defined as:
 \begin{align*}
 d\vec \theta &= \frac{1}{r^2} \vec r \times d\vec s\\
 \end{align*}
@@ -370,13 +370,13 @@ If you are ever having trouble remembering the factors involved in maximizing to
 :::
 
 :::{tip} Checkpoint
+:label: cp:rotationaldynamics:doorhandle
 Why is the handle of a door placed on the side of the door that is opposite to the hinges?}
 1. Because it increases the lever arm of a force used to rotate the door about the handle.
 2. Because it increases the perpendicular component of force used to rotate the door about the hinges.
 3. Because it increases the lever arm of a force used to rotate the door about the hinges. 
 4. Because it would be inconvenient if the handle were next to the hinges.
 :::{tip} Answer
-:label: cp:rotationaldynamics:door
 :class: dropdown
 3.
 :::
@@ -439,7 +439,7 @@ If a particle were located at the given position, the force would cause the part
 
 
 # Rotational dynamics for a solid object
-We now consider the rotational dynamics for a solid object about a specific axis of rotation. Just as we did in [Chapter 10](#momentumandcm), we model a solid object as a system made of many particles of mass $m_i$. Because all of the points in a solid must move in unison, they all **rotate about an axis of rotation instead of a point**. We describe the position of each particle $i$ by a vector $\vec r_i$ that is **perpendicular to the axis of rotation and goes from the axis to the corresponding particle**, as shown in [](#fig:rotationaldynamics:blob).
+We now consider the rotational dynamics for a solid object about a specific axis of rotation. Just as we did in [Chapter 10](#chapter:momentumandcm), we model a solid object as a system made of many particles of mass $m_i$. Because all of the points in a solid must move in unison, they all **rotate about an axis of rotation instead of a point**. We describe the position of each particle $i$ by a vector $\vec r_i$ that is **perpendicular to the axis of rotation and goes from the axis to the corresponding particle**, as shown in [](#fig:rotationaldynamics:blob).
 ```{figure} figures/RotationalDynamics/blob.png
 :label: fig:rotationaldynamics:blob
 :width: 300px

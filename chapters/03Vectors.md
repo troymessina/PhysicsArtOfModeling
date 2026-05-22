@@ -48,7 +48,7 @@ To describe the position of an object in two dimensions (e.g. a marble rolling o
 To fully describe the position of an object, we must specify both its position along the $x$ and $y$ axes. For example, point $P$ in [](#fig:Vectors:xyp) has two **coordinates**, $x_p$ and $y_p$, that define its position. The $x$ coordinate is found by drawing a line through $P$ that is parallel to the $y$ axis and is given by the intersection of that line with the $x$ axis. The $y$ coordinate is found by drawing a line through point $P$ that is parallel to the $x$ axis and is given by the intersection of that line with the $y$ axis.
 
 :::{tip} Checkpoint 3.1
-:label: Checkpoint-3.1
+:label: cp:vectors:checkpoint3.1
 [](#fig:Vectors:xyslant) shows a coordinate system that is not orthogonal (where the $x$ and $y$ axes are not perpendicular). Which value on the figure correctly indicates the $y$ coordinate of point $P$?
 ```{figure} figures/Vectors/xyslant.png
 :label: fig:Vectors:xyslant
@@ -61,7 +61,6 @@ A non-orthogonal coordinate system (the $x$ and $y$ axes are not perpendicular).
 2. $y_2$
 3. $y_3$
 :::{tip} Answer
-:label: Checkpoint-3.1
 :class: dropdown
 1.
 :::
@@ -198,14 +197,13 @@ The vectors $\hat x$ ($\hat i$) and $\hat y$ ($\hat j$) are unit vectors in $x$ 
 For example, the unit vector $\hat y$ can be written down as (0,1) in two dimensions or (0,1,0) in three dimensions, using the row notation.
 
 :::{tip} Checkpoint 3.2
-:label: Checkpoint-3.2
+:label: cp:vectors:checkpoint3.2
 What is the magnitude (the length) of the vector $5\hat x-2\hat y$?
 1. 3.0
 2. 5.4
 3. 7.0
 4. 10.0
 :::{tip} Answer
-:label: Checkpoint-3.2
 :class: dropdown
 2.
 :::
@@ -231,14 +229,13 @@ Similarly, the division of a vector by a scalar is defined analogously by dividi
 \vec w = \frac{\vec v}{a} = \left(\frac{v_x}{a}, \frac{v_y}{a}, \frac{v_z}{a}\right)
 ```
 :::{tip} Checkpoint 3.3
-:label: Checkpoint-3.3
+:label: cp:vectors:checkpoint3.3
 What happens to the length of a vector if the vector is multiplied by 2 (a scalar)?
 1. The length doubles
 2. The length is halved
 3. The length is quadrupled
 4. It depends on the direction of the vector
 :::{tip} Answer
-:label: Checkpoint-3.3
 :class: dropdown
 1.
 :::
@@ -292,10 +289,9 @@ F_z &= ma_z
 ```
 
 :::{note} Example 3.1
-:label: Example-3.1
+:label: ex:vectors:example3.1
 Given two vectors, $\vec a=2\hat x+3\hat y$, and $\vec b=5\hat x-2\hat y$, calculate the vector $\vec c= 2\vec a- 3\vec b$.
 :::{note} Solution
-:label: Example-3.1
 :class: dropdown
 This can easily be solved algebraically by collecting terms for each component, $\hat x$ and $\hat y$:
 ```{math}
@@ -366,7 +362,7 @@ Illustration of the angle between vectors $\vec a$ and $\vec b$ when these are p
 The scalar product between two vectors of a fixed length will be maximal when the two vectors are parallel ($\cos\theta=1$) and zero when the vectors are perpendicular ($\cos\theta =0$). The scalar product is thus useful when we want to calculate quantities that are maximal when two vectors are parallel. 
 
 :::{tip} Checkpoint 3.4
-:label: Checkpoint-3.4
+:label: cp:vectors:checkpoint3.4
 The vectors $\vec a $ and $\vec b$ in the three diagrams below have the same magnitude. Order the diagrams from the one that gives the smallest scalar product $\vec a\cdot \vec b$ to the largest scalar product.
 ```{figure} figures/Vectors/vectororder.png
 :label: fig:Vectors:scalarproductorder
@@ -376,7 +372,6 @@ The vectors $\vec a $ and $\vec b$ in the three diagrams below have the same mag
 Put these in order of the magnitude of their scalar product.
 ```
 :::{tip} Answer
-:label: Checkpoint-3.4
 :class: dropdown
 $3<1<2$
 :::
@@ -686,14 +681,13 @@ A force, $\vec F$, is exerted in the plane of a disk at a position given by the 
 ```
 
 :::{tip} Checkpoint 3.5
-:label: Checkpoint-3.5
+:label: cp:vectors:checkpoint3.5
 Referring to [](#fig:Vectors:torque_vectorprod), in which direction does the torque vector point?
 1. to the right
 2. to the left
 3. out of the page 
 4. into the page
 :::{tip} Answer
-:label: Checkpoint-3.5
 :class: dropdown
 4.
 :::

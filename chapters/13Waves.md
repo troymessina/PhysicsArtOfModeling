@@ -162,7 +162,8 @@ The displacement, $D$, of each point at position, $x$, in the medium is shown on
 It is important to note that [](#fig:waves:sinewave) is not restricted to describing transverse waves, even if the illustration suggests that the particles' displacements (vertical axis) are perpendicular to the direction of propagation of the wave (horizontal). The quantity, $D$, that is plotted on the vertical axis corresponds to the displacement of a particle from its equilibrium position. That displacement could correspond to the longitudinal displacement of a particle in a longitudinal wave.
 
 At time $t=0$ (solid line), the displacement of each point in the medium, $D(x, t=0)$, as a function of their distance from the origin, $x$, can be described by a sine function:
-```{math} :label: eq:waves:wavex
+```{math} 
+:label: eq:waves:wavex
 D(x,t=0) = A\sin\left( \frac{2\pi}{\lambda}x \right)
 ```
 This corresponds to the displacement being 0 at the origin and at any position, $x$, that is a multiple of the wavelength, $\lambda$. 

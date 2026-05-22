@@ -213,10 +213,6 @@ Try, putting these three lines of code in the code below and see what happens wh
 A blank Visual Python program to simulate a rock sliding on a frozen pond.
 :::
 
-```{include} ../trinket/blank.html
-
-```
-
 This code draws the rock and the velocity vector, but it does not simulate the motion. To simulate the motion, we need to update the position of the rock as time progresses. We can use a loop to repeat calculations of the position. For example, we can repeat the calculations `while` the time is less than 2 seconds. Each time the position is calculated, we will add a small increment of time for the next calculation. Here is an example where we start at time $t=0$ and increment the position every $\Delta t = 0.1 {\rm s}$.
 ```python
 t = 0

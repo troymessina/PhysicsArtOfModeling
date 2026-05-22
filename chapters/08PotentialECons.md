@@ -78,7 +78,7 @@ since this means that the work done over a closed path is zero. The condition fo
 ```
 where the integral on the right is called a "surface integral" over the surface, $S$, enclosed by the closed path over which the work is being calculated. Don't worry, it is way beyond the scope of this text to understand this integral or Stokes' Theorem in detail! It is however useful in that it gives us the following conditions on the components of a force for that force to be conservative (by requiring the terms in parentheses to be zero):
 ```{math}
-
+:label: eq:potentialecons:conservative
 \begin{align*}
 \frac{\partial F_z}{\partial y}-\frac{\partial F_y}{\partial z} &= 0 \nonumber\\
 \frac{\partial F_x}{\partial z}-\frac{\partial F_z}{\partial x} &= 0\nonumber\\
@@ -680,7 +680,7 @@ E = \frac{1}{2}mv^2 + mgh
 In the simulation is an Energy Diagram for the skater, which allows us to examine how their total energy, $E$. Without friction, the energy is divided between kinetic and potential energy depending on the position of the skater on the ramp. The vertical axis corresponds to energy and the horizontal axis corresponds to the position of the skater.
 
 :::{iframe} https://phet.colorado.edu/sims/html/energy-skate-park/latest/energy-skate-park_en.html
-:label: chapter:momentumandcm:blanktrinket
+:label: chapter:potentialecons:skatephet
 :width: 100%
 :align: center
 A PhET simulation for work-energy.

@@ -878,7 +878,7 @@ Notice that this is the same as
 W^{tot} = Fd = 10\cdot 0.1 = 1~{\rm J}
 ```
 :::
-Next, let's look at the spring example from [Section %s](#sec:workenergy:kinetic). Instead of compressing the spring we will consider stretching the spring in the $+\hat{x}$-direction. The force applied to stretching the spring is $\vec{F}=kx \hat{x}$. If we plot $F$ vs. $x$ for stretching a spring with spring constant $k=10~\text{N/m}$ from $x=0$ to $x=0.1$ meters, we get the graph shown in [](#). We can see that the force increases linearly with displacement. When we divide the displacement into intervals, we no longer can fit rectangular areas to fully describe the area of the force vs. displacement. That is okay, we can approximate the area with these rectangular areas.
+Next, let's look at the spring example from [Section %s](#sec:workenergy:kinetic). Instead of compressing the spring we will consider stretching the spring in the $+\hat{x}$-direction. The force applied to stretching the spring is $\vec{F}=kx \hat{x}$. If we plot $F$ vs. $x$ for stretching a spring with spring constant $k=10~\text{N/m}$ from $x=0$ to $x=0.1$ meters, we get the graph shown in [](#fig:workenergy:springF). We can see that the force increases linearly with displacement. When we divide the displacement into intervals, we no longer can fit rectangular areas to fully describe the area of the force vs. displacement. That is okay, we can approximate the area with these rectangular areas.
 ```{figure} figures/WorkEnergy/springF.png
 :label: fig:workenergy:springF
 :width: 100%
@@ -891,7 +891,7 @@ A spring with spring constant  $k=10 {\rm N/m}$ is stretched from its equilibriu
 :::{note} Solution
 :class: dropdown
 ```{table} A table of all of the intervals for a spring with $k=10 {\rm N/m}$ displaced $0.1 {\rm m}$.
-:label: tab:workenergy:constantF
+:label: tab:workenergy:springF
 |  $F_i=kx_i ({\rm N})$ | $\Delta~x_i ({\rm m})$ |	$W_i ({\rm J})$ |
 |:----------:|:--------------------:|:---------------------:|
 |  $10 \times 0.00 = 0.00$ | $0.01 - 0.00 = 0.01$ | $0.00 \times 0.01 = 0.000$|
@@ -935,7 +935,7 @@ W &= A_{triangle}\\
 \end{align*}
 ```
 
-We could improve our approximation by dividing the $F$ vs. $x$ graph into smaller intervals as shown in [](#). The calculation using a table would be tedious. Let's see how a computer can help us solve this problem.
+We could improve our approximation by dividing the $F$ vs. $x$ graph into smaller intervals as shown in [](#fig:workenergy:springF2). The calculation using a table would be tedious. Let's see how a computer can help us solve this problem.
 ```{figure} figures/WorkEnergy/springF2.png
 :label: fig:workenergy:springF2
 :width: 100%

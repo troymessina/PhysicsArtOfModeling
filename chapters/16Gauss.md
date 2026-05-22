@@ -140,7 +140,7 @@ For a closed surface, one can unambiguously define the direction of the vector $
 which is the same integration symbol that we used for indicating a path integral when the initial and final points are the same (see, for example, [Section %s](#sec:potentialecons:conservative)).
 
 :::{tip} Checkpoint
-:label: cp:gauss:unitsofflux
+:label: cp:gauss:closedflux
 ```{figure} figures/Gauss/irregularfield.png
 :label: fig:gauss:irregularfield
 :width: 25%
@@ -352,7 +352,7 @@ The right hand side gives us the number of field lines (the flux). If we can con
 :::
 
 :::{tip} Checkpoint
-:label: cp:gauss:unitsofflux
+:label: cp:gauss:cubeinsideshell
 ```{figure} figures/Gauss/spherecube.png
 :label: fig:gauss:spherecube
 :width: 30%

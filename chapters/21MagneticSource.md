@@ -18,9 +18,7 @@ notebookmetadatakey: val1
 (chapter:magneticsource)=
 # Overview
 ```{code-cell}
----
-cellmetadatakey: val1
----
+
 print("Here is a Python cell")
 ```
 
