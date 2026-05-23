@@ -37,14 +37,16 @@ We assume that the force exerted by the spring on the mass is given by Hooke's L
 ```
 where $x$ is the position of the mass. The only other forces exerted on the mass are its weight and the normal force from the horizontal surface, which are equal in magnitude and opposite in direction. Therefore, the net force on the mass is the force from the spring. 
 
-As we saw in Section [Section %s](#sec:potentialecons:ediagrams), if the spring is compressed  (or extended) by a distance $A$ relative to the rest position, and the mass is then released, the mass will oscillate back and forth between $x=\pm A$[^32], which is illustrated in [](#fig:simpleharmonicmotion:spring). We call $A$ the "amplitude of the motion". When the mass is at $x=\pm A$, its speed is zero, as these points correspond to the location where the mass "turns around".
+As we saw in Section [Section %s](#sec:potentialecons:ediagrams), if the spring is compressed  (or extended) by a distance $A$ relative to the rest position, and the mass is then released, the mass will oscillate back and forth between $x=\pm A$[^32], which is illustrated in [](#fig:simpleharmonicmotion:spring) and simulated in [](#ex:simpleharmonicmotion:horizontalSpringMass). We call $A$ the "amplitude of the motion". When the mass is at $x=\pm A$, its speed is zero, as these points correspond to the location where the mass "turns around".
 
 :::{iframe} https://troymessina.github.io/pyro/?example=horizontal-spring-mass&header=true&sidebar=true&tab=output&view=output&run=true
-:label: ex:visualpython:horizontalSpringMass
+:label: ex:simpleharmonicmotion:horizontalSpringMass
 :width: 100%
 :align: center
 A mass attached to a spring on a horizontal, frictionless surface.
 :::
+
+In [](#ex:simpleharmonicmotion:horizontalSpringMass), the amplitude $A$, mass $m$, and spring constant $k$ can adjusted in the `Starting Parameters` to see how the affect the motion. Determine a hypothesis for each of these variables, and then test them in in the simulation. Are your hypotheses supported? Read on to see why these variables have the effects they do.
 
 ## Description using energy
 We can describe the motion of the mass using energy, since the mechanical energy of the mass is conserved. At any position, $x$, the mechanical energy, $E$, of the mass will have a term from the potential energy, $U$, associated with the spring force, and kinetic energy, $K$:
