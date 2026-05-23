@@ -46,7 +46,7 @@ As we saw in Section [Section %s](#sec:potentialecons:ediagrams), if the spring 
 A mass attached to a spring on a horizontal, frictionless surface.
 :::
 
-In [](#ex:simpleharmonicmotion:horizontalSpringMass), the amplitude $A$, mass $m$, and spring constant $k$ can adjusted in the `Starting Parameters` to see how the affect the motion. Determine a hypothesis for each of these variables, and then test them in in the simulation. Are your hypotheses supported? Read on to see why these variables have the effects they do.
+In [](#ex:simpleharmonicmotion:horizontalSpringMass), the amplitude $A$, mass $m$, and spring constant $k$ can adjusted in the `Starting Parameters` to see how they affect the motion of the mass. Create a hypothesis for how increasing each of these variables affects the motion of the mass, and then test increasing each variable in in the simulation. Are your hypotheses supported? Read on to see why these variables have the effects they do.
 
 ## Description using energy
 We can describe the motion of the mass using energy, since the mechanical energy of the mass is conserved. At any position, $x$, the mechanical energy, $E$, of the mass will have a term from the potential energy, $U$, associated with the spring force, and kinetic energy, $K$:
