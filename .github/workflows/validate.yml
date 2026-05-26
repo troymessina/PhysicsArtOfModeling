@@ -43,14 +43,14 @@ jobs:
       # Step 2: Set up Node.js environment
       # This is needed to run npm and install MyST Markdown
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: 24.x
 
       # Step 3: Cache npm global packages to speed up builds
       # This caches the mystmd installation so it doesn't need to be downloaded every time
       - name: Cache npm global packages
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: ~/.npm
           key: ${{ runner.os }}-npm-global-${{ hashFiles('**/package-lock.json') }}
@@ -65,12 +65,12 @@ jobs:
       # Step 5: Install Typst for PDF generation
       # Typst is a modern typesetting system used to create PDF documents
       - name: Setup Typst
-        uses: typst-community/setup-typst@v4
+        uses: typst-community/setup-typst@v5
 
       # Step 6: Cache MyST build outputs to speed up incremental builds
       # This stores the build directory so unchanged files don't need to be rebuilt
       - name: Cache MyST build
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: |
             ./_build
@@ -106,7 +106,7 @@ jobs:
       # This allows you to download and review which links are broken
       - name: Upload link check results
         if: always()  # Run even if previous steps fail
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: link-check-results
           path: lychee/out.md
