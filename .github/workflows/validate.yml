@@ -38,7 +38,7 @@ jobs:
     steps:
       # Step 1: Check out the repository code
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       # Step 2: Set up Node.js environment
       # This is needed to run npm and install MyST Markdown
