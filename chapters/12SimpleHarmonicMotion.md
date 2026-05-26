@@ -43,6 +43,7 @@ As we saw in Section [Section %s](#sec:potentialecons:ediagrams), if the spring 
 :label: ex:simpleharmonicmotion:horizontalSpringMass
 :width: 100%
 :align: center
+:placeholder: ../chapters/figures/MomentumAndCM/BlankTrinket.jpg
 A mass attached to a spring on a horizontal, frictionless surface.
 :::
 
@@ -71,6 +72,15 @@ If you double the amplitude of the motion of a mass attached to a spring, its ma
 :::{tip} Answer
 :class: dropdown
 1.
+:::
+
+:::{exercise}
+:label: ex:simpleharmonicmotion:dartgun
+A toy dart launcher uses a spring with spring constant $k = 150\, \mathrm{N/m}$ to propel a dart of mass $m = 20\, \mathrm{g}$. To load the launcher, the spring is compressed $A = 6.0\, \mathrm{cm}$ from its rest position. Assume no friction.
+
+a. What is the total mechanical energy stored in the loaded launcher?
+b. What is the speed of the dart as it passes through the equilibrium position?
+c. At what position $x$ is the kinetic energy of the dart equal to the potential energy stored in the spring?
 :::
 
 ## Kinematics of simple harmonic motion
@@ -119,6 +129,15 @@ What is the SI unit for angular frequency?
 4.
 :::
 
+:::{exercise}
+:label: ex:simpleharmonicmotion:eqofmotion
+A 0.25 kg block on a frictionless horizontal surface is attached to a spring ($k = 100\, \mathrm{N/m}$). The block is pulled 15 cm from equilibrium and released from rest at $t = 0$.
+
+a. Apply Newton's Second Law to write the equation of motion (the differential equation) for the block's position $x(t)$.
+b. What is the angular frequency $\omega$ of the oscillation, and what are its SI units?
+c. Show by direct substitution that $x(t) = (0.15\, \mathrm{m})\cos(\omega t)$ satisfies the equation of motion.
+:::
+
 :::{attention} Olivia's Thoughts
 In [Chapter %s](#chapter:momentumandcm), we found, $x(t)$, from a function, $a(t$), by using simple integration. You may be wondering why we can't do the same thing in order to find $x(t)$ for the mass-spring system. The difference is that, before, the acceleration was a function of time. Here, the acceleration is a function of $x$. This means that we have to use a different method to solve for $x(t)$, which is why we are making these "guesses" to solve a differential equation. 
 :::
@@ -157,6 +176,15 @@ What is the value of $\phi$ if we choose $t=0$ to be when the mass is at $x=0$ a
 4.
 :::
 
+:::{exercise}
+:label: ex:simpleharmonicmotion:phase
+A 0.50 kg block is attached to a spring ($k = 200\, \mathrm{N/m}$) on a frictionless horizontal surface. At $t = 0$, a brief impulse sends the block through the equilibrium position ($x_0 = 0$) moving in the positive $x$ direction with speed $v_0 = 2.0\, \mathrm{m/s}$.
+
+a. Find the amplitude $A$ of the resulting oscillation.
+b. Determine the phase $\phi$, and explain why its sign makes physical sense.
+c. Write explicit expressions for $x(t)$ and $v(t)$.
+:::
+
 The position of the mass is described by a sinusoidal function of time; we call this type of motion "simple harmonic motion". The position and velocity as a function of time for a spring-mass system with $m=1 {\rm kg}$, $k=4 {\rm N/m}$, $A=10 {\rm m}$ are shown in [](#fig:simpleharmonicmotion:xvtshm) for two different choices of the phase, $\phi=0$ and $\phi=\pi/2$.
 ```{figure} figures/SimpleHarmonicMotion/xvtshm.png
 :label: fig:simpleharmonicmotion:xvtshm
@@ -193,6 +221,16 @@ In order to double the oscillation period of a spring-mass system, you can
 :::{tip} Answer
 :class: dropdown
 2.
+:::
+
+:::{exercise}
+:label: ex:simpleharmonicmotion:kinematics
+An earthquake early warning sensor contains a 2.0 kg mass attached to a horizontal spring ($k = 200\, \mathrm{N/m}$). During calibration, the mass is displaced 15 cm from equilibrium and released from rest, defining $t = 0$ at that instant.
+
+a. Find the angular frequency $\omega$, the period $T$, and the frequency $f$ of the oscillation.
+b. Write $x(t)$, $v(t)$, and $a(t)$ as explicit functions of time.
+c. What are the maximum speed and maximum magnitude of acceleration?
+d. How long after release does the mass first reach the equilibrium position?
 :::
 
 ## Analogy with uniform circular motion
@@ -297,6 +335,16 @@ How does the period of motion of a vertical spring-mass system compare to the pe
 :::{tip} Answer
 :class: dropdown
 3.
+:::
+
+:::{exercise}
+:label: ex:simpleharmonicmotion:babybouncer
+A baby bouncer consists of a seat suspended from a doorframe by a vertical spring. When a 5.0 kg baby is placed in the seat and the system reaches its new equilibrium, the spring has stretched 10 cm beyond its natural length. Use $g = 10\, \mathrm{m/s^2}$ throughout.
+
+a. Determine the spring constant of the bouncer.
+b. A parent gently pushes the baby 8.0 cm below the equilibrium position and releases from rest. What is the angular frequency of the resulting oscillations?
+c. What is the period of oscillation?
+d. What is the maximum speed of the baby?
 :::
 
 ## Two-spring-mass system
@@ -445,6 +493,15 @@ Kaiden built a grandfather clock using a simple pendulum, but he found that the 
 :::{tip} Answer
 :class: dropdown
 3.
+:::
+
+:::{exercise}
+:label: ex:simpleharmonicmotion:pendulum
+A grandfather clock uses a simple pendulum with a string of length $L = 1.00\, \mathrm{m}$ and a bob of mass $m = 0.500\, \mathrm{kg}$. The pendulum swings with a maximum angle of $\theta_{max} = 8.0°$ from the vertical. Use $g = 9.80\, \mathrm{m/s^2}$.
+
+a. Verify that the small angle approximation is reasonable for $\theta_{max} = 8.0°$ by comparing $\sin\theta_{max}$ with $\theta_{max}$ expressed in radians, and computing the percentage difference.
+b. Using the small angle approximation, find $\omega$ and the period $T$ of the pendulum. Does the mass of the bob affect the period?
+c. At what point in the swing is the bob's speed maximum? Calculate that maximum speed.
 :::
 
 ## The physical pendulum
@@ -817,6 +874,150 @@ Using our expression for $\kappa$ found in part a), this becomes:
 ```{math}
 G=\frac{2\pi^2L\beta d^2}{MT^2}
 ```
+:::
+
+## Exercise Solutions
+
+:::{solution} ex:simpleharmonicmotion:dartgun
+:label: soln:simpleharmonicmotion:dartgun
+:class: dropdown
+**(a)** At the turning point ($v = 0$), all mechanical energy is potential:
+```{math}
+E = \frac{1}{2}kA^2 = \frac{1}{2}(150\, \mathrm{N/m})(0.060\, \mathrm{m})^2 = 0.27\, \mathrm{J}
+```
+
+**(b)** At $x = 0$, all energy is kinetic:
+```{math}
+\frac{1}{2}mv^2 = E \implies v = \sqrt{\frac{2E}{m}} = \sqrt{\frac{2(0.27\, \mathrm{J})}{0.020\, \mathrm{kg}}} \approx 5.2\, \mathrm{m/s}
+```
+Equivalently, from $v(x) = \sqrt{k(A^2-x^2)/m}$ evaluated at $x = 0$: $v = \sqrt{kA^2/m} = 5.2\, \mathrm{m/s}$.
+
+**(c)** When $KE = PE$, each equals $E/2$. Setting $\frac{1}{2}kx^2 = \frac{E}{2} = \frac{kA^2}{4}$:
+```{math}
+x = \frac{A}{\sqrt{2}} = \frac{0.060\, \mathrm{m}}{\sqrt{2}} \approx 4.2\, \mathrm{cm}
+```
+:::
+
+:::{solution} ex:simpleharmonicmotion:eqofmotion
+:label: soln:simpleharmonicmotion:eqofmotion
+:class: dropdown
+**(a)** The only horizontal force on the block is the spring force $F = -kx$. Newton's Second Law gives:
+```{math}
+m\frac{d^2x}{dt^2} = -kx \implies \frac{d^2x}{dt^2} = -\frac{k}{m}x = -400\, \mathrm{s}^{-2}\cdot x
+```
+
+**(b)** Comparing with the standard SHM form $\frac{d^2x}{dt^2} = -\omega^2 x$:
+```{math}
+\omega = \sqrt{\frac{k}{m}} = \sqrt{\frac{100\, \mathrm{N/m}}{0.25\, \mathrm{kg}}} = 20\, \mathrm{rad/s}
+```
+
+**(c)** Substituting $x(t) = (0.15\, \mathrm{m})\cos(20t)$ and taking derivatives:
+```{math}
+\begin{align*}
+\frac{dx}{dt} &= -(0.15\, \mathrm{m})(20\, \mathrm{rad/s})\sin(20t)\\
+\frac{d^2x}{dt^2} &= -(0.15\, \mathrm{m})(20\, \mathrm{rad/s})^2\cos(20t) = -60\cos(20t)\, \mathrm{m/s^2}
+\end{align*}
+```
+Comparing with $-\omega^2 x = -(400\, \mathrm{s}^{-2})(0.15\, \mathrm{m})\cos(20t) = -60\cos(20t)\, \mathrm{m/s^2}$ ✓
+:::
+
+:::{solution} ex:simpleharmonicmotion:phase
+:label: soln:simpleharmonicmotion:phase
+:class: dropdown
+First, $\omega = \sqrt{k/m} = \sqrt{200/0.50} = 20\, \mathrm{rad/s}$.
+
+**(a)** At $x_0 = 0$, all energy is kinetic, so $\frac{1}{2}mv_0^2 = \frac{1}{2}kA^2$:
+```{math}
+A = v_0\sqrt{\frac{m}{k}} = (2.0\, \mathrm{m/s})\sqrt{\frac{0.50\, \mathrm{kg}}{200\, \mathrm{N/m}}} = 0.10\, \mathrm{m}
+```
+
+**(b)** Applying $x(0) = A\cos\phi = 0$ gives $\phi = \pm\pi/2$. To choose the sign, apply $v(0) = -A\omega\sin\phi = v_0 > 0$, which requires $\sin\phi < 0$, so $\phi = -\pi/2$. A negative phase shifts the cosine to the right, placing the mass at $x = 0$ moving in the positive direction at $t = 0$, consistent with the given initial conditions.
+
+**(c)**
+```{math}
+\begin{align*}
+x(t) &= (0.10\, \mathrm{m})\cos\!\left(20t - \frac{\pi}{2}\right) = (0.10\, \mathrm{m})\sin(20t)\\
+v(t) &= (2.0\, \mathrm{m/s})\cos(20t)
+\end{align*}
+```
+:::
+
+:::{solution} ex:simpleharmonicmotion:kinematics
+:label: soln:simpleharmonicmotion:kinematics
+:class: dropdown
+**(a)**
+```{math}
+\omega = \sqrt{\frac{k}{m}} = \sqrt{\frac{200\, \mathrm{N/m}}{2.0\, \mathrm{kg}}} = 10\, \mathrm{rad/s}, \qquad T = \frac{2\pi}{\omega} \approx 0.628\, \mathrm{s}, \qquad f = \frac{1}{T} \approx 1.59\, \mathrm{Hz}
+```
+
+**(b)** The mass starts at $x = +A$ at rest, so $\phi = 0$:
+```{math}
+\begin{align*}
+x(t) &= (0.15\, \mathrm{m})\cos(10t)\\
+v(t) &= -(1.5\, \mathrm{m/s})\sin(10t)\\
+a(t) &= -(15\, \mathrm{m/s^2})\cos(10t)
+\end{align*}
+```
+
+**(c)** Maximum speed occurs at $x = 0$; maximum acceleration occurs at $x = \pm A$:
+```{math}
+v_\mathrm{max} = A\omega = (0.15\, \mathrm{m})(10\, \mathrm{rad/s}) = 1.5\, \mathrm{m/s}
+```
+```{math}
+a_\mathrm{max} = A\omega^2 = (0.15\, \mathrm{m})(10\, \mathrm{rad/s})^2 = 15\, \mathrm{m/s^2}
+```
+
+**(d)** The mass reaches $x = 0$ when $\cos(10t) = 0$, i.e. $10t = \pi/2$:
+```{math}
+t = \frac{\pi}{20} \approx 0.157\, \mathrm{s}
+```
+This is one quarter of the period, as expected for a mass released from a turning point.
+:::
+
+:::{solution} ex:simpleharmonicmotion:babybouncer
+:label: soln:simpleharmonicmotion:babybouncer
+:class: dropdown
+**(a)** At equilibrium the spring force balances gravity, $ky_0 = mg$:
+```{math}
+k = \frac{mg}{y_0} = \frac{(5.0\, \mathrm{kg})(10\, \mathrm{m/s^2})}{0.10\, \mathrm{m}} = 500\, \mathrm{N/m}
+```
+
+**(b)** As shown in the text, a vertical spring-mass system undergoes SHM about its equilibrium position with the same angular frequency as a horizontal system:
+```{math}
+\omega = \sqrt{\frac{k}{m}} = \sqrt{\frac{500\, \mathrm{N/m}}{5.0\, \mathrm{kg}}} = 10\, \mathrm{rad/s}
+```
+
+**(c)**
+```{math}
+T = \frac{2\pi}{\omega} = \frac{2\pi}{10\, \mathrm{rad/s}} \approx 0.63\, \mathrm{s}
+```
+
+**(d)** With amplitude $A = 0.080\, \mathrm{m}$, the maximum speed occurs at the equilibrium position:
+```{math}
+v_\mathrm{max} = A\omega = (0.080\, \mathrm{m})(10\, \mathrm{rad/s}) = 0.80\, \mathrm{m/s}
+```
+:::
+
+:::{solution} ex:simpleharmonicmotion:pendulum
+:label: soln:simpleharmonicmotion:pendulum
+:class: dropdown
+**(a)** Converting to radians: $\theta_{max} = 8.0° \times \frac{\pi}{180°} = 0.1396\, \mathrm{rad}$. Then $\sin(8.0°) = 0.1392$. The percentage difference is:
+```{math}
+\frac{|0.1396 - 0.1392|}{0.1396} \times 100\% \approx 0.3\%
+```
+The approximation $\sin\theta \approx \theta$ is excellent at this amplitude.
+
+**(b)**
+```{math}
+\omega = \sqrt{\frac{g}{L}} = \sqrt{\frac{9.80\, \mathrm{m/s^2}}{1.00\, \mathrm{m}}} = 3.13\, \mathrm{rad/s}, \qquad T = \frac{2\pi}{\omega} \approx 2.01\, \mathrm{s}
+```
+Since $\omega = \sqrt{g/L}$ contains no mass, the period is independent of the bob's mass.
+
+**(c)** The speed is maximum at the equilibrium position (bottom of the swing). Using energy conservation with height $h = L(1 - \cos\theta_{max}) = 1.00(1 - \cos 8.0°) = 0.00970\, \mathrm{m}$:
+```{math}
+v_\mathrm{max} = \sqrt{2gh} = \sqrt{2(9.80\, \mathrm{m/s^2})(0.00970\, \mathrm{m})} \approx 0.436\, \mathrm{m/s}
+```
+Equivalently, from SHM: $v_\mathrm{max} = L\,\theta_{max}\,\omega = (1.00\, \mathrm{m})(0.1396\, \mathrm{rad})(3.13\, \mathrm{rad/s}) \approx 0.437\, \mathrm{m/s}$.
 :::
 
 
