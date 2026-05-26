@@ -17,6 +17,7 @@ on:
 env:
   # `BASE_URL` determines the website is served from, including CSS & JS assets
   BASE_URL: /${{ github.event.repository.name }}
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
 
 # Sets permissions for this workflow
 permissions:
@@ -44,7 +45,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18.x
+          node-version: 24.x
 
       # Step 3: Cache npm global packages to speed up builds
       # This caches the mystmd installation so it doesn't need to be downloaded every time
