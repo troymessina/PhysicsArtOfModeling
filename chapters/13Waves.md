@@ -65,6 +65,14 @@ We can distinguish between two classes of waves, based on the motion of the medi
 A transverse wave travelling through a rope. The wave is created by moving one end of the rope up and down.
 ```
 
+:::{iframe} https://troymessina.github.io/pyro/?example=traveling-wave&header=true&sidebar=true&tab=output&view=output&run=true
+:label: ex:waves:travelingwavevpython
+:width: 100%
+:align: center
+:placeholder: ../chapters/figures/MomentumAndCM/BlankTrinket.jpg
+A beaded string with a traveling wave. All of the beads are cyan except one is magenta to show the medium does not travel with the wave. Try changing `A, wavelength,` or `omega` to see how the wave changes.
+:::
+
 With **longitudinal waves**, the elements of the medium oscillate back and forth in the same direction as the motion of the wave. If you clap your hands, you will create a pressure disturbance in the air that will propagate; this is what we call sound (a sound wave). The air molecules oscillate about an equilibrium position in the same direction as the wave propagates, but they do not move with the wave.
 ```{figure} figures/Waves/sound.png
 :label: fig:waves:sound
