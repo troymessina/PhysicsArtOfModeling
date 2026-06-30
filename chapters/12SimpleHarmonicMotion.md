@@ -78,8 +78,8 @@ If you double the amplitude of the motion of a mass attached to a spring, its ma
 :label: ex:simpleharmonicmotion:dartgun
 A toy dart launcher uses a spring with spring constant $k = 150\, \mathrm{N/m}$ to propel a dart of mass $m = 20\, \mathrm{g}$. To load the launcher, the spring is compressed $A = 6.0\, \mathrm{cm}$ from its rest position. Assume no friction.
 
-a. What is the total mechanical energy stored in the loaded launcher?
-b. What is the speed of the dart as it passes through the equilibrium position?
+a. What is the total mechanical energy stored in the loaded launcher? \
+b. What is the speed of the dart as it passes through the equilibrium position? \
 c. At what position $x$ is the kinetic energy of the dart equal to the potential energy stored in the spring?
 :::
 
@@ -133,8 +133,8 @@ What is the SI unit for angular frequency?
 :label: ex:simpleharmonicmotion:eqofmotion
 A 0.25 kg block on a frictionless horizontal surface is attached to a spring ($k = 100\, \mathrm{N/m}$). The block is pulled 15 cm from equilibrium and released from rest at $t = 0$.
 
-a. Apply Newton's Second Law to write the equation of motion (the differential equation) for the block's position $x(t)$.
-b. What is the angular frequency $\omega$ of the oscillation, and what are its SI units?
+a. Apply Newton's Second Law to write the equation of motion (the differential equation) for the block's position $x(t)$. \
+b. What is the angular frequency $\omega$ of the oscillation, and what are its SI units? \
 c. Show by direct substitution that $x(t) = (0.15\, \mathrm{m})\cos(\omega t)$ satisfies the equation of motion.
 :::
 
@@ -180,8 +180,8 @@ What is the value of $\phi$ if we choose $t=0$ to be when the mass is at $x=0$ a
 :label: ex:simpleharmonicmotion:phase
 A 0.50 kg block is attached to a spring ($k = 200\, \mathrm{N/m}$) on a frictionless horizontal surface. At $t = 0$, a brief impulse sends the block through the equilibrium position ($x_0 = 0$) moving in the positive $x$ direction with speed $v_0 = 2.0\, \mathrm{m/s}$.
 
-a. Find the amplitude $A$ of the resulting oscillation.
-b. Determine the phase $\phi$, and explain why its sign makes physical sense.
+a. Find the amplitude $A$ of the resulting oscillation. \
+b. Determine the phase $\phi$, and explain why its sign makes physical sense. \
 c. Write explicit expressions for $x(t)$ and $v(t)$.
 :::
 
@@ -227,9 +227,9 @@ In order to double the oscillation period of a spring-mass system, you can
 :label: ex:simpleharmonicmotion:kinematics
 An earthquake early warning sensor contains a 2.0 kg mass attached to a horizontal spring ($k = 200\, \mathrm{N/m}$). During calibration, the mass is displaced 15 cm from equilibrium and released from rest, defining $t = 0$ at that instant.
 
-a. Find the angular frequency $\omega$, the period $T$, and the frequency $f$ of the oscillation.
-b. Write $x(t)$, $v(t)$, and $a(t)$ as explicit functions of time.
-c. What are the maximum speed and maximum magnitude of acceleration?
+a. Find the angular frequency $\omega$, the period $T$, and the frequency $f$ of the oscillation. \
+b. Write $x(t)$, $v(t)$, and $a(t)$ as explicit functions of time. \
+c. What are the maximum speed and maximum magnitude of acceleration? \
 d. How long after release does the mass first reach the equilibrium position?
 :::
 
@@ -341,9 +341,9 @@ How does the period of motion of a vertical spring-mass system compare to the pe
 :label: ex:simpleharmonicmotion:babybouncer
 A baby bouncer consists of a seat suspended from a doorframe by a vertical spring. When a 5.0 kg baby is placed in the seat and the system reaches its new equilibrium, the spring has stretched 10 cm beyond its natural length. Use $g = 10\, \mathrm{m/s^2}$ throughout.
 
-a. Determine the spring constant of the bouncer.
-b. A parent gently pushes the baby 8.0 cm below the equilibrium position and releases from rest. What is the angular frequency of the resulting oscillations?
-c. What is the period of oscillation?
+a. Determine the spring constant of the bouncer. \
+b. A parent gently pushes the baby 8.0 cm below the equilibrium position and releases from rest. \ What is the angular frequency of the resulting oscillations? \
+c. What is the period of oscillation? \
 d. What is the maximum speed of the baby?
 :::
 
@@ -499,8 +499,8 @@ Kaiden built a grandfather clock using a simple pendulum, but he found that the 
 :label: ex:simpleharmonicmotion:pendulum
 A grandfather clock uses a simple pendulum with a string of length $L = 1.00\, \mathrm{m}$ and a bob of mass $m = 0.500\, \mathrm{kg}$. The pendulum swings with a maximum angle of $\theta_{max} = 8.0°$ from the vertical. Use $g = 9.80\, \mathrm{m/s^2}$.
 
-a. Verify that the small angle approximation is reasonable for $\theta_{max} = 8.0°$ by comparing $\sin\theta_{max}$ with $\theta_{max}$ expressed in radians, and computing the percentage difference.
-b. Using the small angle approximation, find $\omega$ and the period $T$ of the pendulum. Does the mass of the bob affect the period?
+a. Verify that the small angle approximation is reasonable for $\theta_{max} = 8.0°$ by comparing $\sin\theta_{max}$ with $\theta_{max}$ expressed in radians, and computing the percentage difference. \
+b. Using the small angle approximation, find $\omega$ and the period $T$ of the pendulum. Does the mass of the bob affect the period? \
 c. At what point in the swing is the bob's speed maximum? Calculate that maximum speed.
 :::
 

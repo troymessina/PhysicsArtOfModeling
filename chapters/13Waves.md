@@ -114,8 +114,8 @@ A wave travelling through a slinky. The wave is created when you compress or elo
 :label: ex:waves:buoy
 A data buoy floats on the ocean surface. As a series of ocean swells pass by, the buoy bobs up and down with an amplitude of 0.80 m and a period of 4.0 s. The swells propagate horizontally across the ocean surface.
 
-a. Are ocean swells transverse or longitudinal waves? Briefly explain.\
-b. The text states that particles in a wave medium can be modelled as simple harmonic oscillators.\ Using this model and concepts from Chapter 12, what is the maximum speed of the buoy as the wave passes?
+a. Are ocean swells transverse or longitudinal waves? Briefly explain. \
+b. The text states that particles in a wave medium can be modelled as simple harmonic oscillators. Using this model and concepts from Chapter 12, what is the maximum speed of the buoy as the wave passes? \
 c. What is the maximum acceleration of the buoy?
 :::
 
@@ -241,8 +241,8 @@ D(x,t) = (4.0\,\mathrm{cm})\sin(5\pi x - 10\pi t)
 ```
 where $x$ is in metres and $t$ is in seconds.
 
-a. Identify the amplitude $A$, wave number $k$, angular frequency $\omega$, and phase $\phi$.
-b. Find the wavelength, frequency, and phase speed of the wave.
+a. Identify the amplitude $A$, wave number $k$, angular frequency $\omega$, and phase $\phi$. \
+b. Find the wavelength, frequency, and phase speed of the wave. \
 c. Find the maximum transverse speed of a point on the string, and compute the ratio of that maximum transverse speed to the phase speed of the wave.
 :::
 
@@ -419,8 +419,8 @@ A wave propagates from a light rope to a heavier rope that is attached to the li
 :label: ex:waves:rope
 A light rope of mass 100 g and length 2.0 m is attached end-to-end to a heavier rope with linear mass density $\mu_2 = 0.200\,\mathrm{kg/m}$. Both ropes are under the same tension of 20 N.
 
-a. Find the linear mass density $\mu_1$ of the light rope and the speed of a wave pulse in it.
-b. Find the speed of a wave pulse in the heavier rope.
+a. Find the linear mass density $\mu_1$ of the light rope and the speed of a wave pulse in it. \
+b. Find the speed of a wave pulse in the heavier rope. \
 c. Calculate the reflection coefficient $R$ when a pulse travelling in the light rope reaches the junction. Is the reflected pulse upright or inverted?
 :::
 
@@ -530,8 +530,8 @@ A wave will propagate faster through...
 :label: ex:waves:wavespeed
 Longitudinal waves travel through aluminium (density $\rho = 2700\,\mathrm{kg/m^3}$) at 6400 m/s, and through seawater (density $\rho = 1025\,\mathrm{kg/m^3}$) at 1530 m/s.
 
-a. Use $v = \sqrt{E/\rho}$ to calculate the elastic modulus $E$ of aluminium.
-b. Use $v = \sqrt{B/\rho}$ to calculate the bulk modulus $B$ of seawater.
+a. Use $v = \sqrt{E/\rho}$ to calculate the elastic modulus $E$ of aluminium. \
+b. Use $v = \sqrt{B/\rho}$ to calculate the bulk modulus $B$ of seawater. \
 c. Aluminium is denser than seawater, yet waves travel much faster through it. Use the values found in (a) and (b) to explain this quantitatively.
 :::
 
@@ -759,8 +759,8 @@ A standing wave (composed of two travelling waves) has a maximum amplitude $A$. 
 :label: ex:waves:speaker
 A concert loudspeaker radiates sound uniformly in all directions with total power $P = 100\,\mathrm{W}$. The sound has frequency 500 Hz, the density of air is $\rho = 1.20\,\mathrm{kg/m^3}$, and the speed of sound is $v = 343\,\mathrm{m/s}$.
 
-a. What is the intensity of the sound at a distance of 10 m from the speaker?
-b. Using $I = \frac{1}{2}\rho\omega^2 A^2 v$, find the amplitude of the displacement wave at 10 m from the speaker.
+a. What is the intensity of the sound at a distance of 10 m from the speaker? \
+b. Using $I = \frac{1}{2}\rho\omega^2 A^2 v$, find the amplitude of the displacement wave at 10 m from the speaker. \
 c. If you move from 10 m to 20 m from the speaker, by what factor does the wave amplitude change?
 :::
 
@@ -854,9 +854,9 @@ A standing wave on a string (fixed at both ends) has a fundamental frequency $f$
 :label: ex:waves:pianostring
 A piano string of length $L = 0.50\,\mathrm{m}$ and linear mass density $\mu = 6.0 \times 10^{-3}\,\mathrm{kg/m}$ is fixed at both ends under a tension of $F_T = 60\,\mathrm{N}$.
 
-a. Find the wave speed on the string and the fundamental frequency.
-b. Find the frequencies of the second and third harmonics.
-c. Write the displacement function $D(x,t)$ for the third harmonic, taking $x = 0$ at one fixed end. Assume each travelling-wave component has amplitude $A = 2.0\,\mathrm{mm}$.
+a. Find the wave speed on the string and the fundamental frequency. \
+b. Find the frequencies of the second and third harmonics. \
+c. Write the displacement function $D(x,t)$ for the third harmonic, taking $x = 0$ at one fixed end. Assume each travelling-wave component has amplitude $A = 2.0\,\mathrm{mm}$. \
 d. Find the positions of all nodes of the third harmonic.
 :::
 
