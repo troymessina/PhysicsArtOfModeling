@@ -114,8 +114,8 @@ A wave travelling through a slinky. The wave is created when you compress or elo
 :label: ex:waves:buoy
 A data buoy floats on the ocean surface. As a series of ocean swells pass by, the buoy bobs up and down with an amplitude of 0.80 m and a period of 4.0 s. The swells propagate horizontally across the ocean surface.
 
-a. Are ocean swells transverse or longitudinal waves? Briefly explain.
-b. The text states that particles in a wave medium can be modelled as simple harmonic oscillators. Using this model and concepts from Chapter 12, what is the maximum speed of the buoy as the wave passes?
+a. Are ocean swells transverse or longitudinal waves? Briefly explain.\
+b. The text states that particles in a wave medium can be modelled as simple harmonic oscillators.\ Using this model and concepts from Chapter 12, what is the maximum speed of the buoy as the wave passes?
 c. What is the maximum acceleration of the buoy?
 :::
 
@@ -169,8 +169,8 @@ What can you say about the sound emitted by a cello versus that emitted by a vio
 :label: ex:waves:bat
 A bat navigates by emitting ultrasonic pulses at a frequency of 50 kHz. The speed of sound in air is 343 m/s.
 
-a. What is the wavelength of the bat's echolocation pulses?
-b. What is the period of the sound wave?
+a. What is the wavelength of the bat's echolocation pulses?\
+b. What is the period of the sound wave?\
 c. The bat emits a pulse and detects the echo from a moth 5.0 ms later. How far away is the moth?
 :::
 
