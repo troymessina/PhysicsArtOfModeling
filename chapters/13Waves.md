@@ -110,6 +110,15 @@ A wave travelling through a slinky. The wave is created when you compress or elo
 2.
 :::
 
+:::{exercise}
+:label: ex:waves:buoy
+A data buoy floats on the ocean surface. As a series of ocean swells pass by, the buoy bobs up and down with an amplitude of 0.80 m and a period of 4.0 s. The swells propagate horizontally across the ocean surface.
+
+a. Are ocean swells transverse or longitudinal waves? Briefly explain.
+b. The text states that particles in a wave medium can be modelled as simple harmonic oscillators. Using this model and concepts from Chapter 12, what is the maximum speed of the buoy as the wave passes?
+c. What is the maximum acceleration of the buoy?
+:::
+
 Physically, a wave can only propagate through a medium if the medium can be deformed. When a particle in the medium is disturbed from its equilibrium position, it will experience a restoring force that acts to bring it back to its equilibrium position. Often, if the displacement of the particle from the equilibrium is small, the magnitude of that force is proportional to the displacement. Thus, as we will see, we can model the propagation of waves by treating the particles in the medium as simple harmonic oscillators.
 
 A source of energy is required in order to deform the medium and generate a wave. For example, that source of energy could be a speaker creating sound waves by pushing a membrane back and forth; speakers require energy, and are often rated by the electrical power that they convert into sound waves (e.g. a $50 {\rm W}$ speaker consumes $50 {\rm W}$ of electrical power to produce sound).
@@ -154,6 +163,15 @@ What can you say about the sound emitted by a cello versus that emitted by a vio
 :::{tip} Answer
 :class: dropdown
 4.
+:::
+
+:::{exercise}
+:label: ex:waves:bat
+A bat navigates by emitting ultrasonic pulses at a frequency of 50 kHz. The speed of sound in air is 343 m/s.
+
+a. What is the wavelength of the bat's echolocation pulses?
+b. What is the period of the sound wave?
+c. The bat emits a pulse and detects the echo from a moth 5.0 ms later. How far away is the moth?
 :::
 
 # Mathematical description of a wave
@@ -213,6 +231,19 @@ What is the value of the phase $\phi$ if the displacement of the point at $x=0$ 
 :::{tip} Answer
 :class: dropdown
 1.
+:::
+
+:::{exercise}
+:label: ex:waves:wavefunction
+A transverse wave travels along a stretched string in the positive $x$ direction. Its displacement is described by:
+```{math}
+D(x,t) = (4.0\,\mathrm{cm})\sin(5\pi x - 10\pi t)
+```
+where $x$ is in metres and $t$ is in seconds.
+
+a. Identify the amplitude $A$, wave number $k$, angular frequency $\omega$, and phase $\phi$.
+b. Find the wavelength, frequency, and phase speed of the wave.
+c. Find the maximum transverse speed of a point on the string, and compute the ratio of that maximum transverse speed to the phase speed of the wave.
 :::
 
 The equation above is written in terms of the wavelength, $\lambda$, and period, $T$, of the wave. Often, one uses the "wave number", $k$, and the "angular frequency", $\omega$, to describe the wave. These are defined as:
@@ -384,6 +415,15 @@ A wave propagates from a light rope to a heavier rope that is attached to the li
 3.
 :::
 
+:::{exercise}
+:label: ex:waves:rope
+A light rope of mass 100 g and length 2.0 m is attached end-to-end to a heavier rope with linear mass density $\mu_2 = 0.200\,\mathrm{kg/m}$. Both ropes are under the same tension of 20 N.
+
+a. Find the linear mass density $\mu_1$ of the light rope and the speed of a wave pulse in it.
+b. Find the speed of a wave pulse in the heavier rope.
+c. Calculate the reflection coefficient $R$ when a pulse travelling in the light rope reaches the junction. Is the reflected pulse upright or inverted?
+:::
+
 ## The wave equation for a rope
 In this section, we show how to use Newton's Second Law to derive the wave equation for transverse waves travelling down a rope with linear mass density, $\mu$, under a tension, $F_T$. Consider a small section of the rope, with mass $dm$, and length $dx$, as a wave passes through that section of the rope, as illustrated in [](#fig:waves:weqn).
 ```{figure} figures/Waves/weqn.png
@@ -484,6 +524,15 @@ A wave will propagate faster through...
 :::{tip} Answer
 :class: dropdown
 1.
+:::
+
+:::{exercise}
+:label: ex:waves:wavespeed
+Longitudinal waves travel through aluminium (density $\rho = 2700\,\mathrm{kg/m^3}$) at 6400 m/s, and through seawater (density $\rho = 1025\,\mathrm{kg/m^3}$) at 1530 m/s.
+
+a. Use $v = \sqrt{E/\rho}$ to calculate the elastic modulus $E$ of aluminium.
+b. Use $v = \sqrt{B/\rho}$ to calculate the bulk modulus $B$ of seawater.
+c. Aluminium is denser than seawater, yet waves travel much faster through it. Use the values found in (a) and (b) to explain this quantitatively.
 :::
 
 
@@ -706,6 +755,15 @@ A standing wave (composed of two travelling waves) has a maximum amplitude $A$. 
 2.
 :::
 
+:::{exercise}
+:label: ex:waves:speaker
+A concert loudspeaker radiates sound uniformly in all directions with total power $P = 100\,\mathrm{W}$. The sound has frequency 500 Hz, the density of air is $\rho = 1.20\,\mathrm{kg/m^3}$, and the speed of sound is $v = 343\,\mathrm{m/s}$.
+
+a. What is the intensity of the sound at a distance of 10 m from the speaker?
+b. Using $I = \frac{1}{2}\rho\omega^2 A^2 v$, find the amplitude of the displacement wave at 10 m from the speaker.
+c. If you move from 10 m to 20 m from the speaker, by what factor does the wave amplitude change?
+:::
+
 In general, most objects can be characterized by a harmonic (or "resonant") frequency that corresponds to the standing waves that can exist in the object. If that object is, say, shaken, many waves will propagate through the object and cancel out, except those that have the resonant frequency. Relatively small vibrations, if at the correct frequency, can lead to large standing waves that can result in damage to the object. 
 
 ## Mathematical description of a standing wave
@@ -790,6 +848,16 @@ A standing wave on a string (fixed at both ends) has a fundamental frequency $f$
 :::{tip} Answer
 :class: dropdown
 2.
+:::
+
+:::{exercise}
+:label: ex:waves:pianostring
+A piano string of length $L = 0.50\,\mathrm{m}$ and linear mass density $\mu = 6.0 \times 10^{-3}\,\mathrm{kg/m}$ is fixed at both ends under a tension of $F_T = 60\,\mathrm{N}$.
+
+a. Find the wave speed on the string and the fundamental frequency.
+b. Find the frequencies of the second and third harmonics.
+c. Write the displacement function $D(x,t)$ for the third harmonic, taking $x = 0$ at one fixed end. Assume each travelling-wave component has amplitude $A = 2.0\,\mathrm{mm}$.
+d. Find the positions of all nodes of the third harmonic.
 :::
 
 :::{attention} Olivia's Thoughts
@@ -1207,6 +1275,145 @@ R&=\frac{\sqrt{\frac{F_T}{\mu_2}}-\sqrt{\frac{F_T}{\mu_1}}}{\sqrt{\frac{F_T}{\mu
 \end{align*}
 ```
 as desired. 
+:::
+
+## Exercise Solutions
+
+:::{solution} ex:waves:buoy
+:label: soln:waves:buoy
+:class: dropdown
+**(a)** Ocean swells are **transverse** waves: the buoy (representing the medium) moves vertically while the wave propagates horizontally — the displacement is perpendicular to the direction of propagation.
+
+**(b)** The angular frequency of the buoy's oscillation is $\omega = 2\pi/T = 2\pi/4.0 = \pi/2\,\mathrm{rad/s}$. Modelling the buoy as a simple harmonic oscillator (as stated in the text), the maximum speed is:
+```{math}
+v_\mathrm{max} = A\omega = (0.80\,\mathrm{m})\!\left(\frac{\pi}{2}\,\mathrm{rad/s}\right) = 0.40\pi \approx 1.3\,\mathrm{m/s}
+```
+
+**(c)**
+```{math}
+a_\mathrm{max} = A\omega^2 = (0.80\,\mathrm{m})\!\left(\frac{\pi}{2}\right)^{\!2} = 0.20\pi^2 \approx 2.0\,\mathrm{m/s^2}
+```
+:::
+
+:::{solution} ex:waves:bat
+:label: soln:waves:bat
+:class: dropdown
+**(a)**
+```{math}
+\lambda = \frac{v}{f} = \frac{343\,\mathrm{m/s}}{50{,}000\,\mathrm{Hz}} \approx 6.9\times10^{-3}\,\mathrm{m} = 6.9\,\mathrm{mm}
+```
+
+**(b)**
+```{math}
+T = \frac{1}{f} = \frac{1}{50{,}000\,\mathrm{Hz}} = 2.0\times10^{-5}\,\mathrm{s} = 20\,\mu\mathrm{s}
+```
+
+**(c)** The pulse must travel to the moth and back, so the one-way distance is:
+```{math}
+d = \frac{vt}{2} = \frac{(343\,\mathrm{m/s})(5.0\times10^{-3}\,\mathrm{s})}{2} \approx 0.86\,\mathrm{m}
+```
+:::
+
+:::{solution} ex:waves:wavefunction
+:label: soln:waves:wavefunction
+:class: dropdown
+**(a)** Comparing $D(x,t) = (4.0\,\mathrm{cm})\sin(5\pi x - 10\pi t)$ with $D(x,t) = A\sin(kx-\omega t+\phi)$:
+$A = 4.0\,\mathrm{cm}$, $k = 5\pi\,\mathrm{rad/m}$, $\omega = 10\pi\,\mathrm{rad/s}$, $\phi = 0$.
+
+**(b)**
+```{math}
+\lambda = \frac{2\pi}{k} = \frac{2\pi}{5\pi} = 0.40\,\mathrm{m}, \qquad f = \frac{\omega}{2\pi} = \frac{10\pi}{2\pi} = 5.0\,\mathrm{Hz}, \qquad v = \lambda f = (0.40)(5.0) = 2.0\,\mathrm{m/s}
+```
+
+**(c)** The transverse velocity of a point on the string is $\partial D/\partial t = -A\omega\cos(kx-\omega t)$, giving a maximum transverse speed of:
+```{math}
+v_\mathrm{max} = A\omega = (0.040\,\mathrm{m})(10\pi\,\mathrm{rad/s}) \approx 1.3\,\mathrm{m/s}
+```
+The ratio of maximum transverse speed to phase speed is $A\omega/v = 1.3/2.0 \approx 0.63$. Note that these are fundamentally different quantities: the phase speed describes how fast the wave pattern moves, while the transverse speed describes how fast individual particles in the medium oscillate.
+:::
+
+:::{solution} ex:waves:rope
+:label: soln:waves:rope
+:class: dropdown
+**(a)**
+```{math}
+\mu_1 = \frac{m}{L} = \frac{0.100\,\mathrm{kg}}{2.0\,\mathrm{m}} = 0.050\,\mathrm{kg/m}, \qquad v_1 = \sqrt{\frac{F_T}{\mu_1}} = \sqrt{\frac{20\,\mathrm{N}}{0.050\,\mathrm{kg/m}}} = \sqrt{400} = 20\,\mathrm{m/s}
+```
+
+**(b)**
+```{math}
+v_2 = \sqrt{\frac{F_T}{\mu_2}} = \sqrt{\frac{20\,\mathrm{N}}{0.200\,\mathrm{kg/m}}} = \sqrt{100} = 10\,\mathrm{m/s}
+```
+
+**(c)** Since $\mu_2 = 4\mu_1$, we have $\sqrt{\mu_2} = 2\sqrt{\mu_1}$, giving the exact result:
+```{math}
+R = \frac{\sqrt{\mu_1}-\sqrt{\mu_2}}{\sqrt{\mu_1}+\sqrt{\mu_2}} = \frac{1-2}{1+2} = -\frac{1}{3} \approx -0.33
+```
+The negative value indicates the reflected pulse is **inverted**, with one-third the amplitude of the incident pulse. This is expected when a pulse moves from a lighter medium into a heavier one.
+:::
+
+:::{solution} ex:waves:wavespeed
+:label: soln:waves:wavespeed
+:class: dropdown
+**(a)**
+```{math}
+E = \rho v^2 = (2700\,\mathrm{kg/m^3})(6400\,\mathrm{m/s})^2 \approx 1.1\times10^{11}\,\mathrm{Pa}
+```
+
+**(b)**
+```{math}
+B = \rho v^2 = (1025\,\mathrm{kg/m^3})(1530\,\mathrm{m/s})^2 \approx 2.4\times10^9\,\mathrm{Pa}
+```
+
+**(c)** The wave speed depends on the ratio of stiffness to inertia. Computing these ratios:
+```{math}
+\frac{E}{\rho_\mathrm{Al}} = \frac{1.1\times10^{11}}{2700} \approx 4.1\times10^7\,\mathrm{m^2/s^2}, \qquad \frac{B}{\rho_\mathrm{sw}} = \frac{2.4\times10^9}{1025} \approx 2.3\times10^6\,\mathrm{m^2/s^2}
+```
+The ratio for aluminium is roughly 18 times larger than for seawater. Although aluminium is denser, it is far stiffer in proportion to its density, which is why waves travel faster through it.
+:::
+
+:::{solution} ex:waves:speaker
+:label: soln:waves:speaker
+:class: dropdown
+**(a)**
+```{math}
+I = \frac{P}{4\pi r^2} = \frac{100\,\mathrm{W}}{4\pi(10\,\mathrm{m})^2} = \frac{100}{400\pi} \approx 0.080\,\mathrm{W/m^2}
+```
+
+**(b)** With $\omega = 2\pi(500\,\mathrm{Hz}) = 1000\pi\,\mathrm{rad/s}$, solving $I = \frac{1}{2}\rho\omega^2 A^2 v$ for $A$:
+```{math}
+A = \sqrt{\frac{2I}{\rho\omega^2 v}} = \sqrt{\frac{2(0.080\,\mathrm{W/m^2})}{(1.20\,\mathrm{kg/m^3})(1000\pi\,\mathrm{rad/s})^2(343\,\mathrm{m/s})}} \approx 6.3\,\mu\mathrm{m}
+```
+
+**(c)** Since the amplitude of a spherical wave decreases as $A \propto 1/r$, doubling the distance halves the amplitude:
+```{math}
+\frac{A(20\,\mathrm{m})}{A(10\,\mathrm{m})} = \frac{r_1}{r_2} = \frac{10}{20} = \frac{1}{2}
+```
+:::
+
+:::{solution} ex:waves:pianostring
+:label: soln:waves:pianostring
+:class: dropdown
+**(a)**
+```{math}
+v = \sqrt{\frac{F_T}{\mu}} = \sqrt{\frac{60\,\mathrm{N}}{6.0\times10^{-3}\,\mathrm{kg/m}}} = \sqrt{10{,}000} = 100\,\mathrm{m/s}, \qquad f_1 = \frac{v}{2L} = \frac{100\,\mathrm{m/s}}{2(0.50\,\mathrm{m})} = 100\,\mathrm{Hz}
+```
+
+**(b)** $f_2 = 2f_1 = 200\,\mathrm{Hz}$ and $f_3 = 3f_1 = 300\,\mathrm{Hz}$.
+
+**(c)** For the third harmonic ($n = 3$):
+```{math}
+k_3 = \frac{3\pi}{L} = \frac{3\pi}{0.50\,\mathrm{m}} = 6\pi\,\mathrm{rad/m}, \qquad \omega_3 = 2\pi f_3 = 600\pi\,\mathrm{rad/s}
+```
+```{math}
+D(x,t) = 2A\sin(k_3 x)\cos(\omega_3 t) = (4.0\,\mathrm{mm})\sin(6\pi x)\cos(600\pi t)
+```
+
+**(d)** Nodes occur where $\sin(6\pi x) = 0$, i.e. $6\pi x = m\pi$, giving $x = m/6\,\mathrm{m}$ for $m = 0, 1, 2, 3$:
+```{math}
+x = 0,\quad \tfrac{1}{6}\,\mathrm{m}\approx 0.17\,\mathrm{m},\quad \tfrac{1}{3}\,\mathrm{m}\approx 0.33\,\mathrm{m},\quad \tfrac{1}{2}\,\mathrm{m} = 0.50\,\mathrm{m}
+```
+The nodes at $x = 0$ and $x = 0.50\,\mathrm{m}$ are the fixed ends of the string; the two interior nodes are the expected signature of the third harmonic.
 :::
 
 [^34]:We do not use $T$ for tension, so as to not confuse with the period of a wave.
