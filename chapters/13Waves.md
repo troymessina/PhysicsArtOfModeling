@@ -65,7 +65,7 @@ We can distinguish between two classes of waves, based on the motion of the medi
 A transverse wave travelling through a rope. The wave is created by moving one end of the rope up and down.
 ```
 
-:::{iframe} https://troymessina.github.io/pyro/?example=traveling-wave&header=true&sidebar=true&tab=output&view=output&run=true
+:::{iframe} https://troymessina.github.io/pyro/?example=traveling-wave&header=true&sidebar=true&tab=output&view=output&run=false
 :label: ex:waves:travelingwavevpython
 :width: 100%
 :align: center
@@ -82,7 +82,7 @@ With **longitudinal waves**, the elements of the medium oscillate back and forth
 A longitudinal sound wave travelling through the air. The air molecules move back and forth in the same direction as the wave, but they oscillate about an equilibrium position instead of moving with the wave.
 ```
 
-:::{iframe} https://troymessina.github.io/pyro/?example=longitudinal-wave&header=true&sidebar=true&tab=output&view=output&run=true
+:::{iframe} https://troymessina.github.io/pyro/?example=longitudinal-wave&header=true&sidebar=true&tab=output&view=output&run=false
 :label: ex:waves:longitudinalwavevpython
 :width: 100%
 :align: center
