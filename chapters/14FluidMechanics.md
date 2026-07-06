@@ -88,6 +88,14 @@ You place a tin can on a table, and use a pump to create a vacuum inside of the 
 2.
 :::
 
+:::{exercise}
+:label: ex:fluidmechanics:skates
+A 75 kg figure skater stands on ice. Each skate blade makes contact with the ice over an area of $A = 1.5\,\mathrm{cm^2}$.
+
+a. What pressure does the skater exert on the ice when standing on both skates?\
+b. What pressure does the skater exert when balanced on one skate?
+:::
+
 ## The effect of gravity
 When discussing [](#fig:fluidmechanics:pressure), we argued that the fluid exerts an equal force, from all directions, on the fluid element, so that the net force on the fluid element is zero. This is not quite correct in the presence of gravity, where the fluid element will have a weight. Thus, if the fluid element is to be in equilibrium, the upwards force (and pressure) from the fluid below must be higher than that from the fluid above the fluid element. 
 
@@ -137,6 +145,15 @@ You use your finger to block off the top end of a straw and then remove the stra
 :::{tip} Answer
 :class: dropdown
 3.
+:::
+
+:::{exercise}
+:label: ex:fluidmechanics:diver
+A scuba diver descends to a depth of $h = 30\,\mathrm{m}$ in the ocean. The density of seawater is $\rho = 1025\,\mathrm{kg/m^3}$ and atmospheric pressure is $P_0 = 1.013 \times 10^5\,\mathrm{Pa}$.
+
+a. What is the gauge pressure at this depth?\
+b. What is the absolute pressure at this depth?\
+c. By approximately what factor has the total pressure increased compared to atmospheric pressure?
 :::
 
 We have assumed that the density of the fluid, $\rho$, is constant, and that the fluid cannot be compressed. This is a very good approximation for a liquid such as water, but not for a gas, whose density will depend on its pressure. If the fluid were a gas (e.g. a column of air in our atmosphere), both the density and the pressure will change as a function of height. We can easily take this into account in our model, if we consider the fluid element to have a very small height, $dy$, instead of the finite height, $h$, as in the derivation above. A fluid element with an infinitesimal height, $dy$, is illustrated in [](#fig:fluidmechanics:pressure_gravity2).
@@ -270,6 +287,15 @@ You fill the three glasses in [](#fig:fluidmechanics:glasses) such that the liqu
 4.
 :::
 
+:::{exercise}
+:label: ex:fluidmechanics:hydraulic
+A hydraulic lift has a small input piston of diameter $D_1 = 4.0\,\mathrm{cm}$ and a large output piston of diameter $D_2 = 20\,\mathrm{cm}$. A mechanic applies a downward force of $F_1 = 200\,\mathrm{N}$ to the small piston.
+
+a. What is the resulting pressure increase in the hydraulic fluid?\
+b. What upward force is exerted on the large piston?\
+c. What is the maximum mass that can be lifted?
+:::
+
 :::{note} Example 14.2
 ```{figure} figures/FluidMechanics/lift.png
 :label: fig:fluidmechanics:lift
@@ -378,6 +404,15 @@ You build a Torricelli barometer, as illustrated in [](#fig:fluidmechanics:barom
 1.
 :::
 
+:::{exercise}
+:label: ex:fluidmechanics:bloodpressure
+A blood pressure cuff (sphygmomanometer) measures gauge pressure in millimetres of mercury (mmHg). A patient's systolic pressure reads $120\,\mathrm{mmHg}$ above atmospheric. Use $1\,\mathrm{mmHg} = 133\,\mathrm{Pa}$, $\rho_\mathrm{water} = 1.0\times10^3\,\mathrm{kg/m^3}$, and $P_0 = 1.013\times10^5\,\mathrm{Pa}$.
+
+a. Convert the systolic gauge pressure to Pascals.\
+b. If a water-filled manometer were used instead of mercury, what height difference $h$ would correspond to this pressure?\
+c. What is the absolute systolic pressure in kilopascals?
+:::
+
 # Buoyancy
 In this section, we examine how the pressure gradient in a fluid leads to a force of buoyancy on an object that is immersed in the fluid.
 ```{figure} figures/FluidMechanics/buoyant.png
@@ -412,6 +447,15 @@ Does the force of buoyancy on a fully submerged object increase with the depth a
 2.
 :::
 
+:::{exercise}
+:label: ex:fluidmechanics:woodblock
+A rectangular pine block ($\rho_\mathrm{pine} = 500\,\mathrm{kg/m^3}$) measures $20\,\mathrm{cm}\times20\,\mathrm{cm}\times10\,\mathrm{cm}$ and is held fully submerged in fresh water ($\rho_\mathrm{water} = 1000\,\mathrm{kg/m^3}$).
+
+a. What is the buoyancy force acting on the submerged block?\
+b. What is the weight of the block in air?\
+c. What downward force must be applied to hold the block fully submerged?
+:::
+
 :::{tip} Checkpoint
 You observe that if you pour olive oil slowly into your glass of water, the oil floats above the water. What can you conclude?
 1.  The mass of a given volume of oil is less than the mass of the same volume of water. 
@@ -419,6 +463,15 @@ You observe that if you pour olive oil slowly into your glass of water, the oil 
 :::{tip} Answer
 :class: dropdown
 1.
+:::
+
+:::{exercise}
+:label: ex:fluidmechanics:iceberg
+Ice has a density of $\rho_\mathrm{ice} = 917\,\mathrm{kg/m^3}$. Fresh water has density $\rho_\mathrm{w} = 1000\,\mathrm{kg/m^3}$ and seawater has density $\rho_\mathrm{sw} = 1025\,\mathrm{kg/m^3}$.
+
+a. What fraction of a floating ice cube is submerged in fresh water?\
+b. What fraction of a floating iceberg is submerged in seawater?\
+c. An iceberg has a total volume of $V = 1.0\times10^6\,\mathrm{m^3}$. What volume is visible above the ocean surface?
 :::
 
 :::{note} Example 14.4
@@ -544,6 +597,15 @@ When water flows out of your faucet, you observe that the stream of water gets n
 :::{tip} Answer
 :class: dropdown
 2.
+:::
+
+:::{exercise}
+:label: ex:fluidmechanics:hose
+A horizontal pipe narrows from an inner diameter of $D_1 = 4.0\,\mathrm{cm}$ to $D_2 = 1.0\,\mathrm{cm}$. Water flows through the wide section at $v_1 = 0.50\,\mathrm{m/s}$.
+
+a. What is the volumetric flow rate $Q$ through the pipe?\
+b. What is the speed of water in the narrow section?\
+c. How long would it take to fill a 50 L bucket from the narrow end of the pipe?
 :::
 
 :::{note} Example 14.5
@@ -680,6 +742,15 @@ When a high speed train is travelling at constant speed, is there a net force on
 :class: dropdown
 2.
 :::
+
+:::{exercise}
+:label: ex:fluidmechanics:venturi
+Water flows horizontally through a pipe that narrows from diameter $D_1 = 4.0\,\mathrm{cm}$ to $D_2 = 2.0\,\mathrm{cm}$. In the wide section, the flow speed is $v_1 = 2.0\,\mathrm{m/s}$ and the pressure is $P_1 = 2.0\times10^5\,\mathrm{Pa}$. The density of water is $\rho = 1000\,\mathrm{kg/m^3}$.
+
+a. Using the equation of continuity, find the flow speed $v_2$ in the narrow section.\
+b. Using Bernoulli's equation, find the pressure $P_2$ in the narrow section.
+:::
+
 The following examples illustrate how to apply Bernoulli's principle.
 
 :::{note} Example 14.6
@@ -830,6 +901,15 @@ Does the flow rate of water out of a garden hose depend on the length of the hos
 :::{tip} Answer
 :class: dropdown
 2.
+:::
+
+:::{exercise}
+:label: ex:fluidmechanics:needle
+A hypodermic needle has length $L = 4.0\,\mathrm{cm}$ and inner radius $r = 0.30\,\mathrm{mm}$. The injected medication has viscosity $\eta = 2.0\times10^{-3}\,\mathrm{Pa{\cdot}s}$ and the pressure difference between the syringe barrel and the injection site is $\Delta P = 2.5\,\mathrm{kPa}$.
+
+a. What is the flow resistance $R$ of the needle?\
+b. What is the volumetric flow rate $Q$ through the needle?\
+c. How long does it take to administer a $5.0\,\mathrm{mL}$ dose?
 :::
 
 :::{note} Example 14.8
@@ -1144,6 +1224,186 @@ y_0&=1.4 {\rm m}
 \end{align*}
 ```
 Therefore, the IV bag should be placed $1.4 {\rm m}$ above the patient's arm. 
+:::
+
+## Exercise Solutions
+
+:::{solution} ex:fluidmechanics:skates
+:label: soln:fluidmechanics:skates
+:class: dropdown
+**(a)** The weight of the skater is $F_g = mg = (75\,\mathrm{kg})(9.8\,\mathrm{m/s^2}) = 735\,\mathrm{N}$. Standing on both skates, the total contact area is $2A = 3.0\,\mathrm{cm^2} = 3.0\times10^{-4}\,\mathrm{m^2}$:
+```{math}
+P = \frac{F_g}{2A} = \frac{735\,\mathrm{N}}{3.0\times10^{-4}\,\mathrm{m^2}} = 2.45\times10^6\,\mathrm{Pa} \approx 2.5\,\mathrm{MPa}
+```
+
+**(b)** On one skate, the full weight acts on a single blade:
+```{math}
+P = \frac{F_g}{A} = \frac{735\,\mathrm{N}}{1.5\times10^{-4}\,\mathrm{m^2}} = 4.9\times10^6\,\mathrm{Pa} \approx 4.9\,\mathrm{MPa}
+```
+For comparison, atmospheric pressure is only about $0.1\,\mathrm{MPa}$, so the skater exerts roughly 25–50 times atmospheric pressure on the ice through the blade.
+:::
+
+:::{solution} ex:fluidmechanics:diver
+:label: soln:fluidmechanics:diver
+:class: dropdown
+**(a)** The gauge pressure at depth $h = 30\,\mathrm{m}$:
+```{math}
+P_\text{gauge} = \rho g h = (1025\,\mathrm{kg/m^3})(9.8\,\mathrm{m/s^2})(30\,\mathrm{m}) \approx 3.0\times10^5\,\mathrm{Pa}
+```
+
+**(b)** The absolute pressure:
+```{math}
+P = P_0 + \rho g h = 1.013\times10^5 + 3.01\times10^5 \approx 4.0\times10^5\,\mathrm{Pa}
+```
+
+**(c)** The pressure ratio:
+```{math}
+\frac{P}{P_0} = \frac{4.0\times10^5}{1.013\times10^5} \approx 4
+```
+The pressure has nearly quadrupled at 30 m depth. This is why scuba divers must breathe pressurised air and ascend slowly to avoid decompression sickness.
+:::
+
+:::{solution} ex:fluidmechanics:hydraulic
+:label: soln:fluidmechanics:hydraulic
+:class: dropdown
+**(a)** The area of the small piston is $A_1 = \pi(D_1/2)^2 = \pi(0.020\,\mathrm{m})^2 = 1.257\times10^{-3}\,\mathrm{m^2}$. By Pascal's Principle:
+```{math}
+\Delta P = \frac{F_1}{A_1} = \frac{200\,\mathrm{N}}{1.257\times10^{-3}\,\mathrm{m^2}} \approx 1.6\times10^5\,\mathrm{Pa}
+```
+
+**(b)** The ratio of piston areas equals the ratio of diameters squared:
+```{math}
+\frac{A_2}{A_1} = \left(\frac{D_2}{D_1}\right)^2 = \left(\frac{20\,\mathrm{cm}}{4.0\,\mathrm{cm}}\right)^2 = 25
+```
+So the force on the large piston is $F_2 = 25 F_1 = 25(200\,\mathrm{N}) = 5000\,\mathrm{N}$.
+
+**(c)** The maximum liftable mass:
+```{math}
+m = \frac{F_2}{g} = \frac{5000\,\mathrm{N}}{9.8\,\mathrm{m/s^2}} \approx 510\,\mathrm{kg}
+```
+A 200 N input force (the weight of a ~20 kg object) can lift 510 kg — a mechanical advantage of 25.
+:::
+
+:::{solution} ex:fluidmechanics:bloodpressure
+:label: soln:fluidmechanics:bloodpressure
+:class: dropdown
+**(a)** Converting the gauge pressure:
+```{math}
+P_\text{gauge} = 120\,\mathrm{mmHg} \times 133\,\mathrm{Pa/mmHg} = 15{,}960\,\mathrm{Pa} \approx 1.60\times10^4\,\mathrm{Pa}
+```
+
+**(b)** The height of a water column corresponding to this pressure:
+```{math}
+h = \frac{P_\text{gauge}}{\rho_w g} = \frac{1.60\times10^4\,\mathrm{Pa}}{(1000\,\mathrm{kg/m^3})(9.8\,\mathrm{m/s^2})} \approx 1.6\,\mathrm{m}
+```
+A water manometer for blood pressure would need to be 1.6 m tall — clearly impractical. Mercury is 13.6 times denser, giving $h = 1.6/13.6 \approx 0.12\,\mathrm{m} = 120\,\mathrm{mm}$, confirming the mmHg unit.
+
+**(c)** The absolute systolic pressure:
+```{math}
+P = P_0 + P_\text{gauge} = 1.013\times10^5 + 1.60\times10^4 \approx 1.17\times10^5\,\mathrm{Pa} = 117\,\mathrm{kPa}
+```
+:::
+
+:::{solution} ex:fluidmechanics:woodblock
+:label: soln:fluidmechanics:woodblock
+:class: dropdown
+**(a)** By Archimedes' Principle, the buoyancy force equals the weight of the displaced water. First the volume:
+```{math}
+V = (0.20\,\mathrm{m})(0.20\,\mathrm{m})(0.10\,\mathrm{m}) = 4.0\times10^{-3}\,\mathrm{m^3}
+```
+```{math}
+F_B = \rho_w V g = (1000\,\mathrm{kg/m^3})(4.0\times10^{-3}\,\mathrm{m^3})(9.8\,\mathrm{m/s^2}) = 39.2\,\mathrm{N}
+```
+
+**(b)** The weight of the pine block:
+```{math}
+W = \rho_\mathrm{pine} V g = (500\,\mathrm{kg/m^3})(4.0\times10^{-3}\,\mathrm{m^3})(9.8\,\mathrm{m/s^2}) = 19.6\,\mathrm{N}
+```
+
+**(c)** To hold the block fully submerged, the applied downward force must balance the net upward force:
+```{math}
+F_\mathrm{applied} = F_B - W = 39.2 - 19.6 = 19.6\,\mathrm{N}
+```
+Since $\rho_\mathrm{pine} = \tfrac{1}{2}\rho_w$, the buoyancy force is exactly twice the weight, and the holding force equals the weight of the block itself.
+:::
+
+:::{solution} ex:fluidmechanics:iceberg
+:label: soln:fluidmechanics:iceberg
+:class: dropdown
+**(a)** For floating equilibrium, $F_B = F_g$: $\rho_\mathrm{ice} V_\mathrm{total} g = \rho_w V_\mathrm{sub} g$. The submerged fraction:
+```{math}
+f = \frac{V_\mathrm{sub}}{V_\mathrm{total}} = \frac{\rho_\mathrm{ice}}{\rho_w} = \frac{917}{1000} = 0.917
+```
+So 91.7% of the ice is below the water surface in fresh water.
+
+**(b)** In seawater:
+```{math}
+f = \frac{\rho_\mathrm{ice}}{\rho_\mathrm{sw}} = \frac{917}{1025} = 0.895
+```
+The iceberg floats slightly higher in the denser seawater (89.5% submerged).
+
+**(c)** The visible volume above the ocean surface:
+```{math}
+V_\mathrm{above} = V(1 - f) = (1.0\times10^6\,\mathrm{m^3})(0.105) = 1.05\times10^5\,\mathrm{m^3}
+```
+Only about 10% of the iceberg is visible above the surface — the origin of the phrase "tip of the iceberg."
+:::
+
+:::{solution} ex:fluidmechanics:hose
+:label: soln:fluidmechanics:hose
+:class: dropdown
+**(a)** The cross-sectional area of the wide section: $A_1 = \pi(D_1/2)^2 = \pi(0.020\,\mathrm{m})^2 = 1.257\times10^{-3}\,\mathrm{m^2}$. The volumetric flow rate:
+```{math}
+Q = A_1 v_1 = (1.257\times10^{-3}\,\mathrm{m^2})(0.50\,\mathrm{m/s}) \approx 6.3\times10^{-4}\,\mathrm{m^3/s}
+```
+
+**(b)** By the equation of continuity $A_1 v_1 = A_2 v_2$. The area ratio $(D_1/D_2)^2 = (4.0/1.0)^2 = 16$:
+```{math}
+v_2 = v_1\frac{A_1}{A_2} = (0.50\,\mathrm{m/s})(16) = 8.0\,\mathrm{m/s}
+```
+
+**(c)** The time to fill 50 L $= 0.050\,\mathrm{m^3}$:
+```{math}
+t = \frac{V}{Q} = \frac{0.050\,\mathrm{m^3}}{6.3\times10^{-4}\,\mathrm{m^3/s}} \approx 80\,\mathrm{s}
+```
+:::
+
+:::{solution} ex:fluidmechanics:venturi
+:label: soln:fluidmechanics:venturi
+:class: dropdown
+**(a)** The area ratio is $(D_1/D_2)^2 = (4.0/2.0)^2 = 4$. By the equation of continuity:
+```{math}
+v_2 = v_1\frac{A_1}{A_2} = (2.0\,\mathrm{m/s})(4) = 8.0\,\mathrm{m/s}
+```
+
+**(b)** Applying Bernoulli's equation at constant height:
+```{math}
+P_2 = P_1 + \frac{1}{2}\rho(v_1^2 - v_2^2) = 2.0\times10^5 + \frac{1}{2}(1000)\left[(2.0)^2 - (8.0)^2\right]
+```
+```{math}
+P_2 = 2.0\times10^5 + 500(4 - 64) = 2.0\times10^5 - 3.0\times10^4 = 1.70\times10^5\,\mathrm{Pa}
+```
+The pressure drops by $3.0\times10^4\,\mathrm{Pa}$ (15%) as the water speeds up fourfold. This Venturi effect is used in carburettors, flow meters, and aspirators.
+:::
+
+:::{solution} ex:fluidmechanics:needle
+:label: soln:fluidmechanics:needle
+:class: dropdown
+**(a)** Using Poiseuille's resistance formula with $r = 3.0\times10^{-4}\,\mathrm{m}$:
+```{math}
+R = \frac{8\eta L}{\pi r^4} = \frac{8(2.0\times10^{-3})(0.040)}{\pi(3.0\times10^{-4})^4} = \frac{6.4\times10^{-4}}{\pi(8.1\times10^{-15})} \approx 2.5\times10^{10}\,\mathrm{Pa{\cdot}s/m^3}
+```
+
+**(b)** The volumetric flow rate:
+```{math}
+Q = \frac{\Delta P}{R} = \frac{2.5\times10^3\,\mathrm{Pa}}{2.5\times10^{10}\,\mathrm{Pa{\cdot}s/m^3}} = 1.0\times10^{-7}\,\mathrm{m^3/s}
+```
+
+**(c)** The time to deliver $5.0\,\mathrm{mL} = 5.0\times10^{-6}\,\mathrm{m^3}$:
+```{math}
+t = \frac{V}{Q} = \frac{5.0\times10^{-6}}{1.0\times10^{-7}} = 50\,\mathrm{s}
+```
+Note that $R \propto r^{-4}$: halving the needle radius would increase resistance 16-fold, turning a 50 s injection into a 13-minute procedure.
 :::
 
 [^38]:We placed the $dP$ on the top part of the fluid, even though the pressure is higher on the bottom part of the fluid, because the $y$ axis increases upwards. We are really interested in the change in pressure, $dP$, that corresponds to a change in height, $dy$, along the positive $y$ direction.
