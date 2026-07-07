@@ -287,15 +287,6 @@ You fill the three glasses in [](#fig:fluidmechanics:glasses) such that the liqu
 4.
 :::
 
-:::{exercise}
-:label: ex:fluidmechanics:hydraulic
-A hydraulic lift has a small input piston of diameter $D_1 = 4.0\,\mathrm{cm}$ and a large output piston of diameter $D_2 = 20\,\mathrm{cm}$. A mechanic applies a downward force of $F_1 = 200\,\mathrm{N}$ to the small piston.
-
-a. What is the resulting pressure increase in the hydraulic fluid?\
-b. What upward force is exerted on the large piston?\
-c. What is the maximum mass that can be lifted?
-:::
-
 :::{note} Example 14.2
 ```{figure} figures/FluidMechanics/lift.png
 :label: fig:fluidmechanics:lift
@@ -316,6 +307,15 @@ This will result in a net upwards force, $\vec F'$, on the large piston, with a 
 F' = \Delta P A' = \Delta P \pi D^2 = \frac{4F}{\pi D^2} \pi D^2 = 4F
 ```
 Thus the force on the large piston will be four times that exerted on the small piston. One only needs to exert a force with a magnitude of $Mg/4$ in order to lift the mass, $M$.
+:::
+
+:::{exercise}
+:label: ex:fluidmechanics:hydraulic
+A hydraulic lift has a small input piston of diameter $D_1 = 4.0\,\mathrm{cm}$ and a large output piston of diameter $D_2 = 20\,\mathrm{cm}$. A mechanic applies a downward force of $F_1 = 200\,\mathrm{N}$ to the small piston.
+
+a. What is the resulting pressure increase in the hydraulic fluid?\
+b. What upward force is exerted on the large piston?\
+c. What is the maximum mass that can be lifted?
 :::
 
 ## Measuring pressure
@@ -465,15 +465,6 @@ You observe that if you pour olive oil slowly into your glass of water, the oil 
 1.
 :::
 
-:::{exercise}
-:label: ex:fluidmechanics:iceberg
-Ice has a density of $\rho_\mathrm{ice} = 917\,\mathrm{kg/m^3}$. Fresh water has density $\rho_\mathrm{w} = 1000\,\mathrm{kg/m^3}$ and seawater has density $\rho_\mathrm{sw} = 1025\,\mathrm{kg/m^3}$.
-
-a. What fraction of a floating ice cube is submerged in fresh water?\
-b. What fraction of a floating iceberg is submerged in seawater?\
-c. An iceberg has a total volume of $V = 1.0\times10^6\,\mathrm{m^3}$. What volume is visible above the ocean surface?
-:::
-
 :::{note} Example 14.4
 You measure the weight of an object by suspending it with a spring scale. When you measure the weight of the object in air, you find that it has a weight $W_{a}$. When you measure the weight of the object when it is completely submerged in water, you find that it has a weight $W_w$. What is the density of the object?
 :::{note} Solution
@@ -495,6 +486,15 @@ where $\rho_w$ is the density of water. Given the volume, we can now determine t
 \rho = \frac{M}{V}=\frac{W_a\rho_w g}{g (W_a -W_w)}=\rho_w\frac{W_a}{W_a -W_w}
 ```
 **Discussion:** By using Archimedes' Principle, we were able to determine the volume, and thus the density of the object, by comparing measurements of its weight in air and in water. This is similar to the method that Archimedes came up with to determine if a crown owned by a general was made of real gold or if some of the gold had been replaced with an equal weight of silver. Archimedes supposedly went to the baths to ponder how to determine if the crown was made of gold and had his Eureka moment when we he noticed the water level in the bath went up as he went into the bath. He realized that denser gold would displace less water than silver for an equal weight. 
+:::
+
+:::{exercise}
+:label: ex:fluidmechanics:iceberg
+Ice has a density of $\rho_\mathrm{ice} = 917\,\mathrm{kg/m^3}$. Fresh water has density $\rho_\mathrm{w} = 1000\,\mathrm{kg/m^3}$ and seawater has density $\rho_\mathrm{sw} = 1025\,\mathrm{kg/m^3}$.
+
+a. What fraction of a floating ice cube is submerged in fresh water?\
+b. What fraction of a floating iceberg is submerged in seawater?\
+c. An iceberg has a total volume of $V = 1.0\times10^6\,\mathrm{m^3}$. What volume is visible above the ocean surface?
 :::
 
 :::{attention} Olivia's Thoughts
@@ -599,15 +599,6 @@ When water flows out of your faucet, you observe that the stream of water gets n
 2.
 :::
 
-:::{exercise}
-:label: ex:fluidmechanics:hose
-A horizontal pipe narrows from an inner diameter of $D_1 = 4.0\,\mathrm{cm}$ to $D_2 = 1.0\,\mathrm{cm}$. Water flows through the wide section at $v_1 = 0.50\,\mathrm{m/s}$.
-
-a. What is the volumetric flow rate $Q$ through the pipe?\
-b. What is the speed of water in the narrow section?\
-c. How long would it take to fill a 50 L bucket from the narrow end of the pipe?
-:::
-
 :::{note} Example 14.5
 Your garden hose has a diameter of $D=2 {\rm cm}$. How fast must water flow out of the hose if you are to fill a $5 {\rm l}$ bucket in one minute?
 :::{note} Solution
@@ -624,6 +615,15 @@ Q &= Av=\pi \left(\frac{D}{2}\right)^2v \\
 \therefore v&=\frac{Q}{\pi \left(\frac{D}{2}\right)^2}=\frac{(8.3\times 10^{-5} {\rm m^3/s})}{\pi(0.01 {\rm m})^2}=0.265 {\rm m/s}
 \end{align*}
 ```
+:::
+
+:::{exercise}
+:label: ex:fluidmechanics:hose
+A horizontal pipe narrows from an inner diameter of $D_1 = 4.0\,\mathrm{cm}$ to $D_2 = 1.0\,\mathrm{cm}$. Water flows through the wide section at $v_1 = 0.50\,\mathrm{m/s}$.
+
+a. What is the volumetric flow rate $Q$ through the pipe?\
+b. What is the speed of water in the narrow section?\
+c. How long would it take to fill a 50 L bucket from the narrow end of the pipe?
 :::
 
 ## Bernoulli's Principle
@@ -743,14 +743,6 @@ When a high speed train is travelling at constant speed, is there a net force on
 2.
 :::
 
-:::{exercise}
-:label: ex:fluidmechanics:venturi
-Water flows horizontally through a pipe that narrows from diameter $D_1 = 4.0\,\mathrm{cm}$ to $D_2 = 2.0\,\mathrm{cm}$. In the wide section, the flow speed is $v_1 = 2.0\,\mathrm{m/s}$ and the pressure is $P_1 = 2.0\times10^5\,\mathrm{Pa}$. The density of water is $\rho = 1000\,\mathrm{kg/m^3}$.
-
-a. Using the equation of continuity, find the flow speed $v_2$ in the narrow section.\
-b. Using Bernoulli's equation, find the pressure $P_2$ in the narrow section.
-:::
-
 The following examples illustrate how to apply Bernoulli's principle.
 
 :::{note} Example 14.6
@@ -833,6 +825,14 @@ Q_2 &= A_2 v_2 = \pi(0.005 {\rm m})^2(7.67 {\rm m/s})=6.03\times 10^{-4} {\rm m^
 You can easily verify that the speed of the water in different levels of your house does not vary by a factor near 20 for a $3 {\rm m}$ change in height (you could compare the flow rate for two faucets with the same diameter). This is because our model neglects the effect of friction as water flows in the pipes; in reality, there is much greater pressure in the pipes than that due to gravity, as well as a gradient in the pressure in your pipes, that will lead to the flow rates being similar in your kitchen and basement.
 :::
 
+:::{exercise}
+:label: ex:fluidmechanics:venturi
+Water flows horizontally through a pipe that narrows from diameter $D_1 = 4.0\,\mathrm{cm}$ to $D_2 = 2.0\,\mathrm{cm}$. In the wide section, the flow speed is $v_1 = 2.0\,\mathrm{m/s}$ and the pressure is $P_1 = 2.0\times10^5\,\mathrm{Pa}$. The density of water is $\rho = 1000\,\mathrm{kg/m^3}$.
+
+a. Using the equation of continuity, find the flow speed $v_2$ in the narrow section.\
+b. Using Bernoulli's equation, find the pressure $P_2$ in the narrow section.
+:::
+
 ## Viscosity
 So far, we have assumed that fluids flow with no friction. In reality, the particles moving in  a fluid exert internal friction on each other called "viscosity". This can be modelled as the friction between different layers of fluid in a laminar flow. For example, you may notice that the water that flows in a wide river flows much faster in the middle of the river than near the river banks, where the water is almost stationary, as shown in [](#fig:fluidmechanics:river). 
 ```{figure} figures/FluidMechanics/river.png
@@ -903,15 +903,6 @@ Does the flow rate of water out of a garden hose depend on the length of the hos
 2.
 :::
 
-:::{exercise}
-:label: ex:fluidmechanics:needle
-A hypodermic needle has length $L = 4.0\,\mathrm{cm}$ and inner radius $r = 0.30\,\mathrm{mm}$. The injected medication has viscosity $\eta = 2.0\times10^{-3}\,\mathrm{Pa{\cdot}s}$ and the pressure difference between the syringe barrel and the injection site is $\Delta P = 2.5\,\mathrm{kPa}$.
-
-a. What is the flow resistance $R$ of the needle?\
-b. What is the volumetric flow rate $Q$ through the needle?\
-c. How long does it take to administer a $5.0\,\mathrm{mL}$ dose?
-:::
-
 :::{note} Example 14.8
 You are modelling the flow of water for a city. Two houses are connected in parallel to the main water supply, so that water from the main supply flows into either house 1 or house 2, and the flows out of each house then join up again at the main supply. The difference in pressure, $\Delta P$, between the entry and exit point of water is the same for each house, and each house can be modelled as having a net resistance, $R_{1}$ or $R_2$, to the flow of water, as illustrated in [](#fig:fluidmechanics:parallel). If you model the two houses as being the equivalent of a single "effective" house with an effective resistance $R$, what is the value of $R$ in terms of $R_1$ and $R_2$?
 ```{figure} figures/FluidMechanics/parallel.png
@@ -952,6 +943,15 @@ Q &= \frac{\Delta P}{R}\\
 \end{align*}
 ```
 **Discussion:** By requiring that the sum of the flows of water through the houses be the same as the flow rate through the main pipe, we were able to model the two houses as a single effective house with resistance $R$. You may notice that this is the same relation as the equivalent resistance for two electrical resistors combined in parallel. This is because the flow of electrical current in a resistor can be modelled using similar tools to those required for modelling the flow of a viscous fluid in a pipe. 
+:::
+
+:::{exercise}
+:label: ex:fluidmechanics:needle
+A hypodermic needle has length $L = 4.0\,\mathrm{cm}$ and inner radius $r = 0.30\,\mathrm{mm}$. The injected medication has viscosity $\eta = 2.0\times10^{-3}\,\mathrm{Pa{\cdot}s}$ and the pressure difference between the syringe barrel and the injection site is $\Delta P = 2.5\,\mathrm{kPa}$.
+
+a. What is the flow resistance $R$ of the needle?\
+b. What is the volumetric flow rate $Q$ through the needle?\
+c. How long does it take to administer a $5.0\,\mathrm{mL}$ dose?
 :::
 
 # Summary
