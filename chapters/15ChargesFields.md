@@ -175,7 +175,6 @@ F_g&=G\frac{m_em_p}{r^2}\\
 
 In the following trinket, a positive and negative charge are drawn. The force each charge experiences is drawn as an arrow and calculated for a distance of $1 \overset{\circ}{\rm A}=1\times 10^{-10} {\rm m}$ apart. Following convention, the vector arrows have their origin at the charge experiencing the force. When the trinket is run, the force arrows indicate an attractive force, i.e., the charges experience forces toward one another. If the charges are changed to like charges, e.g., `Q1.q = q` and `Q2.q = q`, the force arrows indicate repulsion between the charges. Try it in the trinket below. What happens to the size of the force vectors if you make one charge twice as big as the other? Can you support this result with one of Newton's Laws?
 :::{iframe} https://troymessina.github.io/pyro/?example=coulomb-force&header=true&sidebar=true&tab=output&view=output&run=true
-
 :label: chapter:chargesfields:coulombtrinket
 :width: 100%
 :align: center
@@ -241,7 +240,7 @@ which has a magnitude of $15.8\times 10^{-5} {\rm N}$.
 **Discussion:** In this example, we determined the net force on a charge by making use of the superposition principle; namely, that we can treat the forces exerted on $q$ by $Q_1$ and $Q_2$ independently, without needing to consider the fact that $Q_1$ and $Q_2$ exert forces on each other.
 :::
 
-# The electric field
+# The Electric field
 We define the electric field vector, $\vec E$, in an analogous way as we defined the gravitational field vector, $\vec g$. By defining the gravitational field vector, say, at the surface of the Earth, we can easily calculate the gravitational force exerted by the Earth on any mass, $m$, without having to use Newton's Universal Theory of Gravity. As you recall, we can define the gravitational field, $\vec g(\vec r)$, at some position, $\vec r$, from a point mass, $M$, as the gravitational force per unit mass:
 ```{math}
 \vec g(\vec r) = -G \frac{M}{r^2}\hat r
