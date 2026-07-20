@@ -17,15 +17,7 @@ notebookmetadatakey: val1
 ---
 (chapter:magneticsource)=
 # Overview
-```{code-cell}
 
-print("Here is a Python cell")
-```
-
-```{code-cell}
-:cellmetadatakey: val1
-print("Another code cell with a second optional metadata syntax")
-```
 In this chapter, we develop the tools to model the magnetic field that is produced by an electric current. We will introduce the Biot-Savart Law, which is analoguous to Coulomb's Law in that it can be used to calculate the magnetic field produced by any current. We will also introduce Ampère's Law, which can be thought of as the analogue to Gauss' Law, allowing us to easily determine the magnetic field when there is a high degree of symmetry. 
 
 :::{hint} Learning Objectives
