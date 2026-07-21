@@ -459,7 +459,7 @@ A two-loop circuit has nodes $a$ (top) and $b$ (bottom) connected by three branc
 
 ```{figure} figures/Circuits/circuitspng/ex19_kirchhoff.svg
 :label: fig:circuits:ex19kirchhoff
-:width: 75%
+:width: 100%
 :align: center
 :alt: Two-loop circuit with nodes a and b, two batteries, and three resistors.
 Two-loop circuit for Exercise 5. Arrows show the guessed current directions.
