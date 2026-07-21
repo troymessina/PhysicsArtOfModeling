@@ -192,6 +192,20 @@ What is the conductivity of an ideal insulator?
 1.
 :::
 
+:::{exercise}
+:label: ex:current:driftvelocity
+A copper wire with diameter $d = 2.0\,\mathrm{mm}$ carries a conventional current of
+$I = 5.0\,\mathrm{A}$. The free electron density in copper is
+$n = 8.46\times10^{28}\,\mathrm{m}^{-3}$.
+
+a. What is the cross-sectional area of the wire?\
+b. What is the magnitude of the current density $j$ in the wire?\
+c. What is the drift speed $v_d$ of the conduction electrons? In which direction
+   do the electrons drift relative to the conventional current direction?\
+d. How long (in hours) would it take a single electron to drift a distance of
+   $1.0\,\mathrm{m}$ along the wire?
+:::
+
 ## Resistivity
 For convenience, one often describes how well a material conducts charges using the "resistivity", $\rho$, which is simply defined as the inverse of conductivity:
 ```{math}
@@ -222,6 +236,20 @@ What is the slope of the resistivity vs temperature as shown in [](#fig:current:
 :class: dropdown
 4.
 :::
+
+:::{exercise}
+:label: ex:current:resistivity
+A copper wire used in household wiring has resistivity
+$\rho_0 = 1.68\times10^{-8}\,\Omega\cdot\mathrm{m}$ at reference temperature
+$T_0 = 20\,^\circ\mathrm{C}$, with temperature coefficient $\alpha = 0.0040\,^\circ\mathrm{C}^{-1}$.
+
+a. What is the conductivity of copper at $20\,^\circ\mathrm{C}$?\
+b. During normal operation the wire heats to $60\,^\circ\mathrm{C}$. What is the
+   resistivity of copper at this temperature?\
+c. If a current density of $j = 2.0\times10^{6}\,\mathrm{A/m}^2$ exists in the wire at
+   $20\,^\circ\mathrm{C}$, what is the magnitude of the electric field driving that current?
+:::
+
 [](#tab:current:materials) shows a list of common materials and their conductivity, resistivity, and temperature coefficients (defined at a reference temperature $T_0=20 {\rm \degree C}$).
 ```{table}
 :label: tab:current:materials
@@ -296,6 +324,17 @@ What are the SI units of conductivity?
 :::{tip} Answer
 :class: dropdown
 2.
+:::
+
+:::{exercise}
+:label: ex:current:resistors
+Three resistors with resistances $R_1 = 4\,\Omega$, $R_2 = 6\,\Omega$, and $R_3 = 12\,\Omega$
+are connected in a circuit: $R_2$ and $R_3$ are connected in parallel, and this parallel
+combination is connected in series with $R_1$. A $12\,\mathrm{V}$ battery powers the circuit.
+
+a. What is the effective resistance $R_{eff}$ of the full combination?\
+b. What is the current $I$ through $R_1$?\
+c. What is the power dissipated in $R_1$? What is the total power delivered by the battery?
 :::
 
 
@@ -787,6 +826,80 @@ R_1 [1+\alpha(T_2-T_0)]&=R_2 [1+\alpha(T_1-T_0)]\\
 ```
 Referring to [](#tab:current:materials), the material could likely be gold.
 
+:::
+
+## Exercise Solutions
+
+:::{solution} ex:current:driftvelocity
+:label: soln:current:driftvelocity
+:class: dropdown
+**(a)** The cross-sectional area of the wire is:
+```{math}
+A = \pi\left(\frac{d}{2}\right)^2 = \pi(1.0\times10^{-3}\,\mathrm{m})^2 = 3.14\times10^{-6}\,\mathrm{m}^2
+```
+
+**(b)** The current density is:
+```{math}
+j = \frac{I}{A} = \frac{5.0\,\mathrm{A}}{3.14\times10^{-6}\,\mathrm{m}^2} = 1.59\times10^{6}\,\mathrm{A/m}^2
+```
+
+**(c)** From the microscopic model $j = env_d$, solving for drift speed:
+```{math}
+v_d = \frac{j}{en} = \frac{1.59\times10^{6}\,\mathrm{A/m}^2}{(1.6\times10^{-19}\,\mathrm{C})(8.46\times10^{28}\,\mathrm{m}^{-3})} = 1.18\times10^{-4}\,\mathrm{m/s}
+```
+The electrons drift in the direction *opposite* to the conventional current.
+
+**(d)** The time to drift $1.0\,\mathrm{m}$:
+```{math}
+t = \frac{1.0\,\mathrm{m}}{1.18\times10^{-4}\,\mathrm{m/s}} = 8470\,\mathrm{s} \approx 2.4\,\mathrm{hours}
+```
+:::
+
+:::{solution} ex:current:resistivity
+:label: soln:current:resistivity
+:class: dropdown
+**(a)** Conductivity is the inverse of resistivity:
+```{math}
+\sigma = \frac{1}{\rho_0} = \frac{1}{1.68\times10^{-8}\,\Omega\cdot\mathrm{m}} = 5.95\times10^{7}\,\Omega^{-1}\mathrm{m}^{-1}
+```
+
+**(b)** Using the linear temperature model:
+```{math}
+\rho(60\,^\circ\mathrm{C}) = \rho_0[1 + \alpha(T - T_0)] = (1.68\times10^{-8}\,\Omega\cdot\mathrm{m})[1 + (0.0040)(60-20)] = 1.95\times10^{-8}\,\Omega\cdot\mathrm{m}
+```
+
+**(c)** From Ohm's Law, $j = E/\rho$, so:
+```{math}
+E = j\rho_0 = (2.0\times10^{6}\,\mathrm{A/m}^2)(1.68\times10^{-8}\,\Omega\cdot\mathrm{m}) = 0.034\,\mathrm{V/m}
+```
+:::
+
+:::{solution} ex:current:resistors
+:label: soln:current:resistors
+:class: dropdown
+**(a)** First combine $R_2$ and $R_3$ in parallel:
+```{math}
+R_{23} = \frac{R_2 R_3}{R_2 + R_3} = \frac{(6\,\Omega)(12\,\Omega)}{6\,\Omega + 12\,\Omega} = 4\,\Omega
+```
+Then combine in series with $R_1$:
+```{math}
+R_{eff} = R_1 + R_{23} = 4\,\Omega + 4\,\Omega = 8\,\Omega
+```
+
+**(b)** By Ohm's Law, the current through $R_1$ (which carries the full circuit current) is:
+```{math}
+I = \frac{\Delta V}{R_{eff}} = \frac{12\,\mathrm{V}}{8\,\Omega} = 1.5\,\mathrm{A}
+```
+
+**(c)** Power dissipated in $R_1$:
+```{math}
+P_1 = I^2 R_1 = (1.5\,\mathrm{A})^2(4\,\Omega) = 9.0\,\mathrm{W}
+```
+Total power delivered by the battery:
+```{math}
+P_{total} = I\Delta V = (1.5\,\mathrm{A})(12\,\mathrm{V}) = 18\,\mathrm{W}
+```
+The remaining $9.0\,\mathrm{W}$ is dissipated in $R_2$ and $R_3$ combined.
 :::
 
 
