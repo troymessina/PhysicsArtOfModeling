@@ -265,6 +265,16 @@ A coil is made of $N$ loops of current-carrying wire packed closely together. Wh
 2.
 :::
 
+:::{exercise} Biot-Savart Law — Straight wire and circular loop
+:label: ex:magneticsource:biotsavart
+
+A long straight wire carries current $I = 8.0\,\text{A}$.
+
+a. Using $B = \frac{\mu_0 I}{2\pi h}$, calculate the magnetic field at a perpendicular distance $h = 5.0\,\text{cm}$ from the wire.\
+b. At what perpendicular distance from the wire would the field be reduced to half the value found in part (a)?\
+c. A circular loop of radius $R = 5.0\,\text{cm}$ carries the same current $I = 8.0\,\text{A}$. Calculate the magnetic field at the centre of the loop, and find the ratio $B_\text{loop}/B_\text{wire}$, where $B_\text{wire}$ is the answer from part (a).
+:::
+
 # Force between two current-carrying wires
 Consider two infinite parallel straight wires, a distance $h$ apart, carrying upwards currents, $I_1$ and $I_2$, respectively, as illustrated in [](#fig:magneticsource:twowires).
 ```{figure} figures/MagneticSource/twowires.png
@@ -309,6 +319,17 @@ Two parallel wires carry current in opposite directions, as shown in [](#fig:mag
 :class: dropdown
 3.
 :::
+
+:::{exercise} Force between two parallel current-carrying wires
+:label: ex:magneticsource:wiresforce
+
+Two long parallel wires separated by $d = 0.15\,\text{m}$ carry currents $I_1 = 10\,\text{A}$ and $I_2 = 15\,\text{A}$ in opposite directions.
+
+a. Calculate the force per unit length $F/l$ between the wires and state whether it is attractive or repulsive.\
+b. A third wire carrying $I_3 = 5.0\,\text{A}$ in the same direction as wire 1 is placed midway between the two wires (at $d/2$ from each). Find the net force per unit length on wire 3 due to wires 1 and 2, and state toward which wire the net force pushes wire 3.\
+c. If the separation between wires 1 and 2 is halved to $d' = 0.075\,\text{m}$ (with wire 3 removed), by what factor does the force per unit length between them change?
+:::
+
 The attractive force between two wires used to be the basis for defining the Ampère, the S.I. (base) unit for electric current. Before 2019, the Ampère was defined to be "that constant current which, if maintained in two straight parallel conductors of infinite length, of negligible circular cross-section, and placed one metre apart in vacuum, would produce between these conductors a force equal to $2\times 10^{-17} {\rm N}$ per metre of length". Recently, the definition was updated to be based on defining the Coulomb in such a way that the elementary charge has a numerical value of $e=1.602176634\times 10^{-19} {\rm C}$, and the Ampère corresponds to one Coulomb per second.
 
 The force between two wires is a good system to understand how any physical quantity cannot depend on our choice of the right-hand to define cross-products. As mentioned in the previous chapter, any physical quantity, such as the direction of the force exerted on a wire, will always depend on two successive uses of the right hand. In this system, we first used the right-hand rule for axial vectors to determine the direction of the magnetic field from one of the wires. We then used the right-hand rule to determine the direction of the cross-product to determine the direction of the force on the other wire. You can verify that you get the same answer if you, instead, use your left-hand to define the direction of the magnetic field (which will be in the opposite direction), and then again for the cross-product. This also highlights that the magnetic field (and the electric field) is just a mathematical tool that we use to, ultimately, describe the motion of charges or compass needles.
@@ -338,6 +359,15 @@ When current is flowing in a straight cable, how to you expect the charges to be
 :class: dropdown
 2.
 :::
+
+:::{exercise} The Ampère definition and charge distribution in a wire
+:label: ex:magneticsource:amperedef
+
+a. Two long parallel wires each carry current $I$ in the same direction and are separated by $d = 1.0\,\text{m}$. Show that the force per unit length is $F/l = \mu_0 I^2/(2\pi d)$, and find the value of $I$ that makes $F/l = 2.0\times10^{-7}\,\text{N/m}$. (This is the historical definition of one Ampère.)\
+b. A household extension cord carries two wires separated by $d = 3.0\,\text{mm}$, each carrying $I = 15\,\text{A}$ in opposite directions (current flows out through one wire and returns through the other). Calculate the force per unit length between them and state whether it is attractive or repulsive.\
+c. In a copper wire carrying conventional current in the $+z$ direction, the conduction electrons drift in the $-z$ direction. At a point on the surface of the wire on the $+x$ side, the wire's own magnetic field points in the $+y$ direction. Use $\vec F = q\vec v_d\times\vec B$ to show that the magnetic force on the electrons near the surface is directed toward the wire's axis ($-x$ direction), and explain why this leads to an excess of positive charge on the outside of the wire.
+:::
+
 # Ampère's Law
 Ampère's Law is similar to Gauss' Law, as it allows us to (analytically) determine the magnetic field that is produced by an electric current in configurations that have a high degree of symmetry. Ampère's Law states:
 ```{math}
@@ -407,6 +437,16 @@ Ampère's law proves that the magnetic field at the centre of a current-carrying
 :::{tip} Answer
 :class: dropdown
 2.
+:::
+
+:::{exercise} Ampère's Law — Field inside and outside a cable
+:label: ex:magneticsource:amperelaw
+
+A long solid cylindrical cable of radius $R = 3.0\,\text{mm}$ carries total current $I = 12\,\text{A}$ distributed uniformly across its cross-section.
+
+a. Use Ampère's Law to find the magnetic field magnitude at $r = 1.0\,\text{mm}$ (inside the cable).\
+b. Find the magnetic field magnitude at $r = 5.0\,\text{mm}$ (outside the cable).\
+c. At what radius or radii does the magnetic field equal exactly half its value at the cable surface $r = R$?
 :::
 
 
@@ -654,6 +694,16 @@ In [](#fig:magneticsource:amperetoroid), the magnetic field makes concentric cir
 2.
 :::
 
+:::{exercise} Solenoid and toroid fields
+:label: ex:magneticsource:solenoid
+
+A solenoid has length $\ell = 0.25\,\text{m}$, contains $N = 500$ turns, and carries current $I = 2.0\,\text{A}$.
+
+a. Calculate the number of turns per unit length $n$ and the magnetic field inside the solenoid.\
+b. A toroid is wound with $N_T = 500$ turns carrying the same current $I = 2.0\,\text{A}$, with inner radius $r_1 = 5.0\,\text{cm}$ and outer radius $r_2 = 7.0\,\text{cm}$. Calculate the magnetic field at $r_1$, at $r_2$, and at the midpoint $r = 6.0\,\text{cm}$.\
+c. Compare the solenoid's field to the toroid's field. Both have 500 turns and carry the same current — why does the solenoid produce a uniform field while the toroid's field varies with radius?
+:::
+
 %%%:::{tip} Checkpoint
 %%%What range or position of $r$ encloses the most current in [](#fig:magneticsource:amperetoroid)?:
 %%%1.  All $r$ between the $\odot$ and the $\otimes$ symbols. 
@@ -885,5 +935,75 @@ plt.show()
 Magnetic field from each coil, as well as their sum, for two coils in the Helmholtz configuration
 ```
 As advertised, we see a region between the Helmholtz coils where the magnetic field is nearly uniform.
+:::
+:::
+
+## Exercise Solutions
+
+:::{solution} ex:magneticsource:biotsavart
+:label: soln:magneticsource:biotsavart
+:class: dropdown
+
+a. $B = \frac{\mu_0 I}{2\pi h} = \frac{(4\pi\times10^{-7})(8.0)}{2\pi(0.05)} = 3.2\times10^{-5}\,\text{T} = 32\,\mu\text{T}$\
+b. Since $B \propto 1/h$, halving the field requires doubling the distance: $h_2 = 2(5.0\,\text{cm}) = 10\,\text{cm}$.\
+c. $B_\text{loop} = \frac{\mu_0 I}{2R} = \frac{(4\pi\times10^{-7})(8.0)}{2(0.05)} = 32\pi\times10^{-6}\,\text{T} \approx 100\,\mu\text{T}$
+
+Since $R = h = 5.0\,\text{cm}$, the ratio is $\frac{B_\text{loop}}{B_\text{wire}} = \frac{\mu_0 I/(2R)}{\mu_0 I/(2\pi h)}\bigg|_{R=h} = \pi \approx 3.14$. The loop concentrates flux from its full circumference at one point, while the straight wire's field spreads cylindrically in all directions.
+:::
+
+:::{solution} ex:magneticsource:wiresforce
+:label: soln:magneticsource:wiresforce
+:class: dropdown
+
+a. $\frac{F}{l} = \frac{\mu_0 I_1 I_2}{2\pi d} = \frac{(4\pi\times10^{-7})(10)(15)}{2\pi(0.15)} = 2.0\times10^{-4}\,\text{N/m}$, repulsive (currents in opposite directions).\
+b. Wire 3 sits at $d/2 = 0.075\,\text{m}$ from each wire. Its current runs the same way as wire 1 (attracted toward wire 1) and opposite to wire 2 (repelled away from wire 2, also toward wire 1). Both contributions push wire 3 toward wire 1:
+
+$\frac{F_{13}}{l} = \frac{\mu_0 I_1 I_3}{2\pi(d/2)} = \frac{(4\pi\times10^{-7})(10)(5)}{2\pi(0.075)} = 1.33\times10^{-4}\,\text{N/m}$
+
+$\frac{F_{23}}{l} = \frac{\mu_0 I_2 I_3}{2\pi(d/2)} = \frac{(4\pi\times10^{-7})(15)(5)}{2\pi(0.075)} = 2.0\times10^{-4}\,\text{N/m}$
+
+Net force $= (1.33 + 2.0)\times10^{-4}\,\text{N/m} = 3.3\times10^{-4}\,\text{N/m}$ toward wire 1.\
+c. Since $F/l \propto 1/d$, halving $d$ doubles the force per unit length: new $F/l = 4.0\times10^{-4}\,\text{N/m}$ (a factor of 2 increase).
+:::
+
+:::{solution} ex:magneticsource:amperedef
+:label: soln:magneticsource:amperedef
+:class: dropdown
+
+a. With $I_1 = I_2 = I$ and $d = 1.0\,\text{m}$: $F/l = \mu_0 I^2/(2\pi) = 2\times10^{-7}\,I^2$. Setting this equal to $2.0\times10^{-7}\,\text{N/m}$ gives $I = 1\,\text{A}$.\
+b. $\frac{F}{l} = \frac{(4\pi\times10^{-7})(15)^2}{2\pi(0.003)} = \frac{4\times225\times10^{-7}}{0.006} = 1.5\times10^{-2}\,\text{N/m}$, repulsive (currents in opposite directions).\
+c. Electron drift: $\vec v_d = -v_d\hat z$ (opposite to conventional current). At the point $(a,0,0)$ on the surface, $\vec B = B\hat y$:
+
+$\vec F = (-e)(-v_d\hat z)\times(B\hat y) = ev_d B(\hat z\times\hat y) = ev_d B(-\hat x) = -ev_d B\hat x$
+
+The force is in the $-x$ direction — directed inward toward the wire's axis. Electrons near the surface are pushed toward the centre, depleting the outer surface of electrons and leaving it with an excess of positive charge. This is the same Hall-effect mechanism from Chapter 20, with the wire's own magnetic field acting as the deflecting field.
+:::
+
+:::{solution} ex:magneticsource:amperelaw
+:label: soln:magneticsource:amperelaw
+:class: dropdown
+
+At the cable surface ($r = R$): $B(R) = \frac{\mu_0 I}{2\pi R} = \frac{(4\pi\times10^{-7})(12)}{2\pi(3.0\times10^{-3})} = 8.0\times10^{-4}\,\text{T}$
+
+a. Inside ($r = 1.0\,\text{mm}$): the Amperian loop encloses $I^{enc} = I(r/R)^2$, so $B\cdot2\pi r = \mu_0 I(r/R)^2$:
+
+$B = \frac{\mu_0 I r}{2\pi R^2} = \frac{(4\pi\times10^{-7})(12)(1.0\times10^{-3})}{2\pi(3.0\times10^{-3})^2} = \frac{48\times10^{-10}}{18\times10^{-6}} = 2.7\times10^{-4}\,\text{T}$\
+b. Outside ($r = 5.0\,\text{mm}$): all current is enclosed, so $B = \frac{\mu_0 I}{2\pi r} = \frac{(4\pi\times10^{-7})(12)}{2\pi(5.0\times10^{-3})} = 4.8\times10^{-4}\,\text{T}$\
+c. *Inside*: $B \propto r$, so $B = B(R)/2$ when $r_0 = R/2 = 1.5\,\text{mm}$. *Outside*: $B \propto 1/r$, so $B = B(R)/2$ when $r_0 = 2R = 6.0\,\text{mm}$. There are two such radii: $1.5\,\text{mm}$ (inside the cable) and $6.0\,\text{mm}$ (outside).
+:::
+
+:::{solution} ex:magneticsource:solenoid
+:label: soln:magneticsource:solenoid
+:class: dropdown
+
+a. $n = N/\ell = 500/0.25 = 2000\,\text{turns/m}$; $B = \mu_0 n I = (4\pi\times10^{-7})(2000)(2.0) = 16\pi\times10^{-4} \approx 5.0\times10^{-3}\,\text{T} = 5.0\,\text{mT}$\
+b. Using $B(r) = \frac{\mu_0 N_T I}{2\pi r}$ with $\mu_0 N_T I = (4\pi\times10^{-7})(500)(2.0) = 4\pi\times10^{-4}$:
+
+At $r_1 = 5.0\,\text{cm}$: $B = \frac{4\pi\times10^{-4}}{2\pi(0.05)} = 4.0\times10^{-3}\,\text{T} = 4.0\,\text{mT}$
+
+At $r = 6.0\,\text{cm}$: $B = \frac{4\pi\times10^{-4}}{2\pi(0.06)} = 3.3\times10^{-3}\,\text{T} = 3.3\,\text{mT}$
+
+At $r_2 = 7.0\,\text{cm}$: $B = \frac{4\pi\times10^{-4}}{2\pi(0.07)} = 2.9\times10^{-3}\,\text{T} = 2.9\,\text{mT}$\
+c. The solenoid field (5.0 mT) is uniform throughout and stronger than the toroid's range (2.9–4.0 mT). In a solenoid, the Amperian loop always encloses $n\ell_\text{loop}$ turns regardless of its position inside, so symmetry forces $B$ constant. In a toroid, each Amperian circle encloses the same total current $N_T I$ at every radius, but the loop circumference grows as $2\pi r$, so $B = \mu_0 N_T I/(2\pi r)$ falls off with increasing $r$.
 :::
 
