@@ -42,6 +42,23 @@ Is the magnetic North pole of the Earth located closer to the Earth's geographic
 3.
 :::
 
+:::{exercise}
+:label: ex:magneticforce:earthfield
+Earth's magnetic field at a mid-latitude location has magnitude $B = 55\,\mu\text{T}$
+and points in a direction that makes a dip angle of $\alpha = 65°$ below the horizontal,
+tilting toward geographic North.
+
+a. Calculate the horizontal component $B_H$ (pointing toward geographic North) and the
+   vertical component $B_V$ (pointing downward) of Earth's field.\
+b. A compass needle in this location can only rotate in the horizontal plane; it aligns
+   with $B_H$. Toward which geographic direction does the North-seeking pole of the compass
+   point? What type of magnetic pole (N or S) must exist near Earth's geographic North Pole?\
+c. At the geographic equator the dip angle is $0°$ and the field magnitude is
+   $B_{eq} = 30\,\mu\text{T}$. By what factor is the field stronger at the mid-latitude
+   location than at the equator? What does this imply about the relative density of magnetic
+   field lines at the two locations?
+:::
+
 It may seem that the magnetic force can be described in the same way as the electric force, having two opposite sign "charges" (or poles for magnets), although this is not the case. As far as we can tell, there are no magnets that have only a North or a South pole. Every magnet must have a North *and* a South pole. This is fundamentally different from the electric force, where an object can have a net positive or negative charge. In the context of magnetism, we say that "monopoles do not exist" (an object that has only a North or a South pole would be called a monopole). This is illustrated in [](#fig:magneticforce:magnetcut), which shows what happens as one cuts a bar magnet into two pieces; rather than ending up with a North and a South piece (monopoles), we end up with two smaller bar magnets, each with their own North and South pole.
 
 ```{figure} figures/MagneticForce/magnetcut.png
@@ -105,6 +122,20 @@ A proton moves East in Earth's magnetic field, which way is it deflected?
 :class: dropdown
 1.
 :::
+
+:::{exercise}
+:label: ex:magneticforce:lorentzforce
+A proton ($q = +1.6\times10^{-19}\,\text{C}$, $m_p = 1.67\times10^{-27}\,\text{kg}$)
+moves due East with speed $v = 5.0\times10^6\,\text{m/s}$ through Earth's horizontal
+magnetic field of magnitude $B = 55\,\mu\text{T}$ pointing due North.
+
+a. Using $\vec F_B = q\vec v \times \vec B$, determine the direction of the magnetic
+   force on the proton.\
+b. Calculate the magnitude of the magnetic force.\
+c. Calculate the weight of the proton. Is the magnetic force comparable to gravity,
+   much larger, or much smaller?
+:::
+
 :::{tip} Checkpoint
 An electron moves West in Earth's magnetic field, which way is it deflected?
 1.  Away from the Earth. 
@@ -115,6 +146,23 @@ An electron moves West in Earth's magnetic field, which way is it deflected?
 :class: dropdown
 1.
 :::
+
+:::{exercise}
+:label: ex:magneticforce:electronforce
+A cathode ray tube fires electrons ($q = -e = -1.6\times10^{-19}\,\text{C}$,
+$m_e = 9.11\times10^{-31}\,\text{kg}$) horizontally to the right ($+\hat x$) with speed
+$v = 3.0\times10^7\,\text{m/s}$ through a uniform magnetic field of magnitude
+$B = 0.20\,\text{T}$ directed into the page ($-\hat z$).
+
+a. Using $\vec F_B = q\vec v \times \vec B$, find the direction and magnitude of the
+   initial magnetic force on the electron.\
+b. In which direction would the force point if the particle were a proton moving with the
+   same velocity in the same field? Explain the difference in terms of the sign of $q$.\
+c. The electron was accelerated from rest through a potential difference $\Delta V$ before
+   entering the field region. What value of $|\Delta V|$ was required to reach the speed
+   $v = 3.0\times10^7\,\text{m/s}$?
+:::
+
 :::{attention} Josh's Thoughts 
 {}
 It is very important to remember what each part of the right-hand rule for cross-products represents. To help remember what each finger represents, I say "velocity" as I extend my thumb, "field" as I extend my index finger, and "force" as I extend my middle finger. When using the right hand rule, it is also important to remember the $q$ in the equation $\vec F_B = q\vec v \times \vec B$. This $q$ could be negative, which would mean that the force acts in the opposite direction.
@@ -159,6 +207,24 @@ Is the particle illustrated in [](#fig:magneticforce:cyclotron) positively or ne
 :::{tip} Answer
 :class: dropdown
 1.
+:::
+
+:::{exercise}
+:label: ex:magneticforce:cyclotronmotion
+A proton ($q = e = 1.6\times10^{-19}\,\text{C}$, $m_p = 1.67\times10^{-27}\,\text{kg}$)
+moves perpendicular to a uniform magnetic field of magnitude $B = 0.50\,\text{T}$ and
+undergoes uniform circular motion.
+
+a. Show that the period $T$ of the circular motion is independent of the proton's speed,
+   and express $T$ in terms of $m_p$, $e$, and $B$.\
+b. Calculate the period $T$ for this proton.\
+c. An alpha particle (charge $q_\alpha = +2e$, mass $m_\alpha = 4m_p$) moves with the
+   same speed as the proton in the same field. Find the ratio of their cyclotron radii
+   $R_\alpha / R_p$.\
+d. In a mass spectrometer, a singly-ionized carbon-12 atom
+   ($m_{12} = 1.99\times10^{-26}\,\text{kg}$, $q = e$) and a singly-ionized carbon-13
+   atom ($m_{13} = 2.16\times10^{-26}\,\text{kg}$, $q = e$) enter the same field with
+   the same speed. What is the ratio $R_{12}/R_{13}$ of their cyclotron radii?
 :::
 
 Referring to [](#fig:magneticforce:cyclotron), if the velocity of the particle is in the plane of the page (perpendicular to the magnetic field), as illustrated, the particle will undergo uniform circular motion. If the velocity of the particle has a component that is parallel to the magnetic field (for example a component coming out of the page, towards you), the particle will undergo "helical motion" (a spiral). The radius of the helix is determined by the component of the velocity, $\vec v_{\perp}$, that is perpendicular the magnetic field:
@@ -270,6 +336,21 @@ In which direction does the magnetic force point on the current-carrying wire th
 :::{tip} Answer
 :class: dropdown
 1.
+:::
+
+:::{exercise}
+:label: ex:magneticforce:wireforce
+A horizontal wire of length $L = 0.40\,\text{m}$ carries current $I = 8.0\,\text{A}$
+directed due East and is immersed in Earth's horizontal magnetic field $B = 55\,\mu\text{T}$
+pointing due North.
+
+a. Using $\vec F = I\vec l \times \vec B$, determine the direction and calculate the
+   magnitude of the magnetic force on the wire.\
+b. The wire has mass per unit length $\lambda = 2.5\times10^{-3}\,\text{kg/m}$. Calculate
+   the weight of this section of wire. What fraction of the wire's weight does the magnetic
+   force represent?\
+c. What minimum current $I_{min}$ (still directed East) would be needed so that the upward
+   magnetic force from Earth's field exactly balances the wire's weight?
 :::
 
 Note that if the wire is not straight, then we can model the wire as being made of many infinitesimally short sections ([](#fig:magneticforce:bentwire)), of length $dl$, and sum the forces on those sections to get the total force on a section of length $L$:
@@ -486,6 +567,19 @@ When a magnetic dipole moment is parallel with a magnetic field and points in th
 4.
 :::
 
+:::{exercise}
+:label: ex:magneticforce:dipolemoment
+A rectangular coil of wire has dimensions $\ell = 5.0\,\text{cm}$ by $w = 3.0\,\text{cm}$
+and carries current $I = 2.0\,\text{A}$ in a uniform magnetic field of magnitude
+$B = 0.15\,\text{T}$.
+
+a. Find the magnitude of the magnetic dipole moment $\mu$ of the coil.\
+b. When the plane of the coil is parallel to $\vec B$ (so that $\vec\mu$ is perpendicular
+   to $\vec B$), calculate the magnitude of the torque on the coil.\
+c. At what angle $\theta$ between $\vec\mu$ and $\vec B$ does the torque equal exactly
+   half its maximum value? Give your answer in degrees.
+:::
+
 :::{tip} Checkpoint
 When a magnetic dipole moment is placed such that the torque from the magnetic field is maximized, it will have...
 1.  ... zero potential energy. 
@@ -493,6 +587,21 @@ When a magnetic dipole moment is placed such that the torque from the magnetic f
 :::{tip} Answer
 :class: dropdown
 1.
+:::
+
+:::{exercise}
+:label: ex:magneticforce:dipoleenergy
+A magnetic dipole with moment $\mu = 0.025\,\text{A}\cdot\text{m}^2$ is placed in a
+uniform magnetic field $B = 0.40\,\text{T}$.
+
+a. Using $U = -\vec\mu\cdot\vec B = -\mu B\cos\theta$, calculate the potential energy $U$
+   when the dipole is (i) aligned with the field ($\theta = 0°$), (ii) perpendicular to
+   the field ($\theta = 90°$), and (iii) anti-aligned with the field ($\theta = 180°$).
+   Which configuration corresponds to stable equilibrium?\
+b. Starting from $\theta = 180°$ and rotating to $\theta = 0°$, how much work does the
+   magnetic field do on the dipole? What form does this energy take?\
+c. At what angle $\theta$ is the torque on the dipole maximized? Calculate both the
+   maximum torque and the potential energy at that angle.
 :::
 
 # The Hall Effect
@@ -878,6 +987,165 @@ The magnetic moment of the loop is:
 \mu = IA = I\pi R^2
 ```
 so that the torque is indeed given by $\tau = \mu B$. If we had rotated the loop so that the vector, $\vec r$, had a $y$ component, then we would have found the general formula with a cross-product.
+:::
+
+## Exercise Solutions
+
+:::{solution} ex:magneticforce:earthfield
+:label: soln:magneticforce:earthfield
+:class: dropdown
+**(a)** The horizontal and vertical components of the field are:
+```{math}
+B_H = B\cos\alpha = (55\,\mu\text{T})\cos(65°) = 23.2\,\mu\text{T}
+```
+```{math}
+B_V = B\sin\alpha = (55\,\mu\text{T})\sin(65°) = 49.8\,\mu\text{T}
+```
+
+**(b)** The compass needle aligns with $B_H$, which points toward geographic North. So the North-seeking end points toward geographic North. Since the compass's North pole is *attracted* to the geographic North region, that region must carry a magnetic *South* pole — consistent with the chapter's statement that Earth's magnetic North pole lies near the geographic South Pole.
+
+**(c)** The ratio of field strengths is:
+```{math}
+\frac{B}{B_{eq}} = \frac{55\,\mu\text{T}}{30\,\mu\text{T}} \approx 1.83
+```
+The field is about 1.8 times stronger at mid-latitude. Because field strength is proportional to the density of field lines, the field lines are 1.8 times more densely packed at the mid-latitude location than at the equator.
+:::
+
+:::{solution} ex:magneticforce:lorentzforce
+:label: soln:magneticforce:lorentzforce
+:class: dropdown
+**(a)** Taking East as $\hat x$, North as $\hat y$, and Up as $\hat z$:
+```{math}
+\vec F_B = q\vec v\times\vec B = e(v\hat x)\times(B\hat y) = evB(\hat x\times\hat y) = evB\hat z
+```
+The force points upward (away from Earth), consistent with the checkpoint result.
+
+**(b)** The magnitude of the force is:
+```{math}
+F_B = qvB = (1.6\times10^{-19}\,\text{C})(5.0\times10^6\,\text{m/s})(55\times10^{-6}\,\text{T}) = 4.4\times10^{-17}\,\text{N}
+```
+
+**(c)** The weight of the proton is:
+```{math}
+W = m_p g = (1.67\times10^{-27}\,\text{kg})(9.8\,\text{m/s}^2) = 1.6\times10^{-26}\,\text{N}
+```
+The magnetic force is $4.4\times10^{-17}/1.6\times10^{-26} \approx 2.8\times10^9$ times larger than the proton's weight. For fast-moving charged particles, the magnetic force completely dominates gravity.
+:::
+
+:::{solution} ex:magneticforce:electronforce
+:label: soln:magneticforce:electronforce
+:class: dropdown
+**(a)** The cross product of velocity and field is:
+```{math}
+\vec v\times\vec B = (v\hat x)\times(-B\hat z) = -vB(\hat x\times\hat z) = -vB(-\hat y) = vB\hat y \quad\text{(upward)}
+```
+Multiplying by $q = -e$:
+```{math}
+\vec F_B = (-e)(vB\hat y) = -evB\hat y \quad\text{(downward)}
+```
+The magnitude is:
+```{math}
+F_B = evB = (1.6\times10^{-19}\,\text{C})(3.0\times10^7\,\text{m/s})(0.20\,\text{T}) = 9.6\times10^{-13}\,\text{N}
+```
+
+**(b)** For a proton ($q = +e$) with the same velocity in the same field, $\vec F_B = +e(vB\hat y)$, which points *upward* — opposite to the electron's force. The only difference is the sign of $q$, which reverses the force direction.
+
+**(c)** The electron gains kinetic energy equal to $e|\Delta V|$:
+```{math}
+|\Delta V| = \frac{m_e v^2}{2e} = \frac{(9.11\times10^{-31}\,\text{kg})(3.0\times10^7\,\text{m/s})^2}{2(1.6\times10^{-19}\,\text{C})} \approx 2560\,\text{V}
+```
+:::
+
+:::{solution} ex:magneticforce:cyclotronmotion
+:label: soln:magneticforce:cyclotronmotion
+:class: dropdown
+**(a)** The cyclotron radius is $R = m_p v/(eB)$, so the period is:
+```{math}
+T = \frac{2\pi R}{v} = \frac{2\pi m_p v}{eBv} = \frac{2\pi m_p}{eB}
+```
+The speed $v$ cancels, confirming that $T$ is independent of the particle's speed.
+
+**(b)** Substituting values:
+```{math}
+T = \frac{2\pi m_p}{eB} = \frac{2\pi(1.67\times10^{-27}\,\text{kg})}{(1.6\times10^{-19}\,\text{C})(0.50\,\text{T})} = 1.31\times10^{-7}\,\text{s} \approx 131\,\text{ns}
+```
+
+**(c)** Both particles move at the same speed $v$, so $R = mv/(qB)$:
+```{math}
+\frac{R_\alpha}{R_p} = \frac{m_\alpha}{m_p}\cdot\frac{q_p}{q_\alpha} = \frac{4m_p}{m_p}\cdot\frac{e}{2e} = 4\times\tfrac{1}{2} = 2
+```
+The alpha particle travels in a circle twice as large as the proton's.
+
+**(d)** Both ions carry the same charge $e$ and enter with the same speed, so:
+```{math}
+\frac{R_{12}}{R_{13}} = \frac{m_{12}}{m_{13}} = \frac{1.99\times10^{-26}\,\text{kg}}{2.16\times10^{-26}\,\text{kg}} = 0.921
+```
+Carbon-12 traces a slightly smaller circle than carbon-13, allowing the mass spectrometer to separate the two isotopes.
+:::
+
+:::{solution} ex:magneticforce:wireforce
+:label: soln:magneticforce:wireforce
+:class: dropdown
+**(a)** With East $= \hat x$ and North $= \hat y$:
+```{math}
+\vec F = I\vec l\times\vec B = I(L\hat x)\times(B\hat y) = ILB\,(\hat x\times\hat y) = ILB\hat z \quad\text{(upward)}
+```
+The magnitude is:
+```{math}
+F = ILB = (8.0\,\text{A})(0.40\,\text{m})(55\times10^{-6}\,\text{T}) = 1.76\times10^{-4}\,\text{N}
+```
+
+**(b)** The weight of the wire segment is:
+```{math}
+W = \lambda L g = (2.5\times10^{-3}\,\text{kg/m})(0.40\,\text{m})(9.8\,\text{m/s}^2) = 9.8\times10^{-3}\,\text{N}
+```
+The magnetic force is $1.76\times10^{-4}/9.8\times10^{-3} \approx 1.8\%$ of the wire's weight — far too small to provide noticeable support.
+
+**(c)** Setting the upward magnetic force equal to the weight:
+```{math}
+I_{min}LB = \lambda Lg \implies I_{min} = \frac{\lambda g}{B} = \frac{(2.5\times10^{-3}\,\text{kg/m})(9.8\,\text{m/s}^2)}{55\times10^{-6}\,\text{T}} \approx 445\,\text{A}
+```
+This enormous current confirms that Earth's field is far too weak to levitate practical wires at ordinary currents.
+:::
+
+:::{solution} ex:magneticforce:dipolemoment
+:label: soln:magneticforce:dipolemoment
+:class: dropdown
+**(a)** The magnetic dipole moment has magnitude $\mu = IA$, where $A = \ell w$:
+```{math}
+\mu = I\ell w = (2.0\,\text{A})(0.050\,\text{m})(0.030\,\text{m}) = 3.0\times10^{-3}\,\text{A}\cdot\text{m}^2
+```
+
+**(b)** When $\vec\mu\perp\vec B$ ($\theta = 90°$) the torque is at its maximum:
+```{math}
+\tau_{max} = \mu B\sin(90°) = \mu B = (3.0\times10^{-3}\,\text{A}\cdot\text{m}^2)(0.15\,\text{T}) = 4.5\times10^{-4}\,\text{N}\cdot\text{m}
+```
+
+**(c)** Setting $\tau = \frac{1}{2}\tau_{max}$:
+```{math}
+\mu B\sin\theta = \tfrac{1}{2}\mu B \implies \sin\theta = \tfrac{1}{2} \implies \theta = 30°
+```
+:::
+
+:::{solution} ex:magneticforce:dipoleenergy
+:label: soln:magneticforce:dipoleenergy
+:class: dropdown
+**(a)** With $\mu B = (0.025\,\text{A}\cdot\text{m}^2)(0.40\,\text{T}) = 0.010\,\text{J}$:
+- $\theta = 0°$: $U = -\mu B\cos(0°) = -0.010\,\text{J}$ — minimum energy, **stable equilibrium**
+- $\theta = 90°$: $U = -\mu B\cos(90°) = 0$
+- $\theta = 180°$: $U = -\mu B\cos(180°) = +0.010\,\text{J}$ — maximum energy, unstable equilibrium
+
+**(b)** The work done by the field equals the decrease in potential energy:
+```{math}
+W = -\Delta U = -(U_f - U_i) = -(-0.010\,\text{J} - 0.010\,\text{J}) = 0.020\,\text{J}
+```
+This energy becomes rotational kinetic energy of the dipole (which then oscillates about $\theta = 0$ if there are no losses, or is dissipated as heat if there is damping).
+
+**(c)** The torque $\tau = \mu B\sin\theta$ is maximized when $\sin\theta = 1$, i.e. at $\theta = 90°$:
+```{math}
+\tau_{max} = \mu B = (0.025\,\text{A}\cdot\text{m}^2)(0.40\,\text{T}) = 0.010\,\text{N}\cdot\text{m}
+```
+At $\theta = 90°$ the potential energy is $U = 0$.
 :::
 
 
