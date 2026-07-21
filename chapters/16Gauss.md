@@ -65,6 +65,19 @@ What are the S.I. units of electric flux?
 2.
 :::
 
+:::{exercise}
+:label: ex:gauss:flux
+A flat rectangular antenna panel measuring $0.30\,\mathrm{m}\times 0.50\,\mathrm{m}$ is
+used to measure a uniform electric field of magnitude $E = 400\,\mathrm{N/C}$.
+
+a. What is the maximum electric flux through the panel, and in what orientation relative
+   to $\vec E$ does this maximum occur?\
+b. The panel is rotated so that its normal vector makes an angle of $60°$ with $\vec E$.
+   What is the flux?\
+c. What is the flux when the panel is oriented parallel to $\vec E$ (normal vector
+   perpendicular to $\vec E$)? Why?
+:::
+
 :::{note} Example 16.1
 A uniform electric field is given by: $\vec E=E\cos\theta~\hat x+E\sin\theta~\hat y $ throughout space. A rectangular surface is defined by the four points $(0,0,0)$, $(0,0,H)$, $(L,0,0)$, $(L,0,H)$. What is the flux of the electric field through the surface?
 :::{note} Solution
@@ -156,6 +169,21 @@ A non-uniform electric field $\vec E$ flows through an irregularly-shaped closed
 :class: dropdown
 2.
 :::
+
+:::{exercise}
+:label: ex:gauss:closedflux
+A weather monitoring device uses a cubic sampling chamber of side length $L = 0.20\,\mathrm{m}$.
+The chamber is placed in a region with a uniform electric field of $E_0 = 500\,\mathrm{N/C}$
+directed along the positive $x$-axis.
+
+a. What is the flux through the face whose outward normal points in the $-x$ direction
+   (the face the field enters)?\
+b. What is the flux through the face whose outward normal points in the $+x$ direction?\
+c. What is the flux through any of the four faces whose normals are perpendicular to $\vec E$?\
+d. What is the total flux through the entire closed surface? What does Gauss' law then
+   tell you about the charge inside the chamber?
+:::
+
 :::{attention} Olivia's Thoughts
 Consider the water flowing through a net analogy again, although now the net is a closed surface (e.g. a sphere). If there is more water flowing out of the net than into it, the flux is positive. If there is more flowing in than out, the flux is negative. If there is an equal amount of water flowing in and out, the flux is zero. If you had trouble with the last checkpoint question, try it again but now thinking about the field lines as a flow of water. Is there more water flowing in or out of the object, or is it the same?
 :::
@@ -370,6 +398,20 @@ A thin charged spherical shell carries a uniformly distributed charge of $+Q$. I
 4.
 :::
 
+:::{exercise}
+:label: ex:gauss:sphere
+A charged insulating sphere of radius $R = 0.10\,\mathrm{m}$ carries a total charge of
+$Q = +2.0\,\mathrm{nC}$ distributed uniformly throughout its volume.
+
+a. Apply Gauss' law with a spherical Gaussian surface at $r = R$ to find the electric
+   field at the surface of the sphere.\
+b. Find the electric field at $r = 2R$ (outside the sphere).\
+c. Find the electric field at $r = R/2$ (inside the sphere). Hint: the enclosed charge
+   scales as $(r/R)^3$.\
+d. Briefly describe how the electric field depends on $r$ as you move outward from the
+   centre through the surface and beyond.
+:::
+
 :::{note} Example 16.5
 An infinitely long straight wire carries a uniform charge per unit length, $\lambda$. What is the electric field at a distance, $R$, from the wire?}
 The first thing we want to do is determine the direction of the electric field vector. We start by making a diagram of the charge distribution, as in [](#fig:gauss:linecharge). To choose the direction, we can use symmetry arguments. In this case,  our choice of field direction must preserve rotational symmetry. This means that if we are in the plane perpendicular to the wire (i.e. the side view in [](#fig:gauss:linecharge)), the electric field should look the same from all directions (e.g. it shouldn't matter if we look at it from the left side or the right side). With this in mind, there are three options for the electric field. It could be either:
@@ -436,6 +478,20 @@ Why is it difficult to apply Gauss' law to a finite wire?
 :::{tip} Answer
 :class: dropdown
 4.
+:::
+
+:::{exercise}
+:label: ex:gauss:wire
+A long straight power line is modeled as an infinitely long wire with a uniform linear
+charge density of $\lambda = +8.0\,\mathrm{nC/m}$.
+
+a. Choose a cylindrical Gaussian surface of radius $R = 0.20\,\mathrm{m}$ and length $L$.
+   What is the flux through each circular end cap? What is the expression for the flux
+   through the curved side surface?\
+b. Apply Gauss' law to find the electric field magnitude at $R = 0.20\,\mathrm{m}$.\
+c. A small charged particle ($q = +5.0\,\mu\mathrm{C}$) is placed at that distance from
+   the wire. What force does the wire exert on it?\
+d. At what distance from the wire is the electric field half the value found in part (b)?
 :::
 
 :::{attention} Josh's Thoughts	
@@ -822,6 +878,99 @@ We know from part (a) that the net charge per unit length of the wire and inner 
 :alt:  Cross section of the wire/conducting shell set up, showing the Gaussian surfaces.
  Cross section of the wire/conducting shell set up, showing the Gaussian surfaces.
 ``` 
+:::
+
+## Exercise Solutions
+
+:::{solution} ex:gauss:flux
+:label: soln:gauss:flux
+:class: dropdown
+**(a)** The area of the panel is $A = 0.30\times0.50 = 0.15\,\mathrm{m^2}$. The flux is maximised when the normal vector is parallel to $\vec E$ (the panel is perpendicular to the field, so field lines pass straight through it):
+```{math}
+\Phi_\text{max} = EA = (400)(0.15) = 60\,\mathrm{V\cdot m}
+```
+
+**(b)** With the normal at $60°$ to $\vec E$:
+```{math}
+\Phi = EA\cos(60°) = 60 \times 0.5 = 30\,\mathrm{V\cdot m}
+```
+
+**(c)** When the panel is parallel to $\vec E$, the normal vector is perpendicular to $\vec E$ ($\theta = 90°$):
+```{math}
+\Phi = EA\cos(90°) = 0
+```
+No field lines cross a surface that is parallel to the field — they all pass alongside it.
+:::
+
+:::{solution} ex:gauss:closedflux
+:label: soln:gauss:closedflux
+:class: dropdown
+**(a)** The outward normal of the $-x$ face points in the $-x$ direction, anti-parallel to $\vec E$, so $\theta = 180°$:
+```{math}
+\Phi_{-x} = E_0 L^2 \cos(180°) = -(500)(0.20)^2 = -20\,\mathrm{V\cdot m}
+```
+
+**(b)** The outward normal of the $+x$ face is parallel to $\vec E$, so $\theta = 0°$:
+```{math}
+\Phi_{+x} = E_0 L^2 \cos(0°) = +(500)(0.04) = +20\,\mathrm{V\cdot m}
+```
+
+**(c)** For each of the four remaining faces the outward normal is perpendicular to $\vec E$ ($\theta = 90°$), so the flux through each is zero.
+
+**(d)** The total flux is:
+```{math}
+\Phi_\text{total} = -20 + 20 + 0 + 0 + 0 + 0 = 0\,\mathrm{V\cdot m}
+```
+By Gauss' law, $\Phi = Q^\text{enc}/\epsilon_0 = 0$, so the chamber encloses zero net charge. This is expected: a uniform external field has no source or sink inside the volume.
+:::
+
+:::{solution} ex:gauss:sphere
+:label: soln:gauss:sphere
+:class: dropdown
+**(a)** At $r = R$, the Gaussian surface encloses all of $Q$. The flux through a spherical surface is $\Phi = E(4\pi R^2)$. Applying Gauss' law:
+```{math}
+E(4\pi R^2) = \frac{Q}{\epsilon_0} \implies E = \frac{kQ}{R^2} = \frac{(9.0\times10^9)(2.0\times10^{-9})}{(0.10)^2} = 1800\,\mathrm{N/C}
+```
+
+**(b)** At $r = 2R = 0.20\,\mathrm{m}$, the enclosed charge is still $Q$:
+```{math}
+E = \frac{kQ}{(2R)^2} = \frac{1800}{4} = 450\,\mathrm{N/C}
+```
+
+**(c)** At $r = R/2 = 0.05\,\mathrm{m}$, the enclosed charge is:
+```{math}
+Q^\text{enc} = Q\left(\frac{r}{R}\right)^3 = Q\cdot\frac{1}{8}
+```
+Applying Gauss' law:
+```{math}
+E = \frac{kQ^\text{enc}}{r^2} = \frac{kQ\,r}{R^3} = \frac{(9.0\times10^9)(2.0\times10^{-9})(0.05)}{(0.10)^3} = 900\,\mathrm{N/C}
+```
+
+**(d)** Inside ($r < R$): $E$ increases linearly from $0$ at the centre to $1800\,\mathrm{N/C}$ at the surface. Outside ($r > R$): $E$ decreases as $1/r^2$, falling to $450\,\mathrm{N/C}$ at $r = 2R$. The field is continuous at the surface.
+:::
+
+:::{solution} ex:gauss:wire
+:label: soln:gauss:wire
+:class: dropdown
+**(a)** The electric field from the wire points radially outward (perpendicular to the wire). On each circular end cap, $\vec E$ is parallel to the cap surface and therefore perpendicular to the outward normal, giving $\Phi_\text{cap} = 0$. On the curved side surface, $\vec E$ is parallel to the outward normal everywhere, so:
+```{math}
+\Phi_\text{side} = E(2\pi R L)
+```
+
+**(b)** The charge enclosed by the cylinder is $Q^\text{enc} = \lambda L$. Applying Gauss' law:
+```{math}
+E(2\pi R L) = \frac{\lambda L}{\epsilon_0} \implies E = \frac{\lambda}{2\pi\epsilon_0 R} = \frac{2k\lambda}{R} = \frac{2(9.0\times10^9)(8.0\times10^{-9})}{0.20} = 720\,\mathrm{N/C}
+```
+
+**(c)** The force on the particle is directed radially away from the wire (both $q$ and $\lambda$ are positive):
+```{math}
+F = qE = (5.0\times10^{-6})(720) = 3.6\times10^{-3}\,\mathrm{N} = 3.6\,\mathrm{mN}
+```
+
+**(d)** Since $E \propto 1/R$ for an infinite wire, halving the field requires doubling the distance:
+```{math}
+R' = 2 \times 0.20 = 0.40\,\mathrm{m}
+```
 :::
 
 
