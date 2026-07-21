@@ -107,6 +107,17 @@ Four charges of varying magnitude are fixed in position. If the electric potenti
 6.
 :::
 
+:::{exercise}
+:label: ex:potential:electrostaticpe
+Three charged particles are fixed at the corners of an equilateral triangle with side
+length $d = 0.30\,\mathrm{m}$. The charges are $q_1 = +4.0\,\mu\mathrm{C}$,
+$q_2 = +4.0\,\mu\mathrm{C}$, and $q_3 = -4.0\,\mu\mathrm{C}$.
+
+a. How many pairs of charges contribute to the total electrostatic potential energy?\
+b. Calculate the potential energy of each pair. Use $k = 9.0\times10^9\,\mathrm{N\cdot m^2/C^2}$.\
+c. What is the total electrostatic potential energy of the system?
+:::
+
 # Electric potential
 As you recall, we defined the **electric field**, $\vec E(\vec r)$, to be the **electric force per unit charge**. By defining an electric field everywhere in space, we were able to easily determine the force on any test charge, $q$, whether the test charge is positive or negative (since the sign of $q$ will change the direction of the force vector, $q\vec E$):
 ```{math}
@@ -142,6 +153,21 @@ Electric potential increases along the $x$ axis. A proton and an electron are pl
 1.
 :::
 
+:::{exercise}
+:label: ex:potential:motion
+The electric potential along the x-axis increases from $V_A = +40\,\mathrm{V}$ at point A
+to $V_B = +120\,\mathrm{V}$ at point B, where B is to the right of A.
+
+a. Sketch the equipotential lines in the xy-plane for this region. Label the
+   $40\,\mathrm{V}$ and $120\,\mathrm{V}$ equipotentials.\
+b. In which direction does the electric field point between A and B? Add an electric
+   field vector to your sketch from part (a).\
+c. A proton is released from rest at point A. In which direction does it accelerate?
+   What would its change in potential energy be if it moved from A to B?\
+d. An electron is released from rest at point A. In which direction does it accelerate?
+   What is its kinetic energy gain (in eV) if it moves from A to B?
+:::
+
 If the only force exerted on a particle is the electric force, and the particle moves in space such that the electric potential changes by $\Delta V$, we can use conservation of energy to determine the corresponding change in kinetic energy of the particle:
 ```{math}
 
@@ -174,6 +200,19 @@ A particle moves from an electric potential of $-260 {\rm V}$ to an electric pot
 :::{tip} Answer
 :class: dropdown
 4.
+:::
+
+:::{exercise}
+:label: ex:potential:accelerated
+A proton and an electron are each accelerated from rest through a potential difference
+of $|\Delta V| = 110\,\mathrm{V}$ (the voltage of a standard electrical outlet). Use
+$m_p = 1.67\times10^{-27}\,\mathrm{kg}$ and $m_e = 9.11\times10^{-31}\,\mathrm{kg}$.
+
+a. What kinetic energy does each particle gain? Express your answer in both eV and Joules.\
+b. What is the final speed of the proton?\
+c. What is the final speed of the electron?\
+d. The electron is much faster than the proton, even though both gained the same kinetic
+   energy. Explain why.
 :::
 
 :::{attention} Josh's Thoughts 
@@ -303,6 +342,18 @@ What causes a positively charged particle to gain speed when it is accelerated t
 :::{tip} Answer
 :class: dropdown
 1.
+:::
+
+:::{exercise}
+:label: ex:potential:pointcharge
+A small sphere carries a fixed charge $Q = +6.0\,\mathrm{nC}$ at the origin. Define
+$V = 0$ at infinity.
+
+a. What is the electric potential at a distance $r_A = 0.30\,\mathrm{m}$ from the sphere?\
+b. What is the electric potential at a distance $r_B = 0.90\,\mathrm{m}$?\
+c. A proton ($q = +e = +1.6\times10^{-19}\,\mathrm{C}$) is placed at rest at $r_A$ and
+   released. Using conservation of energy, find its kinetic energy (in eV) when it
+   has moved out to $r_B$.
 :::
 
 :::{attention} Olivia's Thoughts 
@@ -450,6 +501,21 @@ If we defined a gravitional potential, V(h), for particles a small distance, $h$
 :class: dropdown
 2.
 :::
+
+:::{exercise}
+:label: ex:potential:parallelplates
+Two large parallel conducting plates are separated by $d = 4.0\,\mathrm{cm}$ and
+maintained at a potential difference of $|\Delta V| = 200\,\mathrm{V}$, with the
+positive plate at higher potential.
+
+a. What is the magnitude of the uniform electric field between the plates?\
+b. What is the magnitude of the electric force on an electron between the plates?\
+c. An electron is released from rest at the negative plate. What is its kinetic energy
+   (in eV and in Joules) when it reaches the positive plate?\
+d. What is the electron's speed at the positive plate?
+   Use $m_e = 9.11\times10^{-31}\,\mathrm{kg}$.
+:::
+
 (sec:potential:fieldfrompotential)=
 ## Electric field from electric potential
 :::{caution} Review
@@ -737,6 +803,20 @@ A capacitor holds $0.2 {\rm C}$ of charge when it has a potential difference of 
 :::{tip} Answer
 :class: dropdown
 1.
+:::
+
+:::{exercise}
+:label: ex:potential:capacitor
+A parallel plate capacitor has a capacitance of $C = 80\,\mathrm{pF}$ and a plate
+separation of $d = 1.0\,\mathrm{mm}$.
+
+a. A potential difference of $\Delta V = 50\,\mathrm{V}$ is applied across the plates.
+   How much charge is stored on each plate?\
+b. How much electric potential energy is stored in the capacitor?\
+c. What is the magnitude of the electric field between the plates?\
+d. The plate separation is halved to $d' = 0.50\,\mathrm{mm}$ while the potential
+   difference is kept at $50\,\mathrm{V}$. Does the stored energy increase, decrease,
+   or stay the same? By what factor?
 :::
 
 ## Dielectric materials
@@ -1073,6 +1153,146 @@ Q &= C\Delta V\\
 \end{align*}
 ```
 We note that the capacitance does not depend on the (arbitrary) charge per unit length, $\lambda$ that we placed on the inner cylinder in order to model the capacitor. The capacitance only depends on the geometry of the capacitor, and the material that is used between the plates.
+:::
+
+## Exercise Solutions
+
+:::{solution} ex:potential:electrostaticpe
+:label: soln:potential:electrostaticpe
+:class: dropdown
+**(a)** Three pairs: $(q_1,q_2)$, $(q_1,q_3)$, and $(q_2,q_3)$ — one per unique pairing ($\binom{3}{2}=3$).
+
+**(b)** Each pair shares the same separation $d = 0.30\,\mathrm{m}$:
+```{math}
+U_{12} = \frac{kq_1q_2}{d} = \frac{(9.0\times10^9)(4.0\times10^{-6})(4.0\times10^{-6})}{0.30} = +0.480\,\mathrm{J}
+```
+```{math}
+U_{13} = \frac{kq_1q_3}{d} = \frac{(9.0\times10^9)(4.0\times10^{-6})(-4.0\times10^{-6})}{0.30} = -0.480\,\mathrm{J}
+```
+```{math}
+U_{23} = \frac{kq_2q_3}{d} = -0.480\,\mathrm{J}
+```
+
+**(c)** The total electrostatic potential energy is:
+```{math}
+U_\text{total} = U_{12}+U_{13}+U_{23} = 0.480 - 0.480 - 0.480 = -0.480\,\mathrm{J}
+```
+The negative total energy means the system is bound — external work would be needed to separate all three charges to infinity.
+:::
+
+:::{solution} ex:potential:motion
+:label: soln:potential:motion
+:class: dropdown
+**(a)** Equipotential lines are straight vertical lines (parallel to the $y$-axis), perpendicular to the direction of increasing potential. The $40\,\mathrm{V}$ equipotential passes through point A and the $120\,\mathrm{V}$ equipotential passes through point B.
+
+**(b)** The electric field points from high to low potential — from B toward A, in the $-x$ direction. The field vector should be drawn pointing left, perpendicular to the equipotential lines.
+
+**(c)** The proton ($q = +e$) experiences a force in the direction of $\vec E$, so it accelerates in the $-x$ direction (toward lower potential, away from B). If it were forced from A to B:
+```{math}
+\Delta U = q\Delta V = (+e)(+80\,\mathrm{V}) = +80\,\mathrm{eV}
+```
+The potential energy would increase, so the proton does not spontaneously move toward B.
+
+**(d)** The electron ($q = -e$) feels a force opposite to $\vec E$, so it accelerates in the $+x$ direction (toward B). Moving from A to B:
+```{math}
+\Delta U = (-e)(+80\,\mathrm{V}) = -80\,\mathrm{eV}
+```
+The potential energy decreases, so by energy conservation: $\Delta K = +80\,\mathrm{eV}$.
+:::
+
+:::{solution} ex:potential:accelerated
+:label: soln:potential:accelerated
+:class: dropdown
+**(a)** Each particle has charge magnitude $e$, so both gain:
+```{math}
+\Delta K = e|\Delta V| = (1.6\times10^{-19}\,\mathrm{C})(110\,\mathrm{V}) = 1.76\times10^{-17}\,\mathrm{J} = 110\,\mathrm{eV}
+```
+
+**(b)** Speed of the proton:
+```{math}
+v_p = \sqrt{\frac{2\Delta K}{m_p}} = \sqrt{\frac{2(1.76\times10^{-17})}{1.67\times10^{-27}}} \approx 1.5\times10^5\,\mathrm{m/s}
+```
+
+**(c)** Speed of the electron:
+```{math}
+v_e = \sqrt{\frac{2\Delta K}{m_e}} = \sqrt{\frac{2(1.76\times10^{-17})}{9.11\times10^{-31}}} \approx 6.2\times10^6\,\mathrm{m/s}
+```
+
+**(d)** Since $K = \frac{1}{2}mv^2$, the same kinetic energy gives a much larger speed to the lighter particle. The ratio of speeds is:
+```{math}
+\frac{v_e}{v_p} = \sqrt{\frac{m_p}{m_e}} = \sqrt{1836} \approx 43
+```
+The electron ends up about 43 times faster than the proton because it is 1836 times less massive.
+:::
+
+:::{solution} ex:potential:pointcharge
+:label: soln:potential:pointcharge
+:class: dropdown
+**(a)** Using $V = kQ/r$ with $V = 0$ at infinity:
+```{math}
+V(r_A) = \frac{kQ}{r_A} = \frac{(9.0\times10^9)(6.0\times10^{-9})}{0.30} = \frac{54}{0.30} = 180\,\mathrm{V}
+```
+
+**(b)**
+```{math}
+V(r_B) = \frac{kQ}{r_B} = \frac{54}{0.90} = 60\,\mathrm{V}
+```
+
+**(c)** The proton moves from high potential ($180\,\mathrm{V}$) to lower potential ($60\,\mathrm{V}$), so the change in potential is $\Delta V = 60 - 180 = -120\,\mathrm{V}$. By energy conservation:
+```{math}
+\Delta K = -q\Delta V = -(+e)(-120\,\mathrm{V}) = +120\,\mathrm{eV} = 1.92\times10^{-17}\,\mathrm{J}
+```
+The proton gains kinetic energy as it moves away from the repulsive positive charge.
+:::
+
+:::{solution} ex:potential:parallelplates
+:label: soln:potential:parallelplates
+:class: dropdown
+**(a)** The electric field between parallel plates is uniform:
+```{math}
+E = \frac{|\Delta V|}{d} = \frac{200\,\mathrm{V}}{0.040\,\mathrm{m}} = 5000\,\mathrm{N/C}
+```
+
+**(b)** The force on the electron is directed toward the positive plate:
+```{math}
+F = eE = (1.6\times10^{-19})(5000) = 8.0\times10^{-16}\,\mathrm{N}
+```
+
+**(c)** The electron moves from the negative plate (lower potential) to the positive plate (higher potential), so $\Delta V = +200\,\mathrm{V}$. For the electron ($q = -e$):
+```{math}
+\Delta U = q\Delta V = (-e)(+200\,\mathrm{V}) = -200\,\mathrm{eV}
+```
+By energy conservation: $\Delta K = +200\,\mathrm{eV} = 3.2\times10^{-17}\,\mathrm{J}$.
+
+**(d)**
+```{math}
+v = \sqrt{\frac{2\Delta K}{m_e}} = \sqrt{\frac{2(3.2\times10^{-17})}{9.11\times10^{-31}}} \approx 8.4\times10^6\,\mathrm{m/s}
+```
+:::
+
+:::{solution} ex:potential:capacitor
+:label: soln:potential:capacitor
+:class: dropdown
+**(a)** Applying $Q = C\Delta V$:
+```{math}
+Q = (80\times10^{-12}\,\mathrm{F})(50\,\mathrm{V}) = 4.0\times10^{-9}\,\mathrm{C} = 4.0\,\mathrm{nC}
+```
+
+**(b)** The stored potential energy:
+```{math}
+U = \tfrac{1}{2}C(\Delta V)^2 = \tfrac{1}{2}(80\times10^{-12})(50)^2 = 100\times10^{-9}\,\mathrm{J} = 100\,\mathrm{nJ}
+```
+
+**(c)** The electric field between the plates:
+```{math}
+E = \frac{\Delta V}{d} = \frac{50\,\mathrm{V}}{1.0\times10^{-3}\,\mathrm{m}} = 50{,}000\,\mathrm{N/C} = 50\,\mathrm{kN/C}
+```
+
+**(d)** Halving the plate separation doubles the capacitance ($C' = \epsilon_0 A/d' = 2C$). With $\Delta V$ held constant:
+```{math}
+U' = \tfrac{1}{2}C'(\Delta V)^2 = \tfrac{1}{2}(2C)(\Delta V)^2 = 2U = 200\,\mathrm{nJ}
+```
+The stored energy **doubles**. More charge is drawn onto the plates at the same voltage, requiring more energy to be stored.
 :::
 
 [^43]:This is the amount of charge on one of the plates. As a whole, the capacitor is neutral.
