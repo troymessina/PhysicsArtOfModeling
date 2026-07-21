@@ -93,7 +93,7 @@ A loop whose radius increases with time.
 2.
 :::
 
-:::{exercise} Faraday's Law and Lenz's Law — Changing magnetic field
+:::{exercise}
 :label: ex:induction:faraday
 
 A square loop of wire with side length $a = 8.0\,\text{cm}$ and resistance $R = 4.0\,\Omega$ lies in the $xy$-plane in a uniform magnetic field $\vec B = B(t)\hat z$.
@@ -121,7 +121,7 @@ A loop being pulled out of a region with uniform magnetic field.
 3.
 :::
 
-:::{exercise} Multi-loop coil in a time-varying magnetic field
+:::{exercise}
 :label: ex:induction:coilinduction
 
 A coil of $N = 120$ circular loops of radius $r = 5.0\,\text{cm}$ lies in the $xy$-plane and has total resistance $R = 8.0\,\Omega$. The magnetic field through the coil is $\vec B(t) = B_0(1 + at)\hat z$ with $B_0 = 0.40\,\text{T}$ and $a = 2.0\,\text{s}^{-1}$.
@@ -387,7 +387,7 @@ In [](#fig:induction:inducedE), in order to produce the induced voltage as shown
 2.
 :::
 
-:::{exercise} Motional EMF — Bar sliding on rails
+:::{exercise}
 :label: ex:induction:railgenerator
 
 A conducting bar of length $L = 0.50\,\text{m}$ slides to the right on frictionless superconducting rails at constant speed $v = 4.0\,\text{m/s}$. The bar has resistance $R = 2.0\,\Omega$. The system is in a uniform magnetic field $B = 0.30\,\text{T}$ directed out of the page.
@@ -509,7 +509,7 @@ Suppose that the magnetic field in [](#fig:induction:magneticbrake) pointed into
 1.
 :::
 
-:::{exercise} Induced electric field from a changing magnetic field
+:::{exercise}
 :label: ex:induction:inducedfield
 
 A circular region of radius $R = 0.15\,\text{m}$ contains a uniform magnetic field $\vec B(t) = B_0(1 - at)\hat z$ with $B_0 = 0.50\,\text{T}$ and $a = 3.0\,\text{s}^{-1}$ (the field decreases with time).
@@ -557,7 +557,7 @@ Which coil in [](#fig:induction:transformer) has the highest voltage?
 1.
 :::
 
-:::{exercise} Transformer — Voltage and current ratios
+:::{exercise}
 :label: ex:induction:transformer
 
 A step-up transformer has $N_p = 200$ turns on the primary and $N_s = 5000$ turns on the secondary. The primary is connected to a $\Delta V_p = 120\,\text{V}$ (rms) AC supply.
@@ -577,7 +577,7 @@ Which coil in [](#fig:induction:transformer) will have the highest current?
 2.
 :::
 
-:::{exercise} Transformer — Power transmission
+:::{exercise}
 :label: ex:induction:powertransmission
 
 A power plant generates $P = 200\,\text{kW}$ at $\Delta V_p = 1000\,\text{V}$ and uses a step-up transformer with $N_p = 100$ primary turns and $N_s = 2500$ secondary turns before transmitting through power lines with total resistance $R_{line} = 2.0\,\Omega$.
