@@ -265,7 +265,7 @@ A coil is made of $N$ loops of current-carrying wire packed closely together. Wh
 2.
 :::
 
-:::{exercise} Biot-Savart Law — Straight wire and circular loop
+:::{exercise}
 :label: ex:magneticsource:biotsavart
 
 A long straight wire carries current $I = 8.0\,\text{A}$.
@@ -320,7 +320,7 @@ Two parallel wires carry current in opposite directions, as shown in [](#fig:mag
 3.
 :::
 
-:::{exercise} Force between two parallel current-carrying wires
+:::{exercise}
 :label: ex:magneticsource:wiresforce
 
 Two long parallel wires separated by $d = 0.15\,\text{m}$ carry currents $I_1 = 10\,\text{A}$ and $I_2 = 15\,\text{A}$ in opposite directions.
@@ -360,7 +360,7 @@ When current is flowing in a straight cable, how to you expect the charges to be
 2.
 :::
 
-:::{exercise} The Ampère definition and charge distribution in a wire
+:::{exercise}
 :label: ex:magneticsource:amperedef
 
 a. Two long parallel wires each carry current $I$ in the same direction and are separated by $d = 1.0\,\text{m}$. Show that the force per unit length is $F/l = \mu_0 I^2/(2\pi d)$, and find the value of $I$ that makes $F/l = 2.0\times10^{-7}\,\text{N/m}$. (This is the historical definition of one Ampère.)\
@@ -439,7 +439,7 @@ Ampère's law proves that the magnetic field at the centre of a current-carrying
 2.
 :::
 
-:::{exercise} Ampère's Law — Field inside and outside a cable
+:::{exercise}
 :label: ex:magneticsource:amperelaw
 
 A long solid cylindrical cable of radius $R = 3.0\,\text{mm}$ carries total current $I = 12\,\text{A}$ distributed uniformly across its cross-section.
@@ -694,7 +694,7 @@ In [](#fig:magneticsource:amperetoroid), the magnetic field makes concentric cir
 2.
 :::
 
-:::{exercise} Solenoid and toroid fields
+:::{exercise}
 :label: ex:magneticsource:solenoid
 
 A solenoid has length $\ell = 0.25\,\text{m}$, contains $N = 500$ turns, and carries current $I = 2.0\,\text{A}$.
@@ -935,7 +935,6 @@ plt.show()
 Magnetic field from each coil, as well as their sum, for two coils in the Helmholtz configuration
 ```
 As advertised, we see a region between the Helmholtz coils where the magnetic field is nearly uniform.
-:::
 :::
 
 ## Exercise Solutions
