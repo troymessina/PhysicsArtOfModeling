@@ -93,6 +93,16 @@ A loop whose radius increases with time.
 2.
 :::
 
+:::{exercise} Faraday's Law and Lenz's Law — Changing magnetic field
+:label: ex:induction:faraday
+
+A square loop of wire with side length $a = 8.0\,\text{cm}$ and resistance $R = 4.0\,\Omega$ lies in the $xy$-plane in a uniform magnetic field $\vec B = B(t)\hat z$.
+
+a. The field increases uniformly from $B_i = 0.20\,\text{T}$ to $B_f = 0.80\,\text{T}$ in $\Delta t = 0.30\,\text{s}$. Calculate the induced voltage and current in the loop.\
+b. Using Lenz's law, state whether the induced current flows clockwise or counter-clockwise when viewed from the $+z$ direction.\
+c. The field then decreases back to $0.20\,\text{T}$ in $\Delta t' = 0.15\,\text{s}$ (twice as fast). What is the new induced voltage and current, and does the current direction reverse?
+:::
+
 :::{tip} Checkpoint
 :label: induction:checkpoint:movingloop
 A loop of wire is immersed in a constant and uniform magnetic field out of the page, perpendicular to the plane of the loop, as shown in [](#fig:induction:loopout). If the loop is pulled out of the region of magnetic field, as shown, in which direction is the induced current in the loop?
@@ -109,6 +119,16 @@ A loop being pulled out of a region with uniform magnetic field.
 :::{tip} Answer
 :class: dropdown
 3.
+:::
+
+:::{exercise} Multi-loop coil in a time-varying magnetic field
+:label: ex:induction:coilinduction
+
+A coil of $N = 120$ circular loops of radius $r = 5.0\,\text{cm}$ lies in the $xy$-plane and has total resistance $R = 8.0\,\Omega$. The magnetic field through the coil is $\vec B(t) = B_0(1 + at)\hat z$ with $B_0 = 0.40\,\text{T}$ and $a = 2.0\,\text{s}^{-1}$.
+
+a. Calculate the induced voltage across the coil and the induced current.\
+b. Using Lenz's law, state the direction of the induced current when viewed from the $+z$ direction.\
+c. The same coil (same total resistance $R = 8.0\,\Omega$) is used with a field changing twice as fast: $\vec B'(t) = B_0(1 + 2at)\hat z$. By what factor do the induced voltage and induced current change?
 :::
 
 (ex:induction:changingB)=
@@ -366,6 +386,17 @@ In [](#fig:induction:inducedE), in order to produce the induced voltage as shown
 :class: dropdown
 2.
 :::
+
+:::{exercise} Motional EMF — Bar sliding on rails
+:label: ex:induction:railgenerator
+
+A conducting bar of length $L = 0.50\,\text{m}$ slides to the right on frictionless superconducting rails at constant speed $v = 4.0\,\text{m/s}$. The bar has resistance $R = 2.0\,\Omega$. The system is in a uniform magnetic field $B = 0.30\,\text{T}$ directed out of the page.
+
+a. Calculate the induced voltage and induced current in the circuit.\
+b. Determine the magnitude and direction of the magnetic force on the bar.\
+c. What constant applied force is needed to keep the bar at constant speed? Show that the mechanical power input equals the electrical power dissipated in the bar.
+:::
+
 As you recall, the electric potential difference between two points, $A$ and $B$, is obtained from the electric field:
 ```{math}
 \Delta V = \int_A^B \vec E\cdot d\vec l
@@ -478,6 +509,16 @@ Suppose that the magnetic field in [](#fig:induction:magneticbrake) pointed into
 1.
 :::
 
+:::{exercise} Induced electric field from a changing magnetic field
+:label: ex:induction:inducedfield
+
+A circular region of radius $R = 0.15\,\text{m}$ contains a uniform magnetic field $\vec B(t) = B_0(1 - at)\hat z$ with $B_0 = 0.50\,\text{T}$ and $a = 3.0\,\text{s}^{-1}$ (the field decreases with time).
+
+a. Find the magnitude of the induced electric field at $r = 0.10\,\text{m}$ (inside the region).\
+b. Find the magnitude of the induced electric field at $r = 0.25\,\text{m}$ (outside the region).\
+c. Using Lenz's law, state whether the induced electric field circulates clockwise or counter-clockwise when viewed from $+z$, and determine in which direction a positive charge at $r = 0.10\,\text{m}$ would be accelerated.
+:::
+
 # Transformers
 The electric power generated in power stations is transmitted using high-voltage transmission lines, typically with voltages above $300000 {\rm V}$ for long distances. However, that voltage is not usable in our households, as our appliances expect a voltage around $120 {\rm V}$ (or $220 {\rm V}$ in Europe). Transformers use electromagnetic induction to transform one **alternating voltage** into another. [](#fig:induction:transformer) illustrates a transformer.
 ```{figure} figures/Induction/transformer.png
@@ -516,6 +557,16 @@ Which coil in [](#fig:induction:transformer) has the highest voltage?
 1.
 :::
 
+:::{exercise} Transformer — Voltage and current ratios
+:label: ex:induction:transformer
+
+A step-up transformer has $N_p = 200$ turns on the primary and $N_s = 5000$ turns on the secondary. The primary is connected to a $\Delta V_p = 120\,\text{V}$ (rms) AC supply.
+
+a. What is the secondary voltage $\Delta V_s$?\
+b. The secondary coil is connected to a load $R_L = 50\,\text{k}\Omega$. What current $I_s$ flows in the secondary?\
+c. Assuming an ideal (lossless) transformer, find the current $I_p$ in the primary coil and verify that input power equals output power.
+:::
+
 :::{tip} Checkpoint
 Which coil in [](#fig:induction:transformer) will have the highest current?
 1.  The one with the most loops.
@@ -524,6 +575,16 @@ Which coil in [](#fig:induction:transformer) will have the highest current?
 :::{tip} Answer
 :class: dropdown
 2.
+:::
+
+:::{exercise} Transformer — Power transmission
+:label: ex:induction:powertransmission
+
+A power plant generates $P = 200\,\text{kW}$ at $\Delta V_p = 1000\,\text{V}$ and uses a step-up transformer with $N_p = 100$ primary turns and $N_s = 2500$ secondary turns before transmitting through power lines with total resistance $R_{line} = 2.0\,\Omega$.
+
+a. Calculate the transmission voltage $\Delta V_s$ and the current $I_s$ in the lines.\
+b. What fraction of the generated power is dissipated in the transmission lines?\
+c. At the receiving end, a step-down transformer reduces the voltage to $\Delta V_{out} = 120\,\text{V}$. If the step-down transformer's primary has $N_p' = 5000$ turns, how many secondary turns $N_s'$ are needed?
 :::
 
 :::{note} Example 22.3
@@ -845,6 +906,62 @@ N=\frac{\Delta V}{AB\omega}=\frac{\Delta V}{\pi R^2B2\pi f}=\frac{(110 {\rm V})}
 ```
 Thus, one requires 10 loops in the coil to generate the desired voltage. 
 
+:::
+
+## Exercise Solutions
+
+:::{solution} ex:induction:faraday
+:label: soln:induction:faraday
+:class: dropdown
+
+a. $|\Delta V| = a^2\frac{|\Delta B|}{\Delta t} = (0.08)^2\times\frac{0.60}{0.30} = 6.4\times10^{-3}\times2.0 = 1.28\times10^{-2}\,\text{V} \approx 13\,\text{mV}$; $I = \Delta V/R = 0.013/4.0 = 3.2\,\text{mA}$\
+b. The field points in $+z$ and is increasing, so by Lenz's law the induced current must produce a field in $-z$ to oppose the change. By the right-hand rule, the current flows clockwise when viewed from $+z$.\
+c. The rate of change is twice as large, so $|\Delta V'| = 2\times13\,\text{mV} = 26\,\text{mV}$ and $I' = 6.4\,\text{mA}$. Now the field is decreasing, so the induced current reverses to counter-clockwise.
+:::
+
+:::{solution} ex:induction:coilinduction
+:label: soln:induction:coilinduction
+:class: dropdown
+
+a. $|\Delta V| = N B_0 a\pi r^2 = 120\times0.40\times2.0\times\pi\times(0.05)^2 = 120\times0.002\pi \approx 0.75\,\text{V}$; $I = \Delta V/R = 0.75/8.0 \approx 94\,\text{mA}$\
+b. The field points in $+z$ and is increasing. By Lenz's law the induced current must create a field in $-z$, so by the right-hand rule the current is clockwise when viewed from $+z$.\
+c. The rate of change of flux doubles (since $dB/dt = 2B_0 a$ instead of $B_0 a$), so the induced voltage doubles to $\approx 1.5\,\text{V}$ and the induced current doubles to $\approx 188\,\text{mA}$.
+:::
+
+:::{solution} ex:induction:railgenerator
+:label: soln:induction:railgenerator
+:class: dropdown
+
+a. $\Delta V = BLv = (0.30)(0.50)(4.0) = 0.60\,\text{V}$; $I = \Delta V/R = 0.60/2.0 = 0.30\,\text{A}$\
+b. $F_B = BIL = (0.30)(0.30)(0.50) = 0.045\,\text{N}$. By the right-hand rule (downward current in bar, field out of page), the force points to the left — opposing the bar's motion, consistent with Lenz's law.\
+c. To maintain constant velocity, the applied force must equal $F_B = 0.045\,\text{N}$ to the right. Mechanical power: $P_{mech} = Fv = (0.045)(4.0) = 0.18\,\text{W}$. Electrical power: $P_{elec} = I^2R = (0.30)^2\times2.0 = 0.18\,\text{W}$. The two are equal, confirming energy conservation.
+:::
+
+:::{solution} ex:induction:inducedfield
+:label: soln:induction:inducedfield
+:class: dropdown
+
+a. Inside ($r < R$): $E(2\pi r) = -\frac{d}{dt}(B\pi r^2) = B_0 a\pi r^2$, so $E = \frac{B_0 a\,r}{2} = \frac{(0.50)(3.0)(0.10)}{2} = 0.075\,\text{V/m}$\
+b. Outside ($r > R$): $E(2\pi r) = B_0 a\pi R^2$, so $E = \frac{B_0 a R^2}{2r} = \frac{(0.50)(3.0)(0.15)^2}{2(0.25)} = 0.068\,\text{V/m}$\
+c. The field in $+z$ is decreasing, so by Lenz's law the induced $E$ field must circulate in a direction that would drive a current reinforcing the flux (in $+z$). By the right-hand rule, that circulation is counter-clockwise when viewed from $+z$. A positive charge at $r = 0.10\,\text{m}$ would therefore be accelerated counter-clockwise.
+:::
+
+:::{solution} ex:induction:transformer
+:label: soln:induction:transformer
+:class: dropdown
+
+a. $\Delta V_s = \frac{N_s}{N_p}\Delta V_p = \frac{5000}{200}\times120 = 3000\,\text{V}$\
+b. $I_s = \Delta V_s/R_L = 3000/50000 = 0.060\,\text{A} = 60\,\text{mA}$\
+c. $P_{out} = I_s\Delta V_s = (0.060)(3000) = 180\,\text{W}$; $I_p = P_{out}/\Delta V_p = 180/120 = 1.5\,\text{A}$. Check: $P_{in} = I_p\Delta V_p = (1.5)(120) = 180\,\text{W} = P_{out}$. ✓
+:::
+
+:::{solution} ex:induction:powertransmission
+:label: soln:induction:powertransmission
+:class: dropdown
+
+a. $\Delta V_s = (N_s/N_p)\Delta V_p = 25\times1000 = 25000\,\text{V}$; $I_s = P/\Delta V_s = 200000/25000 = 8.0\,\text{A}$\
+b. $P_{line} = I_s^2 R_{line} = (8.0)^2\times2.0 = 128\,\text{W}$; fraction $= 128/200000 = 6.4\times10^{-4}$ ($0.064\%$). Transmission at high voltage loses less than $0.1\%$ of the total power.\
+c. $N_s' = N_p'\times(\Delta V_{out}/\Delta V_s) = 5000\times(120/25000) = 24\,\text{turns}$
 :::
 
 [^45]:Recall that this ambiguity is resolved when using Gauss' Law by always choosing $d\vec A$ to point "outwards", which only makes sense when the surface is closed. With an open surface, there is no inside or outside, and we are left with the ambiguity.
