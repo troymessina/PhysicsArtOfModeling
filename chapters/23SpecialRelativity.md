@@ -252,6 +252,17 @@ What is gamma for a speed of $v=0.75c$?
 :class: dropdown
 1.
 :::
+
+:::{exercise}
+:label: ex:specialrelativity:timedilation
+Muons are unstable particles with a proper lifetime of $\tau = 2.2 {\rm \mu s}$ (i.e., they decay after $2.2 {\rm \mu s}$ in their own rest frame). Muons are produced in Earth's upper atmosphere at altitude $h_0 = 2.0 {\rm km}$ and travel straight down toward Earth's surface at $v = 0.95c$.
+
+a) Calculate the Lorentz factor $\gamma$ for $v = 0.95c$.\
+b) How long does a muon survive as measured in Earth's frame of reference?\
+c) How far can the muon travel (in Earth's frame) before decaying? Will muons produced at this altitude typically reach the surface?\
+d) For muons produced at altitude $h_0 = 10 {\rm km}$ to reach Earth's surface (assuming $v \approx c$), what minimum $\gamma$ factor is required?
+:::
+
 :::{tip} Checkpoint
 What speed, $v$, corresponds to a gamma factor of $2.5$?
 1.  $v=2.5c$
@@ -261,6 +272,16 @@ What speed, $v$, corresponds to a gamma factor of $2.5$?
 :::{tip} Answer
 :class: dropdown
 2.
+:::
+
+:::{exercise}
+:label: ex:specialrelativity:interstellar
+A spaceship travels at $v = 0.95c$ from Earth toward Proxima Centauri, a distance of $L = 4.2 {\rm ly}$ as measured from Earth. (Recall that a distance of $1 {\rm ly}$ travelled at speed $c$ takes exactly $1 {\rm y}$.)
+
+a) State the Lorentz factor $\gamma$ for $v = 0.95c$ (you found this in the previous exercise).\
+b) How long does the trip take in Earth's frame of reference?\
+c) How long does the trip take in the astronaut's frame of reference (proper time)?\
+d) A mission planner wants to send a spacecraft to a star $L = 40 {\rm ly}$ away with the crew aging by at most $\Delta t = 5.0 {\rm y}$. Using the approximation $v \approx c$, what minimum $\gamma$ is required? What speed does this correspond to?
 :::
 
 Time-dilation is a real effect that has been observed, for example, by placing high precision atomic clocks on an airplane to observe their period slow down. Another example of time-dilation is the fact that we observe many particles called muons at the surface of the Earth. Muons are very similar to electrons, except that they have a larger mass, and that they are unstable (they radioactively decay into an electron and neutrinos, after $2.2 {\rm \mu s}$ on average). Muons are produced in large amounts when cosmic rays (high energy particles from outside our Solar System) strike the molecules in our upper atmosphere, at altitudes of tens of kilometres. As the muons travel down towards the Earth, they decay.
@@ -363,6 +384,16 @@ At what speed must an object travel in order for it to appear 1\% shorter?
 2.
 :::
 
+:::{exercise}
+:label: ex:specialrelativity:lengthcontraction
+A spaceship has a proper (rest-frame) length of $L_0 = 200 {\rm m}$ and travels at $v = 0.866c$ relative to Earth, giving $\gamma = 2.00$.
+
+a) What is the contracted length of the spaceship as measured from Earth?\
+b) An asteroid field is $1000 {\rm m}$ wide in Earth's frame. How wide does it appear to the spaceship crew?\
+c) At what speed must the spaceship travel for Earth observers to measure its length as only $50 {\rm m}$ (one quarter of its proper length)?\
+d) A hangar on Earth has a proper length of $100 {\rm m}$. At $v = 0.866c$, can the spaceship fit inside the hangar according to (i) Earth observers and (ii) the spaceship crew? Explain the difference.
+:::
+
 :::{attention} Olivia's Thoughts 
 In these types of problems, it is important to keep track of which reference frame gives us the proper length and which gives us the proper time. I recommend taking a minute at the beginning of each problem to think about this, and jot it down at the start of your solution. Take [](#fig:specialrelativity:alphatrip), in which our friend Alice travels from Earth to Proxima Centuri on a spaceship. We are dealing with Earth's frame of reference, which I will call $E$, and the Alice's frame of reference, which I will call $A$. We are interested in the time elapsed on the spaceship and the distance to Proxima Centuri. The Earth is *moving* relative to the spaceship's clock and is *stationary* relative to Proxima Centuri. Thus, frame $E$ gives us the *dilated time*, $\Delta t'$, and the *proper length*, $L$. Alice is *stationary* relative to the spaceship's clock and is *moving* relative to Proxima Centuri. Thus, frame $A$ gives us the *proper time*, $\Delta t$, and the *contracted length*, $L'$.   
 At the top of my solution, I would write:
@@ -401,6 +432,17 @@ Referring to the above paradox, to people on the train, which tunnel door closes
 :class: dropdown
 2.
 :::
+
+:::{exercise}
+:label: ex:specialrelativity:barnpole
+Referring to the barn-pole paradox described in the text: a train of proper length $L_0 = 500 {\rm m}$ travels through a tunnel of proper length $L_{\rm tun} = 200 {\rm m}$ at a speed such that $\gamma = 2.5$.
+
+a) What is the speed of the train as a fraction of $c$?\
+b) Confirm that the contracted length of the train equals the tunnel length as measured in the ground frame.\
+c) What is the contracted length of the tunnel as measured by the train crew?\
+d) The tunnel operator closes both tunnel doors simultaneously (in the ground frame) when the contracted train is inside. In the train's frame, the tunnel moves to the left while the train is stationary. Which tunnel door — entrance or exit — reaches the right end of the train first as the tunnel slides past? Hence, which door closes first in the train's frame?
+:::
+
 # Electric and magnetic fields and Special Relativity
 In this section, we present one more example to show how Special Relativity is connected to electromagnetism. Consider a wire that carries an electric current towards the left, and a positive charge, $+Q$, located next to the wire, as illustrated in [](#fig:specialrelativity:current).
 ```{figure} figures/SpecialRelativity/current.png
@@ -463,6 +505,20 @@ What does the world-line of a stationary particle look like?
 :class: dropdown
 1.
 :::
+
+:::{exercise}
+:label: ex:specialrelativity:spacetimediagram
+Three events occur in reference frame $S$, with coordinates $(x, ct)$ given in light-years (${\rm ly}$):
+```{math}
+A = (0,\ 0), \qquad B = (3\ {\rm ly},\ 2\ {\rm ly}), \qquad C = (1\ {\rm ly},\ 4\ {\rm ly}).
+```
+
+a) Calculate the spacetime interval $s^2 = \Delta x^2 - c^2\Delta t^2$ (in ${\rm ly^2}$) between events $A$ and $B$. Is this interval space-like, time-like, or light-like?\
+b) Calculate the spacetime interval between events $A$ and $C$. Is it space-like, time-like, or light-like?\
+c) Could event $A$ causally influence event $C$? What minimum signal speed is required to travel from $A$ to $C$?\
+d) Describe the world-lines on a spacetime diagram ($ct$ vertical, $x$ horizontal) of: (i) a particle permanently at rest at $x = 2\ {\rm ly}$; (ii) a particle moving at $v = 0.50c$ starting from $A$; (iii) a photon emitted from $A$ in the $+x$ direction. Which of events $B$ and $C$ lies inside the future light cone of $A$?
+:::
+
 A pulse of light travelling in the $x$ direction will always have a world-line that makes a $45 {\rm \degree}$ angle with the horizontal (space) axis (since $x=ct$). The world line of any object that travels with a speed below the speed of light must always make an angle with the horizontal axis that is greater than $45 {\rm \degree}$.
 
 A position in space-time is usually called an "**event**". We can draw a set of lines, at $45 {\rm \degree}$ degrees from the horizontal axis, that intersect at an event in space-time. Those lines define two "light cones" corresponding to: (1) locations in space-time in the past that could have had a causal effect on the event (the "past light cone"), and (2), locations in space-time in the future for which the event can have a causal effect (the "future light cone").
@@ -1272,6 +1328,86 @@ d &= vt\\
 &=7.39\times 10^{8} {\rm m}
 \end{align*}
 ```
+:::
+
+## Exercise Solutions
+
+:::{solution} ex:specialrelativity:timedilation
+:label: soln:specialrelativity:timedilation
+:class: dropdown
+a) $\gamma = \frac{1}{\sqrt{1-(0.95)^2}} = \frac{1}{\sqrt{0.0975}} = 3.20$
+
+b) $\Delta t' = \gamma\tau = (3.20)(2.2 {\rm \mu s}) = 7.0 {\rm \mu s}$
+
+c) $d = v\Delta t' = (0.95)(3\times 10^8 {\rm m/s})(7.0\times 10^{-6} {\rm s}) \approx 2.0 {\rm km}$. Muons produced at $h_0 = 2.0 {\rm km}$ at $v = 0.95c$ just reach the surface. Without time dilation, a muon could only travel $c\tau \approx 660 {\rm m}$.
+
+d) With $v \approx c$, the travel distance before decay is $d \approx c\gamma\tau$. Requiring $d \geq h_0$:
+```{math}
+\gamma \geq \frac{h_0}{c\tau} = \frac{10\,000 {\rm m}}{(3\times 10^8 {\rm m/s})(2.2\times 10^{-6} {\rm s})} = \frac{10\,000}{660} \approx 15
+```
+:::
+
+:::{solution} ex:specialrelativity:interstellar
+:label: soln:specialrelativity:interstellar
+:class: dropdown
+a) $\gamma = 3.20$ (same as Exercise 1).
+
+b) $\Delta t' = L/v = 4.2 {\rm ly}/(0.95c) = 4.42 {\rm y}$
+
+c) The proper time on the ship is:
+```{math}
+\Delta t = \frac{\Delta t'}{\gamma} = \frac{4.42 {\rm y}}{3.20} \approx 1.4 {\rm y}
+```
+The crew ages by only about 17 months while $4.4 {\rm y}$ pass on Earth.
+
+d) Using $v \approx c$, the Earth-frame time is $\approx L/c = 40 {\rm y}$, so the proper time is $\approx 40 {\rm y}/\gamma$. Setting this $\leq 5.0 {\rm y}$ gives $\gamma_{\rm min} = 8.0$, and:
+```{math}
+v = c\sqrt{1-\frac{1}{\gamma^2}} = c\sqrt{1-\frac{1}{64}} = c\sqrt{\frac{63}{64}} \approx 0.992c
+```
+:::
+
+:::{solution} ex:specialrelativity:lengthcontraction
+:label: soln:specialrelativity:lengthcontraction
+:class: dropdown
+a) $L' = L_0/\gamma = 200 {\rm m}/2.00 = 100 {\rm m}$
+
+b) The asteroid field is at rest relative to Earth, so in the crew's frame it appears contracted: $L'_{\rm ast} = 1000 {\rm m}/2.00 = 500 {\rm m}$.
+
+c) Require $\gamma = L_0/L' = 200/50 = 4.0$, giving:
+```{math}
+v = c\sqrt{1-\frac{1}{\gamma^2}} = c\sqrt{1-\frac{1}{16}} = c\sqrt{\frac{15}{16}} \approx 0.968c
+```
+
+d) (i) **Earth observers**: the contracted spaceship length is $100 {\rm m}$, equal to the hangar's proper length of $100 {\rm m}$, so the ship just fits. (ii) **Spaceship crew**: the hangar is moving at $0.866c$ and appears contracted to $100 {\rm m}/2.00 = 50 {\rm m}$, while the ship retains its proper length of $200 {\rm m}$. The crew says the ship does not fit. Both observers are correct in their own frames; the apparent contradiction is resolved by the relativity of simultaneity.
+:::
+
+:::{solution} ex:specialrelativity:barnpole
+:label: soln:specialrelativity:barnpole
+:class: dropdown
+a)
+```{math}
+v = c\sqrt{1-\frac{1}{\gamma^2}} = c\sqrt{1-\frac{1}{6.25}} = c\sqrt{0.84} = 0.917c
+```
+
+b) $L'_{\rm train} = L_0/\gamma = 500 {\rm m}/2.5 = 200 {\rm m} = L_{\rm tun}$. The contracted train exactly fills the tunnel in the ground frame. ✓
+
+c) In the train's frame, the tunnel is moving at $0.917c$ and appears contracted: $L'_{\rm tun} = 200 {\rm m}/2.5 = 80 {\rm m}$.
+
+d) In the train's frame, the tunnel slides to the left. The exit (right) end of the tunnel reaches the right end of the train first. Therefore the **exit door closes first** — consistent with the checkpoint answer. There is never a moment in the train's frame when both doors are simultaneously closed with the $500 {\rm m}$ train inside the $80 {\rm m}$ tunnel.
+:::
+
+:::{solution} ex:specialrelativity:spacetimediagram
+:label: soln:specialrelativity:spacetimediagram
+:class: dropdown
+a) $s^2_{AB} = (3 {\rm ly})^2 - (2 {\rm ly})^2 = 9 - 4 = +5 {\rm ly^2} > 0$: **space-like**. The events are separated more in space than in time; a signal connecting them would need to travel faster than $c$.
+
+b) $s^2_{AC} = (1 {\rm ly})^2 - (4 {\rm ly})^2 = 1 - 16 = -15 {\rm ly^2} < 0$: **time-like**. The events are separated more in time than in space.
+
+c) Yes, $A$ can causally influence $C$. The required signal speed is $v = \Delta x/\Delta t = 1 {\rm ly}/4 {\rm y} = 0.25c < c$.
+
+d) (i) A **vertical line** at $x = 2 {\rm ly}$: position is fixed while $ct$ increases. (ii) A line through the origin with slope $ct/x = c/(0.50c) = 2$ (rises 2 units on the $ct$-axis per unit on the $x$-axis). (iii) A $45°$ line through the origin ($ct = x$), the boundary of the light cone.
+
+Event $B$ at $(3, 2)$: since $ct_B = 2 < x_B = 3$, it lies **outside** the future light cone (connecting $A$ to $B$ would require a signal at $1.5c$). Event $C$ at $(1, 4)$: since $ct_C = 4 > x_C = 1$, it lies **inside** the future light cone — consistent with parts (a) and (b).
 :::
 
 [^46]:Outwards if the speed of $S'$ is in the negative $x$ direction relative to $S$.
