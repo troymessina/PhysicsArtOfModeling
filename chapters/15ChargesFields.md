@@ -63,6 +63,19 @@ If you rub a glass rod with silk, which object ends up with an excess of electro
 2.
 :::
 
+:::{exercise}
+:label: ex:chargesfields:charging
+A glass rod is rubbed with a silk cloth (see [](#fig:chargesfields:triboseries)). As a result,
+the glass rod acquires a net charge of $Q = +10\,\mathrm{nC}$.
+
+a. Did the glass rod gain or lose electrons during the rubbing process?\
+b. How many electrons were transferred between the rod and the cloth?
+   Use $e = 1.6\times10^{-19}\,\mathrm{C}$.\
+c. The charged rod is then briefly touched to a neutral conducting metal sphere.
+   If the charge distributes equally between them and they are then separated,
+   what is the net charge on the sphere?
+:::
+
 ## Conductors and insulators
 We can broadly classify materials into conductors (such as metals), and insulators (such as wood), depending on how easily the electrons can move around in the material. In a conductor, electrons (rather, the outer electron(s) of an atom) are only loosely bound to their nuclei, and they can thus move around the material freely. In an insulator, the electrons are tightly bound to the nuclei of their atoms and cannot easily move around. There is a third class of materials, semi-conductors, that falls somewhere between a conductor and an insulator. In a semi-conductor, electrons are typically bound to their atoms, but any additional electrons present in the material can move around as if they are in a conductor. 
 
@@ -147,6 +160,20 @@ The Coulomb force is conservative.
 :class: dropdown
 1.
 :::
+
+:::{exercise}
+:label: ex:chargesfields:coulomb
+A helium nucleus contains two protons separated by approximately $r = 1.0\times10^{-15}\,\mathrm{m}$
+(1 femtometer). Each proton has charge $+e = +1.6\times10^{-19}\,\mathrm{C}$ and
+mass $m_p = 1.67\times10^{-27}\,\mathrm{kg}$.
+
+a. What is the magnitude of the electric repulsion between the two protons?\
+b. What is the magnitude of the gravitational attraction between them?
+   Use $G = 6.67\times10^{-11}\,\mathrm{N\cdot m^2/kg^2}$. What is the ratio $F_e/F_g$?\
+c. If the two protons are pushed to twice the separation ($r' = 2.0\times10^{-15}\,\mathrm{m}$),
+   what is the new electric repulsion?
+:::
+
 The product $Q_1Q_2$ in the numerator of Coulomb's force is positive if the two charges have the same sign (both positive or both negative) and negative if the charges have opposite signs. Again, referring to [](#fig:chargesfields:coulombforce), if the two charges are positive, the force on $Q_1$ will point in the same direction as $\hat r_{21}$ (since all of the scalars are positive in Coulomb's Law) and thus be repulsive. If, instead, the two charges have opposite signs, the product $Q_1Q_2$ will be negative and the force vector on $Q_1$ will point in the opposite direction from $\hat r_{21}$ and the force is attractive. 
 :::{note} Example 15.1
 Calculate the magnitude of the electric force between the electron and the proton in a hydrogen atom and compare this to the gravitational force between them.
@@ -269,6 +296,19 @@ A negative charge is placed at the origin of a coordinate system. At some point 
 :class: dropdown
 1.
 :::
+
+:::{exercise}
+:label: ex:chargesfields:efield
+A small plastic ball is charged by rubbing, giving it a net charge of $Q = +5.0\,\mathrm{nC}$.
+Model it as a point charge fixed at the origin.
+
+a. What is the magnitude of the electric field at a distance $r = 0.30\,\mathrm{m}$ from the ball?\
+b. An electron ($q = -e = -1.6\times10^{-19}\,\mathrm{C}$) is placed at that distance.
+   What is the magnitude and direction of the electric force it experiences?\
+c. At what distance from the ball is the electric field four times as strong as in part (a)?
+   What property of the electric field does this illustrate?
+:::
+
 In Example 15.2, we determined the electric force on charge $q$, exerted by two other charges $Q_1$ and $Q_2$. If we now changed the value of $q$ and wanted to determine the force, we can use the electric field to simplify the process considerably. That is, we can determine the value of the electric field, $\vec E$, from $Q_1$ and $Q_2$ at the position of $q$, and then simply multiply that field vector by a charge $q$ to obtain the force on that charge, without having to add force vectors.
 (ex:chargesfields:epointcharges)=
 :::{note} Example 15.3
@@ -348,6 +388,19 @@ The electric field inside of a conductor must be zero because...
 1.
 :::
 
+:::{exercise}
+:label: ex:chargesfields:superposition
+During a dust storm, particles become charged by friction as they collide. Two dust particles
+are modeled as point charges: particle A with $Q_1 = +3.0\,\mathrm{nC}$ fixed at $x = 0$ and
+particle B with $Q_2 = -3.0\,\mathrm{nC}$ fixed at $x = 0.60\,\mathrm{m}$. A third charged
+dust particle ($q = +2.0\,\mathrm{nC}$) is located at the midpoint $x = 0.30\,\mathrm{m}$.
+
+a. What is the electric field at the midpoint due to particle A alone (magnitude and direction)?\
+b. What is the electric field at the midpoint due to particle B alone (magnitude and direction)?\
+c. What is the net electric field at the midpoint?\
+d. What force does the third particle experience?
+:::
+
 ## Visualizing the electric field
 Generally, a "field" is something that has a different value at different positions in space. The pressure in a fluid under the presence of gravity is a field: the pressure is different at different heights in the fluid. Since pressure is a scalar quantity (a number), we call it a "scalar field". The electric field is called a "vector field", because it is a vector that is different at each position in space. One way to visualize the electric field is to draw arrows at different positions in space; the length of the arrow is then proportional to the strength of the electric field at that position, and the direction of the arrow represents the direction of the electric field. The electric field for a point charge is shown using this method in [](#fig:ChargesFields:1pos).
 
@@ -381,6 +434,18 @@ It is possible for field lines to cross?
 :class: dropdown
 2.
 :::
+
+:::{exercise}
+:label: ex:chargesfields:fieldlines
+Two balloons are rubbed against a wool sweater, each acquiring a positive charge. Balloon A
+($Q_1 = +4.0\,\mathrm{nC}$) is pinned to a wall at $x = 0$, and balloon B ($Q_2 = +1.0\,\mathrm{nC}$)
+is pinned at $x = 0.30\,\mathrm{m}$.
+
+a. Find the point on the $x$-axis between the two balloons where the net electric field is zero.\
+b. In a field-line diagram, how many times more field lines would balloon A have than balloon B?\
+c. Why can field lines never cross, even in a complicated arrangement like this one?
+:::
+
 Because the electric field vector always points in the direction of the force that would be exerted on a positive charge, electric field lines will point out from a positive charge and into a negative charge. The electric field lines for a combination of positive and negative charges is illustrated in [](#fig:ChargesFields:2pos1neg).
 ```{figure} figures/ChargesFields/2pos1neg.png
 :label: fig:ChargesFields:2pos1neg
@@ -805,6 +870,19 @@ When an electric dipole is such that its dipole vector is anti-parallel to the e
 3.
 :::
 
+:::{exercise}
+:label: ex:chargesfields:dipole
+A polar molecule has an electric dipole moment of magnitude
+$p = 3.0\times10^{-28}\,\mathrm{C\cdot m}$. It is placed in a uniform electric field of
+magnitude $E = 2.0\times10^5\,\mathrm{N/C}$.
+
+a. What is the magnitude of the torque on the dipole when the dipole vector makes an angle
+   of $\theta = 30°$ with the electric field?\
+b. What is the potential energy of the dipole at this orientation?\
+c. The dipole is released from rest at $\theta = 90°$. How much kinetic energy does it gain
+   by the time it reaches $\theta = 0°$ (aligned with the field)?
+:::
+
 We can also model the behaviour of the dipole using energy. If a dipole is rotated away from its equilibrium orientation and then released, it will gain (rotational) kinetic energy as it tries to return to equilibrium, and will oscillate about the equilibrium position. When the dipole is held out of equilibrium, we can think of it has having potential energy. To determine the functional form of that potential energy function, we consider the work done in rotating the dipole from an angle $\theta_1$ to an angle $\theta_2$ (where the angle is between the dipole and the electric field vectors):
 ```{math}
 
@@ -1017,6 +1095,131 @@ where in the last equality, we made the small angle approximation ($\sin\theta\s
 \frac{d^2\theta}{dt^2}&=-\omega^2 \theta\\
 \alpha=\omega &=\sqrt{\frac{pE}{I}}
 \end{align*}
+```
+:::
+
+## Exercise Solutions
+
+:::{solution} ex:chargesfields:charging
+:label: soln:chargesfields:charging
+:class: dropdown
+**(a)** The rod became positively charged, so it *lost* electrons to the silk cloth.
+
+**(b)** The number of electrons transferred is:
+```{math}
+n = \frac{Q}{e} = \frac{10\times10^{-9}\,\mathrm{C}}{1.6\times10^{-19}\,\mathrm{C}} = 6.25\times10^{10}\,\text{electrons}
+```
+
+**(c)** When the rod touches the neutral sphere, charge is shared equally. Each object ends up with:
+```{math}
+Q_\text{sphere} = \frac{+10\,\mathrm{nC}}{2} = +5.0\,\mathrm{nC}
+```
+:::
+
+:::{solution} ex:chargesfields:coulomb
+:label: soln:chargesfields:coulomb
+:class: dropdown
+**(a)** Applying Coulomb's Law with $r = 1.0\times10^{-15}\,\mathrm{m}$:
+```{math}
+F_e = \frac{ke^2}{r^2} = \frac{(9.0\times10^9)(1.6\times10^{-19})^2}{(1.0\times10^{-15})^2} \approx 230\,\mathrm{N}
+```
+Despite acting on nuclear-scale particles, this is a macroscopic-scale force.
+
+**(b)** The gravitational attraction is:
+```{math}
+F_g = \frac{Gm_p^2}{r^2} = \frac{(6.67\times10^{-11})(1.67\times10^{-27})^2}{(1.0\times10^{-15})^2} \approx 1.9\times10^{-34}\,\mathrm{N}
+```
+The ratio is:
+```{math}
+\frac{F_e}{F_g} \approx \frac{230}{1.9\times10^{-34}} \approx 1.2\times10^{36}
+```
+The electric repulsion between two protons is more than $10^{36}$ times stronger than their gravitational attraction. This is why gravity is negligible at the atomic scale.
+
+**(c)** By the inverse-square law, doubling the separation reduces the force by a factor of four:
+```{math}
+F_e' = \frac{230}{4} \approx 58\,\mathrm{N}
+```
+:::
+
+:::{solution} ex:chargesfields:efield
+:label: soln:chargesfields:efield
+:class: dropdown
+**(a)** The electric field at $r = 0.30\,\mathrm{m}$:
+```{math}
+E = \frac{kQ}{r^2} = \frac{(9.0\times10^9)(5.0\times10^{-9})}{(0.30)^2} = \frac{45}{0.090} = 500\,\mathrm{N/C}
+```
+
+**(b)** The force on the electron has magnitude:
+```{math}
+F = eE = (1.6\times10^{-19})(500) = 8.0\times10^{-17}\,\mathrm{N}
+```
+The force is directed *toward* the ball. The electron is negatively charged, so it is attracted to the positive source charge — the force is anti-parallel to $\vec{E}$.
+
+**(c)** Setting $4E = kQ/r'^2$ and solving:
+```{math}
+r'^2 = \frac{kQ}{4E} = \frac{r^2}{4} \implies r' = \frac{r}{2} = 0.15\,\mathrm{m}
+```
+Halving the distance quadruples the field strength, illustrating the inverse-square dependence of the electric field on distance.
+:::
+
+:::{solution} ex:chargesfields:superposition
+:label: soln:chargesfields:superposition
+:class: dropdown
+**(a)** The field at the midpoint from particle A ($r = 0.30\,\mathrm{m}$):
+```{math}
+E_1 = \frac{k|Q_1|}{r^2} = \frac{(9.0\times10^9)(3.0\times10^{-9})}{(0.30)^2} = 300\,\mathrm{N/C}\ (+x\text{ direction})
+```
+The field points away from the positive particle A, i.e., in the $+x$ direction.
+
+**(b)** Particle B is negative and lies to the right of the midpoint, so its field points toward B:
+```{math}
+E_2 = \frac{k|Q_2|}{r^2} = \frac{(9.0\times10^9)(3.0\times10^{-9})}{(0.30)^2} = 300\,\mathrm{N/C}\ (+x\text{ direction})
+```
+
+**(c)** Both fields point in the same direction:
+```{math}
+E_\text{net} = E_1 + E_2 = 600\,\mathrm{N/C}\ (+x\text{ direction})
+```
+
+**(d)** The force on the third particle:
+```{math}
+F = qE_\text{net} = (2.0\times10^{-9})(600) = 1.2\,\mu\mathrm{N}\ (+x\text{ direction, toward particle B})
+```
+:::
+
+:::{solution} ex:chargesfields:fieldlines
+:label: soln:chargesfields:fieldlines
+:class: dropdown
+**(a)** Let $x$ be the distance from balloon A to the zero-field point. The fields from A and B must be equal in magnitude and opposite in direction:
+```{math}
+\frac{kQ_1}{x^2} = \frac{kQ_2}{(0.30-x)^2} \implies \frac{4}{x^2} = \frac{1}{(0.30-x)^2}
+```
+Taking the positive square root: $2(0.30 - x) = x$, so $x = 0.20\,\mathrm{m}$.
+
+Verification: $E_1 = k(4\,\mathrm{nC})/(0.20)^2 = 900\,\mathrm{N/C}$ and $E_2 = k(1\,\mathrm{nC})/(0.10)^2 = 900\,\mathrm{N/C}$ — they cancel exactly. The zero-field point is closer to the weaker balloon B.
+
+**(b)** The number of field lines is proportional to the charge magnitude, so balloon A has **four times** as many field lines as balloon B.
+
+**(c)** The electric field has a unique direction at every point in space. If two field lines crossed at a point, the field would simultaneously point in two different directions there — a contradiction. Therefore field lines can never cross.
+:::
+
+:::{solution} ex:chargesfields:dipole
+:label: soln:chargesfields:dipole
+:class: dropdown
+**(a)** The torque magnitude at $\theta = 30°$:
+```{math}
+\tau = pE\sin\theta = (3.0\times10^{-28})(2.0\times10^5)\sin(30°) = (6.0\times10^{-23})(0.5) = 3.0\times10^{-23}\,\mathrm{N\cdot m}
+```
+The torque tends to rotate the dipole toward alignment with the field ($\theta = 0°$).
+
+**(b)** The potential energy at $\theta = 30°$:
+```{math}
+U = -pE\cos\theta = -(6.0\times10^{-23})\cos(30°) = -(6.0\times10^{-23})(0.866) \approx -5.2\times10^{-23}\,\mathrm{J}
+```
+
+**(c)** At $\theta = 90°$ the potential energy is $U_i = -pE\cos(90°) = 0$. At $\theta = 0°$ it is $U_f = -pE = -6.0\times10^{-23}\,\mathrm{J}$. By conservation of energy:
+```{math}
+\Delta K = U_i - U_f = 0 - (-6.0\times10^{-23}) = 6.0\times10^{-23}\,\mathrm{J}
 ```
 :::
 
