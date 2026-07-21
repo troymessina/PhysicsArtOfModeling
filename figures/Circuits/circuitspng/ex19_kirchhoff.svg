@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 540 460" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .w     { stroke: #1C1C1E; fill: none; stroke-width: 2.5; stroke-linecap: round; }
+      .w-neg { stroke: #1C1C1E; fill: none; stroke-width: 2;   stroke-linecap: round; }
+      .w-pos { stroke: #1C1C1E; fill: none; stroke-width: 3.5; stroke-linecap: round; }
+      .w-res { stroke: #1C1C1E; fill: none; stroke-width: 2.5; stroke-linejoin: round; stroke-linecap: round; }
+      .dot   { fill: #1C1C1E; }
+      .lbl   { fill: #1C1C1E; font-family: Georgia, 'Times New Roman', serif; }
+      .cur   { stroke: #3D6B9E; fill: none; stroke-width: 2; }
+      .clbl  { fill: #3D6B9E; font-family: Georgia, 'Times New Roman', serif; }
+      .arr   { fill: #3D6B9E; }
+    </style>
+    <marker id="arrowhead" markerWidth="9" markerHeight="9" refX="9" refY="4.5"
+            orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L9,4.5 L0,9 Z" class="arr"/>
+    </marker>
+  </defs>
+
+  <!-- top wire (node a) -->
+  <line class="w" x1="140" y1="72" x2="400" y2="72"/>
+  <!-- bottom wire (node b) -->
+  <line class="w" x1="140" y1="388" x2="400" y2="388"/>
+
+  <!-- left branch (x=140) -->
+  <line class="w"     x1="140" y1="388" x2="140" y2="326"/>
+  <line class="w-neg" x1="128" y1="326" x2="152" y2="326"/>
+  <line class="w"     x1="140" y1="326" x2="140" y2="294"/>
+  <line class="w-pos" x1="122" y1="294" x2="158" y2="294"/>
+  <line class="w"     x1="140" y1="294" x2="140" y2="252"/>
+  <polyline class="w-res" points="140,252 140,244 155,234 125,222 155,210 125,198 155,186 140,180 140,172"/>
+  <line class="w"     x1="140" y1="172" x2="140" y2="72"/>
+
+  <!-- middle branch (x=270) -->
+  <line class="w"     x1="270" y1="72"  x2="270" y2="152"/>
+  <polyline class="w-res" points="270,152 270,160 285,170 255,182 285,194 255,206 285,218 270,224 270,232"/>
+  <line class="w"     x1="270" y1="232" x2="270" y2="388"/>
+
+  <!-- right branch (x=400) -->
+  <line class="w"     x1="400" y1="388" x2="400" y2="326"/>
+  <line class="w-neg" x1="388" y1="326" x2="412" y2="326"/>
+  <line class="w"     x1="400" y1="326" x2="400" y2="294"/>
+  <line class="w-pos" x1="382" y1="294" x2="418" y2="294"/>
+  <line class="w"     x1="400" y1="294" x2="400" y2="252"/>
+  <polyline class="w-res" points="400,252 400,244 415,234 385,222 415,210 385,198 415,186 400,180 400,172"/>
+  <line class="w"     x1="400" y1="172" x2="400" y2="72"/>
+
+  <!-- node dots -->
+  <circle class="dot" cx="140" cy="72"  r="5"/>
+  <circle class="dot" cx="270" cy="72"  r="5"/>
+  <circle class="dot" cx="400" cy="72"  r="5"/>
+  <circle class="dot" cx="140" cy="388" r="5"/>
+  <circle class="dot" cx="270" cy="388" r="5"/>
+  <circle class="dot" cx="400" cy="388" r="5"/>
+
+  <!-- node labels -->
+  <text class="lbl" x="270" y="51"  text-anchor="middle" font-size="20" font-style="italic">a</text>
+  <text class="lbl" x="270" y="421" text-anchor="middle" font-size="20" font-style="italic">b</text>
+
+  <!-- left battery: +/- signs and label -->
+  <text class="lbl" x="119" y="298" text-anchor="end" font-size="14" font-weight="bold">+</text>
+  <text class="lbl" x="119" y="330" text-anchor="end" font-size="14" font-weight="bold">&#8722;</text>
+  <text class="lbl" x="116" y="313" text-anchor="end" font-size="14">
+    <tspan font-style="italic">&#916;V</tspan>&#8321; = 8 V
+  </text>
+
+  <!-- left resistor label -->
+  <text class="lbl" x="116" y="214" text-anchor="end" font-size="14">
+    <tspan font-style="italic">R</tspan>&#8321; = 2 &#937;
+  </text>
+
+  <!-- middle resistor label -->
+  <text class="lbl" x="292" y="195" text-anchor="start" font-size="14">
+    <tspan font-style="italic">R</tspan>&#8323; = 4 &#937;
+  </text>
+
+  <!-- right battery: +/- signs and label -->
+  <text class="lbl" x="421" y="298" text-anchor="start" font-size="14" font-weight="bold">+</text>
+  <text class="lbl" x="421" y="330" text-anchor="start" font-size="14" font-weight="bold">&#8722;</text>
+  <text class="lbl" x="424" y="313" text-anchor="start" font-size="14">
+    <tspan font-style="italic">&#916;V</tspan>&#8322; = 6 V
+  </text>
+
+  <!-- right resistor label -->
+  <text class="lbl" x="424" y="214" text-anchor="start" font-size="14">
+    <tspan font-style="italic">R</tspan>&#8322; = 2 &#937;
+  </text>
+
+  <!-- current arrow: I_L upward, left branch -->
+  <line class="cur" x1="140" y1="132" x2="140" y2="110" marker-end="url(#arrowhead)"/>
+  <text class="clbl" x="117" y="126" text-anchor="end" font-size="14" font-style="italic">
+    I<tspan dy="4" font-size="10">L</tspan>
+  </text>
+
+  <!-- current arrow: I_M downward, middle branch -->
+  <line class="cur" x1="270" y1="305" x2="270" y2="327" marker-end="url(#arrowhead)"/>
+  <text class="clbl" x="287" y="321" text-anchor="start" font-size="14" font-style="italic">
+    I<tspan dy="4" font-size="10">M</tspan>
+  </text>
+
+  <!-- current arrow: I_R upward, right branch -->
+  <line class="cur" x1="400" y1="132" x2="400" y2="110" marker-end="url(#arrowhead)"/>
+  <text class="clbl" x="423" y="126" text-anchor="start" font-size="14" font-style="italic">
+    I<tspan dy="4" font-size="10">R</tspan>
+  </text>
+</svg>

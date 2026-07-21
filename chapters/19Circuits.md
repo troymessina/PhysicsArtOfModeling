@@ -176,6 +176,17 @@ What is the voltage across the combination of a $3 {\rm V}$ battery connected in
 :class: dropdown
 1.
 :::
+
+:::{exercise}
+:label: ex:circuits:seriesresistors
+A flashlight uses two $1.5\,\mathrm{V}$ cells (modelled as ideal batteries) connected
+in series to power a bulb with resistance $R_{bulb} = 6\,\Omega$.
+
+a. What is the total voltage supplied to the bulb?\
+b. What is the current through the bulb?\
+c. What is the power consumed by the bulb?
+:::
+
 ## The real battery in a circuit
 So far, we have modelled batteries as "ideal" devices that provide a fixed potential difference. In reality, this neglects the fact that the materials that make the battery will themselves have a resistance. For example, if electrons want to leave the zinc rod in the electric cell illustrated in [](#fig:circuits:electriccell), they will lose some energy as they pass through the zinc. Thus, when modelling a real battery in a circuit, it is important to include its "internal resistance", as a resistor in series with the potential difference. This is illustrated in [](#fig:circuits:realbattery), which shows the two terminals of a real battery, an ideal battery (with a fixed potential difference, $\Delta V_{ideal}$), and its internal resistance, $r$ (which can be drawn on either side of the battery). 
 
@@ -239,6 +250,18 @@ Suppose that you would like to measure the ideal voltage of a real battery by co
 1.
 :::
 
+:::{exercise}
+:label: ex:circuits:internalresistance
+A car battery has an ideal voltage of $\Delta V_{ideal} = 12\,\mathrm{V}$ and an
+internal resistance of $r = 0.04\,\Omega$. When the starter motor engages, it
+draws a current of $I = 150\,\mathrm{A}$.
+
+a. What is the terminal voltage of the battery while the starter motor is running?\
+b. What power is dissipated in the internal resistance?\
+c. By how much does the voltage available to the headlights drop when the starter
+   motor engages? (Assume the headlights are connected directly across the battery terminals.)
+:::
+
 # Kirchhoff's rules
 Kirchhoff's rules correspond to concepts that we have already covered, but allow us to easily model more complex circuits, for instance, those where there is more than one path for the current to take. Kirchhoff's rules refer to "junctions" and "loops". Junctions and loops depend only on the shape of the circuit, and not on the components in the circuit. [](#fig:circuits:3loopempty) shows a circuit with no components in order to illustrate what is meant by a junction and a loop.
 
@@ -283,6 +306,17 @@ Circuit layout
 :::{tip} Answer
 :class: dropdown
 3.
+:::
+
+:::{exercise}
+:label: ex:circuits:junction
+A junction in a circuit has four wire segments connected to it. Three currents are
+known: $I_1 = 5\,\mathrm{A}$ flows into the junction, $I_2 = 2\,\mathrm{A}$ flows
+into the junction, and $I_3 = 3\,\mathrm{A}$ flows out of the junction.
+
+a. What is the magnitude and direction of the current $I_4$ in the fourth wire?\
+b. Elsewhere in the same circuit, two wires carrying $I_a = 4.0\,\mathrm{A}$ and
+   $I_b = 1.5\,\mathrm{A}$ flow into a second junction. What current leaves that junction?
 :::
 
 ## Junction rule
@@ -356,6 +390,17 @@ Suppose that the equation describing loop ${\rm abcdefga}$ ([](#fig:circuits:loo
 4.
 :::
 
+:::{exercise}
+:label: ex:circuits:looprule
+A single-loop circuit contains a $\Delta V = 15\,\mathrm{V}$ battery, a
+$R_1 = 3\,\Omega$ resistor, and a $R_2 = 2\,\Omega$ resistor, all in series.
+Conventional current $I$ flows clockwise; the battery arrow also points clockwise.
+
+a. Apply Kirchhoff's loop rule, tracing clockwise, to write the loop equation.\
+b. Solve for the current $I$.\
+c. What is the voltage drop across each resistor? Verify that the drops sum to $\Delta V$.
+:::
+
 :::{attention} Olivia's Thoughts 
 One way to conceptualize Kirchhoff's loop rule is to draw an analogy to gravity. Imagine that the circuit in [](#fig:circuits:loop) operates like a roller coaster, as shown in [](#fig:circuits:rollercoaster). Each battery is like the mechanical lift that brings the cart to the top of the hill. The battery arrow points in the uphill direction. 
 ```{figure} figures/Circuits/rollercoaster.png
@@ -400,6 +445,35 @@ How many different currents are in the circuit shown in [](#fig:circuits:bigcirc
 :::{tip} Answer
 :class: dropdown
 3.
+:::
+
+:::{exercise}
+:label: ex:circuits:kirchhoff
+A two-loop circuit has nodes $a$ (top) and $b$ (bottom) connected by three branches:
+
+- Left branch ($b$ to $a$): a $\Delta V_1 = 8\,\mathrm{V}$ battery (positive terminal at $a$)
+  in series with $R_1 = 2\,\Omega$.
+- Middle branch ($a$ to $b$): a resistor $R_3 = 4\,\Omega$.
+- Right branch ($b$ to $a$): a $\Delta V_2 = 6\,\mathrm{V}$ battery (positive terminal at $a$)
+  in series with $R_2 = 2\,\Omega$.
+
+```{figure} figures/Circuits/circuitspng/ex19_kirchhoff.svg
+:label: fig:circuits:ex19kirchhoff
+:width: 55%
+:align: center
+:alt: Two-loop circuit with nodes a and b, two batteries, and three resistors.
+Two-loop circuit for Exercise 5. Arrows show the guessed current directions.
+```
+
+Guess the current directions: $I_L$ upward in the left branch, $I_M$ downward in the
+middle branch, and $I_R$ upward in the right branch.
+
+a. Write the junction equation at node $a$.\
+b. Write the loop equation for the left loop, tracing counterclockwise (down through
+   the middle branch, then up through the left branch).\
+c. Write the loop equation for the right loop, tracing counterclockwise (up through
+   the middle branch, then down through the right branch).\
+d. Solve the system for $I_L$, $I_M$, and $I_R$.
 :::
 
 **Simplifying the resistors (step 2):** In this circuit, resistors $r_2$, $R_1$ and $R_2$ are in series, so that they can be combined into an effective resistor, $R_6$:
@@ -1019,5 +1093,110 @@ Now that we have the current, we can combine the known resistances and determine
 \end{align*}
 ```
 Thus, with no voltmeter present, the voltage across each resistor is $6 {\rm V}$.
+:::
+
+## Exercise Solutions
+
+:::{solution} ex:circuits:seriesresistors
+:label: soln:circuits:seriesresistors
+:class: dropdown
+**(a)** Two $1.5\,\mathrm{V}$ cells in series supply a total voltage of:
+```{math}
+\Delta V = 1.5\,\mathrm{V} + 1.5\,\mathrm{V} = 3.0\,\mathrm{V}
+```
+
+**(b)** By Ohm's Law, the current through the bulb is:
+```{math}
+I = \frac{\Delta V}{R_{bulb}} = \frac{3.0\,\mathrm{V}}{6\,\Omega} = 0.5\,\mathrm{A}
+```
+
+**(c)** The power consumed by the bulb is:
+```{math}
+P = I\Delta V = (0.5\,\mathrm{A})(3.0\,\mathrm{V}) = 1.5\,\mathrm{W}
+```
+:::
+
+:::{solution} ex:circuits:internalresistance
+:label: soln:circuits:internalresistance
+:class: dropdown
+**(a)** The terminal voltage equals the ideal voltage minus the drop across the internal resistance:
+```{math}
+\Delta V_{terminal} = \Delta V_{ideal} - Ir = 12\,\mathrm{V} - (150\,\mathrm{A})(0.04\,\Omega) = 6\,\mathrm{V}
+```
+
+**(b)** Power dissipated in the internal resistance:
+```{math}
+P_r = I^2 r = (150\,\mathrm{A})^2(0.04\,\Omega) = 900\,\mathrm{W}
+```
+
+**(c)** Without the starter motor running, the terminal voltage is $12\,\mathrm{V}$ (no current, no internal drop). While the starter runs, the terminal voltage drops to $6\,\mathrm{V}$ — a decrease of $6\,\mathrm{V}$. This explains why headlights visibly dim when the starter engages.
+:::
+
+:::{solution} ex:circuits:junction
+:label: soln:circuits:junction
+:class: dropdown
+**(a)** By Kirchhoff's junction rule, the current entering the junction must equal the current leaving:
+```{math}
+I_1 + I_2 = I_3 + I_4 \implies I_4 = 5\,\mathrm{A} + 2\,\mathrm{A} - 3\,\mathrm{A} = 4\,\mathrm{A}
+```
+The current $I_4 = 4\,\mathrm{A}$ flows *out* of the junction.
+
+**(b)** Applying the junction rule to the second junction:
+```{math}
+I_{out} = I_a + I_b = 4.0\,\mathrm{A} + 1.5\,\mathrm{A} = 5.5\,\mathrm{A}
+```
+:::
+
+:::{solution} ex:circuits:looprule
+:label: soln:circuits:looprule
+:class: dropdown
+**(a)** Tracing clockwise: the battery arrow points clockwise so we add $+\Delta V$; each resistor is traced in the same direction as the current so we subtract $-R_1 I$ and $-R_2 I$. Setting the sum to zero:
+```{math}
+\Delta V - R_1 I - R_2 I = 0
+```
+
+**(b)** Substituting values:
+```{math}
+15\,\mathrm{V} - (3\,\Omega)I - (2\,\Omega)I = 0 \implies 5I = 15 \implies I = 3\,\mathrm{A}
+```
+
+**(c)** The voltage drop across each resistor:
+```{math}
+\Delta V_1 = R_1 I = (3\,\Omega)(3\,\mathrm{A}) = 9\,\mathrm{V}, \qquad \Delta V_2 = R_2 I = (2\,\Omega)(3\,\mathrm{A}) = 6\,\mathrm{V}
+```
+Verification: $\Delta V_1 + \Delta V_2 = 9\,\mathrm{V} + 6\,\mathrm{V} = 15\,\mathrm{V} = \Delta V$ ✓
+:::
+
+:::{solution} ex:circuits:kirchhoff
+:label: soln:circuits:kirchhoff
+:class: dropdown
+**(a)** At node $a$, currents $I_L$ and $I_R$ arrive and $I_M$ departs. The junction rule gives:
+```{math}
+I_L + I_R = I_M
+```
+
+**(b)** Left loop, tracing counterclockwise (down through middle, up through left). Down through $R_3$ in the same direction as $I_M$: $-4I_M$. Up through $\Delta V_1$ in the same direction as its arrow: $+8$. Up through $R_1$ in the same direction as $I_L$: $-2I_L$. Sum to zero:
+```{math}
+8 - 2I_L - 4I_M = 0
+```
+
+**(c)** Right loop, tracing counterclockwise (up through middle, down through right). Up through $R_3$ opposite to $I_M$: $+4I_M$. Down through $\Delta V_2$ opposite to its battery arrow: $-6$. Down through $R_2$ opposite to $I_R$: $+2I_R$. Sum to zero:
+```{math}
+4I_M + 2I_R - 6 = 0
+```
+
+**(d)** Rearranging the three equations:
+```{math}
+\begin{align*}
+I_L + I_R &= I_M &\text{(junction)}\\
+I_L + 2I_M &= 4  &\text{(left loop)}\\
+2I_M + I_R &= 3  &\text{(right loop)}
+\end{align*}
+```
+From the right-loop equation: $I_R = 3 - 2I_M$. Substituting into the junction equation: $I_L = I_M - I_R = 3I_M - 3$. Substituting into the left-loop equation:
+```{math}
+(3I_M - 3) + 2I_M = 4 \implies 5I_M = 7 \implies I_M = 1.4\,\mathrm{A}
+```
+Then $I_R = 3 - 2(1.4) = 0.2\,\mathrm{A}$ and $I_L = 3(1.4) - 3 = 1.2\,\mathrm{A}$. All currents are positive, confirming the guessed directions are correct.
 :::
 
