@@ -777,12 +777,12 @@ where $dA=2\pi r dr$ is the area of the infinitesimal ring of radius $r$ and thi
 
 \begin{align*}
 E &= \int dE = \int_0^R kdq\frac{a}{(r^2+a^2)^\frac{3}{2}}  = 2\pi k a \sigma \int_0^R \frac{r}{(r^2+a^2)^\frac{3}{2}}dr\\
-&=2\pi k a \sigma \left[  \frac{-1}{\sqrt{r^2+a^2}}\right]_0^R=2\pi k  \sigma\left(1-\frac{a}{R^2+a^2} \right)
+&=2\pi k a \sigma \left[  \frac{-1}{\sqrt{r^2+a^2}}\right]_0^R=2\pi k  \sigma\left(1-\frac{a}{\sqrt{R^2+a^2}} \right)
 \end{align*}
 ```
 Finally, we can take the limit of $R\to\infty$ in order to get the electric field above an infinite plane:
 ```{math}
-E=\lim_{R\to\infty}2\pi k  \sigma\left(1-\frac{a}{R^2+a^2} \right)=2\pi k\sigma=\frac{\sigma}{2\epsilon_0}
+E=\lim_{R\to\infty}2\pi k  \sigma\left(1-\frac{a}{\sqrt{R^2+a^2}} \right)=2\pi k\sigma=\frac{\sigma}{2\epsilon_0}
 ```
 where we used $\epsilon_0$ in the last equality as the result is a little cleaner without the factors of $\pi$. Note that for an infinite plane of charge, the electric field does not depend on the distance (our variable $a$) from the plane!
 
